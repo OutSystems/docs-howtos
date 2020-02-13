@@ -1,0 +1,28 @@
+- dev-faqs/use-push-notifications-with-onesignal/faq.md:
+    - external:
+        - "OneSignal Plugin Sample": 
+            https://www.outsystems.com/forge/component-overview/4198/onesignal-plugin-sample
+
+- dev-faqs/front-end-architecture/front-end-architecture.md:
+    - external:
+        - "Front-End Architecture Best Practices": 
+            https://success.outsystems.com/Documentation/Best_Practices/Front-End_Architecture_Best_Practices
+        - "Design UI":
+            https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI
+            
+- dev-faqs/concurrent-updates/faq.md:
+    - external:
+        - "Handling Transactions": 
+            https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Data/Database_Reference/Handling_Transactions
+            
+- dev-faqs/customizable-web-product/customizable-web-product.md:
+    - external:
+        - "Designing the Architecture of Your OutSystems Applications":
+            https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications
+
+- dev-faqs/add-video-to-applications/faq.md:
+    - external:
+        - "OutSystems UI Video Pattern": 
+            https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Web_Patterns/Controls/Video
+        - "OutSystems UI Iframe Pattern":
+            https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Web_Patterns/Utilities/Iframe
