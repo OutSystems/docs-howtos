@@ -1,5 +1,5 @@
 ---
-tags: version-10; support-mobile; support-Mobile_Apps; support-webapps
+tags: version-11; support-mobile; support-Mobile_Apps; support-webapps
 summary: 
 ---
 
@@ -58,10 +58,16 @@ Create a Block containing an iframe to display the Web Screens as follows:
             document.getElementsByClassName("internal-frame")[0].setAttribute("src", $parameters.Source);
         };
         iframeGetter.open("GET", $parameters.Source);
-        iframeGetter.setRequestHeader("X-CSRFToken", require("Communication").CSRF.getCSRFToken());
+
+        // OutSystems 11
+        iframeGetter.setRequestHeader("X-CSRFToken", require("OutSystems/ClientRuntime/Communication").CSRF.getCSRFToken());
+
+        // In OutSystems 10, use this line of code for setRequestHeader:
+        // iframeGetter.setRequestHeader("X-CSRFToken", require("Communication").CSRF.getCSRFToken());
+        //
+
         iframeGetter.send();
-
-
+    
     The **FetchIframe** action sends correct HTTP headers that protect the request and that allow the **Session_GetMobileAppLoginInfo** action to validate the login information.
 
     ![](images/FetchIframe_Action.png)
