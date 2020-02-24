@@ -61,7 +61,7 @@ If your app will be deployed to Android devices and you intend to use deep links
     
 This configuration changes how a new [activity](<https://developer.android.com/guide/components/activities/intro-activities>) from your Mobile App is launched. Read more about the activity launch mode [here](<https://developer.android.com/guide/topics/manifest/activity-element#lmode>).
 
-This extra step ensures that Android end-users will be redirected to specific Screens when they click the OneSignal notification. No additional configuration is needed for iOS devices.
+This extra step ensures that Android end users will be redirected to specific Screens when they click the OneSignal notification. No additional configuration is needed for iOS devices.
 
 ### Registering a Device with a User
 

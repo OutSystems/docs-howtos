@@ -5,7 +5,7 @@
 In order to set up a Federated Authentication in your OutSystems applications, using the SAML protocol to connect to external identity providers you can take advantage of the [IdP Forge component](https://www.outsystems.com/forge/component-overview/599/idp), a generic federated identity provider (IdP) connector. IdP allows your OutSystems applications to integrate with single sign-on (SSO) provided by most of the commercial Identity Provider companies.
 
 <div class="info" markdown="1">
-Since [Platform Server Release Jul.2019 CP2](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server) (August 23rd, 2019) you can configure a SAML 2.0 authentication for the whole environment directly in the Users application. Check the documentation on how to [Configure SAML 2.0 Authentication](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End-User_Management/End-Users_Authentication/Configure_SAML_2.0_Authentication).
+Since [Platform Server Release Jul.2019 CP2](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server) (August 23rd, 2019) you can configure a SAML 2.0 authentication for the whole environment directly in the Users application. Check the documentation on how to [Configure SAML 2.0 Authentication](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End_User_Management/End_Users_Authentication/Configure_SAML_2.0_Authentication).
 </div>
 
 With this integration, when the users access an OutSystems application (Service Provider - SP), they are redirected to a web page (known as the enterprise's login manager) where they are prompted to enter their enterprise user name and password. Upon verification of the user’s login, the enterprise identity provider informs OutSystems application of the verified identity for the user who is logging in, and the user is redirected back to the portal website.
@@ -83,7 +83,7 @@ Optional (when required):
 ### Azure AD / ADFS
 
 <div class="info" markdown="1">
-Since [Platform Server Release Jul.2019 CP2](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server) (August 23rd, 2019) Azure AD (Azure Active Directory) authentication mode is directly available in the Users application, having the "Claims" settings already filled in with Azure AD default values. Check the documentation on how to [Configure Azure AD Authentication](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End-User_Management/End-Users_Authentication/Configure_Azure_AD_Authentication).
+Since [Platform Server Release Jul.2019 CP2](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server) (August 23rd, 2019) Azure AD (Azure Active Directory) authentication mode is directly available in the Users application, having the "Claims" settings already filled in with Azure AD default values. Check the documentation on how to [Configure Azure AD Authentication](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End_User_Management/End_Users_Authentication/Configure_Azure_AD_Authentication).
 </div> 
 
 1. Sign in to the [Azure Active Directory portal](https://aad.portal.azure.com/) and add the **OutSystems Azure AD** application from the gallery.
@@ -128,7 +128,7 @@ Since [Platform Server Release Jul.2019 CP2](https://success.outsystems.com/Supp
 ### Okta
 
 <div class="info" markdown="1">
-Since [Platform Server Release Oct.2019](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server) (October 3rd, 2019) the Users application includes specific configurations for OKTA authentication. Check the documentation on how to [Configure OKTA Authentication](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End-User_Management/End-Users_Authentication/Configure_SAML_2.0_Authentication). 
+Since [Platform Server Release Oct.2019](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server) (October 3rd, 2019) the Users application includes specific configurations for OKTA authentication. Check the documentation on how to [Configure OKTA Authentication](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End_User_Management/End_Users_Authentication/Configure_SAML_2.0_Authentication). 
 </div>
 
 1. Create an Okta trial account.
@@ -198,7 +198,7 @@ Since [Platform Server Release Oct.2019](https://success.outsystems.com/Support/
 ### OneLogin
 
 <div class="info" markdown="1">
-Since [Platform Server Release Jul.2019 CP2](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server) (August 23rd, 2019) you can configure a SAML 2.0 authentication directly in the Users application. Check the documentation on how to [Configure SAML 2.0 Authentication](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End-User_Management/End-Users_Authentication/Configure_SAML_2.0_Authentication).
+Since [Platform Server Release Jul.2019 CP2](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server) (August 23rd, 2019) you can configure a SAML 2.0 authentication directly in the Users application. Check the documentation on how to [Configure SAML 2.0 Authentication](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End_User_Management/End_Users_Authentication/Configure_SAML_2.0_Authentication).
 </div>
 
 1. Create a [free OneLogin account](https://www.onelogin.com/signup).
@@ -234,7 +234,7 @@ Since [Platform Server Release Jul.2019 CP2](https://success.outsystems.com/Supp
 ### PingOne
 
 <div class="info" markdown="1">
-Since [Platform Server Release Jul.2019 CP2](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server) (August 23rd, 2019) you can configure a SAML 2.0 authentication directly in the Users application. Check the documentation on how to [Configure SAML 2.0 Authentication](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End-User_Management/End-Users_Authentication/Configure_SAML_2.0_Authentication).
+Since [Platform Server Release Jul.2019 CP2](https://success.outsystems.com/Support/Release_Notes/11/Platform_Server) (August 23rd, 2019) you can configure a SAML 2.0 authentication directly in the Users application. Check the documentation on how to [Configure SAML 2.0 Authentication](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End_User_Management/End_Users_Authentication/Configure_SAML_2.0_Authentication).
 </div>
 
 1. Create a [free Ping Identity account](https://www.pingidentity.com/).

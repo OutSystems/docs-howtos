@@ -37,6 +37,6 @@ To dynamically set the "To" date to one day after the "From" date follow these s
 
     ![UpdateToDate Action](images/dyn-input-04.png)
 
-After these steps the "To" date will change to one day after the "From" date every time the end-user modifies the "From" date.
+After these steps the "To" date will change to one day after the "From" date every time the end user modifies the "From" date.
 
 ![Dynamic Inputs GIF](images/dyn-input-05.gif)

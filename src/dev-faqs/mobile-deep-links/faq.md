@@ -26,8 +26,8 @@ To include values for Input Parameters in your deep link use the following synta
 
 ### Android Intents
 
-For Android end-users with Chrome you can use [Android Intents](https://developer.chrome.com/multidevice/android/intents).
-Android Intents allow the redirection of end-users that do not have your App available on their device to your App page in the Google Play Store or to another URL specified by you. 
+For Android end users with Chrome you can use [Android Intents](https://developer.chrome.com/multidevice/android/intents).
+Android Intents allow the redirection of end users that do not have your App available on their device to your App page in the Google Play Store or to another URL specified by you. 
 
 <div class= "info" markdown= "1">
 When you generate an Android App in OutSystems 10 it already includes a `BROWSABLE` Intent filter.

@@ -41,7 +41,7 @@ When the instance of the ScanBarcode action in the flow runs, the Camera view wi
 
 ## Additional configurations 
 
-Barcode Plugin provides some additional configurations to improve the experience for the end-users when they scan a new barcode or QR code. 
+Barcode Plugin provides some additional configurations to improve the experience for the end users when they scan a new barcode or QR code. 
 
 You can optionally setup the following configurations: 
 

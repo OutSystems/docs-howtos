@@ -5,7 +5,7 @@ summary:
 
 # How to remove the Add or Delete features from an Editable Table
 
-How can I disable the **Add Record** and **Delete Record** features in an **Editable Table** so the end-user can only edit information in the existing Records?
+How can I disable the **Add Record** and **Delete Record** features in an **Editable Table** so the end user can only edit information in the existing Records?
 
 ## Answer
 

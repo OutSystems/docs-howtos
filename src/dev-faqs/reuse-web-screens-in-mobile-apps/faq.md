@@ -20,7 +20,7 @@ However, because that’s not always an alternative, it is possible to integrate
 To achieve this result, you must do the following:
 
 * Use an iframe in the mobile app that sends appropriate request headers when fetching the Web Screens; 
-* Update the web app to automatically log in the end-user of the mobile app. 
+* Update the web app to automatically log in the end user of the mobile app. 
 
 ### Use an iframe in the Mobile App
 
@@ -80,16 +80,16 @@ Create a Block containing an iframe to display the Web Screens as follows:
 
 6. Use the Block **InternalBrowser** in your mobile app and pass the URL of the Web Screen that you wish to embed in the **Source** input of the Block. 
 
-### Automatically Log In the End-user in the Web App
+### Automatically Log In the End User in the Web App
 
-Add an **OnException** handler to the UI Flow that contains the Web Screens that will be embedded in the mobile app. The flow of the **OnException** will handle security exceptions and validate if the current end-user is already authenticated in the mobile app. If so, it will automatically login the user in the web app. Add the following logic to the **OnException** handler:
+Add an **OnException** handler to the UI Flow that contains the Web Screens that will be embedded in the mobile app. The flow of the **OnException** will handle security exceptions and validate if the current end user is already authenticated in the mobile app. If so, it will automatically login the user in the web app. Add the following logic to the **OnException** handler:
 
 ![](images/OnException_Handler.png)
 
-1. Add a **SecurityException** handler to detect requests from end-users that aren’t yet logged in; 
-2. Reference the action **Session\_GetMobileAppLoginInfo** from the **PlatformRuntime\_API** extension and use the action to retrieve the login information of the end-user from the mobile app; 
-3. Test if `Session_GetMobileAppLoginInfo.userId <> NullIdentifier()`. If True, the end-user is logged in and the web app will proceed to automatically log in the end-user. If False, the end-user is not logged in and the web app will redirect to an error page; 
-4. In the True branch, use the system action **Login** with the following values obtained by the action **Session\_GetMobileAppLoginInfo** to automatically log in the end-user: 
+1. Add a **SecurityException** handler to detect requests from end users that aren’t yet logged in; 
+2. Reference the action **Session\_GetMobileAppLoginInfo** from the **PlatformRuntime\_API** extension and use the action to retrieve the login information of the end user from the mobile app; 
+3. Test if `Session_GetMobileAppLoginInfo.userId <> NullIdentifier()`. If True, the end user is logged in and the web app will proceed to automatically log in the end user. If False, the end user is not logged in and the web app will redirect to an error page; 
+4. In the True branch, use the system action **Login** with the following values obtained by the action **Session\_GetMobileAppLoginInfo** to automatically log in the end user: 
   
 
         UserId = IntegerToIdentifier(Session_GetMobileAppLoginInfo.userId)

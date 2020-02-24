@@ -4,7 +4,7 @@ Many organizations use Active Directory (AD) to define groups, users, user right
 
 This document presents a way of mapping Active Directory Groups to OutSystems Roles using two OutSystems Forge components: "Active Directory" and “Active Directory Group Mapping”. This allows you to manage your user rights and permissions model in only one place, i.e. in Active Directory Groups, and then map those Active Directory Groups to OutSystems Roles. The setup is only finished after defining when and how the synchronization happens between Active Directory and OutSystems.
 
-Though this mapping is especially useful when you're authenticating the end-users of your OutSystems applications using Active Directory, this is not a requirement. You can still map Active Directory Groups to OutSystems Roles even when using Internal Authentication or LDAP. Check [End-Users Authentication](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End-User_Management/End-Users_Authentication) for more information.
+Though this mapping is especially useful when you're authenticating the end users of your OutSystems applications using Active Directory, this is not a requirement. You can still map Active Directory Groups to OutSystems Roles even when using Internal Authentication or LDAP. Check [End Users Authentication](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End_User_Management/End_Users_Authentication) for more information.
 
 ## Before you start 
 
@@ -224,7 +224,7 @@ The session timeout defined for your OutSystems environment should be carefully 
 
 New roles synchronized from the Active Directory Group information will not become effective until the user logs out from OutSystems applications and starts a new session or until his current session times out. The session timeout can be defined [in the machine.config file](https://success.outsystems.com/Documentation/11/Developing_an_Application/Use_Data/Sessions_in_Web_Applications#session-timeout) or [using Factory Configuration](https://www.outsystems.com/forums/discussion/34866/how-to-change-the-session-timeout-in-factory-configuration/).
 
-Also, make sure you turn off [Persistent Login](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End-User_Management/End-Users_Authentication/Persistent_Login) if you have this setting configured. When using persistent logins, the user session only ends if the user logs out or after 10 days of inactivity. This behavior would also prevent any new roles from being applied in a timely fashion.
+Also, make sure you turn off [Persistent Login](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End_User_Management/End_Users_Authentication/Persistent_Login) if you have this setting configured. When using persistent logins, the user session only ends if the user logs out or after 10 days of inactivity. This behavior would also prevent any new roles from being applied in a timely fashion.
 
 ## Known Limitations
 

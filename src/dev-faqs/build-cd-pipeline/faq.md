@@ -24,7 +24,7 @@ The act of tagging applications in LifeTime is what defines the scope of changes
 
 ## Regression testing
 
-Following the commit stage, the newly created LifeTime tags are automatically deployed to the **Regression (REG)** environment where an automatic regression suite is run to assess the deployability of the latest code version of your applications. This regression suite includes the unit tests written earlier during the development phase, and may also include other elements like UI tests (for critical end-user flows) or code analysis procedures.
+Following the commit stage, the newly created LifeTime tags are automatically deployed to the **Regression (REG)** environment where an automatic regression suite is run to assess the deployability of the latest code version of your applications. This regression suite includes the unit tests written earlier during the development phase, and may also include other elements like UI tests (for critical end user flows) or code analysis procedures.
 
 <div class="info" markdown="1">
 
