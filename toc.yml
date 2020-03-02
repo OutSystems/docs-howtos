@@ -75,4 +75,5 @@
     - href: dev-faqs/configure-epa-taskbox/faq.md
     - href: dev-faqs/configure-outsystems-ip-saml/faq.md
     - href: dev-faqs/multiline-inputs-editable-table/faq.md
-    - href: dev-faqs/create-lifetime-plugin/faq.md                  
+    - href: dev-faqs/create-lifetime-plugin/faq.md
+    - href: dev-faqs/using-spreadsheet-data-source/faq.md                      
