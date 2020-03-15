@@ -5,9 +5,9 @@ tags: version-11;
 
 ## Introduction
 
-The following guide provides a step-by-step description of how to automate the deployment of OutSystems Applications to containers using an automation server such as [Jenkins](https://jenkins.io/) and the LifeTime Deployment API.
+The following guide provides a step-by-step description of how to automate the deployment of OutSystems Applications to containers using an automation server such as [Jenkins](https://jenkins.io/) and the LifeTime API.
 
-Please refer to the API [documentation](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_Deployment_API) to familiarize yourself with the concepts of Environments, Applications, Deployment Zones and Deployment Plans mentioned extensively throughout this guide. To authenticate any request to the Deployment API, you will need to generate an Authentication Token (for a LifeTime Service Account), as explained [here](<https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_Deployment_API/REST_API_Authentication>).
+Please refer to the API [documentation](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_API_v2) to familiarize yourself with the concepts of Environments, Applications, Deployment Zones and Deployment Plans mentioned extensively throughout this guide. To authenticate any request to the LifeTime API, you will need to generate an Authentication Token (for a LifeTime Service Account), as explained [here](<https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_API_v2/REST_API_Authentication>).
 
 ## Prerequisites
 
@@ -57,7 +57,7 @@ From the created OutSystems Folder, go to New Item, select Freestyle project and
 
 In the General section, provide the following configuration values:
 
-  * **Description**: Fetch the latest Environment, Deployment Zone and Application data in LifeTime for invoking the Deployment API.
+  * **Description**: Fetch the latest Environment, Deployment Zone and Application data in LifeTime for invoking the LifeTime API.
 
 ![](images/image17.png)
 
@@ -152,7 +152,7 @@ app_deployment_zones.json | A file containing the deployment zones where applica
   
 ### Deploy latest Application tags to target LifeTime environment
 
-Finally, you will be creating a Jenkins Project to deploy a list of LifeTime applications from a Source environment to a Target environment via the Deployment API.
+Finally, you will be creating a Jenkins Project to deploy a list of LifeTime applications from a Source environment to a Target environment via the LifeTime API.
 
 When creating the deployment plan to execute, the latest tags of each application to deploy will be selected and added to the plan. This means that after a developer tags his code in the source environment (using the appropriate version number and tag description), Jenkins can automatically discover this application tag and deploy it to the target environment without further human intervention.
 
