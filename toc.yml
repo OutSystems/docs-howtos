@@ -1,76 +1,103 @@
-- href: dev-faqs/build-cd-pipeline/faq.md
-- href: dev-faqs/automate-outsystems-deployments-with-jenkins/faq.md
-- href: dev-faqs/automate-container-deployment-jenkins-lifetime/faq.md
-- href: dev-faqs/automate-container-deployment-jenkins/faq-jenkins.md
+# Development How-tos
+- href: development/intro.md
 - topics:
-    - href: dev-faqs/automate-container-deployment-jenkins/reverse-proxy-iis.md
-    - href: dev-faqs/automate-container-deployment-jenkins/reverse-proxy-nginx.md
-- href: dev-faqs/automate-unit-testing-and-api-testing/faq.md
-- href: dev-faqs/does-outsystems-support-cocoapods/faq.md
-- href: dev-faqs/data-grid/faq.md
-- href: dev-faqs/reuse-web-screens-in-mobile-apps/faq.md
-- href: dev-faqs/use-push-notifications-with-onesignal/faq.md
-- href: dev-faqs/use-push-notifications-with-pushwoosh/faq.md
-- href: dev-faqs/config-pushwoosh-ios/faq.md
-- href: dev-faqs/workato-connector/faq.md
-- href: dev-faqs/sap-odata-service/faq.md
-- href: dev-faqs/resize-a-popup-window/faq.md
-- href: dev-faqs/create-search-autocomplete/faq.md
-- href: dev-faqs/remove-add-delete-editable-table/faq.md
-- href: dev-faqs/set-favicon/faq.md
-- href: dev-faqs/set-favicon-reactive/faq.md
-- href: dev-faqs/validate-file-upload/faq.md
-- href: dev-faqs/change-session-timeout/faq.md
-- href: dev-faqs/mobile-deep-links/faq.md
-- href: dev-faqs/regular-expressions/faq.md
-- href: dev-faqs/set-inputs-dynamically/faq.md
-- href: dev-faqs/contains-index/faq.md
-- href: dev-faqs/parse-xml/faq.md
-- href: dev-faqs/archive-bpt/faq.md
-- href: dev-faqs/table-records-fixed-header/faq.md
-- href: dev-faqs/update-bootstrap-reference-identifier/faq.md
-- href: dev-faqs/customize-excel/faq.md
-- href: dev-faqs/export-entity-data-excel/faq.md
-- href: dev-faqs/input-upper/faq.md
-- href: dev-faqs/list-sort-sql/faq.md
-- href: dev-faqs/table-sort-sql/faq.md
-- href: dev-faqs/html-tags/faq.md
-- href: dev-faqs/users-login-extra/faq.md
-- href: dev-faqs/email-sent-when/faq.md
-- href: dev-faqs/london-header-scroll/faq.md
-- href: dev-faqs/style-last-row-table-records/faq.md
-- href: dev-faqs/hide-scrollbar-listbox/faq.md
-- href: dev-faqs/lotus-notes/faq.md
-- href: dev-faqs/fine-permissions/faq.md
-- href: dev-faqs/validation-messages-location/faq.md
-- href: dev-faqs/maintain-state-mobile/faq.md
-- href: dev-faqs/use-barcode-plugin/faq.md 
-- href: dev-faqs/front-end-architecture/front-end-architecture.md
-- href: dev-faqs/concurrent-updates/faq.md
-- href: dev-faqs/customizable-web-product/customizable-web-product.md
-- href: dev-faqs/add-video-to-applications/faq.md
-- href: dev-faqs/use-netstandard-lib-extension/faq.md
-- href: dev-faqs/bootstrap-data-Excel/faq.md
-- href: dev-faqs/call-block-action-mobile/faq.md
-- href: dev-faqs/call-SOAP-authentication/faq.md
-- href: dev-faqs/show-records-side-by-side-list-record-widget/faq.md
-- href: dev-faqs/translate-email/faq.md
-- href: dev-faqs/save-restore-active-tab-silk/faq.md
-- href: dev-faqs/reduce-size-espace/faq.md        
-- href: dev-faqs/order-set-default-value-combo-box/faq.md
-- href: dev-faqs/map-ad-groups-outsystems-roles/faq.md
-- href: dev-faqs/make-link-variable-send-email/faq.md
-- href: dev-faqs/insert-null-value-db-record/faq.md        
-- href: dev-faqs/include-jquery-plugin/faq.md
-- href: dev-faqs/improve-list-slowness-low-end-devices/faq.md
-- href: dev-faqs/host-big-resource-file/faq.md
-- href: dev-faqs/date-picker-year/faq.md      
-- href: dev-faqs/ui-testing-selenium/faq.md
-- href: dev-faqs/create-large-strings-stringbuilder/faq.md
-- href: dev-faqs/consume-webservice-integration-studio/faq.md
-- href: dev-faqs/combine-line-graph-bar-chart/faq.md        
-- href: dev-faqs/configure-epa-taskbox/faq.md
-- href: dev-faqs/configure-outsystems-ip-saml/faq.md
-- href: dev-faqs/multiline-inputs-editable-table/faq.md
-- href: dev-faqs/create-lifetime-plugin/faq.md
-- href: dev-faqs/using-spreadsheet-data-source/faq.md
+    - href: development/create-lifetime-plugin/faq.md
+    - href: development/mobile-deep-links/faq.md
+    - href: development/reduce-size-espace/faq.md        
+    - href: development/data-grid/faq.md
+    - href: development/table-sort-sql/faq.md
+    - href: development/list-sort-sql/faq.md
+    - href: development/change-session-timeout/faq.md
+
+# Front-End How-tos
+- href: front-end/intro.md
+- topics:
+    - href: front-end/add-video-to-applications/faq.md
+    - href: front-end/call-block-action-mobile/faq.md
+    - href: front-end/create-search-autocomplete/faq.md
+    - href: front-end/date-picker-year/faq.md     
+    - href: front-end/front-end-architecture/front-end-architecture.md
+    - href: front-end/hide-scrollbar-listbox/faq.md
+    - href: front-end/html-tags/faq.md
+    - href: front-end/improve-list-slowness-low-end-devices/faq.md
+    - href: front-end/input-upper/faq.md
+    - href: front-end/london-header-scroll/faq.md
+    - href: front-end/maintain-state-mobile/faq.md
+    - href: front-end/multiline-inputs-editable-table/faq.md
+    - href: front-end/order-set-default-value-combo-box/faq.md
+    - href: front-end/remove-add-delete-editable-table/faq.md
+    - href: front-end/resize-a-popup-window/faq.md
+    - href: front-end/reuse-web-screens-in-mobile-apps/faq.md
+    - href: front-end/save-restore-active-tab-silk/faq.md
+    - href: front-end/set-favicon/faq.md
+    - href: front-end/set-favicon-reactive/faq.md
+    - href: front-end/set-inputs-dynamically/faq.md
+    - href: front-end/show-records-side-by-side-list-record-widget/faq.md
+    - href: front-end/style-last-row-table-records/faq.md
+    - href: front-end/table-records-fixed-header/faq.md
+    - href: front-end/validation-messages-location/faq.md
+
+#Logic How-tos
+- href: logic/intro.md
+- topics:
+    - href: logic/combine-line-graph-bar-chart/faq.md     
+    - href: logic/contains-index/faq.md   
+    - href: logic/email-sent-when/faq.md
+    - href: logic/fine-permissions/faq.md
+    - href: logic/large-strings-stringbuilder/faq.md
+    - href: logic/link-variable-send-email/faq.md
+    - href: logic/users-login-extra/faq.md
+    - href: logic/translate-email/faq.md
+    - href: logic/regular-expressions/faq.md
+    - href: logic/validate-file-upload/faq.md
+
+# Data How-tos
+- href: data/intro.md
+- topics:
+    - href: data/bootstrap-data-Excel/faq.md
+    - href: data/clean-data/faq.md  
+    - href: data/concurrent-updates/faq.md
+    - href: data/customize-excel/faq.md
+    - href: data/export-entity-data-excel/faq.md
+    - href: data/host-big-resource-file/faq.md
+    - href: data/insert-null-value-db-record/faq.md        
+    - href: data/parse-xml/faq.md
+    - href: data/update-bootstrap-reference-identifier/faq.md
+    - href: data/using-spreadsheet-data-source/faq.md
+
+# Processes How-tos
+- href: processes/intro.md
+- topics:
+    - href: processes/archive-bpt/faq.md
+    - href: processes/configure-epa-taskbox/faq.md
+
+# DevOps How-tos
+- href: devops/intro.md
+- topics:
+    - href: devops/build-cd-pipeline/faq.md
+    - href: devops/automate-outsystems-deployments-with-jenkins/faq.md
+    - href: devops/automate-container-deployment-jenkins-lifetime/faq.md
+    - href: devops/automate-container-deployment-jenkins/faq-jenkins.md
+    - topics:
+        - href: devops/automate-container-deployment-jenkins/reverse-proxy-iis.md
+        - href: devops/automate-container-deployment-jenkins/reverse-proxy-nginx.md
+    - href: devops/automate-unit-testing-and-api-testing/faq.md
+    - href: devops/ui-testing-selenium/faq.md
+
+#Integrations How-tos
+- href: integrations/intro.md
+- topics:
+    - href: integrations/call-SOAP-authentication/faq.md
+    - href: integrations/config-pushwoosh-ios/faq.md
+    - href: integrations/configure-outsystems-ip-saml/faq.md
+    - href: integrations/consume-webservice-integration-studio/faq.md
+    - href: integrations/does-outsystems-support-cocoapods/faq.md
+    - href: integrations/include-jquery-plugin/faq.md
+    - href: integrations/lotus-notes/faq.md
+    - href: integrations/map-ad-groups-outsystems-roles/faq.md
+    - href: integrations/sap-odata-service/faq.md
+    - href: integrations/use-barcode-plugin/faq.md 
+    - href: integrations/use-netstandard-lib-extension/faq.md
+    - href: integrations/use-push-notifications-with-onesignal/faq.md
+    - href: integrations/use-push-notifications-with-pushwoosh/faq.md
+    - href: integrations/workato-connector/faq.md
