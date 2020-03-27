@@ -19,7 +19,7 @@ But I want to ensure semantic markup and use HTML heading tags instead:
     
 ## Answer
 
-To generate HTML tags around elements of your **Mobile & Reactive Web Applications** use the **HTML Element** Widget and define the `Tag` Property. Use the `Attributes` fields to define HTML attributes.
+To generate HTML tags around elements of your **Mobile App** and **Reactive Web App** use the **HTML Element** Widget and define the `Tag` Property. Use the `Attributes` fields to define HTML attributes.
 
 ![HTML Element Tag](images/html-tags-00.png)
 
