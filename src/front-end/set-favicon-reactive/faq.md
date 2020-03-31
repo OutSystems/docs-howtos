@@ -33,11 +33,11 @@ Follow these steps to change the favicon in your Reactive Web App to a different
 
 1. In **Search**, enter `favicon.png` and select **Search in this Module**.
 
-  <div class="info" mardkwon="1"> 
+    <div class="info" mardkwon="1"> 
 
-  If you have just created your app, the **'favicon.png' occurrences in Module** search tab shows four occurrences of favicon.png, all in different **AddFavicon** actions.
+    If you have just created your app, the **'favicon.png' occurrences in Module** search tab shows four occurrences of favicon.png, all in different **AddFavicon** actions.
 
-  </div>
+    </div>
 
 1. In the **'favicon.png' occurrences in Module** search tab, select **REPLACE ALL OCCURRENCES**.
 
