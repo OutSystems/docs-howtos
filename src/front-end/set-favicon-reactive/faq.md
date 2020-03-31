@@ -13,7 +13,7 @@ This how-to applies to the Reactive Web Apps only.
 
 By default, OutSystems Reactive apps use the OutSystems logo as the favicon. The default favicon is named **favicon.png** and can be found in **Resources**, in the **Data** tab.
 
-## PNG favicon
+## Use a PNG image as a favicon
 
 Follow these steps to change the favicon in your Reactive Web App to a different **PNG image**:
 
@@ -23,7 +23,7 @@ Follow these steps to change the favicon in your Reactive Web App to a different
 
 After publishing your Module, test your app and make sure the new favicon is shown.
 
-## ICO favicon
+## Use a ICO image as a favicon
 
 Follow these steps to change the favicon in your Reactive Web App to a different **ICO image**:
 
