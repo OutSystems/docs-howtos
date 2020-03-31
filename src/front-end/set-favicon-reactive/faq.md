@@ -44,3 +44,7 @@ Follow these steps to change the favicon in your Reactive Web App to a different
 1. Enter `favicon.ico` and select **OK**.
 
 After publishing your Module, test your app and make sure the new favicon is shown.
+
+## Troubleshooting
+
+If you are testing your app and your new favicon is not appearing, it may be because the old favicon is still in cache. If you are using Chrome to test your app, right-click the tab with your app and select **Reload**. 
