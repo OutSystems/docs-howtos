@@ -31,6 +31,8 @@ Follow these steps to change the favicon in your Reactive Web App to a different
 
 1. Right-click **Resources** and select **Import resource**.
 
+1. In the **Add Resource**, select an ICO image with the new favicon.
+
 1. In **Search**, enter `favicon.png` and select **Search in this Module**.
 
     <div class="info" mardkwon="1"> 
