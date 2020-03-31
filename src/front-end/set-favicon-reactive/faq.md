@@ -7,31 +7,46 @@ summary: Instructions on how to set the favicon in Reactive Web Apps.
 
 <div class="info" markdown="1">
 
-This FAQ applies to the Reactive Web Apps only.
+This how-to applies to the Reactive Web Apps only.
 
 </div>
 
-Follow these steps to set the favicon in your Reactive Web Apps. You need to do two things in Service Studio:
+By default, OutSystems Reactive apps use the OutSystems logo as the favicon. The name of the default favicon is **favicon.png**, and it's in **Resources**, in the **Data** tab.
 
-* Add the favicon to the app resources
-* Load the favicon when the Module loads
+## Use a PNG image as a favicon
 
-In this example we're using favicon.ico. You should edit the Java Script if you're using a different file name.
+Follow these steps to change the favicon in your Reactive Web App to a different **PNG image**:
 
-![Service Studio and adding favicon image](<images/favicon-example.png?width=500>)
+1. In the **Data** tab > **Resources**, right-click **favicon.png** and select **Change Resource**.
 
-1. Go to the **Data** tab > **Resources** > **Import resource** and select your favicon.ico file. A dialog shows.
-1. In the **Add Resource** dialog window click **Add as resource**. The image is added as a resource and you can set other options. 
-1. Set the **Deploy Action** property of the favicon resource to **Deploy to Target Directory**.
-1. Go to the **Logic** tab > right-click the **Client Action** folder >  open the **Add System Event** menu > click **On Application Ready**. The logic of this new Action opens.
-1. Drag a **JavaScript Tool** to the Flow. Name it AddFavicon.
-1. Double-click AddFavicon JavaScript Tool to open the JS editor. Add the following code:
+1. In **Change Resource**, select a PNG image with the new favicon.
 
-        var link = document.createElement('link');
-        link.rel = 'icon';
-        link.href = 'favicon.ico';
-        var head = document.querySelector('head');
-        head.appendChild(link);
+After publishing your Module, test your app and make sure the new favicon is shown.
 
-1. Publish and open your app in a browser.
+## Use a ICO image as a favicon
 
+Follow these steps to change the favicon in your Reactive Web App to a different **ICO image**:
+
+1. In the **Data** tab > **Resources**, select **favicon.png** and change its **Name** to `favicon.ico`.
+
+1. Right-click **favicon.ico** and select **Change Resource**.
+
+1. In **Change Resource**, select an ICO image with the new favicon.
+
+1. In **Search**, enter `favicon.png` and select **Search in this Module**.
+
+    <div class="info" mardkwon="1"> 
+
+    If you have just created your app, the **'favicon.png' occurrences in Module** search tab shows four occurrences of favicon.png, all in different **AddFavicon** actions.
+
+    </div>
+
+1. In the **'favicon.png' occurrences in Module** search tab, select **REPLACE ALL OCCURRENCES**.
+
+1. Enter `favicon.ico` and select **OK**.
+
+After publishing your Module, test your app and make sure the new favicon is shown.
+
+## Troubleshooting
+
+If you are testing your app and your new favicon is not appearing, it may be because the old favicon is still in cache. If you are using Chrome to test your app, right-click the tab with your app and select **Reload**. 
