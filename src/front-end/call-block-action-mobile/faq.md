@@ -37,6 +37,8 @@ wbElement.validatePhone();
 
 ![image alt text](images/How-to-Call-a-Block-Action-in-a-Mobile-Screen_3.png)
 
+An improved approach would be to encapsulate this second JavaScript inside a global Client Action (e.g. PhoneNumberValidate(PhoneNumberBlockId)), so the caller screen can do everything only with low-code.
+
 <div class="info" markdown="1">
 **You can only select a block "Id" runtime property in the Expression Editor if you have given the block a name.** In the example above, the source block name is "PhoneNumber", but after dragging it into the consumer screen (creating a block instance) it was named "PhoneNumberBlock" in the properties editor.
 </div>
