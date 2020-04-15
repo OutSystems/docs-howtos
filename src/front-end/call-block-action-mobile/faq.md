@@ -4,7 +4,7 @@
 
 When working with big forms, I need to split them into several Blocks. In the mobile screen containing those Blocks, how can I trigger the validation actions of each Block?
 
-![image alt text](images/How-to-Call-a-Block-Action-in-a-Mobile-Screen_0.png)
+![](images/How-to-Call-a-Block-Action-in-a-Mobile-Screen_0.png)
 
 ### Answer
 
@@ -20,12 +20,12 @@ var wbElement = document.getElementById($parameters.rootId).parentElement;
 wbElement.validatePhone = $actions.ValidatePhoneNumber;
 ```
 
-![image alt text](images/How-to-Call-a-Block-Action-in-a-Mobile-Screen_1.png)
+![](images/How-to-Call-a-Block-Action-in-a-Mobile-Screen_1.png)
  
 
 3. Pass the Id of the top Container as a parameter to the JavaScript node:
 
-![image alt text](images/How-to-Call-a-Block-Action-in-a-Mobile-Screen_2.png)
+![](images/How-to-Call-a-Block-Action-in-a-Mobile-Screen_2.png)
  
 
 4. In the consumer screen, use a JavaScript node to access the JavaScript function defined in the Block DOM element, passing the Block Id as a parameter. In this example, we use the **BlockId** to get Block DOM element and call its **validatePhone** function:
@@ -35,7 +35,7 @@ var wbElement = document.getElementById($parameters.BlockId);
 wbElement.validatePhone();
 ```
 
-![image alt text](images/How-to-Call-a-Block-Action-in-a-Mobile-Screen_3.png)
+![](images/How-to-Call-a-Block-Action-in-a-Mobile-Screen_3.png)
 
 An improved approach is to put this second JavaScript inside a global Client Action (for example, **PhoneNumberValidate(PhoneNumberBlockId)**), so the caller Screen runs low code.
 
