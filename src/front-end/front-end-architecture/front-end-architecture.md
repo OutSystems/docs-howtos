@@ -27,8 +27,8 @@ The following graphic shows how to structure the Front-end architecture at OutSy
 The OutSystems UI is the base application, containing all the UI patterns and screen templates ready to use.
 
 The red squares represent the **OutSystems UI** patterns.
-The light blue squares represent the changed styles that have the rules to customize your **Corporate Styles**. These base on the **OutSystems UI**.
-The light blue triangles represent the new patterns.
+The yellow squares represent the changed styles that have the rules to customize your **Corporate Styles**. These are based on the **OutSystems UI**.
+The yellow triangles represent new **Corporate Styles** patterns.
 These square and triangle patterns defined at **Corporate Styles** are used in all your applications and can be changed at specific Themes. For example, the **Apps** theme on the left side has a new circle pattern, the **Internal Apps** theme has a new pentagon pattern, and the **Partners Apps** theme has a new diamond pattern.
 
 You can have several applications based on these themes. At the current example, you have external apps that share the same properties defined in the **Apps** theme, internal apps that share the same **Internal Apps** theme, and partner apps that share the **Partner Apps** theme, all these based on the **Corporate Styles**.
