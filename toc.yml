@@ -70,7 +70,7 @@
 - topics:
     - href: processes/archive-bpt/faq.md
     - href: processes/configure-epa-taskbox/faq.md
-    - href: dev-faqs/reactive-taskbox/intro.md
+    - href: processes/reactive-taskbox/intro.md
 
 # DevOps How-tos
 - href: devops/intro.md

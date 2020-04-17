@@ -7,13 +7,17 @@ summary: Use the Reactive Taskbox component to let your users assign themselves 
 
 Taskbox is part of the user interface that lets your users handle tasks issued by Business Process Technology (BPT). To show a taskbox in Reactive Web Apps, use the Taskbox Block from the Sample Reactive Taskbox component. 
 
-
 ![Tasks list in browser / app](<images/taskbox-browser-preview-expanded.png?width=400>)
 
 Install the component and reference it in your app, then navigate to **Interface** > **UI Flows** > **SampleReactiveTaskbox** > **Taskbox** >  **Taskbox**. We recommend that you drag the Taskbox Block to one of the layout Block, to ensure the tasks show in all screens of the app.
 
 ![Taskbox Block in Service Studio](<images/taskbox-block-ss.png?width=300>)
 
+<div class="warning" markdown="1">
+
+The Sample Reactive Taskbox component is currently not available in Forge. The team is working on it.
+
+</div>
 
 ## Create an example Process and show Taskbox
 
