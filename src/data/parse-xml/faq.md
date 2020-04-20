@@ -71,7 +71,7 @@ To extract the web books information from the XML file follow these steps:
 1. Add a **XmlDocument_SelectNodes** Action from the XML Extension after the previous action. Set the `XmlDocument` input to `XmlDocument_Load_v2.XmlDocument` and set the `XPathString` input to `"/bookstore/book[@category='web']"`.
 
     This returns an XPath filtered list of books that belong to the web category. 
-
+    
 1. Add a **XmlNodeList_Count** Action from the XML Extension after the previous action and set the `XmlNodeList` input to `XmlDocument_SelectNodes.XmlNodeList`.
 
     This counts the total number of web books in the filtered list. 
