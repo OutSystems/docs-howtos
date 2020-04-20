@@ -26,3 +26,16 @@
             https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Web_Patterns/Controls/Video
         - "OutSystems UI Iframe Pattern":
             https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Web_Patterns/Utilities/Iframe
+
+- data/parse-xml/faq.md:
+    - external:
+        - "W3Schools: XPath Tutorial":
+            https://www.w3schools.com/xml/xpath_intro.asp
+        - "MDN Web Docs: XSLT/XPath Reference":
+            https://developer.mozilla.org/en-US/docs/Web/XPath
+        - "CodeBeautify XPath Tester":
+            https://codebeautify.org/Xpath-Tester
+        - "ExtendClass XPath Tester":
+            https://extendsclass.com/xpath-tester.html
+        - "FreeFormatter XPath Tester":
+            https://www.freeformatter.com/xpath-tester.html
