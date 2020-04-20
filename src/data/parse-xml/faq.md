@@ -72,10 +72,12 @@ To extract the web books information from the XML file follow these steps:
 
     This returns an XPath filtered list of books that belong to the web category. 
     
-    There are many online resources to try XPath:
+    To learn more about XPath and its syntax, you may refer to one of the many tutorials on the web, such as [W3Schools](https://www.w3schools.com/xml/xpath_intro.asp).
+    
+    There also are many online resources to test your XPath expression, such as:
     * https://extendsclass.com/xpath-tester.html
     * https://www.freeformatter.com/xpath-tester.html
-    * https://www.online-toolz.com/tools/xpath-tester-online.php
+    * https://codebeautify.org/Xpath-Tester
 
 1. Add a **XmlNodeList_Count** Action from the XML Extension after the previous action and set the `XmlNodeList` input to `XmlDocument_SelectNodes.XmlNodeList`.
 
