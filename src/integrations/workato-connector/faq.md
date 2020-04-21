@@ -1,4 +1,15 @@
+---
+summary: Use the OutSystems Workato Connector to take full advantage of the Workato platform without any custom development.
+---
+
 # How to integrate OutSystems with Workato
+
+<pre class="script-css">
+/* HIDE H3, H4 AND H5 FROM TOC */
+#mt-toc-container li li li {
+    display:none;
+}
+</pre>
 
 The **OutSystems Workato Connector** allows you to take full advantage of Workato platform without any custom development.
 
@@ -9,7 +20,7 @@ After installing the connector and setting up access rules, you will be able to:
 * Sync any Workato workflow you use with your OS environment.
 * Build engaging user experiences with your own data, and external data such as a billing app, field services app, or a 360º customer view.
 
-![](images/workato-diagram.png?width=700)
+![](images/workato-diagram.png?width=400)
 
 
 ## Installation overview
