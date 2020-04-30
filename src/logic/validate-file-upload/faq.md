@@ -1,17 +1,17 @@
 ---
-tags: version-10; deployment; upload
+tags: version-11; deployment; upload; runtime-traditionalweb
 summary: 
 ---
 
-# How to validate file input on a File Upload Widget in a Web Application
+# How to validate file input on a File Upload Widget in a Traditional Web App
 
-* How do I verify if the end user chose a file in the  **Upload Widget** before submitting? 
-* How do I verify if the file the end user chose is empty? 
+* How do I verify if the end user chose a file in the  **Upload Widget** before submitting?
+* How do I verify if the file the end user chose is empty?
 * How do I validate the file type?
 
 ## Answer
 
-Unlike other Widgets, in Web Applications the File Upload Widget doesn't have `Valid` or `Validation Message` properties. You have to create your own custom validation.
+Unlike other Widgets, in Traditional Web Apps the File Upload Widget doesn't have `Valid` or `Validation Message` properties. You have to create your own custom validation.
 
 The following screenshot includes a simple snippet of three different custom validations using the runtime properties of the Upload Widget (named **UploadFile** in this case):
 
