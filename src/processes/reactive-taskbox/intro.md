@@ -13,12 +13,6 @@ Install the component and reference it in your app, then navigate to **Interface
 
 ![Taskbox Block in Service Studio](<images/taskbox-block-ss.png?width=300>)
 
-<div class="warning" markdown="1">
-
-The Sample Reactive Taskbox component is currently not available in Forge. The team is working on it.
-
-</div>
-
 ## Create an example Process and show Taskbox
 
 <div class="info" markdown="1">
