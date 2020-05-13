@@ -26,7 +26,7 @@ One of the scenarios is when a user tries to access a resource that requires the
 
 In that case, the application raises a Security exception that will be handled in Common flow and then redirects the user to the login screen.
 
-So, the first step to integrate an OutSystems application to change this behaviour, and instead of redirect the user to the Login screen, redirect it to the Identity Provider.
+So, the first step to integrate an OutSystems application to change this behavior, and instead of redirect the user to the Login screen, redirect it to the Identity Provider.
 
 1. Change **Preparation** of the **NoPermission** screen to redirect the user to the URL provided by **IdP_SSO_URL** action.
 
@@ -42,7 +42,7 @@ In a standard OutSystems application the Common Flow is also responsible for han
 
 By default, the Logout will invalidate the session on the OutSystems application server, but with an IdP SSO scenario many times the logout must be also performed on IdP Server, redirecting the browser to a specific URL on IdP SSO server.
 
-So, in order to achieve that, it's necessary to change the Logout default behaviour.
+So, in order to achieve that, it's necessary to change the Logout default behavior.
 
 If your IdP Server allows a Logout initiated by the SP (IdP Connector), then configure the field **IdP server Single Logout URL** which should be provided by your IdP Server (the IdP Connector will generate the SAML messages to perform a Single-Logout).
 

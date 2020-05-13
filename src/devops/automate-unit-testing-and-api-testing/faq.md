@@ -182,7 +182,7 @@ Now, open the **When** screen action and call the target application server acti
 
 ![Unit03_when.png](images/createwhen.png)
 
-We recommend a black-box approach where the test should rely only on the specification of the behaviour. Tests should consider the results obtained for each input data, and not on knowledge of the code “inside” the server action that is being tested.
+We recommend a black-box approach where the test should rely only on the specification of the behavior. Tests should consider the results obtained for each input data, and not on knowledge of the code “inside” the server action that is being tested.
 Only one test should be performed, that is, only one call to one server action.
 
 If the application usually calls other server actions in sequence, for instance, create a “Case” and increment a global counter, then some alternatives should be explored:
