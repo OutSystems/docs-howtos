@@ -47,5 +47,5 @@ If you want to embed a video from a streaming platform like YouTube, Vimeo, or o
 
 1. Type the Height and Width values you wrote down to embed the video with its default size or use your own values. This field is optional.
 
-1. Your video is now embeded in your application.
+Your video is now embedded in your application.
     
