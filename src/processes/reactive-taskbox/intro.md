@@ -5,7 +5,7 @@ summary: Use the Reactive Taskbox component to let your users assign themselves 
 
 # Using Taskbox in Reactive Web Apps
 
-Taskbox is part of the user interface that lets your users handle tasks issued by Business Process Technology (BPT). To show a taskbox in Reactive Web Apps, use the Taskbox Block from the Sample Reactive Taskbox component. 
+Taskbox is part of the user interface that lets your users handle tasks issued by Business Process Technology (BPT). To show a taskbox in Reactive Web Apps, use the Taskbox Block from the [Sample Reactive Taskbox component](https://www.outsystems.com/forge/component-overview/8355/sample-reactive-taskbox). 
 
 ![Tasks list in browser / app](<images/taskbox-browser-preview-expanded.png?width=400>)
 
