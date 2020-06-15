@@ -12,6 +12,7 @@ There are different ways to add videos to your OutSystems web applications:
 * [By using a video file reached via URL](#add-video-files-to-your-app);
 * [By using a local video file kept as a Resource](#add-video-files-to-your-app);
 * [By streaming a video from YouTube, Vimeo, or other streaming platforms](#how-to-embed-video-streaming).
+* [By using the YouTubeReactive component](https://www.outsystems.com/forge/component-overview/8604/youtubereactive) available in the [OutSystems Forge](https://www.outsystems.com/forge/) for (Reactive Web only).
 
 
 ## How to Add Video Files to Your Web Application { #add-video-files-to-your-app }
