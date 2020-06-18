@@ -9,8 +9,8 @@ tags:
 This article was written by [Rúben Bonito](https://www.outsystems.com/profile/87379/), OutSystems MVP.
 </div>
 
-In this article, we will implement animated and styled dialog messages on **OutSystems Reactive Web Apps**. 
-
+This article shows how to implement animated and styled dialog messages on **OutSystems Reactive Web Apps**. 
+ 
 To do it:
 
 1.  Upload the 2 JavaScript libraries ([promisepolyfill](https://www.jsdelivr.com/package/npm/promise-polyfill) and [sweetalert2_min](https://www.jsdelivr.com/package/npm/sweetalert2)) into your OutSystems application, by clicking the Scripts folder, with the opposite button and select Import Script.
@@ -27,7 +27,7 @@ To do it:
 
 	![](images/create-styled-dialogs_3.png)
 
-1. On the event "On Render" associate a client action that will execute the following JavaScript code:
+1. On the event "On Render" associate a client action to execute the following JavaScript code:
        
         var latetoast = sessionStorage.getItem("latetoast");
 
@@ -52,7 +52,7 @@ To do it:
 
 1. Drag the block to your application’s layout header.
 
-	<div class="info" markdown="1"> To shorten the article, I will only describe the most complex type of dialog messages, the confirmation dialog message. All the other types have a very similar or easier implementation process.
+	<div class="info" markdown="1"> To make this how-to shorter, it only describes the implementation for the most complex type of dialog messages, the confirmation dialog message. All the other types have a very similar or easier implementation process.
 	</div>
 
 1. Create a client action with all the inputs visible in the following picture:
@@ -86,12 +86,12 @@ To do it:
 
 1. Create a button in your screen that when clicked by the user executes a screen action. 
 
-	This screen action will have inside the Confirmation Dialog client action ( created on Step 6) which require that you fill in the following inputs:
+	This screen action has the Confirmation Dialog client action (created on Step 6) which require that you fill in the following inputs:
 
 	![](images/create-styled-dialogs_5.png)
 
 
-Finally, publish your application and the result, when the button is clicked, will be this:
+Finally, publish your application and the result, when you click on the confirmation button, is:
 
 ![](images/create-styled-dialogs_6.png)
 
