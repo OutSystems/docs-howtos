@@ -13,10 +13,12 @@
 # Front-End How-tos
 - href: front-end/intro.md
 - topics:
+
     - href: front-end/add-video-to-applications/faq.md
     - href: front-end/call-block-action-mobile/faq.md
     - href: front-end/create-search-autocomplete/faq.md
-    - href: front-end/date-picker-year/faq.md     
+    - href: front-end/date-picker-year/faq.md
+    - href: front-end/ext-rb-create-styled-dialogs/ext-rb-create-styled-dialogs.md         
     - href: front-end/front-end-architecture/front-end-architecture.md
     - href: front-end/hide-scrollbar-listbox/faq.md
     - href: front-end/html-tags/faq.md
