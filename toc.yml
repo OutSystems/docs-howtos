@@ -9,6 +9,11 @@
     - href: development/list-sort-sql/faq.md
     - href: development/change-session-timeout/faq.md
     - href: development/ext-jj-auth0/ext-jj-auth0.md
+    - href: development/hierarchical-roles/faq.md
+    - topics:
+        - href: development/hierarchical-roles/hierarchical-and-static-roles.md
+        - href: development/hierarchical-roles/hands-on.md
+        - href: development/hierarchical-roles/demo.md
 
 # Front-End How-tos
 - href: front-end/intro.md

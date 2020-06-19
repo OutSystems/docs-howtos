@@ -34,3 +34,17 @@
             https://extendsclass.com/xpath-tester.html
         - "FreeFormatter XPath Tester":
             https://www.freeformatter.com/xpath-tester.html
+
+# --- Hierarchical roles ---
+
+- development/hierarchical-roles/faq.md:
+    - development/hierarchical-roles/hierarchical-and-static-roles.md
+    - development/hierarchical-roles/hands-on.md
+    - development/hierarchical-roles/demo.md
+
+- development/hierarchical-roles/hierarchical-and-static-roles.md:            
+    - development/hierarchical-roles/hands-on.md
+    - development/hierarchical-roles/demo.md
+
+- development/hierarchical-roles/hands-on.md:
+    - development/hierarchical-roles/demo.md
