@@ -1,0 +1,11 @@
+build:
+    title: OutSystems How-to Guides
+    input-folder: src
+    output-folder: build
+    related-title: See Also
+publish:
+    url: https://success.outsystems.com/
+    root_path: Documentation/How-to_Guides
+    toc_url: https://success.outsystems.com/
+    toc_root_path: Documentation/How-to_Guides
+    skip_toc_publish: false
