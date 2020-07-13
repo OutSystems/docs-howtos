@@ -1,5 +1,5 @@
 ---
-tags: version-10; support-Database; support-Front_end_Development; support-webapps;
+tags: runtime-traditionalweb; version-11; support-Database; support-Front_end_Development; support-webapps;
 summary: 
 ---
 
@@ -17,11 +17,11 @@ To to use the List Sort Column widget with a **SQL** query follow these steps:
 
 1. Add the SQL snippet `ORDER BY @SORT` to your **SQL** query.
 
-1. Define the `SORT` Parameter of your **SQL** query as `List_SortColumn_GetOrderBy(LocationTable.Id,DefaultOrder:"{<Entity>}.[<Attribute>]")`, where `DefaultOrder:"{<Entity>}.[<Attribute>]"` defines that by default the **SQL** query will be sorted ascendantly by Attribute `<Attribute>` (of the Entity `<Entity>`)
+1. Define the `SORT` Parameter of your **SQL** query as `List_SortColumn_GetOrderBy(<TableRecordsName>.Id,DefaultOrder:"{<Entity>}.[<Attribute>]")`, where `DefaultOrder:"{<Entity>}.[<Attribute>]"` defines that by default the **SQL** query will be sorted ascendantly by Attribute `<Attribute>` (of the Entity `<Entity>`), and `<TableRecordsName>` is the name of the Table Records.
 
     ![SORT query Parameter](images/list-sort-sql-02.png?width=800)
 
-    The `List_SortColumn_GetOrderBy()` Function returns the column to sort by.
+    The `List_SortColumn_GetOrderBy()` function returns the column to sort by.
 
 1. Implement List Sort Column Rich Widgets in your Table Records Widget as you would do if you were using an Aggregate: 
 
