@@ -18,11 +18,9 @@
 # Front-End How-tos
 - href: front-end/intro.md
 - topics:
-
     - href: front-end/add-video-to-applications/faq.md
     - href: front-end/call-block-action-mobile/faq.md
     - href: front-end/create-search-autocomplete/faq.md
-    - href: front-end/date-picker-year/faq.md
     - href: front-end/ext-rb-create-styled-dialogs/ext-rb-create-styled-dialogs.md         
     - href: front-end/front-end-architecture/front-end-architecture.md
     - href: front-end/hide-scrollbar-listbox/faq.md
@@ -45,7 +43,7 @@
     - href: front-end/table-records-fixed-header/faq.md
     - href: front-end/validation-messages-location/faq.md
 
-#Logic How-tos
+# Logic How-tos
 - href: logic/intro.md
 - topics:
     - href: logic/combine-line-graph-bar-chart/faq.md     
@@ -94,7 +92,7 @@
     - href: devops/ui-testing-selenium/faq.md
     - href: devops/building-pipeline-air-gap-stage/faq.md
 
-#Integrations How-tos
+# Integrations How-tos
 - href: integrations/intro.md
 - topics:
     - href: integrations/call-SOAP-authentication/faq.md
