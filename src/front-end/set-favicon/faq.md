@@ -26,7 +26,9 @@ If your Web Application **does not use a SILK UI Template** follow these steps t
     ![Import Images](images/no-silk-01.png)
 
     <div class="info" markdown="1">
+
     If you are using .ico images they will not be listed in the Import Image... window. As a workaround navigate to where your image is placed, manually input/paste the file name (for example `favicon.ico`) in the File name field and press Open.
+
     </div>
 
 1. To use the same favicon across all the screens of your application include the **AddFaviconTag** action inside the Preparation of the Menu Web Block. Set the `IconFilename` to `"/<menu_module>/img/<your_favicon>.<file_type>"`. 
