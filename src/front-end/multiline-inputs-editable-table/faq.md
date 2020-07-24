@@ -10,13 +10,13 @@ When I press the `Enter` key, the row is automatically saved.
 
 Editable Table does not support inputs with new lines. However, you can use JavaScript code to work around the limitation.
 
-1. Make sure the Text Area input has the **Name** property set (e.g. **myTextArea**).
+1. Make sure the Text Area input has the **Name** property set (for example, `myTextArea`).
 
-2. Right after this input, add an expression with property **Escape Content** set to `No`.
+2. Right after this input, add an Expression with the **Escape Content** property set to `No`.
 
-3. Change the expression's **Example** property to something more meaningful, such as "`<Script: Allow Enter>`".
+3. Change the Expression's **Example** property to something more meaningful, such as "`<Script: Allow Enter>`".
 
-4. In the **Expression** value, enter the following JavaScript code, replacing `myTextArea` with the name of your input:
+4. In the Expression value, enter the following JavaScript code, replacing `myTextArea` with the name of your input:
 
 ```
 "<script language='javascript'>  
