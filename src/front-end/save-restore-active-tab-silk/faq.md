@@ -22,7 +22,7 @@ For example:
 
 2. Add an Input field to the screen or web block, with properties:
 
-    1. Style = *RememberTabInput*
+    1. Style Classes = *RememberTabInput*
 
     2. Extended properties: name = *style*, value = "display:none;"
 
@@ -30,7 +30,7 @@ For example:
 
 3. Add a Button to the screen or web block, with properties:
 
-    4. Style = *RememberTabButton*
+    4. Style Classes = *RememberTabButton*
 
     5. Method = *Ajax Submit*
 
