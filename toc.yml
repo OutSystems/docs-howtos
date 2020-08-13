@@ -2,7 +2,6 @@
 - href: development/intro.md
 - topics:
     - href: development/create-lifetime-plugin/faq.md
-    - href: development/mobile-deep-links/faq.md
     - href: development/reduce-size-espace/faq.md        
     - href: development/data-grid/faq.md
     - href: development/table-sort-sql/faq.md
