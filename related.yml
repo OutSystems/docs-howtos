@@ -9,6 +9,15 @@
             https://success.outsystems.com/Documentation/Best_Practices/Front-End_Architecture_Best_Practices
         - "Design UI":
             https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI
+
+- integrations/include-jquery-plugin/faq.md:
+    - external:
+        - "Using JavaScript":
+            https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/JavaScript
+        - "About resources":
+            https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Data/Handling_Data/Resource
+        - "Expression":
+            https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Data/Handling_Data/Resource
             
 - data/concurrent-updates/faq.md:
     - external:
