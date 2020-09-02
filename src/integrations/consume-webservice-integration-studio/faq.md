@@ -1,72 +1,77 @@
+---
+summary: Learn how to consume a Web Service in Integration Studio.
+tags: support-application_development; support-Integrations_Extensions; support-Integrations_Extensions-featured
+---
+
 # How to consume a Web Service in Integration Studio
 
-The OutSystems Platform includes a feature to import Web Services and automatically create the code and data structures to be able to call Web Service methods just like if we were using actions built with Service Studio.
+OutSystems includes a [feature to import Web Services](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/SOAP/Consuming_SOAP_Web_Services) and automatically create the code and data structures to be able to call Web Service methods, just like you were using actions built with Service Studio.
 
-However, there are some patterns of web services which cannot be natively consumed with this feature. For these cases, the alternative will most of the times be to consume the Web Service in Integration Studio.
+However, there are some patterns of Web Services which can't be natively consumed with this feature. For these cases, the alternative is to consume the Web Service in Integration Studio.
 
-This post explains step by step how to create an Extension to consume a web service using Integration Studio and then using it in Service Studio. The basic layout of what you need to do is the following:
+This article explains step by step how to create an Extension to consume a Web Service using Integration Studio. The basic layout of what you need to do is the following:
 
-1. Create an extension with one Action for every web service method you need to use
+1. Create an Extension with one Action for every Web Service method you need to use.
 
-2. Create a data model (structures) to represent the data types in your web service
+1. Create a data model (structures) to represent the data types in your Web Service.
 
-3. Import the web service in the extension's code using Visual Studio
+1. Import the Web Service in the Extension's code using Visual Studio.
 
-4. In the action implementation you'll need to call the web service method by mapping the inputs and outputs from the web service datatypes to your extension data model.
+1. In the Action implementation, call the Web Service method by mapping the inputs and outputs from the Web Service data types to your Extension data model.
 
-This post will cheat through steps 2 and 4 by having a very simple data model, but that is usually where most development time will be spent.
+This article cheats through steps 2 and 4 by having a very simple data model, but that's usually where you spend most development time.
 
-To illustrate how to consume a web service, I have created an eSpace which provides the web service to be consumed by our extension. This simple web service is called HelloWorld and contains only one method named Ping which returns the input Text with "pong: " prepended to it.
+## Consume a Web Service in Integration Studio
 
-To consume this webservice you need to create an Action for the Ping method, and setup its inputs and outputs according to the data types defined in the web service. In this case, the types are simple Texts, in most cases this might get a bit more complex with structures to hold more complex data types.
+The example below shows a simple Web Service named HelloWorld that contains only one method, named Ping. This method returns the input Text with "pong: " prepended to it.
 
-![image alt text](images/How-to-consume-a-Web-Service-in-Integration-Studio_0.png)
+To consume this Webs Service, do the following:
 
-Once the action is created, we need to implement it. For that we open the extension's source code by clicking the "Edit Source Code .NET" button on the toolbar.
+1. Create an Action for the Ping method, and set up its inputs and outputs according to the data types defined in the Web Service. In this case, the types are simple Texts. Usually, this might get a bit more complex with structures to hold more complex data types.
 
-![image alt text](images/How-to-consume-a-Web-Service-in-Integration-Studio_1.png)
+    ![Create action in Integration Studio](images/How-to-consume-a-Web-Service-in-Integration-Studio_0.png)
 
-This will open Visual Studio and now we need to import the Web Reference in .Net.
+1. Now you need to implement the Action. For that, open the extension's source code by clicking the "Edit Source Code .NET" button on the toolbar.
 
-Right Click on "Service References" and click "Add Service Reference..."
+    ![Integration Studio toolbar](images/How-to-consume-a-Web-Service-in-Integration-Studio_1.png)
 
-![image alt text](images/How-to-consume-a-Web-Service-in-Integration-Studio_2.png)
+    This opens Visual Studio. Now you need to import the Web Reference in .Net.
 
-Click "Advanced..."
+1. Right Click on "Service References" and click "Add Service Reference..."
 
-![image alt text](images/How-to-consume-a-Web-Service-in-Integration-Studio_3.png)
+    ![Add service reference](images/How-to-consume-a-Web-Service-in-Integration-Studio_2.png)
 
-Click "Add Web Reference..."
+1. Click "Advanced..."
 
-![image alt text](images/How-to-consume-a-Web-Service-in-Integration-Studio_4.png)
+    ![Add service reference advanced settings](images/How-to-consume-a-Web-Service-in-Integration-Studio_3.png)
 
-Fill the URL Field with the path to your WSDL and click the little green arrow.
+1. Click "Add Web Reference..."
 
-![image alt text](images/How-to-consume-a-Web-Service-in-Integration-Studio_5.png)
+    ![Add web reference](images/How-to-consume-a-Web-Service-in-Integration-Studio_4.png)
 
-After the WSDL is loaded and all the information seems correct, click "Add Reference" to add it to your project.
+1. Fill the URL Field with the path to your WSDL and click the little green arrow.
 
-![image alt text](images/How-to-consume-a-Web-Service-in-Integration-Studio_6.png)
+    ![Add web reference URL](images/How-to-consume-a-Web-Service-in-Integration-Studio_5.png)
 
-Now all there is to do is implement our Ping Action so that it calls the web service.
+1. After the WSDL loads and all the information seems correct, click "Add Reference" to add it to your project.
 
-Edit the WebServiceConsume.cs file to add 
+    ![Add reference to project](images/How-to-consume-a-Web-Service-in-Integration-Studio_6.png)
 
-```
-using  OutSystems.NssWebServiceConsume.vmos60netx64;
-```
+    Now you only have to implement the Ping Action so that it calls the Web Service.
 
-to the header and implement the MssPing method with:
-```
-HelloWorld webservice = new  HelloWorld();
-ssOutput = webservice.Ping(ssInput);       
-```
+1. Edit the WebServiceConsume.cs file and add the following to the header:
 
-Close Visual Studio, Verify and Save the Extension and publish it on the server.
+        using  OutSystems.NssWebServiceConsume.vmos60netx64;
 
-Now eSpaces will be able to reference this extension's Ping Action and use the HelloWorld web service.
+1. Implement the MssPing method with:
 
-You can find the eSpace (with an example usage of the Ping Action in the entry Web Screen) and the extension used in this tutorial in attachment so you can inspect the code yourself.
+        HelloWorld webservice = new  HelloWorld();
+        ssOutput = webservice.Ping(ssInput);
 
-With this you can import any Web Service supported by Visual Studio into the OutSystems Platform.
+1. Close Visual Studio, Verify and Save the Extension, and publish it on the server.
 
+Now, your modules can reference this Extension's Ping Action and use the HelloWorld Web Service.
+
+With this you can import any Web Service supported by Visual Studio into OutSystems.
+
+To inspect the code yourself, check out [this sample app](https://www.outsystems.com/forge/component-overview/7374/webservice-via-extension-sample-app) published by the OutSystems community.

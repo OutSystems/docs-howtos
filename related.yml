@@ -1,7 +1,14 @@
+# --- Integrations ---
+
 - integrations/use-push-notifications-with-onesignal/faq.md:
     - external:
         - "OneSignal Plugin Sample": 
             https://www.outsystems.com/forge/component-overview/4198/onesignal-plugin-sample
+
+- integrations/consume-webservice-integration-studio/faq.md:
+    - external:
+        - "Consuming SOAP Web Services": 
+            https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/SOAP/Consuming_SOAP_Web_Services
 
 - front-end/front-end-architecture/front-end-architecture.md:
     - external:
