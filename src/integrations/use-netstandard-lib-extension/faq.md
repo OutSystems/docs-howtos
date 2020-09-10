@@ -1,5 +1,5 @@
 ---
-summary: Take advantage of the improved support for .NET Standard in .NET Framework 4.7.2 and check how to use .NET Standard libraries in your OutSystems extensions.
+summary: Check how you can use .NET Standard libraries in your OutSystems extensions.
 tags: 
 ---
 
