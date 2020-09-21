@@ -19,9 +19,13 @@ Create a **UserExtended** Entity, modify the `Data Type` of the Identifier to `U
 
 To add extra logic to the **Users**' login, include the extra authentication logic in an Action and add this Action to the login flow. 
 
+### In Traditional Web
+
 For **Web Applications** modify the login flow in the **Login** Action located in the **Login** Screen of the **Common** UI FLow.
 
 ![Custom login flow](images/users-login-extra-01.png)
+
+### In Mobile
 
 For **Mobile Apps** modify the login flow in the **DoLogin** Server Action located in the Authentication Folder.
 
