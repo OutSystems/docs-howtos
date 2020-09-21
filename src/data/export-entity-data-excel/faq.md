@@ -11,7 +11,7 @@ We've been working on this article. Please let us know how useful this new versi
 
 To export the data you must use the **Record List To Excel** action. This generates an Excel worksheet with the data existing on a selected entity. You then need to enable the user to download the generated Excel file. 
 
-This article shows how it's done in both [Reactive web](#Exporting-data-to-Excel-in-reactive-web) and [Traditional web](#Exporting-data-to-Excel-in-traditional-web).
+This article shows how it's done in both [Reactive web](#Exporting_data_to_Excel_in_reactive_web) and [Traditional web](#Exporting_data_to_Excel_in_traditional_web).
 
 <div class="info" markdown="1">
 In reactive web the **Record List To Excel** action is only available in server actions. 
@@ -104,4 +104,4 @@ If it's expected that the user downloads the file several times, you may want to
 
     ![Export Entity to Excel](images\export_entity_data_to_excel1.png)
 
-Now that you have created everything on the screen, from this moment on you can follow the [same instructions as in Reactive web](#Creating-the-download-logic) to add the necessary logic.
+Now that you have created everything on the screen, from this moment on you can follow the [same instructions as in Reactive web](#Creating_the_download_logic) to add the necessary logic.
