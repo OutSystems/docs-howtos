@@ -5,6 +5,10 @@ tags: OutSystems_How_To; OutSystems_Export_Entity_Data; OutSystems_Export_Entity
 
 # How to export entity data to Excel
 
+<div class="info" markdown="1">
+We've been working on this article. Please let us know how useful this new version is by voting.
+</div>
+
 To export the data you must use the **Record List To Excel** action. This generates an Excel worksheet with the data existing on a selected entity. You then need to enable the user to download the generated Excel file. 
 
 This article shows how it's done in both [Reactive web](#Exporting-data-to-Excel-in-reactive-web) and [Traditional web](#Exporting-data-to-Excel-in-traditional-web).
