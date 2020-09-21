@@ -1,6 +1,6 @@
 ---
-tags: version-10; Users;
-summary: 
+tags: version-11; Users; Authentication; Login
+summary: Extend the Users' login flow to perform extra and custom validations
 ---
 
 # How to add extra logic to Users' login
