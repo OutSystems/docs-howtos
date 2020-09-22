@@ -20,7 +20,7 @@ To successfully extend the existing end-users login logic you will need to perfo
 
 ## Extend the Users' data model
 
-The existing Users data model cannot be modified, since it part of the core of the OutSystems platform.
+The existing Users data model cannot be modified, since it is part of the core of the OutSystems platform.
 However it can be extended, which allows for customizations while still relying on the core authentications mechanisms.
 
 To extend the Users' data model it is required to create a new Entity with a [1-to-1 relationship](https://success.outsystems.com/Documentation/11/Developing_an_Application/Use_Data/Data_Modeling/Entity_Relationships/Create_a_One-to-One_Relationship) to the User entity.
@@ -46,20 +46,20 @@ For instance, add an attribute named **ExpirationDate** with the _Date_ data typ
 
     The attribute used here is an example.
     Later on, we will validate that the expiration date is in the future, and in such case the user will be able to login, otherwise, the login will be denied.
-    Note that we are not implementing the funcionationality to fill the attribute with data.
-    For that, you would need to create a backoffice or automate the creation of the records in the UserExtension entity.
+    Note that we are not implementing the functionality to fill the attribute with data.
+    For that, you would need to create a back office or automate the creation of the records in the UserExtension entity.
 
 ## Create the server-side validation logic
 
 For security reasons, all validations related to authentication should be done at the server-side (i.e. inside a Server Action).
 
 In the following steps a Server Action will be created that validates if the Expiration Date is in the future.
-In the oposite scenario, the expiration date is in the past, an Exception will be raised.
+In the opposite scenario, the expiration date is in the past, an Exception will be raised.
 
 1. In the Logic tab, create a new Server Action named **ValidateUserExpirationDate**.
 
 1. Inside the flow of the _ValidateUserExpirationDate_ server action, add an Aggregate that fetches the data from the UserExtension entity.
-Use the following filter `UserExtension.Id = GetUserId()` to ony fetch the data for the current user.
+Use the following filter `UserExtension.Id = GetUserId()` to fetch only the data for the current user.
 
     As best practice you may also set the Max. Records property of the Aggregate to 1.
 
@@ -76,7 +76,7 @@ Use the following filter `UserExtension.Id = GetUserId()` to ony fetch the data 
     ![ValidateUserExpirationDate flow](./images/users-login-extra-validateuserexpirationdate-flow.png)
 
     More complex validations can be performed depending on your specific use case.
-    Adapt the server action created to match you specific requirements.
+    Adapt the server action created to match your specific requirements.
 
 ## Change the default Login action
 
@@ -96,19 +96,19 @@ This Server Action can be found in the Logic tab under the Server Actions > Auth
 
 Extending the Login logic should be done at the server side, namely inside the DoLogin action.
 
-After the existing User_Login, add another Run Server Action to the **ValidateUserExpirationDate** server action created in the previous section.
+After the existing User_Login, add another **Run Server Action** to the **ValidateUserExpirationDate** server action created in the previous section.
 
 ![DoLogin Extended](./images/users-login-extra-dologin-extended.png)
 
-Note that due to the way the **ValidateUserExpirationDate** is defined, the actual login will be aborted (due to the raise exception) if the Expiration Date is in the past.
+Note that due to the way the **ValidateUserExpirationDate** is defined, the actual login will be aborted (due to the raised exception) if the Expiration Date is in the past.
 
 ### In Traditional Web
 
 The default login logic is implemented inside the Login screen (located in the Interface tab, under the Common UI Flow).
 
-Add a Run Server Action immediately after the User_Login to the **ValidateUserExpirationDate** server action created before.
+Add a **Run Server Action** immediately after the User_Login to the **ValidateUserExpirationDate** server action created before.
 
 ![Login Screen Action](./images/users-login-extra-login-traditional.png)
 
-Note that if the Expiration Data is in the past, an Exception will be raised inside the **ValidateUserExpirationDate**.
+Note that if the Expiration Date is in the past, an Exception will be raised inside the **ValidateUserExpirationDate**.
 That will cause the login to be aborted.
