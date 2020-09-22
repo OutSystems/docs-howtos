@@ -20,12 +20,10 @@ To successfully extend the existing end-users login logic you need to perform th
 
 ## Extend the Users' data model
 
-The existing Users data model can be extend but not modified, since it is a core component of the OutSystems platform.
+The existing Users data model can be extend but not modified, since it's a core component of OutSystems.
 However, extending it allows for customizations while still relying on the core authentication mechanisms.
 
 Extending the Users' data model requires creating a new Entity with a [1-to-1 relationship](https://success.outsystems.com/Documentation/11/Developing_an_Application/Use_Data/Data_Modeling/Entity_Relationships/Create_a_One-to-One_Relationship) to the User entity.
-
-# extending the users data model requires you to a new entity...
 
 You can apply the following steps in Reactive Web, Mobile, and Traditional Web applications.
 
@@ -55,7 +53,7 @@ For instance, add an attribute named **ExpirationDate** with the _Date_ data typ
 
 ## Create the server-side validation logic
 
-For security reasons, all validations related to authentication should be done at the server-side (i.e. inside a Server Action).
+For security reasons, all validations related to authentication should be done at the server-side (that is, inside a Server Action).
 
 The following steps describe the creation of a Server Action that validates if the Expiration Date is in the future.
 In the opposite scenario, if the expiration date is in the past, an Exception is raised.
