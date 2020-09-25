@@ -64,3 +64,16 @@
 
 - development/hierarchical-roles/hands-on.md:
     - development/hierarchical-roles/demo.md
+
+# --- Regular expressions ---
+
+- logic\regular-expressions/faq.md:
+    - external: 
+        - "Microsoft: .NET regular expressions":
+            https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expressions
+        - "Microsoft: Regular Expression Language - Quick Reference":
+            https://docs.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference
+        - "Regex Storm .NET regular expression tester":
+            http://regexstorm.net/tester
+        - "RegEx101 regular expression tester":
+            https://regex101.com/
