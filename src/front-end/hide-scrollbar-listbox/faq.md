@@ -1,13 +1,13 @@
 ---
 tags: version-11; css; list box; runtime-traditionalweb;
-summary: How to hide the scrollbar of a List Box.
+summary: How to hide the scroll bar of a List Box.
 ---
 
-# How to hide the scrollbar of a List Box
+# How to hide the scroll bar of a List Box
 
-How do I hide the vertical scrollbar in a List Box widget?
+How do I hide the vertical scroll bar in a List Box widget?
 
-For example: I set the Layout **Height** property to **100px** so all values are visible at runtime, and now I want to hide the unnecessary scrollbar.
+For example: I set the Layout **Height** property to **100px** so all values are visible at runtime, and now I want to hide the unnecessary scroll bar.
 
 ## Answer
 
