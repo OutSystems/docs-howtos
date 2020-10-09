@@ -48,4 +48,4 @@ To create a scrollable table that always shows the header, follow these steps:
         overflow-y: auto;
         padding-top: 0px;
 
-    This CSS sets the height of the body of your table to `200px`, adds a vertical scrollbar to your table body in case it is needed and removes the padding on the top of the table body.
+    This CSS sets the height of the body of your table to `200px`, adds a vertical scroll bar to your table body in case it is needed and removes the padding on the top of the table body.
