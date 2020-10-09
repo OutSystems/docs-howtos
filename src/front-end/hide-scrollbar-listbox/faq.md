@@ -1,6 +1,6 @@
 ---
 tags: version-11; css; list box; runtime-traditionalweb;
-summary: How to hide the scrollbar of a list box.
+summary: How to hide the scrollbar of a List Box.
 ---
 
 # How to hide the scrollbar of a List Box
@@ -17,10 +17,8 @@ For example: I set the Layout **Height** property to **100px** so all values are
 
 2. Select the **Styles** tab, and add the following style properties to the **Style Properties Applied** text box:
     
-    ```CSS
-    overflow-y: hidden;
-    background-image: none;
-    ```
+        overflow-y: hidden;
+        background-image: none;
 
     `overflow-y: hidden` disables the scroll bar and  `background-image: none` removes the down arrow. 
 
@@ -32,8 +30,8 @@ For example: I set the Layout **Height** property to **100px** so all values are
 
 **Before**
 
-![List Box with scroll bar ](images/hide-scrollbar-listbox-3-ss.png)
+![List Box with scroll bar](images/hide-scrollbar-listbox-3-ss.png)
 
 **After**
 
-![List Box without scroll bar ](images/hide-scrollbar-listbox-4-ss.png)
+![List Box without scroll bar](images/hide-scrollbar-listbox-4-ss.png)
