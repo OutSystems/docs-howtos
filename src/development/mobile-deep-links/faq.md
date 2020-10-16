@@ -24,6 +24,8 @@ To include values for Input Parameters in your deep link use the following synta
 
     <app-identifier>://<module>/<screen>?<Parameter1>=<Value1>&<Parameter2>=<Value2>
 
+Keep in mind that you cannot call a deep link to a mobile application that used a RedirectToURL event to open a external website. This occurs because you left the mobile application's context.
+
 ### Android Intents
 
 For Android end users with Chrome you can use [Android Intents](https://developer.chrome.com/multidevice/android/intents).
