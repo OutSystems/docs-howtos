@@ -67,3 +67,5 @@ To remove the problematic assemblies do the following:
 1. Click **Update Source Code** in the toolbar to regenerate the OutSystems assemblies inside the `\Bin` folder.
 
 1. Back in Visual Studio, build the solution again and validate that the assemblies weren't added again.
+
+Additionally, always name a extension in a way that does not clash with an already included .dll - since a extension automatically generates a dll file with the pattern <ExtensionName>.dll, it can cause conflicts with another dll file that already exists. 
