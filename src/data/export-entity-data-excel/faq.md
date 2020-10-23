@@ -6,37 +6,41 @@ tags: OutSystems_How_To; OutSystems_Export_Entity_Data; OutSystems_Export_Entity
 # How to export entity data to Excel
 
 <div class="info" markdown="1">
+
 We've been working on this article. Please let us know how useful this new version is by voting.
+
 </div>
 
-To export the data you must use the **Record List To Excel** action. This generates an Excel worksheet with the data existing on a selected entity. You then need to enable the user to download the generated Excel file. 
+To export the data you must use the **Record List To Excel** action. This generates an Excel worksheet with the data existing on a selected entity. You then need to enable the user to download the generated Excel file.
 
-This article shows how it's done in both [Reactive web](#Exporting_data_to_Excel_in_reactive_web) and [Traditional web](#Exporting_data_to_Excel_in_traditional_web).
+This article shows how it's done in both [Reactive Web](#reactive) and [Traditional Web](#traditional-web).
 
 <div class="info" markdown="1">
-In reactive web the **Record List To Excel** action is only available in server actions. 
-In traditional web, although the action is available in screen actions, it's strongly advised that you use it in server actions only.
+
+In Reactive Web the **Record List To Excel** action is only available in server actions.  
+In Traditional Web, although the action is available in screen actions, it's strongly advised that you use it in server actions only.
+
 </div>
 
-## Exporting data to Excel in reactive web
+## Exporting data to Excel in Reactive Web { #reactive }
 
 In this example lets start by creating a users list screen, by dragging the Users entity to the main flow. To do it, open your app in Service Studio and do the following:
 
-1. In the Interface tab, double-click on Main Flow.
+1. In the **Interface** tab, double-click on **Main Flow**.
 
-1. Click on the Data tab, expand the (System) entry of the Database, and drag the User entity to the development main editor:
-    
+1. On the **Data** tab, expand the **(System)** entry of the **Database**, and drag the **User** entity to the development main editor:
+
     ![](images/create_screen_ss.png?width=900) 
 
-1. Double click on the Users screen to open the screen. 
+1. Double-click the **Users** screen to open the screen.
 
-1. Add a link or button to your screen that showing data in a list. 
+1. Add a link or button to your screen that showing data in a list.
 
-1. In the On Click event of your link or button, select New Client Action:
+1. In the **On Click** event of your link or button, select **New Client Action**:
 
-    ![Creating a new client action](images\create_screen_action_ss.png)
+    ![Creating a new client action](images/create_screen_action_ss.png)
 
-### Creating the download logic 
+### Creating the download logic { #reactive-logic }
 
 Now that you have done all required actions on the screen is time to create the logic.
 
@@ -44,64 +48,69 @@ Now that you have done all required actions on the screen is time to create the 
 
 1. Add a Server Action to your flow:
 
-    ![Creating a new client action](images\client_action_excel_ss.png)
+    ![Creating a new client action](images/client_action_excel_ss.png)
 
-1. When the pop up displays, select New Server Action.
-1. Double click on the Server Action to enter its flow.
-   
+1. When the pop-up displays, select **New Server Action**.
+
+1. Double-click the Server Action to enter its flow.
+
     **In the server action:**
 
-    1. Go to the Data tab a drag the User entity to your flow creating a GetUSers aggregate;
-    1. Add a Record List to Excel to you flow, after the aggregate;
-    1. In the record List to Excel properties, select the `GetUsers.List`:
+    1. Go to the **Data** tab a drag the User entity to your flow creating a **GetUsers** aggregate.
 
-        ![Export Entity to Excel](images\record_list_excel_details_ss.png)
+    1. Add a Record List to Excel to you flow, after the aggregate.
+
+    1. In the Record List to Excel properties, select the `GetUsers.List`:
+
+        ![Export Entity to Excel](images/record_list_excel_details_ss.png)
 
     1. Select the attributes you want to export to Excel, by checking them. These are your Excel columns.
+
     1. Add an Output parameter to your server action, and change its type to binary data.
-        
+
         This Output parameter enables your screen action to consume the Excel data exported in the server action:
 
-        ![Export Entity to Excel](images\output_parameter_details_ss.png)
-        
-    1. Finally, add an assign to your flow, and assign the your Output Parameter with the RecordsListToExcel value:
+        ![Export Entity to Excel](images/output_parameter_details_ss.png)
 
-        ![Export Entity to Excel](images\assign_excel_list_ss.png)
+    1. Finally, add an **Assign** to your flow, and assign the your Output Parameter with the RecordsListToExcel value:
+
+        ![Export Entity to Excel](images/assign_excel_list_ss.png)
 
     1. Having this done, go back to your Client Action.
-    
-1. Back in the client action, delet the End point of your flow.
 
-1. Add a Download as the End point of your flow:
+1. Back in the client action, delete the **End** point of your flow.
 
-    ![Export Entity to Excel](images\download_action_excel_ss.png)
+1. Add a **Download** as the end of your flow:
 
-1. Finally, in the Download details, select the Server Action Output Parameter as the file content. 
-    
-    In the File Name just type your desired file name within quotation marks. 
+    ![Export Entity to Excel](images/download_action_excel_ss.png)
 
-    For example "Users.xlsx".
+1. Finally, in the **Download** details, select the Server Action Output Parameter as the file content.
+
+    In the **File Name** just type your desired file name within quotation marks. For example, `Users.xlsx`.
 
 <div class="info" markdown="1">  
+
 If it's expected that the user downloads the file several times, you may want to concatenate the name with CurrDateTime().
+
 </div>
 
+## Exporting data to Excel in Traditional Web { #traditional-web }
 
-## Exporting data to Excel in traditional web
+1. In this example lets start by creating a users list screen, by dragging the **Users** entity to the main flow. To do it, open your app in Service Studio and do the following:
 
-1. In this example lets start by creating a users list screen, by dragging the Users entity to the main flow. To do it, open your app in Service Studio and do the following:
-  1. In the Interface tab, double-click on Main Flow.
-  1. Click on the Data tab, expand the (System) entry of the Database, and drag the User entity to the development main editor:
+    1. In the **Interface** tab, double-click on **Main Flow**.
 
-    ![](images/create_screen_ss.png) 
+    1. Click on the **Data** tab, expand the **(System)** entry of the **Database**, and drag the **User** entity to the development main editor:
 
-1. Double click on the Users screen to open the screen. 
+        ![](images/create_screen_ss.png)
+
+1. Double-click on the Users screen to open the screen.
 
 1. Add a link or button to your screen that showing data in a list. In the link or button details:
 
-    * Set the Method to Submit.
+    * Set the **Method** to `Submit`.
     * Create a New Screen Action in the Destination.
 
-    ![Export Entity to Excel](images\export_entity_data_to_excel1.png)
+    ![Export Entity to Excel](images/export_entity_data_to_excel1.png)
 
-Now that you have created everything on the screen, from this moment on you can follow the [same instructions as in Reactive web](#Creating_the_download_logic) to add the necessary logic.
+Now that you have created everything on the screen, from this moment on you can follow the [same instructions as in Reactive Web](#reactive-logic) to add the necessary logic.
