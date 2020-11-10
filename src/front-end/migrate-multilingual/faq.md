@@ -1,9 +1,9 @@
 ---
-summary: Learn how to reuse translations from Multilingual Forge component to Service Studio translation management. This feature is a technical preview.
+summary: Learn how to reuse translations from Multilingual Forge component in Service Studio translation management. This feature is a technical preview.
 tags: support-application_development; multilingual; migration-multilingual-translations; multilingual-service-studio
 ---
 
-# How to reuse translations from Multilingual Forge component to Service Studio translation management
+# How to reuse translations from Multilingual Forge component in Service Studio translation management
 
 Starting with the Platform Server release 11.10, OutSystems has an integrated translations mechanism for adding and managing translations easily in Reactive Web and Mobile apps directly in Service Studio. You don't need to install the Multilingual Forge component as in previous versions.
 
