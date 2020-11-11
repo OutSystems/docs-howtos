@@ -40,17 +40,14 @@ If you are using a local resource, follow the steps below. You only need to migr
 
 1. Open the resource file, for example:
 
-```
-[{
-    "locale": "pl",
-    "isRightToLeft": false,
-    "translations": {
-        "08e142ce-dc09-4cbc-ad": "Nie masz zadań do wykonania. Możesz iść na kawę.",
-        "0c0875e4-dba7-4a9e-a9": "Dodaj nowe zadanie", ...
-    } 
-}, … ]
-
-```
+        [{
+            "locale": "pl",
+            "isRightToLeft": false,
+            "translations": {
+                "08e142ce-dc09-4cbc-ad": "Nie masz zadań do wykonania. Możesz iść na kawę.",
+                "0c0875e4-dba7-4a9e-a9": "Dodaj nowe zadanie", ...
+            } 
+        }, ... ]
 
 1. Add locales to your app according to the [Add a new language and translate the text](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Technical_Preview_-_Multilingual_Reactive_Web_and_Mobile_Apps/Translate_your_app#add-new-language) section of the [Multilingual Reactive Web and Mobile Apps](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Technical_Preview_-_Multilingual_Reactive_Web_and_Mobile_Apps) documentation.
 
