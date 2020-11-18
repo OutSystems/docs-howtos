@@ -39,19 +39,21 @@ To use **Input_AutoComplete** with an input widget follow these steps:
 
 1. Add an **Input\_AutoComplete\_ShowList** Server Action after the Aggregate.
 
-    Set the **Action**>**InputWidgetId** property to the Id of the Input and the **Action**>**List** to the Aggregate's List, in this case `GetUsersforAutoComplete.List`.
+1. Set the **Action**>**InputWidgetId** property to the Id of the Input and the **Action**>**List** to the Aggregate's List, in this case `GetUsersforAutoComplete.List`.
 
     ![](images/autocomplete10.png)
 
-    Be sure to map the **Label**and **Identifier** properties; the **Label** holds the value displayed in the autocomplete list and the **Identifier** holds the Identifier of those values.
+    Be sure to map the **Label** and **Identifier** properties. The **Label** holds the value displayed in the autocomplete list, and the **Identifier** holds the Identifier of those values.
 
     The Screen Action should look similar to the following image.
 
     ![](images/autocomplete09.png)
 
     The action queries the database for the **autocomplete** suggestions that appear below the Input field.
+    
+1. Publish the module by selecting **1-Click Publish**.
 
-After these steps the search field shows a list of suggestions that changes as you type.
+After these steps the search field in your app shows a list of suggestions that changes as you type.
 
 ![](images/autocomplete13.png)
 
