@@ -7,9 +7,13 @@ summary: Learn how to use the Input_AutoComplete RichWidget to filter results in
 
 If you have a long list of results to filter, using the [Dropdown Select](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Traditional_Web_Patterns/Controls/Dropdown_Select) pattern may impact the performance of your app since it returns the unfiltered results before filtering them in the client side.
 
-To filter the results in the server side and send the filtered list to your app you can use the **Input_AutoComplete** RichWidget.
+To filter the results in the server side and send the filtered list to your app you can use the **Input_AutoComplete** rich widget.
 
 To use **Input_AutoComplete** with an input widget follow these steps:
+
+1. In the module which contains the input widget to which you want to add the auto complete to, open **Manage Dependencies** and add the following dependencies:
+
+    * Add the **Input_AutoComplete** rich widget and the **Input\_AutoComplete\_ShowList** action from the **RichWidgets** producer.
 
 1. Set the **Name** and **Variable** properties of the search field input widget to a **Local Variable** (in this case `UserSearch` and `Name_Search`).
 
@@ -52,5 +56,5 @@ After these steps the search field shows a list of suggestions that changes as y
 ![](images/autocomplete13.png)
 
 <div class="info" markdown="1">
-To access the Identifier of the selected user use the **Input\_AutoComplete\_GetIdentifier** Server Action.
+To access the Identifier of the selected user use the **Input\_AutoComplete\_GetIdentifier** Server Action from the **RichWidgets** module. Before using this action you have to add it as a dependency to your module.
 </div>
