@@ -35,7 +35,7 @@ To use **Input_AutoComplete** with an input widget follow these steps:
 
     ![](images/autocomplete11.png)
 
-    In this case the Filter `Users.Name like "%"+Name_Search+"%"` only retrieves users whose `Name` Attribute includes what's typed in the Input Widget.
+    In this case the Filter `Users.Name like Name_Search+"%"` only retrieves users whose `Name` Attribute starts with what's typed in the Input Widget.
 
 1. Add an **Input\_AutoComplete\_ShowList** Server Action after the Aggregate.
 
