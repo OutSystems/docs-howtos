@@ -1,5 +1,5 @@
 ---
-tags: runtime-traditional; support-Front_end_Development; support-webapps;
+tags: runtime-traditionalweb; support-Front_end_Development; support-webapps;
 summary: Learn how to use the Input_AutoComplete RichWidget to filter results in the server side while an end user types in an input field.
 ---
 
