@@ -5,6 +5,12 @@ summary: Learn how to use the Input_AutoComplete RichWidget to filter results in
 
 # How to create a search field with autocomplete in a Traditional Web App
 
+If you have a long list of results to filter, using the [Dropdown Select](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Traditional_Web_Patterns/Controls/Dropdown_Select) pattern may impact the performance of your app since it returns the unfiltered results before filtering them in the client side.
+
+To filter the results in the server side and send the filtered list to your app you can use the **Input_AutoComplete** RichWidget.
+
+To use **Input_AutoComplete** with an input widget follow these steps:
+
 1. Set the **Name** and **Variable** properties of the search field input widget to a **Local Variable** (in this case `UserSearch` and `Name_Search`).
 
     ![](images/autocomplete01.png)
