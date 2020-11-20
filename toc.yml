@@ -45,8 +45,7 @@
 
 # Logic How-tos
 - href: logic/intro.md
-- topics:
-    - href: logic/combine-line-graph-bar-chart/faq.md     
+- topics:  
     - href: logic/contains-index/faq.md   
     - href: logic/email-sent-when/faq.md
     - href: logic/large-strings-stringbuilder/faq.md
