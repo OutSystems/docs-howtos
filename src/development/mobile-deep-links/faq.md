@@ -1,13 +1,9 @@
 ---
-tags: version-10; support-mobile; support-Mobile_Apps; deep link; Intent;
+tags: version-11; support-mobile; support-Mobile_Apps; deep link; Intent;
 summary: 
 ---
 
 # How to define Mobile App deep links
-
-How do I define a deep link to point to a specific Screen inside a Mobile Application?
-
-## Answer
 
 To define a deep link to a Screen (`<screen>`) of a Module (`<module>`) of a Mobile App use the following syntax:
 
@@ -24,9 +20,14 @@ To include values for Input Parameters in your deep link use the following synta
 
     <app-identifier>://<module>/<screen>?<Parameter1>=<Value1>&<Parameter2>=<Value2>
 
-Keep in mind that you cannot call a deep link to a mobile application that used a RedirectToURL event to open a external website. This occurs because you left the mobile application's context.
+<div class="info" markdown="1">
 
-### Android Intents
+If you use a **RedirectToURL** destination to open a external website, you can't call a deep link back to the mobile app from the external website in iOS devices. 
+Instead if you need to open an external website, use the **Open** client action from the [InAppBrowser Plugin](https://www.outsystems.com/forge/component-overview/1558/inappbrowser-plugin) with the **Target** set as `Entities.Target.SYSTEM`and the **Url** set as the external website url.
+
+</div>
+
+## Android Intents
 
 For Android end users with Chrome you can use [Android Intents](https://developer.chrome.com/multidevice/android/intents).
 Android Intents allow the redirection of end users that do not have your App available on their device to your App page in the Google Play Store or to another URL specified by you. 
