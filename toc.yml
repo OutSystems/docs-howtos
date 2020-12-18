@@ -41,11 +41,11 @@
     - href: front-end/show-records-side-by-side-list-record-widget/faq.md
     - href: front-end/table-records-fixed-header/faq.md
     - href: front-end/validation-messages-location/faq.md
+    - href: front-end/migrate-multilingual/faq.md
 
 # Logic How-tos
 - href: logic/intro.md
-- topics:
-    - href: logic/combine-line-graph-bar-chart/faq.md     
+- topics:  
     - href: logic/contains-index/faq.md   
     - href: logic/email-sent-when/faq.md
     - href: logic/large-strings-stringbuilder/faq.md
