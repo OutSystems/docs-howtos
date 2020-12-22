@@ -80,7 +80,6 @@
 - topics:
     - href: devops/build-cd-pipeline/faq.md
     - href: devops/automate-outsystems-deployments-with-jenkins/faq.md
-    - href: devops/automate-container-deployment-jenkins-lifetime/faq.md
     - href: devops/automate-container-deployment-jenkins/faq-jenkins.md
     - topics:
         - href: devops/automate-container-deployment-jenkins/reverse-proxy-iis.md
