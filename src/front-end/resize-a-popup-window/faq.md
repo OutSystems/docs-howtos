@@ -20,21 +20,24 @@ The `AutoResize` property only affects the automatic growth of the pop-up window
 
   1. Add the following **JavaScript snippet** to the `JavaScript` property of the **pop-up Web Screen**:
         
-        function PopupEditor_ForceResize() {
-            var popupDiv = window.top.$(".os-internal-ui-dialog-content");
-            var popupDivOldHeight = popupDiv.height();
-            // reduce iframe's div height to its contents
-            popupDiv.height($(".MainPopup").innerHeight());
-            // pop-up editor already auto-grows, so we just need to address auto-shrink
-            if (popupDiv.height() >= popupDivOldHeight) {
-                return false;
-            }
-            var result = window.top.RichWidgets_Popup_Editor_resize(popupDiv, -1, -1, false, {target: popupDiv});
-            if (!result) {
-                // something wrong happened in resize - reset iframe's div height
-                popupDiv.height(popupDivOldHeight);
-            }
-        }
+function PopupEditor_ForceResize() {
+    
+    var PopUpFrame = window.self.frameElement;
+    var PopUpDocument = window.self.document;
+    var popupDiv = PopUpFrame.parentElement;
+    var popupDivOldHeight = popupDiv.style.height;
+    // reduce iframe's div height to its contents
+     popupDiv.style.height=PopUpDocument.body.clientHeight+"px";
+    // pop-up editor already auto-grows, so we just need to address auto-shrink
+    if (popupDiv.height() >= popupDivOldHeight) {
+        return false;
+    }
+    var result = window.self.RichWidgets_Popup_Editor_resize(popupDiv, -1, -1, false, {target: popupDiv});
+    if (!result) {
+        // something wrong happened in resize - reset iframe's div height
+        popupDiv.height(popupDivOldHeight);
+    }
+} 
 
     This JavaScript snippet defines a function **PopupEditor_ForceResize()** that you will use to shrink the pop-up window during runtime.
 
