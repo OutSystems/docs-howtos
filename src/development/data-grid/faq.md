@@ -36,7 +36,7 @@ Follow these steps to create a grid interface where users can view and filter da
 
 ## Create interface to view, edit, and save data
 
-Continue with these steps to create a grid interface where users can edit and save data, no only view it.
+Continue with these steps to create a grid interface where users can edit and save data, not only view it.
  
 1. Create a Server Action to get the REST URI. Right-click **Logic** > **Server Actions** and select **Add Server Action**. Name the action "SaveAllSuppliers" and design it so it returns a URL parameter with the value **GetOwnerURLPath()** + `"rest/Suppliers/SaveAll"`.
 
