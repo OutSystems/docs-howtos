@@ -86,7 +86,6 @@
         - href: devops/automate-container-deployment-jenkins/reverse-proxy-nginx.md
     - href: devops/automate-unit-testing-and-api-testing/faq.md
     - href: devops/ui-testing-selenium/faq.md
-    - href: devops/building-pipeline-air-gap-stage/faq.md
 
 # Integrations How-tos
 - href: integrations/intro.md
