@@ -11,7 +11,10 @@ This document explains how to change the default icon and replace it by your fav
 
 <div class="info" markdown="1">
 
-You need to change the favicon file in **all modules** that expose screens in your app.
+When changing the favicon, keep in mind that you need to: 
+
+* Change the favicon file in **all modules** that expose screens in your app
+* Reload the app data, to ensure the app loads the new favicon. If you are using Chrome, right-click the tab with your app and select **Reload**. You can also clear the entre browser cache.
 
 </div>
 
@@ -59,7 +62,3 @@ Follow these steps to change the favicon in your Reactive Web App to a different
 1. Enter `favicon.ico` and select **OK**.
 
 1. Publish your app and open it in the browser. You should see a new icon in the browser tab.
-
-## Troubleshooting
-
-If your new favicon isn't showing, it may be because the old favicon is still in the browser cache. If you are using Chrome, right-click the tab with your app and select **Reload**.
