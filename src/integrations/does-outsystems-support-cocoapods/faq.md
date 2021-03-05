@@ -41,6 +41,8 @@ If you're curious and want to know if your plugin uses CocoaPods, follow the ste
 
 1. Open the plugin.xml file and search for podspec framework (check [this example](https://github.com/phonegap/phonegap-plugin-push/blob/v2.0.0/plugin.xml#L87 "https://github.com/phonegap/phonegap-plugin-push/blob/v2.0.0/plugin.xml#L87")).
 
-<div class="info" markdown="1">
-Make sure that the podspec framework version is correct in the plugin.xml file, or your app generation will fail.
-</div>
+    <div class="info" markdown="1">
+    
+    To generate the app successfully, make sure that the podspec framework version is correct in the plugin.xml.
+    
+    </div>
