@@ -1,10 +1,8 @@
 # How do you prevent users from copying text or images?
 
-## How do you prevent users from copying text or images?
+You can use a variety of methods to pervent users from copying text or images. Let's take a look ah them.
 
-## Resolution
-
-### Disable selection
+## Disable selection
 Any content inside a container or other element with the “basic-protect” class will generally not be selectable by users.
 
 This is accomplished by adding CSS code in the **[Style Sheet Editor](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Look_and_Feel/Cascading_Style_Sheets_(CSS))**.
@@ -20,7 +18,7 @@ This is accomplished by adding CSS code in the **[Style Sheet Editor](https://su
 	    user-select: none;
 	}
 
-### Disable printing (with notification message)
+## Disable printing (with notification message)
 
 Any content inside a container or other element with the “basic-protect” will not be displayed when printed and show a message instead.
 
@@ -37,7 +35,7 @@ This is accomplished by adding CSS code in the **[Style Sheet Editor](https://su
 	  }
 	}
 
-### Disable right-click menu
+## Disable right-click menu
 
 Prevent access to cut/copy commands from the browser’s context menu.
 
@@ -49,7 +47,7 @@ This is accomplished by **[adding JavaScript code](https://success.outsystems.co
 	    event.preventDefault()
 	});
 
-### Disable print screen screenshots
+## Disable print screen screenshots
 
 Prevent the “print screen” button from taking a screenshot of the page when the page has focus. 
 
