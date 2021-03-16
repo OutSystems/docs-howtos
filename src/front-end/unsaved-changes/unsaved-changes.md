@@ -4,17 +4,9 @@ summary: Preventing users from losing unsaved changes
 ---
 
 
-# Preventing Users from Losing Unsaved Changes
+# How can I prevent users from Losing Unsaved Changes?
 
-How can I prevent users from Losing Unsaved Changes?
-
-## Issue
-
-Issue Text
-
-## Resolution
-
-1. When a customer wants to prevent the loss of unsaved changes in a Reactive application, you need to add some additional logic and JavaScript. You need to track whether the user has modified in the data and prevents the page from navigating.
+When a customer wants to prevent the loss of unsaved changes in a Reactive application, you need to add some additional logic and JavaScript. You need to track whether the user has modified in the data and prevents the page from navigating. To do it:
 
 1. Add a new local variable to store whether the data in the form is modified.
 
