@@ -17,21 +17,21 @@ To avoid occurring errors and not to have much-repeated code, the following solu
 
 1. In the end-user modules, create a script to check if the browser was an Internet explorer or not
 
-![](images/ie1.jpg)
+![](images/ie1.png)
 
 1. Add the previously created script to the Required Scripts of the module
 
-![](images/ie2.jpg)
+![](images/ie2.png)
 
 1. Create an action that also checks if the browser is an Internet Explorer (the code will be equal to the created previously) and make it a function
 
-![](images/ie3.jpg)
+![](images/ie3.png)
 
 1. If not already created, create a global exception handler, OnException in the Common Flow
 
 1. Add the AllExceptions handler, and use the action created before to check if the browser is an Internet Explorer browser. If yes, redirect the user to a specific screen
 
-![](images/ie4.jpg)
+![](images/ie4.png)
 
 ## Code Used
 
