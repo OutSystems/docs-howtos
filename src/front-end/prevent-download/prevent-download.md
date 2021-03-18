@@ -3,9 +3,9 @@
 You can use a variety of methods to pervent users from copying text or images. Let's take a look ah them.
 
 ## Disable selection
-Any content inside a container or other element with the “basic-protect” class will generally not be selectable by users.
+Any content inside a container or other element with the “basic-protect” class is generally not selectable by users.
 
-This is accomplished by adding CSS code in the **[Style Sheet Editor](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Look_and_Feel/Cascading_Style_Sheets_(CSS))**.
+You accomplish this by adding CSS code in the **[Style Sheet Editor](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Look_and_Feel/Cascading_Style_Sheets_(CSS))**.
 
 
 	.basic-protect * {
@@ -20,9 +20,9 @@ This is accomplished by adding CSS code in the **[Style Sheet Editor](https://su
 
 ## Disable printing (with notification message)
 
-Any content inside a container or other element with the “basic-protect” will not be displayed when printed and show a message instead.
+Any content inside a container or other element with the “basic-protect” isn't displayed when printed and show a message instead.
 
-This is accomplished by adding CSS code in the **[Style Sheet Editor](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Look_and_Feel/Cascading_Style_Sheets_(CSS))**.
+You accomplished this by adding CSS code in the **[Style Sheet Editor](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Look_and_Feel/Cascading_Style_Sheets_(CSS))**.
 
 
 	@media print {
@@ -39,7 +39,7 @@ This is accomplished by adding CSS code in the **[Style Sheet Editor](https://su
 
 Prevent access to cut/copy commands from the browser’s context menu.
 
-This is accomplished by **[adding JavaScript code](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/JavaScript/Extend_Your_Web_Application_Using_JavaScript/Define_and_Run_JavaScript_Code)** in the property in question:
+You accomplished this by **[adding JavaScript code](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/JavaScript/Extend_Your_Web_Application_Using_JavaScript/Define_and_Run_JavaScript_Code)** in the property in question:
 
 
 	/* Disable right-click menu on page */
@@ -53,7 +53,7 @@ Prevent the “print screen” button from taking a screenshot of the page when 
 
 Caveat: This only works if the page is in focus AND the user isn’t using a special screenshot tool. In other words, this one is pretty weak. 
 
-This is accomplished by **[adding JavaScript code](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/JavaScript/Extend_Your_Web_Application_Using_JavaScript/Define_and_Run_JavaScript_Code)** in the property in question:
+You accomplished this by **[adding JavaScript code](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/JavaScript/Extend_Your_Web_Application_Using_JavaScript/Define_and_Run_JavaScript_Code)** in the property in question:
 
 
 	/* Disable print screen button */
