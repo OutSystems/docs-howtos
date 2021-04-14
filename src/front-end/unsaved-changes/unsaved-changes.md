@@ -6,7 +6,7 @@ summary: Preventing users from losing unsaved changes
 
 # How can you prevent users from losing unsaved changes?
 
-When you want to prevent the loss of unsaved changes in a Reactive Web application, you need to add some additional logic and JavaScript. 
+## When you want to prevent the loss of unsaved changes in a Reactive Web application, you need to add some additional logic and JavaScript. 
 
 To do it, you need to track whether the user has modified in the data and prevents the page from navigating. To do it:
 
