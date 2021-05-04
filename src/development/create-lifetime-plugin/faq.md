@@ -1,6 +1,6 @@
-build* ---
+---
 summary: Steps to create a plugin to extend LifeTime functionality
-Tags: 
+tags: 
 ---
 
 # How to create a LifeTime Plugin
