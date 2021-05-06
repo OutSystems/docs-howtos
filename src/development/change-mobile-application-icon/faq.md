@@ -19,7 +19,6 @@ Having a mobile application with different icons in all environments to able to 
     
     ![Resource with all the icons](images/zipimage.png)
     
-    1. Caption
 
 2. Add the zip file to the Mobile App module
     
