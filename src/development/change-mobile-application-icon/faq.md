@@ -18,6 +18,7 @@ Having a mobile application with different icons in all environments to able to 
 1. Create a zip with your icons, this one for demonstration purposes is called "Resources.zip" but you can name however you desire.
     
     ![Resource with all the icons](images/zipimage.png)
+    1. Caption
 
 2. Add the zip file to the Mobile App module
     
