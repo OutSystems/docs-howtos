@@ -16,15 +16,19 @@ Having a mobile application with different icons in all environments to able to 
 ## Resolution
 
 1. Create a zip with your icons, this one for demonstration purposes is called "Resources.zip" but you can name however you desire.
+    
     ![Resource with all the icons](images/zipimage.png)
 
 1. Add the zip file to the Mobile App module
+    
     ![Add zip to resources](images/Resources.png)
 
 1. Add the JSON as shown in the image below, with the format as per the specification in the documentation presented in the top of this communication.
+    
     ![Write extensability configurations](images/extensabilityconfigurations.png)
 
 1. Publish and generate app
+    
     Once you install the app it will show in the device with the icon you chose.
 
     For version 10 of the OutSystems Platform, the code either needs to be deployed and the JSON changed to QA icons or repeat the whole process directly in QA environment.
