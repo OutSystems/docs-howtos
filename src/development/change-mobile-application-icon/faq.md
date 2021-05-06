@@ -21,7 +21,7 @@ tags:
 
 3. Add the JSON as shown in the image below, with the format as per the specification in the documentation presented in the top of this communication.
     
-    ![Write extensability configurations](images/extensabilityconfigurations.png)
+    ![Write extensibility configurations](images/extensibilityconfigurations.png)
 
 4. Publish and generate app
     
