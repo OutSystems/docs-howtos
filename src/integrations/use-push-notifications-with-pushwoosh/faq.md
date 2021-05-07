@@ -25,7 +25,7 @@ Note that you'll need a paid subscription of Pushwoosh in order to send push not
 
 ## Installing the Pushwoosh Plugin
 
-Start by installing the Pushwoosh plugin from the OutSystems Forge. The fastest way to do this is to go to the OutSystems tab in your development environment and install from there.
+Start by installing the Pushwoosh plugin from the OutSystems Forge. The fastest way to do this is to go to the OutSystems tab in your development environment and install from there. The plugin is also available [here](https://www.outsystems.com/forge/component-overview/1556/pushwoosh-plugin) on the OutSystems Community.
 
 ## Configuring Pushwoosh
 
