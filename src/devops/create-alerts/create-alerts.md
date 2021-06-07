@@ -2,9 +2,9 @@
 summary: Process on how to use OutSystems APIs to create alerts monitoring thresholds. OutSystems APIs and metadata expose all the necessaty information and even allow you to create custom logging and events.
 ---
 
-# How to create custom alerts based on application operations monitoring thresholds
+# How to create alerts based on monitoring thresholds
 
-Using OutSystems APIs and metadata you can:
+You can create custom alerts based on your application operations monitoring thresholds by using OutSystems APIs and metadata:
 
 * Extend OutSystems built-in application operations
 * Create your own logic for alerts with thresholds
