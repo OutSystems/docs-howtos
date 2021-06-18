@@ -1,12 +1,12 @@
 ---
-summary: Learn how to use feature flags in OutSystems.
+summary: Learn how to use feature toggles or feature flags in OutSystems.
 ---
 
-# Feature flags in OutSystems
+# Feature toggle in OutSystems
 
-When you want to add a new feature or a new screen in OutSystems you don't need to branch and get into merge hell. Instead, you create the new feature in your live application and make it available to key users so you can get their feedback. We call this feature flagging.
+When you want to add a new feature or a new screen in OutSystems you don't need to branch and get into merge hell. Instead, you create the new feature in your live application and make it available to key users so you can get their feedback. We call this feature toggling.
 
-In this article, we’ll guide you on how to implement and use feature flags. All you'll need is that your app has a login.
+In this article, we’ll guide you on how to implement and use feature toggles. All your app will need is to require login.
 
 ## Create a new role and a Role-Check Function
 
@@ -125,4 +125,4 @@ Play around with your applications as you like. In our example, we went from:
 
 ![](images/fun-with-feature-flags-live-mobile-apps_10_new.png)
 
-Your old and new home pages and lists can live together until you decide to make your changes available to everyone. Then you just remove your If condition from the flows and redirect to your new assets. It really is that easy.
+Your old and new home pages and lists can live together until you decide to make your changes available to everyone. Then you just remove your If condition from the flows and redirect to your new assets. It's really is that easy.
