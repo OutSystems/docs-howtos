@@ -10,7 +10,7 @@ Widget | Description
 ---|---
 [ActionColumn](<#ActionColumn>) | Column for your GridContainer Block to render number fields. Drag into the GridColumnsPlaceholder in the GridContainer Block as many columns as you need.
 [CheckboxColumn](<#CheckboxColumn>) | Column for your GridContainer Block to render boolean fields.Drag into the GridColumnsPlaceholder in the GridContainer Block as many columns as you need.
-[ContextMenu](<#ContextMenu>) | Add a context menu to the grid.%%(Default options:%%Copy%%Copy with headers%%Export%%to CSV%%to Excel%%Freeze column(s)%%Unfreeze column(s)%%)
+[ContextMenu](<#ContextMenu>) | Add a context menu to the grid. Default options: Copy, Copy with headers, Export to CSV to Excel Freeze column(s),Unfreeze column(s)
 [CurrencyColumn](<#CurrencyColumn>) | Column for your GridContainer Block to render number fields. Drag into the GridColumnsPlaceholder in the GridContainer Block as many columns as you need.
 [DateColumn](<#DateColumn>) | Column for your GridContainer Block to render text fields.Drag into the GridColumnsPlaceholder in the GridContainer Block as many columns as you need.
 [DateTimeColumn](<#DateTimeColumn>) | Column for your GridContainer Block to render text fields. Drag into the GridColumnsPlaceholder in the GridContainer Block as many columns as you need.
