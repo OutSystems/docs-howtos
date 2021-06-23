@@ -5,7 +5,6 @@ tags: OutSystems_How_To; OutSystems_Export_Entity_Data; OutSystems_Export_Entity
 
 # How to export entity data to Excel
 
-How can you export an entity fom OutSystems into an Excel file?
 
 <div class="info" markdown="1">
 
@@ -117,6 +116,6 @@ If it's expected that the user downloads the file several times, you may want to
 
 Now that you have created everything on the screen, from this moment on you can follow the [same instructions as in Reactive Web](#reactive-logic) to add the necessary logic.
 
-# Video Example
+## Video example
 
-[![](http://img.youtube.com/vi/tFrD54mhgiM/0.jpg)](http://www.youtube.com/watch?v=tFrD54mhgiM "")
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tFrD54mhgiM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
