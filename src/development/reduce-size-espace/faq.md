@@ -8,7 +8,7 @@ Why is my eSpace so large?
 
 Our experience tells us that whenever a module has a large size (over 4 MB), one of three things is usually involved:
 
-* You use a **single module approach** which is against the 4 Layer recommend architecture. Check [OutSystems architecture canvas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_Architecture_of_Your_OutSystems_Applications/The_Architecture_Canvas) to help you promote the correct abstraction of reusable services and the correct isolation of distinct functional modules.
+* You use a **single module approach** which is against the recommended architecture. Check [OutSystems architecture canvas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_Architecture_of_Your_OutSystems_Applications/The_Architecture_Canvas) to help you promote the correct abstraction of reusable services and the correct isolation of distinct functional modules.
 
 * You have **large images**. Sometimes people include MB large jpg or png files with high resolution even if then they are re-sizing the images to smaller sizes in screens. This can also have a large impact when running the application because the browsers will fetch the entire image thus using more bandwidth. Check  
 [Control image size](https://success.outsystems.com/Documentation/Architecture_Dashboard/Code_Patterns/Best_practices/Control_image_size) for more tips regarding this topic.
