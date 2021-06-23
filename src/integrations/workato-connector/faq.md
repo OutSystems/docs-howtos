@@ -54,6 +54,8 @@ After installing the component in your OutSystems environment do the following:
 
 1. Search for the "Workato Connector" application in the list and click its name to navigate to the application detail screen.
 
+1. Cick on **WorkatoConnector** in the modules screen.
+
 1. Click **Open in Browser**. This will take you to the connector's security configuration screen.
 
 1. Click **Add new key**.
