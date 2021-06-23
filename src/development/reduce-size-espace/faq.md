@@ -6,7 +6,7 @@ Why is my eSpace so large?
 
 ## Answer
 
-Our experience tells us that whenever a module has a large size (over 4 MB), one of three things is usually involved:
+Our experience tells us that whenever a module has a large size, one of four things is usually involved:
 
 * You use a **single module approach** which is against the recommended architecture. Check [OutSystems architecture canvas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_Architecture_of_Your_OutSystems_Applications/The_Architecture_Canvas) to help you promote the correct abstraction of reusable services and the correct isolation of distinct functional modules.
 
@@ -15,4 +15,6 @@ Our experience tells us that whenever a module has a large size (over 4 MB), one
 
 * You have **large resources**. Sometimes when using the Excel bootstrap approach people include it in the module by dragging and dropping the Excel to have everything together. Our recommendation in these cases is to change the bootstrap action to receive the binary instead of going to the resources and have a screen with a file upload field that calls the bootstrap action with the uploaded file.
 
-While the first one is slightly harder to correct because it involves re-factoring of the code, the latest two are quite easy to spot and fix and will prevent such errors.
+* You have **numerous custom icons** for Actions and Integrations. The usage of high-resolution icons, or even many small-sized icons, may increase the module size. In this case, we recommend switching to the default icon.
+
+While the first one is slightly harder to correct because it involves re-factoring of the code, the latest three are quite easy to spot and fix and will prevent such errors.

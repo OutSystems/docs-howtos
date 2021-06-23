@@ -20,6 +20,7 @@ Follow these steps to create a grid interface where users can view and filter da
     ![Logic to fetch data](images/data-grid-rest-getall.png?width=600)
 
 1. Create a Server Action to get the REST URI. Right-click **Logic** > **Server Actions** and select **Add Server Action**. Name the action "GetAllSuppliers" and design it so it returns a URL parameter with the value **GetOwnerURLPath()** + `"rest/Suppliers/GetAll"`.
+ 
     ![REST server actions](images/data-grid-rest-geturl.png?width=600)
 
 1. Create a new empty Screen and add a Preparation. Name the Screen "ScreenDataGridRead", and in Preparation add GetAllSuppliers to the Action logic.
@@ -28,10 +29,12 @@ Follow these steps to create a grid interface where users can view and filter da
 
 1. Provide data to the Data Grid. With "MyDataGrid" selected, locate **RestURL** property and select GetAllSuppliers.URL.
 
-1. Insert some columns. To add a column, navigate to **Interface** > **DataGridComponent** > **Columns**, drag **GridColumnText** and drop it in "MyDataGrid". Name the column "ColumnSupplierCode", and in its **JSONField** property enter `"SupplierCode"` (with quotes). Repeat for the Supplier Name field, with the **JSONField** property `"SupplierName"`.  
+1. Insert some columns. To add a column, navigate to **Interface** > **DataGridComponent** > **Columns**, drag **GridColumnText** and drop it in "MyDataGrid". Name the column "ColumnSupplierCode", and in its **JSONField** property enter `"SupplierCode"` (with quotes). Repeat for the Supplier Name field, with the **JSONField** property `"SupplierName"`. 
+ 
     ![Data Grid Columns](images/data-grid-columns.png?width=600)
 
 1. Publish the app and visit the page in a browser. You should see a Data Grid and be able to use the features enabled by default, for example, show/hide columns and contextual filters.   
+
     ![Data Grid Preview](images/data-grid-in-browser.png?width=600)
 
 ## Create interface to view, edit, and save data

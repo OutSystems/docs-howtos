@@ -5,33 +5,14 @@ tags: support-application_development; multilingual; migration-multilingual-tran
 
 # How to reuse translations from Multilingual Forge component in Service Studio
 
-Starting with the Platform Server release 11.10, OutSystems has an built-in translation mechanism for adding and managing translations in Reactive Web and Mobile apps directly in Service Studio. You don't need to install the Multilingual Forge component as in previous versions.
+You can use the [built-in translation tools](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Multilingual_Reactive_Web_and_Mobile_Apps) for adding and managing translations in Reactive Web Aps and Mobile Apps. You don't need to install the deprecated Multilingual Forge component. This document explains how to migrate translations from the Multilingual Forge component to the new multilingual feature in Service Studio.
 
-<div class="info" markdown="1">
+Do the following to migrate your translations:
 
-OutSystems will discontinue the [Multilingual Forge component](https://www.outsystems.com/forge/component-overview/1784/multilingual-component) on July 5th, 2021.
-
-</div>
-
-OutSystems designed Multilingual to allow you to manage your translations fast and to have the possibility to change your app language while offline.
-
-This document explains how to migrate translations from the Multilingual Forge component to the new Multilingual on Service Studio.
-
-Before proceeding, ensure you fill all the prerequisites. Refer to the [Multilingual Reactive Web and Mobile Apps](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Technical_Preview_-_Multilingual_Reactive_Web_and_Mobile_Apps) documentation.
-
-You need to perform the following steps to migrate your app translations:
-
-1. [Activate the Multilingual Technical Preview](#technical-preview)
+1. Ensure you're using Platform Server 11.12.0 or later and up-to-date Service Studio.
 1. [Migrate the translations to the Translations Editor](#translations-editor)
 1. [Delete the unnecessary logic](#delete-unnecessary-logic)
 1. [Remove the dependency on the Multilingual module](#remove-dependencies)
-
-Find below the instructions to migrate your translations.
-
-## Activating the Multilingual Technical Preview { #technical-preview }
-
-The first step to proceed with the migration is to activate the Multilingual Technical Preview for your environment in the LifeTime console. Read the [Technical Preview features](https://success.outsystems.com/Support/Enterprise_Customers/Upgrading/Technical_Preview_features) for more information.
-
 
 ## Migrating the translations to the Translations Editor { #translations-editor }
 
@@ -55,7 +36,7 @@ If you are using a local resource, follow the steps below. You only need to migr
             } 
         }, ... ]
 
-1. Add locales to your app according to the [Add a new language and translate the text](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Technical_Preview_-_Multilingual_Reactive_Web_and_Mobile_Apps/Translate_your_app#add-new-language) section of the [Multilingual Reactive Web and Mobile Apps](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Technical_Preview_-_Multilingual_Reactive_Web_and_Mobile_Apps) documentation.
+1. Add locales to your app according. For instructions, see [Adding a new language and translating the text](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Multilingual_Reactive_Web_and_Mobile_Apps/Translate_your_app#Adding_a_new_language_and_translating_the_text).
 
 1. Copy the translations from your resource file (for example, an Excel sheet) to the correspondent language on the **translations editor** that opened when you created the locales in the previous step.
 
@@ -109,7 +90,7 @@ To find where the used actions are, do the following steps:
 
 ### Switching locales using the new Multilingual
 
-For switching locales in your logic using the new Multilingual, use the new **SetCurrentLocale** client action available in your system module. See the [Create a language switcher](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Technical_Preview_-_Multilingual_Reactive_Web_and_Mobile_Apps/Translate_your_app#add-language-switcher) section of the [Multilingual Reactive Web and Mobile Apps](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Technical_Preview_-_Multilingual_Reactive_Web_and_Mobile_Apps) documentation for more information.
+For switching locales in your logic using the new Multilingual, use the new **SetCurrentLocale** client action available in your system module. For instructions, see [Creating a language switcher](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Multilingual_Reactive_Web_and_Mobile_Apps/Translate_your_app#Creating_a_language_switcher).
 
 ## Removing the dependency on the Multilingual module { #remove-dependencies }
 
