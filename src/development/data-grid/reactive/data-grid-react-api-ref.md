@@ -300,7 +300,7 @@ IsDataFetched
 
 GridHeight
 :   Type: optional, Integer.  
-    Set the container's height in pixels (default: 400px).
+    Set the container's height in pixels (Default: 400px).
 
 HasGroupPanel
 :   Type: optional, Boolean.  
@@ -1097,7 +1097,7 @@ RemovedLines
 
 HasInvalidLines
 :   Type: Boolean.  
-    Tells if there is any invalid lines in the data grid.
+    Checks if there are any invalid lines in the data grid.
 
 InvalidLines
 :   Type: Text.  
@@ -1156,12 +1156,12 @@ NumberConditionalFormatRules
 
 DecimalPlaces
 :   Type: Integer.  
-    Set the column's default decimal places (default: 2).  
+    Set the column's default decimal places (Default: 2).  
     Decimal places should be defined between 0 and 11.
 
 Symbol
 :   Type: Text.  
-    Set the column's default currency symbol (default: $).
+    Set the column's default currency symbol (Default: $).
 
 ### DateConditionalFormatRule { #Structure_DateConditionalFormatRule }
 
@@ -1293,7 +1293,7 @@ OperatorTypeId
 
 Value
 :   Type: Text.  
-    Condition value against which the to cell value will be match against - string format.
+    Condition value against which the cell value will be matched against - string format.
 
 ### Mandatory { #Structure_Mandatory }
 
@@ -1364,7 +1364,7 @@ NumberConditionalFormatRules
 
 DecimalPlaces
 :   Type: Integer.  
-    Set the column's default decimal places (default: 0).  
+    Set the column's default decimal places (Default: 0).  
     Decimal places should be defined between 0 and 11.
 
 MaxValue
