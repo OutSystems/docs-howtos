@@ -1,7 +1,12 @@
-# Data Grid Reactive APIs 
+---
+tags: runtime-reactiveweb;
+summary: Data Grid APIs 
+---
 
-Version 2.2.0  
-  
+# Data Grid APIs 
+
+[comment]: <> (2.2.0)
+
 Data Grid for Reactive Web Applications is built on top of [Grape City Data Grid](https://www.grapecity.com/en/wijmo-flexgrid/), an Enterprise Grade Javascript Data Grid, that can be used for building applications, such as reporting, data analytics, and business workflow.
 
 ## Summary
@@ -307,7 +312,7 @@ OptionalConfigs
 
 ### MenuItem_Column_Freeze { #MenuItem_Column_Freeze }
 
-Allows the user to freeze columns on grid.
+Allows the user to freeze columns on the grid.
 
 **Inputs**
 
@@ -321,7 +326,7 @@ MenuItemOptionalConfigs
 
 ### MenuItem_Column_FreezeUnfreeze { #MenuItem_Column_FreezeUnfreeze }
 
-Allows the user to freeze or unfreeze columns on grid.
+Allows the user to freeze or unfreeze columns on the grid.
 
 **Inputs**
 
@@ -339,7 +344,7 @@ MenuItemOptionalConfigs
 
 ### MenuItem_Column_Unfreeze { #MenuItem_Column_Unfreeze }
 
-Allows the user to unfreeze columns on grid.
+Allows the user to unfreeze columns on the grid.
 
 **Inputs**
 
@@ -353,7 +358,7 @@ MenuItemOptionalConfigs
 
 ### MenuItem_Copy { #MenuItem_Copy }
 
-Allow the user to copy data from grid.
+Allows the user to copy data from the grid.
 
 **Inputs**
 
@@ -567,7 +572,7 @@ ColumnOptionalConfigs
 ### ArrangeData { #ArrangeData }
 
 Prepares your data to be used by the Data Grid.  
-You should use this action in the Data Action after you fetched the data from DB.
+You should use this action in the Data Action after you fetch the data from the database.
 
 **Inputs**
 
@@ -700,7 +705,7 @@ ColumnsCount
 
 ### FreezeColumnsByActiveCell { #Client_FreezeColumnsByActiveCell }
 
-Freezes the leftmost columns from grid, considering the active cell.
+Freezes the leftmost columns from the grid, considering the active cell.
 
 **Inputs**
 
@@ -759,7 +764,7 @@ ChangedLines
 
 ### GetSelectedRowsCount { #Client_GetSelectedRowsCount }
 
-Returns how many rows are selected on Grid.
+Returns the number of rows selected on the grid.
 
 **Inputs**
 
@@ -807,7 +812,7 @@ Config
     
 ### HasFrozenColumns { #Client_HasFrozenColumns }
 
-Checks if grid has frozen columns.
+Checks if the grid has frozen columns.
 
 **Inputs**
 
@@ -861,7 +866,7 @@ GridWidgetId
 
 RowNumber
 :   Type: mandatory, Integer.  
-    Number of the row in which all classes are going to be removed.
+    Number of the rows from which all classes will be removed.
 
 ### RemoveClass { #Client_RemoveClass }
 
@@ -876,7 +881,7 @@ GridWidgetId
 
 RowNumber
 :   Type: mandatory, Integer.  
-    Number of the row in which all CSS classes are going to be removed.
+    Number of the rows from which all CSS classes will be removed.
 
 Class
 :   Type: mandatory, Text.  
@@ -960,7 +965,7 @@ Config
     
 ### UnfreezeColumns { #Client_UnfreezeColumns }
 
-Unfreezes all columns from the grid
+Unfreezes all columns in the grid.
 
 **Inputs**
 
@@ -1019,7 +1024,7 @@ Binding
 
 FilterTypeId
 :   Type: Filter_Type Identifier.  
-    Type of filter applied, can be either &quot;conditon&quot; or &quot;value&quot;.
+    Type of filter applied can be either &quot;condition&quot; or &quot;value&quot;.
 
 FilterConditions
 :   Type: [Filter_Condition](<#Structure_Filter_Condition>) List.  
@@ -1184,7 +1189,7 @@ Condition to be validated.
 
 DateOperatorId
 :   Type: DateOperator Identifier.  
-    Operator to used to compare the value field with the cell value.
+    Operator used to compare the value field with the cell value.
 
 Value
 :   Type: Date.  
@@ -1226,7 +1231,7 @@ Condition to be validated.
 
 DateOperatorId
 :   Type: DateOperator Identifier.  
-    Operator to used to compare the value field with the cell value.
+    Operator used to compare the value field with the cell value.
 
 Value
 :   Type: Date Time.  
@@ -1341,7 +1346,7 @@ Condition to be validated.
 
 NumberOperatorId
 :   Type: NumberOperator Identifier.  
-    Operator to used to compare the value field with the cell value.
+    Operator used to compare the value field with the cell value.
 
 Value
 :   Type: Decimal (0, 0).  
@@ -1376,7 +1381,7 @@ MinValue
 
 Step
 :   Type: Decimal (0, 0).  
-    Set the step value in the increments in column.  
+    Set the step value in the increments in the column.  
     When step value is defined and the cell is in edit mode, the input will show two buttons, a plus (+) that will increase the cell value with the step value and a minus (-) that will decrease the cell value.  
     If step value is 0, then no buttons will be displayed.
 
@@ -1516,7 +1521,7 @@ Id
 
 ### NumberOperator { #StaticEntity_NumberOperator }
 
-Operators to be used by in Number and Currency conditional format.
+Operators to be used in Number and Currency conditional format.
 
 **Attributes**
 

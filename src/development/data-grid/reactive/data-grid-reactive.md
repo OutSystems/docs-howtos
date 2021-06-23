@@ -1,29 +1,33 @@
 ---
-tags:
-summary: Use this tutorial to create Excel-like interface with the Data Grid component, to view, edit, and save data. There's also a section about when to use Data Grid.
+tags: runtime-reactiveweb;
+summary: View, explore, and edit large amounts of data in a familiar spreadsheet interface with the Data Grid component for Reactive Web apps.
 ---
 
 # Data Grid
 
-View, explore, and edit large amounts of data in a familiar spreadsheet interface with the Data Grid component for Reactive Web apps.
+The Data Grid component allows you to view, explore, and edit large amounts of data in a familiar spreadsheet interface.
 
-Use the Data Grid to create enterprise-grade interfaces that are more suitable and time-effective than designing a custom solution every time you need to manipulate dense datasets.  
+You can use the Data Grid component to create enterprise-grade interfaces that are more suitable and time-effective than designing a custom solution every time you need to manipulate dense datasets.  
 
-**Key features** 
+The Data Grid component has the following key features: 
 
-Built for Reactive Web apps 
-Data selection and editing in a familiar interface 
-Data sorting by parameter 
-Data grouping 
-Virtual Scrolling 
+* Data selection and editing in a familiar interface 
+* Data sorting by parameter 
+* Data grouping 
+* Virtual Scrolling 
 
+For more information on how to use the Data Grid component, see [How to use the Data Grid component](how-to-view-data).
 
-To access a sample version of Data Grid, you can download the Data Grid Sample from Forge and launch it in Service Studio.  We're continually improving this solution and adding more features. To help us cover more specific and complex scenarios, let us know what you'd like to see in this component's support tab. 
+You can also download a [sample version of the Data](https://www.outsystems.com/forge/component-overview/9765/data-grid-sample-reactive) from Forge and launch it in Service Studio. This sample application documents the Data Grid features and shows how to implement the features by inspecting the code. 
+
+If you have any questions, comments, or need some assistance you can post a question on the [Support tab of the Forge component](https://www.outsystems.com/forge/component-discussions/9764/Data+Grid+Reactive). You can also gather more information about some known issues with the Data Grid component here.
+
+<!--We're continually improving this solution and adding more features. To help us cover more specific and complex scenarios, let us know what you'd like to see in this component's support tab. 
 
 The goal for the Data Grid Reactive component is to help you develop applications that need data visualization and manipulation features that are not currently covered by other components.
 
-This sample application has two purposes: to document the Data Grid features and to show how to implement the features by inspecting the code. Hopefully this will ease your development process and let you extract the full potencial of the components features.
+--> 
 
-[Please check the tutorial Data Grid Reactive in less than 4 minutes.](https://www.youtube.com/watch?v=OFXOPrkRlrI)
+You can also check out a quick Data Grid tutorial [here](https://www.youtube.com/watch?v=OFXOPrkRlrI)
 
 
