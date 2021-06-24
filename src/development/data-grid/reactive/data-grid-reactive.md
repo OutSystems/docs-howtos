@@ -16,7 +16,9 @@ The Data Grid component has the following key features:
 * Data grouping 
 * Virtual Scrolling 
 
-For more information on how to use the Data Grid component, see [How to use the Data Grid component](how-to-view-data).
+For more information on how to use the Data Grid component, see [How to use the Data Grid component](how-to-view-data). 
+
+You can also check out a quick Data Grid tutorial [here](https://www.youtube.com/watch?v=OFXOPrkRlrI)
 
 You can also download a [sample version of the Data](https://www.outsystems.com/forge/component-overview/9765/data-grid-sample-reactive) from Forge and launch it in Service Studio. This sample application documents the Data Grid features and shows how to implement the features by inspecting the code. 
 
@@ -27,7 +29,4 @@ If you have any questions, comments, or need some assistance you can post a ques
 The goal for the Data Grid Reactive component is to help you develop applications that need data visualization and manipulation features that are not currently covered by other components.
 
 --> 
-
-You can also check out a quick Data Grid tutorial [here](https://www.youtube.com/watch?v=OFXOPrkRlrI)
-
 
