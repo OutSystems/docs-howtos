@@ -20,7 +20,7 @@ This example This example does not define any column structure.
     By default, the Grid widget contains the following placeholders:
 
     * ContextMenu
-    * Loading (displayed while data is being fetched from teh server)
+    * Loading (displayed while data is being fetched from the server)
     * NoResults (displayed when no results are returned)
     * GridColumns
 
@@ -64,6 +64,10 @@ This example This example does not define any column structure.
 
     ![Set Grid's Data property](images/grid-data-prop-ss.png)
 
-1. Bind the **IsDataFetched** property to the Data Action property **IsDataFetched**.
+1. Bind the Grid's **IsDataFetched** property to the Data Action property **IsDataFetched**.
 
     ![Set Grid's IsDataFetched property](images/grid-isdata-fetched-ss.png)
+
+After following these steps and publishing the module, you can test the component in your app.
+
+**Result**
