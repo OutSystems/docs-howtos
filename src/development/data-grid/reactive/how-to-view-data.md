@@ -5,7 +5,7 @@ summary: View, explore, and edit large amounts of data in a familiar spreadsheet
 
 #  How to use the Data Grid component
 
-This example This example does not define any column structure. 
+This example fetches data from a database and displays it in the grid. (This examples does not define any column structure.) 
 
 1. In Service Studio, in the Toolbox, search for Grid.
 
@@ -28,11 +28,13 @@ This example This example does not define any column structure.
 
     You can change the content of these placeholders as required.
 
-1. Create an Action to fetch the data you want to display in the grid.
+1. Create a Data Action to fetch the data you want to display in the grid.
 
     ![Create fetch data action](images/grid-fetch-data-ss.png)
 
 1. Enter a name for the Action's output parameter (for example, Data) and ensure the **Data Type** is **Text**.
+
+    This output parameter is used to receive the data fetched from the database.
 
     ![Name output parameter](images/grid-output-par-ss.png)
 
@@ -44,21 +46,21 @@ This example This example does not define any column structure.
 
 1. On the **Logic** tab, drag the **ArrangeData** Server Action onto the flow.
 
+    The **Grid** block receives data in JSON format. The **ArrangeData** Server Action analyzes this data, serializes it, and retrieves the information from each column, whether it be in, for example, string, number, boolean format.
+
     ![Drag ArrangeData server action onto the flow](images/grid-arrange-data-ss.png)
 
-1. Set the **Data** property to the aggregate result. 
+1. Set the **Data Action** property to the aggregate result. 
 
-    **Note:** The **ArrangeData** Server Action action can receive any data structure so you must use the **ToObject** function. 
+    All of the aggregate data is passed to the action.
+
+    **Note:** Because the **ArrangeData** Server Action action can receive any data structure, you must use the **ToObject** function. 
 
     ![Set Data property to the aggregate result ](images/grid-aggregate-result-ss.png)
 
-1. Click on the flow and add a **Set Data** data action.
+1. Drag an **Assign** onto the flow and set the **Data** action output parameter to the **ArrangeData.DataJSON** property.
 
-    ![Add a Set Data action to the flow ](images/grid-set-data-ss.png)
-
-1. Assign the **Set Data** property to the **ArrangeData** Server Action output.
-
-    ![Assign the Set Data to the server action output ](images/grid-set-data-assign-ss.png)
+    ![Set Assign Data output paramter ](images/grid-set-assign-ss.png)
 
 1. Return to the main screen and select the Grid. On the **Properties** tab, set the **Data** property to the output of the Data Action you created earlier (step. 3).
 
