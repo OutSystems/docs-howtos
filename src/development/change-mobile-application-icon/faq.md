@@ -1,12 +1,11 @@
 ---
 summary: Steps to change mobile application icon by environment
 tags: 
-
 ---
 
 # How to change a mobile application icon by environment 
 
-## Having a mobile application with different icons in all environments to able to know which one to test
+This guide provides information for having a mobile application with different icons in all environments to able to know which one to test. To do it, follow the next steps.
 
 ## Adding the necessary files and configurations to have each environment apk generated with a different icon
 
@@ -35,6 +34,3 @@ tags:
 
     In both versions of the platform, after changing these configurations, a new build needs to be generated to display the icons correctly.
 
-    Hope this helps your developments. If you have any further questions don't hesitate to contact us.
-
-    If you run into any issues while doing this configuration, please, contact me by email directly and we can schedule a session to go over the process.
