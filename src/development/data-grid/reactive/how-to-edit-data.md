@@ -20,7 +20,7 @@ This example shows how to edit data in the Grid using columns.
 
    ![Search for Column widget](images/grid-edit-columns-ss.png)
 
-1. Drag the relevant Column type to the **Grid Column** placeholder. 
+1. Drag the relevant Column type to the **GridColumnsPlaceholder**. 
 
     In this example, the **Text Column** is used.
 
@@ -40,11 +40,11 @@ This example shows how to edit data in the Grid using columns.
 
     | **Widget** | **Property** |
     |---|---|
-    | **Number Column** | <li>Header: "Stock"</li><li>Binding:"Sample_Product.Stock"|
-    | **Currency Column** | <li>Header: "Price"</li><li>Binding:"Sample_Product.Price" | 
-    |**Checkbox Column**  |  <li>Header: "Is Favorite"</li><li>Binding:"Sample_Product.Price" |  
+    |**Number Column** | Header: "Stock" <br/> Binding: "Sample_Product.Stock"|
+    | **Currency Column**| Header: "Price"<br/> Binding: "Sample_Product.Price" | 
+    |**Checkbox Column** | Header: "Is Favorite"<br/>Binding: "Sample_Product.IsFavourite" |  
 
-    ![Drag more columns to the placeholder](images/grid-edit-textcolumn-ss.png)
+    ![Drag more columns to the placeholder](images/grid-edit-addcol-ss.png)
 
 After following these steps and publishing the module, you can test the component in your app. Double-click a cell to edit it's content.
 

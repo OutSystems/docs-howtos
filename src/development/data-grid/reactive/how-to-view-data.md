@@ -60,7 +60,7 @@ This example fetches data from a database and displays it in the grid. (This exa
 
 1. Drag an **Assign** onto the flow and set the **Data** action output parameter to the **ArrangeData.DataJSON** property.
 
-    ![Set Assign Data output paramter ](images/grid-set-assign-ss.png)
+    ![Set Assign Data output parameter ](images/grid-set-assign-ss.png)
 
 1. Return to the main screen and select the Grid. On the **Properties** tab, set the **Data** property to the output of the Data Action you created earlier (step. 3).
 
@@ -74,19 +74,20 @@ After following these steps and publishing the module, you can test the componen
 
 **Result**
 
+![Grid result](images/grid-result-ss.png)
 
 ## Properties
 
 | **Properties** | **Description** |
 |---|---|
-| Data (Text): Mandatory  |   |
-| IsDataFetched (Boolean): Mandatory | | 
-| GridHeight (Integer): Optional  |  Default 400 pixels. |  
-| HasGroupPanel (Boolean): Optional  |  Default = True. |  
-| AllowColumnEdit (Boolean): Optional  |  False.  |   
-| AllowColumnReorder (Boolean): Optional  |   True | 
-| AllowColumnResize (Boolean): Optional  | True |  
-| AllowColumnSort (Boolean): Optional  | True | 
-| RowHeight (Integer): Optional  | 48 pixels | 
-| RowsPerPage (Integer): Optional  | 50| 
+| Data (Text): Mandatory  | The data displayed in the Grid.  |
+| IsDataFetched (Boolean): Mandatory | Defines what is displayed while data is loading. | 
+| GridHeight (Integer): Optional  |  Sets the Grid's height in pixels. Default height is 400 pixels. |  
+| HasGroupPanel (Boolean): Optional  |  Default value is True. |  
+| AllowColumnEdit (Boolean): Optional  | Allows columns to be edited. Default value is False.  |   
+| AllowColumnReorder (Boolean): Optional  | Allows columns to be reordered. Default value is True. | 
+| AllowColumnResize (Boolean): Optional  | Allows column width to be resized. Default value is True. |  
+| AllowColumnSort (Boolean): Optional  | Allows sorting data by column. Default value is True. | 
+| RowHeight (Integer): Optional  | Sets the row height in pixels. Default height is 48 pixels. | 
+| RowsPerPage (Integer): Optional  | Sets the number of rows displayed per page. Default value is 50.| 
 
