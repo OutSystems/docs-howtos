@@ -52,4 +52,4 @@ After following these steps and publishing the module, you can test the componen
 
 ![Result](images/grid-edit-result-ss.png)
 
-**Note:** When you edit a cell, that cell and the corresponding line is marked with a dirty mark.
+**Note:** When you edit a cell, that cell and the corresponding line is marked with a black triangle to indicate a change in data. 

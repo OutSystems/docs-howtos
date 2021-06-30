@@ -77,3 +77,9 @@
             http://regexstorm.net/tester
         - "RegEx101 regular expression tester":
             https://regex101.com/
+
+# --- Data Grid ---
+
+- data-grid\reactive/data-grid-reactive.md:
+    - external:
+        - "Known issues with the Data Grid component for Reactive Web apps": 

@@ -83,7 +83,7 @@ After following these steps and publishing the module, you can test the componen
 | Data (Text): Mandatory  | The data displayed in the Grid.  |
 | IsDataFetched (Boolean): Mandatory | Defines what is displayed while data is loading. | 
 | GridHeight (Integer): Optional  |  Sets the Grid's height in pixels. Default height is 400 pixels. |  
-| HasGroupPanel (Boolean): Optional  |  Default value is True. |  
+| HasGroupPanel (Boolean): Optional  | Enables the group panel to allow dragging columns and apply the grouping by the fields corresponding to the dragged columns. Default value is True. |  
 | AllowColumnEdit (Boolean): Optional  | Allows columns to be edited. Default value is False.  |   
 | AllowColumnReorder (Boolean): Optional  | Allows columns to be reordered. Default value is True. | 
 | AllowColumnResize (Boolean): Optional  | Allows column width to be resized. Default value is True. |  
