@@ -7,7 +7,9 @@ summary: How to edit the Grid data and save the changes to the database
 
 This example shows how to edit the Grid data and save those changes to the database.
 
-**Prerequisites:** [Complete How to edit data in the Grid component](how-to-edit-data.md).
+**Prerequisites:** 
+
+* Complete [How to edit data in the Grid component](how-to-edit-data.md).
 
 1. Select the Grid component and on the **Properties** tab, enter a **Name**.
 

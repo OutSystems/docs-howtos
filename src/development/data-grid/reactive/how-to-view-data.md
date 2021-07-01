@@ -5,6 +5,10 @@ summary: View, explore, and edit large amounts of data in a familiar spreadsheet
 
 #  How to use the Data Grid component
 
+**Prerequisites** 
+
+* Download and install the [Data Grid Reactive](https://www.outsystems.com/forge/component-overview/9764/data-grid-reactive) component from Forge.
+
 This example fetches data from a database and displays it in the grid. (This examples does not define any column structure.) 
 
 1. In Service Studio, in the Toolbox, search for Grid.

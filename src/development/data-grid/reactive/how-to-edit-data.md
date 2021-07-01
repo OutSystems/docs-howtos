@@ -6,7 +6,9 @@ summary: The following example demonstrates how to edit information in the Grid 
 
 This example shows how to edit data in the Grid using columns.
 
-**Prerequisites:** Complete [How to use the Data Grid component](how-to-view-data.md).
+**Prerequisites:** 
+
+* Complete [How to use the Data Grid component](how-to-view-data.md).
 
 1. Select the **Grid** component, and on the **Properties** tab, expand **Optional Configs** and set the **AllowColumnEdit** property to **True**. 
 
