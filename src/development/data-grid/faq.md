@@ -1,5 +1,5 @@
 ---
-tags:
+tags: runtime-traditionalweb
 summary: Use this tutorial to create Excel-like interface with the Data Grid component, to view, edit, and save data. There's also a section about when to use Data Grid.
 ---
 
