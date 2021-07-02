@@ -1,8 +1,8 @@
-# How to reduce the size of my eSpace
+# How to reduce the size of my modules
 
 ## Question
 
-Why is my eSpace so large?
+Why is my module so large?
 
 ## Answer
 
