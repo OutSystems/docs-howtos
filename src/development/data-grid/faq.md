@@ -3,7 +3,7 @@ tags:
 summary: Use this tutorial to create Excel-like interface with the Data Grid component, to view, edit, and save data. There's also a section about when to use Data Grid.
 ---
 
-# How to use Data Grid
+# How to use Data Grid Web
 
 Before starting, make sure that the components [Data Grid](https://www.outsystems.com/forge/component-overview/5554/) and [Data Grid Sample](https://www.outsystems.com/forge/component-overview/5555/) are installed in your environment.
 
