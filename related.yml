@@ -82,4 +82,5 @@
 
 - data-grid\reactive/data-grid-reactive.md:
     - external:
-        - "Known issues with the Data Grid component for Reactive Web apps": 
+        - "Known issues with the Data Grid component for Reactive Web apps":
+           https://success.outsystems.com/Support/Enterprise_Customers/Troubleshooting/Known_issues_with_the_Data_Grid_component_for_Reactive_Web_apps 
