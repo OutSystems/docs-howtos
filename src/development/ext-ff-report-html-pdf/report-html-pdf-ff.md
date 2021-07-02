@@ -9,9 +9,9 @@ tags:
 This article was written by [Fabio Fantato](https://www.outsystems.com/profile/40762/), OutSystems MVP.
 </div>
 
-This article guides you on how to create reports using the HTML2PDF component. Get it here. Also, before you continue reading this article it’s recommended that you read this FAQ.
+This article guides you on how to create reports using the HTML2PDF component. Get it [here](https://www.outsystems.com/forge/component-overview/209/html2pdfconverter). Also, before you continue reading this article it’s recommended that you read this [FAQ](https://www.outsystems.com/forums/discussion/17923/html2pdfconverter-faq/).
 How does this component works
-The HTML2PDF is a wrapper to an external toolkit that converts HTML pages to a PDF file. This component allows you to create a report as a regular web screen and call the provided actions to simulate a print directly to a PDF file.
+The HTML2PDF is a wrapper to an [external toolkit](https://wkhtmltopdf.org/) that converts HTML pages to a PDF file. This component allows you to create a report as a regular web screen and call the provided actions to simulate a print directly to a PDF file.
 
 ## Before you begin
 
@@ -72,7 +72,7 @@ To use this component correctly you need to install the component and add some r
 
 ### Installing the component:
 
-1. Download the binary and other libraries for the right version of the toolkit and there are some differences if you are using a cloud, an on-premise installation or even if you are in your personal environment.
+1. [Download the binary  and other libraries](https://wkhtmltopdf.org/downloads.html) for the right version of the toolkit and there are some differences if you are using a cloud, an on-premise installation or even if you are in your personal environment.
     
     <div class="info" markdown="1">    
     The toolkit repository has several versions, but you need to follow exactly the versions detailed in the component documentation. If you use anything different might be a nightmare to put it to work.
@@ -80,7 +80,7 @@ To use this component correctly you need to install the component and add some r
 
 1. Get the 7z Archive and extract it to a local folder. Inside the folder wkhtmltox\bin, you find the files: wkhtmltopdf.exe, wkhtmltoimage.exe and wkhtmltox.dll.
 
-1. Install the HTML2PDF component in your OutSystems environment and open the application to do the setup. 
+1. [Install the HTML2PDF component](https://success.outsystems.com/Documentation/11/Getting_started/Use_a_Forge_Component_Made_by_the_Community) in your OutSystems environment and open the application to do the setup. 
 
     <div class="info" markdown="1">
     You should do the setup procedure in all environments you have in your infrastructure. (Dev, QA, Prod, …)

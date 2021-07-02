@@ -50,4 +50,3 @@ To create a LifeTime plugin:
     ![image alt text](images/How-to-create-a-LifeTime-Plugin-7.png)
 
 1. Plug it. Because the plugin was developed in a separate environment from LifeTime, you need to integrate it once you finish developing and testing it. For that, simply grab the solution and publish it in the LifeTime environment's Service Center.
-
