@@ -84,3 +84,5 @@
     - external:
         - "Known issues with the Data Grid component for Reactive Web apps":
            https://success.outsystems.com/Support/Enterprise_Customers/Troubleshooting/Known_issues_with_the_Data_Grid_component_for_Reactive_Web_apps 
+        - "Data Grid Reactive APIs"
+           https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Interfaces/Patterns/Data_Grid_Reactive_APIs
