@@ -4,12 +4,12 @@
     - href: development/create-lifetime-plugin/faq.md
     - href: development/feature-flags/feature-flags.md
     - href: development/reduce-size-espace/faq.md        
-    - href: development/data-grid/faq.md
-    - href: development/data-grid/reactive/intro.md
+    - href: development/data-grid/intro.md
     - topics:
-        - href: development/data-grid/reactive/how-to-view-data.md
-        - href: development/data-grid/reactive/how-to-edit-data.md
-        - href: development/data-grid/reactive/how-to-save-data.md
+        - href: development/data-grid/faq.md
+        - href: development/data-grid/how-to-view-data.md
+        - href: development/data-grid/how-to-edit-data.md
+        - href: development/data-grid/how-to-save-data.md
     - href: development/table-sort-sql/faq.md
     - href: development/list-sort-sql/faq.md
     - href: development/ext-jj-auth0/ext-jj-auth0.md

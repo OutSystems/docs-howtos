@@ -2,7 +2,7 @@
 tags: runtime-reactiveweb;
 summary: The following example demonstrates how to edit information in the Grid using columns.
 ---
-#  How to edit data in the Data Grid component
+#  How to edit data in the Data Grid Reactive
 
 This example shows how to edit data in the Grid using columns.
 

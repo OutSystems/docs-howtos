@@ -3,7 +3,7 @@ tags: runtime-reactiveweb;
 summary: View, explore, and edit large amounts of data in a familiar spreadsheet interface with the Data Grid component for Reactive Web apps.
 ---
 
-#  How to use the Data Grid component
+#  How to use the Data Grid Reactive
 
 **Prerequisites** 
 
