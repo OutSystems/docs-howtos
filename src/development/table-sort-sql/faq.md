@@ -47,7 +47,7 @@ To enable the dynamic sorting in a Table that has a SQL query as the data source
     1. Add **Text.Regex_Replace** server action (probably you have to add the dependency to the **Text** extension and **Regex_replace** server action) between the **Start** and **End** elements, and set the following properties:
         
         * `Text` = `SortForAggregate`
-        * `Pattern` = `"[^\w.]"`
+        * `Pattern` = `"[^\w. ]"`
         * `Replace` = `""`
     
     1. Add an **Assign** between the **Text.Regex_Replace** and **End** elements. Add the following assignment:
