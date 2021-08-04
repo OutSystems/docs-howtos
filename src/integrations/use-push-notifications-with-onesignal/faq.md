@@ -141,6 +141,9 @@ To send a notification with a simple message in English, do the following in the
 
 3. **Send** the notification supplying the MessageList variable as the Message input parameter. 
 
+## Video Example
+
+[![](OneSignalSC.jpg)](https://vimeo.com/582989308 "OneSignal Setup on OutSystems")
 
 ## Remarks
 
