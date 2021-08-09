@@ -39,40 +39,34 @@ To enable the dynamic sorting in a Table that has a SQL query as the data source
         
         * `SortForAggregate` Input Parameter.
         * `SortForSQL` Output Parameter.
-        * `Entity` Local variable.
-        * `Attribute` Local variable.
 
     1. Set the **Name** of the new action to `EncodingSortForSQL` and set the **Function** property to **Yes**.
 
-    1. Add an **If** between the **Start** and **End** elements, and set the **Condition** to the following expression:
-
-            Index(SortForAggregate,".") <> -1
-
-    1. Add an **Assign** to the **False** branch of the previous **If**. Add the following assignment:
-
-        * `SortForSQL` = `SortForAggregate`
-
-    1. Add an **Assign** and connect it to the **True** branch of the **If**. Add the following assignment:
-
-        * `Entity` = `"{" + Substr(SortForAggregate,0,Index(SortForAggregate,".")) + "}"`
-
-    1. Add and connect an **If** to the right of the **Assign** created on the previous step. Set the **Condition** to the following expression:
-
-            Index(SortForAggregate,"DESC",ignoreCase: True) <> -1
+    1. Open **Manage Dependencies**, and from the **Text** producer, add the **Regex_replace** server action as a dependency.
     
-    1. Add and connect an **Assign** to the **True** branch of the **If**. Add the following assignments:
-        *  `Attribute` = `"[" + Substr(SortForAggregate,Index(SortForAggregate,".")+1,Index(SortForAggregate," ")-Index(SortForAggregate,".")-1) + "]"`
+    1. Add the **Text.Regex_Replace** server action between the **Start** and **End** elements, and set the following properties:
+        
+        * **Text** = `SortForAggregate`
+        * **Pattern** = `"[^\w. ]"`
+        * **Replace** = `""`
 
-        *  `SortForSQL` = `Entity + "." + Attribute + " DESC"`
+        <div class="info" markdown="1">
+        
+        This action removes all characters that aren't a word character (alphanumeric characters and underscore, `[^A-Za-z0-9_]`), a period (`.`), or a space (` `). This is used to prevent SQL injection.
+        
+        </div>
+    
+    1. Add an **Assign** between the **Text.Regex_Replace** and **End** elements. Add the following assignments:
+    
+        * `SortForSQL` = `"{" + Replace(SortForAggregate, ".",  "}.[") + "]"`
+        * `SortForSQL` = `Replace(SortForSQL, " DESC]", "] DESC")`
 
-    1. Add and connect an **End** element to the right of the **Assign**.
-
-    1. Add and connect an **Assign** to the **False** branch of the **If**. Add the following assignments:
-        *  `Attribute` = `"[" + Substr(SortForAggregate,Index(SortForAggregate,".")+1,Length(SortForAggregate)) + "]"`
-
-        *  `SortForSQL` = `Entity + "." + Attribute`
-
-    1. Add and connect an **End** element to the bottom of the previous **Assign**.
+        <div class="info" markdown="1">
+        
+        The first assignment encodes the sort attribute, by wrapping the entity with curly brackets, `{}`, and wrapping the attribute with square brackets  `[]`.
+        The second assignment corrects the encoding when the sort attribute includes a `DESC`command, moving the closing square bracket, `]`, to the correct location.
+        
+        </div>
 
 1. Set the **SortForSQL** parameter of your **SQL** query to `EncodingSortforSQL(TableSort)`.
 
