@@ -89,7 +89,6 @@
     - href: devops/build-cd-pipeline/faq.md
     - href: devops/integrate-version-control/integrate-version-control.md
     - href: devops/create-alerts/create-alerts.md
-    - href: devops/automate-outsystems-deployments-with-jenkins/faq.md
     - href: devops/automate-container-deployment-jenkins-lifetime/faq.md
     - href: devops/automate-container-deployment-jenkins/faq-jenkins.md
     - topics:
