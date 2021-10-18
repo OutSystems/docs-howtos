@@ -1,5 +1,5 @@
 ---
-tags: version-10; Mobile; ObjectiveC; plugins
+tags: Mobile; ObjectiveC; plugins
 summary: 
 ---
 
@@ -11,7 +11,7 @@ Yes, OutSystems currently provides support for CocoaPods-dependent plugins that 
 
 CocoaPods is a dependency manager for Swift and Objective-C Cocoa projects that includes over 36 thousand libraries and is used by more than 2 million apps.
 
-This new feature allows OutSystems 10 to integrate with even more Cordova plugins with third-party libraries and frameworks dependencies for iOS platforms. This means OutSystems developers have a larger set of Cordova plugins available to use in their applications.
+Since OutSystems 10, this feature allows to integrate with even more Cordova plugins with third-party libraries and frameworks dependencies for iOS platforms. This means OutSystems developers have a larger set of Cordova plugins available to use in their applications.
 
 By using CocoaPods, developers can save a lot of tedious work when using Cordova plugins. Let's use [phonegap-plugin-push](https://github.com/phonegap/phonegap-plugin-push "https://github.com/phonegap/phonegap-plugin-push") as an example. Previously, in order to use it, you had to add all the dependencies by hand in your plugins.xml file. Next, you needed to get the source code for each of the dependencies and build the code for each dependency targeting every supported architecture. This was both time-consuming and error-prone.
 
@@ -40,3 +40,9 @@ If you're curious and want to know if your plugin uses CocoaPods, follow the ste
     ![](images/github-plugin-xml-file.png)
 
 1. Open the plugin.xml file and search for podspec framework (check [this example](https://github.com/phonegap/phonegap-plugin-push/blob/v2.0.0/plugin.xml#L87 "https://github.com/phonegap/phonegap-plugin-push/blob/v2.0.0/plugin.xml#L87")).
+
+    <div class="info" markdown="1">
+    
+    To generate the app successfully, make sure that the podspec framework version is correct in the plugin.xml.
+    
+    </div>

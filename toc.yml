@@ -2,11 +2,16 @@
 - href: development/intro.md
 - topics:
     - href: development/create-lifetime-plugin/faq.md
+    - href: development/feature-flags/feature-flags.md
     - href: development/reduce-size-espace/faq.md        
-    - href: development/data-grid/faq.md
-    - href: development/table-sort-sql/faq.md
+    - href: development/data-grid/intro.md
+    - topics:
+        - href: development/data-grid/faq.md
+        - href: development/data-grid/how-to-view-data.md
+        - href: development/data-grid/how-to-edit-data.md
+        - href: development/data-grid/how-to-save-data.md
     - href: development/list-sort-sql/faq.md
-    - href: development/change-session-timeout/faq.md
+    - href: development/clone-module/faq.md
     - href: development/ext-jj-auth0/ext-jj-auth0.md
     - href: development/ext-ff-report-html-pdf/report-html-pdf-ff.md
     - href: development/hierarchical-roles/faq.md
@@ -42,6 +47,8 @@
     - href: front-end/table-records-fixed-header/faq.md
     - href: front-end/validation-messages-location/faq.md
     - href: front-end/migrate-multilingual/faq.md
+    - href: front-end//unsaved-changes/unsaved-changes.md
+    - href: front-end/prevent-download/prevent-download.md 
 
 # Logic How-tos
 - href: logic/intro.md
@@ -79,10 +86,11 @@
 - href: devops/intro.md
 - topics:
     - href: devops/build-cd-pipeline/faq.md
-    - href: devops/automate-outsystems-deployments-with-jenkins/faq.md
+    - href: devops/integrate-version-control/integrate-version-control.md
+    - href: devops/create-alerts/create-alerts.md
     - href: devops/automate-unit-testing-and-api-testing/faq.md
     - href: devops/ui-testing-selenium/faq.md
-    - href: devops/building-pipeline-air-gap-stage/faq.md
+    # - href: devops/on-track/on-track.md
 
 # Integrations How-tos
 - href: integrations/intro.md

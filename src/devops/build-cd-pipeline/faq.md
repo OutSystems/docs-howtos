@@ -1,13 +1,13 @@
 # How to build an OutSystems continuous delivery pipeline
 
-Continuous delivery is the principle of building applications that can be released safely to production at any time, on-demand. To accomplish this, you need a deployment pipeline that can rapidly assess the impact of changes made to your applications (from a production readiness perspective) and deploy them to production in a swift manner, with the least amount of intervention required from a human operator.
+Continuous delivery is the principle of building applications that can be released safely to production at any time, on demand. To accomplish this, you need an automatic deployment pipeline for that can rapidly assess the impact of changes made to your applications (from a production readiness perspective) and deploy them to production in a swift manner, with the least amount of intervention required from a human operator.
 
 We provide **outsystems-pipeline**, an [open-source accelerator](https://github.com/OutSystems/outsystems-pipeline) that allows you to extend the built-in capabilities of LifeTime, such as governance over which applications and environments you are authorized to manipulate or the built-in impact analysis that simplifies correctly deploying complex application portfolios across environments. This accelerator includes Python scripts built on top of the LifeTime APIs, pipeline templates, and documentation to simplify integrating with any CI/CD platform. Soon, OutSystems will also be able to accept contributions from the community to help evolve and improve **outsystems-pipeline**. With this accelerator:
 
-* Release managers can benefit from fully automated pipeline that helps reduce human errors and the lead-time
+* Release managers can benefit from a fully automated deployment pipeline that helps reduce human errors and the lead-time
 * Developers will build software with high quality with the help of faster feedback loops for each change
 
-The following is an example continuous delivery pipeline that consists of 5 distinct environments:
+The following is an example continuous delivery pipeline that consists of five distinct environments:
 
 ![OutSystems Continuous Delivery Pipeline](images/continuous-delivery-pipeline.png)
 
@@ -28,7 +28,7 @@ Following the commit stage, the newly created LifeTime tags are automatically de
 
 <div class="info" markdown="1">
 
-To enable a successful continuous delivery practice in your low-code factory, it is highly recommended to develop your applications with testability in mind. This means not only complying with development best practices (such as the [4-Layer Canvas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/01_The_4_Layer_Canvas)) that promote proper isolation of business concepts in your architecture, but also ensuring that your developers write unit tests as part of their development activities.
+To enable a successful continuous delivery practice in your low-code factory, it is highly recommended to develop your applications with testability in mind. This means not only complying with development best practices (such as the [Architecture Canvas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_Architecture_of_Your_OutSystems_Applications/The_Architecture_Canvas)) that promote proper isolation of business concepts in your architecture, but also ensuring that your developers write unit tests as part of their development activities.
 
 The proposed approach relies on unit tests written with the [BDD Framework](https://www.outsystems.com/forge/component/1201/bddframework/) Forge component for the automatic regression stage. [This article](https://www.outsystems.com/blog/posts/intro-bddframework-testing/) provides additional insights on how to write tests using this framework. Also, as a best practice, consider isolating your unit test code in separate LifeTime applications to prevent it from being deployed to production along with your application code.
 

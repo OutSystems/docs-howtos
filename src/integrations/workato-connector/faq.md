@@ -54,6 +54,8 @@ After installing the component in your OutSystems environment do the following:
 
 1. Search for the "Workato Connector" application in the list and click its name to navigate to the application detail screen.
 
+1. Cick on **WorkatoConnector** in the modules screen.
+
 1. Click **Open in Browser**. This will take you to the connector's security configuration screen.
 
 1. Click **Add new key**.
@@ -262,3 +264,4 @@ The current version of the OutSystems Workato Connector has the following limita
 * Entities imported into OutSystems from external databases won't be available in recipes.
 * Only entities that have an auto-number `Id` column are available for the "New record" trigger.
 * Only entities that have an `UpdatedOn` column are available for the "New/Updated record" trigger.
+* The Workato connector doesn't work when exposing entities to environments using Multiple Database Catalogs and Oracle as the platform database.

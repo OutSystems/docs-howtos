@@ -1,6 +1,6 @@
 ---
 summary: Steps to create a plugin to extend LifeTime functionality
-Tags: 
+tags: 
 ---
 
 # How to create a LifeTime Plugin
@@ -9,9 +9,9 @@ Plugins are special applications that are seamlessly integrated into LifeTime:
 
 ![image alt text](images/How-to-create-a-LifeTime-Plugin-0.png)
 
-If you want to create a LifeTime plugin, do the following:
+To create a LifeTime plugin:
 
-1. Access LifeTimeSDK by typing 'LifeTimeSDK' in the URL of your LifeTime environment.
+1. In the URL of your LifeTime environment, type **LifeTimeSDK**.
 
 1. Follow the 'click here' link at the end of the page.
 
@@ -45,9 +45,8 @@ If you want to create a LifeTime plugin, do the following:
 
     ![image alt text](images/How-to-create-a-LifeTime-Plugin-6.png)
 
-1. Check the sample plugin. In the [forge](http://www.outsystems.com/forge/) a sample plugin called [Geo Performance](http://www.outsystems.com/forge/component/405/geo-performance/) gives you an idea of how to create a simple plugin that uses all the APIs. It's also an example of how we built some parts of Performance Monitor, including the data aggregation process.
+1. Check the sample plugin. In [Forge](http://www.outsystems.com/forge/) a sample plugin called [Infrastructure Monitor](https://www.outsystems.com/forge/component-overview/1178/infrastructure-monitor/) gives you an infrastructure monitoring tool for platform servers.
 
     ![image alt text](images/How-to-create-a-LifeTime-Plugin-7.png)
 
-1. Plug it. Since the plugin was developed in a separate environment from LifeTime you need to integrate it once you finish developing and testing it. For that, simply grab the solution and publish it in LifeTime environment's Service Center.
-
+1. Plug it. Because the plugin was developed in a separate environment from LifeTime, you need to integrate it once you finish developing and testing it. For that, simply grab the solution and publish it in the LifeTime environment's Service Center.
