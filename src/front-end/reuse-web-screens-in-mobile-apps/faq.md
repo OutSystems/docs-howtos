@@ -1,26 +1,35 @@
 ---
 tags: version-11; support-mobile; support-Mobile_Apps; support-webapps
-summary: 
+summary: Reuse screens from Traditional Web Apps in Mobile Apps with iframe. Limitations apply. 
 ---
 
 # How to Reuse Web Screens in Mobile Apps
 
 ## Question
 
-Is there a way to reuse screens from web apps in mobile apps?
+Is there a way to reuse screens from Traditional Web Apps in Mobile Apps?
 
 ## Answer
 
-We recommend trying to migrate the existing functionality by developing it directly in the mobile app.
+OutSystems recommends migrating the existing functionality by developing it directly in the mobile app. If that's not an option, try integrating existing Traditional Web Screens in Mobile Apps using an iframe that embeds a Traditional Web Screen:
 
-However, because that’s not always an alternative, it is possible to integrate existing Web Screens in mobile apps using an iframe that embeds the Web Screens:
+![web screen embedded in a mobile app](images/Embed_Web_Screens_in_Mobile_Apps.png)
 
-![](images/Embed_Web_Screens_in_Mobile_Apps.png)
-
-To achieve this result, you must do the following:
+Do the following:
 
 * Use an iframe in the mobile app that sends appropriate request headers when fetching the Web Screens; 
 * Update the web app to automatically log in the end user of the mobile app. 
+
+<div class="warning" markdown="1">
+
+Reusing screen content with iframe **doesn't work if LifeTime Analytics is on in the environment**. This is due to a security feature in Apache Cordova. In Cordova, all access to native functionality must happen in the same window context that runs the app. By using iframe, the context changes and Cordova rejects native code execution with the error **java.lang.IllegalAccessException**.
+
+These are possible workarounds:
+
+* Instead of using an iframe, try redirecting the users to the external content with the [InAppBrowser plugin](https://www.outsystems.com/forge/component-overview/1558/inappbrowser-plugin).
+* Turn off [LifeTime Analytics](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Monitor_and_Troubleshoot/Enable_Analytics_for_an_Environment) for the environment and retry embedding the iframe.
+
+</div>
 
 ### Use an iframe in the Mobile App
 
@@ -46,9 +55,9 @@ Create a Block containing an iframe to display the Web Screens as follows:
 
     You might need to tweak the CSS class internal-frame depending on the specific Web Screens to embed in the mobile app.
 
-3. Add an HTML Element to the Block, set the property Tag to `iframe` and add the attribute `class = “internal-frame”`; 
+3. Add an HTML Element to the Block, set the property Tag to `iframe` and add the attribute `class = "internal-frame"`; 
 
-    ![](images/HTML_Element.png)
+    ![HTML Element in Mobile Screen](images/HTML_Element.png)
 
 4. Add a Client Action **FetchIframe** to the Block. On the action **FetchIframe**, add a JavaScript node with a parameter **Source** and associate the parameter of the JavaScript to the input **Source** of the Web Block. Add the following code that fetches the web screen with the appropriate request headers to the JavaScript node: 
 
@@ -70,11 +79,11 @@ Create a Block containing an iframe to display the Web Screens as follows:
     
     The **FetchIframe** action sends correct HTTP headers that protect the request and that allow the **Session_GetMobileAppLoginInfo** action to validate the login information.
 
-    ![](images/FetchIframe_Action.png)
+    ![Editor with JS code](images/FetchIframe_Action.png)
 
 5. Define the action **FetchIframe** as the event handler for the events **On Ready** and **On Parameters Changed** of the Block **InternalBrowser**. 
 
-    ![](images/InternalBrowser_Block_Events.png)
+    ![Block properties](images/InternalBrowser_Block_Events.png)
 
     This ensures that the action **FetchIframe** runs when the Block is shown on the mobile app, as well as when the **Source** parameter changes.
 
@@ -82,9 +91,9 @@ Create a Block containing an iframe to display the Web Screens as follows:
 
 ### Automatically Log In the End User in the Web App
 
-Add an **OnException** handler to the UI Flow that contains the Web Screens that will be embedded in the mobile app. The flow of the **OnException** will handle security exceptions and validate if the current end user is already authenticated in the mobile app. If so, it will automatically login the user in the web app. Add the following logic to the **OnException** handler:
+Add an **OnException** handler to the UI Flow that contains the Web Screens that you want to embed in the mobile app. The flow of the **OnException** handles security exceptions and validates if the current end user is already authenticated in the mobile app. If yes, the logic should log in the user automatically in the web app. Add the following logic to the **OnException** handler:
 
-![](images/OnException_Handler.png)
+![Logic flow in the OnException action](images/OnException_Handler.png)
 
 1. Add a **SecurityException** handler to detect requests from end users that aren’t yet logged in; 
 2. Reference the action **Session\_GetMobileAppLoginInfo** from the **PlatformRuntime\_API** extension and use the action to retrieve the login information of the end user from the mobile app; 
@@ -100,6 +109,6 @@ Add an **OnException** handler to the UI Flow that contains the Web Screens that
 
 ### Links in Web Screens Back to the Mobile App
 
-If the Web Screen to display in the iframe of the mobile app has links back to the mobile app, make sure that the links have the attribute `target = “_top”`. Otherwise you might get a “cascade syndrome”, as shown below, because by default the link will open inside the iframe and not in the top window.
+If the Web Screen to display in the iframe of the mobile app has links back to the mobile app, make sure that the links have the attribute `target = "_top"`. Otherwise you might get a "cascade syndrome", as shown below, because by default the link opens inside the iframe and not in the top window.
 
-![](images/Cascade_Syndrome.png)
+![Multiple menus showing the cascading effect](images/Cascade_Syndrome.png)
