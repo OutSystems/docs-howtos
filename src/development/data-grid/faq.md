@@ -13,9 +13,9 @@ Check also [OutSystems Data Grid Web video tutorials](<https://www.youtube.com/p
 
 Follow these steps to create a grid interface where users can view and filter data.
 
-1. Create a new Web App and add the references. Search for **DataGridComponent** and add all elements. Then search for **DataGridExample** and add only elements under the **Entities** tree.
+1. Create a new Web App and add the references. Search for **DataGridComponent** and add all elements. Then search for **DataGridWebExample** and add only elements under the **Entities** tree.
 
-1. Create a REST endpoint to return a JSON required by Data Grid. Right-click on **Logic** > **Integrations** > **REST** and select **Expose REST API**. Name this REST API "Suppliers". Create a new REST API Method, name it "GetAll" and design it so it returns all entries from the Supplier Entity (find it in **Data** > **DataGridExample**). The data type of the Suppliers Output Parameter should be Supplier List.
+1. Create a REST endpoint to return a JSON required by Data Grid. Right-click on **Logic** > **Integrations** > **REST** and select **Expose REST API**. Name this REST API "Suppliers". Create a new REST API Method, name it "GetAll" and design it so it returns all entries from the Supplier Entity (find it in **Data** > **DataGridWebExample**). The data type of the Suppliers Output Parameter should be Supplier List.
     
     ![Logic to fetch data](images/data-grid-rest-getall.png?width=600)
 
