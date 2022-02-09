@@ -3,7 +3,7 @@ tags: runtime-reactiveweb;
 summary: How to edit the Grid data and save the changes to the database
 ---
 
-#  How to save changes to the Data Grid Reactive
+#  How to save changes to the OutSystems Data Grid
 
 This example shows how to edit the Grid data and save those changes to the database.
 
