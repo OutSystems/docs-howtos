@@ -1,13 +1,13 @@
 ---
 tags: runtime-reactiveweb;
-summary: View, explore, and edit large amounts of data in a familiar spreadsheet interface with the Data Grid component for Reactive Web apps.
+summary: View, explore, and edit large amounts of data in a familiar spreadsheet interface with the OutSystems Data Grid component for Reactive Web apps.
 ---
 
-#  How to use the Data Grid Reactive
+#  How to use the OutSystems Data Grid
 
 **Prerequisites** 
 
-* Download and install the [Data Grid Reactive](https://www.outsystems.com/forge/component-overview/9764/data-grid-reactive) component from Forge.
+* Download and install the [OutSystems Data Grid](https://www.outsystems.com/forge/component-overview/9764/data-grid-reactive) component from Forge.
 
 This example fetches data from a database and displays it in the grid. (This examples does not define any column structure.) 
 

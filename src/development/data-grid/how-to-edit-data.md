@@ -2,13 +2,13 @@
 tags: runtime-reactiveweb;
 summary: The following example demonstrates how to edit information in the Grid using columns.
 ---
-#  How to edit data in the Data Grid Reactive
+#  How to edit data in the OutSystems Data Grid
 
 This example shows how to edit data in the Grid using columns.
 
 **Prerequisites:** 
 
-* Complete [How to use the Data Grid component](how-to-view-data.md).
+* Complete [How to use the OutSystems Data Grid component](how-to-view-data.md).
 
 1. Select the **Grid** component, and on the **Properties** tab, expand **Optional Configs** and set the **AllowColumnEdit** property to **True**. 
 

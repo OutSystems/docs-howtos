@@ -1,21 +1,21 @@
 ---
 tags: runtime-traditionalweb
-summary: Use this tutorial to create Excel-like interface with the Data Grid component, to view, edit, and save data. There's also a section about when to use Data Grid.
+summary: Use this tutorial to create Excel-like interface with the OutSystems Data Grid component, to view, edit, and save data. There's also a section about when to use OutSystems Data Grid.
 ---
 
-# How to use Data Grid Web
+# How to use OutSystems Data Grid Web
 
-Before starting, make sure that the components [Data Grid](https://www.outsystems.com/forge/component-overview/5554/) and [Data Grid Sample](https://www.outsystems.com/forge/component-overview/5555/) are installed in your environment.
+Before starting, make sure that the components [OutSystems Data Grid Web](https://www.outsystems.com/forge/component-overview/5554/) and [OutSystems Data Grid Web Sample](https://www.outsystems.com/forge/component-overview/5555/) are installed in your environment.
 
-Check also [OutSystems Data Grid video tutorials](<https://www.youtube.com/playlist?list=PLxALhSwsaivxRsBZ4kEfzvH4cqU9q0nso>) on YouTube.
+Check also [OutSystems Data Grid Web video tutorials](<https://www.youtube.com/playlist?list=PLxALhSwsaivxRsBZ4kEfzvH4cqU9q0nso>) on YouTube.
 
 ## Create interface to view data
 
 Follow these steps to create a grid interface where users can view and filter data.
 
-1. Create a new Web App and add the references. Search for **DataGridComponent** and add all elements. Then search for **DataGridExample** and add only elements under the **Entities** tree.
+1. Create a new Web App and add the references. Search for **DataGridComponent** and add all elements. Then search for **DataGridWebExample** and add only elements under the **Entities** tree.
 
-1. Create a REST endpoint to return a JSON required by Data Grid. Right-click on **Logic** > **Integrations** > **REST** and select **Expose REST API**. Name this REST API "Suppliers". Create a new REST API Method, name it "GetAll" and design it so it returns all entries from the Supplier Entity (find it in **Data** > **DataGridExample**). The data type of the Suppliers Output Parameter should be Supplier List.
+1. Create a REST endpoint to return a JSON required by Data Grid. Right-click on **Logic** > **Integrations** > **REST** and select **Expose REST API**. Name this REST API "Suppliers". Create a new REST API Method, name it "GetAll" and design it so it returns all entries from the Supplier Entity (find it in **Data** > **DataGridWebExample**). The data type of the Suppliers Output Parameter should be Supplier List.
     
     ![Logic to fetch data](images/data-grid-rest-getall.png?width=600)
 
@@ -78,7 +78,7 @@ These are some suggested steps to implement server-side validation and saving da
 
 ### Example
 
-You can find examples of validation in the DataGrid Example module from the [Data Grid Sample component](https://www.outsystems.com/forge/component-overview/5555/data-grid-sample). Open **DataGrid Example** module and go to **Logic** > **Integrations** > **REST** > **Orders** > **SaveOrders**. Here is an overview of the Action.
+You can find examples of validation in the DataGrid Example module from the [OutSystems Data Grid Web Sample component](https://www.outsystems.com/forge/component-overview/5555/data-grid-sample). Open **DataGrid Example** module and go to **Logic** > **Integrations** > **REST** > **Orders** > **SaveOrders**. Here is an overview of the Action.
 
 ![Server-side validation](images/data-grid-validation-example.png?width=600)
 
