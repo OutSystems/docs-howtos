@@ -74,7 +74,7 @@ Refresh each of the extensions updated in the previous step by doing the followi
 
 1. Select **Refresh Entity**, and then publish the extension to the development environment.
 
-1. Repeat steps 1 and 2 for each entity you updated.
+1. Repeat steps 1 and 2 for each extension you updated.
 
 ### Republish consumer modules { #republish-consumers }
 
