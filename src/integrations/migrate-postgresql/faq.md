@@ -88,7 +88,7 @@ Republish the consumer modules that have dependencies to the updated extensions,
 
 Test each of the modules that have dependencies to the updated extensions, and also any other modules that have dependencies to those consumer modules. Ensure each module has no runtime errors or unexpected behavior while showing or saving data.
 
-It's **critical** that you pay special attention to the **data types** of saved data. The way both connector handles the [data types mapping](https://success.outsystems.com/Documentation/11_x_platform/Reference/OutSystems_Language/Extensibility_and_Integration/Mapping_External_DB_Data_Types_to_OutSystems_Data_Types) may differ.
+It's **critical** that you pay special attention to the **data types** of saved data. The way both connectors handle the [data types mapping](https://success.outsystems.com/Documentation/11_x_platform/Reference/OutSystems_Language/Extensibility_and_Integration/Mapping_External_DB_Data_Types_to_OutSystems_Data_Types) may differ.
 
 ### Deploy the updated extensions and consumers to other environments { #deploy }
 
