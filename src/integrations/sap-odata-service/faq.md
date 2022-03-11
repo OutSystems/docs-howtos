@@ -1,5 +1,12 @@
 # How to consume an SAP OData service in OutSystems
 
+<div class="info" markdown="1">
+
+We recommend [using **Integration Builder** to integrate with SAP OData](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/Integration_Builder) instead of following the current article and creating an integration from scratch. Check the [prerquistes to use Integration Builder to integrate wtih SAP OData](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/Integration_Builder/Use_Integration_Builder/SAP_OData_integration#Prerequisites), and [how to use Integration Builder](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/Integration_Builder/Use_Integration_Builder).
+
+</div>
+
+
 To consume an SAP OData service in OutSystems you need to:
 
 1. Obtain the service specification file from SAP API Business Hub
