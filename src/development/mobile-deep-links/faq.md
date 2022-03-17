@@ -43,3 +43,12 @@ To define an Android Intent use the following syntax:
 To specify a custom fallback URL (`<URL>`) add a string extra `S.browser_fallback_url=<URL>;` to the Intent:
 
     intent://<module>/<screen>#Intent;scheme=<app-identifier>;package=<app-identifier>;S.browser_fallback_url=<URL>;end;
+
+## Additional considerations
+
+* Don't pass critical information on the URL of deep links, as deep links aren't secure by design.
+
+* The main use case of deep links in OutSystems apps is allowing navigation to specific parts of the target app. 
+
+* Ensure that actions available through deep links don’t risk users' data. For example, don’t allow other apps to directly delete content nor access sensitive information about users.
+
