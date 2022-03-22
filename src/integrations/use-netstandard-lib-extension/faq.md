@@ -67,3 +67,5 @@ To remove the problematic assemblies do the following:
 1. Click **Update Source Code** in the toolbar to regenerate the OutSystems assemblies inside the `\Bin` folder.
 
 1. Back in Visual Studio, build the solution again and validate that the assemblies weren't added again.
+
+1. In Service Studio, open the modules that consume the extension, refresh the references and publish.

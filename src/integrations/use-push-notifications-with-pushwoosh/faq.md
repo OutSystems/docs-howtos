@@ -38,7 +38,7 @@ Learn how to [configure Pushwoosh for iOS](../config-pushwoosh-ios/faq.md "How t
 
 ### For Android
 
-Learn how to [configure Pushwoosh for Android](https://www.pushwoosh.com/platform-docs/pushwoosh-sdk/android-push-notifications/configure-android-platform).
+Learn how to [configure Pushwoosh for Android](https://docs.pushwoosh.com/platform-docs/manage-projects/project-configuration/configure-android-platform).
 
 ## Adding the Pushwoosh Plugin to Your Application
 
