@@ -33,7 +33,7 @@ If one of these elements is missing, testing efficiency will be dramatically red
 
 Software systems are built using layers of functionality. It’s impossible for most current systems to be 100% tested. In order to maximize results, experience has proven that the testing effort should be distributed, in a proportional way, according to the [Test Pyramid](https://martinfowler.com/bliki/TestPyramid.html).
 
-![testingtriangle.png](images/TestingTriangle.png?width=300)
+![testingtriangle.png](images/testingtriangle.png?width=300)
 
 There are many testing “types”: in this guide we shall create:
 
