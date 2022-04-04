@@ -78,7 +78,7 @@ Even though you will not actually use the server. You need to configure it as if
 1. Click "Advanced system settings" on the left. 
 1. Click "Environment Variables". 
 1. In "System variables" double click "Path". 
-1. Add ";C:\Progra~1\IBM\Domino\data;C:\Progra~1\IBM\Domino;C:\NotesSQL" to the end of the Value and click OK. 
+1. Add `;C:\Progra~1\IBM\Domino\data;C:\Progra~1\IBM\Domino;C:\NotesSQL` to the end of the Value and click OK. 
 
 ### Configure the ODBC data source pointing to a local file or to a server
 
