@@ -13,7 +13,7 @@ Where `<app-identifier>` is the [App identifier you defined when generating your
 
 <div class="info" markdown="1">
 As a best practice the App identifier of your Mobile App should be lowercase. 
-%%In deep links the `<app-identifier>` scheme must be lowercase, even if your App identifier has uppercase characters.
+<br/>In deep links the `<app-identifier>` scheme must be lowercase, even if your App identifier has uppercase characters.
 </div>
 
 To include values for Input Parameters in your deep link use the following syntax:
