@@ -4,13 +4,6 @@ summary: Use the OutSystems Workato Connector to take full advantage of the Work
 
 # How to integrate OutSystems with Workato
 
-<pre class="script-css">
-/* HIDE H3, H4 AND H5 FROM TOC */
-#mt-toc-container li li li {
-    display:none;
-}
-</pre>
-
 The **OutSystems Workato Connector** allows you to take full advantage of Workato platform without any custom development.
 
 Workato is an integration service that can connect to different services, including OutSystems, and set up triggers to kick off certain actions. For example, you can define a trigger in which every new or updated Account record in Salesforce will execute an "upsert" operation in an OutSystems entity.
