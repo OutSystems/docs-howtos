@@ -86,3 +86,25 @@
            https://success.outsystems.com/Support/Enterprise_Customers/Troubleshooting/Known_issues_with_the_Data_Grid_component_for_Reactive_Web_apps 
         - "Data Grid Reactive APIs":
            https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Interfaces/Patterns/Data_Grid_Reactive_APIs
+
+# Using Redis for in-memory session storage
+- enterprise/install/redis-in-memory-sessions/intro.md:
+    - enterprise/install/redis-in-memory-sessions/requirements.md
+    - enterprise/install/redis-in-memory-sessions/setup-non-prod.md
+    - enterprise/install/redis-in-memory-sessions/setup-platform-server-redis.md
+    - enterprise/install/redis-in-memory-sessions/architecture-high-availability.md
+    - enterprise/install/redis-in-memory-sessions/setup-prod.md
+    - enterprise/install/redis-in-memory-sessions/cluster-failover-test.md
+    - enterprise/install/redis-in-memory-sessions/cluster-add-nodes.md
+    - enterprise/install/redis-in-memory-sessions/setup-enable-ssl.md
+
+- enterprise/install/redis-in-memory-sessions/setup-prod.md:
+    - enterprise/install/redis-in-memory-sessions/requirements.md
+    - enterprise/install/redis-in-memory-sessions/setup-platform-server-redis.md
+    - enterprise/install/redis-in-memory-sessions/cluster-failover-test.md
+    - enterprise/install/redis-in-memory-sessions/architecture-high-availability.md
+    - enterprise/install/redis-in-memory-sessions/cluster-add-nodes.md
+
+- enterprise/install/redis-in-memory-sessions/setup-non-prod.md:
+    - enterprise/install/redis-in-memory-sessions/requirements.md
+    - enterprise/install/redis-in-memory-sessions/setup-platform-server-redis.md
