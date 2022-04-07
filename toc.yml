@@ -114,3 +114,18 @@
     - href: integrations/use-push-notifications-with-pushwoosh/faq.md
     - href: integrations/workato-connector/faq.md
     - href: integrations/migrate-postgresql/faq.md
+
+
+# Infrastructure How-tos
+- href: infrastructure/intro.md
+- topics:
+    - href: infrastructure/redis-in-memory-sessions/intro.md
+    - topics:
+        - href: infrastructure/redis-in-memory-sessions/requirements.md
+        - href: infrastructure/redis-in-memory-sessions/setup-non-prod.md
+        - href: infrastructure/redis-in-memory-sessions/architecture-high-availability.md
+        - href: infrastructure/redis-in-memory-sessions/setup-prod.md
+        - href: infrastructure/redis-in-memory-sessions/cluster-failover-test.md
+        - href: infrastructure/redis-in-memory-sessions/cluster-add-nodes.md
+        - href: infrastructure/redis-in-memory-sessions/setup-platform-server-redis.md
+        - href: infrastructure/redis-in-memory-sessions/setup-enable-ssl.md        
