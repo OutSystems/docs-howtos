@@ -1,6 +1,8 @@
 ---
 summary: Demo application for implementing hierarchical roles
 tags: app-development; OutSystems-roles; user-roles; hierarchical-roles; 
+guid: c3a3c216-5fcb-4943-b787-aa744827ad28
+locale: en-us
 ---
 
 # Sales application demo

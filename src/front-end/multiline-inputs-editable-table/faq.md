@@ -1,3 +1,8 @@
+---
+guid: e4cccabf-a90c-43f2-9fbb-2860590dc404
+locale: en-us
+---
+
 # How to have multiline inputs in Editable Table
 
 ## Question

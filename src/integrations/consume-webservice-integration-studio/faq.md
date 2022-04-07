@@ -1,6 +1,8 @@
 ---
 summary: Learn how to consume a Web Service in Integration Studio.
 tags: support-application_development; support-Integrations_Extensions; support-Integrations_Extensions-featured
+guid: 1f0594cf-ae90-4a94-bcb6-8abc93f7ce5f
+locale: en-us
 ---
 
 # How to consume a Web Service in Integration Studio

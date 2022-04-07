@@ -1,6 +1,8 @@
 ---
 summary:
 tags: article-page
+guid: ea49f3ea-e4f3-4c50-859c-7503286785c6
+locale: en-us
 ---
 
 # Configuring OutSystems with Redis in-memory session storage

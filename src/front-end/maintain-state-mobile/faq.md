@@ -1,6 +1,8 @@
 ---
 tags: version-11; support-mobileapps; support-Front_end_Development;
 summary: 
+guid: 1ab580bd-06db-488c-bcfa-133209853697
+locale: en-us
 ---
 
 # How to maintain the state of a mobile screen

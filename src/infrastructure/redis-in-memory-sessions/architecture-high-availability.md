@@ -1,3 +1,8 @@
+---
+guid: 8325ebdd-9bc8-445f-bd9b-5d41a435a841
+locale: en-us
+---
+
 # Redis Cluster high availability architecture
 
 The following diagram depicts the architecture of a 3-node Master/Replica Redis Cluster infrastructure:

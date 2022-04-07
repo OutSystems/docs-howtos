@@ -1,3 +1,8 @@
+---
+guid: e8289e9d-6e18-4b75-bc16-783fd0dc6574
+locale: en-us
+---
+
 # Scale a Redis Cluster by adding more nodes { #add-node }
 
 <div class="info" markdown="1">

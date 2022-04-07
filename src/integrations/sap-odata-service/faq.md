@@ -1,3 +1,8 @@
+---
+guid: e4b7f665-8752-458d-af71-6515e7bc08e0
+locale: en-us
+---
+
 # How to consume an SAP OData service in OutSystems
 
 <div class="info" markdown="1">

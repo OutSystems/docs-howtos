@@ -1,6 +1,8 @@
 ---
 tags: version-10; form validation; support-Front_end_Development;input; form; validation; ui; css;
 summary: 
+guid: 10da9d4f-5807-4aa0-9d63-6d31e8e78aaa
+locale: en-us
 ---
 
 # How to display input validation messages in a custom location

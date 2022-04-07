@@ -1,3 +1,8 @@
+---
+guid: ba5cba5e-31eb-447e-a9d6-6e766a62aebf
+locale: en-us
+---
+
 # How to insert a null value into a database record
 
 ## Question

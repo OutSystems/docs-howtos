@@ -1,6 +1,8 @@
 ---
 tags: version-11; css; list box; runtime-traditionalweb;
 summary: How to hide the scroll bar of a List Box.
+guid: f7777240-9826-476e-9eab-8415771fbc79
+locale: en-us
 ---
 
 # How to hide the scroll bar of a List Box

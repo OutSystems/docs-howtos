@@ -1,6 +1,8 @@
 ---
 tags: version-10; popup; resize; support-Front_end_Development;
 summary: 
+guid: 8aef5808-c75c-4831-ad81-f72a3fdc27d8
+locale: en-us
 ---
 
 # How to dynamically resize a pop-up window

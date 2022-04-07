@@ -1,3 +1,8 @@
+---
+guid: dbc1a919-c473-4ac2-aa5a-c424a79ed690
+locale: en-us
+---
+
 # How to include a jQuery plugin
 
 ### Question

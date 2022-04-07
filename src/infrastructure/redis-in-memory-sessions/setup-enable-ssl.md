@@ -1,3 +1,8 @@
+---
+guid: f69f6130-df05-468b-aabf-5414ba06e384
+locale: en-us
+---
+
 # Enable SSL for Redis
 
 <div class="info" markdown="1">

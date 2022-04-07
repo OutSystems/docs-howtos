@@ -1,6 +1,8 @@
 ---
 tags: version-10;
 summary: 
+guid: bc28b35e-c684-4094-a937-e189a137886d
+locale: en-us
 ---
 
 # How to scroll records in a table with a fixed header

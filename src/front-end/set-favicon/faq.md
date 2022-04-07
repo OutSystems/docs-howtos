@@ -1,6 +1,8 @@
 ---
 tags: version-10; favicon;
 summary: 
+guid: d67fc7c0-9a96-4995-8583-ec9ea6f3da58
+locale: en-us
 ---
 
 # How to set a favicon tag

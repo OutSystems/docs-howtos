@@ -1,6 +1,8 @@
 ---
 summary: Steps to create a plugin to extend LifeTime functionality
 tags: 
+guid: 1ae946b5-5b77-4976-a905-4d6a260f7e3a
+locale: en-us
 ---
 
 # How to create a LifeTime Plugin

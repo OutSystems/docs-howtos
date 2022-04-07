@@ -1,5 +1,7 @@
 ---
 summary: Process on how to use OutSystems APIs to create alerts monitoring thresholds. OutSystems APIs and metadata expose all the necessaty information and even allow you to create custom logging and events.
+guid: d8e80008-11b7-43d8-804c-d99e577c7111
+locale: en-us
 ---
 
 # How to create alerts based on monitoring thresholds

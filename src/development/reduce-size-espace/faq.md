@@ -1,3 +1,8 @@
+---
+guid: ca1ebd84-459e-4a57-875c-ec6bbf2a3cda
+locale: en-us
+---
+
 # How to reduce the size of my modules
 
 ## Question

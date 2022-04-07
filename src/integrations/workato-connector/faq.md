@@ -1,5 +1,7 @@
 ---
 summary: Use the OutSystems Workato Connector to take full advantage of the Workato platform without any custom development.
+guid: 38e0c498-941a-4f7f-a421-e88edc331075
+locale: en-us
 ---
 
 # How to integrate OutSystems with Workato

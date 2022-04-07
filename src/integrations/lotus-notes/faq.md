@@ -1,6 +1,8 @@
 ---
 tags: version-10; support-Application_Troubleshooting; support-webapps; lotus notes; domino;
 summary: 
+guid: 75121be2-5930-4cba-aa00-84107bf5e366
+locale: en-us
 ---
 
 # How to access legacy data from Lotus Notes / Domino applications

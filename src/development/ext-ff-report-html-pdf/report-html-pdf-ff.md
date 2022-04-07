@@ -1,6 +1,8 @@
 ---
 summary:
 tags:
+guid: 51f5ab7a-1280-479f-96cd-2c1c9b111134
+locale: en-us
 ---
 
 # How to create reports using HTML2PDF

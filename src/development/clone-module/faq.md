@@ -1,3 +1,8 @@
+---
+guid: 27e7e1ed-437a-46ba-941d-a31ec6f0c5ac
+locale: en-us
+---
+
 # How to Clone a Module into Another Application
 
 ## Question

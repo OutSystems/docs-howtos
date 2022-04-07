@@ -1,3 +1,8 @@
+---
+guid: d29ef610-f434-4411-ba63-14ef0463624e
+locale: en-us
+---
+
 # How to do UI testing with Selenium
 
 The goal of this article is to provide you with a broad view of UI testing web applications with Selenium and how it relates to OutSystems.

@@ -1,6 +1,8 @@
 ---
 tags: outsystems-add-video; outsystems-embed-video; add-video-to-apps; embed-video-to-apps; 
 summary: Learn how to add videos to your applications.
+guid: 3d01d650-6b50-4f86-a64a-09fc15bce11c
+locale: en-us
 ---
 
 # How to Add Video to Your Applications

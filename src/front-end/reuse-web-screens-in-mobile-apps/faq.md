@@ -1,6 +1,8 @@
 ---
 tags: version-11; support-mobile; support-Mobile_Apps; support-webapps
 summary: Reuse screens from Traditional Web Apps in Mobile Apps with iframe. Limitations apply. 
+guid: 4b5a6972-73f0-41d3-a418-4feea244e6c8
+locale: en-us
 ---
 
 # How to Reuse Web Screens in Mobile Apps

@@ -1,3 +1,8 @@
+---
+guid: 03a0c151-1a2c-424c-bd4a-75fb2e081f9f
+locale: en-us
+---
+
 # How do you integrate a sortable plugin?
 
 How to integrate a sortable plugin

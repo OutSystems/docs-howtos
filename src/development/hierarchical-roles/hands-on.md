@@ -1,6 +1,8 @@
 ---
 summary: Learn how to implement hierarchical roles using the default OutSystems user roles
 tags: app-development; OutSystems-roles; user-roles; hierarchical-roles; 
+guid: b8ef5b66-e443-445d-a0e8-7623b8ca100c
+locale: en-us
 ---
 
 

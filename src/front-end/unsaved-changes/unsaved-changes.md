@@ -1,6 +1,8 @@
 ---
 tags: saving_changes; javascript;
 summary: Preventing users from losing unsaved changes
+guid: 0a798086-ce2a-40f6-b476-7ba81c974b6d
+locale: en-us
 ---
 
 

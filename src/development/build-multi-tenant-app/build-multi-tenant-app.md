@@ -1,5 +1,7 @@
 ---
 summary:
+guid: 6e1bb224-5f33-4233-adc5-57dc98793113
+locale: en-us
 ---
 
 # How to Build a Multi-tenant Application

@@ -1,3 +1,8 @@
+---
+guid: 52dd517e-798e-481e-8528-a656972ec0d0
+locale: en-us
+---
+
 # How to configure OutSystems to use identity providers using SAML
 
 ## Federated SSO Authentication using SAML

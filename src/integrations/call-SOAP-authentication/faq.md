@@ -1,3 +1,8 @@
+---
+guid: bace3ad4-c605-4a40-bb54-b78a7a2830c5
+locale: en-us
+---
+
 # How to call a SOAP web service with authentication
 
 ## Question

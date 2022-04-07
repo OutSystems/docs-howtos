@@ -1,3 +1,8 @@
+---
+guid: b010b104-71ae-48cf-9fe9-ac6c39cd9614
+locale: en-us
+---
+
 # Set up a Redis Cluster for Production environments
 
 <div class="info" markdown="1">

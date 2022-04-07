@@ -1,6 +1,8 @@
 ---
 tags: version-10; css; header; london
 summary: 
+guid: b80fd8bd-01dd-475a-9fd1-50709e60ab86
+locale: en-us
 ---
 
 # How to make the header scroll with the page in the London theme

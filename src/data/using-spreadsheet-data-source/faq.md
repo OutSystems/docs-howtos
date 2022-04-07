@@ -1,6 +1,8 @@
 ---
 summary: A guide that shows how to use a spreadsheet as your data source in an OutSystems App.
 tags: spreadsheets-as-data-sources-outsystems-applications; google-spreadsheet-as-data-source-outsystems-applications;
+guid: efffdbcf-fb3d-44ea-81f1-6f167b236883
+locale: en-us
 ---
 
 # How to Use a Spreadsheet as Your Data Source

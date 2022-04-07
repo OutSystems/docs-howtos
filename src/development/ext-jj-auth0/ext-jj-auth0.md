@@ -1,6 +1,8 @@
 ---
 summary:
 tags:
+guid: f42b952f-3f83-4a46-b15f-bc96a6080bfb
+locale: en-us
 ---
 
 # How to integrate Auth0 with OutSystems

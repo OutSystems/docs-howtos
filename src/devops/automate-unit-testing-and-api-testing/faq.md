@@ -1,6 +1,8 @@
 ---
 tags: version-10; API testing; continuous delivery; DevOps; test framework; testing; Unit testing
 summary: 
+guid: 17f5f7a2-52ff-4059-bf77-370ccfff4be1
+locale: en-us
 ---
 
 # How to Automate Unit Testing and API Testing

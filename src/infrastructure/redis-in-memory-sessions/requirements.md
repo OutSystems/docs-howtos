@@ -1,3 +1,8 @@
+---
+guid: 6c4f9146-d4f4-4290-8e14-b04a7d0b0764
+locale: en-us
+---
+
 # System requirements for using Redis
 
 Before you can use Redis with OutSystems, check if you fulfill both OutSystems and Redis system requirements.

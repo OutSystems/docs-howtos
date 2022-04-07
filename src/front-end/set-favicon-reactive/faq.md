@@ -1,6 +1,8 @@
 ---
 tags: version-11; favicon;
 summary: Instructions on how to update the favicon in Reactive Web Apps.
+guid: 784794a5-90a4-4cae-83df-1fcaf6d68507
+locale: en-us
 ---
 
 # How to change a favicon in Reactive Web Apps

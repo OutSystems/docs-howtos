@@ -1,3 +1,8 @@
+---
+guid: 5cef1f48-d700-4311-8f88-ed6ac0ded58e
+locale: en-us
+---
+
 # Configure Platform Server to use Redis for sessions
 
 <div class="info" markdown="1">

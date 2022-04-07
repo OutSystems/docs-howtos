@@ -1,6 +1,8 @@
 ---
 summary: Learn how to reuse translations from the Multilingual Forge component in Service Studio translation management. This feature is in Technical Preview.
 tags: support-application_development; multilingual; migration-multilingual-translations; multilingual-service-studio
+guid: 625a71ee-acb7-4923-b953-74f684ca6377
+locale: en-us
 ---
 
 # How to reuse translations from Multilingual Forge component in Service Studio

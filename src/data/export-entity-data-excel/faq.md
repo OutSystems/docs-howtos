@@ -1,6 +1,8 @@
 ---
 summary: Learn how to export entity data to an Excel file.
 tags: OutSystems_How_To; OutSystems_Export_Entity_Data; OutSystems_Export_Entity_Data_Excel, Excel, Entities
+guid: 93767095-3b94-4005-8e9e-c206704fd9f8
+locale: en-us
 ---
 
 # How to export entity data to Excel

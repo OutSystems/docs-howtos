@@ -1,3 +1,8 @@
+---
+guid: b2ea3286-9753-4319-a709-339a61edf884
+locale: en-us
+---
+
 # How to map Active Directory Groups to OutSystems Roles
 
 Many organizations use Active Directory (AD) to define groups, users, user rights and permissions. OutSystems supports a similar model of Groups, Users and Roles. However, this might mean that you need to make changes in both sides (Active Directory and OutSystems) when updating user rights, permissions and roles. 

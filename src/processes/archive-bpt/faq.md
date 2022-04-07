@@ -1,6 +1,8 @@
 ---
 tags: version-10; bpt; 
 summary: With processes accumulating over time, queries may become slower. Check how to arquive old processes before deleting them.
+guid: 4cfbcd3c-113b-4d91-a92d-b1aef4584115
+locale: en-us
 ---
 
 # How to archive old Business Process Technology (BPT) Processes

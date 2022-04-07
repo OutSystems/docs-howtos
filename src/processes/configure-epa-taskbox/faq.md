@@ -1,3 +1,8 @@
+---
+guid: 32e83f65-befb-46b4-9984-d804192357a3
+locale: en-us
+---
+
 # How to configure EPA taskbox preferences
 
 By default, EPA Taskbox is displayed in all screens in all applications. It is however possible to have EPA not show up in particular eSpaces by using the administration backoffice.

@@ -1,3 +1,8 @@
+---
+guid: c0bda1f0-88a2-4879-8c95-1eac2a7b3cdf
+locale: en-us
+---
+
 # How do you prevent users from copying text or images?
 
 You can use a variety of methods to pervent users from copying text or images. Let's take a look ah them.

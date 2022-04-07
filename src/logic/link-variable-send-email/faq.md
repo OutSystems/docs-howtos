@@ -1,3 +1,8 @@
+---
+guid: 9d7eb119-b1b4-4c4d-9d25-c49990eb260e
+locale: en-us
+---
+
 # How to make a link with a variable to send in an Email
 
 ## Question

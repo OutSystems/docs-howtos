@@ -1,6 +1,8 @@
 ---
 tags: runtime-reactiveweb;
 summary: View, explore, and edit large amounts of data in a familiar spreadsheet interface with the OutSystems Data Grid component for Reactive Web apps.
+guid: cca0de21-e1fb-452f-9ff7-c73b55b3c287
+locale: en-us
 ---
 
 #  How to use the OutSystems Data Grid

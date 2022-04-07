@@ -1,3 +1,8 @@
+---
+guid: 9bbc4b8f-e26a-4bf7-9250-0f004d5f791e
+locale: en-us
+---
+
 # Test the failover behavior of a Redis Cluster
 
 <div class="info" markdown="1">

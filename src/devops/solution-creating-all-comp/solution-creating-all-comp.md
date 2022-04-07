@@ -1,6 +1,8 @@
 ---
 summary: This article guides on how to create/update a Solution package including all the modules in the environment and how to use it. A solution with all the modules can be used to refresh references in bulk or to update a factory in non production environments.
 tags:
+guid: 065b4d9d-5b4a-4892-9e82-bdfc77ea98d3
+locale: en-us
 ---
 # Creating and using an All Components solution
 

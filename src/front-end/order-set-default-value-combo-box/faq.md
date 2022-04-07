@@ -1,3 +1,8 @@
+---
+guid: 6c613e7e-a12c-46a4-b1d4-3c190f9cdbca
+locale: en-us
+---
+
 # How to order and set the default value in a combo box
 
 ## Question

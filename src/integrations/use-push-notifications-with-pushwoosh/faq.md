@@ -1,6 +1,8 @@
 ---
 tags: version-10; support-Integrations_Extensions; support-Mobile_Apps; support-webapps
 summary: 
+guid: 015dc204-9e52-4cd6-8a23-5e96096f9548
+locale: en-us
 ---
 
 # How to Use Push Notifications with Pushwoosh

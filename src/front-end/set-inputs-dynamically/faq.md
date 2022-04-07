@@ -1,6 +1,8 @@
 ---
 tags: runtime-traditionalweb; version-11;
 summary: Learn how to set the value of an input depending on the value set in another input in your Traditional Web app.
+guid: fcea5150-affd-4f27-8263-97e32b24a7a6
+locale: en-us
 ---
 # How to dynamically set the values of inputs
 

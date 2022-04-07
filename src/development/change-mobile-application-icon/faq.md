@@ -1,6 +1,8 @@
 ---
 summary: Steps to change mobile application icon by environment
 tags: 
+guid: b27adf72-18ef-45d8-8230-6ebe53f74d8d
+locale: en-us
 ---
 
 # How to change a mobile application icon by environment 
