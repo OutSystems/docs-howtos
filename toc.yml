@@ -18,7 +18,8 @@
     - topics:
         - href: development/hierarchical-roles/hierarchical-and-static-roles.md
         - href: development/hierarchical-roles/hands-on.md
-        - href: development/hierarchical-roles/demo.md
+        - href: development/hierarchical-roles/demo.md        
+    - href: development/build-multi-tenant-app/build-multi-tenant-app.md     
 
 # Front-End How-tos
 - href: front-end/intro.md
