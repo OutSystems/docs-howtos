@@ -2,7 +2,7 @@
 summary: This article guides on how to create/update a Solution package including all the modules in the environment and how to use it. A solution with all the modules can be used to refresh references in bulk or to update a factory in non production environments.
 tags:
 ---
-# Creating and using an "all components" solution
+# Creating and using an All Components solution
 
 It's a common practice in OutSystems Factory management to create and use a solution that contains all the components deployed on the environment. It's used to refresh references, republish application modules after an update/upgrade and for some troubleshooting tasks.
 
