@@ -19,11 +19,11 @@ But I want to ensure semantic markup and use HTML heading tags instead:
     
 ## Answer
 
-To generate HTML tags around elements of your **Mobile App** and **Reactive Web App** use the **HTML Element** Widget and define the `Tag` Property. Use the `Attributes` fields to define HTML attributes.
+To generate HTML tags around elements of your **Mobile App** and **Reactive Web App** use the **HTML Element** Widget and define the `Tag` Property. Note that the `Tag` Property must be a constant value.  Use the `Attributes` fields to define HTML attributes.
 
 ![HTML Element Tag](images/html-tags-00.png)
 
-To generate HTML tags around elements of your **Traditional Web Application** use a **Container** or **Placeholder** Widget and add `OSTagName` = `"<html_tag>"` as an `Extended Property`, where `<html_tag>` is the HTML tag you want to use. Use the `Extended Properties` fields to define HTML attributes.
+To generate HTML tags around elements of your **Traditional Web Application** use a **Container** or **Placeholder** Widget and add `OSTagName` = `"<html_tag>"` as an `Extended Property`, where `<html_tag>` is the HTML tag you want to use. Note that the `OSTagName` `Extended Property` can be a constant or dynamic value. Use the `Extended Properties` fields to define HTML attributes.
 
 ![OSTagName](images/html-tags-01.png)
 
