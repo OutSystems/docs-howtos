@@ -157,3 +157,10 @@
         - href: infrastructure/redis-in-memory-sessions/cluster-add-nodes.md
         - href: infrastructure/redis-in-memory-sessions/setup-platform-server-redis.md
         - href: infrastructure/redis-in-memory-sessions/setup-enable-ssl.md        
+    # Using OutSystems in Reverse Proxy Scenarios
+    - href: infrastructure/reverse-proxy/intro.md
+    - topics:
+        - href: infrastructure/reverse-proxy/requirements.md
+        - href: infrastructure/reverse-proxy/reverse-proxy-config.md
+        - href: infrastructure/reverse-proxy/reverse-proxy-use-cases.md
+        - href: infrastructure/reverse-proxy/reverse-proxy-apache-config.md
