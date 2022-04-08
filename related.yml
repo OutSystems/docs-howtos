@@ -88,23 +88,77 @@
            https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Interfaces/Patterns/Data_Grid_Reactive_APIs
 
 # Using Redis for in-memory session storage
-- enterprise/install/redis-in-memory-sessions/intro.md:
-    - enterprise/install/redis-in-memory-sessions/requirements.md
-    - enterprise/install/redis-in-memory-sessions/setup-non-prod.md
-    - enterprise/install/redis-in-memory-sessions/setup-platform-server-redis.md
-    - enterprise/install/redis-in-memory-sessions/architecture-high-availability.md
-    - enterprise/install/redis-in-memory-sessions/setup-prod.md
-    - enterprise/install/redis-in-memory-sessions/cluster-failover-test.md
-    - enterprise/install/redis-in-memory-sessions/cluster-add-nodes.md
-    - enterprise/install/redis-in-memory-sessions/setup-enable-ssl.md
+- infrastructure/redis-in-memory-sessions/intro.md:
+    - infrastructure/redis-in-memory-sessions/requirements.md
+    - infrastructure/redis-in-memory-sessions/setup-non-prod.md
+    - infrastructure/redis-in-memory-sessions/setup-platform-server-redis.md
+    - infrastructure/redis-in-memory-sessions/architecture-high-availability.md
+    - infrastructure/redis-in-memory-sessions/setup-prod.md
+    - infrastructure/redis-in-memory-sessions/cluster-failover-test.md
+    - infrastructure/redis-in-memory-sessions/cluster-add-nodes.md
+    - infrastructure/redis-in-memory-sessions/setup-enable-ssl.md
 
-- enterprise/install/redis-in-memory-sessions/setup-prod.md:
-    - enterprise/install/redis-in-memory-sessions/requirements.md
-    - enterprise/install/redis-in-memory-sessions/setup-platform-server-redis.md
-    - enterprise/install/redis-in-memory-sessions/cluster-failover-test.md
-    - enterprise/install/redis-in-memory-sessions/architecture-high-availability.md
-    - enterprise/install/redis-in-memory-sessions/cluster-add-nodes.md
+- infrastructure/redis-in-memory-sessions/setup-prod.md:
+    - infrastructure/redis-in-memory-sessions/requirements.md
+    - infrastructure/redis-in-memory-sessions/setup-platform-server-redis.md
+    - infrastructure/redis-in-memory-sessions/cluster-failover-test.md
+    - infrastructure/redis-in-memory-sessions/architecture-high-availability.md
+    - infrastructure/redis-in-memory-sessions/cluster-add-nodes.md
 
-- enterprise/install/redis-in-memory-sessions/setup-non-prod.md:
-    - enterprise/install/redis-in-memory-sessions/requirements.md
-    - enterprise/install/redis-in-memory-sessions/setup-platform-server-redis.md
+- infrastructure/redis-in-memory-sessions/setup-non-prod.md:
+    - infrastructure/redis-in-memory-sessions/requirements.md
+    - infrastructure/redis-in-memory-sessions/setup-platform-server-redis.md
+
+# Data migration
+
+- data/data-migration/intro.md:
+    - data/data-migration/sections/01-entity-types-classification.md
+    - data/data-migration/sections/02-factory-application-modules.md
+    - data/data-migration/sections/03-factory-database.md
+    - data/data-migration/sections/04-applicational-entities.md
+    - data/data-migration/sections/05-application-users-groups-roles.md
+    - data/data-migration/sections/06-static-entities.md
+    - data/data-migration/sections/07-business-process-technology-bpt.md
+    - data/data-migration/11-how-to-migrate-data.md
+
+- data/data-migration/sections/01-entity-types-classification.md:
+    - data/data-migration/sections/02-factory-application-modules.md
+    - data/data-migration/sections/03-factory-database.md
+    - data/data-migration/sections/04-applicational-entities.md
+    - data/data-migration/sections/05-application-users-groups-roles.md
+    - data/data-migration/sections/06-static-entities.md
+    - data/data-migration/sections/07-business-process-technology-bpt.md
+    - data/data-migration/11-how-to-migrate-data.md
+
+- data/data-migration/sections/02-factory-application-modules.md:
+    - data/data-migration/sections/03-factory-database.md
+    - data/data-migration/sections/04-applicational-entities.md
+    - data/data-migration/sections/05-application-users-groups-roles.md
+    - data/data-migration/sections/06-static-entities.md
+    - data/data-migration/sections/07-business-process-technology-bpt.md
+    - data/data-migration/11-how-to-migrate-data.md
+
+- data/data-migration/sections/03-factory-database.md:
+    - data/data-migration/sections/04-applicational-entities.md
+    - data/data-migration/sections/05-application-users-groups-roles.md
+    - data/data-migration/sections/06-static-entities.md
+    - data/data-migration/sections/07-business-process-technology-bpt.md
+    - data/data-migration/11-how-to-migrate-data.md
+
+- data/data-migration/sections/04-applicational-entities.md:
+    - data/data-migration/sections/05-application-users-groups-roles.md
+    - data/data-migration/sections/06-static-entities.md
+    - data/data-migration/sections/07-business-process-technology-bpt.md
+    - data/data-migration/11-how-to-migrate-data.md
+
+- data/data-migration/sections/05-application-users-groups-roles.md:
+    - data/data-migration/sections/06-static-entities.md
+    - data/data-migration/sections/07-business-process-technology-bpt.md
+    - data/data-migration/11-how-to-migrate-data.md
+
+- data/data-migration/sections/06-static-entities.md:
+    - data/data-migration/sections/07-business-process-technology-bpt.md
+    - data/data-migration/11-how-to-migrate-data.md
+
+- data/data-migration/sections/07-business-process-technology-bpt.md:
+    - data/data-migration/11-how-to-migrate-data.md
