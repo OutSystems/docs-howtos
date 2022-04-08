@@ -130,7 +130,7 @@
     - href: devops/solution-creating-all-comp/solution-creating-all-comp.md 
     - href: devops/log-service/log-service-clean.md
     # Migrate to the new Firebase-based mobile plugins        
-    - href: enterprise/upgrade/migrate-to-firebase-plugins/intro.md
+    - href: devops/migrate-to-firebase-plugins/intro.md
 
 
 
