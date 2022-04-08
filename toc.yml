@@ -76,6 +76,19 @@
     - href: data/update-bootstrap-reference-identifier/faq.md
     - href: data/using-spreadsheet-data-source/faq.md
 
+    # Data Migration
+    - href: data/data-migration/intro.md
+    - topics:
+        - href: data/data-migration/sections/01-entity-types-classification.md
+        - href: data/data-migration/sections/02-factory-application-modules.md
+        - href: data/data-migration/sections/03-factory-database.md
+        - href: data/data-migration/sections/04-applicational-entities.md
+        - href: data/data-migration/sections/05-application-users-groups-roles.md
+        - href: data/data-migration/sections/06-static-entities.md
+        - href: data/data-migration/sections/07-business-process-technology-bpt.md
+        - href: data/data-migration/10-data-migration-guide.md
+        - href: data/data-migration/11-how-to-migrate-data.md
+
 # Processes How-tos
 - href: processes/intro.md
 - topics:
