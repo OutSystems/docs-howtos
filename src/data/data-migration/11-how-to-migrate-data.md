@@ -1,6 +1,8 @@
 ---
 summary: Instructions to guide you through the process of migrating application data in OutSystems.
 tags: data-migration-of-outsystems-applications;
+locale: en-us
+guid: 7ba670ee-b94a-4d1c-ab09-5b44d9d6c8e9
 ---
 
 # How To Migrate Data

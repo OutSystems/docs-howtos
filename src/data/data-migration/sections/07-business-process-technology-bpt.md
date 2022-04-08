@@ -1,6 +1,8 @@
 ---
 summary: A guide to migrate from Production to Non-Production environments in OutSystems - BPT - Business Process Technology
 tags: data-migration-between-outsystems-installation; data-migration-between-production-and-non-production-outsystems;
+locale: en-us
+guid: 2cf30a7f-da91-4bbb-b960-0f3724632dde
 ---
 
 # Business Process Technology (BPT)

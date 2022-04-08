@@ -2,6 +2,8 @@
 summary: A guide to migrate from Production to Non-Production environments in OutSystems - Classification of Entity Types
 tags: data-migration-between-outsystems-installation; data-migration-between-production-and-non-production-outsystems; entity-types-classification
 en_title: OutSystems Platform Metamodel
+locale: en-us
+guid: dce526c4-9948-404e-a2a5-c55ef13747d7
 ---
 
 # OutSystems Platform Metamodel

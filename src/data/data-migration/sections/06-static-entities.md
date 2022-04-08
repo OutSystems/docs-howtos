@@ -1,6 +1,8 @@
 ---
 summary: A guide to migrate from Production to Non-Production environments in OutSystems - Static Entities
 tags: data-migration-between-outsystems-installation; data-migration-between-production-and-non-production-outsystems; static-entities
+locale: en-us
+guid: 23483ef2-7c45-48af-9a05-977eaadbc72f
 ---
 
 # Static Entities
