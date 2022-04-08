@@ -39,6 +39,12 @@
 # Front-End How-tos
 - href: front-end/intro.md
 - topics:
+# Migrating UI of the Silk Web applications to OutSystems UI Framework
+    - href: front-end/ui-migration-guide/intro.md
+    - topics:
+        - href: front-end/ui-migration-guide/migrate-patterns.md
+        - href: front-end/ui-migration-guide/migrate-structure.md
+        - href: front-end/ui-migration-guide/migration-reference-tables.md
     - href: front-end/add-video-to-applications/faq.md
     - href: front-end/call-block-action-mobile/faq.md
     - href: front-end/create-search-autocomplete/faq.md
