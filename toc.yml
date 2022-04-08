@@ -129,6 +129,8 @@
     # - href: devops/on-track/on-track.md
     - href: devops/solution-creating-all-comp/solution-creating-all-comp.md 
     - href: devops/log-service/log-service-clean.md
+    # Migrate to the new Firebase-based mobile plugins        
+    - href: enterprise/upgrade/migrate-to-firebase-plugins/intro.md
 
 
 
