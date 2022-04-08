@@ -35,6 +35,7 @@
         - href: development/hierarchical-roles/hands-on.md
         - href: development/hierarchical-roles/demo.md        
     - href: development/build-multi-tenant-app/build-multi-tenant-app.md     
+    - href: development/integrated-auth-webservices/integrated-auth-webservices.md         
 
 # Front-End How-tos
 - href: front-end/intro.md
