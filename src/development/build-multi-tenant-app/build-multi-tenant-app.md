@@ -145,7 +145,6 @@ Also, in the back office there has to be a Single-tenant eSpace to create admini
 <div class="warning" markdown="1">
 
 **Warning:** When using the default "Users" application to perform user management, you cannot rename "Users" tenant for the application to operate correctly.
-
 </div>
 
 ## Example of a Multi-tenant Application 
