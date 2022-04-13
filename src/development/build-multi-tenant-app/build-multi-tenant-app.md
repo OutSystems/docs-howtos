@@ -16,7 +16,7 @@ This approach allows a single Application Server and Database Server to provide 
 
 From the customer point of view looks like you have your own application, when in fact there is a single application that allows for some degree of customization between each customer.
 
-![ ](images/build-multi-tenant-app_0.png)
+![](images/build-multi-tenant-app_0.png)
 
 The example above depicts a single application serving two client organizations (tenants) using it. Each client organization has its Contacts and Opportunities isolated in its tenant.
 
@@ -36,7 +36,7 @@ When the end-user makes the first request to a Multi-tenant application, since h
 
 If the end-user goes to the Contacts List Screen, no contacts are shown, since the Default Tenant holds no data. 
 
-![ ](images/build-multi-tenant-app_1.png)
+![](images/build-multi-tenant-app_1.png)
 
 Since an end-user uniquely belongs to a tenant, in the login process, the OutSystems Platform infers the tenant an end-user belongs using the username. Then, the end-user is bound to his tenant and all Simple and Advanced Queries are **automatically filtered **to only return data from that tenant.
 
