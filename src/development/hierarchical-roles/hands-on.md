@@ -51,7 +51,6 @@ Perhaps your use case is slightly different; for instance, you could want to all
 <div class="info" markdown="1">
  
 [Download from the OutSystems Forge](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=8742) the Hierarchical Roles example described in this article, and publish it in your factory environment. Use it as a reference or adapt the code to implement your business case.
-
 </div>
 
 ## Data model

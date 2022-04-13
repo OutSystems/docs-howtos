@@ -16,6 +16,7 @@ Use ODBC to expose the underlying tables of a Domino application.
 Create a Linked Server in MS SQL Server to abstract the environment from the ODBC connection.
 
 <div class="info" markdown="1">
+
 The steps below are for setting up the connection for a **64-bit SQL Server** . The steps for 32-bit SQL Server are different.
 </div>
 

@@ -8,6 +8,7 @@ locale: en-us
 # How to use regular expressions in OutSystems
 
 <div class="info" markdown="1">
+
 We've been working on this article. Please let us know how useful this new version is by voting.
 </div>
 
@@ -59,9 +60,7 @@ Follow these steps to create a reusable server action that detects and outputs a
 1. In a module of your app, open **Manage Dependencies**, and add the **Regex\_Search** action from **Text** producer as a dependency.
 
     <div class="info" markdown="1">
-
     Skip this step if you completed the previous example and are using the same module.
-
     </div>
 
 1. In the Logic tab, create a new **Server Action**, and name it `ExtractGUID`.

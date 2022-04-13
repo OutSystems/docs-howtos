@@ -21,7 +21,7 @@ To archive old Processes follow these steps:
 
     ![BPTModel](images/BPTModel.png)
 
-    <div class="info" markdown="1">
+    <div class="info" markdown="1">    
     If you have any Entities that reference parts of the BPT meta-model you also need to archive them or to keep track of the changes in the Entities and Foreign Keys of the archived Processes.  
     If the Foreign Keys that reference the BPT meta-model have the `Delete Rule` Property set to `Protect` you need to archive/delete them before archiving the BPT Process.
     </div>

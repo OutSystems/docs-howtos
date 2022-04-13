@@ -10,6 +10,7 @@ locale: en-us
 To configure Pushwoosh for iOS, follow these steps. 
 
 <div class="info" markdown="1">
+
 You will need a Mac computer for this process.
 </div>
 
@@ -37,6 +38,7 @@ APNS Certificates are bound to one application ID. There are two application ser
 Development APNS Certificates enable a developer to set up push notifications for an application in development. 
 
 <div class="info" markdown="1">
+
 Push notifications do not work in the simulator.
 </div>
 
@@ -53,6 +55,7 @@ Follow the steps on the page to generate a certificate signing request.
 ![](images/image06.png?width=600)
 
 <div class="info" markdown="1">
+
 If you don't have access to a Mac [here](<https://success.outsystems.com/Documentation/10/Delivering_Mobile_Apps/Generate_and_Distribute_Your_Mobile_App/More_Information_on_Generating_and_Distributing_Mobile_Apps#create-a-certificate>) is how you can generate a certificate signing request on a Windows machine.
 </div>
 
@@ -73,6 +76,7 @@ Open Keychain, locate the desired certificate and export the public certificate.
 Export the associated private key. 
 
 <div class="info" markdown="1">
+
 Remember the password you choose when exporting, because it’ll be needed later when setting up iOS on Pushwoosh.
 </div>
 

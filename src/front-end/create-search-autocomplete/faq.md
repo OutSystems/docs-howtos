@@ -60,5 +60,6 @@ After these steps the search field in your app shows a list of suggestions that 
 ![](images/autocomplete13.png)
 
 <div class="info" markdown="1">
+
 To access the Identifier of the selected user use the **Input\_AutoComplete\_GetIdentifier** Server Action from the **RichWidgets** module. Before using this action you have to add it as a dependency to your module.
 </div>

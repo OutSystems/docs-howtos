@@ -21,6 +21,7 @@ Use a web block to encapsulate the code, style, and resources of the jQuery plug
 1. If needed, assign CSS styles to the containers.
 
 <div class="info" markdown="1">
+
 As an alternative, you could import the files as direct resources of your modules. But since the resources imported aren't visible to other modules, it's harder to share your widget.
 </div>
 
@@ -61,6 +62,7 @@ The example below shows a web block importJquery with the contents of jQuery.js 
 ![image alt text](images/How-to-include-a-jQuery-plugin_3.png)
 
 <div class="warning" markdown="1">
+
 If you include third-party code in an eSpace, remember to check the license and copyright before you share your eSpace.
 </div>
 

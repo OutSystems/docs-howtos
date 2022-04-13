@@ -12,14 +12,18 @@ The ultimate goal of this document is to guide through the process of data migra
 
 
 <div class="info" markdown="1">
+
 Note: The current instructions apply to self-managed and OutSystems Cloud installations, and base on the following versions:
 
 * OutSystems Platform Server version: 11.0.128.0
 * Database engine: Microsoft SQL Server 2016 (SP2) (KB4052908) - 13.0.5026.0 (X64)
+
 </div>
 
 <div class="info" markdown="1">
+
 Disclaimer: The database engine used to build this documentation was MSSQL. Although most of the considerations fit for different database engine types, some of them might not be completely applicable for Oracle or other database engines.
+
 </div>
 
 The following guidelines are related to the process of migrating data from Production to Non-Production environments, for single, multiple, or all the applications of an environment.

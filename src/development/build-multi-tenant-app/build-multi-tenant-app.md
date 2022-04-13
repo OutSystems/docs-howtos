@@ -145,12 +145,15 @@ Also, in the back office there has to be a Single-tenant eSpace to create admini
 <div class="warning" markdown="1">
 
 **Warning:** When using the default "Users" application to perform user management, you cannot rename "Users" tenant for the application to operate correctly.
+
 </div>
 
 ## Example of a Multi-tenant Application 
 
 <div class="info" markdown="1">
+
 A [Forge component for Multi-tenant management](http://www.outsystems.com/forge/component/461/Multi+Tenant+Management/) is available.
+
 </div>
 
 To better illustrate how to build a Multi-tenant application, this example is based on the [Sales application ](http://www.outsystems.com/apps/sales-app/)(Single-tenant) from the OutSystems Forge.

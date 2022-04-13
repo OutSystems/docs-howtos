@@ -14,6 +14,7 @@ To define a deep link to a Screen (`<screen>`) of a Module (`<module>`) of a Mob
 Where `<app-identifier>` is the [App identifier you defined when generating your Mobile App Package](<https://success.outsystems.com/Documentation/10/Delivering_Mobile_Apps/Generate_and_Distribute_Your_Mobile_App>) in **lowercase**.
 
 <div class="info" markdown="1">
+
 As a best practice the App identifier of your Mobile App should be lowercase. 
 <br/>In deep links the `<app-identifier>` scheme must be lowercase, even if your App identifier has uppercase characters.
 </div>
@@ -35,6 +36,7 @@ For Android end users with Chrome you can use [Android Intents](https://develope
 Android Intents allow the redirection of end users that do not have your App available on their device to your App page in the Google Play Store or to another URL specified by you. 
 
 <div class= "info" markdown= "1">
+
 When you generate an Android App in OutSystems 10 it already includes a `BROWSABLE` Intent filter.
 </div>
 

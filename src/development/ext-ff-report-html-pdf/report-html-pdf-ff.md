@@ -8,7 +8,9 @@ locale: en-us
 # How to create reports using HTML2PDF
 
 <div class="info" markdown="1">
+
 This article was written by [Fabio Fantato](https://www.outsystems.com/profile/40762/), OutSystems MVP.
+
 </div>
 
 This article guides you on how to create reports using the HTML2PDF component. Get it [here](https://www.outsystems.com/forge/component-overview/209/html2pdfconverter). Also, before you continue reading this article it’s recommended that you read this [FAQ](https://www.outsystems.com/forums/discussion/17923/html2pdfconverter-faq/).
@@ -76,7 +78,7 @@ To use this component correctly you need to install the component and add some r
 
 1. [Download the binary  and other libraries](https://wkhtmltopdf.org/downloads.html) for the right version of the toolkit and there are some differences if you are using a cloud, an on-premise installation or even if you are in your personal environment.
     
-    <div class="info" markdown="1">    
+    <div class="info" markdown="1">       
     The toolkit repository has several versions, but you need to follow exactly the versions detailed in the component documentation. If you use anything different might be a nightmare to put it to work.
     </div>
 

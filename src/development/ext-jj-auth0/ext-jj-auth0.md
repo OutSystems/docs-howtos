@@ -8,6 +8,7 @@ locale: en-us
 # How to integrate Auth0 with OutSystems
 
 <div class="info" markdown="1">
+
 This article was written by [Justin James](https://www.outsystems.com/profile/5685/justin-james/), OutSystems MVP.
 </div>
 

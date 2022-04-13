@@ -96,6 +96,7 @@ Upon login, the Login client action of the screen is executed.
 This client action submits the login information to the server by executing the DoLogin Server Action.
 
 <div class="info" markdown="1">
+
 You can find this Server Action in the Logic tab under the Server Actions > Authentication folders.
 </div>
 
@@ -108,6 +109,7 @@ After the existing User_Login, add another **Run Server Action** to the **Valida
 ![DoLogin Extended](./images/users-login-extra-dologin-extended.png)
 
 <div class="info" markdown="1">
+
 Due to the way the **ValidateUserExpirationDate** is defined, the actual login will be aborted (due to the raised exception) if the Expiration Date is in the past.
 </div>
 
@@ -120,6 +122,7 @@ Add a **Run Server Action** immediately after the User_Login to the **ValidateUs
 ![Login Screen Action](./images/users-login-extra-login-traditional.png)
 
 <div class="info" markdown="1">
+
 Note that if the Expiration Date is in the past, an Exception is raised inside the **ValidateUserExpirationDate**.
 That will cause the login to be aborted.
 </div>
