@@ -5,7 +5,7 @@ guid: def5c0a7-de9e-4c33-b0ef-514b7339a025
 locale: en-us
 ---
 
-# Does OutSystems support CocoaPods?
+# Does OutSystems support CocoaPods
 
 Yes, OutSystems currently provides support for CocoaPods-dependent plugins that are built using Objective-C.
 
