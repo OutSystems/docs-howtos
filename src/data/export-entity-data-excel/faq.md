@@ -6,7 +6,7 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# How to export entity data to Excel
+# How to Export Entity Data to Excel
 
 
 <div class="info" markdown="1">
