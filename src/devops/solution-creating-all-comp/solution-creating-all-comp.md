@@ -3,6 +3,7 @@ summary: This article guides on how to create/update a Solution package includin
 tags:
 guid: 065b4d9d-5b4a-4892-9e82-bdfc77ea98d3
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 # Creating and using an All Components solution
 

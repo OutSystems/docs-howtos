@@ -3,6 +3,7 @@ summary: Reactive is a type of app that has many improvements when compared to T
 tags: article-page; migration-traditional-web; migration-reactive-web
 locale: en-us
 guid: 6fd52b69-653d-4384-b9fe-7e30b698609b
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Introduction to migrating Traditional Web to Reactive Web Apps

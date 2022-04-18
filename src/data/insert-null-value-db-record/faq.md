@@ -1,6 +1,7 @@
 ---
 guid: ba5cba5e-31eb-447e-a9d6-6e766a62aebf
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How to insert a null value into a database record

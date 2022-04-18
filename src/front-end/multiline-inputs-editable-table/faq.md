@@ -1,6 +1,7 @@
 ---
 guid: e4cccabf-a90c-43f2-9fbb-2860590dc404
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How to have multiline inputs in Editable Table

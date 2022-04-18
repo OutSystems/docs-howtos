@@ -4,6 +4,7 @@ tags: data-migration-between-outsystems-installation; data-migration-between-pro
 en_title: OutSystems Platform Metamodel
 locale: en-us
 guid: dce526c4-9948-404e-a2a5-c55ef13747d7
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # OutSystems Platform Metamodel

@@ -3,6 +3,7 @@ tags: internet-explorer; redirect; reactive
 summary: How to Redirect a User to a Specific Page using IE in Reactive
 guid: 6f9b34a1-68e4-43e7-904f-46abb2cf7bd2
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How to Redirect a User to a Specific Page using IE in Reactive

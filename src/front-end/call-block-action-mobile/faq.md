@@ -1,6 +1,7 @@
 ---
 guid: afc5fd88-c84d-4ea3-9ebb-d50b7b86dca3
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How to Call a Block Action in a Mobile Screen

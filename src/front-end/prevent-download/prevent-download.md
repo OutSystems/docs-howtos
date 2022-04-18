@@ -1,6 +1,7 @@
 ---
 guid: c0bda1f0-88a2-4879-8c95-1eac2a7b3cdf
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How do you prevent users from copying text or images?

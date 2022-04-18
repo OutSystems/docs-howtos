@@ -3,6 +3,7 @@ tags: version-10; support-Application_Troubleshooting; support-webapps; lotus no
 summary: 
 guid: 75121be2-5930-4cba-aa00-84107bf5e366
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How to access legacy data from Lotus Notes / Domino applications

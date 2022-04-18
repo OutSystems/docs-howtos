@@ -1,6 +1,7 @@
 ---
 guid: b2ea3286-9753-4319-a709-339a61edf884
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How to map Active Directory Groups to OutSystems Roles

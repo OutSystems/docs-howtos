@@ -2,6 +2,7 @@
 summary: Learn how to how to store OutSystems applications and modules in external version control systems such as GitHub, SVN or Azure Repos.
 guid: 9e611128-511d-494f-a1f0-5603ba863afc
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Integrate OutSystems with external version controls

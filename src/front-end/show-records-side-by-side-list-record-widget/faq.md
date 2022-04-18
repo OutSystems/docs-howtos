@@ -2,6 +2,7 @@
 summary: In the standard table grid layout each record is on a separate line. Here, we'll show how to achive other record arrangements, such as diplaying records side by side.
 guid: 955219bb-026a-4fd4-a24a-0fc5da6a0a1e
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How to show records side by side in a List Record widget

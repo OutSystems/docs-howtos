@@ -3,6 +3,7 @@ tags: version-11; support-webapps;
 summary: 
 guid: e9baaca3-cc89-4479-9a5e-eb57bdae58fc
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How to update a Bootstrap Action to fetch an entity identifier from Excel

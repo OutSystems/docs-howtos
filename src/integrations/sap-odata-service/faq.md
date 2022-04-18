@@ -1,6 +1,7 @@
 ---
 guid: e4b7f665-8752-458d-af71-6515e7bc08e0
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How to consume an SAP OData service in OutSystems

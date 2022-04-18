@@ -2,6 +2,7 @@
 summary:
 guid: 5f04023f-aba4-44ca-aafa-0d6aef48f3e1
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # OnTrack - OutSystems backlog management 

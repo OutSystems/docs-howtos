@@ -3,6 +3,7 @@ summary: This document is a reference for migrating the Front-end of Traditional
 tags: migration-traditional-web; migration-reactive-web; front-end-migration; screen-and-block-logic
 locale: en-us
 guid: 3fbc848e-37ed-4b87-a59f-6088cc55e1e4
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Screen and Block logic

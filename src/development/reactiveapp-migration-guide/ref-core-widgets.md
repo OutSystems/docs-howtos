@@ -3,6 +3,7 @@ summary: This document is a reference for migrating the Front-end of Traditional
 tags: migration-traditional-web; migration-reactive-web; front-end-migration 
 locale: en-us
 guid: c604d94e-fe27-4ea6-93a3-2e65fc948f4a
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Core widgets

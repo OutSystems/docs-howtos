@@ -1,6 +1,7 @@
 ---
 guid: 27e7e1ed-437a-46ba-941d-a31ec6f0c5ac
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How to Clone a Module into Another Application

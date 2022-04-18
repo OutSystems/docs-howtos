@@ -1,6 +1,7 @@
 ---
 guid: f7980805-52f4-442b-9c7a-6952f39e583a
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How to bootstrap numeric data from Excel with blank cells

@@ -3,6 +3,7 @@ tags: time-zones
 summary: How to understand and manipulate time zones
 guid: 5e9d4c5c-4d06-4102-91e9-bcbc7350e8fd
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How to time zones work in OutSystems and how can I change them?

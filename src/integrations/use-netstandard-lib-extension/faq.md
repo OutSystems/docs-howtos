@@ -3,6 +3,7 @@ summary: Check how you can use .NET Standard libraries in your OutSystems extens
 tags: 
 guid: 62335c22-2480-4119-8bcf-597538f63ee1
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How to use .NET Standard libraries in OutSystems extensions

@@ -3,6 +3,7 @@ summary: A guide to migrate from Production to Non-Production environments in Ou
 tags: data-migration-between-outsystems-installation; data-migration-between-production-and-non-production-outsystems; factory-application-modules
 locale: en-us
 guid: c7318d3e-0ee5-4bec-90d3-06e8aa1b2ea2
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Factory Application Modules

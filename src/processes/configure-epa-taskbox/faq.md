@@ -1,6 +1,7 @@
 ---
 guid: 32e83f65-befb-46b4-9984-d804192357a3
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How to configure EPA taskbox preferences

@@ -3,6 +3,7 @@ summary: Try OutSystems in Azure
 tags:
 locale: en-us
 guid: e0085624-ca0d-42cf-91ae-f259280dc67b
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Install OutSystems Trial on Azure

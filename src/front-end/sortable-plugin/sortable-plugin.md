@@ -1,6 +1,7 @@
 ---
 guid: 03a0c151-1a2c-424c-bd4a-75fb2e081f9f
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How do you integrate a sortable plugin?

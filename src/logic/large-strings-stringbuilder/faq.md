@@ -1,6 +1,7 @@
 ---
 guid: ff4c1cf6-5e3f-4d4e-b1f6-2c685294e002
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How to create large strings with StringBuilder

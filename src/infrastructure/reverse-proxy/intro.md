@@ -3,6 +3,7 @@ summary: For network topologies and security policies that rely on reverse proxi
 tags: support-devOps;support-Infrastuture_Architecture;support-installation;support-Installation_Configuration;support-maintenance;support-Security
 locale: en-us
 guid: 810e320f-8265-49f4-947c-e16bb853e77a
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 # Using OutSystems in Reverse Proxy Scenarios
 

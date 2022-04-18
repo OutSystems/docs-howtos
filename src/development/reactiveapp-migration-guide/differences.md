@@ -3,6 +3,7 @@ summary: Overview of differences between Traditional Web Apps and Reactive Web A
 tags:
 locale: en-us
 guid: 013992fc-35b0-485d-9097-68a0d1b1afc8
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Differences to consider between Traditional and Reactive Web Apps

@@ -1,6 +1,7 @@
 ---
 guid: 4361759f-10ba-488c-b928-5a9fd5017f98
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How to translate an email

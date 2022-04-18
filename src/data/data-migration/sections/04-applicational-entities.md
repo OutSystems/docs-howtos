@@ -3,6 +3,7 @@ summary: A guide to migrate from Production to Non-Production environments in Ou
 tags: data-migration-between-outsystems-installation; data-migration-between-production-and-non-production-outsystems; applicational-entities
 locale: en-us
 guid: 8e6f7f29-c985-4000-b17a-68fe09e0ef7f
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Applicational Entities

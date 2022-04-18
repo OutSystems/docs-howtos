@@ -3,6 +3,7 @@ summary: Considerations about migrating the UI of Traditional Web Apps that use 
 tags: migration-traditional-web; migration-reactive-web; frontend-migration 
 locale: en-us
 guid: f3b2a6fe-c642-4dde-b104-9f37f32bb4fa
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # UI migration considerations

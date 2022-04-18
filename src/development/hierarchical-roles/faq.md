@@ -3,6 +3,7 @@ summary: Learn how to create several hierarchy roles using the default OutSystem
 tags: article-page; app-development; OutSystems-roles; user-roles; hierarchical-roles; 
 guid: f39c1e48-d9a9-443a-ba1e-6f345a350ab8
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How to leverage OutSystems roles with hierarchy levels

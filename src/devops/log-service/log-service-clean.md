@@ -3,6 +3,7 @@ summary:
 tags: version-11;
 guid: 1635a64b-bb6b-4cb5-8a49-bcfc97929fe7
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Log Service Cleanup

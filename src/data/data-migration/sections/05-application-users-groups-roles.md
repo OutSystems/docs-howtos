@@ -3,6 +3,7 @@ summary: A guide to migrate from Production to Non-Production environments in Ou
 tags: data-migration-between-outsystems-installation; data-migration-between-production-and-non-production-outsystems; application-users-groups-and-roles 
 locale: en-us
 guid: 4cc52c9d-17cb-4c79-b17d-69bb3ef1de4a
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Application Users Groups and Roles

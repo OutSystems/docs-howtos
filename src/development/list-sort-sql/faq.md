@@ -3,6 +3,7 @@ tags: version-11; support-Database; support-Front_end_Development; support-webap
 summary: Enable the dynamic sorting of a table that has a SQL query as the data source.
 guid: 9d1081a8-8d5e-4eca-80f5-ed401e66e733
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How to enable dynamic sorting in a table fed by a SQL query

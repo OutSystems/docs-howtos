@@ -3,6 +3,7 @@ summary: This document is a reference for migrating the UI Flow elements of Trad
 tags: migration-traditional-web; migration-reactive-web; frontend-migration; ui-flow-elements
 locale: en-us
 guid: 7b6e68d1-7e1d-4b59-96f1-bf9a1916bf3f
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # UI flow elements

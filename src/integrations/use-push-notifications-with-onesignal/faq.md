@@ -2,6 +2,7 @@
 tags: version-10; support-Integrations_Extensions; support-Integrations_Extensions-featured; support-Mobile_Apps; support-webapps
 guid: d7d5445d-d28d-4acb-b158-b6d85b7f2ace
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How to Use Push Notifications with OneSignal

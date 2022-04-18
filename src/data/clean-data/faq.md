@@ -3,6 +3,7 @@ tags: version-10; support-Database
 summary: 
 guid: 8796fe43-091c-4613-a9ac-9babde52b7a2
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How to delete data from Entities

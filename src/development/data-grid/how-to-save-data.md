@@ -3,6 +3,7 @@ tags: runtime-reactiveweb;
 summary: How to edit the Grid data and save the changes to the database
 guid: 5650f891-e674-4ae4-a937-92965677b5ae
 locale: en-us
+app_type: reactive web apps
 ---
 
 #  How to save changes to the OutSystems Data Grid

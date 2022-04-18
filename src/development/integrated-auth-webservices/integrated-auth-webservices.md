@@ -3,6 +3,7 @@ summary:
 tags:
 locale: en-us
 Guid: DE66DA4D-B3BA-4F2F-A19E-424C38B5C327
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # Integrated Authentication on Web Services - User credentials delegation to Web References in OutSystems

@@ -1,6 +1,7 @@
 ---
 guid: dbc1a919-c473-4ac2-aa5a-c424a79ed690
 locale: en-us
+app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
 # How to include a jQuery plugin
