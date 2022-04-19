@@ -10,12 +10,6 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 <div class="info" markdown="1">
 
-We've been working on these documents. Please let us know how useful this new version is by voting.
-
-</div>
-
-<div class="info" markdown="1">
-
 This document addresses experienced developers and Tech Leads planning to migrate Traditional Web Apps to Reactive Web Apps. The migration requires good knowledge of the Reactive Web front-end features and application architecture. Check the guided path [Becoming a Reactive Web Developer](https://www.outsystems.com/learn/paths/18/becoming-a-reactive-web-developer/) in OutSystems training to get into Reactive Web development.
 
 </div>

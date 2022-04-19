@@ -9,12 +9,6 @@ app_type: traditional web apps, mobile apps, reactive web apps
 # How to Export Entity Data to Excel
 
 
-<div class="info" markdown="1">
-
-We've been working on this article. Please let us know how useful this new version is by voting.
-
-</div>
-
 To export the data you must use the **Record List To Excel** action. This generates an Excel worksheet with the data existing on a selected entity. You then need to enable the user to download the generated Excel file.
 
 This article shows how it's done in both [Reactive Web](#reactive) and [Traditional Web](#traditional-web).

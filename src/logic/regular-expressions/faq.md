@@ -8,11 +8,6 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # How to use regular expressions in OutSystems
 
-<div class="info" markdown="1">
-
-We've been working on this article. Please let us know how useful this new version is by voting.
-</div>
-
 Regular expressions let you process text strings using search patterns. Check the **See Also** links for extra resources on how regular expressions work and how to write them.
 
 OutSystems includes the following two server actions from the **Text** extension that lets you use regular expressions in your app:

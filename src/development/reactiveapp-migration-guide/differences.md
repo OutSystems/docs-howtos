@@ -8,12 +8,6 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # Differences to consider between Traditional and Reactive Web Apps
 
-<div class="info" markdown="1">
-
-We've been working on these documents. Please let us know how useful this new version is by voting.
-
-</div>
-
 This document presents some differences between the Traditional Web and Reactive Web Apps, in the context of migrating to the newer Reactive runtime. Refer to your Traditional apps and check how you implemented user experience and logic related to these new features, and assess what you need to change in the new runtime.
 
 ## Traditional Web App elements not available for Reactive Web Apps

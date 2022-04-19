@@ -8,12 +8,6 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # Traditional to Reactive App migration reference
 
-<div class="info" markdown="1">
-
-We've been working on these documents. Please let us know how useful this new version is by voting.
-
-</div>
-
 This reference document is a collection of notes about the differences between Traditional and Reactive App. The purpose is to help developers in migrating an existing Traditional app to a Reactive runtime.
 
 ## Initial planning and preparation

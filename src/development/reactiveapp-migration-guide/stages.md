@@ -8,12 +8,6 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # Suggested stages of Traditional to Reactive App migration
 
-<div class="info" markdown="1">
-
-We've been working on these documents. Please let us know how useful this new version is by voting.
-
-</div>
-
 The stages for migration Traditional Web Apps to Reactive Web Apps depend on the:
 
 * type of Traditional Web app you want to migrate
