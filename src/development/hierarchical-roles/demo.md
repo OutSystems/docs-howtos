@@ -13,7 +13,7 @@ This page shows a sales application demo that controls access through a [predefi
 This application demonstrates how to use the Hierarchical Roles approach. It’s a simple application with only one end-user module. In this module, you can find several screens. Your future business applications that require a Hierarchical Roles approach are going to be similar to this application.
 
 <div class="info" markdown="1">
- 
+
 [Download from the OutSystems Forge](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=8742) the Hierarchical Roles example described in this article, and publish it in your factory environment. Use it as a reference or adapt the code to implement your business case.
 
 </div>
