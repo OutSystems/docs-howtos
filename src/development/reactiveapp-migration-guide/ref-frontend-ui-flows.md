@@ -47,7 +47,7 @@ Pay attention to the **External Sites** with relative URLs to different Modules,
 
 ## Flow exception handler { #flow-exception-handler }
 
-The **OnException** handlers are on the client side. For the server-side errors, you need to use the exception handlers on the Serven Action flows if you want to handle the exception server-side. If you don't mind having exceptions bubbling up to the client side, then you can handle them either on the client-side Action that called the Server Action or on the **OnException** handler on the UI Flow.
+The **OnException** handlers are on the client side. For the server-side errors, you need to use the exception handlers on the Server Action flows if you want to handle the exception server-side. If you don't mind having exceptions bubbling up to the client side, then you can handle them either on the client-side Action that called the Server Action or on the **OnException** handler on the UI Flow.
 
 Refer to the [HandleExceptions](https://success.outsystems.com/Documentation/11/Developing_an_Application/Implement_Application_Logic/Handle_Exceptions) documentation for more information.
 
