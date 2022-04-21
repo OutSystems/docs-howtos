@@ -3,7 +3,7 @@ tags: version-11; support-mobile; support-Mobile_Apps; deep link; Intent;
 summary: 
 guid: cc1ae152-0388-4f6e-865c-323c88ea8c76
 locale: en-us
-app_type: traditional web apps, mobile apps, reactive web apps
+app_type: mobile apps
 ---
 
 # How to define Mobile App deep links
