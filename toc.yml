@@ -17,6 +17,7 @@
                 - href: development/reactiveapp-migration-guide/ref-system-actions.md
             - href: development/reactiveapp-migration-guide/ref-core-widgets.md
     - href: development/create-lifetime-plugin/faq.md
+    - href: development/mobile-deep-links/faq.md
     - href: development/feature-flags/feature-flags.md
     - href: development/reduce-size-espace/faq.md        
     - href: development/data-grid/intro.md
