@@ -64,3 +64,4 @@ To do it, you need to track whether the user has modified in the data and preven
 	    // Catch window close
 	    window.onbeforeunload = confirmExit;
 
+
