@@ -49,7 +49,7 @@ Install [Firebase Sample App](https://www.outsystems.com/forge/Component_Overvie
 
 ![sample app](images/migrate-to-firebase-sample-app.png)
 
-## Example of migrating a logging event with Analytics Plugin
+## Example of migrating a logging event with the Analytics Plugin
 
 If you are using the **LogEvent** of the unsupported plugin, follow these steps to migrate to the supported Analytics plugin. You can log events anywhere inside a logic flow. To log an event, drag the **LogEvent** action provided by the Analytics Plugin to the logic inside of the part of the app where you want to create a log event.
 
@@ -63,17 +63,43 @@ See [Reference of the plugin actions](#reference-of-the-plugin-actions) for more
 
     ![Log event action in the logic flow](images/migrate-to-firebase-legacy-ss.png)
 
-1. Solve the errors Service Studio highlighted after you deleted  the former LogEvent action. Start by dragging LogEvent action from the supported Analytics plugin folder. Service Studio automatically renames the action to **LogEvent2** in logic flows where the module references both plugins.
+2. Solve the errors Service Studio highlighted after you deleted  the former LogEvent action. Start by dragging LogEvent action from the supported Analytics plugin folder. Service Studio automatically renames the action to **LogEvent2** in logic flows where the module references both plugins.
 
     ![Error list](images/migrate-to-firebase-fix-errors-ss.png)
 
-1. Substitute all parameters from the old **LogEvent** action with equivalent parameters from the new **LogEvent2** action.
+3. Substitute all parameters from the old **LogEvent** action with equivalent parameters from the new **LogEvent2** action.
 
     ![Parameters mapping](images/migrate-to-firebase-params-ss.png)
 
-1. Optionally, set any other parameters to capture additional information and get metrics from the Google Console dashboard.
+4. Optionally, set any other parameters to capture additional information and get metrics from the Google Console dashboard.
   
     ![Additional parameters](images/migrate-to-firebase-additional-values-ss.png)
+    
+## Example of sending and receiving a notification with the Cloud Messaging Plugin
+
+If you want to subscribe to a topic and receive notifications for it, follow these steps:
+
+<div class="info" markdown="1">
+
+See [Reference of the plugin actions](#reference-of-the-plugin-actions) for more information.
+
+</div>
+
+1. Call the **Subscribe** client action of the supported plugin.
+
+    ![Subscribe to topic action in the logic flow](images/migrate-to-firebase-subscribe-topic.png)
+
+2. Include the **NotificationsHandler** block in the screen on which you want to handle the notifications. If you want to see these as in-app notifications, you can use the **NotificationDialog** block as a placeholder, or implement your own logic.
+
+    ![NotificationsHandler block](images/migrate-to-firebase-cloud-block.png)
+
+3. Send POST request to endpoint **baseURL/notification/topics** of the Cloud Messaging REST API.
+
+    ![Using the REST API](images/migrate-to-firebase-rest-api.png)
+
+4. See notifications as in-app notifications in your app.
+  
+    ![In-app notification](images/migrate-to-firebase-in-app-notification.png)
 
 
 ## Reference of the plugin actions
