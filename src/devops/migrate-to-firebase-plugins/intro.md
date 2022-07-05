@@ -125,6 +125,43 @@ Check out the [sample app](#sample-app) to see how to:
 * Set the current screen name
 * Set the parameters that the apps sends with every event logged from the device, including automatic events
 
+### Cloud Messaging
+
+The list of relevant actions in the two plugins.
+
+| Firebase Mobile (unsupported) | Analytics Plugin (supported) |
+| ----------------------------- | ---------------------------- |
+| LogEvent                      | LogEvent                     |
+| SetAnalyticsCollectionEnabled | SetEnabled                   |
+| SetScreenName                 | SetCurrentScreen             |
+| SetUserProperty               | SetUserProperty              |
+
+The list of relevant actions in the two plugins.
+
+| Firebase Mobile (unsupported) | Analytics Plugin (supported) |
+| ----------------------------- | ---------------------------- |
+| LogEvent                      | LogEvent                     |
+| SetAnalyticsCollectionEnabled | SetEnabled                   |
+| SetScreenName                 | SetCurrentScreen             |
+| SetUserProperty               | SetUserProperty              |
+
+The list of relevant actions in the two plugins.
+
+| Firebase Mobile (unsupported) | Analytics Plugin (supported) |
+| ----------------------------- | ---------------------------- |
+| LogEvent                      | LogEvent                     |
+| SetAnalyticsCollectionEnabled | SetEnabled                   |
+| SetScreenName                 | SetCurrentScreen             |
+| SetUserProperty               | SetUserProperty              |
+
+
+Check out the [sample app](#sample-app) to see how to:
+
+* Receive and handle notifications sent through Firebase Cloud Messaging
+* Use the NotificationsHandler block to handle notifications inside your app (e.g. for in-app notifications)
+* Get pending silent notifications
+* Clear all notifications from the notification central of a device
+
 ### Crash Reporting
 
 The list of relevant actions in the two plugins.
