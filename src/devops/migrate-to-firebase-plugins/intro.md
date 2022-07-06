@@ -131,47 +131,47 @@ Check out the [sample app](#sample-app) to see how to:
 
 The list of relevant actions in the two plugins.
 
-| Firebase Mobile (unsupported) | Cloud Messaging Plugin (supported) |
-| ----------------------------- | ---------------------------------- |
-| ClearAllNotifications         | ClearNotifications                 |
-| GetBadgeNumber                | GetBadgeNumber                     |
-| GetToken                      | GetToken                           |
-| GrantsPermission              | -                                  |
-| HasPermission                 | -                                  |
-| InitCloudMessaging            | -                                  |
-| RegisterDevice                | RegisterDevice                     |
-| SetBadgeNumber                | SetBadgeNumber                     |
-| SubscribeToTopic              | Subscribe                          |
-| UnsubscribeToTopic            | Unsusbscribe                       |
-| UnregisterDevice              | UnregisterDevice                   |
-| -                             | GetPendingNotitications            |
-| -                             | SendLocalNotification              |
+Firebase Mobile (unsupported) && Firebase CM Compat R&D (unsupported) | Cloud Messaging Plugin (supported) |
+| --------------------------------------------------------------------| ---------------------------------- |
+| ClearAllNotifications                                               | ClearNotifications                 |
+| GetBadgeNumber                                                      | GetBadgeNumber                     |
+| GetToken                                                            | GetToken                           |
+| GrantsPermission                                                    | -                                  |
+| HasPermission                                                       | -                                  |
+| InitCloudMessaging                                                  | -                                  |
+| RegisterDevice                                                      | RegisterDevice                     |
+| SetBadgeNumber                                                      | SetBadgeNumber                     |
+| SubscribeToTopic                                                    | Subscribe                          |
+| UnsubscribeToTopic                                                  | Unsusbscribe                       |
+| UnregisterDevice                                                    | UnregisterDevice                   |
+| -                                                                   | GetPendingNotitications            |
+| -                                                                   | SendLocalNotification              |
 
 While the unsupported plugin has only one block, **FirebaseCloudMessaging**, the supported plugin has two: **NotificationsHandler** and **NotificationDialog**.
 
 The NotificationsHandler block is the equivalent to the FirebaseCloudMessaging block (for more info regarding the NotificationDialog block, check the [plugin's documentation page](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/Mobile_Plugins/Firebase_Plugins?_gl=1*1npdtum*_ga*NzExODMwOTM4LjE2NTE3NDI2Nzk.*_ga_ZD4DTMHWR2*MTY1NzAzNzk4My42OC4xLjE2NTcwMzgwMjYuMTc.)). In the following table, we list each block’s client actions and events, as well as how they relate to each other.
 
-| Firebase Mobile (unsupported) | Cloud Messaging Plugin (supported) |
-| ----------------------------- | ---------------------------------- |
-| Handler_OnMessage             | OnDefaultNotificationReceived      |
-| -                             | OnSilentNotificationReceived       |
-| Handler_OnBackgroundMessage   | -                                  |
-| ErrorHandler                  | -                                  |
-| OnMessage                     | DefaultNotificationReceived        |
-| -                             | SilentNotificationReceived         |
-| OnBackgroundMessage           | -                                  |
-| ErrorEvent                    | -                                  |
+Firebase Mobile (unsupported) | Firebase CM Compat R&D (unsupported) | Cloud Messaging Plugin (supported) |
+| --------------------------- | ------------------------------------ | ---------------------------------- |
+| NotificationHandler         | Handler_OnMessage                    | OnDefaultNotificationReceived      |
+| -                           | -                                    | OnSilentNotificationReceived       |
+| -                           | Handler_OnBackgroundMessage          | -                                  |
+| ErrorHandler                | ErrorHandler                         | -                                  |
+| NewNotification             | OnMessage                            | DefaultNotificationReceived        |
+| -                           | -                                    | SilentNotificationReceived         |
+| -                           | OnBackgroundMessage                  | -                                  |
+| ErrorEvent                  | ErrorEvent                           | -                                  |
 
 While the unsupported plugin had a module (Middleware), the supported plugin has a different component (Cloud Messaging Configurator), which is Reactive Web App, that offers a REST API.
 
 In the next table, we will list the REST API methods that are equivalent to the Middleware's server actions.
 
-| Firebase Middleware (unsupported) | Cloud Messaging Configurator (supported) |
-| --------------------------------- | ---------------------------------------- |
-| SendNotificationToTopic           | POST baseURL/notification/topics         |
-| SendNotificationToUser            | POST baseURL/notification/users          |
-| SendSilentNotificationToTopic     | POST baseURL/notification/silent/topics  |
-| SendSilentNotificationToUser      | POST baseURL/notification/silent/users   |
+| Firebase Mobile (unsupported) && Firebase CM Compat R&D (unsupported) | Cloud Messaging Configurator (supported) |
+| --------------------------------------------------------------------- | ---------------------------------------- |
+| SendNotificationToTopic                                               | SendNotifcationToTopics                  |
+| SendNotificationToUser                                                | SendNotifcationToUsers                   |
+| SendSilentNotificationToTopic                                         | SendSilentNotificationToTopics           |
+| SendSilentNotificationToUser                                          | SendSilentNotificationToUsers            |
 
 
 Check out the [sample app](#sample-app) to see how to:
