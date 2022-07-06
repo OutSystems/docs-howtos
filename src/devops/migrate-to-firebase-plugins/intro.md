@@ -49,7 +49,7 @@ Install [Firebase Sample App](https://www.outsystems.com/forge/Component_Overvie
 
 ![sample app](images/migrate-to-firebase-sample-app.png)
 
-## Example of migrating a logging event with Analytics Plugin
+## Example of migrating a logging event with the Analytics Plugin
 
 If you are using the **LogEvent** of the unsupported plugin, follow these steps to migrate to the supported Analytics plugin. You can log events anywhere inside a logic flow. To log an event, drag the **LogEvent** action provided by the Analytics Plugin to the logic inside of the part of the app where you want to create a log event.
 
@@ -63,17 +63,43 @@ See [Reference of the plugin actions](#reference-of-the-plugin-actions) for more
 
     ![Log event action in the logic flow](images/migrate-to-firebase-legacy-ss.png)
 
-1. Solve the errors Service Studio highlighted after you deleted  the former LogEvent action. Start by dragging LogEvent action from the supported Analytics plugin folder. Service Studio automatically renames the action to **LogEvent2** in logic flows where the module references both plugins.
+2. Solve the errors Service Studio highlighted after you deleted  the former LogEvent action. Start by dragging LogEvent action from the supported Analytics plugin folder. Service Studio automatically renames the action to **LogEvent2** in logic flows where the module references both plugins.
 
     ![Error list](images/migrate-to-firebase-fix-errors-ss.png)
 
-1. Substitute all parameters from the old **LogEvent** action with equivalent parameters from the new **LogEvent2** action.
+3. Substitute all parameters from the old **LogEvent** action with equivalent parameters from the new **LogEvent2** action.
 
     ![Parameters mapping](images/migrate-to-firebase-params-ss.png)
 
-1. Optionally, set any other parameters to capture additional information and get metrics from the Google Console dashboard.
+4. Optionally, set any other parameters to capture additional information and get metrics from the Google Console dashboard.
   
     ![Additional parameters](images/migrate-to-firebase-additional-values-ss.png)
+    
+## Example of sending and receiving a notification with the Cloud Messaging Plugin
+
+If you want to subscribe to a topic and receive notifications for it, follow these steps:
+
+<div class="info" markdown="1">
+
+See [Reference of the plugin actions](#reference-of-the-plugin-actions) for more information.
+
+</div>
+
+1. Call the **Subscribe** client action of the supported plugin.
+
+    ![Subscribe to topic action in the logic flow](images/migrate-to-firebase-subscribe-topic.png)
+
+2. Include the **NotificationsHandler** block in the screen on which you want to handle the notifications. If you want to see these as in-app notifications, you can use the **NotificationDialog** block as a placeholder, or implement your own logic.
+
+    ![NotificationsHandler block](images/migrate-to-firebase-cloud-block.png)
+
+3. Send POST request to endpoint **baseURL/notification/topics** of the Cloud Messaging REST API.
+
+    ![Using the REST API](images/migrate-to-firebase-rest-api.png)
+
+4. See notifications as in-app notifications in your app.
+  
+    ![In-app notification](images/migrate-to-firebase-in-app-notification.png)
 
 
 ## Reference of the plugin actions
@@ -98,6 +124,60 @@ Check out the [sample app](#sample-app) to see how to:
 * Set a user property (for example, the user's language)
 * Set the current screen name
 * Set the parameters that the apps sends with every event logged from the device, including automatic events
+
+### Cloud Messaging
+
+The list of relevant actions in the two plugins.
+
+| Firebase Mobile (unsupported) | Cloud Messaging Plugin (supported) |
+| ----------------------------- | ---------------------------------- |
+| ClearAllNotifications         | ClearNotifications                 |
+| GetBadgeNumber                | GetBadgeNumber                     |
+| GetToken                      | GetToken                           |
+| GrantsPermission              | -                                  |
+| HasPermission                 | -                                  |
+| InitCloudMessaging            | -                                  |
+| RegisterDevice                | RegisterDevice                     |
+| SetBadgeNumber                | SetBadgeNumber                     |
+| SubscribeToTopic              | Subscribe                          |
+| UnsubscribeToTopic            | Unsusbscribe                       |
+| UnregisterDevice              | UnregisterDevice                   |
+| -                             | GetPendingNotitications            |
+| -                             | SendLocalNotification              |
+
+While the unsupported plugin has only one block, **FirebaseCloudMessaging**, the supported plugin has two: **NotificationsHandler** and **NotificationDialog**.
+
+The NotificationsHandler block is the equivalent to the FirebaseCloudMessaging block (for more info regarding the NotificationDialog block, check the [plugin's documentation page](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/Mobile_Plugins/Firebase_Plugins?_gl=1*1npdtum*_ga*NzExODMwOTM4LjE2NTE3NDI2Nzk.*_ga_ZD4DTMHWR2*MTY1NzAzNzk4My42OC4xLjE2NTcwMzgwMjYuMTc.)). In the following table, we list each block’s client actions and events, as well as how they relate to each other.
+
+| Firebase Mobile (unsupported) | Cloud Messaging Plugin (supported) |
+| ----------------------------- | ---------------------------------- |
+| Handler_OnMessage             | OnDefaultNotificationReceived      |
+| -                             | OnSilentNotificationReceived       |
+| Handler_OnBackgroundMessage   | -                                  |
+| ErrorHandler                  | -                                  |
+| OnMessage                     | DefaultNotificationReceived        |
+| -                             | SilentNotificationReceived         |
+| OnBackgroundMessage           | -                                  |
+| ErrorEvent                    | -                                  |
+
+While the unsupported plugin had a module (Middleware), the supported plugin has a different component (Cloud Messaging Configurator), which is Reactive Web App, that offers a REST API.
+
+In the next table, we will list the REST API methods that are equivalent to the Middleware's server actions.
+
+| Firebase Middleware (unsupported) | Cloud Messaging Configurator (supported) |
+| --------------------------------- | ---------------------------------------- |
+| SendNotificationToTopic           | POST baseURL/notification/topics         |
+| SendNotificationToUser            | POST baseURL/notification/users          |
+| SendSilentNotificationToTopic     | POST baseURL/notification/silent/topics  |
+| SendSilentNotificationToUser      | POST baseURL/notification/users          |
+
+
+Check out the [sample app](#sample-app) to see how to:
+
+* Receive and handle notifications sent through Firebase Cloud Messaging
+* Use the NotificationsHandler block to handle notifications inside your app (e.g. for in-app notifications)
+* Get pending silent notifications
+* Clear all notifications from the notification central of a device
 
 ### Crash Reporting
 
