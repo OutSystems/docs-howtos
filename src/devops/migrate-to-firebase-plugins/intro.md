@@ -171,7 +171,7 @@ In the next table, we will list the REST API methods that are equivalent to the 
 | SendNotificationToTopic           | POST baseURL/notification/topics         |
 | SendNotificationToUser            | POST baseURL/notification/users          |
 | SendSilentNotificationToTopic     | POST baseURL/notification/silent/topics  |
-| SendSilentNotificationToUser      | POST baseURL/notification/users          |
+| SendSilentNotificationToUser      | POST baseURL/notification/silent/users   |
 
 
 Check out the [sample app](#sample-app) to see how to:
