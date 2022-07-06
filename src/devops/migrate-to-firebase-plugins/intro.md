@@ -99,7 +99,7 @@ See [Reference of the plugin actions](#reference-of-the-plugin-actions) for more
 
     ![Using the REST API](images/migrate-to-firebase-rest-api.png)
 
-4. See notifications as in-app notifications in your app.
+4. See notifications in the device, whether in the notification center or inside your app as in-app notifications.
   
     ![In-app notification](images/migrate-to-firebase-notifications.png)
 
