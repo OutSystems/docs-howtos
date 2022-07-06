@@ -24,6 +24,7 @@ Firebase-based plugins offer an integration with Firebase. Firebase is a Google 
 | [Analytics](https://www.outsystems.com/forge/component-overview/10704/firebase-analytics-plugin)   | Understand user behavior by viewing live usage data with real-time reporting.          |
 | [Performance Monitoring](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=10706) | Gain insight into the performance of your mobile apps.                                 |
 | [Crash Reporting](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=10705)        | Get real-time crash reporting to help you track, prioritize, and fix stability issues. |
+| [Cloud Messaging](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=12174)        | Send, receive and manage notifications. |
 
 This document refers to the OutSystems plugins as **supported plugins**. Forge also contains **unsupported plugins**, which are mostly the plugins contributed by partners and community.
 
@@ -44,8 +45,9 @@ Install [Firebase Sample App](https://www.outsystems.com/forge/Component_Overvie
 * Log app custom events (for example, user signs in)
 * Set the UserId property
 * Set user properties (for example, user language)
-* Set the current screen name, to specify the app visual context.
-* Set the parameters that the plugin sends with every event logged from the device, including automatic events.
+* Set the current screen name, to specify the app visual context
+* Set the parameters that the plugin sends with every event logged from the device, including automatic events
+* Receive and handle push notifications from Firebase Cloud Messaging
 
 ![sample app](images/migrate-to-firebase-sample-app.png)
 
@@ -93,13 +95,13 @@ See [Reference of the plugin actions](#reference-of-the-plugin-actions) for more
 
     ![NotificationsHandler block](images/migrate-to-firebase-cloud-block.png)
 
-3. Send POST request to endpoint **baseURL/notification/topics** of the Cloud Messaging REST API.
+3. Send a POST request to endpoint `baseURL/notification/topics` of the Cloud Messaging Configurator's REST API.
 
     ![Using the REST API](images/migrate-to-firebase-rest-api.png)
 
 4. See notifications as in-app notifications in your app.
   
-    ![In-app notification](images/migrate-to-firebase-in-app-notification.png)
+    ![In-app notification](images/migrate-to-firebase-notifications.png)
 
 
 ## Reference of the plugin actions
