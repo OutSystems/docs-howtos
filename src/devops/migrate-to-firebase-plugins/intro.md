@@ -65,15 +65,15 @@ See [Reference of the plugin actions](#reference-of-the-plugin-actions) for more
 
     ![Log event action in the logic flow](images/migrate-to-firebase-legacy-ss.png)
 
-2. Solve the errors Service Studio highlighted after you deleted  the former LogEvent action. Start by dragging LogEvent action from the supported Analytics plugin folder. Service Studio automatically renames the action to **LogEvent2** in logic flows where the module references both plugins.
+1. Solve the errors Service Studio highlighted after you deleted  the former LogEvent action. Start by dragging LogEvent action from the supported Analytics plugin folder. Service Studio automatically renames the action to **LogEvent2** in logic flows where the module references both plugins.
 
     ![Error list](images/migrate-to-firebase-fix-errors-ss.png)
 
-3. Substitute all parameters from the old **LogEvent** action with equivalent parameters from the new **LogEvent2** action.
+1. Substitute all parameters from the old **LogEvent** action with equivalent parameters from the new **LogEvent2** action.
 
     ![Parameters mapping](images/migrate-to-firebase-params-ss.png)
 
-4. Optionally, set any other parameters to capture additional information and get metrics from the Google Console dashboard.
+1. Optionally, set any other parameters to capture additional information and get metrics from the Google Console dashboard.
   
     ![Additional parameters](images/migrate-to-firebase-additional-values-ss.png)
     
@@ -91,15 +91,15 @@ See [Reference of the plugin actions](#reference-of-the-plugin-actions) for more
 
     ![Subscribe to topic action in the logic flow](images/migrate-to-firebase-subscribe-topic.png)
 
-2. Include the **NotificationsHandler** block in the screen on which you want to handle the notifications. If you want to see these as in-app notifications, you can use the **NotificationDialog** block as a placeholder, or implement your own logic.
+1. Include the **NotificationsHandler** block in the screen on which you want to handle the notifications. If you want to see these as in-app notifications, you can use the **NotificationDialog** block as a placeholder, or implement your own logic.
 
     ![NotificationsHandler block](images/migrate-to-firebase-cloud-block.png)
 
-3. Send a POST request to endpoint `baseURL/notification/topics` of the Cloud Messaging Configurator's REST API.
+1. Send a POST request to endpoint `baseURL/notification/topics` of the Cloud Messaging Configurator's REST API.
 
     ![Using the REST API](images/migrate-to-firebase-rest-api.png)
 
-4. See notifications in the device, whether in the notification center or inside your app as in-app notifications.
+1. See notifications in the device, whether in the notification center or inside your app as in-app notifications.
   
     ![In-app notification](images/migrate-to-firebase-notifications.png)
 
@@ -149,7 +149,9 @@ Firebase Mobile (unsupported) && Firebase CM Compat R&D (unsupported) | Cloud Me
 
 While the unsupported plugin has only one block, **FirebaseCloudMessaging**, the supported plugin has two: **NotificationsHandler** and **NotificationDialog**.
 
-The NotificationsHandler block is the equivalent to the FirebaseCloudMessaging block (for more info regarding the NotificationDialog block, check the [plugin's documentation page](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/Mobile_Plugins/Firebase_Plugins?_gl=1*1npdtum*_ga*NzExODMwOTM4LjE2NTE3NDI2Nzk.*_ga_ZD4DTMHWR2*MTY1NzAzNzk4My42OC4xLjE2NTcwMzgwMjYuMTc.)). In the following table, we list each block’s client actions and events, as well as how they relate to each other.
+The NotificationsHandler block is the equivalent to the FirebaseCloudMessaging block. Learn more about the NotificationDialog block in the [plugin's documentation page](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/Mobile_Plugins/Firebase_Plugins/Firebase_Cloud_Messaging_plugin). 
+
+The following table lists each of the block’s client actions and events, as well as how they relate to each other.
 
 Firebase Mobile (unsupported) | Firebase CM Compat R&D (unsupported) | Cloud Messaging Plugin (supported) |
 | --------------------------- | ------------------------------------ | ---------------------------------- |
@@ -162,11 +164,11 @@ Firebase Mobile (unsupported) | Firebase CM Compat R&D (unsupported) | Cloud Mes
 | -                           | OnBackgroundMessage                  | -                                  |
 | ErrorEvent                  | ErrorEvent                           | -                                  |
 
-While the unsupported plugin had a module (Middleware), the supported plugin has a different component (Cloud Messaging Configurator), which is Reactive Web App, that offers a REST API.
+While the unsupported plugin had a module, **Middleware**, the supported plugin has a different component, **Cloud Messaging Configurator**, which is Reactive Web app, that offers a REST API.
 
-In the next table, we will list the REST API methods that are equivalent to the Middleware's server actions.
+The following table lists the REST API methods that are equivalent to the Middleware's server actions.
 
-| Firebase Mobile (unsupported) && Firebase CM Compat R&D (unsupported) | Cloud Messaging Configurator (supported) |
+| Firebase Mobile (unsupported) <br/> Firebase CM Compat R&D (unsupported) | Cloud Messaging Configurator (supported) |
 | --------------------------------------------------------------------- | ---------------------------------------- |
 | SendNotificationToTopic                                               | SendNotifcationToTopics                  |
 | SendNotificationToUser                                                | SendNotifcationToUsers                   |
