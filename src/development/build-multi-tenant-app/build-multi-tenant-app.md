@@ -45,23 +45,23 @@ Since an end-user uniquely belongs to a tenant, in the login process, the OutSys
 
 ## Tenant-Specific Elements
 
-This section discusses how to set up the eSpace, Entities, Site Properties, and Timers to build a Multi-Tenant application.
+This section discusses how to set up the Module, Entities, Site Properties, and Timers to build a Multi-Tenant application.
 
 Since the OutSystems Platform automatically enforces data segmentation, you just need to specify which Entities, Site Properties and Timers are isolated between clients and which are shared. You do not need to change your queries or any other business logic, since the OutSystems Platform only retrieves data for the tenant the users’ session is bound to. 
 
-### Setting up the eSpace
+### Setting up the module
 
-To create a Multi-tenant application, every eSpace of the application has to be marked as Multi-tenant. This is done by simply setting its ‘Is Multi-tenant’ property of the eSpace to ‘Yes’. This has the following effects:
+To create a Multi-tenant application, every module of the application has to be marked as Multi-tenant. This is done by simply setting its ‘Is Multi-tenant’ property of the module to ‘Yes’. This has the following effects:
 
 * Isolates data, end-users, sessions and processes per tenant.
 
-* Alerts other developers to the fact that the eSpace is Multi-tenant ready.
+* Alerts other developers to the fact that the module is Multi-tenant ready.
 
 ### Setting up Entities
 
-Check Entities of each eSpace of your application, and decide whether they are Single-tenant (data is shared among all tenants) or Multi-tenant (data is isolated per tenant).
+Check Entities of each module of your application, and decide whether they are Single-tenant (data is shared among all tenants) or Multi-tenant (data is isolated per tenant).
 
-After setting **the eSpace** as Multi-tenant, you should ensure that Entities, Site Properties and Timers have their ‘Is Multi-tenant’ property adequately set.
+After setting **the module** as Multi-tenant, you should ensure that Entities, Site Properties and Timers have their ‘Is Multi-tenant’ property adequately set.
 
 An Entity should be Single-tenant if its data is meant to be shared by all tenants and Multi-tenant if it is tenant specific.
 
@@ -71,11 +71,11 @@ On the other hand, entities like CurrencyExChangeRate and Country have their dat
 
 After deciding the behavior of an Entity, set its ‘Is Multi-tenant’ property to one of the following values:
 
-* **‘Yes’:** the Entity’s data is **isolated** per tenant regardless of the value set in the eSpace’s Is Multi-tenant property;
+* **‘Yes’:** the Entity’s data is **isolated** per tenant regardless of the value set in the module’s Is Multi-tenant property;
 
-* **‘No’:** the Entity’s data is **not isolated** per tenant regardless of the value set in the eSpace’s Is Multi-tenant property;
+* **‘No’:** the Entity’s data is **not isolated** per tenant regardless of the value set in the module’s Is Multi-tenant property;
 
-* **< Not Defined >:** the Multi-tenant behavior of the Entity’s data is inherited from the Multi-tenant behavior of its eSpace (the value set in the ‘Is Multi-tenant’ property of the eSpace). Note that Static Entities are shared among all tenants. 
+* **< Not Defined >:** the Multi-tenant behavior of the Entity’s data is inherited from the Multi-tenant behavior of its module (the value set in the ‘Is Multi-tenant’ property of the module). Note that Static Entities are shared among all tenants. 
 
 Note that Static Entities are shared among all tenants.
 
@@ -93,7 +93,7 @@ Set the ’Is Multi-tenant’ property of Site Properties to one of the followin
 
 * **‘No’:** if the Site Property does not isolate data by tenant;
 
-* **< Not defined >:** the Multi-tenant behavior of the Site Property is inherited from the Multi-tenant behavior of the eSpace.
+* **< Not defined >:** the Multi-tenant behavior of the Site Property is inherited from the Multi-tenant behavior of the module.
 
 ### Setting up Timers 
 
@@ -109,7 +109,7 @@ Set the ‘Is Multi-tenant’ property of Timers to one of the following values:
 
 * **‘No’:** if the Timer is executed once, i.e., is able to read and manipulate data shared by all tenants;
 
-* **< Not defined >:** the Multi-tenant behavior of the Timer is inherited from the Multi-tenant behavior of the eSpace.
+* **< Not defined >:** the Multi-tenant behavior of the Timer is inherited from the Multi-tenant behavior of the module.
 
 ## Isolating Sessions per Tenant
 
@@ -141,7 +141,7 @@ Once the end-user has a new tenant, they can perform user management but only fo
 
 For managing tenants you can create a Single-Tenant back office where new tenants are created. In these situations there is a tenant manager that is able to create new tenants, and specify which end-users belong to which tenants. The tenant manager is able to manage all end-users across tenants.
 
-Also, in the back office there has to be a Single-tenant eSpace to create administrative users (tenant managers). 
+Also, in the back office there has to be a Single-tenant module to create administrative users (tenant managers). 
 
 <div class="warning" markdown="1">
 
@@ -168,23 +168,23 @@ With this example you can understand:
 
 This example has the following components:
 
-* The **TenantManagement eSpace**: that supports the management of tenants and end-users across tenants. This back office is used by the tenant administrators;
+* The **TenantManagement module**: that supports the management of tenants and end-users across tenants. This back office is used by the tenant administrators;
 
-* The **BackOfficeUsers eSpace**: supports the management of administrative (IT) users. The end-users created in the BackOfficeUsers eSpace, have access to the TenantManagement application for tenant provisioning and configuration;
+* The **BackOfficeUsers module**: supports the management of administrative (IT) users. The end-users created in the BackOfficeUsers module, have access to the TenantManagement application for tenant provisioning and configuration;
 
 * The **Sales solution**: a Multi-tenant application that allows end-users to self-provision and manage endusers for their own tenants. After creating the tenant, end-users for that tenant are managed using the front office Users application;
 
-* The **Users eSpace**: that supports the management of end-users. Since this is a Multi-tenant, once the tenant manager logs in into the Users eSpace, he can only manage end-users from his own tenant.
+* The **Users module**: that supports the management of end-users. Since this is a Multi-tenant, once the tenant manager logs in into the Users module, he can only manage end-users from his own tenant.
 
 ### Changing the Sales Application
 
 The following sections explain how the Sales application was modified from Single-tenant to Multi-tenant, allowing multiple client organizations to use it at the same time with data isolation.
 
-#### Setting up the eSpaces
+#### Setting up the modules
 
-To change the Sales application from Single-tenant to Multi-tenant, several eSpaces in the Sales solution were changed to enforce data isolation.
+To change the Sales application from Single-tenant to Multi-tenant, several modules in the Sales solution were changed to enforce data isolation.
 
-* The ‘Is Multi-tenant’ property of the Sales, Customers, SalesSampleData, and SelfRegister eSpaces were changed to ‘Yes’;
+* The ‘Is Multi-tenant’ property of the Sales, Customers, SalesSampleData, and SelfRegister modules were changed to ‘Yes’;
 
 * The ‘Is Multi-tenant’ property of the Countries, and CustomersSampleData were not changed. 
 
@@ -192,35 +192,35 @@ To change the Sales application from Single-tenant to Multi-tenant, several eSpa
 
 #### Configuring Entities
 
-Note that the Entities changed to Multi-tenant because they had no value set in their ‘Is Multi-tenant’ property, therefore they all **inherited** the setting from the eSpace.
+Note that the Entities changed to Multi-tenant because they had no value set in their ‘Is Multi-tenant’ property, therefore they all **inherited** the setting from the module.
 
-Once the ‘Is Multi-tenant’ property of the eSpace is changed, you should check the Entities, Site Properties and Timers of the eSpace to ensure they have the correct value set.
+Once the ‘Is Multi-tenant’ property of the module is changed, you should check the Entities, Site Properties and Timers of the module to ensure they have the correct value set.
 
-The SalesSampleData and SelfRegister eSpaces do not have Entities, so you only need to check the Sales and Customers eSpaces to ensure whether all its Entities require data isolation.
+The SalesSampleData and SelfRegister modules do not have Entities, so you only need to check the Sales and Customers modules to ensure whether all its Entities require data isolation.
 
-In the Sales eSpace, the AccountManager, Opportunity, OpportunityHistory, QuarterQuota and Task Entities are independent from tenant to tenant so they should remain Multi-tenant.
+In the Sales module, the AccountManager, Opportunity, OpportunityHistory, QuarterQuota and Task Entities are independent from tenant to tenant so they should remain Multi-tenant.
 
-In the Customers eSpace, the Company, CompanyHistory, Contact, ContactHistory and ContactPicture Entities are also independent from tenant to tenant, so they should remain Multi-tenant. 
+In the Customers module, the Company, CompanyHistory, Contact, ContactHistory and ContactPicture Entities are also independent from tenant to tenant, so they should remain Multi-tenant. 
 
 #### Configuring Site Properties
 
-Site Properties, just like Entities, inherit the Is Multi-tenant value of the eSpace.
+Site Properties, just like Entities, inherit the Is Multi-tenant value of the module.
 
-This means that you should check the Sales, SalesSampleData and SelfRegister eSpaces to validate if any Site Property needs to be changed to Single Tenant in order to be shared among tenants.
+This means that you should check the Sales, SalesSampleData and SelfRegister modules to validate if any Site Property needs to be changed to Multi-tenant in order to be shared among tenants.
 
 In this example, all Site Properties should be isolated between tenants: nothing needs to be changed.
 
 #### Configuring Timers
 
-In this example, only the SalesSampleData eSpace contains a Timer that creates end-users for the Sales application. Since we want the Timer to run once for each tenant, nothing needs to be changed: the Timer inherits the ‘Is Multitenant’ property from the eSpace. 
+In this example, only the SalesSampleData module contains a Timer that creates end-users for the Sales application. Since we want the Timer to run once for each tenant, nothing needs to be changed: the Timer inherits the ‘Is Multitenant’ property from the module. 
 
 ### Implementing the Front Office
 
-The SelfRegister eSpace demonstrates how to implement self-provisioning of tenants in a front office. It allows end-users to provision their own tenants by specifying a tenant name and the tenant administrator credentials.
+The SelfRegister module demonstrates how to implement self-provisioning of tenants in a front office. It allows end-users to provision their own tenants by specifying a tenant name and the tenant administrator credentials.
 
 ![ ](images/build-multi-tenant-app_3.png)
 
-In the Login Screen of the Sales eSpace, there is a ‘Sign up for free’ link that lets end-users provision their tenant of the Sales application, without any assistance from the administrative users. The end-user simply needs to provide a tenant name and the tenant administrator credentials
+In the Login Screen of the Sales module, there is a ‘Sign up for free’ link that lets end-users provision their tenant of the Sales application, without any assistance from the administrative users. The end-user simply needs to provide a tenant name and the tenant administrator credentials
 
 ![ ](images/build-multi-tenant-app_4.png)
 
@@ -230,21 +230,21 @@ In the Save action, the fields are validated to check whether they are valid, Th
 
 #### Managing Tenants and End-Users
 
-To understand how to implement a back office where the IT team can manage tenants and users **across all tenants**, check the TenantManagement eSpace. This is a Single-tenant eSpace since it does not enforce data isolation
+To understand how to implement a back office where the IT team can manage tenants and users **across all tenants**, check the TenantManagement module. This is a Single-tenant module since it does not enforce data isolation
 
 ![ ](images/build-multi-tenant-app_5.png)
 
-Even though end-users are isolated from tenant to tenant, the TenantManagement eSpace implements a screen to list all end-users independently of their tenant. This is accomplished by using the ‘Show Tenant Identifier’ property.
+Even though end-users are isolated from tenant to tenant, the TenantManagement module implements a screen to list all end-users independently of their tenant. This is accomplished by using the ‘Show Tenant Identifier’ property.
 
-In the TenantManagement eSpace, take special attention to the: Group, Group_Role, Group_User, User, User_Effective_Role and User_Role Entities. These Entities are red, signaling that the ‘Show Tenant Identifier’ (found on the Advanced tab of Entities’ properties) is checked, thus the Entities explicitly **ignore tenant isolation** restrictions.
+In the TenantManagement module, take special attention to the: Group, Group_Role, Group_User, User, User_Effective_Role and User_Role Entities. These Entities are red, signaling that the ‘Show Tenant Identifier’ (found on the Advanced tab of Entities’ properties) is checked, thus the Entities explicitly **ignore tenant isolation** restrictions.
 
 ![ ](images/build-multi-tenant-app_6.png)
 
-For example, since the User Entity has the ‘Show Tenant Identifier’ checked, the TenantManagement eSpace is able to manipulate all end-users data, independently of the tenant they belong to. This property should only be used in exceptional situations, such as this one.
+For example, since the User Entity has the ‘Show Tenant Identifier’ checked, the TenantManagement module is able to manipulate all end-users data, independently of the tenant they belong to. This property should only be used in exceptional situations, such as this one.
 
 #### Managing IT Users 
 
-Finally, the BackOfficeUsers is a Single-tenant eSpace that supports IT users management. End-users created in this back office have access to the TenantManagement eSpace. 
+Finally, the BackOfficeUsers is a Single-tenant module that supports IT users management. End-users created in this back office have access to the TenantManagement module. 
 
 ![ ](images/build-multi-tenant-app_7.png)
 
