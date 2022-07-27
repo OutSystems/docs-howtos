@@ -14,7 +14,7 @@ Another important topic regarding data migration is the application Users, Group
 
 The following diagram shows the relationships between Entities Users, Roles and Groups.
 
-![Relationships between Entities Users, Roles and Groups](images/relationships-entities-users-roles-groups.png?\width=750)
+![Relationships between Entities Users, Roles and Groups](images/relationships-entities-users-roles-groups.png)
 
 The records for the entities in the diagram above can be generated from the following sources:
 
@@ -185,6 +185,6 @@ Users - the attribute Username (and Tenant ID) (Note: Being different environmen
 
 ## End Users Authentication - Data & Synchronization
 
-Regarding this topic, it is relevant to read the [End-Users Authentication](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End-User_Management/End-Users_Authentication) documentation.
+Regarding this topic, it is relevant to read the [End-Users Authentication](https://success.outsystems.com/Documentation/11/Developing_an_Application/Secure_the_Application/End_Users/End_Users_Authentication) documentation.
 
 [Proceed to the next section](06-static-entities.md)
