@@ -102,7 +102,7 @@ In **SSL Offload** scenarios, two configurations need to be applied:
 
     **Default:** (none)
 
-Aditionally, make sure the IP address of the reverse proxy is configured in the Trusted proxy addresses in **Service Center** (Administration > Security > Network Security).
+Additionally, make sure the IP address of the reverse proxy is configured in the Trusted proxy addresses in **Service Center** (Administration > Security > Network Security). Ensure that the server is not enforcing HTTPS Security in the internal communications.
 
 After applying the above configurations, the following must be executed:
 
