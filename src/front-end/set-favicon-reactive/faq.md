@@ -18,6 +18,7 @@ When changing the favicon, keep in mind that you need to:
 
 * Change the favicon file in **all modules** that expose screens in your app
 * Reload the app data, to ensure the app loads the new favicon. If you are using Chrome, right-click the tab with your app and select **Reload**. You can also clear the entre browser cache.
+* Make sure your icon [follows the guidelines](https://developers.google.com/search/docs/appearance/favicon-in-search) if you want the favicon to show on Google search results.
 
 </div>
 
