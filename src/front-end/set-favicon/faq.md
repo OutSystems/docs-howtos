@@ -16,6 +16,12 @@ In OutSystems, by default, the OutSystems logo is the favicon that is displayed 
 
 If your Web Application **uses a SILK UI Template** go to the Resources folder inside the Data Tab, right click `favicon.ico`, click Replace Resource... and select your custom favicon. Don't forget to republish your application.
 
+<div class="info" markdown="1">
+
+If you want the favicon to show on Google search results, make sure your icon (follows the guidelines)[https://developers.google.com/search/docs/appearance/favicon-in-search].
+
+ </div>
+
 ![Change Resource](images/silk-01.png)
 
 If your Web Application **does not use a SILK UI Template** follow these steps to use a custom favicon:
