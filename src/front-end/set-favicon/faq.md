@@ -18,7 +18,7 @@ If your Web Application **uses a SILK UI Template** go to the Resources folder i
 
 <div class="info" markdown="1">
 
-If you want the favicon to show on Google search results, make sure your icon (follows the guidelines)[https://developers.google.com/search/docs/appearance/favicon-in-search].
+If you want the favicon to show on Google search results, make sure your icon [follows the guidelines](https://developers.google.com/search/docs/appearance/favicon-in-search).
 
  </div>
 
