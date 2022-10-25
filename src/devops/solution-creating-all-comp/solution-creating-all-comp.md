@@ -7,10 +7,9 @@ app_type: traditional web apps, mobile apps, reactive web apps
 ---
 # Creating and using an All Components solution
 
-It's a common practice in OutSystems Factory management to create and use a solution that contains all the components deployed on the environment. It's used to refresh references, republish application modules after an update/upgrade and for some troubleshooting tasks.
+It's a common practice in OutSystems Factory management to create and use a solution that contains all the components deployed on the environment. It's used to refresh references in environments used for development purposes, republish application modules after an update or upgrade and for some troubleshooting tasks. For feature availability in different environments check [here]( https://success.outsystems.com/Documentation/11/Setup_and_maintain_your_OutSystems_infrastructure/Setting_Up_OutSystems/Configure_your_OutSystems_environment#feature-availability-for-different-purposes).
 
 An all components solution will publish and deploy all of the associated components.
-The main difference is that with a solution, all the references are refreshed in one take. This will ensure that consumers get their producers code updated, avoiding compilation errors.
 
 ## How to create
 
