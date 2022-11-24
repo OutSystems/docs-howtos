@@ -135,7 +135,8 @@ Unit testing is most useful for fast feedback, that is, tests that run quickly o
 
 <div class="info" markdown="1">
 
-OutSystems recommends using the [BDD Framework](https://www.outsystems.com/forge/component/1201/bddframework/) for unit testing, as tests are easy to create and maintain.<br/> To learn how to build unit tests using the BDD Framework, watch this [video](https://www.youtube.com/watch?v=df6j7J33JT8)
+OutSystems recommends using the [BDD Framework](https://www.outsystems.com/forge/component/1201/bddframework/) for unit testing, as tests are easy to create and maintain.
+
 </div>
 
 ### Make Your Applications Testable
