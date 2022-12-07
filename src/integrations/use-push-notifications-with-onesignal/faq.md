@@ -151,4 +151,4 @@ This article provides a simple example of implementing push notifications. Howev
 
 For more information about **OneSignalPlugin** and **OneSignalAPI**, use the tooltips by hovering over the elements in the Service Studio.
 
-To know more about **OneSignal**, check [this documentation](https://documentation.onesignal.com/docs/product-overview).
+To know more about **OneSignal**, check [this documentation](https://documentation.onesignal.com/docs).
