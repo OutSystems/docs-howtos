@@ -28,7 +28,7 @@ As [SeleniumHQ’s website](http://www.seleniumhq.org/) states, there are two ma
 
 Whether you use the IDE or WebDriver is entirely up to you and your particular automation needs. If you wish to obtain more in-depth information regarding these technologies, we recommend you to refer to the extensive [Selenium documentation](http://www.seleniumhq.org/docs/). Here are some other resources you may also find useful:
 
-* [Selenium Github Documentation](https://seleniumhq.github.io/docs/index.html)
+* [Selenium Github Documentation](https://github.com/SeleniumHQ/seleniumhq.github.io/tree/trunk/website_and_docs/content/documentation)
 
 * [Elemental Selenium](http://elementalselenium.com/)
 
