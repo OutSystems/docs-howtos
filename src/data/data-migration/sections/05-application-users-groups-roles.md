@@ -32,7 +32,7 @@ The records for the entities in the diagram above can be generated from the foll
     * References to the Exposed Entities and methods
     * Application bootstraps for Users, Groups, and Roles 
 
-## Condiderations
+## Considerations
 
 Take into account the following considerations:
 
