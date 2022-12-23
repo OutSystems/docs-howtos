@@ -40,7 +40,7 @@ To enable the dynamic sorting in a Table that has a SQL query as the data source
 
 1. Create a new **Function**, `EncodingSortForSQL`, to encode the TableSort variable used by the OnSort action to a format that's usable by a SQL query.
 
-    ![refresh data source](images/encoding-function-ss.png)
+    ![refresh data source](images/create-new-function-encode-ss.png)
 
     To create this Function, do the following:
 
@@ -113,13 +113,13 @@ You can dynamically sort a Table Records fed by a **SQL** query using the List S
 
 1. Define the `SORT` Parameter of your **SQL** query as `List_SortColumn_GetOrderBy(<TableRecordsName>.Id,DefaultOrder:"{<Entity>}.[<Attribute>]")`, where `DefaultOrder:"{<Entity>}.[<Attribute>]"` defines that by default the **SQL** query will be sorted ascendantly by Attribute `<Attribute>` (of the Entity `<Entity>`), and `<TableRecordsName>` is the name of the Table Records.
 
-    ![SORT query Parameter](images/list-sort-sql-02.png?width=800)
+    ![SORT query Parameter](images/list-sort-sql-02.png)
 
     The `List_SortColumn_GetOrderBy()` function returns the column to sort by.
 
 1. Implement List Sort Column Rich Widgets in your Table Records Widget as you would do if you were using an Aggregate: 
 
-    ![](images/list-sort-sql-05.png?800)
+    ![Implement List Sort Column](images/list-sort-sql-05.png)
 
     * Drag a List Sort Column to each of the columns that will be used to sort the **SQL** query.
     * Set the `Column` and `OnNotify` > `Destination` Properties for each List Sort Column.
