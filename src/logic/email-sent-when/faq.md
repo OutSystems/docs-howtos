@@ -8,6 +8,12 @@ app_type: traditional web apps, mobile apps, reactive web apps
 
 # How to find when the last email was sent
 
+<div class="info" markdown="1">
+
+Applies only to Traditional Web Apps.
+
+</div>
+
 How can I get the timestamp of the last sent email?
 
 ## Answer
