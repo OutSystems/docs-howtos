@@ -1,16 +1,16 @@
 ---
-tags: version-10; bpt; 
+tags:
 summary: With processes accumulating over time, queries may become slower. Check how to arquive old processes before deleting them.
 guid: 4cfbcd3c-113b-4d91-a92d-b1aef4584115
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# How to archive old Business Process Technology (BPT) Processes
+# How to archive old Processes - BPT
 
 How can I archive old closed BPT Processes?
 
-For example: queries on BPT processes have become slower, because so many Processes have accumulated over time. I would like to archive these old processes before deleting them.
+For example: queries on BPT Processes have become slower, because so many Processes have accumulated over time. I would like to archive these old processes before deleting them.
 
 ## Answer
 

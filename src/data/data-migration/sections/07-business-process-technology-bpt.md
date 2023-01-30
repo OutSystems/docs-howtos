@@ -6,7 +6,7 @@ guid: 2cf30a7f-da91-4bbb-b960-0f3724632dde
 app_type: traditional web apps, mobile apps, reactive web apps
 ---
 
-# Business Process Technology (BPT)
+# Migrating Processes - BPT
 
 One of the most critical topics in data migration relates to Business Process Technology (BPT). This is mainly because in this case there are some entities that are system and others that are hybrid, which makes the migration process more complex.
 
