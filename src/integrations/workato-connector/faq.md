@@ -3,6 +3,7 @@ summary: Use the OutSystems Workato Connector to take full advantage of the Work
 guid: 38e0c498-941a-4f7f-a421-e88edc331075
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to integrate OutSystems with Workato

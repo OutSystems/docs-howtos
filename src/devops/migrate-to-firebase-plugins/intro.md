@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: 0999bb9f-af58-4fc6-ba6d-9c411958eedc
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Migrating to the supported Firebase-based mobile plugins

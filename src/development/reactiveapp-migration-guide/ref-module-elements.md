@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: edb1d08a-8c4f-49bf-9373-855a24a370d5
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Module elements

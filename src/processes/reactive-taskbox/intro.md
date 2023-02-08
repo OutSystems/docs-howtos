@@ -4,6 +4,7 @@ summary: Use the Reactive Taskbox component to let your users assign themselves 
 guid: b8184f4d-59dc-4881-81a0-40df50b4b185
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Using Taskbox in Reactive Web Apps

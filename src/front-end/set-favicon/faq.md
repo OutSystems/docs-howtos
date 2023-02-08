@@ -4,6 +4,7 @@ summary:
 guid: d67fc7c0-9a96-4995-8583-ec9ea6f3da58
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to set a favicon tag

@@ -4,6 +4,7 @@ tags: migration-traditional-web; migration-reactive-web; front-end-migration
 locale: en-us
 guid: 0c16a089-0896-40a9-8ff3-04222f7ec27a
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Front-end migration introduction

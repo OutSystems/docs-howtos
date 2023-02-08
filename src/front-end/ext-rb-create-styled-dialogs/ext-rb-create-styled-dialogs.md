@@ -4,6 +4,7 @@ tags:
 guid: 34f82c63-eff4-49e6-82fb-0958e13dddf7
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to create animated and styled dialog messages

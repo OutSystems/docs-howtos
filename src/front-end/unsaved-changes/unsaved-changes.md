@@ -4,6 +4,7 @@ summary: Preventing users from losing unsaved changes
 guid: 0a798086-ce2a-40f6-b476-7ba81c974b6d
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 

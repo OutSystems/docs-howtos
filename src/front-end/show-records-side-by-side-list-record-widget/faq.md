@@ -3,6 +3,7 @@ summary: In the standard table grid layout each record is on a separate line. He
 guid: 955219bb-026a-4fd4-a24a-0fc5da6a0a1e
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to show records side by side in a List Record widget

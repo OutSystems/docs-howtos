@@ -4,6 +4,7 @@ tags:
 guid: 51f5ab7a-1280-479f-96cd-2c1c9b111134
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to create reports using HTML2PDF

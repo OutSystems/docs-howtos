@@ -4,6 +4,7 @@ tags:
 guid: 065b4d9d-5b4a-4892-9e82-bdfc77ea98d3
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 # Creating and using an All Components solution
 

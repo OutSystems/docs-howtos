@@ -4,6 +4,7 @@ tags: migration-traditional-web; migration-reactive-web; front-end-migration; sc
 locale: en-us
 guid: 3fbc848e-37ed-4b87-a59f-6088cc55e1e4
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Screen and Block logic

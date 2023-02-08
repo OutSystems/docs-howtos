@@ -4,6 +4,7 @@ summary: Use this tutorial to create Excel-like interface with the OutSystems Da
 guid: 80b3e393-53fa-40e3-b457-4cd8cc78fd71
 locale: en-us
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # How to use OutSystems Data Grid Web

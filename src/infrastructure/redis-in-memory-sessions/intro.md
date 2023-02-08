@@ -4,6 +4,7 @@ tags: article-page
 guid: ea49f3ea-e4f3-4c50-859c-7503286785c6
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Configuring OutSystems with Redis in-memory session storage

@@ -2,6 +2,7 @@
 guid: 9bbc4b8f-e26a-4bf7-9250-0f004d5f791e
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Test the failover behavior of a Redis Cluster

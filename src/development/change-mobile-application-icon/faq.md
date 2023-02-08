@@ -4,6 +4,7 @@ tags:
 guid: b27adf72-18ef-45d8-8230-6ebe53f74d8d
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to change a mobile application icon by environment 

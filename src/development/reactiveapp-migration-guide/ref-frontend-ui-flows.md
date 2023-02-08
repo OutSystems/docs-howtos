@@ -4,6 +4,7 @@ tags: migration-traditional-web; migration-reactive-web; frontend-migration; ui-
 locale: en-us
 guid: 7b6e68d1-7e1d-4b59-96f1-bf9a1916bf3f
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # UI flow elements

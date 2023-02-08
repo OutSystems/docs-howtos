@@ -4,6 +4,7 @@ summary:
 guid: 67cc20af-ffe8-4897-b817-28460ed3bd48
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to generate HTML tags

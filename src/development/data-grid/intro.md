@@ -4,6 +4,7 @@ summary: View, explore, and edit large amounts of data in a familiar spreadsheet
 guid: 7a4ea179-b360-4220-a0fc-627a6c751564
 locale: en-us
 app_type: reactive web apps
+platform-version: o11
 ---
 
 # OutSystems Data Grid

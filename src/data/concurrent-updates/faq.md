@@ -4,6 +4,7 @@ summary: Learn how to implement application logic to handle concurrent updates o
 guid: c5dedbf3-215c-4934-b4ef-fccf90e989e7
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How To Handle Concurrent Updates on Application Data Records

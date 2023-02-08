@@ -5,6 +5,7 @@ en_title: 02_Common_use_cases_in_reverse_proxy_scenarios
 locale: en-us
 guid: 4c538aa3-0623-4e86-b871-9fdd3767eb6f
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Common use cases in reverse proxy scenarios

@@ -4,6 +4,7 @@ summary:
 guid: c299ba80-55f5-4102-89ea-ab2ea0b23315
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to Configure Pushwoosh for iOS

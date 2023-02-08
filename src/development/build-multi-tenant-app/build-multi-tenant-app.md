@@ -3,6 +3,7 @@ summary:
 guid: 6e1bb224-5f33-4233-adc5-57dc98793113
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to Build a Multi-tenant Application

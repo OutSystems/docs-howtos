@@ -4,6 +4,7 @@ tags: data-migration-between-outsystems-installation; data-migration-between-pro
 locale: en-us
 guid: 2cf30a7f-da91-4bbb-b960-0f3724632dde
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Migrating Processes - BPT

@@ -4,6 +4,7 @@ tags:
 locale: en-us
 guid: b00bd152-2bc4-4dc9-9200-1de2bdbd26da
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Suggested stages of Traditional to Reactive App migration

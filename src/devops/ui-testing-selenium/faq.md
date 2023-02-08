@@ -2,6 +2,7 @@
 guid: d29ef610-f434-4411-ba63-14ef0463624e
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to do UI testing with Selenium

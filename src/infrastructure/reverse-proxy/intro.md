@@ -4,6 +4,7 @@ tags: support-devOps;support-Infrastuture_Architecture;support-installation;supp
 locale: en-us
 guid: 810e320f-8265-49f4-947c-e16bb853e77a
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 # Using OutSystems in Reverse Proxy Scenarios
 

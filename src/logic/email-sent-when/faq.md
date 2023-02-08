@@ -4,6 +4,7 @@ summary:
 guid: 7ec5da67-8fb3-4c37-b20f-e8759abea401
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to find when the last email was sent

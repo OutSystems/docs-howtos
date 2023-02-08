@@ -4,6 +4,7 @@ summary:
 guid: 1ab580bd-06db-488c-bcfa-133209853697
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to maintain the state of a mobile screen

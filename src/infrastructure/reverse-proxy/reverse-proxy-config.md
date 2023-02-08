@@ -5,6 +5,7 @@ en_title: 03_OutSystems_configurations_in_reverse_proxy_scenarios
 locale: en-us
 guid: bcce21a6-37ab-43a1-90cf-5922fc75effa
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # OutSystems configurations in reverse proxy scenarios

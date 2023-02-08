@@ -2,6 +2,7 @@
 guid: 22ce1e5d-5169-4b6c-934a-92e6b6817783
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Set up a Redis server for non-productive environments

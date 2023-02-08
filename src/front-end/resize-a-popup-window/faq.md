@@ -4,6 +4,7 @@ summary:
 guid: 8aef5808-c75c-4831-ad81-f72a3fdc27d8
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to dynamically resize a pop-up window

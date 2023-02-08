@@ -4,6 +4,7 @@ tags: data-migration-between-outsystems-installation; data-migration-between-pro
 locale: en-us
 guid: 02fd2efb-6799-4656-8cdb-8043dbeff6bf
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Data migration from production to non-production environment

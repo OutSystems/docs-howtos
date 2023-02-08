@@ -4,6 +4,7 @@ summary: The following example demonstrates how to edit information in the Grid 
 guid: 2f8a50d1-be34-401b-bd4a-c27ba72b37f7
 locale: en-us
 app_type: reactive web apps
+platform-version: o11
 ---
 #  How to edit data in the OutSystems Data Grid
 
