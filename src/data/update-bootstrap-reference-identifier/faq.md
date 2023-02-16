@@ -32,7 +32,7 @@ When update the action to bootstrap data from the excel by selecting the entity 
 
 ![](images/entity-update-bootstrap.png)
 
-So, we need do manually add a new column ExpenseStatus to the Excel_Expenses structure (previously created by the scaffolding mechanism).
+So, we need to manually add a new column ExpenseStatus to the Excel_Expenses structure (previously created by the scaffolding mechanism).
 
 ![](images/expense-excel-structure.png)
 
