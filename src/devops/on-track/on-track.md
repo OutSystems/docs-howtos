@@ -144,3 +144,4 @@ I want to add more modules. What should I do?
 The button **Delete mapping** will remove **all** mapped modules. Be careful when using it.
 
 </div>
+
