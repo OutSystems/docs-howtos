@@ -101,7 +101,7 @@ You will need a "Manager role" in your infrastructure in order to do this setup 
 
 1. Access the application configuration and select the option **5. App Feedback**. The "Mappings" option should be selected, as depicted below:
 
-    ![](images/on-track-map1.png)
+    ![](images/on-track-map1-ot.png)
 
 1. Click the **Sync Now** blue button on the top right corner.
 
