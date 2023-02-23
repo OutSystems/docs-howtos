@@ -1,4 +1,5 @@
 ---
+summary: Redis Cluster high availability architecture utilizes 3 nodes, 2 ports per node, and cross-node assignment for failover in case of server failure.
 guid: 8325ebdd-9bc8-445f-bd9b-5d41a435a841
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

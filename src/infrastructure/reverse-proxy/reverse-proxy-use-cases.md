@@ -1,5 +1,5 @@
 ---
-summary: Some common use cases in reverse proxy scenarios and the configuration to be performed to implement each scenario.
+summary: This article explains the common use cases and configurations necessary for reverse proxy scenarios, such as HTTP/HTTPS redirection, request header manipulation and application path changes.
 tags: support-installation;support-maintenance;support-Security
 en_title: 02_Common_use_cases_in_reverse_proxy_scenarios
 locale: en-us

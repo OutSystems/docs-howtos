@@ -1,4 +1,5 @@
 ---
+summary: Change blank cells defined as numeric fields to 0 or use a Data Type Conversion function to import data from Excel with blank cells.
 guid: f7980805-52f4-442b-9c7a-6952f39e583a
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

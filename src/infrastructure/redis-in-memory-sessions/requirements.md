@@ -1,4 +1,5 @@
 ---
+summary: OutSystems requires Platform Server version 11.11 and Redis Server version 5.0.7 to use Redis, with different hardware recommendations for non-productive and production environments.
 guid: 6c4f9146-d4f4-4290-8e14-b04a7d0b0764
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

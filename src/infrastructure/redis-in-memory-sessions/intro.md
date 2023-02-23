@@ -1,5 +1,5 @@
 ---
-summary:
+summary: OutSystems now supports Redis in-memory session storage for Traditional Web Apps with advantages like increased performance, scalability and fault tolerance.
 tags: article-page
 guid: ea49f3ea-e4f3-4c50-859c-7503286785c6
 locale: en-us

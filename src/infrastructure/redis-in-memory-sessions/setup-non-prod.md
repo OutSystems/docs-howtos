@@ -1,4 +1,5 @@
 ---
+summary: Set up a dedicated Ubuntu 20.04.1 LTS virtual machine or Docker container with Redis Server, allowing inbound connections on port 6379/TCP, and configure OutSystems platform to use it for non-productive environments.
 guid: 22ce1e5d-5169-4b6c-934a-92e6b6817783
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

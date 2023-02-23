@@ -1,6 +1,6 @@
 ---
 tags: version-10; support-Integrations_Extensions; support-Mobile_Apps; support-webapps; Pushwoosh; iOS;
-summary: 
+summary: Configure Pushwoosh for iOS by creating an App ID, an APNS certificate and an application in Pushwoosh, then exporting the certificate and private key from the keychain.
 guid: c299ba80-55f5-4102-89ea-ab2ea0b23315
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,5 +1,5 @@
 ---
-summary: Learn the configurations you need to apply to your OutSystem environment in reverse proxy scenarios.
+summary: Configure OutSystems for reverse proxy scenarios with request header manipulation, referenced content exposure, end-to-end SSL and SSL offloading, URL rewrites, content compression and keep-alive connection timeout.
 tags: support-installation;support-maintenance;support-Security
 en_title: 03_OutSystems_configurations_in_reverse_proxy_scenarios
 locale: en-us

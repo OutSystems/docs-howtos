@@ -1,6 +1,6 @@
 ---
 tags: version-10; support-Database
-summary: 
+summary: Use an SQL query to delete several records from one or more Entities.
 guid: 8796fe43-091c-4613-a9ac-9babde52b7a2
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
