@@ -8,6 +8,12 @@ platform-version: o11
 
 # System requirements for using Redis
 
+<div class="info" markdown="1">
+
+Applies to OutSystems self-managed infrastructures.
+
+</div>
+
 Before you can use Redis with OutSystems, check if you fulfill both OutSystems and Redis system requirements.
 
 ## Software

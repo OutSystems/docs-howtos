@@ -9,6 +9,12 @@ platform-version: o11
 
 # Configuring OutSystems with Redis in-memory session storage
 
+<div class="info" markdown="1">
+
+Applies to OutSystems self-managed infrastructures.
+
+</div>
+
 ## Session storage in Traditional Web Apps
 
 In previous versions of Platform Server, Traditional Web Application Sessions could only be stored in Relational Databases, serialized as a binary/blob column. In this case, reading and writing session information means doing many serialization and deserialization operations, which require a significant amount of hardware resources like CPU and Disk I/O. When a Traditional Web App is under load, possibly handling thousands of requests per second, session storage can be a bottleneck and stress the relational database engine. Additionally, storing sessions in the database can also increase the licensing costs of the relational database engine.

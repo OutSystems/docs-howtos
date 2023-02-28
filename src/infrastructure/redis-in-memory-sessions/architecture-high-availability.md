@@ -8,6 +8,12 @@ platform-version: o11
 
 # Redis Cluster high availability architecture
 
+<div class="info" markdown="1">
+
+Applies to OutSystems self-managed infrastructures.
+
+</div>
+
 The following diagram depicts the architecture of a 3-node Master/Replica Redis Cluster infrastructure:
 
 ![Architecture of Redis Cluster with 3 nodes](images/redis-arch-3-node-diag.png)

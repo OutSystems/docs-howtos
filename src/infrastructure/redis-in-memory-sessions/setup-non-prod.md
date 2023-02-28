@@ -10,6 +10,12 @@ platform-version: o11
 
 <div class="info" markdown="1">
 
+Applies to OutSystems self-managed infrastructures.
+
+</div>
+
+<div class="info" markdown="1">
+
 Before you start, make sure you meet the [system requirements](requirements.md) for using Redis with OutSystems.
 
 </div>

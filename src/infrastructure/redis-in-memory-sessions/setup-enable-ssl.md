@@ -10,7 +10,13 @@ platform-version: o11
 
 <div class="info" markdown="1">
 
-**Note:** SSL/TLS support is only available in Redis 6.x, and only if the Redis binaries were compiled with this feature enabled.
+Applies to OutSystems self-managed infrastructures.
+
+</div>
+
+<div class="info" markdown="1">
+
+SSL/TLS support is only available in Redis 6.x, and only if the Redis binaries were compiled with this feature enabled.
 
 </div>
 

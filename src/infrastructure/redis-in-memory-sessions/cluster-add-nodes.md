@@ -10,6 +10,13 @@ platform-version: o11
 
 <div class="info" markdown="1">
 
+Applies to OutSystems self-managed infrastructures.
+
+</div>
+
+
+<div class="info" markdown="1">
+
 Note: This article builds upon the example scenario of a dedicated Redis Cluster with three servers, initially presented in [Set up a Redis Cluster for Production environments](setup-prod.md).
 
 </div>
