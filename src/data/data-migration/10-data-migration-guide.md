@@ -1,5 +1,5 @@
 ---
-summary: A guide to migrate data of an OutSystems Application
+summary: Migrate data of an OutSystems application from source to destination environments, including hybrid data, users, groups, and BPT triggers, by matching physical names, system static entities records, and foreign keys.
 tags: data-migration-of-outsystems-applications;
 locale: en-us
 guid: b2640eac-2601-47a6-b7d1-c7ff08febe0e
