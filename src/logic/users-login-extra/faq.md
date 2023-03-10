@@ -34,14 +34,14 @@ You can apply the following steps in Reactive Web, Mobile, and Traditional Web a
 1. Inside your module that contains the Login screen, switch to the **Data** tab.
 You should have a reference to the User entity, located under _(System_).
 
-    ![User Entity](./images/users-login-extra-data-tab-user-entity.png)
+    ![User Entity](images/users-login-extra-data-tab-user-entity.png)
 
 1. Add a new Entity, named **UserExtended**.
 
 1. Change the **Id** attribute Data Type to _User Identifier_.
 This creates a 1-to-1 relationship between the User entity and your UserExtension entity.
 
-    ![UserExtension Id attribute](./images/users-login-extra-user-extension-id.png)
+    ![UserExtension Id attribute](images/users-login-extra-user-extension-id.png)
 
 1. Add the attributes needed for your particular use case.
 For instance, add an attribute named **ExpirationDate** with the _Date_ data type.
