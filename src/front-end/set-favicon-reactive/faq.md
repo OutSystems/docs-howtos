@@ -1,28 +1,27 @@
 ---
 tags: version-11; favicon;
-summary: Instructions on how to update the favicon in Reactive Web Apps.
+summary: Instructions on how to update the favicon in OutSystems apps.
 guid: 784794a5-90a4-4cae-83df-1fcaf6d68507
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 ---
 
-# How to change a favicon in Reactive Web Apps
+# How to change a favicon
 
-This document explains how to change the default icon and replace it by your favicon. OutSystems Reactive Apps use the OutSystems logo as the default favicon from Service Studio > **Data** > **Resources** > **favicon.png**.
+This document explains how to change the default icon and replace it by your favicon. OutSystems apps use the OutSystems logo as the default favicon from Service Studio > **Data** > **Resources** > **favicon.png**.
 
 ![The default favicon](images/default-favicon.png?width=600)
 
 <div class="info" markdown="1">
 
-When changing the favicon, keep in mind that you need to: 
+When changing the favicon, keep in mind that you need to:
 
 * Change the favicon file in **all modules** that expose screens in your app
 * Reload the app data, to ensure the app loads the new favicon. If you are using Chrome, right-click the tab with your app and select **Reload**. You can also clear the entre browser cache.
 * Make sure your icon [follows the guidelines](https://developers.google.com/search/docs/appearance/favicon-in-search) if you want the favicon to show on Google search results.
 
 </div>
-
 
 ## Use a PNG image as a favicon
 
