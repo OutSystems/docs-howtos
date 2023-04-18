@@ -4,6 +4,7 @@ tags: app-development; OutSystems-roles; user-roles; hierarchical-roles;
 guid: 7c2103e0-79cb-43a7-a430-92ca71e0f8f4
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Hierarchical and static roles comparison

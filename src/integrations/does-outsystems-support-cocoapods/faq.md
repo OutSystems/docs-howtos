@@ -4,6 +4,7 @@ summary:
 guid: def5c0a7-de9e-4c33-b0ef-514b7339a025
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Does OutSystems support CocoaPods

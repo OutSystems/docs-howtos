@@ -3,6 +3,7 @@ summary: Learn how to how to store OutSystems applications and modules in extern
 guid: 9e611128-511d-494f-a1f0-5603ba863afc
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Integrate OutSystems with external version controls

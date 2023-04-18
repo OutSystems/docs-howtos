@@ -5,6 +5,7 @@ en_title: 02 Migrating the patterns of the Silk web applications to OutSystems U
 locale: en-us
 guid: 2c08810e-2693-4b57-a1cb-47f1f2aec04f
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Migrating the patterns of the Silk web applications to OutSystems UI

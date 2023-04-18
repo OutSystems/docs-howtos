@@ -4,6 +4,7 @@ summary:
 guid: e9baaca3-cc89-4479-9a5e-eb57bdae58fc
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to update a Bootstrap Action to fetch an entity identifier from Excel
@@ -31,7 +32,7 @@ When update the action to bootstrap data from the excel by selecting the entity 
 
 ![](images/entity-update-bootstrap.png)
 
-So, we need do manually add a new column ExpenseStatus to the Excel_Expenses structure (previously created by the scaffolding mechanism).
+So, we need to manually add a new column ExpenseStatus to the Excel_Expenses structure (previously created by the scaffolding mechanism).
 
 ![](images/expense-excel-structure.png)
 

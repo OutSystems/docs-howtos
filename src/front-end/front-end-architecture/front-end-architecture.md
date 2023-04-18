@@ -4,6 +4,7 @@ tags: OutSystems_Front-End; OutSystems_UI; OutSystems_Style_Guide; OutSystems_Te
 guid: e9051244-8de6-4d2f-8aa2-3b51afe8a83c
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to Build a Front-End Architecture in OutSystems

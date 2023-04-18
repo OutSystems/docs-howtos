@@ -4,10 +4,11 @@ summary: Preventing users from losing unsaved changes
 guid: 0a798086-ce2a-40f6-b476-7ba81c974b6d
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 
-# How can you prevent users from losing unsaved changes?
+# How to prevent end users from losing unsaved changes
 
 When you want to prevent the loss of unsaved changes in a Reactive Web application, you need to add some additional logic and JavaScript. 
 

@@ -4,6 +4,7 @@ summary: Learn how to use regular expressions in OutSystems apps to search or re
 guid: c7045a0e-c6ec-4db9-ae8d-d21d80731cd7
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to use regular expressions in OutSystems

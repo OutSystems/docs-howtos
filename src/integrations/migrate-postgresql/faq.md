@@ -3,6 +3,7 @@ summary: This articles guides on migrating from the ardoPostgreSQL connector to 
 guid: 584e18f3-c967-4312-96b6-bdd922d9cc5c
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Migrate from ardoPostgreSQL to supported PostgreSQL connector

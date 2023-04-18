@@ -4,6 +4,7 @@ summary:
 guid: cc1ae152-0388-4f6e-865c-323c88ea8c76
 locale: en-us
 app_type: mobile apps
+platform-version: o11
 ---
 
 # How to define Mobile App deep links

@@ -1,10 +1,11 @@
 ---
-summary: Some common use cases in reverse proxy scenarios and the configuration to be performed to implement each scenario.
+summary: This article explains the common use cases and configurations necessary for reverse proxy scenarios, such as HTTP/HTTPS redirection, request header manipulation and application path changes.
 tags: support-installation;support-maintenance;support-Security
 en_title: 02_Common_use_cases_in_reverse_proxy_scenarios
 locale: en-us
 guid: 4c538aa3-0623-4e86-b871-9fdd3767eb6f
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Common use cases in reverse proxy scenarios
@@ -37,8 +38,8 @@ This scenario ensures encrypted communications from the internal application ser
 
 To implement this scenario, you have to perform the following configurations:
 
-* [C1 - End-to-end SSL](reverse-proxy-config.md#C)
-* [F - Adjust keep-alive connection timeout](reverse-proxy-config.md#F) (for Mobile and Reactive Apps)
+* [C1 - End-to-end SSL](reverse-proxy-config.md#ssl-offloading)
+* [F - Adjust keep-alive connection timeout](reverse-proxy-config.md#keep-alive-connection) (for Mobile and Reactive Apps)
 
 ## HTTPS Redirection with SSL Offload
 
@@ -52,8 +53,8 @@ This configuration is called SSL offload. It centralizes the certificate managem
 
 To implement this scenario, you have to perform the following configurations:
 
-* [C2 - SSL Offload](reverse-proxy-config.md#C)
-* [F - Adjust keep-alive connection timeout](reverse-proxy-config.md#F) (for Mobile and Reactive Apps)
+* [C2 - SSL Offload](reverse-proxy-config.md#ssl-offloading)
+* [F - Adjust keep-alive connection timeout](reverse-proxy-config.md#keep-alive-connection) (for Mobile and Reactive Apps)
 
 ## Request Header Manipulation and Referenced Content
 
@@ -73,8 +74,8 @@ This scenario is used when there’s a corporate reverse proxy for several other
 
 To implement this scenario, you have to perform the following configurations:
 
-* [A - Request Header Manipulation](reverse-proxy-config.md#A)
-* [B - Referenced Content Exposure](reverse-proxy-config.md#B)
+* [A - Request Header Manipulation](reverse-proxy-config.md#header-manipulation)
+* [B - Referenced Content Exposure](reverse-proxy-config.md#ref-content)
 
 ## SSL Offload, Request Header Manipulation and Application Path Changes
 
@@ -90,11 +91,11 @@ Serving multiple secure applications with URL and path alteration. This setup is
 
 To implement this scenario, you have to perform the following configurations:
 
-* [A - Request Header Manipulation](reverse-proxy-config.md#A)
-* [B - Referenced Content Exposure](reverse-proxy-config.md#B)
-* [C - End-to-end SSL and SSL Offloading](reverse-proxy-config.md#C)
-* [D - Rewrite URLs in resources](reverse-proxy-config.md#D)
-* [E - Disable content compression](reverse-proxy-config.md#E)
+* [A - Request Header Manipulation](reverse-proxy-config.md#header-manipulation)
+* [B - Referenced Content Exposure](reverse-proxy-config.md#ref-content)
+* [C - End-to-end SSL and SSL Offloading](reverse-proxy-config.md#ssl-offloading)
+* [D - Rewrite URLs in resources](reverse-proxy-config.md#rewrite-urls)
+* [E - Disable content compression](reverse-proxy-config.md#dis-cont-compression)
 
 ## More information
 

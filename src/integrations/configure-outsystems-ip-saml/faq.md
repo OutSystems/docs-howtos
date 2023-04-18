@@ -1,7 +1,9 @@
 ---
+summary: Configure OutSystems to use SSO identity providers using SAML with the IdP Forge component, Azure AD, Okta, or OneLogin.
 guid: 52dd517e-798e-481e-8528-a656972ec0d0
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to configure OutSystems to use identity providers using SAML

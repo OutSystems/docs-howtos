@@ -1,9 +1,10 @@
 ---
 tags: version-10; API testing; continuous delivery; DevOps; test framework; testing; Unit testing
-summary: 
+summary: Learn how to automate Unit Testing and API Testing in OutSystems projects using the Test Framework and the BDD Framework apps.
 guid: 17f5f7a2-52ff-4059-bf77-370ccfff4be1
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to Automate Unit Testing and API Testing
@@ -55,7 +56,7 @@ For additional testing guidance on an OutSystems project, please visit the OutSy
 
 ## Test Strategy and Test Plan
 
-If your application is already built according to the [4-Layer Canvas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/01_The_4_Layer_Canvas) architecture you can proceed to the [Unit testing approach](#unit-testing-approach) section below. If not, continue reading to understand how to set up a Test Strategy.
+If your application is already built according to the [Architecture Canvas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_architecture_of_your_OutSystems_applications/01_The_4_Layer_Canvas), you can proceed to the [Unit testing approach](#unit-testing-approach) section below. If not, continue reading to understand how to set up a Test Strategy.
 
 The first task is to divide the application functionality from the most simple, to the most complex. Create a list of modules, server actions, screens, web blocks, API methods, etc. in a spreadsheet with the following columns: object type (server action, webscreen, etc.), folder (or UI Flow), name, risk. You can also use OutDoc to extract this information.
 

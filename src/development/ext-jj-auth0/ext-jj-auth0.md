@@ -4,6 +4,7 @@ tags:
 guid: f42b952f-3f83-4a46-b15f-bc96a6080bfb
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to integrate Auth0 with OutSystems

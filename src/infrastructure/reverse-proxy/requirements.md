@@ -1,10 +1,11 @@
 ---
-summary: Check the requirements to configure a reverse proxy to be used with OutSystems.
+summary: Using a reverse proxy with OutSystems can reduce load, increase security, ensure high availability, and needs to maintain original host headers and URLs for Mobile/Reactive Apps. This article provides information on the needed requirements to use a reverse proxy.
 tags: support-installation;support-maintenance;support-Security
 en_title: 01_Using_a_reverse_proxy_with_OutSystems
 locale: en-us
 guid: 53e2f2f3-9123-4721-964d-c36b41eb5dd1
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Requirements to use a reverse proxy with OutSystems
@@ -84,4 +85,4 @@ Additionally, when the back-end of one or more OutSystems **Mobile** or **Reacti
 
 * **When using keep-alive/persistent connections, review the connection timeout configuration**
 
-    If your reverse proxy is using persistent connections and thus issuing keep-alive headers, make sure that either there's no defined keep-alive connection timeout or that the timeout is set to at least 30 seconds. If you are using Apache (or an Apache-based) web server being used as a reverse proxy, review the keep-alive connection timeout configuration being used, since in these servers the default connection timeout value is 5 seconds. This configuration adjustment is described in [F - Adjust keep-alive connection timeout](../reverse-proxy/reverse-proxy-config.md#f---adjust-keep-alive-connection-timeout--f).
+    If your reverse proxy is using persistent connections and thus issuing keep-alive headers, make sure that either there's no defined keep-alive connection timeout or that the timeout is set to at least 30 seconds. If you are using Apache (or an Apache-based) web server being used as a reverse proxy, review the keep-alive connection timeout configuration being used, since in these servers the default connection timeout value is 5 seconds. This configuration adjustment is described in [F - Adjust keep-alive connection timeout](reverse-proxy-config.md#keep-alive-connection).

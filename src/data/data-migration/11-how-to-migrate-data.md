@@ -1,9 +1,10 @@
 ---
-summary: Instructions to guide you through the process of migrating application data in OutSystems.
+summary: This article provides guidance and examples on how to migrate data from production to non-production environments, including questions on binary type attributes, disabling applications, getting users and roles, finding application data, and stopping BPT triggers.
 tags: data-migration-of-outsystems-applications;
 locale: en-us
 guid: 7ba670ee-b94a-4d1c-ab09-5b44d9d6c8e9
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How To Migrate Data

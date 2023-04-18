@@ -1,14 +1,22 @@
 ---
+summary: Configure Platform Server v11.11 with Redis Cluster/Server for in-memory session storage.
 guid: 5cef1f48-d700-4311-8f88-ed6ac0ded58e
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Configure Platform Server to use Redis for sessions
 
 <div class="info" markdown="1">
 
-You need **Platform Server version 11.11** to use Redis for in-memory session storage.
+Applies to OutSystems self-managed infrastructures.
+
+</div>
+
+<div class="info" markdown="1">
+
+You need **Platform Server version 11.11.0** to use Redis for in-memory session storage.
 
 This article assumes that you have a Redis Cluster with three server machines, as described in [Set up a Redis Cluster for Production environments](setup-prod.md). However, the instructions are also applicable if you have a single server machine running Redis Server.
 

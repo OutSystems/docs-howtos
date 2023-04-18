@@ -4,6 +4,7 @@ tags: data-migration-between-outsystems-installation; data-migration-between-pro
 locale: en-us
 guid: 93ea4249-dd2d-4d68-9c96-efbba147823d
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Factory Database

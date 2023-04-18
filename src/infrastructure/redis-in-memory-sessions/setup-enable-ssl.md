@@ -1,14 +1,22 @@
 ---
+summary: Configure Platform Server to use SSL when connecting to Redis 6.x by defining environment variables and enabling SSL in the Configuration Tool.
 guid: f69f6130-df05-468b-aabf-5414ba06e384
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # Enable SSL for Redis
 
 <div class="info" markdown="1">
 
-**Note:** SSL/TLS support is only available in Redis 6.x, and only if the Redis binaries were compiled with this feature enabled.
+Applies to OutSystems self-managed infrastructures.
+
+</div>
+
+<div class="info" markdown="1">
+
+SSL/TLS support is only available in Redis 6.x, and only if the Redis binaries were compiled with this feature enabled.
 
 </div>
 

@@ -4,6 +4,7 @@ summary: Learn how to use the Input_AutoComplete RichWidget to filter results in
 guid: 5aad9f1a-b906-4e68-a058-3b34646444b7
 locale: en-us
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # How to create a search field with autocomplete in a Traditional Web App

@@ -4,6 +4,7 @@ summary: How to hide the scroll bar of a List Box.
 guid: f7777240-9826-476e-9eab-8415771fbc79
 locale: en-us
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # How to hide the scroll bar of a List Box

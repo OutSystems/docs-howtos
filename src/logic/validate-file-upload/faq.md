@@ -4,6 +4,7 @@ summary:
 guid: 33e8fc48-2034-4ae4-844e-d6d0fdaaeb55
 locale: en-us
 app_type: traditional web apps
+platform-version: o11
 ---
 
 # How to validate file input on a File Upload Widget in a Traditional Web App

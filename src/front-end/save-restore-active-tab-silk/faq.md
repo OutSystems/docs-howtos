@@ -2,6 +2,7 @@
 guid: 898aad86-1277-4840-bcbc-91db6dea61ab
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to save and restore the active tab on SilkUIFramework

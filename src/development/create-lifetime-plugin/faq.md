@@ -4,6 +4,7 @@ tags:
 guid: 1ae946b5-5b77-4976-a905-4d6a260f7e3a
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
+platform-version: o11
 ---
 
 # How to create a LifeTime Plugin
