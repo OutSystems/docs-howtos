@@ -7,7 +7,8 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 ---
 
-# How to use screen actions as callbacks in UI element events 
+
+# How to use screen actions as callbacks on UI element events 
 
 Using screen actions as callbacks can be helpful when you want to run a screen action to change the UI or call server side actions after a custom event in a UI component.    
 
