@@ -47,7 +47,7 @@ The following example showcases how you can use screen actions as callbacks. The
 
 <div class="info" markdown="1">
 
-The Date Picker component is built on top of the **flatpickr library**. For more information about the events that handle the opening and closing of the DAte Picker, see [Events](https://flatpickr.js.org/events/#events)
+The Date Picker component is built on top of the **flatpickr library**. For more information about the events that handle the opening and closing of the Date Picker, see [Events](https://flatpickr.js.org/events/#events)
 
 </div>
 
