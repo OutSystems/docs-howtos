@@ -1,3 +1,10 @@
+---
+guid: 90f59d2c-4cc1-48c8-8ff6-f1c39912f847
+locale: en-us
+app_type: mobile apps, reactive web apps
+platform-version: o11
+---
+
 # How to customize number of records per page
 
 We will show how to add a dropdown that will enable users to change at runtime the number of records per page.
