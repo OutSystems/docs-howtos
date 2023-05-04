@@ -74,6 +74,8 @@
     - href: front-end/unsaved-changes/unsaved-changes.md
     - href: front-end/prevent-download/prevent-download.md 
     - href: front-end/pagination-pattern/pagination-pattern.md
+    - href: front-end/dropdown-with-flags/dropdown-with-flags.md
+
 
 # Logic How-tos
 - href: logic/intro.md
