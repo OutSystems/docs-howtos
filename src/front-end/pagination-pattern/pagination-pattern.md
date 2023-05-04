@@ -43,7 +43,7 @@ Now you need to add some logic in the block.
 
 Your screen should now look like this:
 
-![FullPagination Input Parameters](./images/fullpagination-input-parameters-ss.png)
+![FullPagination Input Parameters](images/fullpagination-input-parameters-ss.png)
 
 Finally, we need to place the elements on the block's widget tree, so follow these steps:
 
@@ -61,7 +61,7 @@ Finally, we need to place the elements on the block's widget tree, so follow the
 
 Your screen should look like this:
 
-![Placeholder](./images/pagination-placeholder-ss.png)
+![Placeholder](images/pagination-placeholder-ss.png)
 
 Be sure to include the following CSS in the Theme's module or this block's style sheet
 
@@ -130,8 +130,8 @@ To use the custom pattern you just created on app, follow these steps:
 
 Your screen should be like this:
 
-![FullPagination properties](./images/fullpagination-properties-ss.png)
+![FullPagination properties](images/fullpagination-properties-ss.png)
 
 When used, your pattern should behave like this:
 
-![Final screen](./images/screen.png)
+![Final screen](images/screen.png)
