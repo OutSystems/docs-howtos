@@ -126,7 +126,7 @@ To use the custom pattern you just created on app, follow these steps:
 1. Create an action called FullPaginationPerPageChange_Event to be the event handler of PerPageChange_Event and use its input parameter PerPage, with the following:
     * Set the existing MaxRecords variable with the PerPage input parameter.
     * Reset `StartIndex` to 0.
-    * Refresh your data (example GetData aggregate).
+    * Refresh your data (example GetOrders aggregate).
 
 Your screen should be like this:
 
