@@ -1,6 +1,6 @@
 ---
 tags:
-summary: Learn how to 
+summary: Learn how to use the Dropdown Search to filter an aggregate with a single attribute
 guid: 908BBD05-3D83-4F19-BD95-75BE9EFA76D9
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
