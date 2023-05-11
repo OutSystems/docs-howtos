@@ -30,9 +30,13 @@ A reference to the **Sample_Product** and **Sample_ProductCategory** entities in
 
 1. On the **Products** screen, add a new aggregate with the **Sample_ProductCategory**.
 
+    ![Add new aggregate](images/dropdown-aggregate-ss.png)
+
 1. Add a screen variable called **SelectedCategoryIdList** with the type **Text**. 
 
     This is where the multiple selected category IDs are noted in between commas, for example, ``6,14,2``.
+
+    ![SAdd screen variable](images/dropdown-variable-ss.png)
 
 1. On the **GetProducts** aggregate, click on the filters, and add the following filter:  
 
@@ -40,11 +44,15 @@ A reference to the **Sample_Product** and **Sample_ProductCategory** entities in
     
     This filter checks each row of the aggregate if the product category ID is contained in the ID List of the variable, filtering the products per multiple categories.
 
+    ![Add new filter](images/dropdown-filter-ss.png)    
+
 ### Adding the Dropdown Search
 
 1. From the Toolbox, drag the Dropdown Search widget to the screen and on the **Properties** tab, from the **OptionsList** dropdown, select **GetProductCategories.List**.
 
-1. In the **Mapping** section, set the **Value** to **Sample_ProductCategory.Id** and  **Label** to **Sample_ProductCategory.Label**.
+1. In the **Mapping** section, set the **Value** to **Sample_ProductCategory.Id** and **Label** to **Sample_ProductCategory.Label**.
+
+    ![Set mapping properties](images/dropdown-mapping-ss.png)
 
 1. On the **Properties** tab, expand **OptionalConfigs** and set **AllowMultipleSelection** to **True**.
 
@@ -63,3 +71,5 @@ A reference to the **Sample_Product** and **Sample_ProductCategory** entities in
 1. Drag an **Assign** node to the **Cycle** branch of the **For Each** and assign **SelectedCategoryIdList** to expression ``SelectedCategoryIdList + "," + SelectedOptionList.Current.Value`` expression to the **SelectedCategoryIdList**.
 
 1. Close the **For Each** node by dragging a branch from the **Assign** to it.
+
+    ![Add logic](images/dropdown-logic-ss.png)    
