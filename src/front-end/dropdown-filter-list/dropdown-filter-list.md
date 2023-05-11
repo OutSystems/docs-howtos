@@ -1,5 +1,7 @@
 ---
 tags:
+summary: Learn How to use the Dropdown Search to filter an aggregate with a list
+guid: 46109033-C16A-4D13-B4AE-97E17F2429DF
 summary: Learn how to use the Dropdown Search to filter an aggregate with a single attribute
 guid: 04A17173-24A4-428C-8F0C-51281F874CAF
 locale: en-us
@@ -7,7 +9,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 ---
 
-# How to use the Dropdown Search to filter an aggregate with a single attribute
+# How to use the Dropdown Search to filter an aggregate with a list
 
 The Dropdown Search is a good way to select a filter from a relatively small list. In the following example, we use it to filter a product list by multiple categories.
 
@@ -52,7 +54,7 @@ A reference to the **Sample_Product** and **Sample_ProductCategory** entities in
 
 1. Drag an **If** widget to the action. 
 
-1. Set the **False** branch to **“SelectedOptionList.Empty** and on the **True** branch, drag the **GetProducts** aggregate to the action in order to create a **Refresh GetProducts**. 
+1. Set the **False** branch to **“SelectedOptionList.Empty** and on the **True** branch, drag the **GetProducts** aggregate to the action to create a **Refresh GetProducts**. 
 
 1. Add an **End** node.
 
