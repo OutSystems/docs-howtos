@@ -14,7 +14,7 @@ Is there an equivalent to the C# String.Contains function?
 
 ## Answer
 
-To know if one text string is contained in another text string use the Text Built-in Function [**Index**](<https://success.outsystems.com/Documentation/10/Reference/Logic/Built-in_Functions/Text_Built-in_Functions#Index>).  
+To know if one text string is contained in another text string use the Text Built-in Function [**Index**](<https://success.outsystems.com/documentation/11/reference/outsystems_language/logic/built_in_functions/text/>).  
 The **Index** Function returns an integer with the zero-base position of a `keyword` string inside another `text` string and returns `-1` if `keyword` is not found.
 
 To get a Boolean Output similar to the C# String.Contains use the following Expression:
