@@ -1,5 +1,5 @@
 ---
-summary: Scale a Redis Cluster by adding server machines in pairs to maintain an odd number of servers and redistributing key slots.
+summary: Scale a Redis Cluster by adding server machines in pairs to maintain an odd number of servers and redistributing key slots. This feature is in Technical Preview.
 guid: e8289e9d-6e18-4b75-bc16-783fd0dc6574
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -10,7 +10,7 @@ platform-version: o11
 
 <div class="info" markdown="1">
 
-Applies to OutSystems self-managed infrastructures.
+Applies to OutSystems self-managed infrastructures. However, this feature is in Technical Preview.
 
 </div>
 

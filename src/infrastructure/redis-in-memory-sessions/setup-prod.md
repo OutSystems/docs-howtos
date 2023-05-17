@@ -1,4 +1,5 @@
 ---
+summary: This feature is in Technical Preview.
 guid: b010b104-71ae-48cf-9fe9-ac6c39cd9614
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -9,7 +10,7 @@ platform-version: o11
 
 <div class="info" markdown="1">
 
-Applies to OutSystems self-managed infrastructures.
+Applies to OutSystems self-managed infrastructures. However, this feature is in Technical Preview.
 
 </div>
 
