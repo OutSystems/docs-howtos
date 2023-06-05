@@ -15,7 +15,7 @@ This article provides you insights about how to build a front-end architecture i
 
 This section explains the structure of the architecture of a simple project.
 
-![Simple Project Architecture](images/outsystems-ui-simple-project-architecture.png?width=800)
+![Simple Project Architecture](images/architecture-structure-diag.png)
 
 The OutSystems UI is the base application. Based on this, we build the Project Theme (you can add other Project Patterns based on the OutSystems patterns only) and finally the Project Application.
 The Project style guide is also based on the project theme.
@@ -26,7 +26,7 @@ The Template Project is the template for your application.
 
 The following graphic shows how to structure the Front-end architecture at OutSystems UI.
 
-![Patterns in Front-End Architecture](images/outsystems-ui-patterns-in-front-end-architecture.png?width=800)
+![Patterns in Front-End Architecture](images/front-end-architecture-outsystems-ui-diag.png)
 
 The OutSystems UI is the base application, containing all the UI patterns and screen templates ready to use.
 
@@ -41,7 +41,7 @@ You can have several applications based on these themes. At the current example,
 
 The following diagram shows how to structure your Front-End architecture:
 
-![Front-End Use Case Architecture](images/outsystems-ui-front-end-use-case-architecture.png?width=800)
+![Front-End Use Case Architecture](images/front-end-architecture-diag.png)
 
 Based on the OutSystems UI, you can set your institution branding and broad style definitions. These contain the common patterns and widgets, based on a Core Stylesheet.
 The OutSystems UI contains evolved code optimized with the last best practices, usable in a large range of tested devices and browsers.
@@ -54,7 +54,7 @@ Existing B2C Flow → Business to Consumer (for example, a security agency websi
 New B2B Flow → Business to Business (for example, security agency website only for partners)
 New Corporate Flow → (for example, security agency intranet applications)
 
-![Front-End Use Case Architecture](images/outsystems-ui-client-case-study.png?width=800)
+![Front-End Use Case Architecture](images/company-architecture-diag.png)
 
 Based on the **OutSystems UI**, this company built two different themes: one for **B2C** applications, and other for **corporate applications**. They built a **Partner Theme** with specific styles and layouts and used it to create a **Custom Theme Style Guide** for a partner, where all branding of their partner (layouts, colors, fonts, and so on)  is set. They built a custom application for a final customer, using the styles and themes defined in this style guide.
 On the other hand, they built a different **Corporate Theme** that defines their company’s styles and layouts and a **Store Theme** Style guide specific for their store.
@@ -67,7 +67,7 @@ Also, based on their existing **Corporate Theme**, they plan to build a **Store 
 
 The diagram below focus on the architecture of the store application of the previous example:
 
-![Store App Front-End Architecture](images/outsystems-ui-store-app-front-end-architecture.png?width=800)
+![Store App Front-End Architecture](images/store-application-architecture-diag.png)
 
 The new store application consumes patterns and templates that were previously defined at the **Store Style Guide**, and also the corporate patterns and resources define at the **Corporate Base** Style.
 
@@ -75,6 +75,6 @@ The new store application consumes patterns and templates that were previously d
 
 The diagram below focus on the architecture of the partner application of the previous example:
 
-![Partner App Front-End Architecture](images/outsystems-ui-partner-app-front-end-architecture.png?width=800)
+![Partner App Front-End Architecture](images/partner-application-architecture-diag.png)
 
 The partner’s B2C applications consume custom resources, the **B2C Style Guides**, partner patterns and resources defined at the **Partner Base**, and B2C patterns and resources defined at the **B2C Base** style.
