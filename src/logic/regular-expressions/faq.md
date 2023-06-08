@@ -9,7 +9,7 @@ platform-version: o11
 
 # How to use regular expressions in OutSystems
 
-Regular expressions let you process text strings using search patterns. Check the **See Also** links for extra resources on how regular expressions work and how to write them.
+Regular expressions let you process text strings using search patterns.
 
 OutSystems includes the following two server actions from the **Text** extension that lets you use regular expressions in your app:
 
@@ -19,7 +19,7 @@ OutSystems includes the following two server actions from the **Text** extension
 
 ## Example: Check if text is a GUID
 
-A Globally Unique IDentifier, or GUID, is a base-16 integer with 128 bits, for example `4ccdb844-bcb6-4abd-83af-6655f31ca65d`. You can use GUIDs when you need to ensure identifiers are unique  across environments and systems.
+A Globally Unique IDentifier, or GUID, is a base-16 integer with 128 bits, for example `4ccdb844-bcb6-4abd-83af-6655f31ca65d`. You can use GUIDs when you need to ensure identifiers are unique across environments and systems.
 
 The regular expression `"^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"`, lets you check if a text string includes only a GUID.
 Check the [RFC 4122](https://www.ietf.org/rfc/rfc4122.txt) for more information on GUIDs and their format.
@@ -28,7 +28,7 @@ The following example shows you how to use this regular expression and the **Reg
 
 1. In a module of your app, open **Manage Dependencies**, and add the **Regex\_Search** action from **Text** producer as a dependency.
 
-1. In the Logic tab, create a new **Server Action**, and name it `CheckGUID`.
+1. In the **Logic** tab, create a new **Server Action**, and name it `CheckGUID`.
 
 1. Add the following variables to the action:
 
