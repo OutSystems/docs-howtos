@@ -31,7 +31,7 @@ Once you start migrating your app to the Reactive Web App, consider following th
 
 ## Customize or redirect the application URL
 
-To manage the site and page rules in your Reactive Web Apps see [Technical Preview - SEO in Reactive Web Apps](https://success.outsystems.com/Documentation/11/Developing_an_Application/Technical_Preview_-_SEO_in_Reactive_Web_Apps).
+To manage the site and page rules in your Reactive Web Apps see [SEO-friendly URLs for Reactive Web apps](https://success.outsystems.com/documentation/11/developing_an_application/search_engine_optimization_for_your_outsystems_apps/seo_for_outsystems_reactive_web_apps_vs_traditional_web_apps/seo_friendly_urls_for_reactive_web_apps/).
 
 ## Accelerators
 
