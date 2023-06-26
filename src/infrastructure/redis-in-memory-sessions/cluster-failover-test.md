@@ -1,5 +1,5 @@
 ---
-summary: Test the failover behavior of a Redis Cluster by simulating a Master process failover and verifying the Replica process promotion to Master.
+summary: Test the failover behavior of a Redis Cluster by simulating a Master process failover and verifying the Replica process promotion to Master. This feature is in Technical Preview.
 guid: 9bbc4b8f-e26a-4bf7-9250-0f004d5f791e
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -10,7 +10,7 @@ platform-version: o11
 
 <div class="info" markdown="1">
 
-Applies to OutSystems self-managed infrastructures.
+Applies to OutSystems self-managed infrastructures. This feature is in Technical Preview.
 
 </div>
 

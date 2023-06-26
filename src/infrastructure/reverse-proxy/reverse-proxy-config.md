@@ -18,7 +18,7 @@ Some of these configurations require direct manipulation of OutSystems system da
 
 </div>
 
-## A - Request Header Manipulation { #A }
+## A - Request Header Manipulation { #header-manipulation }
 
 <div class="info" markdown="1">
 
@@ -44,7 +44,7 @@ ProxyPassReverse / http://server.local/
 < / VirtualHost > 
 ```
 
-## B - Referenced Content Exposure { #B }
+## B - Referenced Content Exposure { #ref-content }
 
 <div class="info" markdown="1">
 
@@ -63,7 +63,7 @@ Depending on the level of URL manipulation, these references may also need the f
 * Rewrite resource URLs inside the code **(not supported for Mobile and Reactive apps)**
 * Request Header Manipulation
 
-## C - End-to-end SSL and SSL Offloading { #C }
+## C - End-to-end SSL and SSL Offloading { #ssl-offloading }
 
 <div class="info" markdown="1">
 
@@ -115,7 +115,7 @@ After applying the above configurations, the following must be executed:
 
 Server.API and Server.Identity only support the standard header names for protocol identification - `X-Forwarded-Proto` and originating IP address of a request - `X-Forwarded-For`. This means that the reverse proxy needs to set the necessary information in the HTTP headers using those header names, otherwise you might encounter errors. 
 
-## D - Rewrite URLs in resources { #D }
+## D - Rewrite URLs in resources { #rewrite-urls }
 
 <div class="info" markdown="1">
 
@@ -143,7 +143,7 @@ You can access [here](reverse-proxy-apache-config.md) the configuration required
 
 This configuration covers both application runtime, development, and console administration (Service Center and LifeTime).
 
-## E - Disable content compression { #E }
+## E - Disable content compression { #dis-cont-compression }
 
 <div class="info" markdown="1">
 
@@ -209,7 +209,7 @@ Disable the platform's own AJAX compression by creating the `OutSystems.HubEditi
 
 1. Restart Wildfly.
 
-## F - Adjust keep-alive connection timeout { #F }
+## F - Adjust keep-alive connection timeout { #keep-alive-connection }
 
 <div class="info" markdown="1">
 

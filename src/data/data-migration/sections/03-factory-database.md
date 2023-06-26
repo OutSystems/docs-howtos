@@ -9,46 +9,58 @@ platform-version: o11
 
 # Factory Database
 
-When creating new Espaces and publishing new versions with Entities and Static Entities this information is managed and maintained in the system’s entities.
+When creating new Modules and publishing new versions with Entities and Static Entities this information is managed and maintained in the system’s entities.
 
 ## Entity-Relationship Model
 
-The following diagram shows the relationships between Entities, Entity Records, Entity attributes, DB Catalogs, and Espaces.
+The following diagram shows the relationships between Entities, Entity Records, Entity attributes, DB Catalogs, and Modules.
 
-![Relationships between Entities, Entity Records, Entity attributes, DB Catalogs, and Espaces](images/relationship-entities-entity-records-entity-attributes-db-catalogs-espaces.png?\width=750)
+<div class="info" markdown="1">
+
+Espace is the old name used by OutSystems for Module. This diagram uses the term Espace.
+
+</div>
+
+![Relationships between Entities, Entity Records, Entity attributes, DB Catalogs, and Modules](images/relationship-entities-entity-records-entity-attributes-db-catalogs-espaces.png?\width=750)
 
 * Service Studio 
-    * Publishing Espaces or Cloned Espaces with new or changed Entities
+    * Publishing Modules or Cloned Modules with new or changed Entities  
 
 * Integration Studio
-    * Publishing Extensions with new or changed Entities
+    * Publishing Extensions with new or changed Entities  
 
 * Service Center
-    * Uploading and Publishing Applications, Solutions, Espaces and Extensions
+    * Uploading and Publishing Applications, Solutions, Modules and Extensions  
 
 * Lifetime
-    * Pushing Applications other Environments
+    * Pushing Applications other Environments  
 
 * References to the Exposed Entities and methods
 
 * API
     * [DB Cleaner API](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/DbCleaner_API)
-    * [Lifetime API](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_API_v2)
+    * [Lifetime API](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/LifeTime_API_v2)  
 
 ## Considerations
 
+<div class="info" markdown="1">
+
+Espace is the old name used by OutSystems for Module. The metamodel still uses the term Espace.
+
+</div>
+
 Take the following considerations into account:
 
-* Check the Application Espace Entities Catalog differences between Environments
+* Check the Application Module Entities Catalog differences between Environments
 
 * SS_Keys 
-    * The Espace always have a unique ``SS_Key`` generated and stored in the metamodel and equal in all environments
+    * The Module always have a unique ``SS_Key`` generated and stored in the metamodel and equal in all environments
 
-    * SS_Keys are not unique for Entity and ``Entity_Attr``, for example, cloned Espace
+    * SS_Keys are not unique for Entity and ``Entity_Attr``, for example, cloned Module
 
     * ``Entity_Record`` has a composed key with ``SS_Key`` and ``Entity_SS_Key``
 
-* Check the flag `Is Active` to include or exclude inactive - soft-deleted - Espaces, Entities, Entity Attributes and Entity Records
+* Check the flag `Is Active` to include or exclude inactive - soft-deleted - Modules, Entities, Entity Attributes and Entity Records
 
 * Entity Attribute has an attribute named Type which contains: 
     * Run Time types: `rtTime`; `rtText`; `rtPhoneNumber`; `rtLongInteger`; `rtInteger`; `rtEntityReference`; `rtEmail`; `rtDecimal`; `rtDateTime`; `rtDate`; `rtCurrency`; `rtBoolean`; `rtBinaryData`
@@ -57,17 +69,17 @@ Take the following considerations into account:
 
 * Be aware of Exposed Systems Entities that can be referenced and used on User Applications
 
-* Deleting Entities, Static Entities, Static Entities Records and/or Entities Attributes in Service Studio and publishing the Espace does delete the values from the physical tables, and info on the corresponding System tables only set the flag `Is_Active` to False
+* Deleting Entities, Static Entities, Static Entities Records and/or Entities Attributes in Service Studio and publishing the Module does delete the values from the physical tables, and info on the corresponding System tables only set the flag `Is_Active` to False
 
-* When an Espace with Entities is cloned, all the information inside the Espace is replicated to the Clone Espace. The new generated Entities have the same `SS_KEY` and `Primary_SS_Key` from the original Espace and have the same structures are the same, and the difference between the original Entities and cloned Entities are their Physical Table Names and the related Espace ``SS_Key``. This means that the Entity ``SS_Key`` is not unique and has to be composed with the Entity related Espace ``SS_Key`` to be unique.
+* When a Module with Entities is cloned, all the information inside the Module is replicated to the Clone Module. The new generated Entities have the same `SS_KEY` and `Primary_SS_Key` from the original Module and have the same structures are the same, and the difference between the original Entities and cloned Entities are their Physical Table Names and the related Module ``SS_Key``. This means that the Entity ``SS_Key`` is not unique and has to be composed with the Entity related Module ``SS_Key`` to be unique.
 
 ## How the OutSystems Platform Manages Application Entities - Example
 
-This section shows an example of how to publish an Espace with new Entities and new Static Entities.
+This section shows an example of how to publish a Module with new Entities and new Static Entities.
 
-### Publish an Espace with new Entities
+### Publish a Module with new Entities
 
-To publish an Espace with new entities, create a new Espace called “People” and then create three new Entities:
+To publish a Module with new entities, create a new Module called “People” and then create three new Entities:
 
 1. City, with the Name attribute.
 2. Icon, and the attributes are:
@@ -84,7 +96,7 @@ To publish an Espace with new entities, create a new Espace called “People” 
         * `Order By` Attribute
         * `Is Active` Attribute
 
-After publishing the Espace, you can search for it and the newly created Entity details in the database:
+After publishing the Module, you can search for it and the newly created Entity details in the database:
 
 ```SELECT * FROM OSSYS_ESPACE WHERE Name = ’People’```
 
@@ -149,7 +161,7 @@ WHERE Espace_Id = (SELECT ID FROM OSSYS_ESPACE WHERE Name = ’People’)
 Notice that the Attribute ``SS_Key`` is present in the database but is not shown above.
 Besides the normal basic types with a prefix `rt` (Run Time), you can see the relation types like the example ```bt2848df88-835f-427a-b0db-e29a1d8e9766*0f3b6288-e5b3-4804-97e2-9b1ea18fc12e```.
 
-The types starting with the prefix ``bt`` are composed with the Espace ``SS_Key`` and then after the ``*`` there’s the Entity ``SS_Key``. The ``CityId`` and ``IconId`` are other type identifiers (City and Icons).
+The types starting with the prefix ``bt`` are composed with the Module ``SS_Key`` and then after the ``*`` there’s the Entity ``SS_Key``. The ``CityId`` and ``IconId`` are other type identifiers (City and Icons).
 
 The SQL command below shows how to fetch Entities using the ``SS_Key``:
 
@@ -172,16 +184,16 @@ INNER JOIN OSSYS_ESPACE
 WHERE OSSYS_ENTITY.SS_KEY = 'a280d501-0a34-4fe0-9626-0f825f10c999'
 ```
 
-|**Espace**        |**Entity**              |
+|**Module**        |**Entity**              |
 |------------------|------------------------|
 |People            |City                    |
 |People            |Icon                    |
 
 
-Use the Espace `SS_Key` when searching for other OS objects like Entities since the Entity `SS_Key` is only unique when combined with the Espace SS_Key. 
-For example, if the Espace is cloned, every Entity generated in the clone Espace gets the same `SS_Key` as the other Entities in the original Espace. 
+Use the Module `SS_Key` when searching for other OS objects like Entities since the Entity `SS_Key` is only unique when combined with the Module SS_Key. 
+For example, if the Module is cloned, every Entity generated in the clone Module gets the same `SS_Key` as the other Entities in the original Module. 
 
-The following table shows the Entities that belong to the People Espace that was previously created. If you focus your attention on ``Physical_Table_Name``, you see that it is possible to display what is inside the City Entity by doing ``SELECT * FROM OSUSR_7i3_City``.
+The following table shows the Entities that belong to the People Module that was previously created. If you focus your attention on ``Physical_Table_Name``, you see that it is possible to display what is inside the City Entity by doing ``SELECT * FROM OSUSR_7i3_City``.
 
 |Id|Name|Physical_Table_Name|Espace_Id|SS_Key|Primary_SS_Key|Is_Active_Attribute|Label_Attribute|Order_By_Atttribute|
 |--- |--- |--- |--- |--- |--- |--- |--- |--- |
@@ -202,7 +214,7 @@ SELECT * FROM OSUSR_7i3_City
 In this case, ``OSUSR_7i3_City`` is the physical database name of the table that holds the information belonging to the City Entity. 
 
 
-### Publish an Espace with new Entities
+### Publish a Module with new Entities
 
 To find information about the Static Entities refer to the [Static Entities](06-static-entities.md) for more details.
 

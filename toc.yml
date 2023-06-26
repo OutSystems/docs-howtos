@@ -50,6 +50,9 @@
     - href: front-end/add-video-to-applications/faq.md
     - href: front-end/call-block-action-mobile/faq.md
     - href: front-end/create-search-autocomplete/faq.md
+    - href: front-end/dropdown-filter-attribute/dropdown-filter-attribute.md
+    - href: front-end/dropdown-filter-list/dropdown-filter-list.md
+    - href: front-end/dropdown-with-flags/dropdown-with-flags.md
     - href: front-end/ext-rb-create-styled-dialogs/ext-rb-create-styled-dialogs.md         
     - href: front-end/front-end-architecture/front-end-architecture.md
     - href: front-end/hide-scrollbar-listbox/faq.md
@@ -64,6 +67,7 @@
     - href: front-end/resize-a-popup-window/faq.md
     - href: front-end/reuse-web-screens-in-mobile-apps/faq.md
     - href: front-end/save-restore-active-tab-silk/faq.md
+    - href: front-end/screenaction-as-callback/screenaction-as-callback.md
     - href: front-end/set-favicon-reactive/faq.md
     - href: front-end/set-inputs-dynamically/faq.md
     - href: front-end/show-records-side-by-side-list-record-widget/faq.md
@@ -72,6 +76,8 @@
     - href: front-end/migrate-multilingual/faq.md
     - href: front-end/unsaved-changes/unsaved-changes.md
     - href: front-end/prevent-download/prevent-download.md 
+    - href: front-end/pagination-pattern/pagination-pattern.md
+
 
 # Logic How-tos
 - href: logic/intro.md
@@ -175,4 +181,7 @@
         - href: infrastructure/reverse-proxy/reverse-proxy-use-cases.md
         - href: infrastructure/reverse-proxy/reverse-proxy-apache-config.md
     - href: infrastructure/azure-trial/azure-trial.md
+
+
+
 
