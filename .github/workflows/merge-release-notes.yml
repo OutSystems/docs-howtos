@@ -1,0 +1,73 @@
+name: Merge release notes
+
+on:
+  push:
+    branches:
+      - 'test-rn-jpb'
+    paths:
+      - 'src/release-notes/**.htm'
+
+jobs:
+  Merge:
+ 
+    runs-on: ubuntu-latest
+      
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        path: docs
+        token: ${{ secrets.TOOLS_PAT }}
+
+    - name: Checkout Tools
+      uses: actions/checkout@v3
+      with:
+        repository: ${{ secrets.TOOLS_REPOSITORY }}
+        ref: master
+        token: ${{ secrets.TOOLS_PAT }}
+        path: toolkit
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.8'
+
+    - name: Install Requirements
+      uses: BSFishy/pip-action@v1
+      with:
+        requirements: ./toolkit/requirements.txt
+    
+    - name: Merge
+      working-directory: docs
+      run: |
+        python "../toolkit/merge_release_notes_script.py" src/release-notes/10/development-environment
+        python "../toolkit/merge_release_notes_script.py" src/release-notes/10/platform-server    
+        python "../toolkit/merge_release_notes_script.py" src/release-notes/11/development-environment
+        python "../toolkit/merge_release_notes_script.py" src/release-notes/11/platform-server     
+        python "../toolkit/merge_release_notes_script.py" src/release-notes/11/cross-platform-service-studio
+        python "../toolkit/merge_release_notes_script.py" src/release-notes/integration-builder     
+        python "../toolkit/merge_release_notes_script.py" src/release-notes/lifetime-management-console
+        python "../toolkit/merge_release_notes_script.py" src/release-notes/service-studio-neo
+        python "../toolkit/merge_release_notes_script.py" src/release-notes/architecture-dashboard
+        python "../toolkit/merge_release_notes_script.py" src/release-notes/experience-builder
+        python "../toolkit/merge_release_notes_script.py" src/release-notes/workflow-builder
+    - name: Commit and Push
+      run: |
+        cd docs/
+        git add src/release-notes/10/development-environment/development-environment.md
+        git add src/release-notes/10/platform-server/platform-server.md
+        git add src/release-notes/11/development-environment/development-environment.md
+        git add src/release-notes/11/platform-server/platform-server.md
+        git add src/release-notes/11/cross-platform-service-studio/cross-platform-service-studio.md
+        git add src/release-notes/integration-builder/integration-builder.md
+        git add src/release-notes/lifetime-management-console/lifetime-management-console.md
+        git add src/release-notes/service-studio-neo/service-studio-neo.md
+        git add src/release-notes/architecture-dashboard/architecture-dashboard.md
+        git add src/release-notes/experience-builder/experience-builder.md
+        git add src/release-notes/workflow-builder/workflow-builder.md
+        git config --global user.name ${{ secrets.USER_NAME_KNOWOPS }}
+        git config --global user.email ${{ secrets.EMAIL_KNOWOPS }}
+        git commit -m "Updated release notes"
+        git pull
+        git push
