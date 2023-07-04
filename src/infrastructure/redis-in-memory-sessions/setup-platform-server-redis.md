@@ -10,7 +10,7 @@ platform-version: o11
 
 <div class="info" markdown="1">
 
-Applies to OutSystems self-managed infrastructures. This feature is in Technical Preview.
+Applies to OutSystems self-managed infrastructures.
 
 </div>
 
