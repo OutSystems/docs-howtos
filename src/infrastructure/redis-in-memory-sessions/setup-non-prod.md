@@ -101,6 +101,10 @@ Do the following:
         #
         requirepass [STRONG_PASSWORD]
 
+1. Reboot the redis service to apply configurations
+
+        systemctl restart redis
+
 After performing these steps, your server is ready to accept connections from OutSystems front-end servers.
 
 ## Next steps
