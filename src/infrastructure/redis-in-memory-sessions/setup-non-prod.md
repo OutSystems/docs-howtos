@@ -22,7 +22,7 @@ Before you start, make sure you meet the [system requirements](requirements.md) 
 
 You can use a single Redis server for all non-productive environments (for example, for Development, QA, and Test), since the expected load of concurrent users is much lower than in the Production environment.
 
-For a single Redis server, you can use the default TCP port 6379. You should deploy a Redis server in a dedicated virtual machine or Docker container running Ubuntu 20.04.1 LTS.
+For a single Redis server, you can use the default TCP port 6379.
 
 OutSystems recommends that you deploy the single Redis server in a subnet different from all the OutSystems platform environment front-end servers. Assuming that each environment (DEV, QA, etc.) has its own subnet for the environment's front-end servers, make sure that the deployed Redis virtual machine is reachable from all these subnets.
 
@@ -34,7 +34,12 @@ The following diagram depicts this network deployment:
 
 ### Install and configure Redis Server
 
-The following instructions assume that you have a server running with Ubuntu 20.04.1 LTS where you wish to install Redis Server.
+<div class="info" markdown="1">
+
+The following instructions assume that you have a server running with Ubuntu 20.04.1 LTS where you wish to install Redis Server. 
+You may need to adapt these instructions on a different operating system.
+
+</div>
 
 Do the following:
 
