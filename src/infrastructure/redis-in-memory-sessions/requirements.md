@@ -26,8 +26,7 @@ Before you can use Redis with OutSystems, check if you fulfill both OutSystems a
 
 Each server machine used for Redis must fulfill the following requirements:
 
-* Ubuntu 20.04.1 LTS (Server Edition)
-* Redis Server version 5.0.7
+* Redis Server version 7.0.X
 
 ## Hardware
 
