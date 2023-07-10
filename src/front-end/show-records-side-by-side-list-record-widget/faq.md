@@ -38,8 +38,3 @@ After you select the **List Records widget** to use in your Web Screen you just 
 After you performed these configurations your layout may look similar to the following image. You can see more useful UI patterns by looking into  [OutSystems UI](https://www.outsystems.com/forge/component-overview/1385/outsystems-ui) component available on Forge.
 
 ![](images/How-to-show-records-side-by-side-in-a-List-Record-widget_2.png)
-
-The following example OML shows how to use the List Records widget to provide the look and feel above.
-
-[https://success.outsystems.com/@api/deki/files/1416/ListRecordExample.oml](https://success.outsystems.com/@api/deki/files/1416/ListRecordExample.oml?revision=1)
-
