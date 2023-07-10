@@ -39,17 +39,17 @@ Check the next sections for details.
 
 Define the following environment variables on every front-end server of your OutSystems environment. You must define a value at least for the environment variables that are mandatory:
 
-SERedis_ClientCertPfxPath
+`SERedis_ClientCertPfxPath`
 :   **Mandatory**. Defines the **local** Secure Sockets Layer (SSL) certificate used for authentication. Set this environment variable to the full path of a X.509 `.PFX` certificate file.
 
-SERedis_IssuerCertPath
-:   **Optional**. Defines the **remote** Secure Sockets Layer (SSL) certificate used for authentication. This parameter must only be used if the Issuer of the Redis server certificate is not trusted by the frontend. Set this environment variable to the full path of a `.CRT` certificate file.
+`SERedis_IssuerCertPath`
+:   **Optional**. Defines the **remote** Secure Sockets Layer (SSL) certificate used for authentication. This parameter must only be used if the Issuer of the Redis server certificate **is not trusted** by the frontend. Set this environment variable to the full path of a `.CRT` certificate file.
   
-SERedis_ClientCertPassword
+`SERedis_ClientCertPassword`
 :   Optional. Password of the certificate for the local certificate used for authentication. Set this environment variable to the certificate password.  
     If the certificate doesn't have a password, you don't need to define this environment variable.
 
-SERedis_ClientCertStorageFlags
+`SERedis_ClientCertStorageFlags`
 :   Optional. Integer value that represents the sum of the values that control where and how to import the local certificate used for authentication.  
     Examples:
 
