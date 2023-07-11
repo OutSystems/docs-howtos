@@ -38,7 +38,7 @@ The minimum requirements of a Redis infrastructure for **non-productive OutSyste
 
 * Single Redis server with 2 CPUs (>2.6 Ghz) and 4GB of RAM (can be Virtual Machine)
 * Moderate bandwith network interface card (100 Mbps)
-* 10GB disk (to store the operating system, logs, etc.)
+* 10GB disk or more according to setup (to store the operating system, logs, etc.)
 
 ### Production environment
 
@@ -48,7 +48,7 @@ The minimum requirements of a **highly-available Redis infrastructure (Productio
 
 * 3 dedicated or virtualized Redis servers with 3 or 4 vCPUs each (>2.6 Ghz) and 8GB<sup>1</sup> of RAM, configured as a Redis Cluster (with high availability)
 * High-bandwith network interface card (1Gbps recommended<sup>2</sup>)
-* 10GB disk (to store the operating system, logs, etc.)
+* 10GB disk or more according to setup (to store the operating system, logs, etc.)
 
 <sup>1</sup> You may need more RAM if your configured session expiration time allows for long sessions. Since there are 2 Redis processes per server (Master and Replica), with 8GB of RAM there's only 4GB available for session storage.
 
