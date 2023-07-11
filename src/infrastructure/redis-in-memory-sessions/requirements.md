@@ -20,7 +20,7 @@ Before you can use Redis with OutSystems, check if you fulfill both OutSystems a
 
 ### Platform Server
 
-* Using Redis for in-memory session storage requires **Platform Server version 11.11**.
+* Using Redis for in-memory session storage requires **Platform Server version 11.23**.
 
 ### Redis server machines
 
