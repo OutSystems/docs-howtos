@@ -21,7 +21,7 @@ In this infrastructure there are 3 cluster nodes, running on 3 server machines. 
 
 Additionally, cluster nodes communicate with each other using ports 17000 and 17001. To obtain these port numbers, add 10000 to each data port, as detailed in the [Redis documentation](https://redis.io/topics/cluster-tutorial).
 
-Note that, in this architecture, the Replica processes monitoring the Master are crossed, meaning that they don't runn on the same server machine. With this setup, if a server machine fails completely, a Replica process running on a different machine takes over the Master process of the failed server. Redis handles this cross-node assigment automatically when creating the Redis Cluster.
+Note that, in this architecture, the Replica processes monitoring the Master are crossed, meaning that they don't run on the same server machine. With this setup, if a server machine fails completely, a Replica process running on a different machine takes over the Master process of the failed server. Redis handles this cross-node assigment automatically when creating the Redis Cluster.
 
 For example, if Server 3 fails and becomes unavailable, the Replica process running on Server 1 takes over, becoming the new Master (blue) listening on port 7001.
 
