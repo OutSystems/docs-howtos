@@ -72,7 +72,7 @@ You must perform a reshard of the cluster to redistribute the key slots evenly a
 
 ## Step 4. Add the Replica processes to the Redis Cluster
 
-1. Take note of the information given by the following command for each node:
+1. Take note of the information given by the following command:
       
         ubuntu@[SERVER_4]:~$ redis-cli -p 7001 -a [ACCESSKEY] cluster nodes
 
