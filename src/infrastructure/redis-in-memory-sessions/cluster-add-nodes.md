@@ -81,7 +81,7 @@ You must perform a reshard of the cluster to redistribute the key slots evenly a
         ubuntu@[SERVER_4]:~$ redis-cli --cluster add-node 127.0.0.1:7001 [EXISTING_CLUSTER_NODE]:7000 --cluster-slave --cluster-master-id [MASTER_NODE_ID] -a [ACCESSKEY]
 
     * Replace `[ACCESSKEY]` with **Server 4**'s configured password.
-    * Replace `[EXISTING_CLUSTER_NODE]` with a master node's hostname/IP (e.g. for **Server 1**).
+    * Replace `[EXISTING_CLUSTER_NODE]` with a master node's hostname/IP (for example, for **Server 1**).
     * Replace `[MASTER_NODE_ID]` with the node ID of the Master Process on **Server 5**. 
       * A node ID is a 40-character string (for example, `ff3e4300bec02ed4bd1be9af5d83a5b44249c2b2`) as provided in the information by the command in the first step. 
 
