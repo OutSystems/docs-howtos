@@ -44,7 +44,7 @@ Remember that you should add server machines **in pairs** to the Redis Cluster, 
 
 ## Step 2. Add the new Master processes to the Redis Cluster
 
-1. Open an SSH connection to one of the new server machines - either **Server 4** or **Server 5**. The following examples you log into **Server 4**.
+1. Open an SSH connection to one of the new server machines - either **Server 4** or **Server 5**. The following examples assume you log into **Server 4**.
 
 1. Run the following command to add the Master process of the current new server to the cluster:
 
