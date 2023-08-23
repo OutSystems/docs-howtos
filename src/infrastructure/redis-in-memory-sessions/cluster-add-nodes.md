@@ -50,8 +50,8 @@ Remember that you should add server machines **in pairs** to the Redis Cluster, 
 
         ubuntu@[SERVER_4]:~$ redis-cli --cluster add-node 127.0.0.1:7000 [EXISTING_CLUSTER_NODE]:7000 -a [ACCESSKEY]
    
-   * Replace `[EXISTING_CLUSTER_NODE]` with a master node's hostname/IP (e.g. for **Server 1**).
-   * Replace `[ACCESSKEY]` with **Server 4**'s configured password.
+   * Replace `[EXISTING_CLUSTER_NODE]` with a master node's hostname/IP (for example, for **Server 1**)
+   * Replace `[ACCESSKEY]` with **Server 4**'s configured password
 
 1. Repeat the same command on the other new server machine to add it to the Redis Cluster.
 
