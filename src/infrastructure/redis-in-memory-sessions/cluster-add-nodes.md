@@ -85,7 +85,7 @@ You must perform a reshard of the cluster to redistribute the key slots evenly a
     * Replace `[MASTER_NODE_ID]` with the node ID of the Master Process on **Server 5**. 
       * A node ID is a 40-character string (for example, `ff3e4300bec02ed4bd1be9af5d83a5b44249c2b2`) as provided in the information by the command in the first step. 
 
-1. Repeat the last command to setup the Replica process running on **Server 5**:
+1. Run the following command to setup the Replica process running on **Server 5**:
 
         ubuntu@[SERVER_5]:~$ redis-cli --cluster add-node 127.0.0.1:7001 [EXISTING_CLUSTER_NODE]:7000 --cluster-slave --cluster-master-id [MASTER_NODE_ID] -a [ACCESSKEY]
 
