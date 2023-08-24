@@ -1,5 +1,5 @@
 ---
-summary: This feature is in Technical Preview.
+summary: Set up a Redis Cluster for Production environments
 guid: b010b104-71ae-48cf-9fe9-ac6c39cd9614
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -10,7 +10,7 @@ platform-version: o11
 
 <div class="info" markdown="1">
 
-Applies to OutSystems self-managed infrastructures. This feature is in Technical Preview.
+Applies to OutSystems self-managed infrastructures.
 
 </div>
 
@@ -20,7 +20,12 @@ Before you start, make sure you meet the [system requirements](requirements.md) 
 
 </div>
 
-The following instructions show how to set up a dedicated Redis Cluster with three servers, each of them running Ubuntu 20.04.1 LTS.
+<div class="info" markdown="1">
+
+The following instructions show how to set up a dedicated Redis Cluster with three servers, each of them running Ubuntu 20.04.1 LTS. 
+You may need to adapt these instruction for different operating systems.
+
+</div>
 
 ## Install and configure three Redis server machines for the cluster
 
@@ -31,7 +36,7 @@ Follow these steps **for each server node** in the Redis Cluster:
 1. Run the following commands:
 
         sudo apt-get update
-        sudo apg-get install redis-server
+        sudo apt-get install redis-server
         sudo systemctl disable redis-server.service
         sudo ufw allow 7000
         sudo ufw allow 7001
@@ -280,7 +285,7 @@ Do the following:
 
 1. Create a cluster from several Redis Server processes by running the following command:
 
-        redis-cli --cluster create 172.31.6.35:7000 172.31.11.176:7000 172.31.3.184:7000 172.31.6.35:7001 172.31.11.176:7001 172.31.3.184:7001 --cluster-replicas 1
+        redis-cli --cluster create 172.31.6.35:7000 172.31.11.176:7000 172.31.3.184:7000 172.31.6.35:7001 172.31.11.176:7001 172.31.3.184:7001 --cluster-replicas 1 -a [ACCESSKEY]
 
     The first 3 addresses are the Master nodes and the next 3 addresses are the Replica nodes. The `--cluster-replicas 1` argument indicates that each Master will have 1 Replica. It will be a cross-node replication as depicted before.
 

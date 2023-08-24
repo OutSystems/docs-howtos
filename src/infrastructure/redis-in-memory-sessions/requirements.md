@@ -1,5 +1,5 @@
 ---
-summary: OutSystems requires Platform Server version 11.11 and Redis Server version 5.0.7 to use Redis, with different hardware recommendations for non-productive and production environments. This feature is in Technical Preview.
+summary: OutSystems requires Platform Server version 11.23 and Redis Server version 7.0.X to use Redis, with different hardware recommendations for non-productive and production environments.
 guid: 6c4f9146-d4f4-4290-8e14-b04a7d0b0764
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -10,7 +10,7 @@ platform-version: o11
 
 <div class="info" markdown="1">
 
-Applies to OutSystems self-managed infrastructures. This feature is in Technical Preview.
+Applies to OutSystems self-managed infrastructures.
 
 </div>
 
@@ -20,14 +20,13 @@ Before you can use Redis with OutSystems, check if you fulfill both OutSystems a
 
 ### Platform Server
 
-* Using Redis for in-memory session storage requires **Platform Server version 11.11**.
+* Using Redis for in-memory session storage requires **Platform Server version 11.23**.
 
 ### Redis server machines
 
 Each server machine used for Redis must fulfill the following requirements:
 
-* Ubuntu 20.04.1 LTS (Server Edition)
-* Redis Server version 5.0.7
+* Redis Server stable version 7.0.X
 
 ## Hardware
 
@@ -39,7 +38,7 @@ The minimum requirements of a Redis infrastructure for **non-productive OutSyste
 
 * Single Redis server with 2 CPUs (>2.6 Ghz) and 4GB of RAM (can be Virtual Machine)
 * Moderate bandwith network interface card (100 Mbps)
-* 10GB disk (to store the operating system, logs, etc.)
+* 10GB disk or more according to setup (to store the operating system, logs, etc.)
 
 ### Production environment
 
@@ -49,7 +48,7 @@ The minimum requirements of a **highly-available Redis infrastructure (Productio
 
 * 3 dedicated or virtualized Redis servers with 3 or 4 vCPUs each (>2.6 Ghz) and 8GB<sup>1</sup> of RAM, configured as a Redis Cluster (with high availability)
 * High-bandwith network interface card (1Gbps recommended<sup>2</sup>)
-* 10GB disk (to store the operating system, logs, etc.)
+* 10GB disk or more according to setup (to store the operating system, logs, etc.)
 
 <sup>1</sup> You may need more RAM if your configured session expiration time allows for long sessions. Since there are 2 Redis processes per server (Master and Replica), with 8GB of RAM there's only 4GB available for session storage.
 

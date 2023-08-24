@@ -1,5 +1,5 @@
 ---
-summary: Configure Platform Server to use SSL when connecting to Redis 6.x by defining environment variables and enabling SSL in the Configuration Tool. This feature is in Technical Preview.
+summary: Configure Platform Server to use SSL when connecting to Redis 6.x by defining environment variables and enabling SSL in the Configuration Tool.
 guid: f69f6130-df05-468b-aabf-5414ba06e384
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -10,19 +10,20 @@ platform-version: o11
 
 <div class="info" markdown="1">
 
-Applies to OutSystems self-managed infrastructures. This feature is in Technical Preview.
+Applies to OutSystems self-managed infrastructures.
 
 </div>
 
 <div class="info" markdown="1">
 
-SSL/TLS support is only available in Redis 6.x, and only if the Redis binaries were compiled with this feature enabled.
+SSL/TLS support is only available in Redis 6.x upward, and only if the Redis binaries were compiled with this feature enabled. 
+Check the OutSystems system [requirements](requirements.md) page for the versions supported by OutSystems.
 
 </div>
 
 ## Prerequisites
 
-* You have a Redis 6.x installation **with SSL/TLS enabled**. Check the [Redis documentation](https://redis.io/topics/encryption) for more information.
+* You have a supported Redis installation **with SSL/TLS enabled**. Check the [Redis documentation](https://redis.io/topics/encryption) for more information.
 
 ## Configure Platform Server to support SSL connections to Redis
 
@@ -38,18 +39,18 @@ Check the next sections for details.
 
 Define the following environment variables on every front-end server of your OutSystems environment. You must define a value at least for the environment variables that are mandatory:
 
-SERedis_IssuerCertPath
-:   **Mandatory**. Defines the **remote** Secure Sockets Layer (SSL) certificate used for authentication. Set this environment variable to the full path of a `.CRT` certificate file.
-
-SERedis_ClientCertPfxPath
+`SERedis_ClientCertPfxPath`
 :   **Mandatory**. Defines the **local** Secure Sockets Layer (SSL) certificate used for authentication. Set this environment variable to the full path of a X.509 `.PFX` certificate file.
+
+`SERedis_IssuerCertPath`
+:   **Optional**. Defines the **remote** Secure Sockets Layer (SSL) certificate used for authentication. This parameter must only be used if the Issuer of the Redis server certificate **is not trusted** by the frontend. Set this environment variable to the full path of a `.CRT` certificate file.
   
-SERedis_ClientCertPassword
-:   Optional. Password of the certificate for the local certificate used for authentication. Set this environment variable to the certificate password.  
+`SERedis_ClientCertPassword`
+:   **Optional**. Password of the certificate for the local certificate used for authentication. Set this environment variable to the certificate password.  
     If the certificate doesn't have a password, you don't need to define this environment variable.
 
-SERedis_ClientCertStorageFlags
-:   Optional. Integer value that represents the sum of the values that control where and how to import the local certificate used for authentication.  
+`SERedis_ClientCertStorageFlags`
+:   **Optional**. Integer value that represents the sum of the values that control where and how to import the local certificate used for authentication.  
     Examples:
 
     * If the flag is "UserKeySet", set the value to **1**
