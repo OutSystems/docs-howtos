@@ -72,11 +72,11 @@ You must perform a reshard of the cluster to redistribute the key slots evenly a
 
 ## Step 4. Add the Replica processes to the Redis Cluster
 
-1. Take note of the information given by the following command:
+1. Copy the following command:
       
         ubuntu@[SERVER_4]:~$ redis-cli -p 7001 -a [ACCESSKEY] cluster nodes
 
-1. Add the Replica process of the first new server (**Server 4**, running on port 7001) to the Redis Cluster. Run the following command:
+1. Add the Replica process of the first new server (**Server 4**, running on port 7001) to the Redis Cluster by running the following command:
 
         ubuntu@[SERVER_4]:~$ redis-cli --cluster add-node 127.0.0.1:7001 [EXISTING_CLUSTER_NODE]:7000 --cluster-slave --cluster-master-id [MASTER_NODE_ID] -a [ACCESSKEY]
 
