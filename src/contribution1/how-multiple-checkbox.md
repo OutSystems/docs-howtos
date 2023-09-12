@@ -6,8 +6,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11, odc
 ---
 
-# [Procedure title - starts with an active verb]  
-**Example:** “Create an empty screen”
+# How to use multiple checkboxes in a form
 
 ## [Paragraph] *(No heading)*    
 [**Short intro sentence** in this format: "Do this task when you want to..." OR "Do this task to..."]
