@@ -1,5 +1,5 @@
 ---
-summary:
+summary: Multi-tenancy enables one app for many customers, ensuring data isolation. Modules, entities, properties, and timers can be multi-tenant or shared. User sessions link to tenants.
 guid: 6e1bb224-5f33-4233-adc5-57dc98793113
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -8,9 +8,6 @@ platform-version: o11
 
 # How to Build a Multi-tenant Application
 
-**This article applies to:**
-
-[OutSystems 7.0 and up](https://success.outsystems.com/Support/Release_Notes/Check_what_OutSystems_version_you_are_using)
 
 Multi-tenancy is the capability to address the needs of modern enterprise applications as well as Software as a Service (SaaS) applications to reach out to multiple customers, while enforcing an effective isolation of data, configurations, and end-users.
 
