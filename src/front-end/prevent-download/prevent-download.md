@@ -7,7 +7,7 @@ platform-version: o11
 
 # How do you prevent users from copying text or images?
 
-You can use a variety of methods to pervent users from copying text or images. Let's take a look ah them.
+You can use a variety of methods to prevent users from copying text or images. Let's take a look at them.
 
 ## Disable selection
 Any content inside a container or other element with the “basic-protect” class is generally not selectable by users.
