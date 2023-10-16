@@ -62,7 +62,7 @@ The figures below depict the use of the **GetPermissionByUserId** action in the 
 
 ![Permission checking wrapper.png](images/permission-checking-wrapper.png)
 
-![If condition to check the user's permission](images/if-condition-check-user's-permission-ss.png)
+![If condition to check the user's permission](images/if-condition-check-users-permission-ss.png)
 
 Here's how the **Sales** module looks like:
 
