@@ -21,7 +21,7 @@ The following is an example continuous delivery pipeline that consists of five d
 The sections below describe each stage of the recommended OutSystems pipeline in more detail, and the following step-by-step guides allow you to build the pipeline using the accelerator **outsystems-pipeline** and two leading CI/CD platforms as an example:
 
 * [Building an OutSystems continuous delivery pipeline with Jenkins](https://github.com/OutSystems/outsystems-pipeline/wiki/Building-an-OutSystems-pipeline-with-Jenkins)
-* [Building an OutSystems continuous delivery pipeline with Azure DevOps](https://github.com/OutSystems/outsystems-pipeline/wiki/Building-an-OutSystems-pipeline-with-Azure-DevOps)
+* [Building an OutSystems continuous delivery pipeline with Azure DevOps](https://github.com/OutSystems/outsystems-pipeline/wiki/Building-an-OutSystems-pipeline-with-Azure-DevOps-Multistage-Pipeline)
 
 ## Development
 
@@ -35,7 +35,7 @@ Following the commit stage, the newly created LifeTime tags are automatically de
 
 <div class="info" markdown="1">
 
-To enable a successful continuous delivery practice in your low-code factory, it is highly recommended to develop your applications with testability in mind. This means not only complying with development best practices (such as the [Architecture Canvas](https://success.outsystems.com/Support/Enterprise_Customers/Maintenance_and_Operations/Designing_the_Architecture_of_Your_OutSystems_Applications/The_Architecture_Canvas)) that promote proper isolation of business concepts in your architecture, but also ensuring that your developers write unit tests as part of their development activities.
+To enable a successful continuous delivery practice in your low-code factory, it is highly recommended to develop your applications with testability in mind. This means not only complying with development best practices (such as the [Architecture Canvas](https://www.outsystems.com/tk/redirect?g=2b38e6ed-2c22-4d06-87b7-88d1db436ea4)) that promote proper isolation of business concepts in your architecture but also ensuring that your developers write unit tests as part of their development activities.
 
 The proposed approach relies on unit tests written with the [BDD Framework](https://www.outsystems.com/forge/component/1201/bddframework/) Forge component for the automatic regression stage. [This article](https://www.outsystems.com/blog/posts/intro-bddframework-testing/) provides additional insights on how to write tests using this framework. Also, as a best practice, consider isolating your unit test code in separate LifeTime applications to prevent it from being deployed to production along with your application code.
 
@@ -51,6 +51,6 @@ After the release candidate is accepted by the business, deployment to the **Pro
 
 <div class="info" markdown="1">
 
-Although it is **technically** possible to have a deployment pipeline with less environments than the proposed configuration, it should be noted that such an option would increase the risks associated with your delivery process: for example, promoting a new release candidate for acceptance without going through an automated regression check first, or deploying changes to production without dry-running them in a production-like environment first.
+Although it is **technically** possible to have a deployment pipeline with fewer environments than the proposed configuration, it should be noted that such an option would increase the risks associated with your delivery process: for example, promoting a new release candidate for acceptance without going through an automated regression check first, or deploying changes to production without dry-running them in a production-like environment first.
 
 </div>
