@@ -5,6 +5,7 @@ locale: en-us
 guid: 93ea4249-dd2d-4d68-9c96-efbba147823d
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/5uD7gg1CIy1jlOE2BNFdsU/Data?node-id=1142:243
 ---
 
 # Factory Database

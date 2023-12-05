@@ -4,6 +4,7 @@ guid: bace3ad4-c605-4a40-bb54-b78a7a2830c5
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/gKoXqtZTY2IJjyMWschrRB/Integrations?node-id=147:325
 ---
 
 # How to call a SOAP web service with authentication

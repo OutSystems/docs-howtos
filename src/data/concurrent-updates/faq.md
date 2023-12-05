@@ -5,6 +5,7 @@ guid: c5dedbf3-215c-4934-b4ef-fccf90e989e7
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/5uD7gg1CIy1jlOE2BNFdsU/Data?node-id=942:237
 ---
 
 # How To Handle Concurrent Updates on Application Data Records

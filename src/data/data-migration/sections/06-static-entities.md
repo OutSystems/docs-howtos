@@ -5,6 +5,7 @@ locale: en-us
 guid: 23483ef2-7c45-48af-9a05-977eaadbc72f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Static Entities

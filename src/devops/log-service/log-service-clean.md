@@ -5,6 +5,7 @@ guid: 1635a64b-bb6b-4cb5-8a49-bcfc97929fe7
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/XbkdagtFJ9kxan8pAx0Qsz/DevOps?node-id=1542:372
 ---
 
 # Log Service Cleanup

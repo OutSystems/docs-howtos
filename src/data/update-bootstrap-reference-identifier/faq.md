@@ -5,6 +5,7 @@ guid: e9baaca3-cc89-4479-9a5e-eb57bdae58fc
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/5uD7gg1CIy1jlOE2BNFdsU/Data?node-id=942:263
 ---
 
 # How to update a Bootstrap Action to fetch an entity identifier from Excel

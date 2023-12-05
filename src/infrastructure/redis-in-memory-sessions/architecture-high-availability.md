@@ -4,6 +4,7 @@ guid: 8325ebdd-9bc8-445f-bd9b-5d41a435a841
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/o7Rkyuxm89D6KrjD7AOYCU/Infrastructure?node-id=1242:242
 ---
 
 # Redis Cluster high availability architecture

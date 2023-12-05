@@ -6,6 +6,7 @@ locale: en-us
 guid: dce526c4-9948-404e-a2a5-c55ef13747d7
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # OutSystems Platform Metamodel

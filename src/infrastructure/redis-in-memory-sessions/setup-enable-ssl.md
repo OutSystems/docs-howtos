@@ -4,6 +4,7 @@ guid: f69f6130-df05-468b-aabf-5414ba06e384
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Enable SSL for Redis

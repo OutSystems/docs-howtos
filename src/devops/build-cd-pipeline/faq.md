@@ -3,6 +3,7 @@ guid: 011aa817-6024-458a-8c62-f111224efa3b
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/XbkdagtFJ9kxan8pAx0Qsz/DevOps?node-id=147:325
 ---
 
 # How to build an OutSystems continuous delivery pipeline

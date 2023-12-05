@@ -4,6 +4,7 @@ guid: 6c4f9146-d4f4-4290-8e14-b04a7d0b0764
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # System requirements for using Redis

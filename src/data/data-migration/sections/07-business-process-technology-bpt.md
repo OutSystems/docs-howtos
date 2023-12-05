@@ -5,6 +5,7 @@ locale: en-us
 guid: 2cf30a7f-da91-4bbb-b960-0f3724632dde
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/5uD7gg1CIy1jlOE2BNFdsU/Data?node-id=1142:247
 ---
 
 # Migrating Processes - BPT

@@ -4,6 +4,7 @@ guid: b010b104-71ae-48cf-9fe9-ac6c39cd9614
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Set up a Redis Cluster for Production environments

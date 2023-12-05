@@ -3,6 +3,7 @@ summary: Test the failover behavior of a Redis Cluster by simulating a Master pr
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/o7Rkyuxm89D6KrjD7AOYCU/Infrastructure?node-id=1242:245
 ---
 
 # Test the failover behavior of a Redis Cluster

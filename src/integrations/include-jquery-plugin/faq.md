@@ -3,6 +3,7 @@ guid: dbc1a919-c473-4ac2-aa5a-c424a79ed690
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/gKoXqtZTY2IJjyMWschrRB/Integrations?node-id=1242:288
 ---
 
 # How to include a jQuery plugin

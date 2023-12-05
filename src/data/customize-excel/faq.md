@@ -5,6 +5,7 @@ guid: d1470acf-fb13-42b7-9a3d-0d4a67ddc689
 locale: en-us
 app_type: traditional web apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/5uD7gg1CIy1jlOE2BNFdsU/Data?node-id=942:245
 ---
 
 # How to customize the export to Excel

@@ -3,6 +3,7 @@ guid: ba5cba5e-31eb-447e-a9d6-6e766a62aebf
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/5uD7gg1CIy1jlOE2BNFdsU/Data?node-id=942:258
 ---
 
 # How to insert a null value into a database record

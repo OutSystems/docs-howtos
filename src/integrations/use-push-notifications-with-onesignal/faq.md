@@ -4,6 +4,7 @@ guid: d7d5445d-d28d-4acb-b158-b6d85b7f2ace
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/gKoXqtZTY2IJjyMWschrRB/Integrations?node-id=1242:340
 ---
 
 # How to Use Push Notifications with OneSignal

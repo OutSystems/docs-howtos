@@ -5,6 +5,7 @@ guid: def5c0a7-de9e-4c33-b0ef-514b7339a025
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/gKoXqtZTY2IJjyMWschrRB/Integrations?type=design&node-id=1242%3A283&mode=design&t=KeqXSCveJy9c8SEG-1
 ---
 
 # Does OutSystems support CocoaPods

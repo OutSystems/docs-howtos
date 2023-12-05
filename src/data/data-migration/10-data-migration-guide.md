@@ -5,6 +5,7 @@ locale: en-us
 guid: b2640eac-2601-47a6-b7d1-c7ff08febe0e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Introduction to Data Migration

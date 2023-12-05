@@ -5,6 +5,7 @@ guid: 1f0594cf-ae90-4a94-bcb6-8abc93f7ce5f
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/gKoXqtZTY2IJjyMWschrRB/Integrations?node-id=1242:275
 ---
 
 # How to consume a Web Service in Integration Studio

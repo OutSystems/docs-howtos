@@ -5,6 +5,7 @@ guid: 75121be2-5930-4cba-aa00-84107bf5e366
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/gKoXqtZTY2IJjyMWschrRB/Integrations?node-id=1242:293
 ---
 
 # How to access legacy data from Lotus Notes / Domino applications

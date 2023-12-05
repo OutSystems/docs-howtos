@@ -4,6 +4,7 @@ guid: 5f04023f-aba4-44ca-aafa-0d6aef48f3e1
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/XbkdagtFJ9kxan8pAx0Qsz/DevOps?type=design&node-id=1542%3A351&mode=design&t=dN0yGLL6D8INLkOx-1
 ---
 
 # OnTrack - OutSystems backlog management 

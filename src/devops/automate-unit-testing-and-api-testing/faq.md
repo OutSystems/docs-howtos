@@ -5,6 +5,7 @@ guid: 17f5f7a2-52ff-4059-bf77-370ccfff4be1
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/XbkdagtFJ9kxan8pAx0Qsz/DevOps?node-id=1142:349
 ---
 
 # How to Automate Unit Testing and API Testing

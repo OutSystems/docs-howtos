@@ -6,6 +6,7 @@ locale: en-us
 guid: 53e2f2f3-9123-4721-964d-c36b41eb5dd1
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Requirements to use a reverse proxy with OutSystems

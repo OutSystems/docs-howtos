@@ -4,6 +4,7 @@ guid: 5cef1f48-d700-4311-8f88-ed6ac0ded58e
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/o7Rkyuxm89D6KrjD7AOYCU/Infrastructure?node-id=1242:249
 ---
 
 # Configure Platform Server to use Redis for sessions

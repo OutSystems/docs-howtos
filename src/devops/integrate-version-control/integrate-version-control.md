@@ -4,6 +4,7 @@ guid: 9e611128-511d-494f-a1f0-5603ba863afc
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/XbkdagtFJ9kxan8pAx0Qsz/DevOps?node-id=1542:340
 ---
 
 # Integrate OutSystems with external version controls

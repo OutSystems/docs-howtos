@@ -5,6 +5,7 @@ locale: en-us
 guid: c7318d3e-0ee5-4bec-90d3-06e8aa1b2ea2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/5uD7gg1CIy1jlOE2BNFdsU/Data?node-id=1142:241
 ---
 
 # Factory Application Modules

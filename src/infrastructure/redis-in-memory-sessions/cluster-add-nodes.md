@@ -4,6 +4,7 @@ guid: e8289e9d-6e18-4b75-bc16-783fd0dc6574
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # Scale a Redis Cluster by adding more nodes { #add-node }

@@ -4,6 +4,7 @@ guid: d8e80008-11b7-43d8-804c-d99e577c7111
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/XbkdagtFJ9kxan8pAx0Qsz/DevOps?type=design&node-id=1542%3A348&mode=design&t=dN0yGLL6D8INLkOx-1
 ---
 
 # How to create alerts based on monitoring thresholds

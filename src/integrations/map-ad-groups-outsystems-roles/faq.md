@@ -3,6 +3,7 @@ guid: b2ea3286-9753-4319-a709-339a61edf884
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/gKoXqtZTY2IJjyMWschrRB/Integrations?node-id=1242:309
 ---
 
 # How to map Active Directory Groups to OutSystems Roles

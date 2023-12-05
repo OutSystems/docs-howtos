@@ -5,6 +5,7 @@ guid: 8796fe43-091c-4613-a9ac-9babde52b7a2
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/5uD7gg1CIy1jlOE2BNFdsU/Data?node-id=942:233
 ---
 
 # How to delete data from Entities

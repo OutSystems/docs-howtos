@@ -5,6 +5,7 @@ guid: 93767095-3b94-4005-8e9e-c206704fd9f8
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/5uD7gg1CIy1jlOE2BNFdsU/Data?node-id=942:249
 ---
 
 # How to Export Entity Data to Excel

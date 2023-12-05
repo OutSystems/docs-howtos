@@ -5,6 +5,7 @@ guid: 015dc204-9e52-4cd6-8a23-5e96096f9548
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/gKoXqtZTY2IJjyMWschrRB/Integrations?node-id=1242:357
 ---
 
 # How to Use Push Notifications with Pushwoosh
