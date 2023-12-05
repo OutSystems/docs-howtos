@@ -15,7 +15,7 @@ Note that you'll need a paid subscription of Pushwoosh in order to send push not
 
 ## How it Works
 
-![](images/image05.png?width=600)
+![Pushwoosh plugin overview](images/image05.png)
 
 1. To receive notifications, you start by using the plugin to register the device in Pushwoosh. 
 
@@ -48,7 +48,7 @@ Learn how to [configure Pushwoosh for Android](https://docs.pushwoosh.com/platfo
 
 1. In your application, use "Manage Dependencies…" to add a reference to the Pushwoosh plugin.
 
-    ![](images/image04.jpg?width=600)
+    ![Add reference to the pushwoosh plugin](images/image04.png)
 
 1. Add the "PushwooshNotifications" block to:
     * The "Layout" block if your application has no login 
@@ -73,23 +73,23 @@ If you're using the Pushwoosh plugin in your Android app, do the following:
     * Set the "Name" as "google-services.zip"
     * Set "Deploy to Target Directory" as "google-services"
 
-![](images/image10.png)
+![Upload google-services zip folder](images/image10.png)
 
 For your device to receive push notifications, you’ll need to register it. If your users need to login to use the application, go to the "Login" screen and edit the "Login" action.
 
-![](images/image03.jpg?width=600)
+![Edit login action](images/image03.png)
 
 Add the code to register the device after the "DoLogin" action. It should look something like this:
 
-![](images/image01.jpg?width=600)
+![Add the code](images/image01.png)
 
 If your application does not have a login, you can add this code to the “OnInitializeOver” event in the “PushwooshNotifications” block.
 
-![](images/image00.jpg?width=600)
+![Add code](images/image00.png)
 
 In this event handler, call the “RegisterDevice” action.
 
-![](images/image07.jpg?width=600)
+![Call RegisterDevice action](images/image07.png)
 
 If you’re generating an iOS mobile app using a developer certificate, you will need to add a preference to the Extensibility Configurations property of your OutSystems module:
 
@@ -104,7 +104,7 @@ If you’re generating an iOS mobile app using a developer certificate, you will
 }
 ```
 
-![](images/push_aps-environment_development.png?width=600)
+![Add preferences in extensibility configurations](images/push_aps-environment_development.png)
 
 This preference will be added to your entitlements file (learn more about entitlements in the [Apple Developer documentation](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html "https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html")).
 
@@ -117,11 +117,11 @@ At this point, you can use the Pushwoosh interface to send notifications to your
 
 To send notifications, you need a Pushwoosh API Access Token. Create one by accessing the Pushwoosh console, go to "API Access" and click "Generate new access token".
 
-![](images/image02.jpg?width=600)
+![Generate new access token](images/image02.png)
 
 To send a notification to all devices, use the "SendPushNotificationToAll" action.
 
-![](images/image06.jpg?width=600)
+![Use "SendPushNotificationToAll"](images/image06.png)
 
 This action takes the following parameters:
 
@@ -133,7 +133,7 @@ This action takes the following parameters:
 
 For instance, if you use this action to send the message “Hello from OutSystems” to an application called “PushTest,” the following would be shown in iOS:
 
-![](images/image08.png?width=600)
+![PushTest notification](images/image08.png)
 
 ## Additional information
 

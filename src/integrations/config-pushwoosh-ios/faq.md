@@ -20,15 +20,15 @@ You will need a Mac computer for this process.
 
 For an application, Apple Push Notification Service (APNS) requires a unique application identifier (App ID) configured with “Push Notifications” enabled. To create one, access your Apple developer account at: [https://developer.apple.com/membercenter/](https://developer.apple.com/membercenter/ "https://developer.apple.com/membercenter/") and enter **Certificates, Identifiers & Profiles**.
 
-![](images/image02.jpg?width=600)
+![](images/image02.png)
 
 Select **App IDs** and the “+” on the right side of the page to create a new identifier:
 
-![](images/image08.png?width=600)
+![](images/image08.png)
 
 Complete the form and select **Push Notifications** from “App Services”.
 
-![](images/image05.png?width=600)
+![](images/image05.png)
 
 ## Create an APNS Certificate
 
@@ -46,15 +46,15 @@ Push notifications do not work in the simulator.
 
 Access **iOS App IDs** from the Apple Developer Member Center and locate the application identifier you wish to configure. Click the **Edit** button.
 
-![](images/image11.png?width=600)
+![](images/image11.png)
 
 Scroll down to “Push Notifications” and click **Create certificate** for either Development or Distribution.
 
-![](images/image00.png?width=600)
+![](images/image00.png)
 
 Follow the steps on the page to generate a certificate signing request.
 
-![](images/image06.png?width=600)
+![](images/image06.png)
 
 <div class="info" markdown="1">
 
@@ -63,7 +63,7 @@ If you don't have access to a Mac [here](<https://success.outsystems.com/Documen
 
 Upload the newly created certificate signing request file and click the **Generate** button. Once that is done, download the created certificate and add it to your keychain.
 
-![](images/image04.png?width=600)
+![](images/image04.png)
 
 ## Export Certificates from Keychain
 
@@ -71,9 +71,9 @@ When configuring the iOS settings for an application in Pushwoosh, you must uplo
 
 Open Keychain, locate the desired certificate and export the public certificate. Usually APNS certificates have a “Apple Development IOS Push Services” prefix or “Apple Production IOS Push Services” prefix followed by the application identifier. Export it as “.cer”.
 
-![](images/image12.png?width=600)
+![](images/image12.png)
 
-![](images/image03.png?width=600)
+![](images/image03.png)
 
 Export the associated private key. 
 
@@ -82,7 +82,7 @@ Export the associated private key.
 Remember the password you choose when exporting, because it’ll be needed later when setting up iOS on Pushwoosh.
 </div>
 
-![](images/image13.png?width=600)
+![](images/image13.png)
 
 ## Create an Application in Pushwoosh
 
@@ -92,20 +92,20 @@ Pushwoosh recommends the setup of two applications: one for development and one 
 
 In this example, we’ll create and configure an application using a development APNS certificate. The process is exactly the same for distribution.
 
-![](images/image07.png?width=600)
+![](images/image07.png)
 
 Give the new application a name, an icon and choose **Pushwoosh** under iOS SDK and Android SDK. Click **Save application**.
 
-![](images/image01.jpg?width=600)
+![](images/image01.png)
 
 ## Configure iOS
 
 In the screen that opens, you’ll see an application code. This code is unique to each Pushwoosh application and is used by your application. In the iOS ribbon on this screen, click **Configure**.
 
-![](images/image09.png?width=600)
+![](images/image09.png)
 
 On the **Manual** tab, complete the required information. **Certificate file (.cer)** is the public certificate exported earlier. **Push Certificate (.p12)** is the private key that was exported. **Private key password** is the password picked in the export process for the private key. **Framework** should be set to Native.
 
-![](images/image10.png?width=400)
+![](images/image10.png)
 
 Click **Save**. You've now configured Pushwoosh for iOS.
