@@ -5,6 +5,7 @@ guid: 1ab580bd-06db-488c-bcfa-133209853697
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:44
 ---
 
 # How to maintain the state of a mobile screen

@@ -5,6 +5,7 @@ guid: b8184f4d-59dc-4881-81a0-40df50b4b185
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/qdZmVuCDqCHvhakBTOLZcI/Processes?node-id=1042:237
 ---
 
 # Using Taskbox in Reactive Web Apps

@@ -5,6 +5,7 @@ guid: b80fd8bd-01dd-475a-9fd1-50709e60ab86
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # How to make the header scroll with the page in the London theme

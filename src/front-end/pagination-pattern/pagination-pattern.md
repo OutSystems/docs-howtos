@@ -3,6 +3,7 @@ guid: 90f59d2c-4cc1-48c8-8ff6-f1c39912f847
 locale: en-us
 app_type: mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=1042:318
 ---
 
 # How to customize number of records per page

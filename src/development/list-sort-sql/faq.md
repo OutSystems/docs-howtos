@@ -5,6 +5,7 @@ guid: 9d1081a8-8d5e-4eca-80f5-ed401e66e733
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/ZqxffTIAhYyQg8Q2KbSFbb/Development?node-id=742:253
 ---
 
 # How to enable dynamic sorting in a table fed by a SQL query

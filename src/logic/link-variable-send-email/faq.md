@@ -3,6 +3,7 @@ guid: 9d7eb119-b1b4-4c4d-9d25-c49990eb260e
 locale: en-us
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/3YpPKdo5QwN0z6up61eKe5/Logic?node-id=842:236
 ---
 
 # How to make a link with a variable to send in an Email

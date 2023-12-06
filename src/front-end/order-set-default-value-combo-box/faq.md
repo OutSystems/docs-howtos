@@ -3,6 +3,7 @@ guid: 6c613e7e-a12c-46a4-b1d4-3c190f9cdbca
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:53
 ---
 
 # How to order and set the default value in a combo box

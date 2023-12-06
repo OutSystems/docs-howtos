@@ -5,6 +5,7 @@ guid: 80b3e393-53fa-40e3-b457-4cd8cc78fd71
 locale: en-us
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/ZqxffTIAhYyQg8Q2KbSFbb/Development?node-id=742:239
 ---
 
 # How to use OutSystems Data Grid Web

@@ -5,6 +5,7 @@ guid: bc28b35e-c684-4094-a937-e189a137886d
 locale: en-us
 app_type: traditional web apps
 platform-version: o11
+figma:
 ---
 
 # How to scroll records in a table with a fixed header

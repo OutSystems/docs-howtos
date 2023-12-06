@@ -3,6 +3,7 @@ guid: 89c5c9a1-308d-416a-b917-9080a9ddb42d
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:37
 ---
 
 # How to improve list slowness on low-end devices

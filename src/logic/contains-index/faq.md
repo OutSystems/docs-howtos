@@ -5,6 +5,7 @@ guid: 42ccc03c-d5c3-47b9-a4cc-36c576058d42
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma:
 ---
 
 # How to find out if a string is contained in another string

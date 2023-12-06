@@ -3,6 +3,7 @@ guid: 32e83f65-befb-46b4-9984-d804192357a3
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/qdZmVuCDqCHvhakBTOLZcI/Processes?node-id=1042:233
 ---
 
 # How to configure EPA taskbox preferences

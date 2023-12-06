@@ -5,6 +5,7 @@ guid: 5aad9f1a-b906-4e68-a058-3b34646444b7
 locale: en-us
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:5
 ---
 
 # How to create a search field with autocomplete in a Traditional Web App

@@ -5,6 +5,7 @@ guid: 67cc20af-ffe8-4897-b817-28460ed3bd48
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:34
 ---
 
 # How to generate HTML tags

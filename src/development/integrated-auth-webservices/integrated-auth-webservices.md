@@ -5,6 +5,7 @@ locale: en-us
 Guid: DE66DA4D-B3BA-4F2F-A19E-424C38B5C327
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/ZqxffTIAhYyQg8Q2KbSFbb/Development?node-id=1747:88
 ---
 
 # Integrated Authentication on Web Services - User credentials delegation to Web References in OutSystems

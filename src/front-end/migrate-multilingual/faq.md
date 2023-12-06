@@ -5,6 +5,7 @@ guid: 625a71ee-acb7-4923-b953-74f684ca6377
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:103
 ---
 
 # How to reuse translations from Multilingual Forge component in Service Studio

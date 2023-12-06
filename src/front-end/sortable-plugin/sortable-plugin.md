@@ -3,6 +3,7 @@ guid: 03a0c151-1a2c-424c-bd4a-75fb2e081f9f
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?type=design&node-id=1244%3A480&mode=design&t=w0CsyqjU2ISN71Gv-1
 ---
 
 # How do you integrate a sortable plugin?

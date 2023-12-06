@@ -5,6 +5,7 @@ guid: 746a36e5-38e3-4bae-b378-bf6ce9579195
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:41
 ---
 
 # How to change the case of input text

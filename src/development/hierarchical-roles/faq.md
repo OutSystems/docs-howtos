@@ -5,6 +5,7 @@ guid: f39c1e48-d9a9-443a-ba1e-6f345a350ab8
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/ZqxffTIAhYyQg8Q2KbSFbb/Development?node-id=742:276
 ---
 
 # How to leverage OutSystems roles with hierarchy levels

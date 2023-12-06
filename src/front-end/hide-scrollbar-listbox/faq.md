@@ -5,6 +5,7 @@ guid: f7777240-9826-476e-9eab-8415771fbc79
 locale: en-us
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:29
 ---
 
 # How to hide the scroll bar of a List Box

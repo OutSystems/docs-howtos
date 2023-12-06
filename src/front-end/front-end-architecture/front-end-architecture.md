@@ -5,6 +5,7 @@ guid: e9051244-8de6-4d2f-8aa2-3b51afe8a83c
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:22
 ---
 
 # How to Build a Front-End Architecture in OutSystems

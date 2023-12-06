@@ -5,6 +5,7 @@ guid: fcea5150-affd-4f27-8263-97e32b24a7a6
 locale: en-us
 app_type: traditional web apps
 platform-version: o11
+figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:88
 ---
 # How to dynamically set the values of inputs
 

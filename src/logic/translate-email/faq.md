@@ -3,6 +3,7 @@ guid: 4361759f-10ba-488c-b928-5a9fd5017f98
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/3YpPKdo5QwN0z6up61eKe5/Logic?node-id=842:248
 ---
 
 # How to translate an email

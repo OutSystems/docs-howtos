@@ -4,6 +4,7 @@ guid: 955219bb-026a-4fd4-a24a-0fc5da6a0a1e
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:95
 ---
 
 # How to show records side by side in a List Record widget

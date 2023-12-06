@@ -5,6 +5,7 @@ guid: 50d41d21-32bd-4e10-b26c-e4c3f243b639
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:59
 ---
 
 # How to remove the Add or Delete features from an Editable Table

@@ -6,6 +6,7 @@ locale: en-us
 guid: 072bad87-b493-4f6e-922d-17b22c4404d1
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=1242:626
 ---
 
 # Migrating the structure of the Silk web applications to OutSystems UI

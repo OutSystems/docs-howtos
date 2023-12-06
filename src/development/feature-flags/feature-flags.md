@@ -4,6 +4,7 @@ guid: 4de797a5-dc79-459a-9244-8eab786b0fcf
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/ZqxffTIAhYyQg8Q2KbSFbb/Development?node-id=1742:411
 ---
 
 # Feature toggle in OutSystems

@@ -5,6 +5,7 @@ guid: 784794a5-90a4-4cae-83df-1fcaf6d68507
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
+figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:84
 ---
 
 # How to change a favicon
