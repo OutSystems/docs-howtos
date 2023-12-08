@@ -1,6 +1,6 @@
 ---
 tags: support-Database
-summary: Learn how to manage concurrent updates on application data records using a pessimistic concurrency strategy, audit attributes, and a force update option.
+summary: Learn how to manage concurrent updates on application data records using a optimistic concurrency strategy, audit attributes, and a force update option.
 guid: c5dedbf3-215c-4934-b4ef-fccf90e989e7
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -16,7 +16,7 @@ How should we handle concurrent updates to avoid users smashing each other updat
 
 ## Answer
 
-In this article we’re going to see how we can deal with this challenge, implementing a **pessimistic concurrency strategy**, trying to detect update conflicts on the saving of the record and allow the user to act up on them.
+In this article we’re going to see how we can deal with this challenge, implementing a **optimistic concurrency strategy**, trying to detect update conflicts on the saving of the record and allow the user to act up on them.
 
 To prevent other transactions from accessing a record, OutSystems entities have a **GetForUpdate** action that allows to lock the record while it’s being updated. This will handle concurrency, but you still need to deal with the conflicts on record updates, as a user is still able to overwrite a record without knowing it has been updated by another use.
 
