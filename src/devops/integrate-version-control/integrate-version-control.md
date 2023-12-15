@@ -9,7 +9,7 @@ figma: https://www.figma.com/file/XbkdagtFJ9kxan8pAx0Qsz/DevOps?node-id=1542:340
 
 # Integrate OutSystems with external version controls
 
-This article explains how to store OutSystems applications and modules in external version control systems. 
+This article explains how to store OutSystems applications(.oap), modules(.oml) or versioning manifest files in external version control systems.
 
 We'll use GitHub as an example since it tends to be mentioned the most, but the same procedure can be applied to others, as GitLab, SVN, or Azure Repos. 
 
