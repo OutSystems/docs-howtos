@@ -129,8 +129,6 @@
     - href: devops/build-cd-pipeline/faq.md
     - href: devops/integrate-version-control/integrate-version-control.md
     - href: devops/create-alerts/create-alerts.md
-    - href: devops/automate-unit-testing-and-api-testing/faq.md
-    - href: devops/ui-testing-selenium/faq.md
     - href: devops/on-track/on-track.md
     - href: devops/solution-creating-all-comp/solution-creating-all-comp.md 
     - href: devops/log-service/log-service-clean.md
