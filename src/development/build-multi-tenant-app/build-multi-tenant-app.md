@@ -74,9 +74,13 @@ After deciding the behavior of an Entity, set its ‘Is Multi-tenant’ property
 
 * **‘No’:** the Entity’s data is **not isolated** per tenant regardless of the value set in the module’s Is Multi-tenant property;
 
-* **< Not Defined >:** the Multi-tenant behavior of the Entity’s data is inherited from the Multi-tenant behavior of its module (the value set in the ‘Is Multi-tenant’ property of the module). Note that Static Entities are shared among all tenants. 
+* **< Not Defined >:** the Multi-tenant behavior of the Entity’s data is inherited from the Multi-tenant behavior of its module (the value set in the ‘Is Multi-tenant’ property of the module). 
 
+<div class="info" markdown="1">
+    
 Note that Static Entities are shared among all tenants.
+
+</div>
 
 ### Setting up Site Properties
 
