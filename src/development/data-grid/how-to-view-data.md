@@ -12,9 +12,9 @@ figma: https://www.figma.com/file/ZqxffTIAhYyQg8Q2KbSFbb/Development?type=design
 
 **Prerequisites** 
 
-* Download and install the [OutSystems Data Grid](https://www.outsystems.com/forge/component-overview/9764/data-grid-reactive) component from Forge.
+* Download and install the [OutSystems Data Grid (O11)](https://www.outsystems.com/forge/component-overview/9764/data-grid-reactive) component from Forge.
 
-This example fetches data from a database and displays it in the grid. (This examples does not define any column structure.) 
+This example fetches data from a database and displays it in the grid. (This example does not define any column structure.) 
 
 1. In Service Studio, in the Toolbox, search for Grid.
 
@@ -55,7 +55,7 @@ This example fetches data from a database and displays it in the grid. (This exa
 
 1. On the **Logic** tab, drag the **ArrangeData** Server Action onto the flow.
 
-    The **Grid** block receives data in JSON format. The **ArrangeData** Server Action analyzes this data, serializes it, and retrieves the information from each column, whether it be in, for example, string, number, boolean format.
+    The **Grid** block receives data in JSON format. The **ArrangeData** Server Action (**only available for O11**) analyzes this data, serializes it, and retrieves the information from each column, whether it be in, for example, string, number, or boolean format.
 
     ![Drag ArrangeData server action onto the flow](images/grid-arrange-data-ss.png)
 
@@ -63,7 +63,7 @@ This example fetches data from a database and displays it in the grid. (This exa
 
     All of the aggregate data is passed to the action.
 
-    **Note:** Because the **ArrangeData** Server Action action can receive any data structure, you must use the **ToObject** function. 
+    **Note:** Because the **ArrangeData** Server Action action can receive any data structure, you must use the **ToObject** function. **ArrangeData is only available for O11**.
 
     ![Set Data property to the aggregate result ](images/grid-aggregate-result-ss.png)
 
