@@ -1,7 +1,5 @@
 ---
 summary: An overview about migrating the user interface (UI) framework of the Silk Web UI applications to the OutSystems UI Web.
-tags: article-page
-en_title: Migrating UI of the Silk Web applications to OutSystems UI Framework
 locale: en-us
 guid: 9842b593-ee78-466b-9fdd-a8f6e21f44b1
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,7 +1,5 @@
 ---
 summary: Using a reverse proxy with OutSystems can reduce load, increase security, ensure high availability, and needs to maintain original host headers and URLs for Mobile/Reactive Apps. This article provides information on the needed requirements to use a reverse proxy.
-tags: support-installation;support-maintenance;support-Security
-en_title: 01_Using_a_reverse_proxy_with_OutSystems
 locale: en-us
 guid: 53e2f2f3-9123-4721-964d-c36b41eb5dd1
 app_type: traditional web apps, mobile apps, reactive web apps
