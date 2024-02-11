@@ -19,7 +19,7 @@ This document explains how to change the default icon and replace it by your fav
 When changing the favicon, keep in mind that you need to:
 
 * Change the favicon file in **all modules** that expose screens in your app
-* Reload the app data, to ensure the app loads the new favicon. If you are using Chrome, right-click the tab with your app and select **Reload**. You can also clear the entre browser cache.
+* Reload the app data, to ensure the app loads the new favicon. If you are using Chrome, right-click the tab with your app and select **Reload**. You can also clear the entire browser cache.
 * Make sure your icon [follows the guidelines](https://developers.google.com/search/docs/appearance/favicon-in-search) if you want the favicon to show on Google search results.
 
 </div>
@@ -34,9 +34,8 @@ Follow these steps to change the favicon in your Reactive Web App to a different
 
 1. In the **Change Resource** file dialog, select a PNG image to set it as a new favicon. 
 
-    <div class="info" markdown="1">    
-    Service Studio resizes the image to the favicon standard dimensions.
-    </div>
+    <div class="info" markdown="1">
+        Service Studio resizes the image to the favicon standard dimensions.</div>
 
 1. Publish your module and open it in the browser. You should see a new icon in the browser tab.
 
@@ -56,7 +55,9 @@ Follow these steps to change the favicon in your Reactive Web App to a different
 
     <div class="info" markdown="1">
     
-    If you have just created your app, the **'favicon.png' occurrences in Module** search tab shows four occurrences of **favicon.png**, all in different **AddFavicon** actions.
+    If you have just created your app, the **'favicon.png' occurrences in Module** search tab shows four occurrences of **favicon.png**, all in different **AddFavicon** actions.  
+    <ins>Note</ins>: **AddFavicon** client action is **only** compatible with Chrome, Firefox and Edge.
+   
     
     </div>
 
