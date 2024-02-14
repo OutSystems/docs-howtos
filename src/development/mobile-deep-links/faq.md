@@ -14,7 +14,7 @@ To define a deep link to a Screen (`<screen>`) of a Module (`<module>`) of a Mob
 
     <app-identifier>://<module>/<screen>
 
-Where `<app-identifier>` is the [App identifier you defined when generating your Mobile App Package](<https://success.outsystems.com/Documentation/10/Delivering_Mobile_Apps/Generate_and_Distribute_Your_Mobile_App>) in **lowercase**.
+Where `<app-identifier>` is the [App identifier you defined when generating your Mobile App Package](https://success.outsystems.com/Documentation/10/Delivering_Mobile_Apps/Generate_and_Distribute_Your_Mobile_App) in **lowercase**.
 
 <div class="info" markdown="1">
 
