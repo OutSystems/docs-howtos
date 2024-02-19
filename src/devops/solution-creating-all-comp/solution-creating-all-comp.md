@@ -7,15 +7,19 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/XbkdagtFJ9kxan8pAx0Qsz/DevOps?node-id=1542:366
 ---
-# Creating and using an All Components solution
+# Creating and using solution
 
-It's a common practice in OutSystems Factory management to create and use a solution that contains all the components deployed on the environment. It's used to refresh references in environments used for development purposes, republish application modules after an update or upgrade and for some troubleshooting tasks. For feature availability in different environments check [here]( https://success.outsystems.com/Documentation/11/Setup_and_maintain_your_OutSystems_infrastructure/Setting_Up_OutSystems/Configure_your_OutSystems_environment#feature-availability-for-different-purposes).
+It's a common practice in OutSystems Factory management to create and use a solution. This is either a Factory solution containing all the components, a solution for a specific module or an application with all its dependencies. It's used to:
 
-An all components solution will publish and deploy all of the associated components.
+* Refresh references in environments used for development purposes.
+* Republish application modules after an update or upgrade.
+* Troubleshoot some tasks.
 
-## How to create
+For feature availability in different environments check [here]( https://success.outsystems.com/Documentation/11/Setup_and_maintain_your_OutSystems_infrastructure/Setting_Up_OutSystems/Configure_your_OutSystems_environment#feature-availability-for-different-purposes).
 
-### Creating the solution
+A solution can also be used to publish a version of a specific application in another environment as an alternative to a LifeTime staging. For example, an "All Components" solution will publish and deploy all associated components.
+
+## Creating an "All Components" solution
 
 If you don't have an "All Components" solution yet:
 
@@ -43,7 +47,26 @@ On the "All Components" solution screen:
 
     ![](images/servicecenter-solution-associate-modules-previous-version.png?width=800)
 
-## How to use
+## Creating a solution for a module and all its dependencies
+
+1. Go to Service Center (`https://<YOUR_ENVIRONMENT>/ServiceCenter`).
+1. Under **Factory** > **Solutions**, click the **New Solution** link
+
+    ![](images/servicecenter-new-solution.png)
+
+1. Name the solution and click the **Save** button.
+
+    ![](images/servicecenter-create-solution-all-dependencies.png)
+
+### Adding the components
+
+1. Go to the **Components** tab.
+1. Search for the module name, tick the **include dependencies as component** checkbox.
+1. Click the **Associate** button.
+
+    ![](images/serviceceneter-solution-module.png)
+
+### How to use
 
 * Whenever you want to **republish your whole factory**, click the **Publish** button for the "Current Running Version".
 
