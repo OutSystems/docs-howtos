@@ -7,7 +7,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/XbkdagtFJ9kxan8pAx0Qsz/DevOps?node-id=1542:366
 ---
-# Creating and using solution
+# Creating and using a solution
 
 It's a common practice in OutSystems Factory management to create and use a solution. This is either a Factory solution containing all the components, a solution for a specific module or an application with all its dependencies. It's used to:
 
