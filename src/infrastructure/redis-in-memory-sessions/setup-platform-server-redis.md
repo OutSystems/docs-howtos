@@ -26,31 +26,17 @@ This article assumes that you have a Redis Cluster with three server machines, a
 After making sure that you have a working Redis infrastructure, configure the OutSystems front-end servers of your OutSystems environment for in-memory session storage using Redis.
 
 Do the following:
-
-1. On each front-end server, edit the `server.hsconf` file and add the following XML content:
-
-        <InMemorySessionConfiguration ProviderKey="Redis">
-            <ConnectionString encrypted="false">172.31.6.35:7000,172.31.11.176:7000,172.31.3.184:7000,password=[ACCESSKEY]
-            </ConnectionString>
-        </InMemorySessionConfiguration>
-
-    In the `ConnectionString` element, enter the addresses and ports of all Redis Master processes in the Redis Cluster, separated by commas. If you have just one server running `redis-server`, enter its address and port.
-
-    Also in the `ConnectionString` element, replace `[ACCESSKEY]` with the password that you set in the Redis configuration file.
-
-    <div class="info" markdown="1">
-
-    The Redis password is **required** in Configuration Tool, which doesn't accept Redis connection strings without a password.
-
-    </div>
-
-1. Run Configuration Tool as an Administrator and open the **Session** tab.
+1. Run Configuration Tool as an Administrator, open the **Session** tab, and then select Redis from  the **Session Provider** dropdown.
 
     ![Session tab in Configuration Tool displaying Redis settings](images/session-connection-string-0-ct.png)
 
-    Configuration Tool displays the connection string you configured in the previous step.
+    In the **Hosts** element, enter the addresses and ports of all Redis Master processes in the Redis Cluster, separated by commas. If you have just one server running redis-server, enter its address and port.
 
-1. Click **Test Connection** to verify that the Redis server machines are reachable from the Platform Server machine and that everything works properly at runtime.
+    In the **Password** element, enter the password for the Redis Master or the single redis-server.
+
+    Optionally, tick the **Use SSL** element to enable SSL configuration. If necessary, enter  the **SSL Host** element. For more information about SSL refer to [Enable SSL for Redis](setup-enable-ssl.md). 
+
+1. To verify that the Redis server machines are reachable from the Platform Server machine and that everything works properly at runtime, Click **Test Connection**.
 
     ![Session tab in Configuration Tool after a successful connection test](images/session-connection-string-success-ct.png)
 
@@ -58,7 +44,7 @@ Do the following:
 
 1. If the connection test is successful, click **Apply and Exit**.
 
-1. Configuration Tool displays a popup  asking you to publish the latest version of Service Center and System Components. Accept by clicking **OK**.
+1. If the Configuration Tool displays a popup asking you to publish the latest version of Service Center and System Components. click **OK** to accept.
 
     If you're configuring an existing installation, republish all modules so that they use Redis sessions.
 
@@ -66,7 +52,7 @@ Your front-end server is now configured to store sessions in Redis.
 
 ## Testing your configuration
 
-When the Service Center installation finishes, test if the sessions are being saved in Redis by doing the following:
+When the Service Center installation finishes, test to verify the sessions are being saved in Redis by doing the following:
 
 1. Log in to Service Center and perform some browsing in Service Center's UI.
 
@@ -74,7 +60,7 @@ When the Service Center installation finishes, test if the sessions are being sa
 
         redis-cli -c -h 172.31.6.35 -p 7000 -a [ACCESSKEY]
 
-    Alternatively, if you have a single machine running Redis Server, open an SSH connection to your Redis server machine and run the following command:
+    Alternatively, if you have a single machine running the Redis Server, open an SSH connection to your Redis server machine and run the following command:
 
         redis-cli -h 127.0.0.1 -p 7000 -a [ACCESSKEY]
 
