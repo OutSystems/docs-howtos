@@ -22,7 +22,6 @@ The OutSystems UI is the base application. Based on this, we build the Project T
 The Project style guide is also based on the project theme.
 The Template Project is the template for your application.
 
-
 ## Patterns in Front-End Architecture
 
 The following graphic shows how to structure the Front-end architecture at OutSystems UI.
