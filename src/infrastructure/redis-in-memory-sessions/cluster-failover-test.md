@@ -1,5 +1,6 @@
 ---
 summary: Test the failover behavior of a Redis Cluster by simulating a Master process failover and verifying the Replica process promotion to Master.
+guid: 78ef2a97-39eb-4d4d-a1c8-edaa7b5675da
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
