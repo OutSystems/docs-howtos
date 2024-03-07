@@ -12,11 +12,11 @@ figma: https://www.figma.com/file/qdZmVuCDqCHvhakBTOLZcI/Processes?node-id=1042:
 
 Taskbox is part of the user interface that lets your users handle tasks issued by Business Process Technology (BPT). To show a taskbox in Reactive Web Apps, use the Taskbox Block from the [Sample Reactive Taskbox component](https://www.outsystems.com/forge/component-overview/8355/sample-reactive-taskbox). 
 
-![Tasks list in browser / app](<images/taskbox-browser-preview-expanded.png?width=400>)
+![Screenshot showing an expanded Taskbox in a web browser with tasks listed for user interaction.](images/taskbox-browser-preview-expanded.png "Expanded Taskbox Preview in Browser")
 
 Install the component and reference it in your app, then navigate to **Interface** > **UI Flows** > **SampleReactiveTaskbox** > **Taskbox** >  **Taskbox**. We recommend that you drag the Taskbox Block to one of the layout Block, to ensure the tasks show in all screens of the app.
 
-![Taskbox Block in Service Studio](<images/taskbox-block-ss.png?width=300>)
+![Screenshot of the Taskbox Block within the OutSystems Service Studio interface.](images/taskbox-block-ss.png "Taskbox Block in Service Studio")
 
 ## Create an example Process and show Taskbox
 
@@ -42,18 +42,18 @@ Follow the steps to create an example Process to handle invoices. Once a new inv
     * In the **Destination** list select the Screen for editing invoices and set the correct identifier. In this example we use `MainFlow\InvoiceDetail` in **Destination** and `InvoiceId` as the identifier. In the app users navigate to the InvoiceDetail Screen after they click the task.
     * In the **Detail** field: `"Payment for #" + InvoiceId`.
 
-    ![Flow in Process](<images/process-flow-ss.png?width=450>)
+    ![Screenshot depicting the process flow for invoice processing with a Human Activity node in OutSystems Service Studio.](images/process-flow-ss.png "Process Flow in Service Studio")
 
 1. Go back to the **Interface** tab. Navigate to **UI Flows** > **SampleReactiveTaskbox** > **Taskbox** >  **Taskbox**. Drag the Taskbox Block to:
 
     * The Screen, if you want the Taskbox to show in that Screen only.
     * A Layout Block, if you want the Taskbox to show in all Screens of the app. In our example we put Taskbox in the main content section of LayoutTopMenu, as that is the layout the app is using.
   
-        ![Taskbox Block in Service Studio](<images/taskbox-layout-placement-ss.png?width=450>)
+        ![Screenshot showing the placement of the Taskbox Block within the layout of a Reactive Web App in OutSystems Service Studio.](images/taskbox-layout-placement-ss.png "Taskbox Layout Placement in Service Studio")
 
 1. Publish the app and add some sample invoices. The number of tasks shows in the widget. Click the widget to expand the list.
      
-     ![Tasks count in browser / app](<images/taskbox-browser-preview-count.png?width=450>)
+     ![Screenshot displaying the Taskbox widget in a web browser with a count of pending tasks.](images/taskbox-browser-preview-count.png "Taskbox Preview with Task Count in Browser")
 
 ## Customizing the Taskbox
 

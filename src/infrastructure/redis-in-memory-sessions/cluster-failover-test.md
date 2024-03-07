@@ -34,7 +34,7 @@ Do the following:
 
 This command makes Master 1 unreachable by the replicas during a 40-second period, forcing the associated Replica process (port 7001) on Server 2 to take over and change its role to Master.
 
-![Redis Cluster failover test by disabling Master 1 temporarily](images/redis-arch-3-node-failover-test-diag.png)
+![Diagram showing a Redis Cluster with three servers, highlighting the failover of Master 1 to Replica 1 on Server 2.](images/redis-arch-3-node-failover-test-diag.png "Redis Cluster 3-Node Failover Test Diagram")
 
 Reusing the same SSH connection from the previous procedure, and while the Master process in Server 1 is "off", do the following:
 

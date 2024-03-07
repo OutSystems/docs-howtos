@@ -26,11 +26,11 @@ But I want to ensure semantic markup and use HTML heading tags instead:
 
 To generate HTML tags around elements of your **Mobile App** and **Reactive Web App** use the **HTML Element** Widget and define the `Tag` Property. Note that the `Tag` Property must be a constant value.  Use the `Attributes` fields to define HTML attributes.
 
-![HTML Element Tag](images/html-tags-00.png)
+![Screenshot showing the HTML Element Widget with the Tag property set to 'h1' in Service Studio.](images/html-tags-00.png "HTML Element Widget in Service Studio")
 
 To generate HTML tags around elements of your **Traditional Web Application** use a **Container** or **Placeholder** Widget and add `OSTagName` = `"<html_tag>"` as an `Extended Property`, where `<html_tag>` is the HTML tag you want to use. Note that the `OSTagName` `Extended Property` can be a constant or dynamic value. Use the `Extended Properties` fields to define HTML attributes.
 
-![OSTagName](images/html-tags-01.png)
+![Screenshot displaying the Container Widget properties with the OSTagName Extended Property set to 'h1' in Service Studio.](images/html-tags-01.png "Container Widget with OSTagName Extended Property")
 
 Note: When using `OSTagName` it is possible to preview (at design time) the effects of the following HTML tags:
     

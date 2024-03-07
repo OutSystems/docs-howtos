@@ -15,7 +15,7 @@ How can I customize the name and order of columns/Attributes when exporting to a
 For example: I want to export a list of receipts to an Excel file.
 The original list of receipts (`ReciptTable.List`) is fed by the following Aggregate:
 
-![Aggregate](images/customize-excel-00.png?width=1024)
+![Screenshot of the Aggregate configuration showing the original list of receipts with columns for Id, DateTime, ClientName, Name, and Total.](images/customize-excel-00.png "Aggregate Configuration for Receipts")
 
 I want my Excel file to have "Store" (originally "Name"), "Date and Time" (originally "DateTime"), "Customer" (originally "ClientName") and "Order Total" (originally "Total") columns.
 
@@ -51,7 +51,7 @@ To customize the name and order of columns/Attributes when exporting a List to a
 
 After these steps, calling the **ExportReceiptsToExcel** Action will generate an Excel file with the desired column names and order:
 
-![Excel File](images/customize-excel-02.png?width=700)
+![Example of an Excel file with customized column names: Store, Date and Time, Customer, and Order Total.](images/customize-excel-02.png "Customized Excel Export Example")
 
 To enable the download of the Excel file follow this step:
 
@@ -61,4 +61,4 @@ To enable the download of the Excel file follow this step:
     * **File Name**: `"Receipts.xlsx"`
     * (Only for Traditional Web) **Mime-Type**: `"application/x-msexcel"`
 
-![Screen client action to download excel file](images/customize-excel-03-ss.png?width=400)
+![Screenshot of the Download action configuration in the development environment, showing the setup for exporting receipts to an Excel file.](images/customize-excel-03-ss.png "Download Action Configuration")

@@ -35,19 +35,19 @@ You can apply the following steps in Reactive Web, Mobile, and Traditional Web a
 1. Inside your module that contains the Login screen, switch to the **Data** tab.
 You should have a reference to the User entity, located under _(System_).
 
-    ![User Entity](images/users-login-extra-data-tab-user-entity.png)
+    ![Screenshot of the Data tab in OutSystems with the User entity highlighted.](images/users-login-extra-data-tab-user-entity.png "Data Tab Showing User Entity")
 
 1. Add a new Entity, named **UserExtended**.
 
 1. Change the **Id** attribute Data Type to _User Identifier_.
 This creates a 1-to-1 relationship between the User entity and your UserExtension entity.
 
-    ![UserExtension Id attribute](images/users-login-extra-user-extension-id.png)
+    ![Screenshot showing the UserExtended entity with the Id attribute set to User Identifier data type.](images/users-login-extra-user-extension-id.png "UserExtended Entity with User Identifier")
 
 1. Add the attributes needed for your particular use case.
 For instance, add an attribute named **ExpirationDate** with the _Date_ data type.
 
-    ![ExpirationDate attribute](images/users-login-extra-expiration-date.png)
+    ![Screenshot displaying the ExpirationDate attribute added to the UserExtended entity.](images/users-login-extra-expiration-date.png "UserExtended Entity with ExpirationDate Attribute")
 
     The attribute used here is an example.
     [Later on](#create-the-server-side-validation-logic), you will check the expiration date.
@@ -80,7 +80,7 @@ Use the following filter `UserExtension.Id = GetUserId()` to fetch only the data
 
 1. The flow should be similar to:
 
-    ![ValidateUserExpirationDate flow](images/users-login-extra-validateuserexpirationdate-flow.png)
+    ![Flowchart of the ValidateUserExpirationDate server action with logic to check user's expiration date.](images/users-login-extra-validateuserexpirationdate-flow.png "Server Action ValidateUserExpirationDate Flow")
 
     Depending on your specific use case, you can define more complex validations.
     To do that, adapt the server action to match your specific requirements.
@@ -103,13 +103,13 @@ This client action submits the login information to the server by executing the 
 You can find this Server Action in the Logic tab under the Server Actions > Authentication folders.
 </div>
 
-![DoLogin Server Action](images/users-login-extra-dologin.png)
+![Screenshot of the DoLogin server action in the Logic tab of OutSystems.](images/users-login-extra-dologin.png "DoLogin Server Action")
 
 Extending the login logic should be done at the server side, namely inside the _DoLogin_ action.
 
 After the existing User_Login, add another **Run Server Action** to the **ValidateUserExpirationDate** server action created in the previous section.
 
-![DoLogin Extended](images/users-login-extra-dologin-extended.png)
+![Flowchart showing the extended DoLogin server action including the ValidateUserExpirationDate action.](images/users-login-extra-dologin-extended.png "Extended DoLogin Server Action")
 
 <div class="info" markdown="1">
 
@@ -122,7 +122,7 @@ The default login logic is implemented inside the Login screen (located in the I
 
 Add a **Run Server Action** immediately after the User_Login to the **ValidateUserExpirationDate** server action created before.
 
-![Login Screen Action](images/users-login-extra-login-traditional.png)
+![Flowchart of the Traditional Web application login flow with the ValidateUserExpirationDate action.](images/users-login-extra-login-traditional.png "Traditional Web Login Flow")
 
 <div class="info" markdown="1">
 

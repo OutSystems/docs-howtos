@@ -27,11 +27,11 @@ If you don't have an "All Components" solution yet:
 
 1. Under **Factory** -> **Solutions**, click the **New Solution** link.
 
-    ![](images/servicecenter-new-solution.png?width=900)
+    ![Screenshot of the Service Center interface highlighting the 'New Solution' button.](images/servicecenter-new-solution.png "Service Center New Solution Button")
 
 1. Name the solution "All_Components" and click the **Save** button.
 
-    ![](images/servicecenter-create-solution.png?width=600)
+    ![Screenshot showing the 'Create Solution' form with the 'All_Components' name entered and the 'Save' button highlighted.](images/servicecenter-create-solution.png "Service Center Create Solution Form")
 
 ### Adding the components
 
@@ -41,22 +41,22 @@ On the "All Components" solution screen:
 
 1. Click the **Associate All Modules/Extensions** button.
 
-    ![](images/servicecenter-solution-associate-modules.png?width=800)
+    ![Screenshot of the 'All Components' solution screen with the 'Associate All Modules/Extensions' button highlighted.](images/servicecenter-solution-associate-modules.png "Service Center Associate All Modules Button")
 
     For previous versions of Service Center, type "*" and click the **Associate** button:
 
-    ![](images/servicecenter-solution-associate-modules-previous-version.png?width=800)
+    ![Screenshot of the Service Center's previous version interface for associating components with a solution, showing an input field and the 'Associate' button highlighted.](images/servicecenter-solution-associate-modules-previous-version.png "Service Center Associate Components with Solution")
 
 ## Creating a solution for a module and all its dependencies
 
 1. Go to Service Center (`https://<YOUR_ENVIRONMENT>/ServiceCenter`).
 1. Under **Factory** > **Solutions**, click the **New Solution** link
 
-    ![](images/servicecenter-new-solution.png)
+    ![Screenshot of the Service Center interface highlighting the 'New Solution' button.](images/servicecenter-new-solution.png "Service Center New Solution Button")
 
 1. Name the solution and click the **Save** button.
 
-    ![](images/servicecenter-create-solution-all-dependencies.png)
+    ![Screenshot showing the 'Create Solution' form for a module with all dependencies, with the 'Save' button highlighted.](images/servicecenter-create-solution-all-dependencies.png "Service Center Create Solution for Module with Dependencies")
 
 ### Adding the components
 
@@ -64,17 +64,17 @@ On the "All Components" solution screen:
 1. Search for the module name, tick the **include dependencies as component** checkbox.
 1. Click the **Associate** button.
 
-    ![](images/serviceceneter-solution-module.png)
+    ![Screenshot of the 'Associate Components with Solution' section where a specific module is entered and the 'Associate' button is highlighted.](images/serviceceneter-solution-module.png "Service Center Associate Module with Solution")
 
 ### How to use
 
 * Whenever you want to **republish your whole factory**, click the **Publish** button for the "Current Running Version".
 
-    ![](images/servicecenter-solution-publish.png?width=800)
+    ![Screenshot of the 'Versions' tab in Service Center with the 'Publish' button for the 'Current Running Version' highlighted.](images/servicecenter-solution-publish.png "Service Center Publish Solution Button")
 
 * If you want to **deploy the whole solution to another environment** or just download the solution for **troubleshooting** purposes, you can click the **Download** button for the "Current Running Version", or any other version you have created (you can then save the .osp file in your file system).
 
-    ![](images/servicecenter-solution-download.png?width=800)  
+    ![Screenshot of the 'Versions' tab in Service Center with the 'Download' button for the 'Current Running Version' highlighted.](images/servicecenter-solution-download.png "Service Center Download Solution Button")  
 
 The publishing operation by itself doesn't impact application availability at runtime. However, you should consider any possible breaking changes (for example, after an upgrade or update) or broken references as not to impact the applications' behavior.
 

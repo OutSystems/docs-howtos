@@ -18,7 +18,7 @@ Is there a way to reuse screens from Traditional Web Apps in Mobile Apps?
 
 OutSystems recommends migrating the existing functionality by developing it directly in the mobile app. If that's not an option, try integrating existing Traditional Web Screens in Mobile Apps using an iframe that embeds a Traditional Web Screen:
 
-![web screen embedded in a mobile app](images/Embed_Web_Screens_in_Mobile_Apps.png)
+![Diagram showing the process of embedding Traditional Web Screens in Mobile Apps using an iframe.](images/Embed_Web_Screens_in_Mobile_Apps.png "Embedding Web Screens in Mobile Apps")
 
 Do the following:
 
@@ -62,7 +62,7 @@ Create a Block containing an iframe to display the Web Screens as follows:
 
 3. Add an HTML Element to the Block, set the property Tag to `iframe` and add the attribute `class = "internal-frame"`; 
 
-    ![HTML Element in Mobile Screen](images/HTML_Element.png)
+    ![Screenshot of the HTML element configuration with the iframe tag and internal-frame class.](images/HTML_Element.png "HTML Element Configuration")
 
 4. Add a Client Action **FetchIframe** to the Block. On the action **FetchIframe**, add a JavaScript node with a parameter **Source** and associate the parameter of the JavaScript to the input **Source** of the Web Block. Add the following code that fetches the web screen with the appropriate request headers to the JavaScript node: 
 
@@ -84,11 +84,11 @@ Create a Block containing an iframe to display the Web Screens as follows:
     
     The **FetchIframe** action sends correct HTTP headers that protect the request and that allow the **Session_GetMobileAppLoginInfo** action to validate the login information.
 
-    ![Editor with JS code](images/FetchIframe_Action.png)
+    ![Flowchart of the FetchIframe action logic to fetch web screens with appropriate request headers.](images/FetchIframe_Action.png "FetchIframe Action Logic")
 
 5. Define the action **FetchIframe** as the event handler for the events **On Ready** and **On Parameters Changed** of the Block **InternalBrowser**. 
 
-    ![Block properties](images/InternalBrowser_Block_Events.png)
+    ![Screenshot showing the InternalBrowser block's events and their associated actions in the mobile app.](images/InternalBrowser_Block_Events.png "InternalBrowser Block Events")
 
     This ensures that the action **FetchIframe** runs when the Block is shown on the mobile app, as well as when the **Source** parameter changes.
 
@@ -98,7 +98,7 @@ Create a Block containing an iframe to display the Web Screens as follows:
 
 Add an **OnException** handler to the UI Flow that contains the Web Screens that you want to embed in the mobile app. The flow of the **OnException** handles security exceptions and validates if the current end user is already authenticated in the mobile app. If yes, the logic should log in the user automatically in the web app. Add the following logic to the **OnException** handler:
 
-![Logic flow in the OnException action](images/OnException_Handler.png)
+![Flowchart of the OnException handler logic for automatically logging in the end user in the web app.](images/OnException_Handler.png "OnException Handler Flow")
 
 1. Add a **SecurityException** handler to detect requests from end users that aren’t yet logged in; 
 2. Reference the action **Session\_GetMobileAppLoginInfo** from the **PlatformRuntime\_API** extension and use the action to retrieve the login information of the end user from the mobile app; 
@@ -116,4 +116,4 @@ Add an **OnException** handler to the UI Flow that contains the Web Screens that
 
 If the Web Screen to display in the iframe of the mobile app has links back to the mobile app, make sure that the links have the attribute `target = "_top"`. Otherwise you might get a "cascade syndrome", as shown below, because by default the link opens inside the iframe and not in the top window.
 
-![Multiple menus showing the cascading effect](images/Cascade_Syndrome.png)
+![Illustration of a mobile device displaying the 'cascade syndrome' caused by links opening inside an iframe instead of the top window.](images/Cascade_Syndrome.png "Cascade Syndrome Illustration")

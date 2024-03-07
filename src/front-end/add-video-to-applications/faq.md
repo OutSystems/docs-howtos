@@ -24,7 +24,7 @@ There are different ways to add videos to your OutSystems web applications:
 
 For the first two options, use the OutSystems UI Video Pattern where you can add the URL of a video file stored at a web server, or upload a video file to your OutSystems server and use it at a Resource. To learn about these two options refer to the [Video Pattern](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Web_Patterns/Controls/Video) documentation.
 
-![Video UI Pattern](images/video-ui-pattern.png)
+![Screenshot of the OutSystems UI Video Pattern interface.](images/video-ui-pattern.png "OutSystems UI Video Pattern")
 
 
 ## How to Embed Video Streaming  { #how-to-embed-video-streaming }
@@ -37,17 +37,17 @@ If you want to embed a video from a streaming platform like YouTube, Vimeo, or o
 
 1. Copy the source video path for embedding:
 
-    ![](images/youtube-embed-code.png)
+    ![Image showing the YouTube embed code dialog with the iframe code highlighted.](images/youtube-embed-code.png "YouTube Embed Code")
 
 1. Write down the video *width* and *height* in case you want to use the default video size:
 
-    ![](<images/youtube-embed-code-details.png?width=350>)
+    ![Close-up of the YouTube embed code highlighting the width and height attributes.](images/youtube-embed-code-details.png "YouTube Embed Code Details")
 
 1. In the Interface tab of Service Studio, drag the [Iframe](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Web_Patterns/Utilities/Iframe) block from the Toolbox into your application's screen.
 
 1. At the Properties tab paste the embed URL into the SourceURL field.
 
-    ![](<images/iframe-source-url.png>)
+    ![Screenshot of the OutSystems Service Studio interface showing where to paste the YouTube embed URL in the Iframe properties.](images/iframe-source-url.png "Iframe Source URL")
 
 1. Type the video title. This field is optional.
 

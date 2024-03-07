@@ -18,7 +18,7 @@ For example: I created a pop-up window using Popup_Editor with a TableRecords; t
 
 To make a pop-up **automatically grow** according to its contents, set the `AutoResize` property from the Popup_Editor to `True`.
 
-![Pop-up AutoResize](images/popup-autoresize-true.png)
+![Screenshot showing the AutoResize property of the Popup Editor set to True.](images/popup-autoresize-true.png "Popup Editor AutoResize Property Set to True")
 
 The `AutoResize` property only affects the automatic growth of the pop-up window.
 -To make the pop-up **automatically shrink** according to its contents, follow these steps:
@@ -45,7 +45,7 @@ The `AutoResize` property only affects the automatic growth of the pop-up window
 
 1. Add the **RunJavaScript** action from the **HTTPRequestHandler** extension and set the `Script` property set as `"PopupEditor_ForceResize()"` to **every action** that makes your popup contents shrink.
 
-     ![](images/popup-runjavascript.png)
+     ![Screenshot of the RunJavaScript action with the Script property set to 'PopupEditor_ForceResize()'.](images/popup-runjavascript.png "RunJavaScript Action Configuration")
 
      This will call the **PopupEditor_ForceResize()** JavaScript action. 
      

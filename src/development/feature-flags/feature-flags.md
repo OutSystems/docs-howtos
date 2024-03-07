@@ -21,7 +21,7 @@ Before making any changes in your app, you must create a role for the users to w
 
 Add a new role to your application:
 
-![](images/fun-with-feature-flags-live-mobile-apps_01.png)
+![Context menu in OutSystems with 'Add Role' option highlighted.](images/fun-with-feature-flags-live-mobile-apps_01.png "Adding a New User Role in OutSystems")
 
 ### Step 2: Create a Function from a Client Action to Verify the Role
 
@@ -32,7 +32,7 @@ Here’s how to create this function:
     ```$parameters.<YOUR OUTPUT PARAMETER> = $public.Security.checkIfCurrentUserHasRole($roles.<YOUR ROLE>);```
 1. Assign the Javascript output parameter to the output parameter function.
 
-    ![](images/fun-with-feature-flags-live-mobile-apps_02_new.png)
+    ![OutSystems development environment showing the creation of a role-check function.](images/fun-with-feature-flags-live-mobile-apps_02_new.png "Creating a Role-Check Function in OutSystems")
 
     You can now create new content.
 
@@ -40,7 +40,7 @@ Here’s how to create this function:
 
 Our example is a travel app with a home screen that we want to change. This is a total visual overhaul, which calls for a completely different screen. To do this screen, you’ll need to create a new role, assign that role to the users who will test the new screen, and add a bit of logic to the login. At a high-level, this is how it looks.
 
-![](images/fun-with-feature-flags-live-mobile-apps_03.png)
+![Flowchart depicting the login process and role check leading to different home screens based on user role.](images/fun-with-feature-flags-live-mobile-apps_03.png "Feature Toggle Flow for New Home Screen in OutSystems")
 
 All you have to do is follow these steps.
 
@@ -48,21 +48,21 @@ All you have to do is follow these steps.
 
 Create your new screen, add all the desired elements to it, and in the screen parameters, make it available only for the role you have created:
 
-![](images/fun-with-feature-flags-live-mobile-apps_04.png)
+![OutSystems development environment with a new home screen design for a travel app.](images/fun-with-feature-flags-live-mobile-apps_04.png "New Home Screen Creation in OutSystems")
 
 
 ### Step 2: Add the Role Verification in the Login
 
 In the login flow, add an if pattern to verify the role. Depending on the answer, redirect the user to the corresponding screen. Press the 1-Click Publish button.
 
-![](images/fun-with-feature-flags-live-mobile-apps_05_new.png)
+![OutSystems development environment showing the login flow with role verification logic.](images/fun-with-feature-flags-live-mobile-apps_05_new.png "Role Verification in Login Flow in OutSystems")
 
 
 ### Step 3: Assign the Role to Users
 
 Now that you have your new screen ready to showcase, go to the Users app, and assign your key users to the newly created role.
 
-![](images/fun-with-feature-flags-live-mobile-apps_06.png)
+![OutSystems Users application interface showing the assignment of a role to a user.](images/fun-with-feature-flags-live-mobile-apps_06.png "Assigning a Role to Users in OutSystems")
 
 And that’s it! Now the users you assigned to your newly created role just need to log out and log in again to have access to a completely new screen.
 
@@ -72,7 +72,7 @@ And that’s it! Now the users you assigned to your newly created role just need
 
 Changing an existing screen instead of adding a new one is as easy as adding an "if."
 
-![](images/fun-with-feature-flags-live-mobile-apps_07.png)
+![OutSystems development environment showing an 'If' condition added to a screen for feature toggling.](images/fun-with-feature-flags-live-mobile-apps_07.png "Adding an If Condition to Change a Screen in OutSystems")
 
 Here’s how to do it.
 
@@ -80,7 +80,7 @@ Here’s how to do it.
 
 Drag and drop an If condition into your screen. Add your existing elements to false; to true, add new elements.
 
-![](images/fun-with-feature-flags-live-mobile-apps_08_new.png)
+![OutSystems development environment with an 'If' condition to toggle between old and new UI elements.](images/fun-with-feature-flags-live-mobile-apps_08_new.png "Implementing Feature Toggle for UI Elements in OutSystems")
 
 ### Step 2: Attribute the Check Roles Function to the Condition for the New If
 
@@ -90,7 +90,7 @@ In the **If** details, put your check roles function as the condition to be eval
 
 Now that you have your UI ready to showcase, go to the Users app and assign your key users to the newly created role.
 
-![](images/fun-with-feature-flags-live-mobile-apps_06.png)
+![OutSystems Users application interface showing the assignment of a role to a user.](images/fun-with-feature-flags-live-mobile-apps_06.png "Assigning a Role to Users in OutSystems")
 
 And that’s it! Now the users with different roles will see different screens.
 
@@ -103,7 +103,7 @@ If you want to make a new feature available to some of your users and it require
 
 Drag and drop an **If** condition into your screen. To false, add your existing elements; to true, add the new elements.
 
-![](images/fun-with-feature-flags-live-mobile-apps_09_new.png)
+![OutSystems development environment showing an 'If' condition for adding a new UI feature.](images/fun-with-feature-flags-live-mobile-apps_09_new.png "Adding a New UI Feature with an If Condition in OutSystems")
 
 ### Step 2: Attribute the Check Roles Function to the Condition for the New If
 
@@ -113,7 +113,7 @@ In the details for **If**, put your check roles function as the condition to be 
 
 Now that you have your UI ready to showcase, go to the Users app and assign your key users to the newly created role.
 
-![](images/fun-with-feature-flags-live-mobile-apps_06.png)
+![OutSystems Users application interface showing the assignment of a role to a user.](images/fun-with-feature-flags-live-mobile-apps_06.png "Assigning a Role to Users in OutSystems")
 
 
 And that’s it! Now the users with different roles will see a different UI.
@@ -128,6 +128,6 @@ If you create a new button that leads to a new feature, as long as the OnClick a
 
 Play around with your applications as you like. In our example, we went from:
 
-![](images/fun-with-feature-flags-live-mobile-apps_10_new.png)
+![Comparison of old and new home pages and lists in a mobile app after implementing feature toggles.](images/fun-with-feature-flags-live-mobile-apps_10_new.png "Before and After Screenshots of Feature Toggle Implementation")
 
 Your old and new home pages and lists can live together until you decide to make your changes available to everyone. Then you just remove your If condition from the flows and redirect to your new assets. It's really is that easy.

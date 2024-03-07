@@ -47,7 +47,7 @@ If you are using a local resource, follow the steps below. You only need to migr
 
 1. Delete the old **data-trans** IDs of the translations, as you don't need them anymore. The figure below shows an example of one of these IDs.
 
-    ![Translation IDs to delete](images/multilingual-ids-to-delete.png?width=750)
+    ![Screenshot of OutSystems Service Studio highlighting the data-trans attribute in the properties panel that needs to be deleted.](images/multilingual-ids-to-delete.png "OutSystems Service Studio showing data-trans IDs to delete")
 
 ### Migrating translations using a list { #migrateusinglist }
 
@@ -57,7 +57,7 @@ You have two ways to view the translated data on an entity:
 
 * On Service Studio, by right-clicking the **AppTranslations** entity and selecting **View Data**.
 
-    ![View data list](images/multilingual-migration-data-list.png)
+    ![Screenshot showing the context menu in OutSystems Service Studio with the option to 'View Data' for the AppTranslations entity.](images/multilingual-migration-data-list.png "Viewing translation data in Service Studio")
 
 * On an exported Excel file containing the translations. To export the translations to Excel follow the [How to export entity data to Excel](../../data/export-entity-data-excel/faq.md) document.
 
@@ -91,7 +91,7 @@ To find where the used actions are, do the following steps:
 
 1. Select a client action and click the F12 key on your keyboard. A search area appears with the usages of that client action on your application.
 
-    ![Multilingual client actions](images/multilingual-client-actions.png)
+    ![Screenshot of OutSystems Service Studio displaying the search results for usages of the 'AddTranslationsFromResource' client action.](images/multilingual-client-actions.png "Finding client action usages in OutSystems")
 
 ### Switching locales using the new Multilingual
 
@@ -105,7 +105,7 @@ The final procedure is to remove the Multilingual plugin reference from your app
 
 1. Uncheck the Multilingual dependency.
 
-    ![Removing the Multilingual dependency](images/multilingual-remove-dependency.png)
+    ![Screenshot of the Manage Dependencies window in OutSystems Service Studio with the Multilingual dependency unchecked.](images/multilingual-remove-dependency.png "Removing Multilingual dependency in OutSystems")
 
 1. Click **APPLY** to remove the Multilingual dependency.
 

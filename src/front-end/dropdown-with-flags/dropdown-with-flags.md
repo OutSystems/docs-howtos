@@ -27,7 +27,7 @@ To setup the list of countries in your app, follow these steps:
 
 1. In **Service Studio**, go to the **Data** tab, right-click the **Entities** folder, and select **Add Static Entity to Database**.
 
-    ![](images/countrydropdown001-ss.png)
+    ![Screenshot showing the option to add a static entity to the database in Service Studio.](images/countrydropdown001-ss.png "Adding a Static Entity to Database")
 
 1. Rename the entity to `Country`.
 
@@ -35,13 +35,13 @@ To setup the list of countries in your app, follow these steps:
 
 1. On the **Properties** tab, set the **Data Type** to **Text**.
 
-    ![](images/countrydropdown002-ss.png)
+    ![Screenshot highlighting the data type selection for a new entity attribute in Service Studio.](images/countrydropdown002-ss.png "Setting Data Type for Entity Attribute")
 
 1. Add a new entity attribute, name it `DialInCode`, and set it's data type to **Integer**. 
 
 After completing these steps, this is the expected outcome:
 
-![](images/countrydropdown003-ss.png)
+![Screenshot of the static entity attributes including FlagURL and DialInCode in Service Studio.](images/countrydropdown003-ss.png "Static Entity Attributes Overview")
 
 ## Add the countries data to the entity { #country-data }
 
@@ -49,7 +49,7 @@ To add the countries data to the static entity, follow these steps:
 
 1. Right-click the **Country** static entity and select **Add Record**.
 
-    ![](images/countrydropdown004-ss.png)
+    ![Screenshot showing the option to add a new record to the static entity in Service Studio.](images/countrydropdown004-ss.png "Adding a New Record to Static Entity")
 
 1. Name the new record with the name or abbreviation of the country's name, for example `USA`.
 
@@ -57,7 +57,7 @@ To add the countries data to the static entity, follow these steps:
 
     1. Set **Label** to the country's name, for example `United States of America`.
 
-    1. Set **FlagURL** to a URL with the country's flag. Wikipedia can be a good source for the flag image URL. In this case, you can set **FlagURL** to  `<https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/16px-Flag_of_the_United_States.svg.png>`.
+    1. Set **FlagURL** to a URL with the country's flag. Wikipedia can be a good source for the flag image URL. In this case, you can set **FlagURL** to  `https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/16px-Flag_of_the_United_States.svg.png`.
 
     1. Set **DialInCode** to the country's dial in code, for example `1`.
 
@@ -75,7 +75,7 @@ To get the data from the static entity, follow these steps:
 
 1. Select the Country static entity.
 
-    ![](images/countrydropdown005-ss.png)
+    ![Screenshot showing the option to fetch data from the database in a Service Studio screen.](images/countrydropdown005-ss.png "Fetching Data from Database")
 
 To use the dropdown search pattern, follow these steps:
 
@@ -85,11 +85,11 @@ To use the dropdown search pattern, follow these steps:
 
 1. On the **Properties** tab, click the **OptionsList** dropdown and select **Expression Editor**.
 
-    ![](images/countrydropdown006-ss.png)
+    ![Screenshot showing the OptionsList property of the Dropdown Search widget in Service Studio.](images/countrydropdown006-ss.png "Dropdown Search Options List")
 
 1. In the Expression Editor dialog, in the list of elements in Scope, expand the **GetCountries** aggregate and double-click the **List** element to select it.
 
-    ![](images/countrydropdown007-ss.png)
+    ![Screenshot of the Expression Editor dialog with the List element from the GetCountries aggregate highlighted.](images/countrydropdown007-ss.png "Selecting List Element in Expression Editor")
 
 To map the data in the aggregate to what is shown in the dropdown, follow these steps:
 
@@ -101,7 +101,7 @@ To map the data in the aggregate to what is shown in the dropdown, follow these 
 
 1. In the **Events** section of the properties panel, for the **OnChanged** event, open the **Handler** dropdown and choose **New Client Action**.
 
-    ![](images/countrydropdown008-ss.png)
+    ![Screenshot showing the process of creating a new client action for the OnChanged event in Service Studio.](images/countrydropdown008-ss.png "Creating New Client Action for OnChanged Event")
 
     <div class="info" markdown="1">
 

@@ -12,11 +12,11 @@ By default, EPA Taskbox is displayed in all screens in all applications. It is h
 
 You can configure EPA Taskbox preferences on your server by going to `http://<server url>/EPA_Taskbox/`. There, you'll find the EPA administration web screen where you can activate the EPA administration:
 
-![image alt text](images/How-to-configure-EPA-taskbox-preferences_0.png)
+![Screenshot of the EPA Taskbox activation screen with a button to activate EPA Administration.](images/How-to-configure-EPA-taskbox-preferences_0.png "EPA Taskbox Activation Screen")
 
 After activating the EPA Administration, you'll have a configuration page where you can set the applications where you want to have EPA taskbox to be shown:
 
-![image alt text](images/How-to-configure-EPA-taskbox-preferences_1.png)
+![Screenshot showing the EPA Administration configuration screen with options to hide or show EPA on selected eSpaces.](images/How-to-configure-EPA-taskbox-preferences_1.png "EPA Administration Configuration Screen")
 
-![image alt text](images/How-to-configure-EPA-taskbox-preferences_2.png)
+![Screenshot displaying a success notification indicating EPA was activated for the selected eSpaces/tenants.](images/How-to-configure-EPA-taskbox-preferences_2.png "EPA Administration Success Notification")
 

@@ -16,7 +16,7 @@ To create a process or tool to move data between different OutSystems environmen
 
 The following diagram shows the relationships between Applications, Espaces, Modules, and Extensions.
 
-![Relationships between Applications, Espaces, Modules, and Extensions](images/relationships-applications-espaces-modules-extensions.png?\width=750)
+![](images/relationships-applications-espaces-modules-extensions.png?\width=750)
 
 The records for the entities in the diagram above can be generated from the following sources:
 

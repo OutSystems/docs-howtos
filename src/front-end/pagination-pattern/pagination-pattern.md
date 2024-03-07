@@ -44,7 +44,7 @@ Now you need to add some logic in the block.
 
 Your screen should now look like this:
 
-![FullPagination Input Parameters](images/fullpagination-input-parameters-ss.png)
+![Screenshot of the FullPagination block's input parameters in the development environment.](images/fullpagination-input-parameters-ss.png "FullPagination Input Parameters")
 
 Finally, we need to place the elements on the block's widget tree, so follow these steps:
 
@@ -62,7 +62,7 @@ Finally, we need to place the elements on the block's widget tree, so follow the
 
 Your screen should look like this:
 
-![Placeholder](images/pagination-placeholder-ss.png)
+![Screenshot showing the setup of the Pagination placeholder within the FullPagination block.](images/pagination-placeholder-ss.png "Pagination Placeholder Setup")
 
 Be sure to include the following CSS in the Theme's module or this block's style sheet
 
@@ -131,8 +131,8 @@ To use the custom pattern you just created on app, follow these steps:
 
 Your screen should be like this:
 
-![FullPagination properties](images/fullpagination-properties-ss.png)
+![Screenshot of the FullPagination block properties set on a screen in the development environment.](images/fullpagination-properties-ss.png "FullPagination Properties")
 
 When used, your pattern should behave like this:
 
-![Final screen](images/screen.png)
+![User interface of an Order List screen with a custom pagination dropdown to select the number of records per page.](images/screen.png "Custom Pagination in Action")

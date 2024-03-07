@@ -13,7 +13,7 @@ In your Traditional Web app, you can set the value of an input depending on the 
 
 For example, a form can include two date inputs ("From" and "To") and the "To" date can automatically change to one day after the "From" date.
 
-!["From" and "To" Inputs](images/dyn-input-00.png)
+![Screenshot of the initial state of 'From' and 'To' date input widgets before setting dynamic values.](images/dyn-input-00.png "Initial Date Input Widgets")
 
 Both "From" and "To" dates are set using **Input** widgets (assigned to Variables `TestDate.From` and `TestDate.To`) associated with **Input Calendar** RichWidgets.
 
@@ -21,15 +21,15 @@ To dynamically set the "To" date to one day after the "From" date follow these s
 
 1. Enclose the "To" **Input** widget and **Input Calendar** RichWidget in a **Container** and name it `ToWrapper`.
 
-    ![ToWrapper](images/dyn-input-01.png)
+    ![Screenshot highlighting the 'To' input widget and Input Calendar RichWidget enclosed within a 'ToWrapper' container.](images/dyn-input-01.png "Container Encapsulation")
 
 1. Set the **On Change**>**Destination** property of the "From" date **Input** widget to a newly created **Action**, in this case `UpdateToDate`.
 
-    ![On Change Handler](images/dyn-input-02.png)
+    ![Screenshot showing the properties of the 'From' date input widget with the 'On Change' destination set to 'UpdateToDate' action.](images/dyn-input-02.png "Setting On Change Destination")
 
 1. Add an **Assign** node to the **UpdateToDate** action with the assignment `TestDate.To=AddDays(TesDate.From,1)`.
 
-    ![Assign](images/dyn-input-03.png)
+    ![Screenshot of the 'Assign' node in the 'UpdateToDate' action with the assignment to add one day to the 'From' date.](images/dyn-input-03.png "Assign Node Configuration")
 
     This assignment updates the "To" date and defines it as the "From" date plus one day.
 
@@ -37,8 +37,8 @@ To dynamically set the "To" date to one day after the "From" date follow these s
 
     The Screen Action should look similar to the following image:
 
-    ![UpdateToDate Action](images/dyn-input-04.png)
+    ![Screenshot of the 'UpdateToDate' action flow with an 'Ajax Refresh' node targeting the 'ToWrapper' widget.](images/dyn-input-04.png "Ajax Refresh Setup")
 
 After these steps the "To" date changes to one day after the "From" date every time the end user modifies the "From" date.
 
-![Dynamic Inputs GIF](images/dyn-input-05.gif)
+![Animated GIF demonstrating the dynamic update of the 'To' date input when the 'From' date is changed.](images/dyn-input-05.gif "Dynamic Input Update in Action")

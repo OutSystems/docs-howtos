@@ -24,7 +24,7 @@ Use a SQL node to save nulls to the database. You can build code generic enough 
 
 In the example below, a SQL node has two inputs. ActivityNotes is a text input with the property Expand Inline defined to yes. This means that the value of ActivityNotes input will be injected directly into the query.
 
-![image alt text](images/How-to-insert-a-null-value-into-a-database-record_0.png)
+![Screenshot of an OutSystems SQL node configuration showing parameters and query setup.](images/How-to-insert-a-null-value-into-a-database-record_0.png "SQL Node Configuration")
 
 To pass data to the query parameter ActivityNodes, check if the value:
 
@@ -36,7 +36,7 @@ To pass data to the query parameter ActivityNodes, check if the value:
 Use EncodeSql() to avoid SQL injection on query parameters with Expand Inline.
 </div>
 
-![image alt text](images/How-to-insert-a-null-value-into-a-database-record_1.png)
+![Code snippet for handling null values in an SQL query parameter in OutSystems.](images/How-to-insert-a-null-value-into-a-database-record_1.png "SQL Query Parameter Code")
 
 This way you can build the code generic enough for different DBMS, and you are avoiding business logic inside the query.
 

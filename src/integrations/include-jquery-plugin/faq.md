@@ -38,11 +38,11 @@ As an alternative, you could import the files as direct resources of your module
 
 The image shows the structure of the web block.
 
-![](images/How-to-include-a-jQuery-plugin_0.png)
+![Screenshot showing the structure of a web block designed to encapsulate a jQuery carousel plugin within OutSystems.](images/How-to-include-a-jQuery-plugin_0.png "Web Block Structure for jQuery Carousel Plugin")
 
 The image below shows the CSS styles of a carousel as the style sheet of the web block.
 
-![](images/How-to-include-a-jQuery-plugin_1.png)
+![Image displaying the CSS styles for a carousel component within a web block in OutSystems.](images/How-to-include-a-jQuery-plugin_1.png "Carousel CSS Styles in Web Block")
 
 Finally, use an un-escaped expression at the end of the web block to start the jQuery code, based on an example from the carousel documentation.
 
@@ -53,7 +53,7 @@ To pass the 'id' attribute of the container to jQuery:
 
 As an alternative, the carousel could be based on a unique CSS class instead of an id attribute.
 
-![image alt text](images/How-to-include-a-jQuery-plugin_2.png)
+![Code snippet showing how to activate a jQuery carousel using an un-escaped expression in OutSystems.](images/How-to-include-a-jQuery-plugin_2.png "Activating jQuery Carousel with JavaScript")
 
 However, the 'rcarousel' plugin uses jQuery. There are two alternatives to include jQuery:
 
@@ -62,7 +62,7 @@ However, the 'rcarousel' plugin uses jQuery. There are two alternatives to inclu
 
 The example below shows a web block importJquery with the contents of jQuery.js pasted as the Javascript of the block.
 
-![image alt text](images/How-to-include-a-jQuery-plugin_3.png)
+![Example of a web block containing the jQuery.js script to be used with the rcarousel jQuery plugin in OutSystems.](images/How-to-include-a-jQuery-plugin_3.png "Importing jQuery in a Web Block")
 
 <div class="warning" markdown="1">
 

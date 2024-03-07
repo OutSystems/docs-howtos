@@ -27,19 +27,19 @@ You can always change the behavior of the Excel bootstrap operation to handle en
 
 In our Excel spreadsheet, we have added a column that registers the expense status, either approved or rejected.
 
-![Excel spreadsheet with the list of expenses](images/expenses-excel.png)
+![Screenshot of an Excel spreadsheet with columns for Description, Value, and ExpenseStatus showing entries for Gas, Lunch, and Lunch with corresponding values and statuses.](images/expenses-excel.png "Excel Spreadsheet with Expense Status")
 
 When update the action to bootstrap data from the excel by selecting the entity advanced option, we can see that the new column won't be included in the bootstrap action. 
 
-![](images/entity-update-bootstrap.png)
+![Dialog window showing the update action to bootstrap data from Excel with the new ExpenseStatus column highlighted as not included in the bootstrap action.](images/entity-update-bootstrap.png "Bootstrap Action Update Dialog")
 
 So, we need to manually add a new column ExpenseStatus to the Excel_Expenses structure (previously created by the scaffolding mechanism).
 
-![](images/expense-excel-structure.png)
+![OutSystems structure showing the Excel_Expenses entity with attributes Description, Value, and the newly added ExpenseStatus.](images/expense-excel-structure.png "Excel Expenses Structure in OutSystems")
 
 Now we need to update the bootstrap action to handle the new column. The bootstrap timer is on the Processes tab, which maps to the actual action on the Logic tab.
 
-![](images/timer-action.png?width=600)
+![OutSystems interface showing the Processes tab with the BootstrapExpenses timer and the Logic tab with the corresponding action.](images/timer-action.png "Bootstrap Timer and Action Mapping")
 
 Now we need to convert the label that we get from Excel into an actual identifier.
 
@@ -47,11 +47,11 @@ Now we need to convert the label that we get from Excel into an actual identifie
 
 * We configure a 1 minute cache on the aggregate to avoid repeated queries during the record loop.
 
-![](images/expense-status-by-label.png)
+![Flowchart in OutSystems showing the ConvertFromExcel process with a GetExpenseStatusesByLabel aggregate to convert status labels from Excel to identifiers.](images/expense-status-by-label.png "Expense Status Aggregate Configuration")
 
 After getting the correct identifier, we just need to add the ExpenseStatusId to the assign operation. All the columns of the Excel worksheet are now correctly mapped and stored into the entity record.
 
-![](images/expense-record-assign.png)
+![OutSystems Assign node showing the mapping of Excel worksheet columns to the entity record with the ExpenseStatusId highlighted.](images/expense-record-assign.png "Expense Record Assignment in OutSystems")
 
 <div class="info" markdown="1">
 

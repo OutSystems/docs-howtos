@@ -16,6 +16,6 @@ How can I get the timestamp of the last sent email?
 
 To check the timestamp of sent emails at runtime in your Application reference the **Systems** Entities **Sent\_Email** and **Email\_Status** and use the **Sent** Date Time Attribute from the **Email\_Status** Entity. 
 
-![](images/email-sent-00.png)
+![Diagram showing the relationship between Email_Content, Email_Definition, Sent_Email, and Email_Status entities in the system database.](images/email-sent-00.png "Email Entities Relationship Diagram")
 
 You can also check the timestamp of sent emails in Service Center in the **Email Log** screen of the **Monitoring** Tab.

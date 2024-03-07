@@ -18,7 +18,7 @@ For example: I set the Layout **Height** property to **100px** so all values are
 
 1. Drag the **List Box** widget into the **Main Content** area of your screen.
 
-    ![Drag widget onto screen](images/hide-scrollbar-listbox-2-ss.png)
+    ![Screenshot showing the List Box widget being dragged into the Main Content area.](images/hide-scrollbar-listbox-2-ss.png "Dragging List Box Widget")
 
 1. Select the **Styles** tab, and add the following style properties to the **Style Properties Applied** text box:
 
@@ -27,7 +27,7 @@ For example: I set the Layout **Height** property to **100px** so all values are
 
     `overflow-y: hidden` disables the scroll bar and  `background-image: none` removes the down arrow.
 
-    ![Style Properties Applied](images/hide-scrollbar-listbox-1-ss.png)
+    ![Screenshot of the Styles tab with style properties 'overflow-y: hidden' and 'background-image: none' added to hide the scroll bar.](images/hide-scrollbar-listbox-1-ss.png "Adding Style Properties")
 
     **Note**: Height is already set to 100px.
 
@@ -35,8 +35,8 @@ For example: I set the Layout **Height** property to **100px** so all values are
 
 **Before**
 
-![List Box with scroll bar](images/hide-scrollbar-listbox-3-ss.png)
+![Before screenshot displaying a List Box with a visible vertical scroll bar.](images/hide-scrollbar-listbox-3-ss.png "List Box with Scroll Bar")
 
 **After**
 
-![List Box without scroll bar](images/hide-scrollbar-listbox-4-ss.png)
+![After screenshot showing a List Box with the scroll bar hidden after applying the CSS styles.](images/hide-scrollbar-listbox-4-ss.png "List Box without Scroll Bar")

@@ -48,4 +48,4 @@ The script monitors the keys that the user presses in the input. If the script d
 
 In the end, you should have something similar to the example below:
 
-![](images/How-to-have-multiline-inputs-in-Editable-Table-0.png)
+![Screenshot of an Editable Table with a Text Area and a JavaScript Expression to allow multiline input.](images/How-to-have-multiline-inputs-in-Editable-Table-0.png "Editable Table with Text Area and JavaScript Expression")

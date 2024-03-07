@@ -22,7 +22,7 @@ To archive old Processes follow these steps:
 
 1. Create a separate set of Entities that mirror the BPT meta-model. Use this mirror set of Entities to store old Processes before deleting them. 
 
-    ![BPTModel](images/BPTModel.png)
+    ![Diagram showing the BPT meta-model with entities such as Process, Activity, Process_Input, and Process_Output.](images/BPTModel.png "BPT Meta-Model Diagram")
 
     <div class="info" markdown="1">    
     If you have any Entities that reference parts of the BPT meta-model you also need to archive them or to keep track of the changes in the Entities and Foreign Keys of the archived Processes.  

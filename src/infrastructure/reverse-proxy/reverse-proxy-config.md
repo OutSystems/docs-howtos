@@ -27,7 +27,7 @@ Applies only to **Traditional Web Apps**
 
 This occurs at a reverse proxy level. It translates the Internet exposed address into the internal application address.
 
-![request header manipulation](images/reverse-proxy-config-header-diag.png)
+![Diagram illustrating request header manipulation in a reverse proxy configuration, showing the translation from 'myapp.com' to 'server.local/myapp'.](images/reverse-proxy-config-header-diag.png "Request Header Manipulation Diagram")
 
 To the Internet, your application is known and reachable by the address `myapp.com`. However, it’s served as `server.local/myapp` by the application server.
 
@@ -55,7 +55,7 @@ OutSystems applications can reference content outside the application context UR
 
 The image below shows the **myapp** application, and the **Richwidgets** and **EPA_Taskbox** references also exposed.
 
-![referenced content exposure](images/reverse-proxy-config-ref-content-exposure-diag.png)
+![Diagram showing the exposure of referenced content such as 'RichWidgets' and 'EPA_Taskbox' in a reverse proxy setup.](images/reverse-proxy-config-ref-content-exposure-diag.png "Referenced Content Exposure Diagram")
 
 Depending on the level of URL manipulation, these references may also need the following:
 
@@ -74,11 +74,11 @@ When serving secure applications through a reverse proxy, OutSystems supports th
 
 * **End-to-End SSL**: Encrypting the communication end-to-end. This can be done by installing an SSL certificate in every OutSystems application server, and also in the reverse proxy. It can be the same certificate if it is multi-server or wildcard.
 
- ![referenced content exposure](images/reverse-proxy-config-ssl-end-to-end-diag.png)
+ ![Diagram depicting end-to-end SSL encryption in a reverse proxy scenario, with SSL certificates on both the reverse proxy and OutSystems front-end.](images/reverse-proxy-config-ssl-end-to-end-diag.png "End-to-End SSL Configuration Diagram")
 
 * **SSL Offload**: Install an SSL certificate in the reverse proxy. This keeps the traffic unencrypted between the reverse proxy and the internal application servers. It also removes the need to manage certificates in each application server. This technique is called SSL offloading.
 
-    ![referenced content exposure](images/reverse-proxy-config-ssl-offload-diag.png)
+    ![Diagram illustrating SSL offloading at the reverse proxy, with unencrypted traffic between the reverse proxy and the internal application servers.](images/reverse-proxy-config-ssl-offload-diag.png "SSL Offloading Configuration Diagram")
 
 In **SSL Offload** scenarios, two configurations need to be applied:
 
@@ -128,11 +128,11 @@ Typical reverse proxies only manipulate HTTP headers. They don’t parse web res
 
 In OutSystems applications, a resource URL like CSS or JavaScript is generated from the request host header plus the application context.
 
-![resource URL](images/reverse-proxy-config-rsc-url-diag.png)
+![Diagram explaining how a resource URL is generated from the request host header and application context in OutSystems applications.](images/reverse-proxy-config-rsc-url-diag.png "Resource URL Generation Diagram")
 
 In the example below, the URL for the application is to be changed by adding an extra path “apps” after the request host header. This scenario is used when there is a requirement to serve several applications under a common path.
 
-![resource URL](images/reverse-proxy-config-rsc-extra-path-diag.png)
+![Diagram showing the addition of an extra path 'apps' to the resource URL in a reverse proxy configuration.](images/reverse-proxy-config-rsc-extra-path-diag.png "Resource URL with Extra Path Diagram")
 
 This change will invalidate all absolute URLs in the resources (HTML, CSS and JavaScript).
 

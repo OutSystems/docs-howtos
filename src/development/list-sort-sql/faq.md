@@ -20,7 +20,7 @@ To enable the dynamic sorting in a Table that has a SQL query as the data source
 
 1. To create a new action to handle the On Sort event of the Table, select the **Table** and add a **(New On Sort Client Action)** to the **On Sort** event.
 
-    ![handle on sort event](images/add-on-sort-event-ss.png)
+    ![Screenshot showing the process of adding a new On Sort Client Action to a table in Service Studio.](images/add-on-sort-event-ss.png "Adding On Sort Client Action")
 
     Selecting **(New On Sort Client Action)** on the **On Sort** event also adds two Local Variables, **TableSort** and **StartIndex**.
 
@@ -30,7 +30,7 @@ To enable the dynamic sorting in a Table that has a SQL query as the data source
 
 1. In the new **OnSort** action flow, set the **Data Source** of the **Refresh Data** element to the **Data Action** that contains the **SQL** query that feeds data to your Table.
 
-    ![refresh data source](images/set-refresh-data-source-ss.png)
+    ![Screenshot illustrating how to set the data source of the Refresh Data element to a SQL query in Service Studio.](images/set-refresh-data-source-ss.png "Setting Refresh Data Source")
 
 1. Add a **Query Parameter** to the **SQL** query, set the **Name** to `SortForSQL` and set the **Expand Inline** property to `Yes`.
 
@@ -38,11 +38,11 @@ To enable the dynamic sorting in a Table that has a SQL query as the data source
 
 1. Add the SQL snippet `ORDER BY @SortForSQL` to your **SQL** query.
 
-    ![order by query parameter](images/order-by-query-parameter-ss.png)
+    ![Screenshot displaying the addition of an ORDER BY clause with a query parameter in a SQL query.](images/order-by-query-parameter-ss.png "SQL Query Order By Parameter")
 
 1. Create a new **Function**, `EncodingSortForSQL`, to encode the TableSort variable used by the OnSort action to a format that's usable by a SQL query.
 
-    ![refresh data source](images/create-new-function-encode-ss.png)
+    ![Screenshot showing the creation of a new function to encode the sort attribute for SQL queries.](images/create-new-function-encode-ss.png "Creating New Function for Encoding")
 
     To create this Function, do the following:
 
@@ -101,7 +101,7 @@ To enable the dynamic sorting in a Table that has a SQL query as the data source
 
 1. In the **OnSort** action flow, set the **SortForSQL** parameter of your **SQL** query to `EncodingSortforSQL(TableSort)`.
 
-    ![set sql parameter](images/set-sql-parameter-ss.png)
+    ![Screenshot demonstrating how to set the SortForSQL parameter in a SQL query using the EncodingSortForSQL function.](images/set-sql-parameter-ss.png "Setting SQL Query Parameter")
 
 ## In Traditional Web
 
@@ -115,13 +115,13 @@ You can dynamically sort a Table Records fed by a **SQL** query using the List S
 
 1. Define the `SORT` Parameter of your **SQL** query as `List_SortColumn_GetOrderBy(<TableRecordsName>.Id,DefaultOrder:"{<Entity>}.[<Attribute>]")`, where `DefaultOrder:"{<Entity>}.[<Attribute>]"` defines that by default the **SQL** query will be sorted ascendantly by Attribute `<Attribute>` (of the Entity `<Entity>`), and `<TableRecordsName>` is the name of the Table Records.
 
-    ![SORT query Parameter](images/list-sort-sql-02.png)
+    ![Screenshot showing the definition of the SORT parameter in a SQL query using the List_SortColumn_GetOrderBy function.](images/list-sort-sql-02.png "Defining SQL Query SORT Parameter")
 
     The `List_SortColumn_GetOrderBy()` function returns the column to sort by.
 
 1. Implement List Sort Column Rich Widgets in your Table Records Widget as you would do if you were using an Aggregate: 
 
-    ![Implement List Sort Column](images/list-sort-sql-05.png)
+    ![Screenshot depicting the implementation of List Sort Column Rich Widgets in a Table Records Widget.](images/list-sort-sql-05.png "Implementing List Sort Column Widgets")
 
     * Drag a List Sort Column to each of the columns that will be used to sort the **SQL** query.
     * Set the `Column` and `OnNotify` > `Destination` Properties for each List Sort Column.

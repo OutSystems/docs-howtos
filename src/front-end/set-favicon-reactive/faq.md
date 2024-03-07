@@ -12,7 +12,7 @@ figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:8
 
 This document explains how to change the default icon and replace it by your favicon. OutSystems apps use the OutSystems logo as the default favicon from Service Studio > **Data** > **Resources** > **favicon.png**.
 
-![The default favicon](images/default-favicon.png?width=600)
+![OutSystems default favicon image displayed in the Service Studio Resources tab.](images/default-favicon.png "Default Favicon")
 
 <div class="info" markdown="1">
 
@@ -30,7 +30,7 @@ Follow these steps to change the favicon in your Reactive Web App to a different
 
 1. In Service Studio, go to the **Data** tab > **Resources**, right-click **favicon.png** and select **Change Resource**. A file dialog opens.
 
-    ![Help menu to edit resource, favicon](images/change-favicon-ss.png?width=500)
+    ![Service Studio interface showing the context menu with 'Change Resource...' option highlighted for favicon.png.](images/change-favicon-ss.png "Change Favicon in Service Studio")
 
 1. In the **Change Resource** file dialog, select a PNG image to set it as a new favicon. 
 
@@ -45,7 +45,7 @@ Follow these steps to change the favicon in your Reactive Web App to a different
 
 1. In Service Studio, go to the **Data** tab > **Resources**, select **favicon.png** and change its **Name** to `favicon.ico`.
 
-    ![Properties showing favicon with ICO extension](images/change-favicon-to-ico-ss.png?width=500)
+    ![Service Studio interface with the favicon.png resource selected and the 'Name' field highlighted, ready to be changed to favicon.ico.](images/change-favicon-to-ico-ss.png "Change Favicon to ICO in Service Studio")
 
 1. Right-click **favicon.ico** and select **Change Resource**.
 

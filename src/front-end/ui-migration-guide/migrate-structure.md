@@ -29,7 +29,7 @@ The phrase "your application" refers to the web application that is based on Sil
 
 1. Create a temporary application based on one of the built-in Application Templates. If your application is based on the Dublin Theme, use the Side Menu template, otherwise use the Top Menu template.
 
-    ![](images/image63.png)
+    ![Screenshot showing the process of creating a temporary application in OutSystems.](images/image63.png "Temporary Application Creation")
 
 1. Copy the content of the Common flow (UI Flow > Common) of the temporary application into the Common flow of your application. The repeated elements in your application now have "2" at the end of their names. For example, "LoginInfo2" is the block from the new framework, while "LoginInfo" is from the old framework.
 1. Copy any custom logic from the original blocks of your application to the new blocks or screens of your application. For example, from "LoginInfo" to "LoginInfo2".
@@ -42,17 +42,17 @@ The phrase "your application" refers to the web application that is based on Sil
 
 Add the reference to the new framework. Open the **Manage Dependencies** window and search for **OutSystems UI Web**. Select it, together with all patterns, actions and entities.
 
-![](images/image12.png)
+![Manage Dependencies window in OutSystems with OutSystems UI Web selected.](images/image12.png "Manage Dependencies Window")
 
 ## Step C: Change to the Base Theme
 
 First, set the application's base Theme to use the OutSystems UI theme called **Base Theme**.
 
-![](images/image107.png)
+![Dropdown menu for selecting the Base Theme in OutSystems UI.](images/image107.png "Base Theme Selection")
 
 Then, set this new layout as the theme's layout.
 
-![](images/image32.png)
+![OutSystems UI theme layout setting with the new layout selected.](images/image32.png "Theme Layout Setting")
 
 ## Step D: Update the CSS rules
 
@@ -66,15 +66,15 @@ Double-click the Theme of your application to open the Theme Style Sheet. If the
 
 1. Find the definition of your application's primary color and save it.
 
-    ![](images/image151.png)
+    ![CSS code snippet highlighting the primary color definition for an application theme.](images/image151.png "Primary Color Definition")
 
 1. Open the new application's Theme Style Sheet and copy the content.
 
-    ![](images/image152.png?width=600)
+    ![Opening the new application's Theme Style Sheet in OutSystems.](images/image152.png "New Application Theme Style Sheet")
 
 1. In your application, paste the CSS at the top to replace the color definitions.
 
-    ![](images/image58.png?width=600)
+    ![Pasting the copied CSS content into the application's Theme Style Sheet.](images/image58.png "CSS Replacement in Application")
 
 ### Notes
 
@@ -87,7 +87,7 @@ Double-click the Theme of your application to open the Theme Style Sheet. If the
 
 1. Make sure blocks like Header, Footer, LoginInfo, etc. are in the correct place. Use the new application to see where each block should be placed.
 
-    ![](images/image7.png)
+    ![OutSystems UI showing the correct placement of layout blocks like Header and Footer.](images/image7.png "Layout Blocks Placement")
 
 ## Step F: Migrate the patterns
 
@@ -95,10 +95,10 @@ What follows is a general overview of how you can manually replace the patterns 
 
 1. Select a pattern and find all the places where it's used in your application (right-click + Find Usage or press F12).
 
-    ![](images/image13.png?width=600)
+    ![Using the Find Usage feature in OutSystems to locate instances of a specific pattern.](images/image13.png "Pattern Usage Search")
 
 1. Click **Replace All Usages**. Find and select a matching pattern from OutSystems UI Web.
 
-    ![](images/image39.png)
+    ![Window for replacing all usages of a pattern with a new one in OutSystems UI.](images/image39.png "Pattern Replacement Window")
 
 1. Verify the variables are used properly. Most Silk patterns have a direct match in OutSystems UI, but in certain situations, placeholders or inputs have changed to provide additional options. Most patterns have a sample content which you need to remove or change to fit your application.

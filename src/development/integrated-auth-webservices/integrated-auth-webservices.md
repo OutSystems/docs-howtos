@@ -35,7 +35,7 @@ There are a few points worthy of note for the proper operation of this functiona
 
 The scenario is the following:
 
-![](images/integrated-auth-webservices.png) 
+![Diagram showing the relationship between Web Browser, OutSystems, Web Service, and Domain Controller in an integrated authentication setup.](images/integrated-auth-webservices.png "Integrated Authentication Web Services Diagram") 
 
 Configuration is made in the domain controller, by configuring the OutSystems server to be trusted for delegation to services in the Web Service server. Here are the steps to be followed [1] on the **Domain Controller Server**:
 

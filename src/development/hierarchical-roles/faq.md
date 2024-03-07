@@ -24,7 +24,7 @@ It's not uncommon for development teams to face business requirements to impleme
 
 Consider a factory and its different roles: they're organized hierarchically:
 
-![factory roles example](images/factory-roles-example.png)
+![Diagram showing a hierarchy of factory roles from Operative to CEO.](images/factory-roles-example.png "Factory Roles Hierarchy Example")
 
 The scenario above requires you, a developer, to implement a hierarchy of roles. OutSystems Roles, as you know them, don’t allow the creation of a similar structure with built-in capabilities. However, you can implement this hierarchical structure by extending the OutSystems Roles. In this set of articles, you are going to learn how to do so.
 

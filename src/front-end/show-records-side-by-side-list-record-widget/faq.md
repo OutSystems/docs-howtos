@@ -30,12 +30,12 @@ In the standard table grid layout each record is on a separate line, as follows:
 
 Use the **List Records widget** to manipulate how information is displayed on your Web Screen.
 
-![](images/How-to-show-records-side-by-side-in-a-List-Record-widget_0.png)
+![Example of a standard table grid layout where each record is displayed on a separate line.](images/How-to-show-records-side-by-side-in-a-List-Record-widget_0.png "Standard table grid layout with records on separate lines")
 
 After you select the **List Records widget** to use in your Web Screen you just need to go to the properties of the widget and set the **Line Separator** property to **None** so the records can be displayed side-by-side.
 
-![](images/How-to-show-records-side-by-side-in-a-List-Record-widget_1.png)
+![Screenshot showing the List Records widget properties with the Line Separator set to None.](images/How-to-show-records-side-by-side-in-a-List-Record-widget_1.png "List Records widget properties")
 
 After you performed these configurations your layout may look similar to the following image. You can see more useful UI patterns by looking into  [OutSystems UI](https://www.outsystems.com/forge/component-overview/1385/outsystems-ui) component available on Forge.
 
-![](images/How-to-show-records-side-by-side-in-a-List-Record-widget_2.png)
+![Customized layout displaying records side by side in a List Records widget, with computer names under state headings.](images/How-to-show-records-side-by-side-in-a-List-Record-widget_2.png "Customized layout with records side by side")

@@ -31,7 +31,7 @@ Additionally, your configuration must allow **inbound connections** on port 6379
 
 The following diagram depicts this network deployment:
 
-![Redis Server network diagram (1 node)](images/redis-arch-1-node-network-diag.png)
+![Diagram showing a Redis Server on Ubuntu 20.04.1 in a Redis Subnet with inbound connections on port 6379/TCP from Development, QA, and Test subnets separated by firewalls.](images/redis-arch-1-node-network-diag.png "Network Deployment Diagram for Redis Server")
 
 ### Install and configure Redis Server
 

@@ -18,13 +18,13 @@ How can I disable the **Add Record** and **Delete Record** features in an **Edit
 
 Before you start: Set the `Source Record List` property (`GetStores.List`in this case) and assign a new Server Action to the `Event`>`On Row Save` property of the Editable Table (**UpdateRecord** in this case).
 
-![](images/editable-add-00.png)
+![Screenshot of the Editable Table properties with the On Row Save event set to UpdateRecord.](images/editable-add-00.png "Editable Table Properties")
 
 To disable the ability to add a Record from your Editable Table follow these steps:
 
 1. Modify the Action assigned to the `Event`>`On Row Save` property of the Editable Table: (1) change the **CreateOrUpdate&lt;Entity&gt;** Entity Action to an **Update&lt;Entity&gt;** Entity Action and (2) delete any logic associated with the creation of new Records. In this case delete the **Set Row Id** Assign node.
 
-    ![](images/editable-add-03.png)
+    ![Before and after screenshots of the server action flow, showing the removal of the CreateOrUpdateStore and Set Row Id nodes.](images/editable-add-03.png "Server Action Flow Modification")
 
     This ensures that it is not possible to create new Records using the Editable Table.
 
@@ -38,7 +38,7 @@ To disable the ability to add a Record from your Editable Table follow these ste
 
 1. Set the `Style Classes` property of the last input field of the Editable Table to a unique class, in this case `LastColumn`. 
 
-    ![](images/editable-add-04.png)
+    ![Screenshot highlighting the Style Classes property set to 'LastColumn' for the last input field in the Editable Table.](images/editable-add-04.png "Last Column Style Class Setting")
 
 1. Add the following **JavaScript snippet** to the Web Screen where the Editable Table is used:
 
@@ -62,7 +62,7 @@ After these steps:
 * The Add Record icon/link is no longer displayed;
 * Pressing the TAB key while on the last column of the last row of the Editable Table will not create a new row. 
 
-![](images/editable-add-05.png)
+![Editable Table interface showing the absence of the Add Record button at the bottom.](images/editable-add-05.png "Editable Table Without Add Record Feature")
 
 ### Remove the **Delete Record** feature
 
@@ -70,7 +70,7 @@ To disable the ability to delete a Record from your Editable Table follow these 
 
 1. Leave the `Event`>`On Row Delete` property **empty**.
 
-    ![](images/editable-del-00.png)
+    ![Screenshot of the Editable Table properties with an empty On Row Delete event.](images/editable-del-00.png "Editable Table Delete Event Property")
 
     This ensures that no server-side action takes place when the delete icon is pressed.
 
@@ -89,4 +89,4 @@ To disable the ability to delete a Record from your Editable Table follow these 
 
 After these steps the **Delete Record** event no longer triggers any server-side action and the Delete Record icon/link is no longer displayed. 
 
-![](images/editable-del-01.png)
+![Editable Table interface showing the absence of the Delete Record icon next to the records.](images/editable-del-01.png "Editable Table Without Delete Record Feature")

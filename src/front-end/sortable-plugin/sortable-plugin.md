@@ -16,26 +16,26 @@ We want to render a tree view with +1000 records fetched from the database with 
 
 ### Final Result
 
-![](images/sort1.gif)
+![Animated GIF showing the drag-and-drop sorting functionality of the SortableAF plugin.](images/sort1.gif "Sortable Plugin Demonstration")
 
 ### The Data
 
 In this example, we will use a company approach, this company has departments, and departments have persons so in total 3 levels on the tree. We will focus our how-to in the departments and persons but is applicable to all the structure.
 
-![](images/sort2.png)
+![Screenshot of the example data structure with departments and persons for the sortable plugin integration.](images/sort2.png "Example Data Structure")
 
 ### Widget Structure
 
 We will create the most simple of use cases, this means we will have 3 lists nested. Take the image below as a reference.
 
-![](images/sort3.png)
+![Diagram showing the nested list structure for the sortable plugin integration.](images/sort3.png "Widget Structure")
 
 ### Plugin Usage and Configuration
 
 #### Usage
 Use the web block SortableList from the plugin into the screen, 1 for each list that we have at the same level as the list (can be all at the end, but this promotes more readability and less confusion).
 
-![](images/sort4.png)
+![Screenshot of the SortableList web block used in the sortable plugin configuration.](images/sort4.png "Sortable List Web Block")
 
 #### Configuration
 **For each container, Draggable<X> in the image above add** 
@@ -43,7 +43,7 @@ Use the web block SortableList from the plugin into the screen, 1 for each list 
 
 1. in the attributes of it add data-id and give it the id of the element, we will use this to identify the record that belongs to the element that is being dragged
 
-![](images/sort5.png)
+![Screenshot highlighting the configuration of a draggable container with class and data-id attributes.](images/sort5.png "Draggable Container Configuration")
 
 **For each sortableAF** 
 
@@ -59,12 +59,12 @@ Use the web block SortableList from the plugin into the screen, 1 for each list 
 
 Now everything is set up, and if you test it you can drag and drop the elements but is not saving anything to the database. Let’s take care of that now.
 
-![](images/sort6.png)
+![Screenshot showing the configuration options for the SortableAF plugin with group, draggable, and data-id attributes.](images/sort6.png "SortableAF Configuration")
 
 ### Calling the server
 First let us create a new action on the created sortable event
 
-![](images/sort7.png)
+![Screenshot depicting the creation of a new action for the sortable event in the application.](images/sort7.png "Sortable Event Action Creation")
 
 Now we will add the following javascript
 
@@ -94,7 +94,7 @@ Before calling the server we check the orders of the elements, but we need to ch
 
 To call the server we need to encapsulate the call to that server action in a client action
 
-![](images/dort8.png)
+![Screenshot illustrating the encapsulation of a server action call within a client action for asynchronous processing.](images/dort8.png "Server Action Encapsulation")
 
 this will allow us to call the action asynchronously returning a promise and take action on the result, so we will trigger a feedback message and revert the changes on the list. Check here to know more about it
 

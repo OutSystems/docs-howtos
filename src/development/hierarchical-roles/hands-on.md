@@ -71,7 +71,7 @@ Now that you have your data model in place to support the Hierarchical Roles fea
 
 Your data model should look like this:
 
-![Hierarchical roles data model](images/hierarchical-roles-data-model-ss.png)
+![Entity-relationship diagram for the Hierarchical Roles data model.](images/hierarchical-roles-data-model-ss.png "Hierarchical Roles Data Model")
 
 A few notes about the data model:
 
@@ -86,13 +86,13 @@ A few notes about the data model:
 
 This section explains the architecture design of the Hierarchical Roles application.
 
-![Architecture design of the Hierarchical Roles application.](images/architecture-hierarchical-roles-app.png)
+![Diagram showing the architecture of the Hierarchical Roles application.](images/architecture-hierarchical-roles-app.png "Architecture of Hierarchical Roles App")
 
 ### Roles_Lib (Library module)
 
 In this module, you can create all OutSystems Roles for apps that require a Hierarchical Roles approach. The current example shows a **Sales** role and a **HierarchicalRolesAdmin** role to use in Hierarchical Roles BackOffice's screens.
 
-![Roles library module](images/roles-library-module-ss.png)
+![Screenshot of the Roles_Lib module with various user roles.](images/roles-library-module-ss.png "Roles Library Module")
 
 ### Department_CS (Core Service module)
 
@@ -104,17 +104,17 @@ You can implement this module outside of the Hierarchical Roles app in case you 
 
 This module implements the data model, and the server actions, to validate the user’s permissions. Also, it shows a few CRUD actions created to expose to the BackOffice screens.
 
-![Hierarchical roles core service module)](images/hierarchical-roles-core-service-module.png)
+![Screenshot of the HierarchicalRoles_CS core service module in OutSystems.](images/hierarchical-roles-core-service-module.png "Hierarchical Roles Core Service Module")
 
 The figure below shows the **GetPermissionsByUserId** action.
 
-![Get permissions by user id action](images/get-permissions-by-user-id-action.png)
+![Flowchart of the GetPermissionsByUserId server action logic.](images/get-permissions-by-user-id-action.png "Get Permissions by User ID Action")
 
 ### HierarchicalRoles (End-user module)
 
 This module contains all BackOffice screens. Only users with the **HierarchicalRolesAdmin** role can access those screens.
 
-![Backoffice screens list](images/backoffice-screens-list.png)
+![List of BackOffice screens in the Hierarchical Roles application.](images/backoffice-screens-list.png "BackOffice Screens List")
 
 
 ## BackOffice
@@ -135,19 +135,19 @@ You need to create the following screens. Each one requires a list and a details
 
 The following figure shows the functions list screen, used to create and manage the existing functions.
 
-![Functions list screen](images/functions-list-screen.png)
+![Screenshot of the functions list screen in the Hierarchical Roles BackOffice.](images/functions-list-screen.png "Functions List Screen")
 
 The figure below depicts the function details screen, used to edit the function details, and assign department and direct reports to functions.
 
-![Function details screen](images/function-details-screen.png)
+![Screenshot of the function details screen for editing function information.](images/function-details-screen.png "Function Details Screen")
 
 The screen below is the permissions list screen, used to assign permissions to functions.
 
-![Permissions list screen](images/permissions-list-screen.png)
+![Screenshot of the permissions list screen in the Hierarchical Roles BackOffice.](images/permissions-list-screen.png "Permissions List Screen")
 
 The following screen shows the users list screen, used to assign functions to users.
 
-![Users list screen](images/users-list-screen.png)
+![Screenshot of the users list screen in the Hierarchical Roles BackOffice.](images/users-list-screen.png "Users List Screen")
 
 
 Your Hierarchical Roles app also needs server-side logic to implement the authorization mechanism. 
@@ -162,15 +162,15 @@ This server action retrieves the set of permissions and functions assigned to a 
 
 The following figure shows the **GetPermissionsByUserId** action.
 
-![GetPermissionsByUserId server action](images/getpermissionsbyuserid-server-action-ss.png)
+![Screenshot of the GetPermissionsByUserId server action in OutSystems.](images/getpermissionsbyuserid-server-action-ss.png "GetPermissionsByUserId Server Action")
 
 The figure below shows the **GetPermissionsByUserId** action logic.
 
-![GetPermissionsByUserId logic](images/getpermissionsbyuserid-logic-ss.png)
+![Flowchart detailing the logic of the GetPermissionsByUserId action.](images/getpermissionsbyuserid-logic-ss.png "GetPermissionsByUserId Logic")
 
 The following image depicts the **CheckPermissions** aggregate query.
 
-![GetPermissionsByUserId query](images/getpermissionsbyuserid-query-ss.png)
+![Screenshot of the CheckPermissions aggregate query used in GetPermissionsByUserId action.](images/getpermissionsbyuserid-query-ss.png "GetPermissionsByUserId Query")
 
 ### HasAccessByFunctionId action
 
@@ -192,14 +192,14 @@ Please remember the hierarchy of this example: the Director has permissions over
 
 The following figure shows the **HasAccessByFunctionId** action.
 
-![HasAccessByFunctionId action](images/hasaccessbyfunctionid-action.png)
+![Screenshot of the HasAccessByFunctionId server action in OutSystems.](images/hasaccessbyfunctionid-action.png "HasAccessByFunctionId Action")
 
 The figure below shows the **HasAccessByFunctionId** action logic.
 
-![HasAccessByFunctionId logic](images/hasaccessbyfunctionid-logic.png)
+![Flowchart showing the logic of the HasAccessByFunctionId server action.](images/hasaccessbyfunctionid-logic.png "HasAccessByFunctionId Logic")
 
 The following image depicts the **CheckPermissions** SQL query.
 
-![Check Permissions SQL](images/checkpermissions-sql-ss.png)
+![Screenshot of the CheckPermissions SQL query used in the HasAccessByFunctionId action.](images/checkpermissions-sql-ss.png "CheckPermissions SQL Query")
 
 Go to [Sales application demo](demo.md) to see a demo of a sales application.

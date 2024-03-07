@@ -18,7 +18,7 @@ Adding validation properties helps solve simple issues, such as an empty file. T
 
 The following example, shows a snippet of three different custom validations. This snippet uses the runtime properties of the Upload Widget, named **UploadFile**.
 
-![upload file validation snippets](images/file-up-00.png "sample snippets to show how validation can work")
+![Flowchart showing three custom validation scenarios for a file upload widget: checking if a file is selected, if the file is empty, and if the file is a PDF.](images/file-up-00.png "Custom Validation Logic for File Upload")
 
 * **Row 1**: Use to verify the end user chose a file in the **Upload widget** before submitting.
     * Add an **If** with the Condition set to `UploadFile.Filename = ""`

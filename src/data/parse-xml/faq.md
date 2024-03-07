@@ -117,4 +117,4 @@ To extract the web books information from the XML file follow these steps:
 
 The Server Action will look similar to the following image:
 
-![XML Parse Server Action](images/parse-xml-01.png)
+![Flowchart showing the server action steps to parse XML and extract web book information using XPath in OutSystems.](images/parse-xml-01.png "Server Action Flow for Parsing XML with XPath")

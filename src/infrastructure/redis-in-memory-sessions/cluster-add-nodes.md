@@ -35,7 +35,7 @@ You should configure the Master processes first, and then set up the Replica pro
 
 After taking the steps described in this section, the architecture of your Redis Cluster will be the following:
 
-![Redis Cluster architecture after adding two new server machines](images/redis-arch-5-node-diag.png)
+![Diagram showing a scaled Redis Cluster with five servers, including two added servers, Server 4 and Server 5, each with a Master and Replica process.](images/redis-arch-5-node-diag.png "Redis Cluster 5-Node Architecture Diagram")
 
 ## Step 1. Set up new Redis processes on the new server machines
 

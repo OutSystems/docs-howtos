@@ -43,15 +43,15 @@ Even though you will not actually use the server. You need to configure it as if
     * You'll just need to set some passwords. 
     * You can use the defaults for everything else. 
 
-    ![01.png](images/01.png)
+    ![Screenshot of the IBM Domino Server configuration wizard.](images/01.png "IBM Domino Server Configuration Wizard")
 
 1. Disable the Lotus Domino services to make sure they don't start when you restart the machine. 
 
-    ![02.png](images/02.png)
+    ![Arrow pointing to 'Services' in the Windows Administrative Tools menu.](images/02.png "Accessing Services in Administrative Tools")
 
-    ![03.png](images/03.png)
+    ![Arrow pointing to IBM Domino services in the list of Windows services.](images/03.png "List of Services in Windows")
 
-    ![04.png](images/04.png)
+    ![Service properties window showing the IBM Domino Server with options to stop, pause, or resume the service.](images/04.png "IBM Domino Server Service Properties")
 
 ### Download and install NotesSQL ODBC drivers
 
@@ -65,15 +65,15 @@ Even though you will not actually use the server. You need to configure it as if
 
 1. Open the "NotesSQL Authentication List Manager" by opening Windows Explorer in the NotesSQL installation folder and double clicking Nsql_ALM.exe. 
 
-    ![05.png](images/05.png)
+    ![File explorer window with an arrow pointing to the 'Nsql_ALM.exe' application in the NotesSQL installation folder.](images/05.png "NotesSQL Authentication List Manager")
 
 1. Fill in the "Path to NOTES.INI..." as shown in the screenshot below, click "Display list" and then, "Add user..." 
 
-    ![06.png](images/06.png)
+    ![NotesSQL Authentication List Manager window with arrows pointing to 'Display list' and 'Add user...' buttons.](images/06.png "Configuring NotesSQL Authentication")
 
 1. Set the "Location of Notes ID" as shown below and click OK. 
 
-    ![07.png](images/07.png)
+    ![Dialog box for adding a new user in NotesSQL Authentication List Manager with fields for Notes ID file location and user name.](images/07.png "Adding a New User in NotesSQL Authentication List Manager")
 
 1. Click "Save List" and then "Close". 
 
@@ -90,16 +90,16 @@ Even though you will not actually use the server. You need to configure it as if
 
 1. Open to ODBC Data Source Administrator. 
 
-    ![08.png](images/08.png)
+    ![Arrow pointing to 'Data Sources (ODBC)' in the Windows Administrative Tools menu.](images/08.png "Accessing ODBC Data Source Administrator")
 
 1. Go to the "System DSN" tab and click "Add...". 
 
-    ![09.png](images/09.png)
+    ![ODBC Data Source Administrator window with arrows pointing to the 'System DSN' tab and 'Add...' button.](images/09.png "Adding a New System DSN in ODBC Data Source Administrator")
 
 1. Select "Lotus Notes SQL Driver (*.nsf)" and click Finish. 
 1. Fill in details as shown in the screen below (in this scenario I'm connecting to a local file on the same location as the DB server). 
 
-    ![10.png](images/10.png)
+    ![ODBC Lotus Notes Setup dialog box with fields for data source name, description, server, and database file path.](images/10.png "ODBC Lotus Notes Setup")
 
 1. Click OK and close the ODBC Data Source Administrator. 
 
@@ -108,11 +108,11 @@ Even though you will not actually use the server. You need to configure it as if
 1. Open SQL Server Management Studio and connect to your Database. 
 1. Expand "Server Objects" and right click "Linked Servers". 
 
-    ![11.png](images/11.png)
+    ![SQL Server Management Studio with an arrow pointing to 'New Linked Server' in the context menu of 'Linked Servers'.](images/11.png "Creating a New Linked Server in SQL Server Management Studio")
 
 1. Select "New Linked Server" and fill in the form as shown in the screenshot below. 
 
-    ![12.png](images/12.png)
+    ![New Linked Server configuration window in SQL Server Management Studio with fields for linked server name and provider details.](images/12.png "New Linked Server Configuration")
 
 1. Click OK and your Linked Server is ready! 
 
@@ -120,13 +120,13 @@ Even though you will not actually use the server. You need to configure it as if
 
 * Create a new query window and test it by using, as an example `**SELECT * from openquery(NOTES, 'select * from Person')**` and you should get some nice results. 
 
-    ![13.png](images/13.png)
+    ![SQL query window in SQL Server Management Studio showing a SELECT query and its results from the linked server.](images/13.png "Testing the Linked Server Connection")
 
 ### Create Views to allow introspection with Integration Studio
 
 You may create views by using, for example `**CREATE VIEW LN_Person AS SELECT * from openquery(NOTES, 'select * from Person')**` . This will allow you to then create introspect and create a connection using Integration Studio.
 
-![14.png](images/14.png)
+![SQL query window in SQL Server Management Studio with a CREATE VIEW statement highlighted.](images/14.png "Creating a View in SQL Server Management Studio")
 
 ### Change the permissions of the OSRuntime database user
 
@@ -134,4 +134,4 @@ For the OutSystems applications to be able to access the data of the linked serv
 
 As a proof of concept, give this user sysadmin permission to check that everything works. We currently do not know what are the exact permissions needed.
 
-![15.png](images/15.png)
+![SQL Server Management Studio showing the properties window for the OSRuntime user with 'sysadmin' server role checked.](images/15.png "Modifying OSRuntime Database User Permissions")

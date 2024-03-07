@@ -126,7 +126,7 @@ To create this Table Record in your Reactive Web App, you must set the list you 
 
 The following figure shows the difference between Table Records in Traditional and Reactive Web:
 
-![Migration of Table Records](images/ref-migration-table-records.png)
+![Screenshot showing the difference between Table Records in Traditional Web and Reactive Web Apps, with a focus on the properties and data binding.](images/ref-migration-table-records.png "Comparison of Table Records in Traditional and Reactive Web")
 
 You can use the **IsDataFetched** property of the Aggregate to show the loading spinner while fetching data. Then, use an **If** to check if the Aggregate's output list is empty or not. If the output list is empty, the users see an empty slate. If not empty, the users see the records in a table.
 
@@ -161,7 +161,7 @@ Use the popup widget inside the Screen, containing the Block you built with the 
 
 The following figure shows the difference between popups in Traditional and Reactive Web.
 
-![Migration of Popups](images/ref-migration-popup.png)
+![Screenshot illustrating the transition from Traditional Web popups to Reactive Web popups, highlighting the use of Blocks and data fetching.](images/ref-migration-popup.png "Comparison of Popups in Traditional and Reactive Web")
 
 For more information about popups in Reactive Web Apps see [Create and use a Popup](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Inputs/Create_and_use_a_Popup).
 

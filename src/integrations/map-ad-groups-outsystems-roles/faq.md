@@ -66,7 +66,7 @@ To install the **Active Directory** component do the following:
 
 3. Search for "active directory" and click the Active Directory component.
 
-![image alt text](images/How-to-map-Active-Directory-Groups-to-OutSystems-Roles_0.png)
+![Screenshot of the Active Directory component on the OutSystems Forge with an 'Install' button.](images/How-to-map-Active-Directory-Groups-to-OutSystems-Roles_0.png "Forge Component Installation")
  
 
 4. Click **Install…** and, when the component is ready to be installed, click **Install**.
@@ -79,13 +79,13 @@ To install the **Active Directory Group Mapping** component, follow the previous
 
 2. Click **Open in Browser**.
 
-![image alt text](images/How-to-map-Active-Directory-Groups-to-OutSystems-Roles_1.png)
+![Service Studio interface showing the Active Directory Group Mapping application with an 'Open in Browser' option.](images/How-to-map-Active-Directory-Groups-to-OutSystems-Roles_1.png "Active Directory Group Mapping Application")
  
 
 3. When you open the web application for the first time you will get a warning telling you to create an Active Directory Access Token. Before creating any mappings you will need to create this Access Token.
 Provide the fields for creating the token: the name of the token record, the domain and the credentials of a user (username and password) with access to the Active Directory for that domain.
 
-![image alt text](images/How-to-map-Active-Directory-Groups-to-OutSystems-Roles_2.png)
+![Web form for setting up an Active Directory access token with fields for Name, Domain, Container, Domain Username, and Domain Password.](images/How-to-map-Active-Directory-Groups-to-OutSystems-Roles_2.png "Setup Access Token Form")
 
 *(optional)* You can define the base context for searches performed in the Active Directory by filling in the "Container" field with the Distinguished Name of the base Active Directory node. This will narrow down all searches to a sub-tree starting in the provided base node. Example value: CN=Users,DC=dcserver,DC=mycompany,DC=com. This field is optional; if you don't fill it in, the Active Directory search operations will be less specific, but everything will work properly if the other fields are correct.
 
@@ -101,7 +101,7 @@ In this step we will use the Active Directory Group Mapping application to defin
 
 3. Select the Active Directory Group and OutSystems Role you wish to create a mapping for and click **Save**.
 
-![image alt text](images/How-to-map-Active-Directory-Groups-to-OutSystems-Roles_3.png)
+![Form to create a new mapping between an Active Directory Group and an OutSystems Role with 'Save' button.](images/How-to-map-Active-Directory-Groups-to-OutSystems-Roles_3.png "AD Group to OutSystems Role Mapping")
  
 
 4. Repeat this process for all the desired mappings between Active Directory Groups and OutSystems Roles you wish to create.
@@ -143,7 +143,7 @@ In both cases you will need to [add a reference to the RefreshUserRoles action](
 
 Here’s an example of a revised Login flow:
 
-![image alt text](images/How-to-map-Active-Directory-Groups-to-OutSystems-Roles_4.png)
+![Flowchart showing the revised login process with steps for ValidateCredentials, UserProvisioning, RefreshUserRoles, and System_Login.](images/How-to-map-Active-Directory-Groups-to-OutSystems-Roles_4.png "Revised Login Flow Diagram")
 
 Check the ADAuthenticationSample module in the "Active Directory Group Mapping" application for an example of a revised "Login" flow.
 
@@ -197,12 +197,12 @@ You can set the timer schedule in Service Center by doing the following:
 
 3. Click the link with the name of the timer you wish to configure (either "SyncRoles" or “SyncGroups”) to define or edit its schedule.
 
-![image alt text](images/How-to-map-Active-Directory-Groups-to-OutSystems-Roles_5.png)
+![Service Center interface displaying timers for Active Directory Roles Mapping with options to run or schedule them.](images/How-to-map-Active-Directory-Groups-to-OutSystems-Roles_5.png "Active Directory Roles Mapping Timers")
  
 
 4. Define the timer schedule in the "Time" field. You can either input specific times when the timer should run, separated by spaces (e.g. entering 00:00 07:00 would run the timer at 12am and 7am every day) or set the interval in the “Generate time with intervals of“ field and click **Generate** to generate all the specific times in a day based on that interval.
 
-![image alt text](images/How-to-map-Active-Directory-Groups-to-OutSystems-Roles_6.png)
+![Interface for defining the schedule of the SyncRoles timer with fields for specific times and interval generation.](images/How-to-map-Active-Directory-Groups-to-OutSystems-Roles_6.png "Timer Scheduling Interface")
 
 **Note**: The Roles of a User that are updated during a synchronization operation will not be applied while the user has a valid session. Check the [Session Timeouts and Persistent Logins](https://success.outsystems.com/Documentation/How-to_Guides/How_to_map_Active_Directory_Groups_to_OutSystems_Roles#Session_Timeouts_and_Persistent_Logins) section below for more information.
 

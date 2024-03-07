@@ -14,7 +14,7 @@ How do I erase test data from Entities?
 
 For example: I have two Entities (`Location` and `Store`) with test data, and I wish to clear them both. 
 
-![Entities](images/sqldelete-00.png)
+![Diagram showing the relationship between Location and Store entities, with Location having fields Id, City, Country and Store having fields Id, Name, LocationId.](images/sqldelete-00.png "Entity Relationship Diagram")
 
 Note: My `Store` Entity has a Foreign Key to my `Location` Entity.
 
@@ -31,12 +31,12 @@ To delete all test data from your Entities you need to create your own logic and
 
     This will first delete all data from the `Store` Entity and then it will delete all data from the `Location` Entity. The order of deletion is important, first delete data from the child Entity (that references another Entity) and only then delete data from the parent Entity.
     
-    ![Server Action and SQL Query](images/sqldelete-01.png)
+    ![Screenshot of the ClearData SQL Query in Service Studio with DELETE statements for Store and Location entities.](images/sqldelete-01.png "SQL Query in Service Studio")
 
 1. Create a new Web Screen (in this case **BackOffice**), add a Button to it and set the `On Click`>`Destination` to a new Screen Action, in this case **ClearTestData**.
 
 1. Inside the **ClearTestData** Screen Action call the **ClearData** Server Action.
 
-    ![Screen Action](images/sqldelete-02.png)
+    ![Flowchart in Service Studio depicting the ClearTestData screen action calling the ClearData server action.](images/sqldelete-02.png "ClearTestData Screen Action Flow")
     
     

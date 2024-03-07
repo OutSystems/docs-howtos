@@ -20,7 +20,7 @@ Then, do the following:
 
 1. Import the image to your application.
 
-    ![](images/How-to-improve-list-slowness-on-low-end-devices_0.png)
+    ![Screenshot showing the import of a placeholder image into the application.](images/How-to-improve-list-slowness-on-low-end-devices_0.png "Importing Image Preview")
 
 1. Open the CSS Editor and create a new class to use the image as background.
  
@@ -29,8 +29,8 @@ Then, do the following:
             /* Drag and drop the image to set the URL of the image */
         }
 
-    ![](images/How-to-improve-list-slowness-on-low-end-devices_1.png)  
+    ![Screenshot of the CSS Editor with code to set a background image for list items.](images/How-to-improve-list-slowness-on-low-end-devices_1.png "CSS Editor with New Class")  
 
 1. Add the new CSS class to the **Style Classes** of the List widget.
 
-    ![](images/How-to-improve-list-slowness-on-low-end-devices_2.png)
+    ![Screenshot displaying the List widget properties with the new CSS class added to the Style Classes field.](images/How-to-improve-list-slowness-on-low-end-devices_2.png "List Widget Style Classes")

@@ -18,7 +18,7 @@ To retrieve data, you can use the **GetValue** or **GetValues** actions to read 
 
 For instance, you can add a [Data Grid component](https://www.outsystems.com/forge/component-overview/5554/data-grid) to your screen, and populate it with the data from the Data Sheet.
 
-![Reading from a spreadsheet used as data source in OutSystems](images/outsystems-spreadsheet-data-source-read-example.png)
+![Screenshot of an OutSystems Data Grid component showing spreadsheet data integration.](images/outsystems-spreadsheet-data-source-read-example.png "OutSystems Data Grid Component Populated with Spreadsheet Data")
 
 In the **RestURL** defined in the data grid:
 
@@ -26,14 +26,14 @@ In the **RestURL** defined in the data grid:
 1. Call the GetValue or GetValues action
 1. Populate the output list with the information retrieved, so it can be mapped into the Data Grid
 
-![Setting the Spreadsheet data into RestURL flow](images/reading-spreadsheet-as-data-source-outsystems-logic-example.png)
+![Flowchart demonstrating the logic to read data from a spreadsheet in OutSystems.](images/reading-spreadsheet-as-data-source-outsystems-logic-example.png "OutSystems Logic for Reading Data from a Spreadsheet")
 
 
 To save data back into the spreadsheet, use the **SetValue** or **SetValues** actions to write data into a single cell, or into a range of cells, respectively.
 
 For instance, using the previous scenario, you can add a button to write all the changes performed in the Data Grid.
 
-![Writing to a spreadsheet used as data source in OutSystems](images/outsystems-spreadsheet-data-source-write-example.png)
+![OutSystems interface with a Data Grid and an 'Update Changes' button for writing data to a spreadsheet.](images/outsystems-spreadsheet-data-source-write-example.png "OutSystems Data Grid with Update Button")
 
 In the RestURL defined to save the data:
 
@@ -41,7 +41,7 @@ Deserialize the received JSON
 Iterate the generated Record List
 Set the Spreadsheet ID, Spreadsheet Name and Range, and use the SetValues function to store the information
 
-![Writing to a spreadsheet used as data source in OutSystems](images/writing-spreadsheet-as-data-source-outsystems-logic-example.png)
+![Flowchart showing the process of writing data back to a spreadsheet in OutSystems.](images/writing-spreadsheet-as-data-source-outsystems-logic-example.png "OutSystems Logic for Writing Data to a Spreadsheet")
 
 
 For Excel files, OutSystems provides a similar component that leverages the Microsoft Graph API to use an Excel File as a data source, the [Microsoft Graph Connector](https://www.outsystems.com/forge/component-overview/5552/microsoft-graph-connector).

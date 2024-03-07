@@ -32,7 +32,7 @@ In order to avoid data being overwritten, due to simultaneous updates of differe
 
 Looking at the Save action flow we can see that it already contains the logic for the record creation and edition.
 
-![Original Save action flow](images/concurrent-updates-original.png)
+![Flowchart showing the original save action logic for data record creation and edition.](images/concurrent-updates-original.png "Original Save Action Flow")
 
 On this action, we’ll be adding a new business rule that checks if any update has occurred after you access it, and raises an exception if that’s the case, canceling the save operation.
 
@@ -46,7 +46,7 @@ To help with this, we’ll take advantage of a commonly used pattern, the audit 
 
 This is how the action looks like after adding the control logic:
 
-![Controlled Save action flow](images/concurrent-updates-changed.png)
+![Updated flowchart with concurrency control logic added to the save action.](images/concurrent-updates-changed.png "Save Action Flow with Concurrency Control Logic")
 
 **1-** We’ll start by getting the record currently in the database, locking it for update to prevent others to access it while the update is not concluded. GetForUpdate entity action is especially important when you have high volume of users editing the same record, what increases the chance of simultaneous update transactions.
 
@@ -64,11 +64,11 @@ If that’s the case you can slightly change the interface to force the update o
 
 As we saw before we are raising a User exception when there’s a concurrency conflict. Then, on the user action of the interface, let’s catch this exception and enable the Force Update option that the user can then decide to go for.
 
-![Handle the exception giving some visual feedback](images/user-exception.png)
+![Flowchart illustrating the handling of a user exception to enable force update option.](images/user-exception.png "User Exception Handling Flow")
 
 The Force Update action would be a simple Contact update server action, as we had before the Concurrency validation (don’t forget the auditing fields).
 
-![Force update logic](images/concurrent-updates-force-update-logic.png)
+![Flowchart depicting the logic for forcing an update in the event of a concurrency conflict.](images/concurrent-updates-force-update-logic.png "Force Update Logic Flowchart")
 
 ## Sample
 
@@ -78,12 +78,12 @@ To better support you on the implementation, a sample application - [**Concurren
 
 1. Amy Peters (User A) edits a field and saves the changes.
 
-    ![User A edits](images/concurrent-updates-test-user-a.png)
+    ![Screenshot of the application interface showing User A's edit and save action.](images/concurrent-updates-test-user-a.png "User A Edit Interface")
 
 1. Lawrence Ricci (User B) edits a field (it can even be the same) and tries to save the changes. A warning message will be prompted indicating that a conflict was detected.
 
-    ![User B edits right after User A](images/concurrent-updates-test-user-b.png)
+    ![Screenshot displaying a conflict warning message for User B attempting to save changes.](images/concurrent-updates-test-user-b.png "User B Conflict Warning Interface")
 
 1. Lawrence Ricci (User B) can then decide to force the update with its data or to cancel, keeping the data that User A has saved.
 
-    ![User B forces the update](images/concurrent-updates-force-update-button.png)
+    ![Interface showing the force update and cancel buttons available to the user after a conflict is detected.](images/concurrent-updates-force-update-button.png "Force Update and Cancel Button Interface")

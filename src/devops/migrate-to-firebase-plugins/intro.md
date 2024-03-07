@@ -51,7 +51,7 @@ Install [Firebase Sample App](https://www.outsystems.com/forge/Component_Overvie
 * Set the parameters that the plugin sends with every event logged from the device, including automatic events
 * Receive and handle push notifications from Firebase Cloud Messaging
 
-![sample app](images/migrate-to-firebase-sample-app.png)
+![Screenshot of the Firebase Sample App interface showing options for Analytics, Crashlytics, Performance, and Cloud Messaging.](images/migrate-to-firebase-sample-app.png "Firebase Sample App Interface")
 
 ## Example of migrating a logging event with the Analytics Plugin
 
@@ -65,19 +65,19 @@ See [Reference of the plugin actions](#reference-of-the-plugin-actions) for more
 
 1. Delete the **LogEvent** action of the unsupported plugin.
 
-    ![Log event action in the logic flow](images/migrate-to-firebase-legacy-ss.png)
+    ![Service Studio screenshot showing the legacy LogEvent action in a logic flow.](images/migrate-to-firebase-legacy-ss.png "Legacy LogEvent Action in Service Studio")
 
 1. Solve the errors Service Studio highlighted after you deleted  the former LogEvent action. Start by dragging LogEvent action from the supported Analytics plugin folder. Service Studio automatically renames the action to **LogEvent2** in logic flows where the module references both plugins.
 
-    ![Error list](images/migrate-to-firebase-fix-errors-ss.png)
+    ![Service Studio screenshot highlighting the process of fixing errors after deleting the legacy LogEvent action.](images/migrate-to-firebase-fix-errors-ss.png "Fixing Errors in Service Studio")
 
 1. Substitute all parameters from the old **LogEvent** action with equivalent parameters from the new **LogEvent2** action.
 
-    ![Parameters mapping](images/migrate-to-firebase-params-ss.png)
+    ![Screenshot showing the substitution of parameters from the old LogEvent action to the new LogEvent2 action in Service Studio.](images/migrate-to-firebase-params-ss.png "Migrating Parameters to New LogEvent Action")
 
 1. Optionally, set any other parameters to capture additional information and get metrics from the Google Console dashboard.
   
-    ![Additional parameters](images/migrate-to-firebase-additional-values-ss.png)
+    ![Screenshot of Service Studio where additional parameters are being set for the new LogEvent2 action.](images/migrate-to-firebase-additional-values-ss.png "Adding Additional Parameters in Service Studio")
     
 ## Example of sending and receiving a notification with the Cloud Messaging Plugin
 
@@ -91,19 +91,19 @@ See [Reference of the plugin actions](#reference-of-the-plugin-actions) for more
 
 1. Call the **Subscribe** client action of the supported plugin.
 
-    ![Subscribe to topic action in the logic flow](images/migrate-to-firebase-subscribe-topic.png)
+    ![Screenshot showing the Subscribe client action in a logic flow within Service Studio.](images/migrate-to-firebase-subscribe-topic.png "Subscribing to a Topic in Service Studio")
 
 1. Include the **NotificationsHandler** block in the screen on which you want to handle the notifications. If you want to see these as in-app notifications, you can use the **NotificationDialog** block as a placeholder, or implement your own logic.
 
-    ![NotificationsHandler block](images/migrate-to-firebase-cloud-block.png)
+    ![Screenshot of Service Studio displaying the NotificationsHandler block used for handling notifications.](images/migrate-to-firebase-cloud-block.png "Cloud Messaging Notification Handler Block")
 
 1. Send a POST request to endpoint `baseURL/notification/topics` of the Cloud Messaging Configurator's REST API.
 
-    ![Using the REST API](images/migrate-to-firebase-rest-api.png)
+    ![Screenshot of a REST API request setup for sending notifications to a topic in Cloud Messaging Configurator.](images/migrate-to-firebase-rest-api.png "Cloud Messaging REST API Request")
 
 1. See notifications in the device, whether in the notification center or inside your app as in-app notifications.
   
-    ![In-app notification](images/migrate-to-firebase-notifications.png)
+    ![Screenshot showing a notification from Firebase Cloud Messaging on a mobile device's screen.](images/migrate-to-firebase-notifications.png "Notifications on a Device")
 
 
 ## Reference of the plugin actions

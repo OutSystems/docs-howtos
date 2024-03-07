@@ -25,19 +25,19 @@ A reference to the **Sample_Product** and **Sample_ProductCategory** entities in
 1. Drag the **Sample_Product** to the **MainFlow**. 
     This creates a **Products** screen and a **ProductDetail** screen. This example focuses on the **Products** screen.
 
-    ![Setting up the screen](images/dropdown-sampleproduct-ss.png)
+    ![Screenshot showing the process of dragging the Sample_Product to the MainFlow to create Products and ProductDetail screens.](images/dropdown-sampleproduct-ss.png "Products Screen Creation")
 
 ### Preparing the data for the Dropdown Search
 
 1. On the **Products** screen, add a new aggregate with the **Sample_ProductCategory**.
 
-    ![Add new aggregate](images/dropdown-aggregate-ss.png)
+    ![Screenshot of the OutSystems interface with a new aggregate added for Sample_ProductCategory.](images/dropdown-aggregate-ss.png "Sample_ProductCategory Aggregate")
 
 1. Add a screen variable called **SelectedCategoryIdList** with the type **Text**. 
 
     This is where the multiple selected category IDs are noted in between commas, for example, ``6,14,2``.
 
-    ![SAdd screen variable](images/dropdown-variable-ss.png)
+    ![Screenshot displaying the addition of a screen variable called SelectedCategoryIdList with type Text.](images/dropdown-variable-ss.png "Screen Variable Setup")
 
 1. On the **GetProducts** aggregate, click on the filters, and add the following filter:  
 
@@ -45,7 +45,7 @@ A reference to the **Sample_Product** and **Sample_ProductCategory** entities in
     
     This filter checks each row of the aggregate if the product category ID is contained in the ID List of the variable, filtering the products per multiple categories.
 
-    ![Add new filter](images/dropdown-filter-ss.png)    
+    ![Screenshot of the GetProducts aggregate filter setup using SelectedCategoryIdList.](images/dropdown-filter-ss.png "Dropdown Search Filter Configuration")    
 
 ### Adding the Dropdown Search
 
@@ -53,7 +53,7 @@ A reference to the **Sample_Product** and **Sample_ProductCategory** entities in
 
 1. In the **Mapping** section, set the **Value** to **Sample_ProductCategory.Id** and **Label** to **Sample_ProductCategory.Label**.
 
-    ![Set mapping properties](images/dropdown-mapping-ss.png)
+    ![Screenshot showing the mapping configuration of the Dropdown Search widget with Value and Label properties.](images/dropdown-mapping-ss.png "Dropdown Search Mapping")
 
 1. On the **Properties** tab, expand **OptionalConfigs** and set **AllowMultipleSelection** to **True**.
 
@@ -73,4 +73,4 @@ A reference to the **Sample_Product** and **Sample_ProductCategory** entities in
 
 1. Close the **For Each** node by dragging a branch from the **Assign** to it.
 
-    ![Add logic](images/dropdown-logic-ss.png)    
+    ![Flowchart diagram illustrating the logic for handling changes in the Dropdown Search selection.](images/dropdown-logic-ss.png "Dropdown Search Logic")    

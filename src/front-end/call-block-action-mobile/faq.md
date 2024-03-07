@@ -12,7 +12,7 @@ figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:0
 
 When working with big forms, I need to split them into several Blocks. In the mobile screen containing those Blocks, how can I trigger the validation actions of each Block?
 
-![](images/How-to-Call-a-Block-Action-in-a-Mobile-Screen_0.png)
+![Illustration showing a puzzle piece connecting to a mobile screen interface with a 'Save' button, indicating the trigger of block validation.](images/How-to-Call-a-Block-Action-in-a-Mobile-Screen_0.png "Triggering Block Validation")
 
 ### Answer
 
@@ -25,18 +25,18 @@ To trigger a Block action in a mobile screen, you need to:
         var wbElement = document.getElementById($parameters.rootId).parentElement;
         wbElement.validatePhone = $actions.ValidatePhoneNumber;
 
-    ![](images/How-to-Call-a-Block-Action-in-a-Mobile-Screen_1.png)
+    ![Screenshot of a JavaScript function definition in a mobile app development environment, exposing a block action for phone number validation.](images/How-to-Call-a-Block-Action-in-a-Mobile-Screen_1.png "JavaScript Function Definition in Block")
 
 1. Pass the Id of the top Container as a parameter to the JavaScript node:
 
-    ![](images/How-to-Call-a-Block-Action-in-a-Mobile-Screen_2.png)
+    ![Screenshot showing the process of passing the ID of a top container to a JavaScript node within a mobile app development platform.](images/How-to-Call-a-Block-Action-in-a-Mobile-Screen_2.png "Passing Container ID to JavaScript")
 
 1. In the consumer screen, use a JavaScript node to access the JavaScript function defined in the Block DOM element, passing the Block Id as a parameter. In this example, we use the **BlockId** to get Block DOM element and call its **validatePhone** function:
 
         var wbElement = document.getElementById($parameters.BlockId);
         wbElement.validatePhone();
 
-    ![](images/How-to-Call-a-Block-Action-in-a-Mobile-Screen_3.png)
+    ![Screenshot depicting the use of JavaScript to call a block action from a consumer screen by accessing the block's DOM element.](images/How-to-Call-a-Block-Action-in-a-Mobile-Screen_3.png "Calling Block Action from Consumer Screen")
 
 An improved approach is to put this second piece of JavaScript code inside a global Client Action (for example, **PhoneNumberValidate(PhoneNumberBlockId)**), so the caller Screen runs low code.
 

@@ -16,7 +16,7 @@ Another important topic regarding data migration is the application Users, Group
 
 The following diagram shows the relationships between Entities Users, Roles and Groups.
 
-![Relationships between Entities Users, Roles and Groups](images/relationships-entities-users-roles-groups.png)
+![Diagram illustrating the relationships between Users, Roles, Groups, and their associative entities in OutSystems.](images/relationships-entities-users-roles-groups.png "Entity-Relationship Diagram for Users, Roles, and Groups")
 
 The records for the entities in the diagram above can be generated from the following sources:
 

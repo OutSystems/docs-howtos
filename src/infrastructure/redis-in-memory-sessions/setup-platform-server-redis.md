@@ -28,7 +28,7 @@ After making sure that you have a working Redis infrastructure, configure the Ou
 Do the following:
 1. Run Configuration Tool as an Administrator, open the **Session** tab, and then select Redis from  the **Session Provider** dropdown.
 
-    ![Session tab in Configuration Tool displaying Redis settings](images/session-connection-string-0-ct.png)
+    ![Screenshot of the Configuration Tool showing the Session tab with Redis selected as the Session Provider.](images/session-connection-string-0-ct.png "Configuration Tool Session Tab")
 
     In the **Hosts** element, enter the addresses and ports of all Redis Master processes in the Redis Cluster, separated by commas. If you have just one server running redis-server, enter its address and port.
 
@@ -38,7 +38,7 @@ Do the following:
 
 1. To verify that the Redis server machines are reachable from the Platform Server machine and that everything works properly at runtime, Click **Test Connection**.
 
-    ![Session tab in Configuration Tool after a successful connection test](images/session-connection-string-success-ct.png)
+    ![Popup message in the Configuration Tool indicating a successful test connection to Redis.](images/session-connection-string-success-ct.png "Successful Redis Connection Test")
 
     If you get an error saying "It was not possible to connect to Redis server", review your firewall rules and network connections to make sure that ports 7000 and 7001 are reachable from the OutSystems front-end servers.
 

@@ -53,7 +53,7 @@ Start by creating a supported **PostgreSQL / Aurora PostgreSQL** database connec
 
 1. Select **New Database Connection**, set **DBMS** to **PostgreSQL / Aurora PostgreSQL**, and set the remaining fields.
 
-    ![Create a new database connection with DBMS set to PostgreSQL / Aurora PostgreSQL](images/create-db-connection-ss.png)
+    ![Screenshot of the 'Create Database Connection' interface with fields for name, description, DBMS selection, and credentials.](images/create-db-connection-ss.png "Create Database Connection Screen")
 
 1. Select **Test Connection** to check if the connection is working correctly, and then select **Create** to create the database connection.
 
@@ -63,7 +63,7 @@ Update each extension that uses the ardoPostgreSQL database connection, ensuring
 
 1. In **Database Connections**, select the ardoPostgreSQL database connection. This database connection has **PostgreSQL** as the **Provider Name**.
 
-    ![Select ardoPostgreSQL database connection](images/select-ardopostgresql-db-connection-ss.png)
+    ![Screenshot highlighting the selection of the 'Third Party PostgreSQL Database Connector' in the database connections list.](images/select-ardopostgresql-db-connection-ss.png "Select ardoPostgreSQL Database Connection")
 
 1. In the **Extensions** tab of the database connection, select the first extension that uses the database connection.
 

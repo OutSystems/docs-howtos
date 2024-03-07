@@ -12,7 +12,7 @@ figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:9
 
 By default, input validation messages are shown next or below the corresponding inputs.
 
-![default input validation message location](images/validation-messages-00.png)
+![Screenshot showing default input validation messages next to form fields.](images/validation-messages-00.png "Default Input Validation Messages")
 
 How can I show these messages in another location to meet business or design requirements?
 
@@ -40,7 +40,7 @@ Follow the steps below to display input validation messages in a custom location
 
 1. Assign `<input_name>.ValidationMessage` to the Value of an **Expression** Widget to display the validation message of the `<input_name>` Input in a custom location. 
 
-    ![custom input validation message location](images/validation-messages-01.png)
+    ![Interface showing how to set a custom location for input validation messages using Expression Widget.](images/validation-messages-01.png "Setting Custom Location for Validation Messages")
 
     You may modify the look of the custom location validation messages by modifying the style of the **Expression** Widget.
 
@@ -48,4 +48,4 @@ Follow the steps below to display input validation messages in a custom location
 
 After these steps the input validation messages will appear in a custom location at runtime:
 
-![custom input validation message location](images/validation-messages-02.png)
+![Screenshot of a form displaying input validation messages in a custom location below the input fields.](images/validation-messages-02.png "Custom Location Input Validation Messages Display")

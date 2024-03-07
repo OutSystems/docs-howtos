@@ -22,23 +22,23 @@ To use **Input_AutoComplete** with an input widget follow these steps:
 
 1. Set the **Name** and **Variable** properties of the search field input widget to a **Local Variable** (in this case `UserSearch` and `Name_Search`).
 
-    ![](images/autocomplete01.png)
+    ![Screenshot showing how to set the Name and Variable properties of the search field input widget.](images/autocomplete01.png "Setting Name and Variable Properties")
 
-    ![](images/autocomplete03.png)
+    ![Image displaying the configuration of a local variable for the search field in a web application.](images/autocomplete03.png "Local Variable Configuration")
     
 1. Add an **Input_AutoComplete** RichWidget next to the input widget and set the **InputWidgetId** property to the Id of the input.
 
-    ![](images/autocomplete00.png)
+    ![Screenshot of the Input_AutoComplete RichWidget being added next to the input widget.](images/autocomplete00.png "Adding Input_AutoComplete Widget")
 
-    ![](images/autocomplete06.png)
+    ![Image showing the setting of the InputWidgetId property for the Input_AutoComplete widget.](images/autocomplete06.png "InputWidgetId Property Setting")
 
 1. Set the **On Notify**>**Destination** property of Input_AutoComplete to a newly created Screen Action, in this case **UsersAutoComplete**.
 
-    ![](images/autocomplete07.png)
+    ![Screenshot illustrating how to set the On Notify Destination property of the Input_AutoComplete widget.](images/autocomplete07.png "On Notify Destination Configuration")
 
 1. Add an Aggregate to the Screen Action and create a Filter using the Local Variable to limit the query results according to what's typed in the Input Widget.
 
-    ![](images/autocomplete11.png)
+    ![Image depicting the addition of an Aggregate to the Screen Action for filtering query results.](images/autocomplete11.png "Filtering with Aggregate in Screen Action")
 
     In this case the Filter `Users.Name like Name_Search+"%"` only retrieves users whose `Name` Attribute starts with what's typed in the Input Widget.
 
@@ -46,13 +46,13 @@ To use **Input_AutoComplete** with an input widget follow these steps:
 
 1. Set the **Action**>**InputWidgetId** property to the Id of the Input and the **Action**>**List** to the Aggregate's List, in this case `GetUsersforAutoComplete.List`.
 
-    ![](images/autocomplete10.png)
+    ![Screenshot showing the configuration of the Input_AutoComplete_ShowList server action.](images/autocomplete10.png "Configuring Input_AutoComplete_ShowList")
 
     Be sure to map the **Label** and **Identifier** properties. The **Label** holds the value displayed in the autocomplete list, and the **Identifier** holds the Identifier of those values.
 
     The Screen Action should look similar to the following image.
 
-    ![](images/autocomplete09.png)
+    ![Image providing an overview of the Screen Action setup for the autocomplete functionality.](images/autocomplete09.png "Screen Action Overview")
 
     The action queries the database for the **autocomplete** suggestions that appear below the Input field.
     
@@ -60,7 +60,7 @@ To use **Input_AutoComplete** with an input widget follow these steps:
 
 After these steps the search field in your app shows a list of suggestions that changes as you type.
 
-![](images/autocomplete13.png)
+![Screenshot demonstrating the autocomplete suggestions appearing below the search field as a user types.](images/autocomplete13.png "Autocomplete Suggestions Display")
 
 <div class="info" markdown="1">
 

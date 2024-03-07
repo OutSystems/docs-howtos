@@ -37,7 +37,7 @@ To control which role in your factory can access the sales screens, you should t
 
 In every screen of this application, you have to assign the unique role that you have created before: **Sales**.
 
-![Sales role](images/sales-role-ss.png)
+![Screenshot of the screen role assignment for the Sales application.](images/sales-role-ss.png "Sales Role Screen Assignment")
 
 ## Controlling the displayed information
 
@@ -47,7 +47,7 @@ If the user doesn’t have permission to access the screen, raise an exception, 
 
 The following figure shows the **HasAccessByFunctionId** action and the exceptions in the logic.
 
-![HasAccessByFunctionId action logic](images/hasaccessbyfunctionId-logic-ss.png)
+![Flowchart showing the HasAccessByFunctionId logic used to control screen access.](images/hasaccessbyfunctionId-logic-ss.png "HasAccessByFunctionId Logic Flow")
 
 ## Controlling the available actions
 
@@ -55,19 +55,19 @@ In screens where users can perform actions such as updating records, importing r
 
 The following figure shows the SalesDashboard screen Preparation.
 
-![Sales Dashboard screen Preparation](images/sales-dashboard-screen-preparation-ss.png)
+![Screenshot of the SalesDashboard screen preparation logic in OutSystems.](images/sales-dashboard-screen-preparation-ss.png "Sales Dashboard Screen Preparation Logic")
 
 The figures below depict the use of the **GetPermissionByUserId** action in the Preparation logic, and the assignments to check the permissions:
 
-![Use of the GetPermissionByUserId action in preparation](images/getpermissionbyuserid-action-preparation-ss.png)
+![Screenshot depicting the use of GetPermissionsByUserId action in screen preparation.](images/getpermissionbyuserid-action-preparation-ss.png "GetPermissionsByUserId Action in Preparation")
 
-![Permission checking wrapper.png](images/permission-checking-wrapper.png)
+![Screenshot showing the permission checking logic wrapper in OutSystems.](images/permission-checking-wrapper.png "Permission Checking Logic Wrapper")
 
-![If condition to check the user's permission](images/if-condition-check-users-permission-ss.png)
+![Screenshot of an if condition used to check a user's permission in OutSystems.](images/if-condition-check-users-permission-ss.png "If Condition to Check User's Permission")
 
 Here's how the **Sales** module looks like:
 
-![Sales module overview](images/sales-module-overview-ss.png)
+![Screenshot showing the overview of the Sales module in OutSystems.](images/sales-module-overview-ss.png "Sales Module Overview")
 
 ## SalesDashboard screen
 
@@ -85,11 +85,11 @@ At the BackOffice, the configuration of the Account Manager role allows you to h
 
 As an Account Manager, Agnes Marvs can perform the actions "Pay Bills" and “Transfer.”, as depicted in the figure below.
 
-![Write permission example screen](images/write-permission-example-screen.png)
+![Screenshot of the SalesDashboard screen with write permissions enabled for an Account Manager.](images/write-permission-example-screen.png "Write Permission Example Screen")
 
 As an Agent, Angela Arthur doesn’t see any actions. 
 
-![Read-only permission example screen](images/read-only-permission-example-screen.png)
+![Screenshot of the SalesDashboard screen with read-only permissions for an Agent.](images/read-only-permission-example-screen.png "Read-Only Permission Example Screen")
 
 
 ## Other screens
@@ -106,16 +106,16 @@ Let’s use the same users with the same functions to exemplify - Agnes Marvs (A
 
 The Agent function accesses the Agent Dashboard:
 
-![Agent Dashboard accessed by the Agent role](images/agent-dashboard-access-by-agent.png)
+![Screenshot showing an Agent's access to the Agent Dashboard in the Sales application.](images/agent-dashboard-access-by-agent.png "Agent Dashboard Access by Agent")
 
 The Account Manager function, or any other function, accesses the Agent Dashboard.
 
-![Agent Dashboard accessed by the Account Manager role](images/agent-dashboard-access-by-account-manager.png)
+![Screenshot showing an Account Manager's access to the Agent Dashboard in the Sales application.](images/agent-dashboard-access-by-account-manager.png "Agent Dashboard Access by Account Manager")
 
 The Account Manager function accesses the Dashboard Account Manager.
 
-![Account Manager Dashboard accessed by the Account Manager role](images/account-manager-dashboard-access-by-account-manager.png)
+![Screenshot showing an Account Manager's access to their own dashboard in the Sales application.](images/account-manager-dashboard-access-by-account-manager.png "Account Manager Dashboard Access by Account Manager")
 
 The Agent role can't access the Dashboard Account Manager. 
 
-![Invalid permissions to access a screen](images/invalid-permissions-access-screen.png)
+![Screenshot displaying an 'Invalid Permissions' error message when access is denied.](images/invalid-permissions-access-screen.png "Invalid Permissions Access Screen")

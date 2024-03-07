@@ -30,7 +30,7 @@ In this example lets start by creating a users list screen, by dragging the User
 
 1. On the **Data** tab, expand the **(System)** entry of the **Database**, and drag the **User** entity to the development main editor:
 
-    ![](images/create_screen_ss.png?width=900) 
+    ![Screenshot showing the process of creating a user list screen by dragging the User entity to the main flow in Service Studio.](images/create_screen_ss.png "Creating a User List Screen") 
 
 1. Double-click the **Users** screen to open the screen.
 
@@ -38,7 +38,7 @@ In this example lets start by creating a users list screen, by dragging the User
 
 1. In the **On Click** event of your link or button, select **New Client Action**:
 
-    ![Creating a new client action](images/create_screen_action_ss.png)
+    ![Screenshot of the Service Studio interface with a highlighted button for adding a new client action to the user list screen.](images/create_screen_action_ss.png "Adding a Button to the User List Screen")
 
 ### Creating the download logic { #reactive-logic }
 
@@ -48,7 +48,7 @@ Now that you have done all required actions on the screen is time to create the 
 
 1. Add a Server Action to your flow:
 
-    ![Creating a new client action](images/client_action_excel_ss.png)
+    ![Screenshot depicting the addition of a server action to the client action flow in Service Studio.](images/client_action_excel_ss.png "Adding a Server Action to the Client Action Flow")
 
 1. When the pop-up displays, select **New Server Action**.
 
@@ -62,7 +62,7 @@ Now that you have done all required actions on the screen is time to create the 
 
     1. In the Record List to Excel properties, select the `GetUsers.List`:
 
-        ![Export Entity to Excel](images/record_list_excel_details_ss.png)
+        ![Screenshot showing the configuration of the Record List to Excel properties in Service Studio.](images/record_list_excel_details_ss.png "Configuring Record List to Excel Properties")
 
     1. Select the attributes you want to export to Excel, by checking them. These are your Excel columns.
 
@@ -70,11 +70,11 @@ Now that you have done all required actions on the screen is time to create the 
 
         This Output parameter enables your screen action to consume the Excel data exported in the server action:
 
-        ![Export Entity to Excel](images/output_parameter_details_ss.png)
+        ![Screenshot illustrating the addition of an output parameter for Excel data in a server action.](images/output_parameter_details_ss.png "Adding an Output Parameter for Excel Data")
 
     1. Finally, add an **Assign** to your flow, and assign the your Output Parameter with the RecordsListToExcel value:
 
-        ![Export Entity to Excel](images/assign_excel_list_ss.png)
+        ![Screenshot displaying the assignment of the Excel data to the output parameter in the server action flow.](images/assign_excel_list_ss.png "Assigning the Excel Data to the Output Parameter")
 
     1. Having this done, go back to your Client Action.
 
@@ -82,7 +82,7 @@ Now that you have done all required actions on the screen is time to create the 
 
 1. Add a **Download** as the end of your flow:
 
-    ![Export Entity to Excel](images/download_action_excel_ss.png)
+    ![Screenshot showing the addition of a download action to the client action flow in Service Studio.](images/download_action_excel_ss.png "Adding a Download Action to the Client Action Flow")
 
 1. Finally, in the **Download** details, select the Server Action Output Parameter as the file content.
 
@@ -102,7 +102,7 @@ If it's expected that the user downloads the file several times, you may want to
 
     1. Click on the **Data** tab, expand the **(System)** entry of the **Database**, and drag the **User** entity to the development main editor:
 
-        ![](images/create_screen_ss.png)
+        ![Screenshot showing the process of creating a user list screen by dragging the User entity to the main flow in Service Studio.](images/create_screen_ss.png "Creating a User List Screen")
 
 1. Double-click on the Users screen to open the screen.
 
@@ -111,7 +111,7 @@ If it's expected that the user downloads the file several times, you may want to
     * Set the **Method** to `Submit`.
     * Create a New Screen Action in the Destination.
 
-    ![Export Entity to Excel](images/export_entity_data_to_excel1.png)
+    ![Screenshot of the Service Studio interface with a link configured to export entity data to an Excel file in a traditional web application.](images/export_entity_data_to_excel1.png "Setting Up Export to Excel in Traditional Web")
 
 Now that you have created everything on the screen, from this moment on you can follow the [same instructions as in Reactive Web](#reactive-logic) to add the necessary logic.
 

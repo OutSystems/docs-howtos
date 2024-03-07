@@ -19,7 +19,7 @@ After you upgrade every module of every application to OutSystems 11 the Log Ser
 Upgrade every single Module in every application to Outsystems 11. 
 In **Computer Management** > **Services and Applications** > **Message Queuing** > **Private Queues**, make sure that the number of messages is zero (`0`) on all queues, as shown in the following image:
 
-![](images/log-service-clean-1.png)
+![Screenshot of the Message Queuing Private Queues window showing zero messages in all OutSystems queues.](images/log-service-clean-1.png "Message Queuing Private Queues")
 
 This ensures that there are no pending log messages from pre-OutSystems 11 Modules.
 

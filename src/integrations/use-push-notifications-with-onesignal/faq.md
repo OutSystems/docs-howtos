@@ -13,7 +13,7 @@ OneSignal is a service that enables push notifications, abstracting details such
 
 The image below shows a push notification in an Android smartphone.
 
-![One-Signal-0.png](images/One-Signal-0.png)
+![Example of a push notification on an Android smartphone screen with the message 'Hello from OutSystems!'](images/One-Signal-0.png "Android Push Notification Example")
 
 ## Configuring OneSignal
 
@@ -28,7 +28,7 @@ You can configure OneSignal for iOS and Android.
 
 Start by installing the [OneSignal plugin](http://www.outsystems.com/forge/component/2119/onesignal-plugin/ "http://www.outsystems.com/forge/component/2119/onesignal-plugin/") from the OutSystems Forge. Alternatively, go to the **OutSystems tab** in Service Studio and install from there.
 
-![](images/image.png)
+![Screenshot of the OneSignal Plugin page on the OutSystems Forge website](images/image.png "OneSignal Plugin on OutSystems Forge")
 
 ## Receiving Notifications
 
@@ -36,13 +36,13 @@ For your app to receive notifications, you need to implement client-side logic t
 
 Start by adding the OneSignal plugin to the mobile app in the **Manage Dependencies** menu option. This plugin contains the client-side actions to register the device.
 
-![](images/One-Signal-1.png)
+![OutSystems Service Studio interface showing the OneSignal Plugin selected in the Manage Dependencies window](images/One-Signal-1.png "OneSignal Plugin in Manage Dependencies")
 
 In case you want to add logic to run on events over notifications, do the following:
 
 1. Add the OneSignal block to the Layout block of your application.   
 
-    ![](images/Layout.png)
+    ![Service Studio interface highlighting the OneSignal block added to the Layout block of an application](images/Layout.png "OneSignal Block in Layout")
 
 1. Add your logic to the event handlers of the OneSignal block: 
 
@@ -74,13 +74,13 @@ If your users need to login to use the application, the device can be registered
 
 One place to do it can be the “Login” screen.
 
-![](images/One-Signal-2.png)
+![OutSystems Service Studio interface showing the Login screen in the UI Flows section](images/One-Signal-2.png "Login Screen in Service Studio")
 
 Use the RegisterWithUser action to register the user along with the device.
 
 Put it after the “DoLogin” action and it should look like this:
 
-![](images/one-signal-03.png)
+![Flowchart in Service Studio depicting the RegisterWithUser action after the DoLogin action](images/one-signal-03.png "Register With User Logic Flow")
 
 To set the AppId value, use the **OneSignal App ID** value from the OneSignal console.
 
@@ -88,7 +88,7 @@ By default, the registration action is performed asynchronously, sending the act
 
 Save the **OneSignal App ID** and **REST API Key** values because you will need them later.
 
-![](images/One-Signal-4.png)
+![OneSignal console showing the App Settings with fields for OneSignal App ID and REST API Key](images/One-Signal-4.png "OneSignal App Settings")
 
 By default, notifications won’t be displayed when the application is already running in the foreground. To always display notifications, set property InFocusDisplayOptions to `Entities.InFocusDisplayOption.NOTIFICATION`.
 
@@ -98,11 +98,11 @@ If your application does not have a login, the device can be registered without 
 
 One place to do it can be the “On Application Ready” action.
 
-![](images/One-Signal-5.png)
+![Service Studio interface showing the On Application Ready action in the MainFlow of a HomeScreen](images/One-Signal-5.png "On Application Ready Action")
 
 Use the Register action to register the device. It should look like in the image below:
 
-![](images/one-signal-06.png)
+![Flowchart in Service Studio depicting the Register action in the OnApplicationReady client action](images/one-signal-06.png "Register Device Logic Flow")
 
 By default, the registration action is performed asynchronously, sending the action to register the device in OneSignal service and continuing the logic execution, without waiting for the registration action response. To change this behavior, set AsyncRegister parameter to `false`, blocking the code execution and waiting until the device is registered in OneSignal service before proceeding.
 
@@ -112,17 +112,17 @@ Furthermore by default, notifications won’t be displayed when the application 
 
 To send notifications, you need to implement server-side logic. Add the OneSignalAPI in the Manage Dependencies… menu option. This API contains the server-side actions to send notifications.
 
-![](images/One-Signal-7.png)
+![OutSystems Service Studio interface showing the OneSignalAPI selected in the Manage Dependencies window](images/One-Signal-7.png "OneSignalAPI in Manage Dependencies")
 
 Add the server-side logic to send the notification like in the image below:
 
-![One-Signal-8.png](images/One-Signal-8.png)
+![Flowchart in Service Studio depicting the logic to send a push notification using OneSignalAPI](images/One-Signal-8.png "Send Notification Logic Flow")
 
 To set the OneSignalRestAPIKey and OneSignalAppId values, use the values you saved earlier in this document.
 
 By default, Android notifications are displayed using the bell icon. To replace this icon with the application icon, set the SmallIcon property to `"icon"` if you are generating your app using MABS 4 or below. Else, set the SmallIcon property to `"ic_launcher"`.
 
-![One-Signal-9.png](images/One-Signal-9.png)
+![Service Studio interface showing the configuration for the notification icon in the SendPushNotification server action](images/One-Signal-9.png "Notification Icon Configuration")
 
 ### Defining the notification message(s)
 
@@ -130,19 +130,19 @@ To define the text of the notifications to send, set the Message input parameter
 
 In the following example, two local variables were defined in the SendReminder server action where the notifications are sent: a local variable Message of data type "Content" and a local variable MessageList of data type "Content List".
 
-![One-Signal-Flow-action.png](images/One-Signal-Flow-action.png)
+![Service Studio interface showing the structure of the SendReminder server action with MessageList and Message variables](images/One-Signal-Flow-action.png "SendReminder Server Action Structure")
 
 To send a notification with a simple message in English, do the following in the server action flow:
 
-![One-Signal-SendNotification-flow-steps.png](images/One-Signal-SendNotification-flow-steps.png)
+![Flowchart in Service Studio showing the steps to send a notification with Assign, ListAppend, and SendPushNotificationToUserId actions](images/One-Signal-SendNotification-flow-steps.png "Send Notification Flow Steps")
 
 1. **Assign** the message text and the English language code `"en"` to the Message local variable of data type "Content"; 
 
-    ![One-Signal-Flow-assign-element.png](images/One-Signal-Flow-assign-element.png)
+    ![Service Studio interface showing the Assign action with Message.Lang set to 'en' and Message.Value set to a notification text](images/One-Signal-Flow-assign-element.png "Assign Action in Send Notification Flow")
 
 2. **Append** this local variable to the list of notifications to send which is kept in the MessageList local variable of data type "Content List"; 
 
-    ![One-Signal-Flow-listappend-element.png](images/One-Signal-Flow-listappend-element.png)
+    ![Service Studio interface showing the ListAppend action appending a Message to the MessageList](images/One-Signal-Flow-listappend-element.png "ListAppend Action in Send Notification Flow")
 
 3. **Send** the notification supplying the MessageList variable as the Message input parameter. 
 

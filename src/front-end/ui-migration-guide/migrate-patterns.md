@@ -38,7 +38,7 @@ When replacing the Accordion usage with the new pattern, sample content will be 
  
 | Silk Web UI | OutSystems Web UI |
 | -------|-------|
-![](images/image21.png) | ![](images/image54.png) 
+![TO_REPLACE](images/image21.png) | ![TO_REPLACE](images/image54.png) 
  
 ## Alert
  
@@ -48,9 +48,9 @@ A new option is available: ShowCloseButton, which enables the end-user to close 
 
 | Silk Web UI | OutSystems Web UI |
 | -------|-------|
-![](images/image145.png) | ![](images/image72.png) 
- |  | ![](images/image3.png) 
- ![](images/image155.png) |![](images/image138.png) 
+![TO_REPLACE](images/image145.png) | ![TO_REPLACE](images/image72.png) 
+ |  | ![TO_REPLACE](images/image3.png) 
+ ![TO_REPLACE](images/image155.png) |![TO_REPLACE](images/image138.png) 
 
 ## Align Center
 
@@ -60,9 +60,9 @@ Set the Orientation parameter as Horizontal to have the same behavior of Vertica
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![](images/image120.png) | ![](images/image30.png) 
-|  | ![](images/image159.png) 
-|  | ![](images/image94.png) 
+![TO_REPLACE](images/image120.png) | ![TO_REPLACE](images/image30.png) 
+|  | ![TO_REPLACE](images/image159.png) 
+|  | ![TO_REPLACE](images/image94.png) 
 
 ## Badge
 
@@ -70,9 +70,9 @@ When replacing the Badge pattern, the assigned variable or value will become an 
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![](images/image153.png) | ![](images/image123.png) 
-![](images/image77.png) | ![](images/image101.png) 
-|  | ![](images/image1.png) 
+![TO_REPLACE](images/image153.png) | ![TO_REPLACE](images/image123.png) 
+![TO_REPLACE](images/image77.png) | ![TO_REPLACE](images/image101.png) 
+|  | ![TO_REPLACE](images/image1.png) 
 
 ## Balloon
  
@@ -87,10 +87,10 @@ There are two new placeholders: Title and Footer. There is also a new parameter 
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![](images/image91.png) | ![](images/image68.png) 
-|  | ![](images/image5.png) 
-![](images/image93.png) | ![](images/image50.png) 
-| | ![](images/image84.png) 
+![TO_REPLACE](images/image91.png) | ![TO_REPLACE](images/image68.png) 
+|  | ![TO_REPLACE](images/image5.png) 
+![TO_REPLACE](images/image93.png) | ![TO_REPLACE](images/image50.png) 
+| | ![TO_REPLACE](images/image84.png) 
  
 ## Blank Slate
  
@@ -98,9 +98,9 @@ When replacing the BlankSlate pattern, your content inside the Content placehold
  
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![](images/image119.png) | ![](images/image25.png) ![](images/image136.png)
-![](images/image71.png) | ![](images/image127.png)
-|  | ![](images/image31.png)
+![TO_REPLACE](images/image119.png) | ![TO_REPLACE](images/image25.png) ![TO_REPLACE](images/image136.png)
+![TO_REPLACE](images/image71.png) | ![TO_REPLACE](images/image127.png)
+|  | ![TO_REPLACE](images/image31.png)
 
 ## Breadcrumbs
 
@@ -114,9 +114,9 @@ If you wish to keep the same Icon from the old pattern, make sure you set the ne
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- | 
-![](images/image156.png) | ![](images/image35.png) 
-![](images/image122.png) | ![](images/image67.png) 
-|  | ![](images/image146.png)  
+![TO_REPLACE](images/image156.png) | ![TO_REPLACE](images/image35.png) 
+![TO_REPLACE](images/image122.png) | ![TO_REPLACE](images/image67.png) 
+|  | ![TO_REPLACE](images/image146.png)  
 
 ## Button Group
 
@@ -130,8 +130,8 @@ IsJustified parameter makes items evenly distributed.
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- | 
-![](images/image69.png) | ![](images/image46.png) 
-|  | ![](images/image118.png) 
+![TO_REPLACE](images/image69.png) | ![TO_REPLACE](images/image46.png) 
+|  | ![TO_REPLACE](images/image118.png) 
 
 
 ## Card
@@ -140,7 +140,7 @@ When replacing the Card pattern, your content inside the Content placeholder wil
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![](images/image133.png) | ![](images/image103.png) 
+![TO_REPLACE](images/image133.png) | ![TO_REPLACE](images/image103.png) 
 
 ## Card Background
 
@@ -153,9 +153,9 @@ Color, Position, MinHeight and ExtendedClass input parameters are now available.
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![](images/image17.png) | ![](images/image110.png) 
-![](images/image16.png) | ![](images/image27.png) 
-|  | ![](images/image113.png) 
+![TO_REPLACE](images/image17.png) | ![TO_REPLACE](images/image110.png) 
+![TO_REPLACE](images/image16.png) | ![TO_REPLACE](images/image27.png) 
+|  | ![TO_REPLACE](images/image113.png) 
  
  
 ## Card Sectioned
@@ -168,9 +168,9 @@ The Orientation parameter sets the display of the Title in relation to the Conte
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![](images/image82.png) | ![](images/image128.png) 
-|  | ![](images/image129.png) 
-|  | ![](images/image33.png)
+![TO_REPLACE](images/image82.png) | ![TO_REPLACE](images/image128.png) 
+|  | ![TO_REPLACE](images/image129.png) 
+|  | ![TO_REPLACE](images/image33.png)
 
 ## Columns
 
@@ -186,9 +186,9 @@ When replacing the Columns pattern, TabletBehavior and PhoneBehavior must be map
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![](images/image19.png) | ![](images/image98.png) 
-![](images/image70.png) | ![](images/image134.png) 
-|  | ![](images/image147.png) 
+![TO_REPLACE](images/image19.png) | ![TO_REPLACE](images/image98.png) 
+![TO_REPLACE](images/image70.png) | ![TO_REPLACE](images/image134.png) 
+|  | ![TO_REPLACE](images/image147.png) 
 
 ## Counter
 
@@ -198,9 +198,9 @@ An Icon was introduced as sample content. You can delete it or customize it if y
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![](images/image59.png) | ![](images/image51.png) 
-![](images/image57.png) | ![](images/image143.png) 
-|  | ![](images/image38.png) 
+![TO_REPLACE](images/image59.png) | ![TO_REPLACE](images/image51.png) 
+![TO_REPLACE](images/image57.png) | ![TO_REPLACE](images/image143.png) 
+|  | ![TO_REPLACE](images/image38.png) 
 
 ## File Upload
 
@@ -208,9 +208,9 @@ When replacing the FileUpload pattern, all your content will be in the correct p
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- | 
-![](images/image148.png) | ![](images/image139.png) 
-![](images/image115.png) | ![](images/image40.png) 
-|  | ![](images/image142.png)  
+![TO_REPLACE](images/image148.png) | ![TO_REPLACE](images/image139.png) 
+![TO_REPLACE](images/image115.png) | ![TO_REPLACE](images/image40.png) 
+|  | ![TO_REPLACE](images/image142.png)  
 
 ## Gallery
 
@@ -220,9 +220,9 @@ The previous pattern relied on the parameters to set the number of items per row
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![](images/image43.png) | ![](images/image10.png) 
-![](images/image96.png) | ![](images/image61.png) 
-|  | ![](images/image55.png)
+![TO_REPLACE](images/image43.png) | ![TO_REPLACE](images/image10.png) 
+![TO_REPLACE](images/image96.png) | ![TO_REPLACE](images/image61.png) 
+|  | ![TO_REPLACE](images/image55.png)
  
 
 ## Modal
@@ -242,12 +242,12 @@ About the parameters:
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![](images/image88.png) | ![](images/image116.png) 
-|  | ![](images/image23.png) 
-|  | ![](images/image111.png) 
-|  | ![](images/image36.png) 
-![](images/image102.png) | ![](images/image28.png) 
-|  | ![](images/image149.png) 
+![TO_REPLACE](images/image88.png) | ![TO_REPLACE](images/image116.png) 
+|  | ![TO_REPLACE](images/image23.png) 
+|  | ![TO_REPLACE](images/image111.png) 
+|  | ![TO_REPLACE](images/image36.png) 
+![TO_REPLACE](images/image102.png) | ![TO_REPLACE](images/image28.png) 
+|  | ![TO_REPLACE](images/image149.png) 
 
 ## Panel
  
@@ -255,10 +255,10 @@ When replacing the Panel pattern, your content inside the Title, Actions, and Co
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![](images/image90.png) | ![](images/image6.png) 
-|  | ![](images/image132.png) 
-![](images/image125.png) | ![](images/image108.png) 
-|  | ![](images/image15.png) 
+![TO_REPLACE](images/image90.png) | ![TO_REPLACE](images/image6.png) 
+|  | ![TO_REPLACE](images/image132.png) 
+![TO_REPLACE](images/image125.png) | ![TO_REPLACE](images/image108.png) 
+|  | ![TO_REPLACE](images/image15.png) 
 
 ## Progress Bar
 
@@ -266,10 +266,10 @@ When replacing the ProgressBar pattern, Title and Value placeholders will be add
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![](images/image47.png) | ![](images/image137.png) 
-![](images/image150.png) | ![](images/image135.png)
-|  | ![](images/image158.png) 
-|  | ![](images/image104.png) 
+![TO_REPLACE](images/image47.png) | ![TO_REPLACE](images/image137.png) 
+![TO_REPLACE](images/image150.png) | ![TO_REPLACE](images/image135.png)
+|  | ![TO_REPLACE](images/image158.png) 
+|  | ![TO_REPLACE](images/image104.png) 
  
 ## Section
  
@@ -277,8 +277,8 @@ When replacing the Section pattern, all your content will be in the correct plac
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![](images/image105.png) | ![](images/image22.png) 
-![](images/image41.png) | ![](images/image24.png) 
+![TO_REPLACE](images/image105.png) | ![TO_REPLACE](images/image22.png) 
+![TO_REPLACE](images/image41.png) | ![TO_REPLACE](images/image24.png) 
 
 ## Toggle Button
 
@@ -286,7 +286,7 @@ When replacing the ToggleButton pattern, the check box will lose its variable. R
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![](images/image42.png) | ![](images/image34.png)
+![TO_REPLACE](images/image42.png) | ![TO_REPLACE](images/image34.png)
 
 ## Tooltip
 
@@ -298,10 +298,10 @@ The Trigger and Position parameters must be mapped to the new Trigger and Positi
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![](images/image121.png) | ![](images/image112.png) 
-![](images/image114.png) | ![](images/image160.png) 
-|  | ![](images/image144.png) 
-|  | ![](images/image66.png) 
+![TO_REPLACE](images/image121.png) | ![TO_REPLACE](images/image112.png) 
+![TO_REPLACE](images/image114.png) | ![TO_REPLACE](images/image160.png) 
+|  | ![TO_REPLACE](images/image144.png) 
+|  | ![TO_REPLACE](images/image66.png) 
 
 ## Icon Badge
 
@@ -309,9 +309,9 @@ When replacing the IconBadge pattern, a new Icon placeholder will be added with 
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![](images/image76.png) | ![](images/image62.png) 
-![](images/image100.png) | ![](images/image56.png) 
-|  | ![](images/image64.png) 
+![TO_REPLACE](images/image76.png) | ![TO_REPLACE](images/image62.png) 
+![TO_REPLACE](images/image100.png) | ![TO_REPLACE](images/image56.png) 
+|  | ![TO_REPLACE](images/image64.png) 
 
  
 ## Input With Icon
@@ -320,8 +320,8 @@ When replacing the InputWithIcons the input will be in the correct place. The st
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![](images/image49.png) | ![](images/image89.png) 
-![](images/image85.png) | ![](images/image29.png) 
+![TO_REPLACE](images/image49.png) | ![TO_REPLACE](images/image89.png) 
+![TO_REPLACE](images/image85.png) | ![TO_REPLACE](images/image29.png) 
 
 ## Range Slider
 
@@ -333,12 +333,12 @@ If you already had an action to handle the input OnChange (for the old Rangeslid
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![](images/image79.png) | ![](images/image26.png) 
-|  | ![](images/image131.png) 
-|  | ![](images/image11.png) 
-![](images/image124.png) | ![](images/image126.png) 
-|  | ![](images/image99.png)
-|  | ![](images/image106.png) 
+![TO_REPLACE](images/image79.png) | ![TO_REPLACE](images/image26.png) 
+|  | ![TO_REPLACE](images/image131.png) 
+|  | ![TO_REPLACE](images/image11.png) 
+![TO_REPLACE](images/image124.png) | ![TO_REPLACE](images/image126.png) 
+|  | ![TO_REPLACE](images/image99.png)
+|  | ![TO_REPLACE](images/image106.png) 
 
 ## Range Slider Interval
 
@@ -350,10 +350,10 @@ If you already had an action to handle the input OnChange (for the old Rangeslid
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![](images/image2.png) | ![](images/image97.png) 
-![](images/image92.png) | ![](images/image95.png) 
-|  | ![](images/image130.png) 
-|  | ![](images/image74.png) 
+![TO_REPLACE](images/image2.png) | ![TO_REPLACE](images/image97.png) 
+![TO_REPLACE](images/image92.png) | ![TO_REPLACE](images/image95.png) 
+|  | ![TO_REPLACE](images/image130.png) 
+|  | ![TO_REPLACE](images/image74.png) 
  
 ## Search
 
@@ -361,21 +361,21 @@ When replacing the Search pattern, a new input will be created. Delete the new i
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![](images/image44.png) | ![](images/image75.png) 
-|  | ![](images/image117.png) 
+![TO_REPLACE](images/image44.png) | ![TO_REPLACE](images/image75.png) 
+|  | ![TO_REPLACE](images/image117.png) 
 
 ## Separator
 
 When replacing the Separator pattern, you won't need to do anything. Instead, you will have more customization options:
 
-* Color - Select the color of the separator. Default is Neutral-4 ![](images/image37.png)
+* Color - Select the color of the separator. Default is Neutral-4 ![TO_REPLACE](images/image37.png)
 * Space - Set the space around the Separator. Ranging from 0px to 48px. Default is 16px.
 * IsVertical - Set to True to use a vertical separator. The default is False.
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![](images/image80.png) | ![](images/image87.png) 
-|  | ![](images/image140.png) 
+![TO_REPLACE](images/image80.png) | ![TO_REPLACE](images/image87.png) 
+|  | ![TO_REPLACE](images/image140.png) 
 
 ## Tabs
 
@@ -391,9 +391,9 @@ When replacing the Tabs pattern, sample content will be added.
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- | 
-![](images/image48.png) | ![](images/image60.png) 
-|  | ![](images/image109.png) 
-|  | ![](images/image14.png) 
+![TO_REPLACE](images/image48.png) | ![TO_REPLACE](images/image60.png) 
+|  | ![TO_REPLACE](images/image109.png) 
+|  | ![TO_REPLACE](images/image14.png) 
  
 ## User Initials
 
@@ -402,8 +402,8 @@ Your Name and Color argument values will map to the correct parameters, but you 
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![](images/image8.png) | ![](images/image_ui.png) 
-![](images/image4.png) | ![](images/image_ui2.png) 
+![TO_REPLACE](images/image8.png) | ![TO_REPLACE](images/image_ui.png) 
+![TO_REPLACE](images/image4.png) | ![TO_REPLACE](images/image_ui2.png) 
 
 ## Wizard
 
@@ -415,10 +415,10 @@ When replacing the Wizard pattern, sample content will be provided.
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![](images/image65.png) | ![](images/image20.png) 
-|  | ![](images/image86.png) 
-|  | ![](images/image154.png) 
-![](images/image52.png) | ![](images/image81.png) 
-![](images/image45.png) | ![](images/image83.png) 
-![](images/image9.png) | ![](images/image78.png) 
+![TO_REPLACE](images/image65.png) | ![TO_REPLACE](images/image20.png) 
+|  | ![TO_REPLACE](images/image86.png) 
+|  | ![TO_REPLACE](images/image154.png) 
+![TO_REPLACE](images/image52.png) | ![TO_REPLACE](images/image81.png) 
+![TO_REPLACE](images/image45.png) | ![TO_REPLACE](images/image83.png) 
+![TO_REPLACE](images/image9.png) | ![TO_REPLACE](images/image78.png) 
 

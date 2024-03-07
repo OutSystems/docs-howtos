@@ -32,17 +32,17 @@ Do the following:
 
 1. Change the Integration Studio options to start using Visual Studio 2017 and associated MSBuild to compile the extension.
 
-    ![.NET SDK settings in Integration Studio options](images/integration-studio-config.png)
+    ![Screenshot of the Integration Studio configuration dialog showing paths for .NET Software Development Kit and .NET Integrated Development Environment.](images/integration-studio-config.png "Integration Studio Configuration Dialog")
 
 1. Change the extension's main project target framework from ".NET Framework 4.6.1" to ".NET Framework 4.7.2".
 
-    ![Project settings in Visual Studio](images/project-target.png)
+    ![Visual Studio project properties window highlighting the target framework set to .NET Framework 4.7.2.](images/project-target.png "Project Properties Target Framework")
 
 1. Build your extension and reference the necessary libraries.
 
 Before publishing the extension in Integration Studio, make sure that your extension **doesn't include** system built-in assemblies from .NET Standard:
 
-![Incorrect vs. Correct referenced assemblies in an Extension](images/extension-resources.png)
+![Comparison of incorrect and correct extension resources in OutSystems, highlighting the exclusion of system assemblies like 'netstandard.dll'.](images/extension-resources.png "Extension Resources Comparison")
 
 <div class="info" markdown="1">
 

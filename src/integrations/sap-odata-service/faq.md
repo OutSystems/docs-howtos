@@ -37,14 +37,14 @@ Do the following:
 
 1. Open the [SAP API Business Hub](https://api.sap.com/).
 
-    ![](images/sap-hub.png?width=900)
+    ![Screenshot of the SAP API Business Hub homepage with a search bar.](images/sap-hub.png "SAP API Business Hub Homepage")
 
 1. Search for the service in the search box.  
     In the example presented in this guide, we are using the "Product Master - Create, Read, Update, Delete" service from SAP S/4HANA Cloud.
 
 1. Click the service name to go to the service page and then navigate to the **Details** tab.
 
-    ![](images/sap-hub-details.png?width=600)
+    ![Screenshot showing the details tab of a selected OData service in the SAP API Business Hub.](images/sap-hub-details.png "SAP OData Service Details")
 
 1. Click **Download Specification** and select the **JSON** option, since Service Studio supports creating services from JSON Swagger file specifications.  
     _Note:_ To download the specification, you must sign in to your SAP account.
@@ -59,7 +59,7 @@ You should isolate the consumed service in a separate module, created for this s
 * If you only use the service in **Reactive Web** and **Mobile** Apps, create a "Library" module.
 * If you need to use the service in a **Traditional Web** App, create a "Service" module.
 
-![](images/ss-create-module.png?width=900)
+![Dialog in Service Studio for creating a new module with different module types to choose from.](images/ss-create-module.png "Service Studio Create Module Dialog")
 
 ### Create a service from the specification
 
@@ -69,17 +69,17 @@ Do the following:
 
 1. In the **Logic** tab of your module, right-click the **REST** element under **Integrations** (not the SAP element) and choose **Consume REST API...**
 
-    ![](images/ss-consume-rest.png)
+    ![Service Studio interface showing the option to consume a REST API by right-clicking the REST element.](images/ss-consume-rest.png "Consume REST API Option in Service Studio")
 
 1. Choose the **Add All Methods** option.
 
-    ![](images/ss-consume-rest-dialog.png)
+    ![Dialog in Service Studio showing two options for consuming REST API methods.](images/ss-consume-rest-dialog.png "Consume REST API Methods Dialog")
 
 1. Click **Choose a File**, select the specification file you downloaded previously, and click **Finish**.
 
     _Note:_ A service specification in SAP may contain attributes with several types (example: Text, Integer, and Null), but this is not supported in OutSystems. In this case, the platform assumes the most permissive type for these attributes and shows a warning message about these changes.
 
-    ![](images/ss-consume-rest-warning.png?width=600)
+    ![Warning message in Service Studio after importing from Swagger, indicating issues with data types not supported in OutSystems.](images/ss-consume-rest-warning.png "Import from Swagger Warning Message")
 
     If this warning message appears, close it to proceed.
 
@@ -119,7 +119,7 @@ To create the "OnBeforeRequest" handler do the following:
 
 1. Add an "OnBeforeRequest" handler to your consumed service by setting the property "On Before Request" to `New OnBeforeRequest`.
 
-    ![](images/ss-new-onbeforerequest.png?width=500)
+    ![Service Studio interface showing how to add a new OnBeforeRequest handler to a REST API.](images/ss-new-onbeforerequest.png "Adding New OnBeforeRequest Handler")
 
 1. Open the "OnBeforeRequest" callback action, now available under the REST API element, to define its flow.
 
@@ -134,7 +134,7 @@ For example, if we found a URL query parameter named "top" we would add a "$" at
 
 Implementation example:
 
-![](images/ss-flow-dollar.png?width=800)
+![Flowchart in Service Studio depicting the logic for adding a dollar sign to OData system query parameters.](images/ss-flow-dollar.png "OnBeforeRequest Handler Flow")
 
 ### Adding required headers to the requests
 
@@ -146,7 +146,7 @@ Do the following:
 
     _Note:_ The "HTTPHeader" data type is a structure that was created by OutSystems when you consumed the SAP service in Service Studio. 
 
-    ![](images/ss-rest-local-variable-httpheader.png)
+    ![Service Studio interface showing the HTTPHeader local variable within the OnBeforeRequest handler.](images/ss-rest-local-variable-httpheader.png "HTTPHeader Local Variable in Service Studio")
 
 1. Assign the following values to the "Name" and "Value" attributes of the local variable using an Assign element:
 
@@ -155,7 +155,7 @@ Do the following:
 
 1. Add this HTTPHeader structure to the headers list of the request (i.e. the "CustomizedRequest.Headers" list) using the ListAppend server action.
 
-    ![](images/ss-rest-flow-listappend.png)
+    ![Service Studio interface showing the ListAppend server action being used to add an HTTP header.](images/ss-rest-flow-listappend.png "ListAppend Server Action in Service Studio")
 
 1. Repeat the two previous steps to add another HTTP header with the following "Name" and "Value". You should reuse the same local variable.
 
@@ -164,7 +164,7 @@ Do the following:
 
 Example implementation of adding the two headers:
 
-![](images/ss-rest-flow-add-headers-example.png)
+![Flowchart in Service Studio showing the process of adding Accept and Content-Type headers to a request.](images/ss-rest-flow-add-headers-example.png "Adding HTTP Headers in OnBeforeRequest Handler")
 
 
 ### Handling error responses
@@ -179,7 +179,7 @@ Do the following:
 
 1. Add an "OnAfterResponse" handler to your consumed service by setting the property "On After Response" to `New OnAfterResponse`.
 
-    ![](images/ss-new-onafterresponse.png)
+    ![Service Studio interface showing how to add a new OnAfterResponse handler to a REST API.](images/ss-new-onafterresponse.png "Adding New OnAfterResponse Handler")
 
 In the "OnAfterResponse" handler you need to implement the following logic:
 
@@ -190,9 +190,9 @@ In the "OnAfterResponse" handler you need to implement the following logic:
 
 Implementation example:
 
-![](images/ss-onafterresponse-flow.png?width=900)
+![Flowchart in Service Studio depicting the logic for handling success and error responses.](images/ss-onafterresponse-flow.png "OnAfterResponse Handler Flow")
 
-![](images/ss-flow-parseerrorresponse.png?width=350)
+![Flowchart in Service Studio showing the Parse_ErrorResponse action logic.](images/ss-flow-parseerrorresponse.png "Parse ErrorResponse Action Flow")
 
 #### Parsing error responses
 
@@ -214,7 +214,7 @@ Learn more about handling these kinds of error responses in the sections below.
 
 _Tip:_ You can create a structure from a sample response in JSON by right-clicking the **Structures** tree element and then selecting **Add Structure from JSON...** option.
 
-![](images/ss-add-structure-from-json.png?width=450)
+![Service Studio interface showing the option to add a structure from a JSON sample.](images/ss-add-structure-from-json.png "Add Structure from JSON Option")
 
 </div>
 
@@ -228,7 +228,7 @@ Do the following:
 1. In Service Studio, identify the structure used for data errors. This structure is available in the **Data** tab, in the **Structures** folder, under the element tree with the name of the service.  
     In our example, the error structure is called "error". 
 
-    ![](images/ss-sap-structures.png?width=450)
+    ![Service Studio Data tab displaying the structures created for SAP errors.](images/ss-sap-structures.png "SAP Error Structures in Service Studio")
 
 1. In your error parsing logic (the "Parse_ErrorResponse" action in our example), try to deserialize the response text into this error structure.
 
@@ -236,7 +236,7 @@ Do the following:
 
 Implementation example:
 
-![](images/ss-flow-error-odata.png)
+![Flowchart in Service Studio showing the logic for handling OData errors.](images/ss-flow-error-odata.png "Handling OData Errors Flow")
 
 ##### 2. Handle fault errors
 
@@ -263,7 +263,7 @@ Do the following:
 
 Implementation example:
 
-![](images/ss-flow-error-fault.png)
+![Flowchart in Service Studio showing the logic for handling fault errors.](images/ss-flow-error-fault.png "Handling Fault Errors Flow")
 
 ##### 3. Handle API errors
 
@@ -286,4 +286,4 @@ Do the following:
 
 Implementation example:
 
-![](images/ss-flow-error-api.png)
+![Flowchart in Service Studio showing the logic for handling API errors.](images/ss-flow-error-api.png "Handling API Errors Flow")

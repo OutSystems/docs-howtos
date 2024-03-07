@@ -34,7 +34,7 @@ Do the following steps:
 
 The following figure shows the difference between charts in Traditional and Reactive Web.
 
-![Migration of Charts](images/ref-migration-charts.png)
+![Illustration showing the migration of a chart from Traditional Web to Reactive Web, with changes in properties and data binding.](images/ref-migration-charts.png "Chart Migration from Traditional to Reactive Web")
 
 ## Download node
 
@@ -101,7 +101,7 @@ After creating the data Actions on the Screen as explained above, you need to op
 
 The following figure shows an example of a Preparation migration to Reactive Web, pointing out the Screen Actions and Aggregates used.
 
-![Preparation migration to Reactive Web](images/ref-preparation-migration.png)
+![Diagram comparing the Preparation logic in Traditional Web with the corresponding Screen Actions and Aggregates in Reactive Web.](images/ref-preparation-migration.png "Preparation Logic Migration from Traditional to Reactive Web")
 
 ### Security considerations
 

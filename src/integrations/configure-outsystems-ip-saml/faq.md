@@ -21,7 +21,7 @@ Since [Platform Server Release Jul.2019 CP2](https://success.outsystems.com/Supp
 
 With this integration, when the users access an OutSystems application (Service Provider - SP), they are redirected to a web page (known as the enterprise's login manager) where they are prompted to enter their enterprise user name and password. Upon verification of the user’s login, the enterprise identity provider informs OutSystems application of the verified identity for the user who is logging in, and the user is redirected back to the portal website.
 
-![](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_0.png)
+![Diagram illustrating the SAML authentication flow between the user, OutSystems as the service provider, and the SSO identity provider.](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_0.png "SAML Authentication Flow Diagram")
 
 To successfully establish the connection between the IdP component and the Identity providers you'll need to change the authentication flow and configure both parties to redirect the user to the Login of the Identity Provider. In this article, we'll guide you through the needed setup.
 
@@ -43,7 +43,7 @@ So, the first step to integrate an OutSystems application to change this behavio
 
 _Note:_ if the system contains multiple tenants, the tenant switch has to have been done before calling IdP_SSO_URL.
 
-![](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_1.png)
+![Screenshot of the OutSystems Service Studio showing the configuration of the NoPermission screen to redirect to the IdP SSO URL.](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_1.png "OutSystems NoPermission Screen Configuration")
 
 ### Logout Flow
 
@@ -63,7 +63,7 @@ Note: Your application shouldn't call the User_Logout or Logout system actions. 
 
 * If your IdP Server allows a Logout initiated by the SP through SAML messages: call the action **IdP_SingleLogout_URL** and call the **Common\ExternalURL** with its output.
 
-![](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_2.png)
+![Screenshot of the OutSystems Service Studio showing the configuration of the Logout flow to redirect to the IdP Server URL.](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_2.png "OutSystems Logout Flow Configuration")
 
 ## Configure IdP connector
 
@@ -109,7 +109,7 @@ Since [Platform Server Release Jul.2019 CP2](https://success.outsystems.com/Supp
 
     * Select the application and click **Add**.
 
-    ![](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_3.png)
+    ![Screenshot of the Azure Active Directory admin center showing the process of adding a new application for OutSystems Azure AD.](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_3.png "Azure AD Application Gallery")
 
 1. Select **SAML** as the single sign-on method.
 
@@ -117,7 +117,7 @@ Since [Platform Server Release Jul.2019 CP2](https://success.outsystems.com/Supp
 
     * Select **SAML**.
 
-    ![](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_4.png)
+    ![Screenshot of the Azure AD dashboard highlighting the SAML single sign-on method selection.](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_4.png "Azure AD Single Sign-On Configuration")
 
 1. Set up Single Sign-On with SAML.
 
@@ -129,15 +129,15 @@ Since [Platform Server Release Jul.2019 CP2](https://success.outsystems.com/Supp
 
         * **Reply URL (Assertion Consumer Service URL)**: `https://YOUR_SERVER/IdP/SSO.aspx`
 
-    ![](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_5.png)
+    ![Screenshot showing the Basic SAML Configuration settings in the Azure AD dashboard for OutSystems Azure AD application.](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_5.png "Azure AD Basic SAML Configuration")
 
     * Alternatively, you can upload the metadata file from the IdP connector.
 
-    ![](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_6.png)
+    ![Screenshot of the Azure AD dashboard with an option to upload the metadata file for the OutSystems Azure AD application.](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_6.png "Azure AD Metadata File Upload")
 
 1. You can then [configure the IdP connector](#configure-idp-connector) with the provided information on sections 3 and 4, or upload the **Federation Metadata XML** file downloaded in the Azure AD application.
 
-![](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_7.png)
+![Screenshot of the Azure AD dashboard showing the SAML configuration summary for OutSystems Azure AD application.](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_7.png "Azure AD SAML Configuration Summary")
 
 ### Okta
 
@@ -153,7 +153,7 @@ Since [Platform Server Release Oct.2019](https://success.outsystems.com/Support/
 
     * You should then receive an email with your account details.
 
-    ![](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_8.png)
+    ![Screenshot of an email from Okta confirming a free trial signup with account details.](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_8.png "Okta Free Trial Signup Email")
 
 1. Sign-in to your Okta domain.
 
@@ -161,25 +161,25 @@ Since [Platform Server Release Oct.2019](https://success.outsystems.com/Support/
 
     * Input your username and password and click **Sign In**.
 
-    ![](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_9.png)
+    ![Screenshot of the Okta sign-in page prompting for a company email address and password.](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_9.png "Okta Sign-In Page")
 
 1. Add a SAML application to your Okta domain.
 
     * Access the Admin Dashboard and click to **Add Application**.
 
-    ![](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_10.png)
+    ![Screenshot of the Okta Admin Dashboard with an option to add an application.](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_10.png "Okta Admin Dashboard")
 
     * Click on the **Create New App** button.
 
-    ![](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_11.png)
+    ![Screenshot highlighting the 'Create New App' button in the Okta Admin Dashboard.](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_11.png "Okta Create New App Button")
 
     * Select Web and SAML 2.0 because we are creating a SAML integration for web applications. Click **Create** to continue.
 
-    ![](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_12.png)
+    ![Screenshot showing the selection of Web platform and SAML 2.0 sign-on method in Okta's 'Create a New Application Integration' dialog.](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_12.png "Okta New SAML Application Selection")
 
     * Define the **App Name** (for example, `OutSystems Okta`) and click **Next**.
 
-    ![](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_13.png)
+    ![Screenshot of the General Settings step in creating a new SAML application in Okta, with the app name 'OutSystems Okta'.](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_13.png "Okta SAML Application General Settings")
 
 1. Configure the SAML settings for the integration.
 
@@ -189,7 +189,7 @@ Since [Platform Server Release Oct.2019](https://success.outsystems.com/Support/
     * Set the **Audience URI (SP Entity ID)**:  
     `http://YOUR_SERVER/IdP/SSO.aspx`
 
-    ![image alt text](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_14.png)
+    ![Screenshot showing the SAML configuration settings for an OutSystems application in Okta.](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_14.png "Okta SAML Configuration for OutSystems")
 
     * Click on the **Show Advanced Settings** link and set the remaining values
 
@@ -199,15 +199,15 @@ Since [Platform Server Release Oct.2019](https://success.outsystems.com/Support/
 
     * **Assertion Signature**: Unsigned
 
-    ![](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_15.png)
+    ![Screenshot of the Advanced Settings section in Okta's SAML configuration for OutSystems, showing signature and digest algorithms.](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_15.png "Okta Advanced SAML Settings")
 
     * Click **Next** and you'll be asked for some information for feedback purposes. Select the option **I'm a software vendor. I'd like to integrate my app with Okta** and click **Finish** to complete the configuration.
 
     * Finally, click **View Setup Instructions** to get the data needed to [configure the IdP connector](#configure-idp-connector).
 
-    ![](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_16.png)
+    ![Screenshot of Okta's SAML setup instructions for the OutSystems application.](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_16.png "Okta SAML Setup Instructions")
 
-    ![](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_17.png)
+    ![Screenshot showing the summary of SAML configuration for OutSystems Okta application.](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_17.png "Okta SAML Configuration Summary")
 
 ### OneLogin
 
@@ -223,11 +223,11 @@ Since [Platform Server Release Jul.2019 CP2](https://success.outsystems.com/Supp
 
 1. Click on **Apps** tab then click on **Add App** button.
 
-    ![](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_18.png)
+    ![Screenshot of the OneLogin admin console with the 'Add App' button highlighted.](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_18.png "OneLogin Add App Interface")
 
 1. Search for **SAML** and select **SAML Test Connector (IdP)** option.
 
-    ![](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_19.png)
+    ![Screenshot showing the selection of the 'SAML Test Connector (IdP)' option in OneLogin's application catalog.](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_19.png "OneLogin SAML Test Connector Selection")
 
 1. Configure **Display Name** of your application and then click on **Save** button.
 
@@ -237,13 +237,13 @@ Since [Platform Server Release Jul.2019 CP2](https://success.outsystems.com/Supp
 
     * **ACS (Consumer) URL**: URL of the OutSystems environment to handle the SAML response (`http://YOUR_SERVER/IdP/SSO.aspx`)
 
-    ![](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_20.png)
+    ![Screenshot of the OneLogin SAML application configuration page for OutSystems.](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_20.png "OneLogin SAML Application Configuration")
 
 1. Click on **SSO** tab and configure the following properties
 
     * **SAML Signature Algorithm**: SHA-1
 
-    ![](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_21.png)
+    ![Screenshot of the Single Sign-On (SSO) tab in OneLogin's SAML application configuration for OutSystems.](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_21.png "OneLogin SSO Tab Configuration")
 
 1. Finally, [configure the IdP connector](#configure-idp-connector) with the provided information.
 
@@ -261,13 +261,13 @@ Since [Platform Server Release Jul.2019 CP2](https://success.outsystems.com/Supp
 
 1. Click on the **Applications** tab then click on **Add Application** button.
 
-    ![](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_22.png)
+    ![Screenshot of the PingOne dashboard with the option to add a new SAML application.](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_22.png "PingOne Add New SAML Application")
 
 1. Select **New SAML Application** option.
 
 1. Configure application name, description, category and click on **Continue to Next Step**.
 
-    ![](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_23.png)
+    ![Screenshot of the PingOne application configuration interface for adding a new SAML application.](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_23.png "PingOne New SAML Application Configuration")
 
 1. On **Application Configuration** configure the following properties
 
@@ -277,7 +277,7 @@ Since [Platform Server Release Jul.2019 CP2](https://success.outsystems.com/Supp
 
     * **Signing Algorithm**: RSA_SHA1
 
-    ![](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_24.png)
+    ![Screenshot showing the SAML configuration details for an OutSystems application in PingOne.](images/How-to-configure-OutSystems-to-use-identity-providers-using-SAML_24.png "PingOne SAML Configuration Details")
 
 1. Click on **Continue to Next Step** and then **Save & Publish**.
 

@@ -24,13 +24,13 @@ Simple string concatenation, such as "ab" + "cd", is fast enough to build small 
 
 The example below uses string concatenation to create a small string, which is then passed to StringBuilder_Append().
 
-![image alt text](images/How-to-create-large-strings-with-StringBuilder_0.png)
+![Screenshot of code using inefficient string concatenation before using StringBuilder_Append.](images/How-to-create-large-strings-with-StringBuilder_0.png "Inefficient String Concatenation Example")
 
 This means that the small string concatenation is called many times. In fact, we are doing 1 optimized Append and 4 simple string concatenations. For a specific use case, generating a 9 MB file took 8 minutes.
 
 Instead, use only the optimized StringBuilder_Append() to build the large string, as shown below.
 
-![image alt text](images/How-to-create-large-strings-with-StringBuilder_1.png)
+![Screenshot of code using efficient StringBuilder_Append without prior string concatenation.](images/How-to-create-large-strings-with-StringBuilder_1.png "Efficient StringBuilder_Append Example")
 
 The specific use case that took 8 minutes now takes less than 30 seconds.
 

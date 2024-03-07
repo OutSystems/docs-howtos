@@ -16,7 +16,7 @@ Note that you'll need a paid subscription of Pushwoosh in order to send push not
 
 ## How it Works
 
-![Pushwoosh plugin overview](images/image05.png)
+![Diagram illustrating the push notification process with Pushwoosh, APNS, and FCM.](images/image05.png "Push Notification Process Diagram")
 
 1. To receive notifications, you start by using the plugin to register the device in Pushwoosh. 
 
@@ -49,7 +49,7 @@ Learn how to [configure Pushwoosh for Android](https://docs.pushwoosh.com/platfo
 
 1. In your application, use "Manage Dependencies…" to add a reference to the Pushwoosh plugin.
 
-    ![Add reference to the pushwoosh plugin](images/image04.png)
+    ![Screenshot of the OutSystems development environment showing the Manage Dependencies window with PushwooshPlugin selected.](images/image04.png "OutSystems Manage Dependencies Window")
 
 1. Add the "PushwooshNotifications" block to:
     * The "Layout" block if your application has no login 
@@ -74,23 +74,23 @@ If you're using the Pushwoosh plugin in your Android app, do the following:
     * Set the "Name" as "google-services.zip"
     * Set "Deploy to Target Directory" as "google-services"
 
-![Upload google-services zip folder](images/image10.png)
+![Screenshot of the OutSystems application resources showing the google-services.zip file ready for deployment.](images/image10.png "OutSystems Application Resources")
 
 For your device to receive push notifications, you’ll need to register it. If your users need to login to use the application, go to the "Login" screen and edit the "Login" action.
 
-![Edit login action](images/image03.png)
+![Screenshot of the OutSystems application interface highlighting the Login flow.](images/image03.png "OutSystems Login Flow")
 
 Add the code to register the device after the "DoLogin" action. It should look something like this:
 
-![Add the code](images/image01.png)
+![Flowchart showing the logic to register a device after the DoLogin action in OutSystems.](images/image01.png "OutSystems Register Device Logic")
 
 If your application does not have a login, you can add this code to the “OnInitializeOver” event in the “PushwooshNotifications” block.
 
-![Add code](images/image00.png)
+![Screenshot of the OutSystems OnInitializeOver event in the PushwooshNotifications block.](images/image00.png "OutSystems OnInitializeOver Event")
 
 In this event handler, call the “RegisterDevice” action.
 
-![Call RegisterDevice action](images/image07.png)
+![Flowchart detailing the RegisterDevice action in the OutSystems application.](images/image07.png "OutSystems Register Device Action")
 
 If you’re generating an iOS mobile app using a developer certificate, you will need to add a preference to the Extensibility Configurations property of your OutSystems module:
 
@@ -105,7 +105,7 @@ If you’re generating an iOS mobile app using a developer certificate, you will
 }
 ```
 
-![Add preferences in extensibility configurations](images/push_aps-environment_development.png)
+![Screenshot of the OutSystems Extensibility Configurations window with JSON code for aps-environment set to development.](images/push_aps-environment_development.png "OutSystems Extensibility Configurations Window")
 
 This preference will be added to your entitlements file (learn more about entitlements in the [Apple Developer documentation](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html "https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html")).
 
@@ -118,11 +118,11 @@ At this point, you can use the Pushwoosh interface to send notifications to your
 
 To send notifications, you need a Pushwoosh API Access Token. Create one by accessing the Pushwoosh console, go to "API Access" and click "Generate new access token".
 
-![Generate new access token](images/image02.png)
+![Screenshot of the Pushwoosh API Access page with instructions to generate a new access token.](images/image02.png "Pushwoosh API Access Token Generation")
 
 To send a notification to all devices, use the "SendPushNotificationToAll" action.
 
-![Use "SendPushNotificationToAll"](images/image06.png)
+![Flowchart showing the SendPushNotificationToAll action in the OutSystems application.](images/image06.png "OutSystems SendPushNotificationToAll Action")
 
 This action takes the following parameters:
 
@@ -134,7 +134,7 @@ This action takes the following parameters:
 
 For instance, if you use this action to send the message “Hello from OutSystems” to an application called “PushTest,” the following would be shown in iOS:
 
-![PushTest notification](images/image08.png)
+![Preview of an iOS push notification with the message 'Hello from OutSystems' displayed on the lock screen.](images/image08.png "iOS Push Notification Preview")
 
 ## Additional information
 

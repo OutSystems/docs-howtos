@@ -16,7 +16,7 @@ This approach allows a single Application Server and Database Server to provide 
 
 From the customer point of view looks like you have your own application, when in fact there is a single application that allows for some degree of customization between each customer.
 
-![](images/build-multi-tenant-app_0.png)
+![Illustration of a multi-tenant application serving two separate organizations, Office inc. and Bricks'r'us, with isolated Contacts and Opportunities.](images/build-multi-tenant-app_0.png "Multi-tenant Application Example")
 
 The example above depicts a single application serving two client organizations (tenants) using it. Each client organization has its Contacts and Opportunities isolated in its tenant.
 
@@ -36,7 +36,7 @@ When the end-user makes the first request to a Multi-tenant application, since h
 
 If the end-user goes to the Contacts List Screen, no contacts are shown, since the Default Tenant holds no data. 
 
-![](images/build-multi-tenant-app_1.png)
+![Screenshot showing the Contacts and Opportunities sections in a multi-tenant application with no data displayed under the Default Tenant.](images/build-multi-tenant-app_1.png "Default Tenant Data Isolation")
 
 Since an end-user uniquely belongs to a tenant, in the login process, the OutSystems Platform infers the tenant an end-user belongs using the username. Then, the end-user is bound to his tenant and all Simple and Advanced Queries are **automatically filtered **to only return data from that tenant.
 
@@ -187,7 +187,7 @@ To change the Sales application from Single-tenant to Multi-tenant, several modu
 
 * The ‘Is Multi-tenant’ property of the Countries, and CustomersSampleData were not changed. 
 
-![ ](images/build-multi-tenant-app_2.png)
+![OutSystems interface showing the transition of module properties from single-tenant to multi-tenant settings.](images/build-multi-tenant-app_2.png "OutSystems Module Properties")
 
 #### Configuring Entities
 
@@ -217,11 +217,11 @@ In this example, only the SalesSampleData module contains a Timer that creates e
 
 The SelfRegister module demonstrates how to implement self-provisioning of tenants in a front office. It allows end-users to provision their own tenants by specifying a tenant name and the tenant administrator credentials.
 
-![ ](images/build-multi-tenant-app_3.png)
+![Registration form interface for new tenants in a multi-tenant application, requesting tenant name and administrator credentials.](images/build-multi-tenant-app_3.png "Tenant Self-Registration Interface")
 
 In the Login Screen of the Sales module, there is a ‘Sign up for free’ link that lets end-users provision their tenant of the Sales application, without any assistance from the administrative users. The end-user simply needs to provide a tenant name and the tenant administrator credentials
 
-![ ](images/build-multi-tenant-app_4.png)
+![Screenshot of the Sales application login screen with a 'Sign up for free' link for new tenant provisioning.](images/build-multi-tenant-app_4.png "Tenant Provisioning Link")
 
 In the Save action, the fields are validated to check whether they are valid, The **TenantCreate** System Action is used to create the new tenant with the specified name, a **TenantSwitch** System Action is then used to change the context to the newly created tenant. The tenant administrator user is then created, but since the Users Entity is Multi-tenant, the new user is constrained in the OfficeInc tenant. 
 
@@ -231,13 +231,13 @@ In the Save action, the fields are validated to check whether they are valid, Th
 
 To understand how to implement a back office where the IT team can manage tenants and users **across all tenants**, check the TenantManagement module. This is a Single-tenant module since it does not enforce data isolation
 
-![ ](images/build-multi-tenant-app_5.png)
+![Back office interface of the Tenant Management module displaying a list of all users across different tenants.](images/build-multi-tenant-app_5.png "Tenant Management Back Office")
 
 Even though end-users are isolated from tenant to tenant, the TenantManagement module implements a screen to list all end-users independently of their tenant. This is accomplished by using the ‘Show Tenant Identifier’ property.
 
 In the TenantManagement module, take special attention to the: Group, Group_Role, Group_User, User, User_Effective_Role and User_Role Entities. These Entities are red, signaling that the ‘Show Tenant Identifier’ (found on the Advanced tab of Entities’ properties) is checked, thus the Entities explicitly **ignore tenant isolation** restrictions.
 
-![ ](images/build-multi-tenant-app_6.png)
+![Entity diagram in OutSystems showing entities with 'Show Tenant Identifier' property enabled for cross-tenant data management.](images/build-multi-tenant-app_6.png "OutSystems Entity Diagram")
 
 For example, since the User Entity has the ‘Show Tenant Identifier’ checked, the TenantManagement module is able to manipulate all end-users data, independently of the tenant they belong to. This property should only be used in exceptional situations, such as this one.
 
@@ -245,7 +245,7 @@ For example, since the User Entity has the ‘Show Tenant Identifier’ checked,
 
 Finally, the BackOfficeUsers is a Single-tenant module that supports IT users management. End-users created in this back office have access to the TenantManagement module. 
 
-![ ](images/build-multi-tenant-app_7.png)
+![Back Office Users interface showing a list of IT users with the ability to manage tenant access and configurations.](images/build-multi-tenant-app_7.png "IT User Management Interface")
 
 The IT manager can go to the BackOfficeUsers, and create a new IT user for Adam Carlson. From then on, Adam is able to access the TenantManagement application, to create new tenants and end-users that are constrained to that tenant.
 

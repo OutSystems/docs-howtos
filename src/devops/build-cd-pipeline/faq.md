@@ -17,7 +17,7 @@ We provide **outsystems-pipeline**, an [open-source accelerator](https://github.
 
 The following is an example continuous delivery pipeline that consists of five distinct environments:
 
-![OutSystems Continuous Delivery Pipeline](images/continuous-delivery-pipeline.png)
+![Diagram illustrating the OutSystems CI/CD pipeline with environments: DEV, REG, ACC, PRE, and PRD, showing automation steps and manual deployment.](images/continuous-delivery-pipeline.png "OutSystems Continuous Delivery Pipeline Diagram")
 
 The sections below describe each stage of the recommended OutSystems pipeline in more detail, and the following step-by-step guides allow you to build the pipeline using the accelerator **outsystems-pipeline** and two leading CI/CD platforms as an example:
 

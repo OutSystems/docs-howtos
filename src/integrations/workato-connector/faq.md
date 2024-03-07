@@ -18,7 +18,7 @@ After installing the connector and setting up access rules, you will be able to:
 * Sync any Workato workflow you use with your OS environment.
 * Build engaging user experiences with your own data, and external data such as a billing app, field services app, or a 360º customer view.
 
-![](images/workato-diagram.png?width=400)
+![Diagram showing the integration process between third-party services, Workato, and OutSystems.](images/workato-diagram.png "Workato Integration Diagram")
 
 
 ## Installation overview
@@ -58,14 +58,14 @@ After installing the component in your OutSystems environment do the following:
 
 1. Click **Add new key**.
 
-    ![](images/bo-add-new-key.png)
+    ![Screenshot highlighting the 'Add new key' button in the OutSystems Workato Connector interface.](images/bo-add-new-key.png "Add New API Key Button")
 
 1. In the API key creation screen, enter a name for the key by clicking the first heading of the page.
 
 1. Define the scope of this API key by selecting the OutSystems entities that the key will have access to.  
     Select the **Read**, **Write** or **Read / Write** checkboxes on the right side of the screen according to the kind of access you want to provide for each entity: **Read** for read-only access and **Write** for write access. The **Read / Write** checkbox is an accelerator that will automatically select both **Read** and **Write** checkboxes for an entity. 
 
-    ![](images/bo-configure-entities.png)
+    ![Screenshot showing the configuration options for selecting entity access levels when creating an API key.](images/bo-configure-entities.png "Configure Entities for API Key")
 
     _Notes:_  
     – You can only provide **read-only** access to Static Entities. The **Write** and **Read / Write** checkboxes are not available for these entities.  
@@ -75,7 +75,7 @@ After installing the component in your OutSystems environment do the following:
 
 If the key is created successfully, you can copy its value to the clipboard directly from the success dialog message:
 
-![](images/bo-copy-key.png)
+![Dialog box displaying a newly created API key with an option to copy it to the clipboard.](images/bo-copy-key.png "Copy New API Key")
 
 ## Installation in the Workato environment { #installation-workato }
 
@@ -83,7 +83,7 @@ You must create an app connection and provide the connection parameters to conne
 
 1. In Workato open the **App Connections** tab and click **Create a new connection**.
 
-    ![](images/workato-new-connection.png)
+    ![Screenshot showing the Workato interface with an arrow pointing to the 'Create a new connection' button.](images/workato-new-connection.png "Create a New Connection in Workato")
 
 1. In the new connection, choose the **OutSystems** application.
 
@@ -92,7 +92,7 @@ You must create an app connection and provide the connection parameters to conne
     **API Key** – An API key created in the OutSystems Workato Connector.  
     **Environment URL** – The FQDN (fully qualified domain name) of your OutSystems environment, which must be publicly reachable.  
 
-    ![](images/workato-connection-settings.png)
+    ![Screenshot of the connection settings form in Workato for linking an OutSystems account.](images/workato-connection-settings.png "Workato Connection Settings")
 
 1. Click **Link your account** to test and save the connection.  
 
@@ -134,7 +134,7 @@ In the following example, we'll create a new Workato recipe with a trigger based
 
 1. In Workato open the **Recipes** tab and click **Create a new recipe**.
 
-    ![](images/workato-recipe-1-create.png)
+    ![Screenshot showing the Workato interface with an arrow pointing to the 'Create a new recipe' button.](images/workato-recipe-1-create.png "Create a New Recipe in Workato")
 
 1. Select the **OutSystems** app.
 
@@ -144,11 +144,11 @@ In the following example, we'll create a new Workato recipe with a trigger based
 
     In our example, we chose the **New updated record** trigger event.
 
-    ![](images/workato-recipe-2-trigger.png)
+    ![Screenshot of the Workato recipe configuration showing the selection of a trigger event for an OutSystems entity.](images/workato-recipe-2-trigger.png "Select Trigger Event in Workato Recipe")
 
 1. Choose the desired connection from the list of available connections to OutSystems accounts.
 
-    ![](images/workato-recipe-3-connection.png)
+    ![Screenshot showing the selection of an existing OutSystems account connection in a Workato recipe.](images/workato-recipe-3-connection.png "Select OutSystems Account Connection")
 
 1. Select the OutSystems module and entity to connect to:  
     **Module**: Select one module from the list of all modules in the OutSystems environment.  
@@ -156,14 +156,14 @@ In the following example, we'll create a new Workato recipe with a trigger based
 
     In our example, we selected the "Order Management" module and the "Account" entity.
 
-    ![](images/workato-recipe-4-source.png)
+    ![Screenshot of the Workato recipe setup showing the selection of an OutSystems module and entity for the trigger event.](images/workato-recipe-4-source.png "Select Module and Entity for Trigger")
 
 #### B. Define and configure the action to perform
 
 1. Select the **action** that you wish to perform when the trigger occurs.  
     In our example, we chose to perform an "upsert" operation (updates an existing record, or creates a new record if it doesn't exist) of an Account in Salesforce.
 
-    ![](images/workato-recipe-5-salesforce.png)
+    ![Screenshot showing the selection of an 'upsert' action in Salesforce within a Workato recipe.](images/workato-recipe-5-salesforce.png "Select Action for Workato Recipe")
 
 1. Define the mapping between OutSystems entity attributes and Salesforce fields.
 
@@ -172,7 +172,7 @@ In the following example, we'll create a new Workato recipe with a trigger based
     **Account Name** = Company name  
     **Account Phone** = Phone
 
-    ![](images/workato-recipe-6-mapping.png)
+    ![Screenshot of the Workato recipe configuration showing the mapping between OutSystems entity attributes and Salesforce fields.](images/workato-recipe-6-mapping.png "Define Mapping for Workato Recipe Action")
 
 1. Click **Finish**.
 
@@ -188,18 +188,18 @@ Define this recipe by doing the following:
 1. Define the trigger based on a new/updated "Account" record in Salesforce and press **Next**.  
     _Note:_ Setting up a connection between Workato and Salesforce is outside the scope of this guide. Check the documentation of Salesforce and Workato for more information.
 
-    ![](images/workato-trigger-1.png)
+    ![Screenshot showing the selection of a new/updated record trigger event in Salesforce within a Workato recipe.](images/workato-trigger-1.png "Salesforce Trigger Event in Workato")
 
 1. Select the **OutSystems** app and then choose the **Upsert record** action. This action will create a new record in an OutSystems entity if the record does not exist yet, or it will update an existing record if it already exists.
 
-    ![](images/workato-trigger-2-upsert.png)
+    ![Screenshot showing the selection of the 'Upsert record' action for an OutSystems entity in a Workato recipe.](images/workato-trigger-2-upsert.png "Select Upsert Action in OutSystems")
 
 1. Choose the desired app connection (linking to an OutSystems account) from the list of available connections. For more information check [Installation in the Workato environment](#installation-workato).
 
 1. Choose the OutSystems module and entity where the "upsert" operation will occur.  
     In our example, we selected the "Order management" module and the "Account" entity.
 
-    ![](images/workato-trigger-3-setup.png)
+    ![Screenshot of the Workato recipe setup showing the configuration of an 'upsert' action in an OutSystems entity.](images/workato-trigger-3-setup.png "Setup Action in OutSystems")
 
 1. Define the mapping between OutSystems entity attributes and Salesforce fields.
 
@@ -208,7 +208,7 @@ Define this recipe by doing the following:
     **Code** = Country code  
     **Company name** = Account Name
 
-    ![](images/workato-trigger-4-mapping.png)
+    ![Screenshot showing the mapping configuration for an 'upsert' action in an OutSystems entity within a Workato recipe.](images/workato-trigger-4-mapping.png "Define Mapping for OutSystems Upsert Action")
 
 _Note:_ If the OutSystems entity has any foreign keys to other OutSystems entities, you will need to obtain that Id before calling the "upsert" action. **See the next section for more information**.  
 However, in this kind of integration, it is recommended that you use a flat table structure in OutSystems, avoiding multiple calls to insert/update records.
@@ -221,21 +221,21 @@ To obtain the correct `Id` value of the "Country" entity, we will add a new acti
 
 We need to add an action before the **Create/Update record in entity in OutSystems** action. In this new action, we will call OutSystems from Workato to get the CountryId value to use in the "Account" entity.
 
-![](images/workato-foreign-1.png)
+![Screenshot of a Workato recipe indicating the need to obtain an Id value for an OutSystems foreign key.](images/workato-foreign-1.png "Workato Recipe with Foreign Key Action")
 
 Do the following:
 
 1. In Workato, click the "**+**" sign at the end of the recipe action list.
 
-    ![](images/workato-foreign-2.png)
+    ![Screenshot showing the Workato interface with an arrow pointing to the '+' sign to add a new action in a recipe.](images/workato-foreign-2.png "Add New Action in Workato Recipe")
 
 1. Select **Simple action**.
 
-    ![](images/workato-foreign-3.png)
+    ![Screenshot of the Workato recipe configuration with an arrow pointing to the 'Simple action' option.](images/workato-foreign-3.png "Select Simple Action in Workato")
 
 1. Select the **OutSystems** Workato app and the action to perform: **Search records**.
 
-    ![](images/workato-foreign-4.png)
+    ![Screenshot showing the selection of the 'Search records' action for an OutSystems entity in a Workato recipe.](images/workato-foreign-4.png "Select Search Records Action in OutSystems")
 
 1. Select the OutSystems module and entity where the search will be performed.  
     In our example, we selected the "Location" module and the "Country" entity.
@@ -243,16 +243,16 @@ Do the following:
 1. Add the parameter to search.  
     In our example, we set the search parameter **Code** (an attribute of the OutSystems entity "Country") to **Country code** (an attribute of the Salesforce "Account" record).
 
-    ![](images/workato-foreign-5.png)
+    ![Screenshot of the Workato recipe setup showing the configuration of a search action to find a foreign key value in OutSystems.](images/workato-foreign-5.png "Setup Search Action in Workato Recipe")
 
 1. Drag the new action above the first action which is performing the "upsert" operation, so that the recipe gets the value for the `CountryId` attribute before executing the upsert action.
 
-    ![](images/workato-foreign-6.png)
+    ![Screenshot showing the process of reordering actions in a Workato recipe to ensure correct execution order.](images/workato-foreign-6.png "Reorder Actions in Workato Recipe")
 
 1. Edit the upsert action to include the `Country Id` value.  
     In our example, we set the "Account country ID" attribute to the "ID" value of the "Country" entity record obtained in the search action (first action of the recipe).
 
-    ![](images/workato-foreign-7.png)
+    ![Screenshot of the Workato recipe configuration showing the inclusion of a foreign key value obtained from a previous action.](images/workato-foreign-7.png "Include Foreign Key Value in Workato Action")
 
 ## Limitations
 

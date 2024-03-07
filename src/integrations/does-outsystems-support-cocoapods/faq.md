@@ -32,17 +32,17 @@ If you're curious and want to know if your plugin uses CocoaPods, follow the ste
 
 1. Click the plugin module and open the extensibility configurations.
 
-    ![](images/cocoa_1.png)
+    ![Screenshot of the OutSystems plugin module interface highlighting the extensibility configurations option.](images/cocoa_1.png "OutSystems Plugin Module Interface")
 
-    ![](images/cocoa_2.png)
+    ![Close-up of the OutSystems interface showing an arrow pointing to the extensibility configurations option.](images/cocoa_2.png "OutSystems Extensibility Configurations Arrow")
 
 1. Here you will find a JSON with the URL or the identifier for your plugin location.
 
-    ![](images/plugin-extensibility-configurations-popup.png)
+    ![Popup window displaying a JSON configuration for a plugin with a URL link in OutSystems.](images/plugin-extensibility-configurations-popup.png "Plugin Extensibility Configurations JSON Popup")
 
 1. Open this URL in the browser and search for a plugin.xml file (check [this example](https://github.com/phonegap/phonegap-plugin-push/blob/master/plugin.xml "https://github.com/phonegap/phonegap-plugin-push/blob/master/plugin.xml")).
 
-    ![](images/github-plugin-xml-file.png)
+    ![List of files in a GitHub repository with the plugin.xml file highlighted.](images/github-plugin-xml-file.png "GitHub Repository File List")
 
 1. Open the plugin.xml file and search for podspec framework (check [this example](https://github.com/phonegap/phonegap-plugin-push/blob/v2.0.0/plugin.xml#L87 "https://github.com/phonegap/phonegap-plugin-push/blob/v2.0.0/plugin.xml#L87")).
 

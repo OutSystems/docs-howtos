@@ -22,7 +22,7 @@ Espace is the old name used by OutSystems for Module. This diagram uses the term
 
 </div>
 
-![Relationships between Entities, Entity Records, Entity attributes, DB Catalogs, and Modules](images/relationship-entities-entity-records-entity-attributes-db-catalogs-espaces.png?\width=750)
+![](images/relationship-entities-entity-records-entity-attributes-db-catalogs-espaces.png?\width=750)
 
 * Service Studio 
     * Publishing Modules or Cloned Modules with new or changed Entities  

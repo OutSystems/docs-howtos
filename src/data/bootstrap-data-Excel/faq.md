@@ -13,7 +13,7 @@ figma: https://www.figma.com/file/5uD7gg1CIy1jlOE2BNFdsU/Data?node-id=147:325
 
 I am trying to bootstrap data from an Excel spreadsheet with blank cells. However, I get an error from blank cells defined as numeric fields. How can I import data from an Excel file with blank cells?
 
-![image alt text](images/How-to-bootstrap-numeric-data-from-Excel-with-blank-cells_0.png)
+![Screenshot of an Excel spreadsheet showing employee names, countries, and sales with a highlighted blank cell in the sales column.](images/How-to-bootstrap-numeric-data-from-Excel-with-blank-cells_0.png "Excel Spreadsheet with Blank Cell")
 
 ## Answer
 

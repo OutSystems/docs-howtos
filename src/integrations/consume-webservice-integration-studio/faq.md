@@ -34,33 +34,33 @@ To consume this Webs Service, do the following:
 
 1. Create an Action for the Ping method, and set up its inputs and outputs according to the data types defined in the Web Service. In this case, the types are simple Texts. Usually, this might get a bit more complex with structures to hold more complex data types.
 
-    ![Create action in Integration Studio](images/How-to-consume-a-Web-Service-in-Integration-Studio_0.png)
+    ![Screenshot of an action setup in Integration Studio with input and output parameters.](images/How-to-consume-a-Web-Service-in-Integration-Studio_0.png "Integration Studio Action Setup")
 
 1. Now you need to implement the Action. For that, open the extension's source code by clicking the "Edit Source Code .NET" button on the toolbar.
 
-    ![Integration Studio toolbar](images/How-to-consume-a-Web-Service-in-Integration-Studio_1.png)
+    ![Screenshot highlighting the 'Edit Source Code .NET' button in Integration Studio.](images/How-to-consume-a-Web-Service-in-Integration-Studio_1.png "Edit Source Code .NET Button")
 
     This opens Visual Studio. Now you need to import the Web Reference in .Net.
 
 1. Right Click on "Service References" and click "Add Service Reference..."
 
-    ![Add service reference](images/How-to-consume-a-Web-Service-in-Integration-Studio_2.png)
+    ![Screenshot showing the context menu option to 'Add Service Reference' in Visual Studio.](images/How-to-consume-a-Web-Service-in-Integration-Studio_2.png "Add Service Reference Option")
 
 1. Click "Advanced..."
 
-    ![Add service reference advanced settings](images/How-to-consume-a-Web-Service-in-Integration-Studio_3.png)
+    ![Screenshot of the 'Advanced' button in the Add Service Reference dialog in Visual Studio.](images/How-to-consume-a-Web-Service-in-Integration-Studio_3.png "Advanced Service Reference Settings")
 
 1. Click "Add Web Reference..."
 
-    ![Add web reference](images/How-to-consume-a-Web-Service-in-Integration-Studio_4.png)
+    ![Screenshot of the 'Add Web Reference' button in the Service Reference Settings dialog in Visual Studio.](images/How-to-consume-a-Web-Service-in-Integration-Studio_4.png "Add Web Reference Button")
 
 1. Fill the URL Field with the path to your WSDL and click the little green arrow.
 
-    ![Add web reference URL](images/How-to-consume-a-Web-Service-in-Integration-Studio_5.png)
+    ![Screenshot of the Web Reference URL field with a green arrow indicating where to input the WSDL path.](images/How-to-consume-a-Web-Service-in-Integration-Studio_5.png "Web Reference URL Field")
 
 1. After the WSDL loads and all the information seems correct, click "Add Reference" to add it to your project.
 
-    ![Add reference to project](images/How-to-consume-a-Web-Service-in-Integration-Studio_6.png)
+    ![Screenshot of the Add Web Reference dialog in Visual Studio with the 'Add Reference' button highlighted.](images/How-to-consume-a-Web-Service-in-Integration-Studio_6.png "Add Web Reference Dialog")
 
     Now you only have to implement the Ping Action so that it calls the Web Service.
 

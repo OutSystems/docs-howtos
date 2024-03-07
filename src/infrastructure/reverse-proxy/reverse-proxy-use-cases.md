@@ -23,7 +23,7 @@ A website exposed on the Internet and served by an internal application server. 
 
 This scenario prevents the application servers to be directly exposed to the internet.
 
-![http redirection](images/reverse-proxy-use-cases-httpredirect-diag.png)
+![Diagram showing HTTP redirection from a browser to an OutSystems front-end through a reverse proxy.](images/reverse-proxy-use-cases-httpredirect-diag.png "HTTP Redirection Diagram")
 
 Only standard reverse proxy configuration is required on this example. Please refer to your manufacturer documentation.
 
@@ -33,7 +33,7 @@ A website securely exposed on the Internet and served securely by an internal ap
 
 This scenario ensures encrypted communications from the internal application server to the user browser.
 
-![http redirection with end-to-end ssl](images/reverse-proxy-use-cases-e2eSSL-diag.png)
+![Diagram illustrating HTTPS redirection with end-to-end SSL from a browser to an OutSystems front-end via a reverse proxy.](images/reverse-proxy-use-cases-e2eSSL-diag.png "HTTPS Redirection with End-to-end SSL Diagram")
 
 To implement this scenario, you have to perform the following configurations:
 
@@ -48,7 +48,7 @@ The reverse proxy encrypts the communication to the Internet while keeping a sta
 
 This configuration is called SSL offload. It centralizes the certificate management on the reverse proxy that also does all the encryption, easing the load from the application servers.
 
-![http redirection with ssl offload](images/reverse-proxy-use-cases-offload-diag.png)
+![Diagram depicting HTTPS redirection with SSL offload at the reverse proxy before reaching the OutSystems front-end.](images/reverse-proxy-use-cases-offload-diag.png "HTTPS Redirection with SSL Offload Diagram")
 
 To implement this scenario, you have to perform the following configurations:
 
@@ -69,7 +69,7 @@ Both modules, **App1** and **Images** must be exposed requiring reverse proxy co
 
 This scenario is used when there’s a corporate reverse proxy for several other third party applications and services.
 
-![request header manipulation](images/reverse-proxy-use-cases-header-diag.png)
+![Diagram showing request header manipulation and referenced content handling in a reverse proxy setup for OutSystems.](images/reverse-proxy-use-cases-header-diag.png "Request Header Manipulation and Referenced Content Diagram")
 
 To implement this scenario, you have to perform the following configurations:
 
@@ -86,7 +86,7 @@ Applies only to **Traditional Web Apps**
 
 Serving multiple secure applications with URL and path alteration. This setup is used when the reverse proxy serves several websites and applications in a hierarchic path organization.
 
-![serving multiple secure applications](images/reverse-proxy-use-cases-path-diag.png)
+![Diagram representing SSL offload, request header manipulation, and application path changes in a reverse proxy configuration.](images/reverse-proxy-use-cases-path-diag.png "SSL Offload, Request Header Manipulation and Application Path Changes Diagram")
 
 To implement this scenario, you have to perform the following configurations:
 

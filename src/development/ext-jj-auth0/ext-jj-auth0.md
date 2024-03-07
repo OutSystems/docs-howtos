@@ -28,11 +28,11 @@ Auth0 supports the SAML protocol and the IdP component in the OutSystems Forge i
 1. [Turn on and configure SAML in your Auth0 account](https://auth0.com/docs/protocols/saml/saml-configuration/auth0-as-identity-provider).
 1. [Set up the generic SAML IdP connection in Auth0](https://auth0.com/docs/protocols/saml/saml-idp-generic). For the `Application Callback URL` parameter, use the value `https://hostname/IdP/SSO.aspx` (filling in the correct hostname for your server).
 
-    ![](images/setting-up-auth0-authentication-01.png)
+    ![Screenshot of the Auth0 SAML configuration settings with fields for callback URL and various options.](images/setting-up-auth0-authentication-01.png "Auth0 SAML Configuration Settings")
 
 1. Go to the Usage tab of Auth0’s SAML configuration to get the information needed for your IdP Configuration page (`https://hostname/IdP/Configuration.aspx`). Fill out the Configuration parameters according to the picture below:
 
-    ![](images/setting-up-auth0-authentication-02.png)
+    ![Screenshot showing the process of configuring IdP settings in OutSystems with fields mapped to Auth0 settings.](images/setting-up-auth0-authentication-02.png "IdP Configuration in OutSystems")
 
 1. Configure your users in Auth0.
 1. Test!

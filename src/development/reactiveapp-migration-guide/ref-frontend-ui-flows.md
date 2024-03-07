@@ -18,7 +18,7 @@ To initialize plugins on a Traditional Web App Screen, you needed to add a **Web
 
 In Reactive Web App development, the approach is different. You can use a **Block** too, but you need to add the plugin's JavaScript code in a script file used on the Block, as shown in following image.
 
-![JavaScript Plugin](images/ref-custom-patterns-js-plugin.png)
+![Screenshot showing how to add Required Scripts to a Block in a Reactive Web App.](images/ref-custom-patterns-js-plugin.png "Adding Required Scripts to a Block")
 
 1. On the **Block** properties, select the scripts used by the Block on the **Required Scripts** properties section. You also have this option on Screens and in the Module itself.
 
@@ -26,7 +26,7 @@ In Reactive Web App development, the approach is different. You can use a **Bloc
 
 1. Open the **OnReady** logic, and add a **JavaScript** node to initialize it.
 
-![Adding a JavaScript node to initialize plugins](images/ref-custom-patterns-js-plugin-init.png)
+![Flowchart demonstrating the initialization of JavaScript in a Reactive Web App using an OnReady event.](images/ref-custom-patterns-js-plugin-init.png "Initializing JavaScript in a Reactive Web App")
 
 Read more about adding JavaScript at [Extend Your Mobile and Reactive Apps Using JavaScript](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/JavaScript/Extend_Your_Mobile_and_Reactive_Apps_Using_JavaScript).
 
@@ -93,7 +93,7 @@ On the **OnAfterFetch** event of this Aggregate, you can add a Screen Action to 
 
 The figure shows the difference between these Blocks in Traditional and Reactive Web.
 
-![Migration of Blocks](images/ref-migration-blocks.png)
+![Comparison of Web Blocks in Traditional and Reactive Web Apps, highlighting the data fetching process.](images/ref-migration-blocks.png "Traditional vs Reactive Web Blocks")
 
 ## Referenced Web Block
 

@@ -15,7 +15,7 @@ You can create custom alerts based on your application operations monitoring thr
 * Create your own logic for alerts with thresholds
 * Integrate with external ITSM tools
 
-![](images/create-alerts-diag.png)
+![Diagram illustrating the three-step process to create alerts using OutSystems APIs: Step 1 - Gather data from OutSystems APIs, Step 2 - Consume the API data and define logic thresholds for alarms, Step 3 - Trigger email notifications or integrate with ITSM tools.](images/create-alerts-diag.png "Alerts Creation Process Diagram")
 
 
 ## Step 1 - gather data

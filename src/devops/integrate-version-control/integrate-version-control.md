@@ -29,7 +29,7 @@ Then you should add an additional step after running tests: "upload to GitHub" a
 
 The pipeline looks like this:
 
-![](images/image-1-bp-outsystems-deployments-with-github.png)
+![Illustration of a CI/CD pipeline with steps including 'Start', 'Install Python Dependencies', 'Get and Deploy Latest Tags', 'Run Regression', 'Upload GitHub', 'Deploy Production', and 'End'.](images/image-1-bp-outsystems-deployments-with-github.png "CI/CD Pipeline Overview")
 
 [Here](https://www.outsystems.com/blog/-/media/images/blog/posts/integrating-application-deployment-pipeline-github/files/upload_github.py) is the Python script, as example, where the pipeline calls in the "Upload to GitHub" step.
 
@@ -40,19 +40,19 @@ So the deployment flow is now as follows:
 
 1. The developer tags an application when it is ready to move forward in the pipeline:
    
-    ![](images/image-2-bp-outsystems-deployments-with-github.png)
+    ![Screenshot of the OutSystems interface for tagging a new version of an application, with fields for version number and description.](images/image-2-bp-outsystems-deployments-with-github.png "OutSystems Tag Version Interface")
 
 1. The TriggerPipeline LifeTime Plugin periodically scans for newly tagged application versions. If one is found, the Jenkins pipeline is triggered:
    
-    ![](images/image-3-bp-outsystems-deployments-with-github.png)
+    ![Screenshot of the OutSystems Trigger Dashboard showing new versions available for triggering a Jenkins pipeline.](images/image-3-bp-outsystems-deployments-with-github.png "OutSystems Trigger Dashboard")
 
 1. Applications and their tests are deployed to my test environment:
     
-    ![](images/image-4-bp-outsystems-deployments-with-github.png)
+    ![Screenshot indicating the deployment of applications and their tests to the test environment in OutSystems.](images/image-4-bp-outsystems-deployments-with-github.png "OutSystems Test Environment Deployment")
 
 1. The tests are executed (and they pass):
    
-    ![](images/image-5-bp-outsystems-deployments-with-github.png)
+    ![Screenshot of a test execution log showing a successful test run with a message 'OK' and the generation of XML reports.](images/image-5-bp-outsystems-deployments-with-github.png "OutSystems Test Execution")
 
 1. The deployment manifest is then uploaded into GitHub.
 
@@ -60,9 +60,9 @@ So the deployment flow is now as follows:
 
 1. SysOps can go now to the GitHub repository and sees it updated:
     
-    ![](images/image-6-bp-outsystems-deployments-with-github.png)
+    ![Screenshot of GitHub commit history showing multiple commits labeled 'OutSystems integration to GitHub' with verified status.](images/image-6-bp-outsystems-deployments-with-github.png "GitHub Commit History")
     
-    ![](images/image-7-bp-outsystems-deployments-with-github.png)
+    ![Screenshot of a GitHub diff view highlighting changes in a deployment manifest file, including the addition of a new feature.](images/image-7-bp-outsystems-deployments-with-github.png "GitHub Deployment Manifest Diff")
 
 
 ## Other use cases

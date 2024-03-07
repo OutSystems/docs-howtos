@@ -76,7 +76,7 @@ Add a response header to avoid caching the page. For example, add the header `*C
 
 On the Preparation of the screen with the tabs, add the action *HttpRequestHandler* > ***_AddHeader_** action, as shown below.
 
-![image alt text](images/How-to-save-and-restore-the-active-tab-on-SilkUIFramework_0.png)
+![Screenshot of HttpRequestHandler with AddHeader action to set Cache-Control to NO-STORE.](images/How-to-save-and-restore-the-active-tab-on-SilkUIFramework_0.png "HttpRequestHandler AddHeader Action")
 
 ### More information
 

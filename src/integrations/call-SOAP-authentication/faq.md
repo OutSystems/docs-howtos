@@ -17,7 +17,7 @@ After trying to use the option "Consume Soap Web Service…" I am getting the fo
 
 Can you please help me with this?
 
-![image alt text](images/How-to-call-a-SOAP-web-service-with-authentication_0.png)
+![Error dialog showing 'WSDL Load Error' with a message 'Couldn't access resource at [URL] The remote server returned an error: (401) Unauthorized.'](images/How-to-call-a-SOAP-web-service-with-authentication_0.png "WSDL Load Error Dialog")
 
 ## Answer
 
@@ -25,5 +25,5 @@ if your web service requires authentication then what you need to do is first fe
 
 Also if your WS requires authentication when invoking you might have to set the proper credentials. For that you can use the **SetWebReferenceCredentials** from the **EnhancedWebReferences** extension to set the username and password.
 
-![image alt text](images/How-to-call-a-SOAP-web-service-with-authentication_1.png)
+![Screenshot of the EnhancedWebReferences extension in OutSystems showing the 'SetWebReferenceCredentials' action selected.](images/How-to-call-a-SOAP-web-service-with-authentication_1.png "SetWebReferenceCredentials Action in OutSystems")
 
