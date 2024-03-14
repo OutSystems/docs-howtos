@@ -1,6 +1,5 @@
 ---
 summary: A guide to migrate from Production to Non-Production environments in OutSystems - Application Users, Groups and Roles
-tags: data-migration-between-outsystems-installation; data-migration-between-production-and-non-production-outsystems; application-users-groups-and-roles 
 locale: en-us
 guid: 4cc52c9d-17cb-4c79-b17d-69bb3ef1de4a
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -21,18 +20,18 @@ The following diagram shows the relationships between Entities Users, Roles and 
 The records for the entities in the diagram above can be generated from the following sources:
 
 * Service Studio 
-    * Publishing Espaces with new or changed Roles
-    * Updating Applications or Espace Modules
+    * Publishing modules with new or changed Roles
+    * Updating apps or modules
 
 * Service Center
-    * Uploading and Publishing Applications, Solutions, Espaces with Roles
+    * Uploading and publishing apps, solutions, or modules with Roles
 
-* Lifetime
-    * Pushing Applications to another Environment with Roles
+* LifeTime
+    * Pushing apps to another environment with Roles
 
-* User Applications
-    * References to the Exposed Entities and methods
-    * Application bootstraps for Users, Groups, and Roles 
+* User apps
+    * References to the exposed Entities and methods
+    * Bootstraps for Users, Groups, and Roles 
 
 ## Considerations
 
@@ -40,7 +39,7 @@ Take into account the following considerations:
 
 * Users, Groups, and Roles are not managed by the OutSystems Platform. Only by applications (By default there is the User Application Tool to manage it)
 
-* Roles don’t have to be migrated since they are created when publishing an Application, Solution or Espace
+* Roles don’t have to be migrated since they are created when publishing an app, solution, or module.
 
 * LifeTime syncronizes IT users across environments. In this case, Users from Service Center user provider (typically, ``tenant_id = 1``) don´t need to be migrated.
 
@@ -51,7 +50,7 @@ Users - the attribute Username (and Tenant ID) (Note: Being different environmen
 
 * Groups - the attribute Name (and Tenant ID)
 
-* Roles - the attribute ``SS_Key`` and the related Espace ``SS_Key`` attribute
+* Roles - the attribute ``SS_Key`` and the related module ``SS_Key`` attribute
 
 * User IDs, Role IDs, and Group IDs
     * Search for Users, Groups, and Roles dependencies, where they can be used:
