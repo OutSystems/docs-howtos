@@ -42,7 +42,7 @@ This way you can build the code generic enough for different DBMS, and you are a
 
 More information:
 
-[**Available data types**](http://www.outsystems.com/help/servicestudio/9.0/default.htm#Language_Reference/Data_Types/Available_Data_Types.htm)
+[**Available data types**](https://success.outsystems.com/documentation/11/reference/outsystems_language/data/data_types/available_data_types/)
 
 Defines the default values for each type.
 
