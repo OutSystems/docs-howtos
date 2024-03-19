@@ -39,7 +39,7 @@ jobs:
     - name: JIRA
       id: jira
       if: inputs.ignore == false
-      uses: phorest/regex-action@v2.0.1
+      uses: phorest/regex-action@v1.0.3
       with:
         regex_pattern: ${{ vars.JIRA_REGEX_PATTERN }}
         regex_flags: 'gim'
