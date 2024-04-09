@@ -4,3 +4,4 @@ rules/
 **/.vscode/
 /.vs/*
 config.yml
+.aider*
