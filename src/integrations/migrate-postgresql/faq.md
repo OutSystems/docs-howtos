@@ -14,6 +14,7 @@ Follow this guide to migrate from the third-party ardoPostgreSQL connector to th
 ## Prerequisites
 
 * Platform Server 11.15.0 or later.
+* The PostgreSQL database is on one of the [supported versions](https://success.outsystems.com/documentation/11/setup_outsystems_infrastructure_and_platform/setting_up_outsystems/outsystems_system_requirements/#postgresql-database).
 
 ## Migrating to supported PostgreSQL connector
 
