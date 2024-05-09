@@ -1,5 +1,5 @@
 ---
-summary: Learn how to consume a Web Service in Integration Studio.
+summary: Learn how to consume a Web Service in Integration Studio using OutSystems 11 (O11) by creating extensions and mapping data models.
 tags: support-application_development; support-Integrations_Extensions; support-Integrations_Extensions-featured
 guid: 1f0594cf-ae90-4a94-bcb6-8abc93f7ce5f
 locale: en-us

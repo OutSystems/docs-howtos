@@ -1,4 +1,5 @@
 ---
+summary: Learn how to configure EPA Taskbox preferences in OutSystems 11 (O11) to control its visibility across different eSpaces.
 guid: 32e83f65-befb-46b4-9984-d804192357a3
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

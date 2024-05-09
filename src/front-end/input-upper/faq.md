@@ -1,6 +1,6 @@
 ---
 tags: version-10; 
-summary: 
+summary: Explore how to convert input text to uppercase in real-time using CSS and logic in OutSystems 11 (O11).
 guid: 746a36e5-38e3-4bae-b378-bf6ce9579195
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

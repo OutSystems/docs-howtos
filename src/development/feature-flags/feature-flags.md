@@ -1,5 +1,5 @@
 ---
-summary: Learn how to use feature toggles or feature flags in OutSystems.
+summary: Explore how to implement feature toggling in OutSystems 11 (O11) to streamline app updates and user role management.
 guid: 4de797a5-dc79-459a-9244-8eab786b0fcf
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

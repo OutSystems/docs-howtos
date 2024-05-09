@@ -1,6 +1,6 @@
 ---
 tags: version-11; excel; runtime-traditionalwebandreactiveweb;
-summary: Customize the name and order of columns/Attributes when exporting a List to an Excel file by creating a Structure, an Export Server Action, and a Download Screen Action.
+summary: Learn how to customize Excel exports in OutSystems 11 (O11) by renaming and reordering columns using structured data mapping and server actions.
 guid: d1470acf-fb13-42b7-9a3d-0d4a67ddc689
 locale: en-us
 app_type: traditional web apps, reactive web apps

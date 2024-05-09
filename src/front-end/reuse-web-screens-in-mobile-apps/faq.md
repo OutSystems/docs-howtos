@@ -1,6 +1,6 @@
 ---
 tags: version-11; support-mobile; support-Mobile_Apps; support-webapps
-summary: Reuse screens from Traditional Web Apps in Mobile Apps with iframe. Limitations apply. 
+summary: Explore iframe integration for reusing Traditional Web Screens in Mobile Apps with OutSystems 11 (O11).
 guid: 4b5a6972-73f0-41d3-a418-4feea244e6c8
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,6 +1,6 @@
 ---
 tags:
-summary: With processes accumulating over time, queries may become slower. Check how to arquive old processes before deleting them.
+summary: OutSystems 11 (O11) provides a method to archive old BPT processes to improve query performance by creating a mirrored set of meta-model entities.
 guid: 4cfbcd3c-113b-4d91-a92d-b1aef4584115
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

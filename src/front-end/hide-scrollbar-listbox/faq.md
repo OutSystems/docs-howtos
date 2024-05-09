@@ -1,6 +1,6 @@
 ---
 tags: version-11; css; list box; runtime-traditionalweb;
-summary: How to hide the scroll bar of a List Box.
+summary: Learn how to hide the scroll bar in a List Box widget in OutSystems 11 (O11) by adjusting style properties.
 guid: f7777240-9826-476e-9eab-8415771fbc79
 locale: en-us
 app_type: traditional web apps

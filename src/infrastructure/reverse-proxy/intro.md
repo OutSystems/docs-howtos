@@ -1,5 +1,5 @@
 ---
-summary: This guide outlines common reverse proxy scenarios for network topologies and security policies that rely reverse proxies and actions to make them work with OutSystems self-managed installations.
+summary: Explore how to use OutSystems 11 (O11) in reverse proxy scenarios for enhanced security in corporate applications.
 tags: support-devOps;support-Infrastuture_Architecture;support-installation;support-Installation_Configuration;support-maintenance;support-Security
 locale: en-us
 guid: 810e320f-8265-49f4-947c-e16bb853e77a

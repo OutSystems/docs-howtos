@@ -1,6 +1,6 @@
 ---
 tags: version-11; Users; Authentication; Login
-summary: Extend the Users' login flow to perform extra and custom validations
+summary: Enhance user login in OutSystems 11 (O11) by customizing data models, adding server-side validations, and modifying login actions.
 guid: 111f0e26-2847-4d05-b234-2064053a3b26
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

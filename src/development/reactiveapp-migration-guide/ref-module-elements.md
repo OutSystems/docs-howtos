@@ -1,5 +1,5 @@
 ---
-summary: Reference information about migrating Module elements from Traditional App to Reactive App.
+summary: Explore module-level migration strategies for OutSystems 11 (O11) focusing on entities, multilingual locales, session management, and server actions.
 tags:
 locale: en-us
 guid: edb1d08a-8c4f-49bf-9373-855a24a370d5

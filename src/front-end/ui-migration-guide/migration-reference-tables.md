@@ -1,5 +1,5 @@
 ---
-summary: A list of CSS classes used in Silk UI and OutSystems UI.
+summary: This document provides migration reference tables for CSS and pattern mappings from Silk Web UI to OutSystems 11 (O11) Web UI Framework.
 locale: en-us
 guid: f3509fb6-8cae-449b-b321-1b7c828f48a8
 app_type: traditional web apps, mobile apps, reactive web apps

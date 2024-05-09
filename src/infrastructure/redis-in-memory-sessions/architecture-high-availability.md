@@ -1,5 +1,5 @@
 ---
-summary: Redis Cluster high availability architecture utilizes 3 nodes, 2 ports per node, and cross-node assignment for failover in case of server failure.
+summary: Explore the 3-node Master/Replica Redis Cluster high availability architecture in OutSystems 11 (O11) for self-managed infrastructures.
 guid: 8325ebdd-9bc8-445f-bd9b-5d41a435a841
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,4 +1,5 @@
 ---
+summary: Learn how to save and restore the active tab in SilkUIFramework using JavaScript and session variables in OutSystems 11 (O11).
 guid: 898aad86-1277-4840-bcbc-91db6dea61ab
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

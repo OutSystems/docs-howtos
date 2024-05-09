@@ -1,6 +1,6 @@
 ---
 tags: 
-summary: Learn how to use screen actions as callbacks in UI element events 
+summary: Explore how to use screen actions as callbacks for UI events in OutSystems 11 (O11).
 guid: 0872EBF9-3413-4F52-8E32-4239C888CEE3
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

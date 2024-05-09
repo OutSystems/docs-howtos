@@ -1,5 +1,5 @@
 ---
-summary: A guide that shows how to use a spreadsheet as your data source in an OutSystems App.
+summary: Explore how OutSystems 11 (O11) integrates Google Sheets as a data source for read and write operations using specific connectors and components.
 tags: spreadsheets-as-data-sources-outsystems-applications; google-spreadsheet-as-data-source-outsystems-applications;
 guid: efffdbcf-fb3d-44ea-81f1-6f167b236883
 locale: en-us

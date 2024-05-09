@@ -1,9 +1,9 @@
 ---
 tags: version-11; deployment; upload; runtime-traditionalweb
-summary: Create custom validations for the upload widget
+summary: Explore custom file validation techniques for the Upload Widget in OutSystems 11 (O11) to enhance web app functionality.
 guid: 33e8fc48-2034-4ae4-844e-d6d0fdaaeb55
 locale: en-us
-app_type: Web apps
+app_type: traditional web apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/3YpPKdo5QwN0z6up61eKe5/Logic?node-id=842:251
 ---

@@ -1,4 +1,5 @@
 ---
+summary: Explore how to customize the number of records per page in OutSystems 11 (O11) using a dropdown in a Reactive Module.
 guid: 90f59d2c-4cc1-48c8-8ff6-f1c39912f847
 locale: en-us
 app_type: mobile apps, reactive web apps

@@ -1,5 +1,5 @@
 ---
-summary: A guide to migrate from Production to Non-Production environments in OutSystems - BPT - Business Process Technology
+summary: Explore BPT entity migration complexities in OutSystems 11 (O11), focusing on system and hybrid entities.
 tags: data-migration-between-outsystems-installation; data-migration-between-production-and-non-production-outsystems;
 locale: en-us
 guid: 2cf30a7f-da91-4bbb-b960-0f3724632dde
@@ -16,11 +16,11 @@ One of the most critical topics in data migration relates to Business Process Te
 
 The following diagram shows the relationships between the BPT process related entities, Process Definition and Input/Output Definitions, and Process applicational instances with the corresponding Input/Output instances and their relation with the definitions.
 
-![Entity-relationship diagram for BPT process-related entities showing system and hybrid entities and their interconnections.](images/bpt-entity-relationship-model.png "BPT Entity-Relationship Model Diagram")
+![Entity-relationship diagram for BPT process-related entities, showing system and hybrid entities and their interconnections.](images/bpt-entity-relationship-model.png "BPT Entity-Relationship Model Diagram")
 
 And there is also the Activities that belong to the Process:
 
-![Diagram displaying the various activities that are part of a BPT process.](images/bpt-activities-belonging-to-process.png "BPT Activities Belonging to Process Diagram")
+![Diagram depicting various BPT process activities, their statuses, and interrelationships.](images/bpt-activities-belonging-to-process.png "BPT Activities Belonging to Process Diagram")
 
 
 The records for the entities in the previous can be generated from the following sources:
@@ -114,7 +114,7 @@ Consider you have a Process called "Candidate Selection" and it is triggered by 
 Create a candidate called "John Doe" filling out an entity record form Candidate. This creates a new process instance in runtime with a Process Id.
 The process can be found in Service Center:
 
-![](images/bpt-entities-start-process.png?\width=750)
+![](images/bpt-entities-start-process.png?)
 
 The Process is stored in the Process Entity. You can use the following command to display the last inserted Process:
 
@@ -342,7 +342,7 @@ WHERE OSSYS_ENTITY.Physical_Table_name = 'OSUSR_3ar_Candidate'
 
 The following image displays all the Activities connected to the Process. There are two activities which are on the "Listening" State. But the current Activity is "Screen Candidate" with the "Ready" State.
 
-![](images/bpt-activities-connected-to-process.png?\width=750)
+![Image displaying the sequence of activities connected to a BPT process, including their current status.](images/bpt-activities-connected-to-process.png "BPT Activities Connected to Process")
 
 To see what is inside the Activity, use the following command:
 
@@ -556,7 +556,7 @@ rtText
 
 The ``Process_Id`` is the same found on this Process, ``Output_Def_Id`` is the value found on the ``Process_Output_Def``.  Check the third line in the following image. In this case, the value is not an Identifier, just a piece of text.
 
-![Table showing BPT process ID values and related information.](images/bpt-process-id-values.png "BPT Process ID Values")
+![Table displaying BPT process ID values and related information, including status and output definitions.](images/bpt-process-id-values.png "BPT Process ID Values")
 
 #### Activity
 
@@ -610,7 +610,7 @@ WHERE OSSYS_BPM_Process.Id = 11266
 
 By using this query, it is possible to see the ``ActivityName``, the Parameter Name found on the fifth column, and it is possible to compare the values of the sheet with the screenshot below:
 
-![Screenshot of the activity output at the finish of a BPT process.](images/bpt-finish-activity-output.png "BPT Finish Activity Output")
+![Screenshot of the activity output at the finish of a BPT process, showing the final status and results.](images/bpt-finish-activity-output.png "BPT Finish Activity Output")
 
 
 ### BPT Scheduler

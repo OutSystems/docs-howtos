@@ -1,5 +1,5 @@
 ---
-summary:
+summary: Learn how to create reports in OutSystems 11 using the HTML2PDF component, as detailed by OutSystems MVP Fabio Fantato.
 tags:
 guid: 51f5ab7a-1280-479f-96cd-2c1c9b111134
 locale: en-us

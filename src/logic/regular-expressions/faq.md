@@ -1,6 +1,6 @@
 ---
 tags: version-11; regular expressions; regex; 
-summary: Learn how to use regular expressions in OutSystems apps to search or replace text.
+summary: Explore how to utilize regular expressions in OutSystems 11 (O11) for text processing and pattern matching.
 guid: c7045a0e-c6ec-4db9-ae8d-d21d80731cd7
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

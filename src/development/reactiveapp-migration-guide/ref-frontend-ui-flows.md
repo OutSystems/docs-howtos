@@ -1,5 +1,5 @@
 ---
-summary: This document is a reference for migrating the UI Flow elements of Traditional Web Apps to Reactive Web Apps.
+summary: Explore UI flow elements and migration tips for OutSystems 11 (O11) in the context of transitioning from Traditional to Reactive Web Apps.
 tags: migration-traditional-web; migration-reactive-web; frontend-migration; ui-flow-elements
 locale: en-us
 guid: 7b6e68d1-7e1d-4b59-96f1-bf9a1916bf3f

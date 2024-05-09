@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb; version-11;
-summary: Learn how to set the value of an input depending on the value set in another input in your Traditional Web app.
+summary: OutSystems 11 (O11) allows dynamic updating of input values in Traditional Web apps based on other inputs.
 guid: fcea5150-affd-4f27-8263-97e32b24a7a6
 locale: en-us
 app_type: traditional web apps

@@ -1,5 +1,5 @@
 ---
-summary: Configure OutSystems for reverse proxy scenarios with request header manipulation, referenced content exposure, end-to-end SSL and SSL offloading, URL rewrites, content compression and keep-alive connection timeout.
+summary: Explore reverse proxy configurations for OutSystems 11 (O11) including SSL offloading, URL rewriting, and header manipulation.
 locale: en-us
 guid: bcce21a6-37ab-43a1-90cf-5922fc75effa
 app_type: traditional web apps, mobile apps, reactive web apps

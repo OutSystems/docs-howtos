@@ -1,5 +1,5 @@
 ---
-summary: Configure Platform Server v11.23 with Redis Cluster/Server for in-memory session storage.
+summary: Learn how to configure OutSystems 11 (O11) Platform Server to use Redis for in-memory session storage in self-managed infrastructures.
 guid: 5cef1f48-d700-4311-8f88-ed6ac0ded58e
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

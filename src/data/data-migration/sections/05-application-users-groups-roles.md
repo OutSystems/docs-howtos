@@ -1,5 +1,5 @@
 ---
-summary: A guide to migrate from Production to Non-Production environments in OutSystems - Application Users, Groups and Roles
+summary: Explore the entity relationships and data migration considerations for Users, Groups, and Roles in OutSystems 11 (O11).
 locale: en-us
 guid: 4cc52c9d-17cb-4c79-b17d-69bb3ef1de4a
 app_type: traditional web apps, mobile apps, reactive web apps

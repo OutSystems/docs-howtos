@@ -1,5 +1,5 @@
 ---
-summary: The list of patterns and the differences between Silk UI and OutSystems UI Web.
+summary: This document provides guidelines for migrating Silk web application patterns to the OutSystems 11 (O11) UI framework.
 tags: 
 locale: en-us
 guid: 2c08810e-2693-4b57-a1cb-47f1f2aec04f
@@ -38,7 +38,7 @@ When replacing the Accordion usage with the new pattern, sample content will be 
  
 | Silk Web UI | OutSystems Web UI |
 | -------|-------|
-![TO_REPLACE](images/image21.png) | ![TO_REPLACE](images/image54.png) 
+![Screenshot of the Silk UI Accordion pattern in the OutSystems application.](images/image21.png "Silk UI Accordion Pattern") | ![Screenshot of the OutSystems UI Accordion pattern in the OutSystems application.](images/image54.png "OutSystems UI Accordion Pattern") 
  
 ## Alert
  
@@ -48,9 +48,9 @@ A new option is available: ShowCloseButton, which enables the end-user to close 
 
 | Silk Web UI | OutSystems Web UI |
 | -------|-------|
-![TO_REPLACE](images/image145.png) | ![TO_REPLACE](images/image72.png) 
- |  | ![TO_REPLACE](images/image3.png) 
- ![TO_REPLACE](images/image155.png) |![TO_REPLACE](images/image138.png) 
+![Screenshot of the Silk UI Alert pattern in the OutSystems application.](images/image145.png "Silk UI Alert Pattern") | ![Screenshot of the OutSystems UI Alert pattern in the OutSystems application.](images/image72.png "OutSystems UI Alert Pattern") 
+ |  | ![Screenshot of the OutSystems UI Alert pattern with a close button in the OutSystems application.](images/image3.png "OutSystems UI Alert Pattern with Close Button") 
+ ![Screenshot of the Silk UI Alert pattern with text content in the OutSystems application.](images/image155.png "Silk UI Alert Pattern with Text") |![Screenshot of the OutSystems UI Alert pattern with text content in the OutSystems application.](images/image138.png "OutSystems UI Alert Pattern with Text") 
 
 ## Align Center
 
@@ -60,9 +60,9 @@ Set the Orientation parameter as Horizontal to have the same behavior of Vertica
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![TO_REPLACE](images/image120.png) | ![TO_REPLACE](images/image30.png) 
-|  | ![TO_REPLACE](images/image159.png) 
-|  | ![TO_REPLACE](images/image94.png) 
+![Screenshot of the Silk UI Vertical Align pattern in the OutSystems application.](images/image120.png "Silk UI Vertical Align Pattern") | ![Screenshot of the OutSystems UI Align Center pattern in the OutSystems application.](images/image30.png "OutSystems UI Align Center Pattern") 
+|  | ![Screenshot of the OutSystems UI Align Center pattern with content placeholders in the OutSystems application.](images/image159.png "OutSystems UI Align Center Pattern with Content") 
+|  | ![Screenshot of the OutSystems UI Align Center pattern with orientation options in the OutSystems application.](images/image94.png "OutSystems UI Align Center Pattern with Orientation Option") 
 
 ## Badge
 
@@ -70,9 +70,9 @@ When replacing the Badge pattern, the assigned variable or value will become an 
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![TO_REPLACE](images/image153.png) | ![TO_REPLACE](images/image123.png) 
-![TO_REPLACE](images/image77.png) | ![TO_REPLACE](images/image101.png) 
-|  | ![TO_REPLACE](images/image1.png) 
+![Screenshot of the Silk UI Badge pattern in the OutSystems application.](images/image153.png "Silk UI Badge Pattern") | ![Screenshot of the OutSystems UI Badge pattern in the OutSystems application.](images/image123.png "OutSystems UI Badge Pattern") 
+![Screenshot of the Silk UI Badge pattern with a number displayed in the OutSystems application.](images/image77.png "Silk UI Badge Pattern with Number") | ![Screenshot of the OutSystems UI Badge pattern with a content parameter in the OutSystems application.](images/image101.png "OutSystems UI Badge Pattern with Content Parameter") 
+|  | ![Screenshot of the OutSystems UI Badge pattern with shape options in the OutSystems application.](images/image1.png "OutSystems UI Badge Pattern with Shape Options") 
 
 ## Balloon
  
@@ -87,10 +87,10 @@ There are two new placeholders: Title and Footer. There is also a new parameter 
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![TO_REPLACE](images/image91.png) | ![TO_REPLACE](images/image68.png) 
-|  | ![TO_REPLACE](images/image5.png) 
-![TO_REPLACE](images/image93.png) | ![TO_REPLACE](images/image50.png) 
-| | ![TO_REPLACE](images/image84.png) 
+![Screenshot of the Silk UI Balloon pattern in the OutSystems application.](images/image91.png "Silk UI Balloon Pattern") | ![Screenshot of the OutSystems UI Balloon pattern in the OutSystems application.](images/image68.png "OutSystems UI Balloon Pattern") 
+|  | ![Screenshot of the OutSystems UI Balloon pattern with position options in the OutSystems application.](images/image5.png "OutSystems UI Balloon Pattern with Position Option") 
+![Screenshot of the Silk UI Balloon pattern with content in the OutSystems application.](images/image93.png "Silk UI Balloon Pattern with Content") | ![Screenshot of the OutSystems UI Balloon pattern with title and footer placeholders in the OutSystems application.](images/image50.png "OutSystems UI Balloon Pattern with Title and Footer") 
+| | ![Screenshot of the OutSystems UI Balloon pattern with trigger options in the OutSystems application.](images/image84.png "OutSystems UI Balloon Pattern with Trigger Option") 
  
 ## Blank Slate
  
@@ -98,9 +98,9 @@ When replacing the BlankSlate pattern, your content inside the Content placehold
  
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![TO_REPLACE](images/image119.png) | ![TO_REPLACE](images/image25.png) ![TO_REPLACE](images/image136.png)
-![TO_REPLACE](images/image71.png) | ![TO_REPLACE](images/image127.png)
-|  | ![TO_REPLACE](images/image31.png)
+![Screenshot of the Silk UI Blank Slate pattern in the OutSystems application.](images/image119.png "Silk UI Blank Slate Pattern") | ![Screenshot of the OutSystems UI Blank Slate pattern in the OutSystems application.](images/image25.png "OutSystems UI Blank Slate Pattern") ![Screenshot of the OutSystems UI Blank Slate pattern with an icon in the OutSystems application.](images/image136.png "OutSystems UI Blank Slate Pattern with Icon")
+![Screenshot of the Silk UI Blank Slate pattern with actions in the OutSystems application.](images/image71.png "Silk UI Blank Slate Pattern with Actions") | ![Screenshot of the OutSystems UI Blank Slate pattern with content and actions in the OutSystems application.](images/image127.png "OutSystems UI Blank Slate Pattern with Content and Actions")
+|  | ![Screenshot of the OutSystems UI Blank Slate pattern with position options in the OutSystems application.](images/image31.png "OutSystems UI Blank Slate Pattern with Position Option")
 
 ## Breadcrumbs
 
@@ -114,9 +114,9 @@ If you wish to keep the same Icon from the old pattern, make sure you set the ne
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- | 
-![TO_REPLACE](images/image156.png) | ![TO_REPLACE](images/image35.png) 
-![TO_REPLACE](images/image122.png) | ![TO_REPLACE](images/image67.png) 
-|  | ![TO_REPLACE](images/image146.png)  
+![Screenshot of the Silk UI Breadcrumbs pattern in the OutSystems application.](images/image156.png "Silk UI Breadcrumbs Pattern") | ![Screenshot of the OutSystems UI Breadcrumbs pattern in the OutSystems application.](images/image35.png "OutSystems UI Breadcrumbs Pattern") 
+![Screenshot of the Silk UI Breadcrumbs pattern with step indicators in the OutSystems application.](images/image122.png "Silk UI Breadcrumbs Pattern with Steps") | ![Screenshot of the OutSystems UI Breadcrumbs pattern with icons for each breadcrumb item in the OutSystems application.](images/image67.png "OutSystems UI Breadcrumbs Pattern with Icons") 
+|  | ![Screenshot of the OutSystems UI Breadcrumbs pattern with a dynamic list in the OutSystems application.](images/image146.png "OutSystems UI Breadcrumbs Pattern with Dynamic List")  
 
 ## Button Group
 
@@ -130,8 +130,8 @@ IsJustified parameter makes items evenly distributed.
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- | 
-![TO_REPLACE](images/image69.png) | ![TO_REPLACE](images/image46.png) 
-|  | ![TO_REPLACE](images/image118.png) 
+![Screenshot of the Silk UI Button Group pattern in the OutSystems application.](images/image69.png "Silk UI Button Group Pattern") | ![Screenshot of the OutSystems UI Button Group pattern in the OutSystems application.](images/image46.png "OutSystems UI Button Group Pattern") 
+|  | ![Screenshot of the OutSystems UI Button Group pattern with justified items in the OutSystems application.](images/image118.png "OutSystems UI Button Group Pattern with Justified Items") 
 
 
 ## Card
@@ -140,7 +140,7 @@ When replacing the Card pattern, your content inside the Content placeholder wil
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![TO_REPLACE](images/image133.png) | ![TO_REPLACE](images/image103.png) 
+![Screenshot of the Silk UI Card pattern in the OutSystems application.](images/image133.png "Silk UI Card Pattern") | ![Screenshot of the OutSystems UI Card pattern in the OutSystems application.](images/image103.png "OutSystems UI Card Pattern") 
 
 ## Card Background
 
@@ -153,9 +153,9 @@ Color, Position, MinHeight and ExtendedClass input parameters are now available.
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![TO_REPLACE](images/image17.png) | ![TO_REPLACE](images/image110.png) 
-![TO_REPLACE](images/image16.png) | ![TO_REPLACE](images/image27.png) 
-|  | ![TO_REPLACE](images/image113.png) 
+![Screenshot of the Silk UI Card Background pattern in the OutSystems application.](images/image17.png "Silk UI Card Background Pattern") | ![Screenshot of the OutSystems UI Card Background pattern in the OutSystems application.](images/image110.png "OutSystems UI Card Background Pattern") 
+![Screenshot of the Silk UI Card Background pattern with an image in the OutSystems application.](images/image16.png "Silk UI Card Background Pattern with Image") | ![Screenshot of the OutSystems UI Card Background pattern with an image placeholder in the OutSystems application.](images/image27.png "OutSystems UI Card Background Pattern with Image Placeholder") 
+|  | ![Screenshot of the OutSystems UI Card Background pattern with a color overlay in the OutSystems application.](images/image113.png "OutSystems UI Card Background Pattern with Color Overlay") 
  
  
 ## Card Sectioned
@@ -168,9 +168,9 @@ The Orientation parameter sets the display of the Title in relation to the Conte
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![TO_REPLACE](images/image82.png) | ![TO_REPLACE](images/image128.png) 
-|  | ![TO_REPLACE](images/image129.png) 
-|  | ![TO_REPLACE](images/image33.png)
+![Screenshot of the Silk UI Card Sectioned pattern in the OutSystems application.](images/image82.png "Silk UI Card Sectioned Pattern") | ![Screenshot of the OutSystems UI Card Sectioned pattern in the OutSystems application.](images/image128.png "OutSystems UI Card Sectioned Pattern") 
+|  | ![Screenshot of the OutSystems UI Card Sectioned pattern with a footer in the OutSystems application.](images/image129.png "OutSystems UI Card Sectioned Pattern with Footer") 
+|  | ![Screenshot of the OutSystems UI Card Sectioned pattern with orientation options in the OutSystems application.](images/image33.png "OutSystems UI Card Sectioned Pattern with Orientation Option")
 
 ## Columns
 
@@ -186,9 +186,9 @@ When replacing the Columns pattern, TabletBehavior and PhoneBehavior must be map
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![TO_REPLACE](images/image19.png) | ![TO_REPLACE](images/image98.png) 
-![TO_REPLACE](images/image70.png) | ![TO_REPLACE](images/image134.png) 
-|  | ![TO_REPLACE](images/image147.png) 
+![Screenshot of the Silk UI Columns pattern in the OutSystems application.](images/image19.png "Silk UI Columns Pattern") | ![Screenshot of the OutSystems UI Columns pattern in the OutSystems application.](images/image98.png "OutSystems UI Columns Pattern") 
+![Screenshot of the Silk UI Columns pattern with multiple columns in the OutSystems application.](images/image70.png "Silk UI Columns Pattern with Multiple Columns") | ![Screenshot of the OutSystems UI Columns pattern with gutter size options in the OutSystems application.](images/image134.png "OutSystems UI Columns Pattern with Gutter Size Option") 
+|  | ![Screenshot of the OutSystems UI Columns pattern with border color options in the OutSystems application.](images/image147.png "OutSystems UI Columns Pattern with Border Color Option") 
 
 ## Counter
 
@@ -198,9 +198,9 @@ An Icon was introduced as sample content. You can delete it or customize it if y
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![TO_REPLACE](images/image59.png) | ![TO_REPLACE](images/image51.png) 
-![TO_REPLACE](images/image57.png) | ![TO_REPLACE](images/image143.png) 
-|  | ![TO_REPLACE](images/image38.png) 
+![Screenshot of the Silk UI Counter pattern in the OutSystems application.](images/image59.png "Silk UI Counter Pattern") | ![Screenshot of the OutSystems UI Counter pattern in the OutSystems application.](images/image51.png "OutSystems UI Counter Pattern") 
+![Screenshot of the Silk UI Counter pattern with a label in the OutSystems application.](images/image57.png "Silk UI Counter Pattern with Label") | ![Screenshot of the OutSystems UI Counter pattern with an icon in the OutSystems application.](images/image143.png "OutSystems UI Counter Pattern with Icon") 
+|  | ![Screenshot of the OutSystems UI Counter pattern with orientation options in the OutSystems application.](images/image38.png "OutSystems UI Counter Pattern with Orientation Option") 
 
 ## File Upload
 
@@ -208,9 +208,9 @@ When replacing the FileUpload pattern, all your content will be in the correct p
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- | 
-![TO_REPLACE](images/image148.png) | ![TO_REPLACE](images/image139.png) 
-![TO_REPLACE](images/image115.png) | ![TO_REPLACE](images/image40.png) 
-|  | ![TO_REPLACE](images/image142.png)  
+![Screenshot of the Silk UI File Upload pattern in the OutSystems application.](images/image148.png "Silk UI File Upload Pattern") | ![Screenshot of the OutSystems UI File Upload pattern in the OutSystems application.](images/image139.png "OutSystems UI File Upload Pattern") 
+![Screenshot of the Silk UI File Upload pattern with button text in the OutSystems application.](images/image115.png "Silk UI File Upload Pattern with Button Text") | ![Screenshot of the OutSystems UI File Upload pattern with an empty message in the OutSystems application.](images/image40.png "OutSystems UI File Upload Pattern with Empty Message") 
+|  | ![Screenshot of the OutSystems UI File Upload pattern with an upload widget in the OutSystems application.](images/image142.png "OutSystems UI File Upload Pattern with Upload Widget")  
 
 ## Gallery
 
@@ -220,9 +220,9 @@ The previous pattern relied on the parameters to set the number of items per row
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![TO_REPLACE](images/image43.png) | ![TO_REPLACE](images/image10.png) 
-![TO_REPLACE](images/image96.png) | ![TO_REPLACE](images/image61.png) 
-|  | ![TO_REPLACE](images/image55.png)
+![Screenshot of the Silk UI Gallery pattern in the OutSystems application.](images/image43.png "Silk UI Gallery Pattern") | ![Screenshot of the OutSystems UI Gallery pattern in the OutSystems application.](images/image10.png "OutSystems UI Gallery Pattern") 
+![Screenshot of the Silk UI Gallery pattern with list records in the OutSystems application.](images/image96.png "Silk UI Gallery Pattern with List Records") | ![Screenshot of the OutSystems UI Gallery pattern with column width options in the OutSystems application.](images/image61.png "OutSystems UI Gallery Pattern with Column Width") 
+|  | ![Screenshot of the OutSystems UI Gallery pattern showing items per row in the OutSystems application.](images/image55.png "OutSystems UI Gallery Pattern with Items Per Row")
  
 
 ## Modal
@@ -242,12 +242,12 @@ About the parameters:
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![TO_REPLACE](images/image88.png) | ![TO_REPLACE](images/image116.png) 
-|  | ![TO_REPLACE](images/image23.png) 
-|  | ![TO_REPLACE](images/image111.png) 
-|  | ![TO_REPLACE](images/image36.png) 
-![TO_REPLACE](images/image102.png) | ![TO_REPLACE](images/image28.png) 
-|  | ![TO_REPLACE](images/image149.png) 
+![Screenshot of the Silk UI Modal pattern in the OutSystems application.](images/image88.png "Silk UI Modal Pattern") | ![Screenshot of the OutSystems UI Modal pattern in the OutSystems application.](images/image116.png "OutSystems UI Modal Pattern") 
+|  | ![Screenshot of the OutSystems UI Modal pattern with position options in the OutSystems application.](images/image23.png "OutSystems UI Modal Pattern with Position Option") 
+|  | ![Screenshot of the OutSystems UI Modal pattern with an overlay in the OutSystems application.](images/image111.png "OutSystems UI Modal Pattern with Overlay") 
+|  | ![Screenshot of the OutSystems UI Modal pattern with animation options in the OutSystems application.](images/image36.png "OutSystems UI Modal Pattern with Animation Options") 
+![Screenshot of the Silk UI Modal pattern with actions in the OutSystems application.](images/image102.png "Silk UI Modal Pattern with Actions") | ![Screenshot of the OutSystems UI Modal pattern with a footer in the OutSystems application.](images/image28.png "OutSystems UI Modal Pattern with Footer") 
+|  | ![Screenshot of the OutSystems UI Modal pattern with a toggle action in the OutSystems application.](images/image149.png "OutSystems UI Modal Pattern with Toggle Action") 
 
 ## Panel
  
@@ -255,10 +255,10 @@ When replacing the Panel pattern, your content inside the Title, Actions, and Co
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![TO_REPLACE](images/image90.png) | ![TO_REPLACE](images/image6.png) 
-|  | ![TO_REPLACE](images/image132.png) 
-![TO_REPLACE](images/image125.png) | ![TO_REPLACE](images/image108.png) 
-|  | ![TO_REPLACE](images/image15.png) 
+![Screenshot of the Silk UI Panel pattern in the OutSystems application.](images/image90.png "Silk UI Panel Pattern") | ![Screenshot of the OutSystems UI Panel pattern in the OutSystems application.](images/image6.png "OutSystems UI Panel Pattern") 
+|  | ![Screenshot of the OutSystems UI Panel pattern with a footer in the OutSystems application.](images/image132.png "OutSystems UI Panel Pattern with Footer") 
+![Screenshot of the Silk UI Panel pattern with title and actions in the OutSystems application.](images/image125.png "Silk UI Panel Pattern with Title and Actions") | ![Screenshot of the OutSystems UI Panel pattern with content and footer in the OutSystems application.](images/image108.png "OutSystems UI Panel Pattern with Content and Footer") 
+|  | ![Screenshot of the OutSystems UI Panel pattern with extended class options in the OutSystems application.](images/image15.png "OutSystems UI Panel Pattern with Extended Class Option") 
 
 ## Progress Bar
 
@@ -266,7 +266,7 @@ When replacing the ProgressBar pattern, Title and Value placeholders will be add
 
 | Silk Web UI | OutSystems Web UI |
 | -------|------- |
-![TO_REPLACE](images/image47.png) | ![TO_REPLACE](images/image137.png) 
+![Screenshot of the Silk UI Progress Bar pattern in the OutSystems application.](images/image47.png "Silk UI Progress Bar Pattern") | ![Screenshot of the OutSystems UI Progress Bar pattern in the OutSystems](images/image137.png "OutSystems UI Progress Bar Pattern") 
 ![TO_REPLACE](images/image150.png) | ![TO_REPLACE](images/image135.png)
 |  | ![TO_REPLACE](images/image158.png) 
 |  | ![TO_REPLACE](images/image104.png) 

@@ -1,4 +1,5 @@
 ---
+summary: Explore how to integrate OneSignal for push notifications in OutSystems 11 (O11) applications using the OneSignal plugin.
 tags: version-10; support-Integrations_Extensions; support-Integrations_Extensions-featured; support-Mobile_Apps; support-webapps
 guid: d7d5445d-d28d-4acb-b158-b6d85b7f2ace
 locale: en-us

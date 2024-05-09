@@ -1,4 +1,5 @@
 ---
+summary: Explore various methods to prevent content copying in OutSystems 11 (O11), including CSS and JavaScript techniques.
 guid: c0bda1f0-88a2-4879-8c95-1eac2a7b3cdf
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,5 +1,5 @@
 ---
-summary: Use the "SetWebReferenceCredentials" to authenticate when connecting to a SOAP Web Service with OutSystems.
+summary: Learn how to handle SOAP web service authentication in OutSystems 11 (O11) by saving WSDL locally and using EnhancedWebReferences for credentials.
 guid: bace3ad4-c605-4a40-bb54-b78a7a2830c5
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

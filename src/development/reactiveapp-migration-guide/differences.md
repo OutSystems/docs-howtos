@@ -1,5 +1,5 @@
 ---
-summary: Overview of differences between Traditional Web Apps and Reactive Web Apps, from the perspective of migrating to the new Reactive runtime.  
+summary: Explore key differences between Traditional and Reactive Web Apps in OutSystems 11 (O11) to aid migration and enhance user experience.
 tags:
 locale: en-us
 guid: 013992fc-35b0-485d-9097-68a0d1b1afc8

@@ -1,5 +1,5 @@
 ---
-summary: Learn how to how to store OutSystems applications and modules in external version control systems such as GitHub, SVN or Azure Repos.
+summary: Explore how OutSystems 11 (O11) integrates with external version control systems like GitHub to enhance CI/CD pipelines and deployment visibility.
 guid: 9e611128-511d-494f-a1f0-5603ba863afc
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

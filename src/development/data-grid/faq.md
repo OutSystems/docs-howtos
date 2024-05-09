@@ -1,6 +1,6 @@
 ---
 tags: runtime-traditionalweb
-summary: Use this tutorial to create Excel-like interface with the OutSystems Data Grid component, to view, edit, and save data. There's also a section about when to use OutSystems Data Grid.
+summary: Explore the capabilities of OutSystems 11 (O11) for creating dynamic data grid interfaces that allow viewing, editing, and saving data efficiently.
 guid: 80b3e393-53fa-40e3-b457-4cd8cc78fd71
 locale: en-us
 app_type: traditional web apps

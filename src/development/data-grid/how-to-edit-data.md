@@ -1,6 +1,6 @@
 ---
 tags: runtime-reactiveweb;
-summary: The following example demonstrates how to edit information in the Grid using columns.
+summary: Learn how to enable and configure data editing in OutSystems 11 (O11) Data Grid by setting the AllowColumnEdit property to true and adding column widgets.
 guid: 2f8a50d1-be34-401b-bd4a-c27ba72b37f7
 locale: en-us
 app_type: reactive web apps

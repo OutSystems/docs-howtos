@@ -1,5 +1,5 @@
 ---
-summary: A guide to migrate from Production to Non-Production environments in OutSystems - Factory Application Modules
+summary: Explore the management of development factories and databases in OutSystems 11 (O11), including applications, modules, and entity relationships.
 tags: data-migration-between-outsystems-installation; data-migration-between-production-and-non-production-outsystems; factory-application-modules
 locale: en-us
 guid: c7318d3e-0ee5-4bec-90d3-06e8aa1b2ea2
@@ -16,7 +16,7 @@ To create a process or tool to move data between different OutSystems environmen
 
 The following diagram shows the relationships between Applications, Espaces, Modules, and Extensions.
 
-![](images/relationships-applications-espaces-modules-extensions.png?\width=750)
+![Diagram illustrating the relationships between Applications, Espaces, Modules, and Extensions in OutSystems.](images/relationships-applications-espaces-modules-extensions.png "Entity-Relationship Diagram for OutSystems Applications, Espaces, Modules, and Extensions")
 
 The records for the entities in the diagram above can be generated from the following sources:
 

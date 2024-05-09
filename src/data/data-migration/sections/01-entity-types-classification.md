@@ -1,5 +1,5 @@
 ---
-summary: A guide to migrate from Production to Non-Production environments in OutSystems - Classification of Entity Types
+summary: Explore the classification and handling of system, application, and hybrid entities within the OutSystems 11 (O11) platform metamodel for data migration.
 locale: en-us
 guid: dce526c4-9948-404e-a2a5-c55ef13747d7
 app_type: traditional web apps, mobile apps, reactive web apps

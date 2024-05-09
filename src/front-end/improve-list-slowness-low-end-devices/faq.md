@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) enhances list performance on low-end devices by using placeholder images and CSS modifications.
 guid: 89c5c9a1-308d-416a-b917-9080a9ddb42d
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

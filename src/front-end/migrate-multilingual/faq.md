@@ -1,5 +1,5 @@
 ---
-summary: Learn how to reuse translations from the Multilingual Forge component in Service Studio translation management. This feature is in Technical Preview.
+summary: Learn how to migrate translations from the deprecated Multilingual Forge component to the new multilingual feature in OutSystems 11 (O11).
 tags: support-application_development; multilingual; migration-multilingual-translations; multilingual-service-studio
 guid: 625a71ee-acb7-4923-b953-74f684ca6377
 locale: en-us

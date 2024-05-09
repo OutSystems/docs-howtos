@@ -1,5 +1,5 @@
 ---
-summary: This document is a reference for migrating the Front-end of Traditional Web Apps to Reactive Web Apps.
+summary: Explore system actions and migration strategies in OutSystems 11 (O11) for enhancing mobile and reactive apps.
 tags: migration-traditional-web; migration-reactive-web; front-end-migration 
 locale: en-us
 guid: 89d99597-4385-4748-9aac-3b72a112a9bd

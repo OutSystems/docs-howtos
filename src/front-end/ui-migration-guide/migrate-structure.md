@@ -1,5 +1,5 @@
 ---
-summary: 
+summary: Explore the process of migrating Silk web applications to the OutSystems 11 (O11) UI framework, covering structural changes and pattern updates.
 tags: 
 locale: en-us
 guid: 072bad87-b493-4f6e-922d-17b22c4404d1

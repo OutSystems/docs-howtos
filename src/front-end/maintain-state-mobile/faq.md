@@ -1,6 +1,6 @@
 ---
 tags: version-11; support-mobileapps; support-Front_end_Development;
-summary: 
+summary: Learn how to maintain the state of a mobile screen across navigation in OutSystems 11 (O11) using local storage and client actions.
 guid: 1ab580bd-06db-488c-bcfa-133209853697
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

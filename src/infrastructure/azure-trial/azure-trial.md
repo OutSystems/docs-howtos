@@ -1,5 +1,5 @@
 ---
-summary: Deploy OutSystems 11 Standalone Trial on Microsoft Azure and create your first apps with Service Studio and Service Center.
+summary: Learn how to install the OutSystems 11 (O11) trial on Microsoft Azure, including VM setup and app creation.
 tags:
 locale: en-us
 guid: e0085624-ca0d-42cf-91ae-f259280dc67b

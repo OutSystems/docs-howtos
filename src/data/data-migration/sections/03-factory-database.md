@@ -1,5 +1,5 @@
 ---
-summary: A guide to migrate from Production to Non-Production environments in OutSystems - Factory Database
+summary: Explore how OutSystems 11 (O11) manages application entities, including entity relationships, publishing modules, and database considerations.
 tags: data-migration-between-outsystems-installation; data-migration-between-production-and-non-production-outsystems; factory-database
 locale: en-us
 guid: 93ea4249-dd2d-4d68-9c96-efbba147823d
@@ -22,7 +22,7 @@ Espace is the old name used by OutSystems for Module. This diagram uses the term
 
 </div>
 
-![](images/relationship-entities-entity-records-entity-attributes-db-catalogs-espaces.png?\width=750)
+![Diagram illustrating the relationships between Entities, Entity Records, Entity Attributes, DB Catalogs, and Modules in OutSystems.](images/relationship-entities-entity-records-entity-attributes-db-catalogs-espaces.png "Entity Relationship Diagram for OutSystems")
 
 * Service Studio 
     * Publishing Modules or Cloned Modules with new or changed Entities  

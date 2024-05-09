@@ -1,5 +1,5 @@
 ---
-summary: Reference information about migrating Traditional App to Reactive App. Use it while you're migrating your app to Reactive Web or to assess the effort you might need for migration.
+summary: OutSystems 11 (O11) guide for migrating Traditional Web Apps to Reactive Web Apps, detailing preparation, URL management, and accelerators.
 tags:
 locale: en-us
 guid: 010044c5-0729-43e3-adea-d864e57c8843

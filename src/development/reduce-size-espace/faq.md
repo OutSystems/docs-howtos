@@ -1,4 +1,5 @@
 ---
+summary: Discover methods to minimize module size in OutSystems 11 (O11) by optimizing architecture, image sizes, resources, and icon usage.
 guid: ca1ebd84-459e-4a57-875c-ec6bbf2a3cda
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

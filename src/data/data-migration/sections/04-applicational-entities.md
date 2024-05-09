@@ -1,5 +1,5 @@
 ---
-summary: A guide to migrate from Production to Non-Production environments in OutSystems - Applicational Entities
+summary: Explore data migration guidelines and technical considerations for OutSystems 11 (O11) platform dependencies and applicational entities.
 tags: data-migration-between-outsystems-installation; data-migration-between-production-and-non-production-outsystems; applicational-entities
 locale: en-us
 guid: 8e6f7f29-c985-4000-b17a-68fe09e0ef7f

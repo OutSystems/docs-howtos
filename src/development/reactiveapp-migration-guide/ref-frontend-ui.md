@@ -1,5 +1,5 @@
 ---
-summary: Considerations about migrating the UI of Traditional Web Apps that use different UI frameworks to Reactive Web Apps using OutSystems UI.
+summary: Explore UI migration strategies for OutSystems 11 (O11) when transitioning from Traditional to Reactive Web Apps.
 tags: migration-traditional-web; migration-reactive-web; frontend-migration 
 locale: en-us
 guid: f3b2a6fe-c642-4dde-b104-9f37f32bb4fa

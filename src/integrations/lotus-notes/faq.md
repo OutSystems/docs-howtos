@@ -1,6 +1,6 @@
 ---
 tags: version-10; support-Application_Troubleshooting; support-webapps; lotus notes; domino;
-summary: 
+summary: Explore how to access legacy Lotus Notes/Domino application data using ODBC and MS SQL Server Linked Servers in OutSystems 11 (O11).
 guid: 75121be2-5930-4cba-aa00-84107bf5e366
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

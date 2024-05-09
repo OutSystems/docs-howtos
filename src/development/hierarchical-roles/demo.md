@@ -1,5 +1,5 @@
 ---
-summary: Demo application for implementing hierarchical roles
+summary: Explore hierarchical role-based access control in OutSystems 11 (O11) through a sales application demo.
 tags: app-development; OutSystems-roles; user-roles; hierarchical-roles; 
 guid: c3a3c216-5fcb-4943-b787-aa744827ad28
 locale: en-us

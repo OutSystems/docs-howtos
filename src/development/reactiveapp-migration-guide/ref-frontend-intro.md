@@ -1,5 +1,5 @@
 ---
-summary: Learn about the procedures to migrate the frontend of Traditional Web Apps to Reactive Web Apps.
+summary: OutSystems 11 (O11) documentation details the process of migrating front-end components from Traditional Web Apps to Reactive Web Apps.
 tags: migration-traditional-web; migration-reactive-web; front-end-migration 
 locale: en-us
 guid: 0c16a089-0896-40a9-8ff3-04222f7ec27a

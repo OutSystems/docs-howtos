@@ -1,6 +1,6 @@
 ---
 tags: time-zones
-summary: How to understand and manipulate time zones
+summary: OutSystems 11 (O11) defaults to local user time for apps and uses UTC across all cloud servers, with synchronization recommended.
 guid: 5e9d4c5c-4d06-4102-91e9-bcbc7350e8fd
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

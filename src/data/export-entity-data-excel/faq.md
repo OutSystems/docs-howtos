@@ -1,5 +1,5 @@
 ---
-summary: Learn how to export entity data to an Excel file.
+summary: Explore how to export entity data to Excel in OutSystems 11 (O11) using the Record List To Excel action for both Reactive and Traditional Web applications.
 tags: OutSystems_How_To; OutSystems_Export_Entity_Data; OutSystems_Export_Entity_Data_Excel, Excel, Entities
 guid: 93767095-3b94-4005-8e9e-c206704fd9f8
 locale: en-us

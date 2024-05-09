@@ -1,5 +1,5 @@
 ---
-summary: Learn how you can customize dialog messages in Reactive Web Apps.
+summary: Learn how to create animated and styled dialog messages in OutSystems 11 (O11) using JavaScript libraries and custom blocks.
 tags:
 guid: 34f82c63-eff4-49e6-82fb-0958e13dddf7
 locale: en-us

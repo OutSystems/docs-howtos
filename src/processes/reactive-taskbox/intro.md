@@ -1,6 +1,6 @@
 ---
 tags: version-11; support-Front_end_Development;
-summary: Use the Reactive Taskbox component to let your users assign themselves tasks you design through Business Process Technology (BPT).
+summary: Explore how to integrate and customize the Taskbox in Reactive Web Apps using OutSystems 11 (O11) for efficient task management.
 guid: b8184f4d-59dc-4881-81a0-40df50b4b185
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

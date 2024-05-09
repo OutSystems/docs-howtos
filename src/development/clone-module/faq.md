@@ -1,4 +1,5 @@
 ---
+summary: Explore how to clone and relocate a module between applications using OutSystems 11 (O11) in Service Studio.
 guid: 27e7e1ed-437a-46ba-941d-a31ec6f0c5ac
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

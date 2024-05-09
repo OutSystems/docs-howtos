@@ -1,5 +1,5 @@
 ---
-summary: Learn how to create several hierarchy roles using the default OutSystems user roles
+summary: Explore how to implement hierarchical role structures in OutSystems 11 (O11) to enhance authorization mechanisms.
 tags: article-page; app-development; OutSystems-roles; user-roles; hierarchical-roles; 
 guid: f39c1e48-d9a9-443a-ba1e-6f345a350ab8
 locale: en-us

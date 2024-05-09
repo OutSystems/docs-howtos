@@ -1,6 +1,6 @@
 ---
 tags: version-10; support-Integrations_Extensions; XML; XPath;
-summary: 
+summary: OutSystems 11 (O11) includes XML and XPath support for parsing XML files to extract specific data.
 guid: 874b6a87-f497-4e1a-ae07-b2ac2f6f47ef
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

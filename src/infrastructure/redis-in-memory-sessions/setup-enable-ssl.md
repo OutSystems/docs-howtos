@@ -1,5 +1,5 @@
 ---
-summary: Configure Platform Server to use SSL when connecting to Redis 6.x by defining environment variables and enabling SSL in the Configuration Tool.
+summary: This article provides a guide on configuring SSL for Redis in OutSystems 11 (O11) self-managed infrastructures.
 guid: f69f6130-df05-468b-aabf-5414ba06e384
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

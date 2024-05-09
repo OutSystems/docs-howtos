@@ -1,5 +1,5 @@
 ---
-summary: This article explains the common use cases and configurations necessary for reverse proxy scenarios, such as HTTP/HTTPS redirection, request header manipulation and application path changes.
+summary: Explore common reverse proxy configurations for OutSystems 11 (O11) to enhance security and manage web traffic effectively.
 locale: en-us
 guid: 4c538aa3-0623-4e86-b871-9fdd3767eb6f
 app_type: traditional web apps, mobile apps, reactive web apps

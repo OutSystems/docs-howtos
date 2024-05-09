@@ -1,5 +1,5 @@
 ---
-summary: An overview of the stages for migrating a Traditional App to a Reactive App. Adapt it to your requirements.
+summary: Learn the stages of migrating Traditional Web Apps to Reactive Web Apps in OutSystems 11 (O11), including UI updates and performance optimization.
 tags:
 locale: en-us
 guid: b00bd152-2bc4-4dc9-9200-1de2bdbd26da

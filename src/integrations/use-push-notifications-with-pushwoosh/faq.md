@@ -1,6 +1,6 @@
 ---
 tags: version-10; support-Integrations_Extensions; support-Mobile_Apps; support-webapps
-summary: 
+summary: Explore how OutSystems 11 (O11) integrates with Pushwoosh for sending push notifications across various devices using a dedicated plugin.
 guid: 015dc204-9e52-4cd6-8a23-5e96096f9548
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

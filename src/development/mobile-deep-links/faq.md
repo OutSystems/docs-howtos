@@ -1,6 +1,6 @@
 ---
 tags: version-11; support-mobile; support-Mobile_Apps; deep link; Intent;
-summary: 
+summary: Explore how to define mobile app deep links and Android Intents in OutSystems 11 (O11) for enhanced navigation and external interactions.
 guid: cc1ae152-0388-4f6e-865c-323c88ea8c76
 locale: en-us
 app_type: mobile apps

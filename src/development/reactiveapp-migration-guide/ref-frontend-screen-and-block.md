@@ -1,5 +1,5 @@
 ---
-summary: This document is a reference for migrating the Front-end of Traditional Web Apps to Reactive Web Apps.
+summary: This article provides detailed guidance on migrating Traditional Web App logic to Reactive Web Apps in OutSystems 11 (O11).
 tags: migration-traditional-web; migration-reactive-web; front-end-migration; screen-and-block-logic
 locale: en-us
 guid: 3fbc848e-37ed-4b87-a59f-6088cc55e1e4

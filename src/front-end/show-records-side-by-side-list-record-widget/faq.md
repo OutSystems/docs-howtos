@@ -1,5 +1,5 @@
 ---
-summary: In the standard table grid layout each record is on a separate line. Here, we'll show how to achive other record arrangements, such as diplaying records side by side.
+summary: Learn how to display records side-by-side using the List Records widget in OutSystems 11 (O11).
 guid: 955219bb-026a-4fd4-a24a-0fc5da6a0a1e
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

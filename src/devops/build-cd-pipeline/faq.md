@@ -1,4 +1,5 @@
 ---
+summary: OutSystems 11 (O11) features an open-source accelerator, **outsystems-pipeline**, for automated continuous delivery across environments.
 guid: 011aa817-6024-458a-8c62-f111224efa3b
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

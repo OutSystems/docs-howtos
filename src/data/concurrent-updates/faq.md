@@ -1,6 +1,6 @@
 ---
 tags: support-Database
-summary: Learn how to manage concurrent updates on application data records using a pessimistic concurrency strategy, audit attributes, and a force update option.
+summary: Explore how OutSystems 11 (O11) handles concurrent data updates using pessimistic concurrency strategies and transaction control.
 guid: c5dedbf3-215c-4934-b4ef-fccf90e989e7
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

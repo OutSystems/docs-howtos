@@ -1,5 +1,5 @@
 ---
-summary: Configure your OutSystems installation to use an Apache web server as a reverse proxy. Includes configuration for Apache Web Server 2.2 or higher for HTTP and HTTPS.
+summary: Explore configuring Apache Web Server as a reverse proxy for OutSystems 11 (O11) to manage URL paths and SSL.
 locale: en-us
 guid: c96d06e4-6dc7-4269-bb4e-726267bc75e6
 app_type: traditional web apps, mobile apps, reactive web apps

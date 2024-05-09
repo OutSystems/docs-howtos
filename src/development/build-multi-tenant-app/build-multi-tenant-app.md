@@ -1,5 +1,5 @@
 ---
-summary: Multi-tenancy enables one app for many customers, ensuring data isolation. Modules, entities, properties, and timers can be multi-tenant or shared. User sessions link to tenants.
+summary: Learn how to build a multi-tenant application using OutSystems 11 (O11) to efficiently manage data isolation and user sessions across different tenants.
 guid: 6e1bb224-5f33-4233-adc5-57dc98793113
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

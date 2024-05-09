@@ -1,5 +1,5 @@
 ---
-summary: Comparison of hierarchical and ‘static’ roles
+summary: Explore the comparison between hierarchical and default roles in OutSystems 11 (O11), highlighting advantages and implementation considerations.
 tags: app-development; OutSystems-roles; user-roles; hierarchical-roles; 
 guid: 7c2103e0-79cb-43a7-a430-92ca71e0f8f4
 locale: en-us

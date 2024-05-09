@@ -1,6 +1,6 @@
 ---
 tags: outsystems-add-video; outsystems-embed-video; add-video-to-apps; embed-video-to-apps; 
-summary: Learn how to add videos to your applications.
+summary: Explore various methods to integrate videos into web applications using OutSystems 11 (O11) UI patterns and components.
 guid: 3d01d650-6b50-4f86-a64a-09fc15bce11c
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

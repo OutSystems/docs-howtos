@@ -1,5 +1,5 @@
 ---
-summary: Migrate your app from using community-contributed Firebase Mobile plugins to the OutSystems supported plugins. Get support, more updates, and better visibility over changes between versions.
+summary: Explore the migration process from unsupported to supported Firebase-based mobile plugins in OutSystems 11 (O11) for enhanced app performance and support.
 tags:
 locale: en-us
 guid: 0999bb9f-af58-4fc6-ba6d-9c411958eedc

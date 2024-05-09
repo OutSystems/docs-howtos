@@ -1,5 +1,5 @@
 ---
-summary: Reactive is a type of app that has many improvements when compared to Traditional App. This document provides introductory notes for developers and leads who are considering migrating old Traditional Apps to Reactive.
+summary: Explore the technical process of migrating Traditional Web Apps to Reactive Web Apps in OutSystems 11 (O11).
 tags: article-page; migration-traditional-web; migration-reactive-web
 locale: en-us
 guid: 6fd52b69-653d-4384-b9fe-7e30b698609b

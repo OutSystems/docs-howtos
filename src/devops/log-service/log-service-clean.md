@@ -1,5 +1,5 @@
 ---
-summary:
+summary: OutSystems 11 (O11) no longer requires the Log Service, which can be removed after upgrading all modules to free up server memory.
 tags: version-11;
 guid: 1635a64b-bb6b-4cb5-8a49-bcfc97929fe7
 locale: en-us

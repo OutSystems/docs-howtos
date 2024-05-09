@@ -1,4 +1,5 @@
 ---
+summary: Explore how to enable multiline inputs in Editable Tables using JavaScript in OutSystems 11 (O11).
 guid: e4cccabf-a90c-43f2-9fbb-2860590dc404
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,4 +1,5 @@
 ---
+summary: Explore how OutSystems 11 (O11) integrates Active Directory Groups with OutSystems Roles using Forge components for streamlined user management.
 guid: b2ea3286-9753-4319-a709-339a61edf884
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

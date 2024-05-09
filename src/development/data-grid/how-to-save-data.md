@@ -1,6 +1,6 @@
 ---
 tags: runtime-reactiveweb;
-summary: How to edit the Grid data and save the changes to the database
+summary: Learn how to save edited data from the OutSystems 11 (O11) Data Grid to a database using client and server actions.
 guid: 5650f891-e674-4ae4-a937-92965677b5ae
 locale: en-us
 app_type: reactive web apps
