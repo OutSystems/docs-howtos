@@ -8,7 +8,7 @@ platform-version: o11
 figma: https://www.figma.com/file/ZqxffTIAhYyQg8Q2KbSFbb/Development?type=design&node-id=1142%3A332&mode=design&t=bneC7SMvNg6A2EZ4-1
 ---
 
-#  How to use the OutSystems Data Grid
+# How to use the OutSystems Data Grid
 
 **Prerequisites** 
 

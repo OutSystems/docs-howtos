@@ -7,7 +7,7 @@ platform-version: o11
 figma:
 ---
 
-# Scale a Redis Cluster by adding more nodes { #add-node }
+# Scale a Redis Cluster by adding more nodes
 
 <div class="info" markdown="1">
 

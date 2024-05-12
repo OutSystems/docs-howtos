@@ -8,7 +8,7 @@ platform-version: o11
 figma: https://www.figma.com/file/ZqxffTIAhYyQg8Q2KbSFbb/Development?type=design&node-id=1187%3A354&mode=design&t=bneC7SMvNg6A2EZ4-1
 ---
 
-#  How to save changes to the OutSystems Data Grid
+# How to save changes to the OutSystems Data Grid
 
 This example shows how to edit the Grid data and save those changes to the database.
 
