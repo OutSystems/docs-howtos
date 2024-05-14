@@ -20,9 +20,14 @@ jobs:
       - name: Retrieve TK team members
         id: get-team-members
         run: |
+          # Construct the URL
+          TEAM_MEMBERS_URL="https://api.github.com/orgs/OutSystems/teams/${{ vars.TEAM_NAME }}/members"
+          echo "Fetching team members from: $TEAM_MEMBERS_URL"
+    
           # Retrieve team members from a GitHub team
-          TEAM_MEMBERS=$(curl -L \ -H "Accept: application/vnd.github+json" \ -H "Authorization: Bearer $GITHUB_TOKEN" \ https://api.github.com/orgs/OutSystems/teams/${{ vars.TEAM_NAME }}/members)
+          TEAM_MEMBERS=$(curl -L -H "Accept: application/vnd.github+json" -H "Authorization: Bearer $GITHUB_TOKEN" "$TEAM_MEMBERS_URL")
           echo "::set-output name=members::$TEAM_MEMBERS"
+
 
       - name: Check PR Author
         id: check-pr-author
