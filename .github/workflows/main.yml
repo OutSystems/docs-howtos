@@ -1,0 +1,129 @@
+name: Jira Ticket Creation
+
+on:
+  pull_request:
+    types: [opened, reopened]
+    branches:
+      - master
+
+jobs:
+  create-jira-ticket:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Extract PR details
+        id: parse-payload
+        run: |
+          echo "Pull request number: ${{ github.event.pull_request.number }}"
+          echo "Pull request title: ${{ github.event.pull_request.title }}"
+          echo "Pull request author: ${{ github.event.pull_request.user.login }}"
+
+      - name: Retrieve TK team members
+        id: get-team-members
+        run: |
+          # Retrieve team members from a GitHub team
+          TEAM_MEMBERS=$(curl -s -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/orgs/OutSystems/teams/${{ vars.TEAM_NAME }}/members" | jq -r ".[].login")
+          echo "::set-output name=members::$TEAM_MEMBERS"
+
+      - name: Check PR Author
+        id: check-pr-author
+        run: |
+          TEAM_MEMBERS="${{ steps.get-team-members.outputs.members }}"
+          PR_AUTHOR="${{ github.event.pull_request.user.login }}"
+          if [[ ",$TEAM_MEMBERS," == *",$PR_AUTHOR,"* ]]; then
+            echo "Pull request made by team member. Skipping Jira ticket creation."
+            echo "::set-output name=notify_requestor::false"
+          else
+            echo "::set-output name=notify_requestor::true"
+          fi
+
+      - name: Create Jira Ticket
+        id: create-jira-ticket
+        run: |
+          JIRA_API_TOKEN=${{ secrets.JIRA_API_TOKEN }}
+          JIRA_API_URL=${{ vars.JIRA_API_URL }}
+          JIRA_PROJECT_KEY=TK
+          
+          # Get repository name
+          REPO_NAME=$(echo "${{ github.repository }}" | cut -d '/' -f 2)
+
+          # Construct request body
+          ISSUE_TYPE="Story"
+          SUMMARY="New PR at $REPO_NAME from ${{ github.actor }}"
+          DESCRIPTION="There's a new PR at ${{ github.event.pull_request.html_url }}. Please review it, merge it, and publish it, or close it if it's not to be merged."
+          LABELS='["Documentation", "support-maintenance", "pr-auto"]'
+
+          # Send HTTP request to create issue
+          RESPONSE=$(curl -s -X POST \
+            -H "Authorization: Basic $JIRA_API_TOKEN" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "fields": {
+                "project": {
+                  "key": "'"$JIRA_PROJECT_KEY"'"
+                },
+                "summary": "'"$SUMMARY"'",
+                "description": "'"$DESCRIPTION"'",
+                "issuetype": {
+                  "name": "'"$ISSUE_TYPE"'"
+                },
+                "labels": '"$LABELS"'
+              }
+            }' \
+            "$JIRA_API_URL")
+
+          # Extract Jira ticket ID from the response
+          JIRA_TICKET_ID=$(echo "$RESPONSE" | jq -r ".id")
+
+          # Log the response
+          echo "Jira API Response: $RESPONSE"
+          echo "Jira Ticket ID: $JIRA_TICKET_ID"
+
+          # Pass the Jira ticket ID to the next step
+          echo "::set-output name=jira-ticket-id::$JIRA_TICKET_ID"
+
+      - name: Handle Jira Ticket Creation Failure
+        if: steps.create-jira-ticket.outputs.jira-ticket-id == null
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_CHANNEL: ${{ vars.SLACK_CHANNEL }}
+          SLACK_COLOR: 'red'
+          SLACK_MESSAGE: "Failed to create Jira ticket for PR ${{ github.event.pull_request.number }}: ${{ github.event.pull_request.html_url }}"
+          SLACK_TITLE: ":Error: Failed to create Jira ticket for PR"
+          SLACK_USERNAME: ${{ vars.SLACK_USERNAME }}
+          SLACK_ICON: ${{ vars.SLACK_ICON }}
+          SLACK_FOOTER: ''
+          MSG_MINIMAL: true
+
+      - name: Update PR Title with Jira Ticket ID
+        if: steps.check-pr-author.outputs.notify_requestor == 'true'
+        uses: actions/github-script@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const newTitle = `${context.payload.pull_request.title} (Jira ${process.env.JIRA_TICKET_ID})`;
+            await github.pulls.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.payload.pull_request.number,
+              title: newTitle
+            });
+
+      - name: Notify Requestor
+        if: steps.check-pr-author.outputs.notify_requestor == 'true'
+        uses: actions/github-script@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const { data: pullRequest } = await github.pulls.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.payload.pull_request.number
+            });
+            const comment = `Hi @${pullRequest.user.login}! Thank you for contributing to the OutSystems documentation. The team was notified of your pull request and will review it shortly.`;
+            await github.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              body: comment
+            });
