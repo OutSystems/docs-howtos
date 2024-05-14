@@ -21,7 +21,7 @@ jobs:
         id: get-team-members
         run: |
           # Retrieve team members from a GitHub team
-          TEAM_MEMBERS=$(curl -L \ -H "Accept: application/vnd.github+json" \ -H "Authorization: Bearer $GITHUB_TOKEN" \ https://api.github.com/orgs/OutSystems/teams/${{ vars.TEAM_NAME }}/members)
+          TEAM_MEMBERS=$(curl -L \ -H "Accept: application/vnd.github+json" \ -H "Authorization: Bearer $GITHUB_TOKEN" \ https://api.github.com/orgs/OutSystems/teams/${{ vars.TEAM_NAME }}/members
           echo "::set-output name=members::$TEAM_MEMBERS"
 
       - name: Check PR Author
