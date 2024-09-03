@@ -41,4 +41,4 @@ To dynamically set the "To" date to one day after the "From" date follow these s
 
 After these steps the "To" date changes to one day after the "From" date every time the end user modifies the "From" date.
 
-![Animated GIF demonstrating the dynamic update of the 'To' date input when the 'From' date is changed.](images/dyn-input-05.gif "Dynamic Input Update in Action")
+<iframe src="https://player.vimeo.com/video/1005756606" width="350" height="320" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="">Video demonstrating the dynamic update of the 'To' date input when the 'From' date is changed.</iframe>
