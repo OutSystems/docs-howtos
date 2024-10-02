@@ -143,7 +143,6 @@
 - topics:
     - href: integrations/call-SOAP-authentication/faq.md
     - href: integrations/config-pushwoosh-ios/faq.md
-    - href: integrations/configure-outsystems-ip-saml/faq.md
     - href: integrations/consume-webservice-integration-studio/faq.md
     - href: integrations/does-outsystems-support-cocoapods/faq.md
     - href: integrations/include-jquery-plugin/faq.md
