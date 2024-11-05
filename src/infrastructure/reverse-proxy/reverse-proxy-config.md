@@ -74,7 +74,7 @@ When serving secure applications through a reverse proxy, OutSystems supports th
 
 * **End-to-End SSL**: Encrypting the communication end-to-end. This can be done by installing an SSL certificate in every OutSystems application server, and also in the reverse proxy. It can be the same certificate if it is multi-server or wildcard.
 
- ![Diagram depicting end-to-end SSL encryption in a reverse proxy scenario, with SSL certificates on both the reverse proxy and OutSystems front-end.](images/reverse-proxy-config-ssl-end-to-end-diag.png "End-to-End SSL Configuration Diagram")
+    ![Diagram depicting end-to-end SSL encryption in a reverse proxy scenario, with SSL certificates on both the reverse proxy and OutSystems front-end.](images/reverse-proxy-config-ssl-end-to-end-diag.png "End-to-End SSL Configuration Diagram")
 
 * **SSL Offload**: Install an SSL certificate in the reverse proxy. This keeps the traffic unencrypted between the reverse proxy and the internal application servers. It also removes the need to manage certificates in each application server. This technique is called SSL offloading.
 
@@ -101,6 +101,8 @@ In **SSL Offload** scenarios, two configurations need to be applied:
     **Values:** `X-Forwarded-Proto: https`
 
     **Default:** (none)
+
+    Alternatively, in the Factory Configuration app (available from the Forge), enter ``X-Forwarded-Proto: https`` in the HTTPS Detection Header.
 
 Additionally, make sure the IP address of the reverse proxy is configured in the Trusted proxy addresses in **Service Center** (Administration > Security > Network Security). Ensure that the server is not enforcing HTTPS Security in the internal communications.
 
@@ -170,6 +172,8 @@ Disable the platform's own AJAX compression by creating the `OutSystems.HubEditi
 
 **Default:** `True`
 
+Alternatively, from the Factory Configuration app (available from the Forge), uncheck the **Ajax Compression** checkbox.
+
 ### Application Server Level
 
 #### Microsoft IIS 
@@ -185,6 +189,8 @@ Disable the platform's own AJAX compression by creating the `OutSystems.HubEditi
     **Values:** `True` / `False`
 
     **Default:** `True`
+    
+    Alternatively, from the Factory Configuration app (available from the Forge), uncheck the **Force IIS Compression** checkbox.
 
 1. In IIS Management Console, [disable the static and dynamic content compression](https://www.iis.net/configreference/system.webserver/httpcompression).
 
