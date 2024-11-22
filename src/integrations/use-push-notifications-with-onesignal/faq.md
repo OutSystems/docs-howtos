@@ -1,11 +1,20 @@
 ---
 summary: Explore how to integrate OneSignal for push notifications in OutSystems 11 (O11) applications using the OneSignal plugin.
-tags: version-10; support-Integrations_Extensions; support-Integrations_Extensions-featured; support-Mobile_Apps; support-webapps
+tags: push notifications, onesignal integration, notification configuration, mobile app development, platform-specific setup
 guid: d7d5445d-d28d-4acb-b158-b6d85b7f2ace
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/gKoXqtZTY2IJjyMWschrRB/Integrations?node-id=1242:340
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - forge
+content-type:
+  - procedure
 ---
 
 # How to Use Push Notifications with OneSignal

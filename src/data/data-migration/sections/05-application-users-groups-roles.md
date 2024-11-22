@@ -5,6 +5,17 @@ guid: 4cc52c9d-17cb-4c79-b17d-69bb3ef1de4a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/5uD7gg1CIy1jlOE2BNFdsU/Data?node-id=1142:245
+tags: data migration, entity relationships, outsystems platform, user management, security model
+audience:
+  - full stack developers
+  - platform administrators
+  - architects
+outsystems-tools:
+  - service studio
+  - service center
+  - lifetime
+content-type:
+  - procedure
 ---
 
 # Application Users Groups and Roles

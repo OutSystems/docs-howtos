@@ -5,6 +5,16 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/o7Rkyuxm89D6KrjD7AOYCU/Infrastructure?node-id=1242:245
+tags: redis, cluster management, high availability, disaster recovery, failover mechanism
+audience:
+  - platform administrators
+  - infrastructure managers
+  - backend developers
+  - full stack developers
+outsystems-tools:
+  - none
+content-type:
+  - procedure
 ---
 
 # Test the failover behavior of a Redis Cluster

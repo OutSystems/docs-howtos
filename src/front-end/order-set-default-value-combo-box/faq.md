@@ -5,6 +5,14 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:53
+tags: combobox, data sorting, ui configuration, default values, data binding
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # How to order and set the default value in a combo box

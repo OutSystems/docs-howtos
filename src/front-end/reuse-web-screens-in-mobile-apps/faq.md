@@ -1,11 +1,21 @@
 ---
-tags: version-11; support-mobile; support-Mobile_Apps; support-webapps
+tags: mobile development, web integration, security issues, embedded web content, workarounds
 summary: Explore iframe integration for reusing Traditional Web Screens in Mobile Apps with OutSystems 11 (O11).
 guid: 4b5a6972-73f0-41d3-a418-4feea244e6c8
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:69
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - inappbrowser plugin
+  - lifetime analytics
+content-type:
+  - procedure
 ---
 
 # How to Reuse Web Screens in Mobile Apps

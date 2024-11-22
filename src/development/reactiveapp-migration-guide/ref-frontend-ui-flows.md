@@ -1,11 +1,19 @@
 ---
 summary: Explore UI flow elements and migration tips for OutSystems 11 (O11) in the context of transitioning from Traditional to Reactive Web Apps.
-tags: migration-traditional-web; migration-reactive-web; frontend-migration; ui-flow-elements
+tags: javascript initialization, ui patterns, screen lifecycle, script management, outsystems ui
 locale: en-us
 guid: 7b6e68d1-7e1d-4b59-96f1-bf9a1916bf3f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/ZqxffTIAhYyQg8Q2KbSFbb/Development?node-id=1742:243
+audience:
+  - frontend developers
+  - full stack developers
+  - mobile developers
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # UI flow elements

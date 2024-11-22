@@ -5,6 +5,14 @@ locale: en-us
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/3YpPKdo5QwN0z6up61eKe5/Logic?node-id=842:236
+tags: email integration, survey applications, url generation, httprequesthandler, direct links
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # How to make a link with a variable to send in an Email

@@ -5,6 +5,14 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:76
+tags: session management, javascript, ui customization, client-side logic, state persistence
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # How to save and restore the active tab on SilkUIFramework

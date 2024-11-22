@@ -1,11 +1,18 @@
 ---
-tags: version-10; support-Integrations_Extensions; support-Mobile_Apps; support-webapps; Pushwoosh; iOS;
+tags: push notifications, ios development, apns configuration, mobile app deployment, outsystems
 summary: Learn how to configure Pushwoosh for iOS, including creating an App ID and APNS certificate, and setting up in OutSystems 11 (O11).
 guid: c299ba80-55f5-4102-89ea-ab2ea0b23315
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/gKoXqtZTY2IJjyMWschrRB/Integrations?node-id=1242:234
+audience:
+  - mobile developers
+  - frontend developers
+outsystems-tools:
+  - none
+content-type:
+  - procedure
 ---
 
 # How to Configure Pushwoosh for iOS

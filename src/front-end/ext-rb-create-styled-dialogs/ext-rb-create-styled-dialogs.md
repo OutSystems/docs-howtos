@@ -1,11 +1,19 @@
 ---
 summary: Learn how to create animated and styled dialog messages in OutSystems 11 (O11) using JavaScript libraries and custom blocks.
-tags:
+tags: ide usage, reactive web apps, tutorials for beginners, javascript libraries, user interface design
 guid: 34f82c63-eff4-49e6-82fb-0958e13dddf7
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:14
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # How to create animated and styled dialog messages

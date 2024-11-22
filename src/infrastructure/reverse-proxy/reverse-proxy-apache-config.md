@@ -5,6 +5,18 @@ guid: c96d06e4-6dc7-4269-bb4e-726267bc75e6
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: apache configuration, ssl configuration, proxy server setup, url rewriting, server management
+audience:
+  - platform administrators
+  - technology leaders
+  - infrastructure managers
+  - full stack developers
+  - backend developers
+outsystems-tools:
+  - service center
+  - lifetime
+content-type:
+  - procedure
 ---
 
 # Configuring an Apache Web Server as a Reverse Proxy

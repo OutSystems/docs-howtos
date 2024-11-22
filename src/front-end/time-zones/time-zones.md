@@ -1,11 +1,20 @@
 ---
-tags: time-zones
+tags: time zone management, synchronization, cloud deployment, environment configuration, datetime handling
 summary: OutSystems 11 (O11) defaults to local user time for apps and uses UTC across all cloud servers, with synchronization recommended.
 guid: 5e9d4c5c-4d06-4102-91e9-bcbc7350e8fd
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # How to time zones work in OutSystems and how can I change them?

@@ -1,11 +1,20 @@
 ---
-tags:
+tags: bpt performance, entity management, data archiving, performance optimization, process management
 summary: OutSystems 11 (O11) provides a method to archive old BPT processes to improve query performance by creating a mirrored set of meta-model entities.
 guid: 4cfbcd3c-113b-4d91-a92d-b1aef4584115
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/qdZmVuCDqCHvhakBTOLZcI/Processes?type=design&node-id=147%3A325&mode=design&t=RJVgJk7HezcStPje-1
+audience:
+  - full stack developers
+  - backend developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - bpt_api
+content-type:
+  - procedure
 ---
 
 # How to archive old Processes - BPT

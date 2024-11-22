@@ -1,11 +1,19 @@
 ---
-tags:
+tags: data filtering, entity management, ui components, screen design, aggregate query
 summary: Learn how to use the Dropdown Search in OutSystems 11 (O11) to filter an aggregate with a list by multiple categories.
 guid: 04A17173-24A4-428C-8F0C-51281F874CAF
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=1057:839
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # How to use the Dropdown Search to filter an aggregate with a list

@@ -1,11 +1,19 @@
 ---
 summary: This document provides guidelines for migrating Silk web application patterns to the OutSystems 11 (O11) UI framework.
-tags: 
+tags: ui migration, silk ui framework, outsystems ui, application frameworks, ui patterns
 locale: en-us
 guid: 2c08810e-2693-4b57-a1cb-47f1f2aec04f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=1242:478
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # Migrating the patterns of the Silk web applications to OutSystems UI

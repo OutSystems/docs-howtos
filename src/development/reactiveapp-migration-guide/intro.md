@@ -1,11 +1,22 @@
 ---
 summary: Explore the technical process of migrating Traditional Web Apps to Reactive Web Apps in OutSystems 11 (O11).
-tags: article-page; migration-traditional-web; migration-reactive-web
+tags: web application migration, performance optimization, security best practices, application architecture
 locale: en-us
 guid: 6fd52b69-653d-4384-b9fe-7e30b698609b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - frontend developers
+  - full stack developers
+  - team lead
+  - technology leaders
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
+  - process
+  - conceptual
 ---
 
 # Introduction to migrating Traditional Web to Reactive Web Apps

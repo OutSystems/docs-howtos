@@ -1,11 +1,20 @@
 ---
-tags:
+tags: ide usage, reactive web apps, tutorials for beginners, ui components, static entities
 summary: This article explains implementing a dropdown search for country dial-in codes and flags in OutSystems, with optional Forge components.
 guid: ebed2507-61c6-49a4-bbe0-cdfecd253dbc
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11, odc
 figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=1242:644
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - forge
+content-type:
+  - procedure
 ---
 
 # How to implement a dropdown search with country dial-in codes and flags

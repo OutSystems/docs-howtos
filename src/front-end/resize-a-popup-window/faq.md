@@ -1,11 +1,18 @@
 ---
-tags: version-10; popup; resize; support-Front_end_Development;
+tags: dynamic ui, javascript, user interface, web development, pop-up management
 summary: Learn how to dynamically resize pop-up windows in OutSystems 11 (O11) by setting the AutoResize property and using JavaScript for runtime adjustments.
 guid: 8aef5808-c75c-4831-ad81-f72a3fdc27d8
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:66
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # How to dynamically resize a pop-up window

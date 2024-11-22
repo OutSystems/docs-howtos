@@ -1,11 +1,19 @@
 ---
-tags: runtime-traditionalweb; support-Front_end_Development; support-webapps;
+tags: ui patterns, web development, autocomplete functionality, performance optimization, outsystems ui
 summary: Learn how to implement a server-side filtered autocomplete search field in a Traditional Web App using OutSystems 11 (O11).
 guid: 5aad9f1a-b906-4e68-a058-3b34646444b7
 locale: en-us
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:5
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - richwidgets
+content-type:
+  - procedure
 ---
 
 # How to create a search field with autocomplete in a Traditional Web App

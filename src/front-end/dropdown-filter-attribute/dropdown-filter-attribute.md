@@ -1,11 +1,19 @@
 ---
-tags:
+tags: ide usage, reactive web apps, tutorials for beginners, ui components, data filtering
 summary: OutSystems 11 (O11) tutorial on using Dropdown Search to filter aggregates by a single attribute.
 guid: 908BBD05-3D83-4F19-BD95-75BE9EFA76D9
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=1049:836
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # How to use the Dropdown Search to filter an aggregate with a single attribute

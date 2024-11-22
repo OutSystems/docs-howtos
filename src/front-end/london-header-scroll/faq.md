@@ -1,11 +1,19 @@
 ---
-tags: version-10; css; header; london
+tags: css customization, web development, application ui design, style customization, frontend development
 summary: Learn how to make the header scroll with the page in the London theme on OutSystems 11 (O11) by modifying CSS properties.
 guid: b80fd8bd-01dd-475a-9fd1-50709e60ab86
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # How to make the header scroll with the page in the London theme

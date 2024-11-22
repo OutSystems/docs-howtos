@@ -5,6 +5,16 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: application optimization, application architecture, image optimization, resource management, icon management
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - architecture dashboard
+content-type:
+  - procedure
 ---
 
 # How to reduce the size of my modules

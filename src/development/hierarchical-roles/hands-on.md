@@ -1,13 +1,23 @@
 ---
 summary: Explore hierarchical role implementation in web applications using OutSystems 11 (O11) for effective data and user management.
-tags: app-development; OutSystems-roles; user-roles; hierarchical-roles; 
+tags: role management, security, authorization, hierarchical data structures, access control
 guid: b8ef5b66-e443-445d-a0e8-7623b8ca100c
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/ZqxffTIAhYyQg8Q2KbSFbb/Development?node-id=742:278
+audience:
+  - frontend developers
+  - full stack developers
+  - backend developers
+  - team lead
+  - architects
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
+  - process
 ---
-
 
 # How to implement hierarchical roles
 

@@ -5,6 +5,18 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/gKoXqtZTY2IJjyMWschrRB/Integrations?node-id=1242:309
+tags: active directory integration, user management, permissions synchronization, forge components, authentication
+audience:
+  - platform administrators
+  - full stack developers
+  - backend developers
+  - architects
+  - team lead
+outsystems-tools:
+  - service studio
+  - forge
+content-type:
+  - procedure
 ---
 
 # How to map Active Directory Groups to OutSystems Roles

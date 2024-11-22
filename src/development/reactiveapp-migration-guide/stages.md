@@ -1,11 +1,20 @@
 ---
 summary: Learn the stages of migrating Traditional Web Apps to Reactive Web Apps in OutSystems 11 (O11), including UI updates and performance optimization.
-tags:
+tags: app migration, performance optimization, ui frameworks, server actions optimization, refactoring
 locale: en-us
 guid: b00bd152-2bc4-4dc9-9200-1de2bdbd26da
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+  - outsystems ui
+content-type:
+  - procedure
 ---
 
 # Suggested stages of Traditional to Reactive App migration

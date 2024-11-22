@@ -5,6 +5,17 @@ guid: bcce21a6-37ab-43a1-90cf-5922fc75effa
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/o7Rkyuxm89D6KrjD7AOYCU/Infrastructure?node-id=1242:252
+tags: reverse proxy, ssl offloading, url rewriting, header manipulation, apache http server
+audience:
+  - platform administrators
+  - infrastructure managers
+  - backend developers
+  - full stack developers
+  - architects
+outsystems-tools:
+  - none
+content-type:
+  - procedure
 ---
 
 # OutSystems configurations in reverse proxy scenarios

@@ -1,11 +1,21 @@
 ---
 summary: Explore data migration guidelines for OutSystems 11 (O11) between production and non-production environments, covering best practices and use cases.
-tags: data-migration-between-outsystems-installation; data-migration-between-production-and-non-production-outsystems;
+tags: data migration, environment management, best practices, database configuration, version compatibility
 locale: en-us
 guid: 02fd2efb-6799-4656-8cdb-8043dbeff6bf
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - platform administrators
+  - full stack developers
+  - infrastructure managers
+  - architects
+outsystems-tools:
+  - platform server
+content-type:
+  - procedure
+  - conceptual
 ---
 
 # Data migration from production to non-production environment

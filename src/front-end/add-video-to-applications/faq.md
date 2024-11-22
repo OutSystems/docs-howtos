@@ -1,11 +1,20 @@
 ---
-tags: outsystems-add-video; outsystems-embed-video; add-video-to-apps; embed-video-to-apps; 
+tags: outsystems ui patterns, video integration, outsystems forge components, web application development
 summary: Explore various methods to integrate videos into web applications using OutSystems 11 (O11) UI patterns and components.
 guid: 3d01d650-6b50-4f86-a64a-09fc15bce11c
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=147:325
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - forge
+content-type:
+  - procedure
 ---
 
 # How to Add Video to Your Applications

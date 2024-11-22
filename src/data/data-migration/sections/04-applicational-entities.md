@@ -1,11 +1,22 @@
 ---
 summary: Explore data migration guidelines and technical considerations for OutSystems 11 (O11) platform dependencies and applicational entities.
-tags: data-migration-between-outsystems-installation; data-migration-between-production-and-non-production-outsystems; applicational-entities
+tags: data migration, application data management, entity relationship mapping, environment alignment
 locale: en-us
 guid: 8e6f7f29-c985-4000-b17a-68fe09e0ef7f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - platform administrators
+  - backend developers
+  - full stack developers
+  - architects
+  - technology leaders
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
+  - conceptual
 ---
 
 # Applicational Entities

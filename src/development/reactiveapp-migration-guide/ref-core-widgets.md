@@ -1,11 +1,19 @@
 ---
 summary: Explore the core widget functionalities and migration strategies from Traditional Web to Reactive Web Apps in OutSystems 11 (O11).
-tags: migration-traditional-web; migration-reactive-web; front-end-migration 
+tags: widget implementation, ui design considerations, client-side rendering, security best practices, style property customization
 locale: en-us
 guid: c604d94e-fe27-4ea6-93a3-2e65fc948f4a
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/ZqxffTIAhYyQg8Q2KbSFbb/Development?node-id=1742:370
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # Core widgets

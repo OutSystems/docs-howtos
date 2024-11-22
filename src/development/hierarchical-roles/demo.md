@@ -1,11 +1,20 @@
 ---
 summary: Explore hierarchical role-based access control in OutSystems 11 (O11) through a sales application demo.
-tags: app-development; OutSystems-roles; user-roles; hierarchical-roles; 
+tags: access control, security, role-based access control, authorization, application development
 guid: c3a3c216-5fcb-4943-b787-aa744827ad28
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/ZqxffTIAhYyQg8Q2KbSFbb/Development?node-id=742:293
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - forge
+content-type:
+  - procedure
 ---
 
 # Sales application demo

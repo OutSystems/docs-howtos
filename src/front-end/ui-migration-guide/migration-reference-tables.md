@@ -5,6 +5,15 @@ guid: f3509fb6-8cae-449b-b321-1b7c828f48a8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: ui migration, css patterns, application development, web ui framework, outsystems 11
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # Migration reference tables for Silk and OutSystems Web UI

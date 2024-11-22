@@ -1,11 +1,20 @@
 ---
 summary: Explore module-level migration strategies for OutSystems 11 (O11) focusing on entities, multilingual locales, session management, and server actions.
-tags:
+tags: ide usage, reactive web apps, tutorials for beginners, migration strategies, entity management, multilingual support, session management
 locale: en-us
 guid: edb1d08a-8c4f-49bf-9373-855a24a370d5
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - frontend developers
+  - full stack developers
+  - mobile developers
+outsystems-tools:
+  - service studio
+  - forge
+content-type:
+  - procedure
 ---
 
 # Module elements

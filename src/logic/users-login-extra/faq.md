@@ -1,11 +1,19 @@
 ---
-tags: version-11; Users; Authentication; Login
+tags: data modeling, entity relationships, custom authentication, user management, security
 summary: Enhance user login in OutSystems 11 (O11) by customizing data models, adding server-side validations, and modifying login actions.
 guid: 111f0e26-2847-4d05-b234-2064053a3b26
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/3YpPKdo5QwN0z6up61eKe5/Logic?node-id=842:240
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # How to add extra logic to Users' login

@@ -1,11 +1,20 @@
 ---
-tags: version-10; support-Integrations_Extensions; support-Mobile_Apps; support-webapps
+tags: push notifications, mobile app notifications, plugin integration, outsystems forge, pushwoosh
 summary: Explore how OutSystems 11 (O11) integrates with Pushwoosh for sending push notifications across various devices using a dedicated plugin.
 guid: 015dc204-9e52-4cd6-8a23-5e96096f9548
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/gKoXqtZTY2IJjyMWschrRB/Integrations?node-id=1242:357
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - forge
+content-type:
+  - procedure
 ---
 
 # How to Use Push Notifications with Pushwoosh

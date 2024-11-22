@@ -1,11 +1,18 @@
 ---
-tags: version-11; favicon;
+tags: favicon update, ui customization, resource management, web development, branding
 summary: OutSystems 11 (O11) guide on changing the default favicon in Service Studio for Reactive Web Apps.
 guid: 784794a5-90a4-4cae-83df-1fcaf6d68507
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:84
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # How to change a favicon

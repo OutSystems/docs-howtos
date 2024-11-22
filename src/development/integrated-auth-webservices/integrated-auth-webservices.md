@@ -1,11 +1,20 @@
 ---
 summary: Explore user credentials delegation for web services in OutSystems 11 (O11) with integrated authentication settings and domain configurations.
-tags:
+tags: web services, integrated authentication, domain controller configuration, security, authentication mechanisms
 locale: en-us
 guid: DE66DA4D-B3BA-4F2F-A19E-424C38B5C327
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/ZqxffTIAhYyQg8Q2KbSFbb/Development?node-id=1747:88
+audience:
+  - full stack developers
+  - backend developers
+  - platform administrators
+  - architects
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # Integrated Authentication on Web Services - User credentials delegation to Web References in OutSystems

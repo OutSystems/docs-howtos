@@ -1,11 +1,19 @@
 ---
 summary: Explore data migration considerations for Static Entities in OutSystems 11 (O11), focusing on platform management and environment-specific IDs.
-tags: data-migration-between-outsystems-installation; data-migration-between-production-and-non-production-outsystems; static-entities
+tags: static entities, data id management, database operations, application data migration
 locale: en-us
 guid: 23483ef2-7c45-48af-9a05-977eaadbc72f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - backend developers
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # Static Entities

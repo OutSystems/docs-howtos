@@ -5,6 +5,16 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: ide usage, reactive web apps, database migration, postgresql, outsystems 11
+audience:
+  - full stack developers
+  - backend developers
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - platform server
+content-type:
+  - procedure
 ---
 
 # Migrate from ardoPostgreSQL to supported PostgreSQL connector

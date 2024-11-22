@@ -1,11 +1,20 @@
 ---
 summary: Learn how to consume a Web Service in Integration Studio using OutSystems 11 (O11) by creating extensions and mapping data models.
-tags: support-application_development; support-Integrations_Extensions; support-Integrations_Extensions-featured
+tags: web service integration, extensions development, data model mapping, visual studio integration
 guid: 1f0594cf-ae90-4a94-bcb6-8abc93f7ce5f
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/gKoXqtZTY2IJjyMWschrRB/Integrations?node-id=1242:275
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - integration studio
+  - service studio
+content-type:
+  - procedure
 ---
 
 # How to consume a Web Service in Integration Studio

@@ -5,6 +5,16 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/qdZmVuCDqCHvhakBTOLZcI/Processes?node-id=1042:233
+tags: configuration, administration, security, user interface customization, outsystems platforms
+audience:
+  - platform administrators
+  - full stack developers
+  - frontend developers
+outsystems-tools:
+  - service studio
+  - service center
+content-type:
+  - procedure
 ---
 
 # How to configure EPA taskbox preferences

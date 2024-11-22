@@ -5,6 +5,14 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:0
+tags: javascript integration, mobile development, ui components, validation, event handling
+audience:
+  - mobile developers
+  - frontend developers
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # How to Call a Block Action in a Mobile Screen

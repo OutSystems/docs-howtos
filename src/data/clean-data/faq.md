@@ -1,11 +1,19 @@
 ---
-tags: version-10; support-Database
+tags: sql queries, data management, entity relationships, backend operations, test data clearance
 summary: Explore how to delete test data from entities in OutSystems 11 (O11) using SQL queries and back office screens.
 guid: 8796fe43-091c-4613-a9ac-9babde52b7a2
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/5uD7gg1CIy1jlOE2BNFdsU/Data?node-id=942:233
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # How to delete data from Entities

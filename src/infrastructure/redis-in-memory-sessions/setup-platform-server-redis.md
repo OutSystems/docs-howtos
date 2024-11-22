@@ -5,6 +5,15 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/o7Rkyuxm89D6KrjD7AOYCU/Infrastructure?node-id=1242:249
+tags: session management, redis, configuration, infrastructure setup, platform server
+audience:
+  - platform administrators
+  - infrastructure managers
+  - full stack developers
+outsystems-tools:
+  - platform server
+content-type:
+  - procedure
 ---
 
 # Configure Platform Server to use Redis for sessions

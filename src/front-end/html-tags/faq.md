@@ -1,11 +1,19 @@
 ---
-tags: version-11; support-Front_end_Development; html;
+tags: html, accessibility, semantic web, web development, outsystems platform
 summary: Learn how to generate semantic HTML tags in OutSystems 11 (O11) applications for enhanced accessibility using HTML Element and Container Widgets.
 guid: 67cc20af-ffe8-4897-b817-28460ed3bd48
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:34
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # How to generate HTML tags

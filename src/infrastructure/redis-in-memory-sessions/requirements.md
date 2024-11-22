@@ -5,6 +5,15 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: system requirements, redis configuration, scalability, high availability, infrastructure planning
+audience:
+  - platform administrators
+  - infrastructure managers
+  - full stack developers
+outsystems-tools:
+  - platform server
+content-type:
+  - procedure
 ---
 
 # System requirements for using Redis

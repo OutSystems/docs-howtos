@@ -1,11 +1,21 @@
 ---
 summary: Explore the comparison between hierarchical and default roles in OutSystems 11 (O11), highlighting advantages and implementation considerations.
-tags: app-development; OutSystems-roles; user-roles; hierarchical-roles; 
+tags: outsystems security, role-based access control, application security, web application development, outsystems best practices
 guid: 7c2103e0-79cb-43a7-a430-92ca71e0f8f4
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - platform administrators
+  - team lead
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # Hierarchical and static roles comparison

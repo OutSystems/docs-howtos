@@ -1,11 +1,21 @@
 ---
-tags: version-10; support-Integrations_Extensions; XML; XPath;
+tags: xml processing, xpath, data integration, data extraction, outsystems extensions
 summary: OutSystems 11 (O11) includes XML and XPath support for parsing XML files to extract specific data.
 guid: 874b6a87-f497-4e1a-ae07-b2ac2f6f47ef
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/5uD7gg1CIy1jlOE2BNFdsU/Data?node-id=942:261
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - xml extension
+  - binarydata extension
+content-type:
+  - procedure
 ---
 
 # How to parse XML files with XPath expressions

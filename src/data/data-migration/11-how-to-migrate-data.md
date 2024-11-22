@@ -1,11 +1,23 @@
 ---
 summary: Explore data migration strategies and solutions for OutSystems 11 (O11) across different environments with detailed SQL queries and procedural guidance.
-tags: data-migration-of-outsystems-applications;
+tags: data migration, sql queries, outsystems, environment management, application lifecycle management
 locale: en-us
 guid: 7ba670ee-b94a-4d1c-ab09-5b44d9d6c8e9
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - backend developers
+  - full stack developers
+  - team lead
+  - architects
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - service center
+content-type:
+  - procedure
+  - process
 ---
 
 # How To Migrate Data

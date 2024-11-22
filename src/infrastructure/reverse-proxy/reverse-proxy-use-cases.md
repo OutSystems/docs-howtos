@@ -5,6 +5,16 @@ guid: 4c538aa3-0623-4e86-b871-9fdd3767eb6f
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/o7Rkyuxm89D6KrjD7AOYCU/Infrastructure?node-id=1242:557
+tags: security, web traffic management, reverse proxy, https, ssl
+audience:
+  - platform administrators
+  - infrastructure managers
+  - backend developers
+  - full stack developers
+outsystems-tools:
+  - none
+content-type:
+  - procedure
 ---
 
 # Common use cases in reverse proxy scenarios

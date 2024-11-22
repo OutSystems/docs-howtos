@@ -1,11 +1,18 @@
 ---
 summary: Explore key differences between Traditional and Reactive Web Apps in OutSystems 11 (O11) to aid migration and enhance user experience.
-tags:
+tags: migration guide, ui development, user experience, data binding, event handling
 locale: en-us
 guid: 013992fc-35b0-485d-9097-68a0d1b1afc8
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # Differences to consider between Traditional and Reactive Web Apps

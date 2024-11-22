@@ -1,11 +1,19 @@
 ---
 summary: OutSystems 11 (O11) no longer requires the Log Service, which can be removed after upgrading all modules to free up server memory.
-tags: version-11;
+tags: devops, deployment, performance optimization, server maintenance, upgrade process
 guid: 1635a64b-bb6b-4cb5-8a49-bcfc97929fe7
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/XbkdagtFJ9kxan8pAx0Qsz/DevOps?node-id=1542:372
+audience:
+  - platform administrators
+  - full stack developers
+  - infrastructure managers
+outsystems-tools:
+  - service center
+content-type:
+  - procedure
 ---
 
 # Log Service Cleanup

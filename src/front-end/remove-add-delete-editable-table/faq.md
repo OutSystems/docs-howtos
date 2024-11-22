@@ -1,11 +1,18 @@
 ---
-tags: version-10; Editable Table;
+tags: outsystems, editable table, ui design, css customization, entity actions
 summary: Learn to disable Add and Delete features in Editable Tables in OutSystems 11 (O11) for restricted user editing.
 guid: 50d41d21-32bd-4e10-b26c-e4c3f243b639
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:59
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # How to remove the Add or Delete features from an Editable Table

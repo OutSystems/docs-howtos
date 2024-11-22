@@ -5,6 +5,15 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: devops, continuous integration, continuous deployment, automation, infrastructure as code
+audience:
+  - full stack developers
+  - frontend developers
+  - mobile developers
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # DevOps

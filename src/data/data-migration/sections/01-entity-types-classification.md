@@ -5,6 +5,16 @@ guid: dce526c4-9948-404e-a2a5-c55ef13747d7
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+tags: data migration, platform metamodel, entity classification, system integrity, outsystems platform
+audience:
+  - platform administrators
+  - full stack developers
+  - backend developers
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
+  - conceptual
 ---
 
 # OutSystems Platform Metamodel

@@ -1,11 +1,19 @@
 ---
 summary: Explore the process of migrating Silk web applications to the OutSystems 11 (O11) UI framework, covering structural changes and pattern updates.
-tags: 
+tags: web application migration, ui framework migration, silk to outsystems ui
 locale: en-us
 guid: 072bad87-b493-4f6e-922d-17b22c4404d1
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=1242:626
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # Migrating the structure of the Silk web applications to OutSystems UI

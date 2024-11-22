@@ -1,11 +1,18 @@
 ---
-tags: version-11; excel; runtime-traditionalwebandreactiveweb;
+tags: data mapping, server actions, excel export, data customization, structured data
 summary: Learn how to customize Excel exports in OutSystems 11 (O11) by renaming and reordering columns using structured data mapping and server actions.
 guid: d1470acf-fb13-42b7-9a3d-0d4a67ddc689
 locale: en-us
 app_type: traditional web apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/5uD7gg1CIy1jlOE2BNFdsU/Data?node-id=942:245
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # How to customize the export to Excel

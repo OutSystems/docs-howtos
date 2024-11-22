@@ -1,11 +1,23 @@
 ---
 summary: Explore the management of development factories and databases in OutSystems 11 (O11), including applications, modules, and entity relationships.
-tags: data-migration-between-outsystems-installation; data-migration-between-production-and-non-production-outsystems; factory-application-modules
+tags: entity-relationship models, lifecycle management, environments configuration
 locale: en-us
 guid: c7318d3e-0ee5-4bec-90d3-06e8aa1b2ea2
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/5uD7gg1CIy1jlOE2BNFdsU/Data?node-id=1142:241
+audience:
+  - full stack developers
+  - platform administrators
+  - architects
+outsystems-tools:
+  - service studio
+  - integration studio
+  - service center
+  - lifetime
+content-type:
+  - procedure
+  - conceptual
 ---
 
 # Factory Application Modules

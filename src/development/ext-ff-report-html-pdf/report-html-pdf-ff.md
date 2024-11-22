@@ -1,11 +1,21 @@
 ---
 summary: Learn how to create reports in OutSystems 11 using the HTML2PDF component, as detailed by OutSystems MVP Fabio Fantato.
-tags:
+tags: html to pdf conversion, report generation, security best practices, ui customization, external toolkit integration
 guid: 51f5ab7a-1280-479f-96cd-2c1c9b111134
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/ZqxffTIAhYyQg8Q2KbSFbb/Development?node-id=742:265
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - html2pdf component
+  - forge
+content-type:
+  - procedure
 ---
 
 # How to create reports using HTML2PDF

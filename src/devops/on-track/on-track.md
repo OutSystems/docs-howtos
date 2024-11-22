@@ -5,6 +5,17 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/XbkdagtFJ9kxan8pAx0Qsz/DevOps?type=design&node-id=1542%3A351&mode=design&t=dN0yGLL6D8INLkOx-1
+tags: agile project management, kanban, continuous delivery, project tracking, user acceptance testing
+audience:
+  - team manager
+  - product owners
+  - full stack developers
+  - frontend developers
+  - mobile developers
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # OnTrack - OutSystems backlog management 

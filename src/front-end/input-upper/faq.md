@@ -1,11 +1,19 @@
 ---
-tags: version-10; 
+tags: ide usage, reactive web apps, tutorials for beginners, css customization, user input handling
 summary: Explore how to convert input text to uppercase in real-time using CSS and logic in OutSystems 11 (O11).
 guid: 746a36e5-38e3-4bae-b378-bf6ce9579195
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:41
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # How to change the case of input text

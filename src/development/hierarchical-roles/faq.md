@@ -1,11 +1,21 @@
 ---
 summary: Explore how to implement hierarchical role structures in OutSystems 11 (O11) to enhance authorization mechanisms.
-tags: article-page; app-development; OutSystems-roles; user-roles; hierarchical-roles; 
+tags: authorization mechanisms, access control, security, hierarchical role management, application development
 guid: f39c1e48-d9a9-443a-ba1e-6f345a350ab8
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/ZqxffTIAhYyQg8Q2KbSFbb/Development?node-id=742:276
+audience:
+  - full stack developers
+  - backend developers
+  - frontend developers
+  - team lead
+  - architects
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # How to leverage OutSystems roles with hierarchy levels

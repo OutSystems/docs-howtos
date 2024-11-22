@@ -1,12 +1,22 @@
 ---
 summary: Explore how OutSystems 11 (O11) facilitates the creation and management of solutions for efficient application deployment and troubleshooting.
-tags:
+tags: devops, application deployment, application troubleshooting, version management, environment configuration
 guid: 065b4d9d-5b4a-4892-9e82-bdfc77ea98d3
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/XbkdagtFJ9kxan8pAx0Qsz/DevOps?node-id=1542:366
+audience:
+  - full stack developers
+  - team lead
+  - platform administrators
+outsystems-tools:
+  - service studio
+  - service center
+content-type:
+  - procedure
 ---
+
 # Creating and using a solution
 
 It's a common practice in OutSystems Factory management to create and use a solution. This is either a Factory solution containing all the components, a solution for a specific module or an application with all its dependencies. It's used to:

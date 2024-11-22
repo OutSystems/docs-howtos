@@ -1,11 +1,18 @@
 ---
-tags: version-11; deployment; upload; runtime-traditionalweb
+tags: file upload validation, custom validation logic, user experience enhancement, error handling
 summary: Explore custom file validation techniques for the Upload Widget in OutSystems 11 (O11) to enhance web app functionality.
 guid: 33e8fc48-2034-4ae4-844e-d6d0fdaaeb55
 locale: en-us
 app_type: traditional web apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/3YpPKdo5QwN0z6up61eKe5/Logic?node-id=842:251
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # How to validate file input on a File Upload Widget in a Web App

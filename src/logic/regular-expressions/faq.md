@@ -1,11 +1,19 @@
 ---
-tags: version-11; regular expressions; regex; 
+tags: text processing, pattern matching, server actions, guid validation, outsystems api
 summary: Explore how to utilize regular expressions in OutSystems 11 (O11) for text processing and pattern matching.
 guid: c7045a0e-c6ec-4db9-ae8d-d21d80731cd7
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - full stack developers
+  - mobile developers
+  - frontend developers
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # How to use regular expressions in OutSystems

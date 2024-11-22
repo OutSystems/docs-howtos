@@ -1,11 +1,19 @@
 ---
-tags: version-11; support-webapps;
+tags: data import, excel integration, entity management, data bootstrapping, outsystems development
 summary: Learn how to update a Bootstrap Action in OutSystems 11 (O11) to fetch an entity identifier from Excel for enhanced data handling.
 guid: e9baaca3-cc89-4479-9a5e-eb57bdae58fc
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/5uD7gg1CIy1jlOE2BNFdsU/Data?node-id=942:263
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # How to update a Bootstrap Action to fetch an entity identifier from Excel

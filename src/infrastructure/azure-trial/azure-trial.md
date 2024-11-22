@@ -1,11 +1,19 @@
 ---
 summary: Learn how to install the OutSystems 11 (O11) trial on Microsoft Azure, including VM setup and app creation.
-tags:
+tags: cloud deployment, azure services, virtual machines, infrastructure as a service, platform as a service
 locale: en-us
 guid: e0085624-ca0d-42cf-91ae-f259280dc67b
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/o7Rkyuxm89D6KrjD7AOYCU/Infrastructure?node-id=1242:781
+audience:
+  - full stack developers
+  - platform administrators
+  - infrastructure managers
+outsystems-tools:
+  - none
+content-type:
+  - procedure
 ---
 
 # Install OutSystems Trial on Azure

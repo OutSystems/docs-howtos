@@ -1,11 +1,19 @@
 ---
 summary: Explore system actions and migration strategies in OutSystems 11 (O11) for enhancing mobile and reactive apps.
-tags: migration-traditional-web; migration-reactive-web; front-end-migration 
+tags: migration strategies, system actions, javascript in outsystems, outsystems forge, ui patterns
 locale: en-us
 guid: 89d99597-4385-4748-9aac-3b72a112a9bd
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - forge
+content-type:
+  - procedure
 ---
 
 # Systems Actions

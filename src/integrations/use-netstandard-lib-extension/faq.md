@@ -1,11 +1,21 @@
 ---
 summary: Learn how to use .NET Standard libraries in OutSystems 11 (O11) extensions by upgrading to .NET Framework 4.7.2 and adjusting Visual Studio settings.
-tags: 
+tags: .net framework, visual studio, extension development, .net standard, integration studio
 guid: 62335c22-2480-4119-8bcf-597538f63ee1
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/gKoXqtZTY2IJjyMWschrRB/Integrations?node-id=1242:336
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+  - backend developers
+outsystems-tools:
+  - integration studio
+  - platform server
+content-type:
+  - procedure
 ---
 
 # How to use .NET Standard libraries in OutSystems extensions

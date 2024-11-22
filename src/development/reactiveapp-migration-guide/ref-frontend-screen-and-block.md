@@ -1,11 +1,18 @@
 ---
 summary: This article provides detailed guidance on migrating Traditional Web App logic to Reactive Web Apps in OutSystems 11 (O11).
-tags: migration-traditional-web; migration-reactive-web; front-end-migration; screen-and-block-logic
+tags: ajax refresh, data binding, ui updates, charts, download actions
 locale: en-us
 guid: 3fbc848e-37ed-4b87-a59f-6088cc55e1e4
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/ZqxffTIAhYyQg8Q2KbSFbb/Development?node-id=1742:296
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # Screen and Block logic

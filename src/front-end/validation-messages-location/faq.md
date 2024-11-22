@@ -1,11 +1,18 @@
 ---
-tags: version-10; form validation; support-Front_end_Development;input; form; validation; ui; css;
+tags: css customization, ui design, form customization, user experience, error handling
 summary: Explore how to customize the display of input validation messages in OutSystems 11 (O11) by relocating them from their default positions.
 guid: 10da9d4f-5807-4aa0-9d63-6d31e8e78aaa
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:99
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # How to display input validation messages in a custom location

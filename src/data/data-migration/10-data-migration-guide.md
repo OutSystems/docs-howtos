@@ -1,11 +1,24 @@
 ---
 summary: OutSystems 11 (O11) data migration guide outlines transferring application data between environments, focusing on version consistency and entity matching.
-tags: data-migration-of-outsystems-applications;
+tags: data migration, environment configuration, database management, best practices, platform version compatibility
 locale: en-us
 guid: b2640eac-2601-47a6-b7d1-c7ff08febe0e
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
+audience:
+  - platform administrators
+  - backend developers
+  - full stack developers
+  - architects
+  - technology leaders
+outsystems-tools:
+  - service center
+  - lifetime
+content-type:
+  - procedure
+  - conceptual
+  - best practice
 ---
 
 # Introduction to Data Migration

@@ -1,11 +1,19 @@
 ---
 summary: Explore how to create a LifeTime plugin in OutSystems 11 (O11) by integrating it seamlessly into the LifeTime environment.
-tags: 
+tags: outsystems lifetime, sdk integration, environment setup, application lifecycle management, platform customization
 guid: 1ae946b5-5b77-4976-a905-4d6a260f7e3a
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/ZqxffTIAhYyQg8Q2KbSFbb/Development?node-id=147:325
+audience:
+  - full stack developers
+  - platform administrators
+outsystems-tools:
+  - lifetime
+  - service studio
+content-type:
+  - procedure
 ---
 
 # How to create a LifeTime Plugin

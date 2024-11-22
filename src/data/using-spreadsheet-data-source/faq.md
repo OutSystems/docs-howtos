@@ -1,11 +1,19 @@
 ---
 summary: Explore how OutSystems 11 (O11) integrates Google Sheets as a data source for read and write operations using specific connectors and components.
-tags: spreadsheets-as-data-sources-outsystems-applications; google-spreadsheet-as-data-source-outsystems-applications;
+tags: google sheets, data integration, connectors, components, outsystems integrate google sheets
 guid: efffdbcf-fb3d-44ea-81f1-6f167b236883
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/5uD7gg1CIy1jlOE2BNFdsU/Data?node-id=942:270
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - forge
+content-type:
+  - procedure
 ---
 
 # How to Use a Spreadsheet as Your Data Source

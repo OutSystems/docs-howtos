@@ -1,11 +1,18 @@
 ---
-tags: version-11; support-mobileapps; support-Front_end_Development;
+tags: local storage, client actions, mobile app navigation, ui state management, data persistence
 summary: Learn how to maintain the state of a mobile screen across navigation in OutSystems 11 (O11) using local storage and client actions.
 guid: 1ab580bd-06db-488c-bcfa-133209853697
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:44
+audience:
+  - mobile developers
+  - frontend developers
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
 
 # How to maintain the state of a mobile screen

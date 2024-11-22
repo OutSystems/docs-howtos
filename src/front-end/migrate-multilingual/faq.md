@@ -1,11 +1,20 @@
 ---
 summary: Learn how to migrate translations from the deprecated Multilingual Forge component to the new multilingual feature in OutSystems 11 (O11).
-tags: support-application_development; multilingual; migration-multilingual-translations; multilingual-service-studio
+tags: localization, migration, platform server, translation management, deprecation
 guid: 625a71ee-acb7-4923-b953-74f684ca6377
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:103
+audience:
+  - mobile developers
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+  - platform server
+content-type:
+  - procedure
 ---
 
 # How to reuse translations from Multilingual Forge component in Service Studio

@@ -1,12 +1,20 @@
 ---
-tags: runtime-traditionalweb; version-11;
+tags: dynamic content, form handling, date picker interaction, widget management, input validation
 summary: OutSystems 11 (O11) allows dynamic updating of input values in Traditional Web apps based on other inputs.
 guid: fcea5150-affd-4f27-8263-97e32b24a7a6
 locale: en-us
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:88
+audience:
+  - frontend developers
+  - full stack developers
+outsystems-tools:
+  - service studio
+content-type:
+  - procedure
 ---
+
 # How to dynamically set the values of inputs
 
 In your Traditional Web app, you can set the value of an input depending on the value set in another input.

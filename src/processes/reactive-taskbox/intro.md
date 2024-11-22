@@ -1,11 +1,20 @@
 ---
-tags: version-11; support-Front_end_Development;
+tags: bpt, task management, user interface design, integration, customization
 summary: Explore how to integrate and customize the Taskbox in Reactive Web Apps using OutSystems 11 (O11) for efficient task management.
 guid: b8184f4d-59dc-4881-81a0-40df50b4b185
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/qdZmVuCDqCHvhakBTOLZcI/Processes?node-id=1042:237
+audience:
+  - frontend developers
+  - full stack developers
+  - ui designers
+outsystems-tools:
+  - service studio
+  - forge
+content-type:
+  - procedure
 ---
 
 # Using Taskbox in Reactive Web Apps
