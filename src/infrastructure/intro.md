@@ -5,15 +5,13 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: outsystems infrastructure, deployment, scalability, performance, environment management
+content-type:
+  - none
+tags: infrastructure, web apps, mobile apps, traditional web apps, reactive web apps
 audience:
-  - full stack developers
   - platform administrators
   - infrastructure managers
 outsystems-tools:
   - none
-content-type:
-  - procedure
 ---
-
 # Infrastructure
