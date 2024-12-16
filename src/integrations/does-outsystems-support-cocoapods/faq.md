@@ -12,9 +12,8 @@ audience:
   - full stack developers
 outsystems-tools:
   - service studio
-  - mobile plugins
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # Does OutSystems support CocoaPods

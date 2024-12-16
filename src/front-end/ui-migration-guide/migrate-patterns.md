@@ -12,8 +12,8 @@ audience:
   - ui designers
 outsystems-tools:
   - service studio
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # Migrating the patterns of the Silk web applications to OutSystems UI

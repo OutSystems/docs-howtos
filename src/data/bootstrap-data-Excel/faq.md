@@ -12,8 +12,8 @@ audience:
   - backend developers
 outsystems-tools:
   - service studio
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # How to bootstrap numeric data from Excel with blank cells

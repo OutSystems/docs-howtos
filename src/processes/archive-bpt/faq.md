@@ -12,9 +12,8 @@ audience:
   - platform administrators
 outsystems-tools:
   - service studio
-  - bpt_api
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # How to archive old Processes - BPT

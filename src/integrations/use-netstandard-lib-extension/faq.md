@@ -14,8 +14,8 @@ audience:
 outsystems-tools:
   - integration studio
   - platform server
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # How to use .NET Standard libraries in OutSystems extensions

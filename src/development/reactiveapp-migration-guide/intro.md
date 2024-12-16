@@ -9,14 +9,12 @@ figma:
 audience:
   - frontend developers
   - full stack developers
-  - team lead
-  - technology leaders
+  - tech leads
 outsystems-tools:
   - service studio
-content-type:
-  - procedure
-  - process
-  - conceptual
+coverage-type:
+  - apply
+  - understand
 ---
 
 # Introduction to migrating Traditional Web to Reactive Web Apps

@@ -10,13 +10,11 @@ audience:
   - frontend developers
   - full stack developers
   - backend developers
-  - team lead
   - architects
 outsystems-tools:
   - service studio
-content-type:
-  - procedure
-  - process
+coverage-type:
+  - apply
 ---
 
 # How to implement hierarchical roles

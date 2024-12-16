@@ -12,9 +12,8 @@ audience:
   - full stack developers
 outsystems-tools:
   - service studio
-  - enhancedwebreferences
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # How to call a SOAP web service with authentication

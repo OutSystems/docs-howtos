@@ -11,8 +11,8 @@ audience:
   - frontend developers
 outsystems-tools:
   - service studio
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # How to Call a Block Action in a Mobile Screen

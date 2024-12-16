@@ -12,8 +12,8 @@ audience:
   - ui designers
 outsystems-tools:
   - service studio
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # How to Build a Front-End Architecture in OutSystems

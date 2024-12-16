@@ -11,8 +11,8 @@ audience:
   - full stack developers
 outsystems-tools:
   - service studio
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # How to have multiline inputs in Editable Table

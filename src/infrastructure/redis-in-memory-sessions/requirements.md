@@ -12,8 +12,8 @@ audience:
   - full stack developers
 outsystems-tools:
   - platform server
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # System requirements for using Redis

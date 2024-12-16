@@ -12,10 +12,9 @@ audience:
   - full stack developers
 outsystems-tools:
   - service studio
-  - html2pdf component
   - forge
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # How to create reports using HTML2PDF

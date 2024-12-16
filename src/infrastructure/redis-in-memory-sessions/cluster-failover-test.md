@@ -13,8 +13,8 @@ audience:
   - full stack developers
 outsystems-tools:
   - none
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # Test the failover behavior of a Redis Cluster

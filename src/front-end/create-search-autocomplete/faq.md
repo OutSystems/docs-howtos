@@ -11,9 +11,8 @@ audience:
   - full stack developers
 outsystems-tools:
   - service studio
-  - richwidgets
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # How to create a search field with autocomplete in a Traditional Web App

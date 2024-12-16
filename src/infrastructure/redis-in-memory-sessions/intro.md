@@ -12,8 +12,8 @@ audience:
   - infrastructure managers
 outsystems-tools:
   - platform server
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # Configuring OutSystems with Redis in-memory session storage

@@ -13,8 +13,8 @@ audience:
 outsystems-tools:
   - integration studio
   - service studio
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # How to consume a Web Service in Integration Studio

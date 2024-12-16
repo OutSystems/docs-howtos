@@ -12,10 +12,9 @@ audience:
   - backend developers
   - frontend developers
 outsystems-tools:
-  - monitoring api
   - service studio
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # How to create alerts based on monitoring thresholds

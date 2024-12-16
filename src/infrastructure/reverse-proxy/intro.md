@@ -14,8 +14,8 @@ audience:
   - infrastructure managers
 outsystems-tools:
   - none
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # Using OutSystems in Reverse Proxy Scenarios

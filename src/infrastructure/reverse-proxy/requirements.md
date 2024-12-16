@@ -11,11 +11,11 @@ audience:
   - full stack developers
   - infrastructure managers
   - architects
-  - technology leaders
+  - tech leads
 outsystems-tools:
   - none
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # Requirements to use a reverse proxy with OutSystems

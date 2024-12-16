@@ -13,8 +13,8 @@ audience:
 outsystems-tools:
   - service studio
   - forge
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # Migrating to the supported Firebase-based mobile plugins

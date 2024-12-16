@@ -8,13 +8,12 @@ figma: https://www.figma.com/file/XbkdagtFJ9kxan8pAx0Qsz/DevOps?node-id=147:325
 tags: continuous delivery, devops, ci/cd, open source, deployment automation
 audience:
   - full stack developers
-  - team lead
   - platform administrators
-  - technology leaders
+  - tech leads
 outsystems-tools:
   - lifetime
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # How to build an OutSystems continuous delivery pipeline

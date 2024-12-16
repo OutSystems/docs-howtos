@@ -12,8 +12,8 @@ audience:
 outsystems-tools:
   - lifetime
   - service studio
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # How to create a LifeTime Plugin

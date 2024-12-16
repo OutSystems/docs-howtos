@@ -12,9 +12,9 @@ audience:
   - backend developers
 outsystems-tools:
   - service studio
-content-type:
-  - procedure
-  - conceptual
+coverage-type:
+  - apply
+  - understand
 ---
 
 # OutSystems Platform Metamodel

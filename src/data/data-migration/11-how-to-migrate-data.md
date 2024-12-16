@@ -9,15 +9,13 @@ figma:
 audience:
   - backend developers
   - full stack developers
-  - team lead
   - architects
   - platform administrators
 outsystems-tools:
   - service studio
   - service center
-content-type:
-  - procedure
-  - process
+coverage-type:
+  - apply
 ---
 
 # How To Migrate Data

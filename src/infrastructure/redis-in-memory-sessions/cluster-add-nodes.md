@@ -10,11 +10,11 @@ audience:
   - platform administrators
   - full stack developers
   - infrastructure managers
-  - technology leaders
+  - tech leads
 outsystems-tools:
   - none
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # Scale a Redis Cluster by adding more nodes

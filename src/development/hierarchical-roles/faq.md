@@ -10,12 +10,11 @@ audience:
   - full stack developers
   - backend developers
   - frontend developers
-  - team lead
   - architects
 outsystems-tools:
   - service studio
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # How to leverage OutSystems roles with hierarchy levels

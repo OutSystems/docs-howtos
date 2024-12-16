@@ -12,10 +12,8 @@ audience:
   - full stack developers
 outsystems-tools:
   - service studio
-  - xml extension
-  - binarydata extension
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # How to parse XML files with XPath expressions

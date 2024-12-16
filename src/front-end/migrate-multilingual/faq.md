@@ -13,8 +13,8 @@ audience:
 outsystems-tools:
   - service studio
   - platform server
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # How to reuse translations from Multilingual Forge component in Service Studio

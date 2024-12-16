@@ -13,8 +13,8 @@ audience:
   - platform administrators
 outsystems-tools:
   - service studio
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # How to time zones work in OutSystems and how can I change them?

@@ -12,10 +12,9 @@ audience:
   - full stack developers
 outsystems-tools:
   - service studio
-  - inappbrowser plugin
-  - lifetime analytics
-content-type:
-  - procedure
+  - lifetime
+coverage-type:
+  - apply
 ---
 
 # How to Reuse Web Screens in Mobile Apps

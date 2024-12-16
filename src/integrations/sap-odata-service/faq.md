@@ -13,8 +13,8 @@ audience:
 outsystems-tools:
   - service studio
   - integration builder
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # How to consume an SAP OData service in OutSystems

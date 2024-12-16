@@ -12,9 +12,8 @@ audience:
   - full stack developers
 outsystems-tools:
   - service studio
-  - text extension
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # How to create large strings with StringBuilder

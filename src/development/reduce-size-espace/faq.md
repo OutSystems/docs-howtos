@@ -13,8 +13,8 @@ audience:
 outsystems-tools:
   - service studio
   - architecture dashboard
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # How to reduce the size of my modules

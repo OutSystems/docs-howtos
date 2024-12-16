@@ -8,13 +8,12 @@ platform-version: o11
 figma: https://www.figma.com/file/XbkdagtFJ9kxan8pAx0Qsz/DevOps?node-id=1542:366
 audience:
   - full stack developers
-  - team lead
   - platform administrators
 outsystems-tools:
   - service studio
   - service center
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # Creating and using a solution

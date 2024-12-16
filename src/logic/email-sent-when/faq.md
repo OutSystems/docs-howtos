@@ -13,8 +13,8 @@ audience:
 outsystems-tools:
   - service studio
   - service center
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # How to find when the last email was sent

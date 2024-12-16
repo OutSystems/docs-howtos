@@ -11,12 +11,11 @@ audience:
   - full stack developers
   - backend developers
   - architects
-  - team lead
 outsystems-tools:
   - service studio
   - forge
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # How to map Active Directory Groups to OutSystems Roles

@@ -11,9 +11,9 @@ audience:
   - full stack developers
 outsystems-tools:
   - service studio
-content-type:
-  - procedure
-  - reference
+coverage-type:
+  - apply
+  - remember
 ---
 
 # Traditional to Reactive App migration reference

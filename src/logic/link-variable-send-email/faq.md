@@ -11,8 +11,8 @@ audience:
   - full stack developers
 outsystems-tools:
   - service studio
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # How to make a link with a variable to send in an Email

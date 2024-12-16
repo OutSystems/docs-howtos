@@ -11,8 +11,8 @@ audience:
   - full stack developers
 outsystems-tools:
   - service studio
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # Migrating UI of the Silk Web applications to OutSystems UI Framework

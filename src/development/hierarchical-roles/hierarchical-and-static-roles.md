@@ -11,11 +11,10 @@ audience:
   - frontend developers
   - full stack developers
   - platform administrators
-  - team lead
 outsystems-tools:
   - service studio
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # Hierarchical and static roles comparison

@@ -14,9 +14,9 @@ audience:
   - architects
 outsystems-tools:
   - service studio
-content-type:
-  - procedure
-  - conceptual
+coverage-type:
+  - apply
+  - understand
 ---
 
 # How to build a multi-tenant application

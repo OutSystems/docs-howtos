@@ -12,8 +12,8 @@ audience:
   - full stack developers
 outsystems-tools:
   - service studio
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # How To Handle Concurrent Updates on Application Data Records

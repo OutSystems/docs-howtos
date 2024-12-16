@@ -13,8 +13,8 @@ audience:
 outsystems-tools:
   - service studio
   - forge
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # How to implement a dropdown search with country dial-in codes and flags

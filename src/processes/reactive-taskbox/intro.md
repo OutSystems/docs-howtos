@@ -13,8 +13,8 @@ audience:
 outsystems-tools:
   - service studio
   - forge
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # Using Taskbox in Reactive Web Apps

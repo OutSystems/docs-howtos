@@ -11,14 +11,14 @@ audience:
   - backend developers
   - full stack developers
   - architects
-  - technology leaders
+  - tech leads
 outsystems-tools:
   - service center
   - lifetime
-content-type:
-  - procedure
-  - conceptual
-  - best practice
+coverage-type:
+  - apply
+  - understand
+  - evaluate
 ---
 
 # Introduction to Data Migration

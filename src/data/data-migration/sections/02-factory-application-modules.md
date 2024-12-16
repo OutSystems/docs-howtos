@@ -15,9 +15,9 @@ outsystems-tools:
   - integration studio
   - service center
   - lifetime
-content-type:
-  - procedure
-  - conceptual
+coverage-type:
+  - apply
+  - understand
 ---
 
 # Factory Application Modules

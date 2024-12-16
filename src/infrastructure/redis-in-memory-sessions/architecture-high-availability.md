@@ -14,8 +14,8 @@ audience:
   - full stack developers
 outsystems-tools:
   - none
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # Redis Cluster high availability architecture

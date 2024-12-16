@@ -12,9 +12,8 @@ audience:
   - ui designers
 outsystems-tools:
   - service studio
-  - outsystems ui
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # Suggested stages of Traditional to Reactive App migration

@@ -13,8 +13,8 @@ audience:
   - backend developers
 outsystems-tools:
   - platform server
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # Enable SSL for Redis

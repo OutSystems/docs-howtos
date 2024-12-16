@@ -8,15 +8,15 @@ figma:
 tags: apache configuration, ssl configuration, proxy server setup, url rewriting, server management
 audience:
   - platform administrators
-  - technology leaders
+  - tech leads
   - infrastructure managers
   - full stack developers
   - backend developers
 outsystems-tools:
   - service center
   - lifetime
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # Configuring an Apache Web Server as a Reverse Proxy

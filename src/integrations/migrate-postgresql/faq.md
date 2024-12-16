@@ -13,8 +13,8 @@ audience:
 outsystems-tools:
   - service studio
   - platform server
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # Migrate from ardoPostgreSQL to supported PostgreSQL connector

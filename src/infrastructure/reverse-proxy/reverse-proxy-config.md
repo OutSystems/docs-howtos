@@ -14,8 +14,8 @@ audience:
   - architects
 outsystems-tools:
   - none
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # OutSystems configurations in reverse proxy scenarios

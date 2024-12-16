@@ -11,8 +11,8 @@ audience:
   - full stack developers
 outsystems-tools:
   - service studio
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # Differences to consider between Traditional and Reactive Web Apps

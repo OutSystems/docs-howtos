@@ -12,8 +12,8 @@ audience:
   - mobile developers
 outsystems-tools:
   - service studio
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # UI flow elements

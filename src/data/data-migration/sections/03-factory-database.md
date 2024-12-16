@@ -15,8 +15,8 @@ outsystems-tools:
   - integration studio
   - service center
   - lifetime
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # Factory Database

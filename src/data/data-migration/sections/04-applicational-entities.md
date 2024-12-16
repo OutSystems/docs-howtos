@@ -11,12 +11,12 @@ audience:
   - backend developers
   - full stack developers
   - architects
-  - technology leaders
+  - tech leads
 outsystems-tools:
   - service studio
-content-type:
-  - procedure
-  - conceptual
+coverage-type:
+  - apply
+  - understand
 ---
 
 # Applicational Entities

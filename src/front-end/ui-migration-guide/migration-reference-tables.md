@@ -12,8 +12,8 @@ audience:
   - ui designers
 outsystems-tools:
   - service studio
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # Migration reference tables for Silk and OutSystems Web UI

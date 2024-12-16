@@ -14,10 +14,9 @@ outsystems-tools:
   - service studio
   - service center
   - lifetime
-  - apis
-content-type:
-  - procedure
-  - conceptual
+coverage-type:
+  - apply
+  - understand
 ---
 
 # Migrating Processes - BPT

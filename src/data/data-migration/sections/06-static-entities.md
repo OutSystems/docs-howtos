@@ -12,8 +12,8 @@ audience:
   - platform administrators
 outsystems-tools:
   - service studio
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # Static Entities

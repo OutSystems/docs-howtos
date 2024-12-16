@@ -13,8 +13,8 @@ audience:
   - architects
 outsystems-tools:
   - service studio
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # Integrated Authentication on Web Services - User credentials delegation to Web References in OutSystems

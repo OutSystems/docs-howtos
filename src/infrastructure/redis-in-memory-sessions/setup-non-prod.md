@@ -12,8 +12,8 @@ audience:
   - full stack developers
 outsystems-tools:
   - none
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # Set up a Redis server for non-productive environments

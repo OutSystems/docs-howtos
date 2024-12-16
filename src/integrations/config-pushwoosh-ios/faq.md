@@ -11,8 +11,8 @@ audience:
   - frontend developers
 outsystems-tools:
   - none
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # How to Configure Pushwoosh for iOS

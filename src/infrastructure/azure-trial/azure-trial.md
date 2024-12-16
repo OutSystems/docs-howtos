@@ -12,8 +12,8 @@ audience:
   - infrastructure managers
 outsystems-tools:
   - none
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # Install OutSystems Trial on Azure

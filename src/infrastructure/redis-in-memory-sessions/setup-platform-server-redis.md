@@ -12,8 +12,8 @@ audience:
   - full stack developers
 outsystems-tools:
   - platform server
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # Configure Platform Server to use Redis for sessions

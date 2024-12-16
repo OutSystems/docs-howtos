@@ -14,8 +14,8 @@ outsystems-tools:
   - service studio
   - service center
   - lifetime
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # Application Users Groups and Roles

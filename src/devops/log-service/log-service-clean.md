@@ -12,8 +12,8 @@ audience:
   - infrastructure managers
 outsystems-tools:
   - service center
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # Log Service Cleanup

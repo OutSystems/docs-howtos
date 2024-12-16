@@ -13,9 +13,9 @@ audience:
   - architects
 outsystems-tools:
   - platform server
-content-type:
-  - procedure
-  - conceptual
+coverage-type:
+  - apply
+  - understand
 ---
 
 # Data migration from production to non-production environment

@@ -13,8 +13,8 @@ audience:
   - data engineers
 outsystems-tools:
   - service studio
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # How to access legacy data from Lotus Notes / Domino applications

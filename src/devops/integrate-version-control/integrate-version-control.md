@@ -9,12 +9,11 @@ tags: version control integration, ci/cd, devops, github, jenkins
 audience:
   - full stack developers
   - platform administrators
-  - technology leaders
-  - team lead
+  - tech leads
 outsystems-tools:
   - lifetime
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # Integrate OutSystems with external version controls

@@ -9,12 +9,10 @@ tags: module management, application development, outsystems development, servic
 audience:
   - frontend developers
   - full stack developers
-  - team lead
 outsystems-tools:
   - service studio
-content-type:
-  - procedure
-  - process
+coverage-type:
+  - apply
 ---
 
 # How to Clone a Module into Another Application

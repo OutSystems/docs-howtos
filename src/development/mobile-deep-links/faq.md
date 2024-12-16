@@ -10,10 +10,8 @@ audience:
   - mobile developers
 outsystems-tools:
   - service studio
-  - inappbrowser plugin
-  - mobile plugins
-content-type:
-  - procedure
+coverage-type:
+  - apply
 ---
 
 # How to define Mobile App deep links
