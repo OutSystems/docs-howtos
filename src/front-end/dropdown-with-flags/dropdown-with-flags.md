@@ -92,9 +92,9 @@ To use the dropdown search pattern, follow these steps:
 
 1. Drag and drop the **Dropdown Search** widget to the screen.
 
-1. On the **Properties** tab, click the **OptionsList** dropdown and select **Expression Editor**.
+1. On the **Properties** tab, click the **ItemList** dropdown and select **Expression Editor**.
 
-    ![Screenshot showing the OptionsList property of the Dropdown Search widget in Service Studio.](images/countrydropdown006-ss.png "Dropdown Search Options List")
+    ![Screenshot showing the ItemList property of the Dropdown Search widget in Service Studio.](images/countrydropdown006-ss.png "Dropdown Search Options List")
 
 1. In the Expression Editor dialog, in the list of elements in Scope, expand the **GetCountries** aggregate and double-click the **List** element to select it.
 
