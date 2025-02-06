@@ -38,7 +38,7 @@ To do it:
 
     ![Screenshot illustrating how to create a new Block by dragging it into the editor area in OutSystems.](images/create-styled-dialogs_2.png "Creating a Block in OutSystems")
 
-1. Inside the block, go to the advanced properties of the block and paste the style sheet, provided by the same source as the libraries:
+1. In the Block’s advanced properties, paste the stylesheet that comes with the libraries:
 
     ![Screenshot showing the advanced properties of a Block where a style sheet is pasted in the OutSystems editor.](images/create-styled-dialogs_3.png "Adding a Style Sheet to a Block in OutSystems")
 
