@@ -41,7 +41,7 @@ Instead if you need to open an external website, use the **Open** client action 
 
 ## Android Intents
 
-For Android end users with Chrome you can use [Android Intents](https://developer.chrome.com/multidevice/android/intents).
+For Android end users with Chrome you can use [Android Intents](https://developer.chrome.com/docs/android/intents).
 Android Intents allow the redirection of end users that do not have your App available on their device to your App page in the Google Play Store or to another URL specified by you. 
 
 <div class= "info" markdown= "1">
