@@ -35,7 +35,7 @@ To include values for Input Parameters in your deep link use the following synta
 <div class="info" markdown="1">
 
 If you use a **RedirectToURL** destination to open a external website, you can't call a deep link back to the mobile app from the external website in iOS devices. 
-Instead if you need to open an external website, use the **Open** client action from the [InAppBrowser Plugin](https://www.outsystems.com/forge/component-overview/1558/inappbrowser-plugin) with the **Target** set as `Entities.Target.SYSTEM`and the **Url** set as the external website url.
+Instead if you need to open an external website, use the **OpenInExternalBrowser** client action from the [InAppBrowser Plugin](https://www.outsystems.com/forge/component-overview/1558/inappbrowser-plugin) with the **URL** set as the external website url.
 
 </div>
 
