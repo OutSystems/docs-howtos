@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - bootstrap-test-data-excel
 ---
 
 # How to bootstrap numeric data from Excel with blank cells

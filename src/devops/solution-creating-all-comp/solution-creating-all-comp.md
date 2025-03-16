@@ -14,6 +14,9 @@ outsystems-tools:
   - service center
 coverage-type:
   - apply
+topic:
+  - create-a-solution-in-sc
+  - publish-a-solution-in-sc
 ---
 
 # Creating and using a solution

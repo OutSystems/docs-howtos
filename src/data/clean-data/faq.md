@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - create-edit-entities
 ---
 
 # How to delete data from Entities

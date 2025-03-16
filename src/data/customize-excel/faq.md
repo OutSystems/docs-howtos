@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - bootstrap-test-data-excel
 ---
 
 # How to customize the export to Excel

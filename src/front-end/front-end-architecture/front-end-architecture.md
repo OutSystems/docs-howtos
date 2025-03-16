@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - front-end-architecture
 ---
 
 # How to Build a Front-End Architecture in OutSystems

@@ -15,6 +15,8 @@ outsystems-tools:
   - forge
 coverage-type:
   - apply
+topic:
+  - connect-process-ui
 ---
 
 # Using Taskbox in Reactive Web Apps

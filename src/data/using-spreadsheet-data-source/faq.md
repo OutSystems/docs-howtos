@@ -14,6 +14,8 @@ outsystems-tools:
   - forge
 coverage-type:
   - apply
+topic:
+  - bootstrap-test-data-excel
 ---
 
 # How to Use a Spreadsheet as Your Data Source

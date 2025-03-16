@@ -14,6 +14,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - canary-release-toggle
+  - ab-release-feature-toggle
 ---
 
 # Feature toggle in OutSystems

@@ -14,6 +14,8 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - apply
+topic:
+  - external-version-control-ci
 ---
 
 # Integrate OutSystems with external version controls
