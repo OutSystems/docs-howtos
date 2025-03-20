@@ -44,7 +44,7 @@ Detailed step-by-step training can be found here:
 ## Start using Ontrack
 
 
-OnTrack is available at https://ontrack.outsystems.com. To access, you should use a community account (create a [new account](https://www.outsystems.com/home/signup.aspx) if not registered yet). 
+OnTrack is available in [Forge](https://www.outsystems.com/forge/component-overview/1177/ontrack-o11). To access, you should use a community account (create a [new account](https://www.outsystems.com/home/signup.aspx) if not registered yet). 
 You will need a "Manager role" in your infrastructure in order to do this setup process.
 
 ### Work item color scheme
