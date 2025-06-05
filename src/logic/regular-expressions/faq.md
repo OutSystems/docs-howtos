@@ -26,6 +26,12 @@ OutSystems includes the following two server actions from the **Text** extension
 
 * Use [**Regex\_Replace**](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/Text_API#Regex_Replace) to replace a matching regular expression pattern in text.
 
+<div class="warning" markdown="1">
+
+The Regex server actions shouldn't be used directly in client actions of reactive apps. Doing so exposes the regex pattern to the client side, allowing users to inspect or even change the pattern. As a security best practice, always wrap the Regex actions inside a server action to keep the regex pattern secure on the server.
+
+</div>
+
 ## Example: Check if text is a GUID
 
 A Globally Unique IDentifier, or GUID, is a base-16 integer with 128 bits, for example `4ccdb844-bcb6-4abd-83af-6655f31ca65d`. You can use GUIDs when you need to ensure identifiers are unique across environments and systems.
