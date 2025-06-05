@@ -27,7 +27,9 @@ OutSystems includes the following two server actions from the **Text** extension
 * Use [**Regex\_Replace**](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/Text_API#Regex_Replace) to replace a matching regular expression pattern in text.
 
 <div class="warning" markdown="1">
-Security Best Practice: The Regex server actions should not be used directly in client actions of Reactive applications. Doing so exposes the regex pattern to the client side, allowing users to inspect or even change the pattern. As a security best practice, always wrap the Regex actions inside a server action to keep the regex pattern secure on the server.
+
+The Regex server actions shouldn't be used directly in client actions of reactive apps. Doing so exposes the regex pattern to the client side, allowing users to inspect or even change the pattern. As a security best practice, always wrap the Regex actions inside a server action to keep the regex pattern secure on the server.
+
 </div>
 
 ## Example: Check if text is a GUID
