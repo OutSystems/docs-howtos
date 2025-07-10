@@ -246,7 +246,7 @@ If needed, it’s possible to use the same workaround on the Source Environment,
 
 The first operation should be executed before migrating any data, like Users Data and Application Data, to avoid any trigger event to be inserted in the Event Queues.
 
-Example - deleting all records on an Event Entity related to an ``Order``”`` Entity:
+Example - deleting all records on an Event Entity related to an ``Order`` Entity:
 
 ```
 DELETE FROM OSEVT_ORDER 
