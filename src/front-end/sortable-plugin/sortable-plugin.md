@@ -43,19 +43,22 @@ We will create the most simple of use cases, this means we will have 3 lists nes
 ### Plugin Usage and Configuration
 
 #### Usage
+
 Use the web block SortableList from the plugin into the screen, 1 for each list that we have at the same level as the list (can be all at the end, but this promotes more readability and less confusion).
 
 ![Screenshot of the SortableList web block used in the sortable plugin configuration.](images/sort4.png "Sortable List Web Block")
 
 #### Configuration
-**For each container, Draggable<X> in the image above add** 
-1. a class that will be used for the elements for eg: “draggable”, this will enable these containers to be draggable 
+
+**For each container, Draggable<X> in the image above add**
+
+1. a class that will be used for the elements for eg: “draggable”, this will enable these containers to be draggable
 
 1. in the attributes of it add data-id and give it the id of the element, we will use this to identify the record that belongs to the element that is being dragged
 
 ![Screenshot highlighting the configuration of a draggable container with class and data-id attributes.](images/sort5.png "Draggable Container Configuration")
 
-**For each sortableAF** 
+**For each sortableAF**
 
 1. Associate the correspondent list id
 
@@ -72,21 +75,21 @@ Now everything is set up, and if you test it you can drag and drop the elements 
 ![Screenshot showing the configuration options for the SortableAF plugin with group, draggable, and data-id attributes.](images/sort6.png "SortableAF Configuration")
 
 ### Calling the server
+
 First let us create a new action on the created sortable event
 
 ![Screenshot depicting the creation of a new action for the sortable event in the application.](images/sort7.png "Sortable Event Action Creation")
 
 Now we will add the following javascript
 
-
     $parameters.sortable.option("onEnd", function(event) { 
-	    var parent = event.to.getAttribute('data-id'); //get the parent of the element 
-	    /*next lines fetch the positions, they are more complex because using disable-virtualization=True in a list
-	    create a new script in the beginning and end of the childs in a list*/
-	    var newOrder = event.to.hasAttribute("data-virtualization-disabled") ? (event.newIndex+1) : event.newIndex; //get the new order of the element
-	    var oldOrder = event.from.hasAttribute("data-virtualization-disabled") ? (event.oldIndex+1) : event.oldIndex; //get the old order of the element
-	    var id = event.item.dataset.id; //get the id of the element
-	    $actions.Person_Update(id, newOrder, parent).then(function(result) { //call client side action asynchronous 
+        var parent = event.to.getAttribute('data-id'); //get the parent of the element
+        /*next lines fetch the positions, they are more complex because using disable-virtualization=True in a list
+        create a new script in the beginning and end of the childs in a list*/
+        var newOrder = event.to.hasAttribute("data-virtualization-disabled") ? (event.newIndex+1) : event.newIndex; //get the new order of the element
+        var oldOrder = event.from.hasAttribute("data-virtualization-disabled") ? (event.oldIndex+1) : event.oldIndex; //get the old order of the element
+        var id = event.item.dataset.id; //get the id of the element
+        $actions.Person_Update(id, newOrder, parent).then(function(result) { //call client side action asynchronous
             if(!result.Success && (event.from !== event.to || newOrder !== oldOrder)) { //check if need to change the element to the old state
                 $public.FeedbackMessage.showFeedbackMessage("Sorry but not can do", 3, true, "", true);
                 oldOrder > newOrder ? event.from.insertBefore(event.item, event.from.children[oldOrder+1]) : event.from.insertBefore(event.item, event.    from.children[oldOrder]); //change to the old position
@@ -111,7 +114,8 @@ this will allow us to call the action asynchronously returning a promise and tak
 And to finish we call the $resolve(); to close the async call and resolve the promise. Now we only need to replicate this for the other lists changing the client action that is being called.
 
 ### Considerations
-Q: Why this and not just a simpler call to the server with the information that the event already provides without any Javascript? 
+
+Q: Why this and not just a simpler call to the server with the information that the event already provides without any Javascript?
 
 A: In this way, we don’t need to update a local list or any local variable that we would need that would trigger the render that's why we have the data-id’s so we can identify a record and update it correctly on backend and frontend to maintain the coherence, and to revert back we needed javascript anyway to fetch the element and old parent to revert.
 
@@ -120,16 +124,17 @@ Q: This means the list on the screen is not updated anytime?
 A: Correct, we are not updating the list in any circumstance! we don’t want to render the lists again and again.
 
 ### But I need multidrag!
+
 That's not a problem! You just need to duplicate the SortableList and in the new web block, you need to activate it on the initialize multiDrag: true.
 
 The code just used above for the example just need to be inside a cycle, and now we just need to use the new event attributes that have all the information.
-
 
     event.items //all the items being dragged
     event.newIndicies //all the new indexes for the elements
     event.oldIndicies //all the oldindexes for the elements
 
 ### Potential issues
-#1 - Change an element up/down a parent
+
+#### 1 - Change an element up/down a parent
 
 Imagine that a person could be dragged to a department or a below a company outside any department, if you have different classes for the draggable (eg: company - “draggable-company”, department - “draggable-dept” and person - “draggable-person”), you need to update the classes for the element that is being moved so he can be draggable inside of the new parent if the classes are not updated then the element will be considered as a normal div and can’t be dragged any more.

@@ -27,8 +27,8 @@ A reference to the **Sample_Product** and **Sample_ProductCategory** entities in
 ### Setting up the screen
 
 1. Open the **Interface** tab and double-click your **MainFlow**.
-1. Open the **Data** tab and expand the **OutSystemsSampleDataDB** module. 
-1. Drag the **Sample_Product** to the **MainFlow**. 
+1. Open the **Data** tab and expand the **OutSystemsSampleDataDB** module.
+1. Drag the **Sample_Product** to the **MainFlow**.
     This creates a **Products** screen and a **ProductDetail** screen. This example focuses on the **Products** screen.
 
     ![Screenshot showing the drag and drop of Sample_Product to the MainFlow resulting in the creation of Products and ProductDetail screens.](images/dropdown-sampleproduct-ss.png "Products and ProductDetail Screen Creation")
@@ -67,5 +67,4 @@ A reference to the **Sample_Product** and **Sample_ProductCategory** entities in
 
 1. To create a new client action for the **OnChanged** event, from the **Handler** dropdown, select  **New Client Action**.
 1. Drag an **Assign** to the action and assign the **SelectedCategoryId** local variable to the **SelectedOptionsList.Current.Value** wrapped in a casting function to obtain the correct data type by entering: ``LongIntegerToIdentifier(TextToLongInteger(SelectedOptionList.Current.Value))``.
-1. To create a GetProducts refresh action, drag the **GetProducts** aggregate to the action. 
-
+1. To create a GetProducts refresh action, drag the **GetProducts** aggregate to the action.

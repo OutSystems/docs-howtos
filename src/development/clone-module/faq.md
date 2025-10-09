@@ -32,7 +32,7 @@ How do I clone a module into another application in Service Studio?
 A clone of the module has now been created.
 
 ![Confirmation dialogue box indicating the module was successfully cloned.](images/clone-module-confirmation-dialogue.png "Module Cloned Confirmation Dialogue")
-    
+
 Press the 1-Click Publish button to publish it to your environment:
 
 ![The '1-Click Publish' button in Service Studio.](images/clone-module-publish-button.png "1-Click Publish Button")
@@ -48,7 +48,7 @@ The published module will reside in the 'Independent Modules' Application.
 1. Press the arrow button on the right of the cloned module:
 
     ![List of modules in the Independent Modules application with an arrow button.](images/clone-module-independent_modules_list.png "List of Independent Modules")
-    
+
 1. Select the application you would like to move the cloned module to and press the 'Move' button:
 
     ![Dialogue box for moving a cloned module to another application.](images/clone-module-move-dialogue.png "Move Module Dialogue")

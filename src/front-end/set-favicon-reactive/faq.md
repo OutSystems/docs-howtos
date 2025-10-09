@@ -39,7 +39,7 @@ Follow these steps to change the favicon in your Reactive Web App to a different
 
     ![Service Studio interface showing the context menu with 'Change Resource...' option highlighted for favicon.png.](images/change-favicon-ss.png "Change Favicon in Service Studio")
 
-1. In the **Change Resource** file dialog, select a PNG image to set it as a new favicon. 
+1. In the **Change Resource** file dialog, select a PNG image to set it as a new favicon.
 
     <div class="info" markdown="1">
         Service Studio resizes the image to the favicon standard dimensions.</div>
@@ -61,11 +61,10 @@ Follow these steps to change the favicon in your Reactive Web App to a different
 1. Check if some elements in the module use the old icon and update them if needed. Press **Ctrl+F** or click the search icon, enter `favicon.png` and select **Search in this Module**.
 
     <div class="info" markdown="1">
-    
+
     If you have just created your app, the **'favicon.png' occurrences in Module** search tab shows four occurrences of **favicon.png**, all in different **AddFavicon** actions.  
     <ins>Note</ins>: **AddFavicon** client action is **only** compatible with Chrome, Firefox and Edge.
-   
-    
+
     </div>
 
 1. In the **'favicon.png' occurrences in Module** search tab, select **REPLACE ALL OCCURRENCES**.

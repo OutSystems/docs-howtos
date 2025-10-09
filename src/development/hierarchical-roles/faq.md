@@ -19,7 +19,7 @@ coverage-type:
 
 # How to leverage OutSystems roles with hierarchy levels
 
-OutSystems Roles are very useful and easy to use. You can create authorization mechanisms in a matter of minutes with the out-of-the-box roles. 
+OutSystems Roles are very useful and easy to use. You can create authorization mechanisms in a matter of minutes with the out-of-the-box roles.
 
 When developing an application you must secure it, allowing or restricting end-user access to specific screens of your application. Roles are often used for:
 

@@ -65,29 +65,29 @@ To extract the web books information from the XML file follow these steps:
 
 1. Create a `Book` Structure with `Title` (Text), `Author` (Text), `Year` (Integer) and `Price` (Decimal) Attributes.
 
-1. Create a Server Action and add the following Variables: 
-    
+1. Create a Server Action and add the following Variables:
+
     * `XML`: Mandatory Input Parameter of Binary Data `Data Type`
     * `Encoding`: Optional Input Parameter of Text `Data Type`
     * `Current`:  Local Variable of Integer `Data Type` with a `Default Value` of `0`
-    * `Book`: Local Variable of Book `Data Type` 
-    * `Books`: Output Parameter of Book List `Data Type` 
+    * `Book`: Local Variable of Book `Data Type`
+    * `Books`: Output Parameter of Book List `Data Type`
 
     The Server Action will receive an XML file and an optional `Encoding` argument and will return a List of Books extracted from the XML file.
 
 1. Add a **XmlDocument_Load_v2** Action from the XML Extension and set the `Xml` input to:
 
         BinaryDataToText(XML,Encoding)
-    
+
     This converts the XML Binary file to text and loads it into a DOM object.
 
 1. Add a **XmlDocument_SelectNodes** Action from the XML Extension after the previous action. Set the `XmlDocument` input to `XmlDocument_Load_v2.XmlDocument` and set the `XPathString` input to `"/bookstore/book[@category='web']"`.
 
-    This returns an XPath filtered list of books that belong to the web category. 
-    
+    This returns an XPath filtered list of books that belong to the web category.
+
 1. Add a **XmlNodeList_Count** Action from the XML Extension after the previous action and set the `XmlNodeList` input to `XmlDocument_SelectNodes.XmlNodeList`.
 
-    This counts the total number of web books in the filtered list. 
+    This counts the total number of web books in the filtered list.
 
 1. Add an **If** node after the previous Action and set the `Condition` to `Current < XmlNodeList_Count.Count`.
 
@@ -105,11 +105,11 @@ To extract the web books information from the XML file follow these steps:
 
     This fetches the title of the current web book.
 
-1. Repeat the previous 2 steps for the `author`, `year` and `price` attributes. Make sure you change the inputs accordingly. 
+1. Repeat the previous 2 steps for the `author`, `year` and `price` attributes. Make sure you change the inputs accordingly.
 
     This selects and fetches the remaining information of the current web book.
 
-1. Add an Assign node after the **XmlElement_GetInnerText4** Action and set the following Assignments: 
+1. Add an Assign node after the **XmlElement_GetInnerText4** Action and set the following Assignments:
 
     * `Current` = `Current+1`
     * `Book.Title` = `XmlElement_GetInnerText.InnerText`

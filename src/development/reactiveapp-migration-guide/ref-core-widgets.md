@@ -84,7 +84,7 @@ Check out an example on how to [Validate Form Inputs](<https://success.outsystem
 
 ### If
 
-Ensure that you're not bringing confidential information to the conditions of the **If Tool**. For example, if you have information visible only to an admin on the server side, reusing the same logic in the Reactive Web App could fetch confidential information from the server to the client-side UI of the Reactive app. For more information about security in Reactive Web Apps, see the [Reactive Web security best practices](https://success.outsystems.com/Documentation/Best_Practices/Security/Reactive_web_security_best_practices). 
+Ensure that you're not bringing confidential information to the conditions of the **If Tool**. For example, if you have information visible only to an admin on the server side, reusing the same logic in the Reactive Web App could fetch confidential information from the server to the client-side UI of the Reactive app. For more information about security in Reactive Web Apps, see the [Reactive Web security best practices](https://success.outsystems.com/Documentation/Best_Practices/Security/Reactive_web_security_best_practices).
 
 ### Image
 
@@ -179,7 +179,7 @@ The following sections contain the migration notes about widget events.
 
 ### On click
 
-You can implement the functionalities of the **On Click** set of properties in Traditional Web to Reactive app as follows: 
+You can implement the functionalities of the **On Click** set of properties in Traditional Web to Reactive app as follows:
 
 * **Destination** - point to a Screen Action or Screen
 * **Validation** - use the **Built-in Validation** to check the client side, but also implement validation on the server side before committing any values to the database

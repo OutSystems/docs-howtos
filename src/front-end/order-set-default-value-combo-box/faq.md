@@ -51,11 +51,10 @@ On the example below, the Preparation code initializes the local variable 'UserI
 
 1. Find the Id of the desired user. In the example, use the Id 99 for the user 'Anne Abbott'.
 
-2. Assign the value to the destination Variable. Since the Source List Record is an aggregate, use the function **IntegerToIdentifier** to convert the identifier into an Entity Identifier. In the example, 'IntegerToIdentifier(99)'. In OutSystems versions previous to Bali 9, it would be 'IntegerToEntityRefInteger(99)'.
+1. Assign the value to the destination Variable. Since the Source List Record is an aggregate, use the function **IntegerToIdentifier** to convert the identifier into an Entity Identifier. In the example, 'IntegerToIdentifier(99)'. In OutSystems versions previous to Bali 9, it would be 'IntegerToEntityRefInteger(99)'.
 
 ![OutSystems Service Studio flow showing the conversion of user Id 99 to an Entity Identifier for setting the default value in a combo box.](images/How-to-order-and-set-the-default-value-in-a-combo-box_3.png "Setting Default Value in Preparation")
 
 Your combo box should now display your default value, as shown below.
 
 ![A combo box on a sample page with 'Anne Abbott' pre-selected as the default value.](images/How-to-order-and-set-the-default-value-in-a-combo-box_4.png "Combo Box with Default Value")
-

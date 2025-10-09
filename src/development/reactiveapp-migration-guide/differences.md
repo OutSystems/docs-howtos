@@ -43,7 +43,7 @@ Go to [Entry Point](ref-frontend-ui-flows.md#entry-point) to learn more about mi
 
 **Notify** and **NotifyGetMessage** enable Widgets in the Traditional Web to exchange data, and they're not available in Reactive Web.
 
-In Reactive Web Apps, use Events and corresponding handler Actions. Check how to do that in [Use Events to Propagate Changes From a Block to the Parent](<https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Reuse_UI/Use_Events_to_Propagate_Changes_From_a_Block_to_the_Parent>). 
+In Reactive Web Apps, use Events and corresponding handler Actions. Check how to do that in [Use Events to Propagate Changes From a Block to the Parent](<https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Reuse_UI/Use_Events_to_Propagate_Changes_From_a_Block_to_the_Parent>).
 
 ### Exception handler
 
@@ -64,7 +64,7 @@ For details on how to migrate this element to Reactive, check the notes on migra
 Reactive Web Apps treat date and time values like Mobile Apps. The Date and Time values are always UTC, even when requested from the server.
 When you use them in the app UI, there's a value conversion to the local time of the device. Read more about this in the [Date Time documentation](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Data/Data_Types/Available_Data_Types#date-time-notes).
 
-## Improved practices in Reactive 
+## Improved practices in Reactive
 
 This section provides general notes about the changes in how you approach development in the Reactive Web Apps when compared to Traditional Apps.
 
@@ -94,10 +94,10 @@ Documents in this section:
 * [Differences to consider between Traditional and Reactive](<differences.md>)
 * [Suggested stages of Traditional to Reactive App migration](<stages.md>)
 * [Traditional to Reactive App migration reference](<reference.md>)
-	* [Module elements](<ref-module-elements.md>)
-	* [Front-end](<ref-frontend-intro.md>)
-	    * [User Interface](<ref-frontend-ui.md>)
-	    * [UI Flow elements](<ref-frontend-ui-flows.md>)
-	    * [Screen and Block logic](<ref-frontend-screen-and-block.md>)
-	    * [System Actions](<ref-system-actions.md>)
-	* [Core Widgets](<ref-core-widgets.md>)
+       *[Module elements](<ref-module-elements.md>)
+       *[Front-end](<ref-frontend-intro.md>)
+           *[User Interface](<ref-frontend-ui.md>)
+           *[UI Flow elements](<ref-frontend-ui-flows.md>)
+           *[Screen and Block logic](<ref-frontend-screen-and-block.md>)
+           *[System Actions](<ref-system-actions.md>)
+       *[Core Widgets](<ref-core-widgets.md>)

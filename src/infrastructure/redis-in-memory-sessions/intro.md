@@ -20,7 +20,7 @@ coverage-type:
 
 <div class="info" markdown="1">
 
-Applies to OutSystems self-managed infrastructures. 
+Applies to OutSystems self-managed infrastructures.
 Redis is an advanced scenario that should only be used on factories with a large amount of Traditional Web Apps and **only if absolutely necessary**.
 </div>
 

@@ -16,7 +16,7 @@ coverage-type:
   - apply
 ---
 
-# OnTrack - OutSystems backlog management 
+# OnTrack - OutSystems backlog management
 
 OnTrack offers a powerful, yet simple, project tracking and collaboration, to support fast continuous delivery of your applications.
 
@@ -40,11 +40,9 @@ Detailed step-by-step training can be found here:
 * [How To Create an Application](https://www.youtube.com/watch?v=6jzUcuAAtqA&list=PLaxrSw3Eft4FgXe0zZQtL93FUFPvNWQNw&index=12)
 * [How To Manage the Backlog](https://www.youtube.com/watch?v=6MMR3rLt5qw&list=PLaxrSw3Eft4FgXe0zZQtL93FUFPvNWQNw&index=13)
 
-
 ## Start using Ontrack
 
-
-OnTrack is available in [Forge](https://www.outsystems.com/forge/component-overview/1177/ontrack-o11). To access, you should use a community account (create a [new account](https://www.outsystems.com/home/signup.aspx) if not registered yet). 
+OnTrack is available in [Forge](https://www.outsystems.com/forge/component-overview/1177/ontrack-o11). To access, you should use a community account (create a [new account](https://www.outsystems.com/home/signup.aspx) if not registered yet).
 You will need a "Manager role" in your infrastructure in order to do this setup process.
 
 ### Work item color scheme
@@ -61,7 +59,6 @@ You will need a "Manager role" in your infrastructure in order to do this setup 
 
     ![Icon representing an OnTrack work item with a green notification indicating acceptance.](images/on-track-green-ot.png "OnTrack Green Notification")
 
-
 ## How to link AppFeedback to OnTrack
 
 ### Setting up
@@ -73,7 +70,6 @@ You will need a "Manager role" in your infrastructure in order to do this setup 
 1. Download and install [ECT_Client_Connector](http://www.outsystems.com/forge/component/455/ect-client-connector/).
 
 1. Configure ECT_Client_Connector by changing in Service Center the ECT_Server_WS web service URL to point to ```https://ontrack.outsystems.com/ECT_Server_Connector/ECT_Server_WS.asmx```.
-
 
 **At Ontrack:**
 
@@ -91,13 +87,12 @@ You will need a "Manager role" in your infrastructure in order to do this setup 
     1. Enter the Activation Code of your infrastructure as in the example:
 
         ![Screenshot of the OnTrack infrastructure activation input field with an example activation code.](images/on-track-configure-infra2-ot.png "OnTrack Infrastructure Activation")
-    
+
     1. You'll see the newly added infrastructure. Enrich the data by giving it a name:
 
         ![Screenshot displaying a newly added infrastructure in OnTrack with an option to edit its name.](images/on-track-configure-infra3-ot.png "OnTrack Added Infrastructure")
 
 1. If you were already receiving ECT from you customer’s environments, just double check the data.
-
 
 ### Map the modules
 
@@ -105,7 +100,6 @@ You will need a "Manager role" in your infrastructure in order to do this setup 
 
 1. Create at least one ECT for each module that you want to receive feedback on.
 1. Go to Service Center and run the timer on ECT_Client_Connector (The timer will run every 15 minutes, this is just to speed-up the process).
-
 
 **At Ontrack:**
 
@@ -136,7 +130,6 @@ You will need a "Manager role" in your infrastructure in order to do this setup 
 1. Press again the **Synch Now** button, to process the mappings.
 1. After a few moments, the ECTs created should be visible on your project.
 
-
 I want to add more modules. What should I do?
 
 1. Create the ECTs on the customer side.
@@ -154,4 +147,3 @@ I want to add more modules. What should I do?
 The button **Delete mapping** will remove **all** mapped modules. Be careful when using it.
 
 </div>
-

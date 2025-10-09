@@ -41,7 +41,7 @@ To customize the name and order of columns/Attributes when exporting a List to a
 
     This Structure defines the final labels and order of the columns in the Excel file.
 
-1. In the **Logic** tab, create an **ExportReceiptsToExcel** Server Action and add a `ListToExport` Local Variable and set the `Data Type` to `ReceiptsExport List` by selecting `Other`>`List...` and then `ReceiptsExport`. 
+1. In the **Logic** tab, create an **ExportReceiptsToExcel** Server Action and add a `ListToExport` Local Variable and set the `Data Type` to `ReceiptsExport List` by selecting `Other`>`List...` and then `ReceiptsExport`.
 
 1. Add an **Assign** element with the assignment `ListToExport` = `ReceiptTable.List` and set the Mapping to ReceiptsExport as:
 

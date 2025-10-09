@@ -46,7 +46,7 @@ To setup the list of countries in your app, follow these steps:
 
     ![Screenshot highlighting the data type selection for a new entity attribute in Service Studio.](images/countrydropdown002-ss.png "Setting Data Type for Entity Attribute")
 
-1. Add a new entity attribute, name it `DialInCode`, and set it's data type to **Integer**. 
+1. Add a new entity attribute, name it `DialInCode`, and set it's data type to **Integer**.
 
 After completing these steps, this is the expected outcome:
 

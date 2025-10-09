@@ -33,7 +33,7 @@ Then, do the following:
     ![Screenshot showing the import of a placeholder image into the application.](images/How-to-improve-list-slowness-on-low-end-devices_0.png "Importing Image Preview")
 
 1. Open the CSS Editor and create a new class to use the image as background.
- 
+
         .task-list > script {                               
             background: url(...) !important;
             /* Drag and drop the image to set the URL of the image */

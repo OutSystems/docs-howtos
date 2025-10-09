@@ -27,12 +27,11 @@ You can create custom alerts based on your application operations monitoring thr
 
 ![Diagram illustrating the three-step process to create alerts using OutSystems APIs: Step 1 - Gather data from OutSystems APIs, Step 2 - Consume the API data and define logic thresholds for alarms, Step 3 - Trigger email notifications or integrate with ITSM tools.](images/create-alerts-diag.png "Alerts Creation Process Diagram")
 
-
 ## Step 1 - gather data
 
 OutSystems provides a set of APIs that can be used to analyze application events and even register events defined by you.
 
-The [Monitoring API](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/PerformanceMonitoring_API) provides a **GET RequestEvents** method to gather over 100 properties of application events. 
+The [Monitoring API](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/PerformanceMonitoring_API) provides a **GET RequestEvents** method to gather over 100 properties of application events.
 
 As and example, you can gather information regarding:
 
@@ -45,10 +44,9 @@ As and example, you can gather information regarding:
 
 Check the [Monitoring API resources](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/PerformanceMonitoring_API#Resources) for all the details.
 
-
 To gather details about each specific error, you can also [query the log data](https://success.outsystems.com/Documentation/11/Managing_the_Applications_Lifecycle/Monitor_and_Troubleshoot/Logging_database_and_architecture/Query_log_data).
 
-You can also *define your own custom events* either using the [POST RequestEvents of the Monitoring API](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/PerformanceMonitoring_API#POST_RequestEvents) or the [LogMessage](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/System_Actions#LogMessage) built-in action to [log informations in your application flows](https://success.outsystems.com/Documentation/11/Developing_an_Application/Troubleshooting_Applications/Log_Information_in_Action_Flows).
+You can also _define your own custom events_ either using the [POST RequestEvents of the Monitoring API](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/PerformanceMonitoring_API#POST_RequestEvents) or the [LogMessage](https://success.outsystems.com/Documentation/11/Reference/OutSystems_APIs/System_Actions#LogMessage) built-in action to [log informations in your application flows](https://success.outsystems.com/Documentation/11/Developing_an_Application/Troubleshooting_Applications/Log_Information_in_Action_Flows).
 
 ## Step 2 - consume data and user-defined thresholds
 
@@ -70,4 +68,4 @@ Most ITSM and messaging tools expose functionality in the form of webservices, s
 
 With OutSystems you can integrate with anything, [consuming REST APIs](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/REST/Consume_REST_APIs) and [SOAP Web Services](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/SOAP/Consuming_SOAP_Web_Services) easily. Use these capabilities to create tickets or incidents to be handled by your IT services.
 
-Check *pre-built integrations* for [Zendesk](https://www.outsystems.com/forge/component-overview/588/zendesk-connector) and [Jira](https://www.outsystems.com/blog/posts/jira-integration-app-feedback/)
+Check _pre-built integrations_ for [Zendesk](https://www.outsystems.com/forge/component-overview/588/zendesk-connector) and [Jira](https://www.outsystems.com/blog/posts/jira-integration-app-feedback/)

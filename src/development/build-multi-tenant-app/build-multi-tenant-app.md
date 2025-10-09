@@ -41,7 +41,7 @@ Designing applications using a Multi-tenant architecture has several benefits:
 
 * Simplifies the application development and maintenance processes since there is a single code base to maintain.
 
-## Multi-tenancy in OutSystems Platform 
+## Multi-tenancy in OutSystems Platform
 
 In OutSystems, tenants are associated with a [user provider](https://success.outsystems.com/documentation/11/developing_an_application/secure_the_application/end_users/#User-providers). By default, the user provider is **Users** module. Initially, each user provider only has its default tenant, which shares the same name as the module. Additional tenants can be created to enable multi-tenancy.
 
@@ -53,13 +53,13 @@ In this example, when the end-user navigates to the **Contacts List** screen, no
 
 Since end-users belong to a unique tenant, during the login process, the OutSystems Platform infers that the tenant end-users belong to using the username. Then, end-users are bound to their tenant, and all aggregates and SQL queries are automatically filtered to return data from that tenant only.
 
-**Example**: If the end-user was identified as a user of the Office Inc., they're then constrained to that tenant, and the Contacts List Screen shows Abel Pasquale, Adam Dimaggio, Alan Pryor… It isn't be possible for them to see information about the contacts from the Bricks’r’us tenant. 
+**Example**: If the end-user was identified as a user of the Office Inc., they're then constrained to that tenant, and the Contacts List Screen shows Abel Pasquale, Adam Dimaggio, Alan Pryor… It isn't be possible for them to see information about the contacts from the Bricks’r’us tenant.
 
 ## Tenant-Specific Elements
 
 This section discusses how to set up the Module, Entities, Site Properties, and Timers to build a Multi-Tenant application.
 
-Since the OutSystems Platform automatically enforces data segmentation, you need to specify which Entities, Site Properties, and Timers are isolated between clients and which are shared. You do not need to change your queries or any other business logic since the OutSystems Platform only retrieves data for the tenant to which the user's session is bound. 
+Since the OutSystems Platform automatically enforces data segmentation, you need to specify which Entities, Site Properties, and Timers are isolated between clients and which are shared. You do not need to change your queries or any other business logic since the OutSystems Platform only retrieves data for the tenant to which the user's session is bound.
 
 ### Setting up the module
 
@@ -107,7 +107,7 @@ Set the Is **Multi-tenant** property of Site Properties to one of the following 
 
 * **< Not defined >:** The multi-tenant behavior of the Site Property is inherited from the Multi-tenant behavior of the module.
 
-### Setting up Timers 
+### Setting up Timers
 
 Similarly to Entities and Site Properties, Timers allow specifying whether they run in the scope of a particular tenant (run once for each tenant and only manipulate data for that tenant) or run in the Default Tenant (manipulate data shared among tenants).
 
@@ -137,11 +137,11 @@ When using a custom User Provider application, you need to identify the end-user
 
 * **TenantSwitch:** The TenantSwitch System Action changes the context of the specified tenant.
 
-Your customized login might let the end-user specify to which tenant they intend to access. If the end-user specifies a username, password and tenant, then you can find which user is trying to log in (even if there are two end-users with the same username in different tenants). 
+Your customized login might let the end-user specify to which tenant they intend to access. If the end-user specifies a username, password and tenant, then you can find which user is trying to log in (even if there are two end-users with the same username in different tenants).
 
 ## Managing Tenants and End-Users
 
-### Front Office 
+### Front Office
 
 It is also possible to implement the logic for self-provisioning: End-users register and manage their own tenants.
 
@@ -153,14 +153,14 @@ Once the end-user has a new tenant, they can perform user management but only fo
 
 To manage tenants, you can create a single-tenant back office where new tenants are created. In these situations, there is a tenant manager who can create new tenants and specify which end-users belong to which tenants. The tenant manager is able to manage all end-users across tenants.
 
-Also, in the back office, there has to be a Single-tenant module to create administrative users (tenant managers). 
+Also, in the back office, there has to be a Single-tenant module to create administrative users (tenant managers).
 
 <div class="warning" markdown="1">
 
 **Warning:** When using the default "Users" application to perform user management, you cannot rename **Users** tenant for the application to operate correctly.
 </div>
 
-## Example of a Multi-tenant Application 
+## Example of a Multi-tenant Application
 
 <div class="info" markdown="1">
 
@@ -168,7 +168,7 @@ A [Forge component for Multi-tenant management](http://www.outsystems.com/forge/
 
 </div>
 
-To better illustrate how to build a Multi-tenant application, this example is based on the [Sales application ](http://www.outsystems.com/apps/sales-app/)(Single-tenant) from the OutSystems Forge.
+To better illustrate how to build a Multi-tenant application, this example is based on the [Sales application](http://www.outsystems.com/apps/sales-app/)(Single-tenant) from the OutSystems Forge.
 
 With this example, you can understand:
 
@@ -176,7 +176,7 @@ With this example, you can understand:
 
 * How to implement a front office that lets end-users self-provision their own tenant and create end-users for their tenants.
 
-* How to implement a centralized back office to manage tenants and end-users across tenants. 
+* How to implement a centralized back office to manage tenants and end-users across tenants.
 
 This example has the following components:
 
@@ -196,9 +196,9 @@ The following sections explain how the Sales application was modified from Singl
 
 To change the Sales application from Single-tenant to Multi-tenant, several modules in the Sales solution were changed to enforce data isolation.
 
-* The **Is Multi-tenant** property of the Sales, Customers, SalesSampleData, and SelfRegister modules was changed to **Yes**. 
+* The **Is Multi-tenant** property of the Sales, Customers, SalesSampleData, and SelfRegister modules was changed to **Yes**.
 
-* The **Is Multi-tenant** property of the Countries and CustomersSampleData was not changed. 
+* The **Is Multi-tenant** property of the Countries and CustomersSampleData was not changed.
 
 ![OutSystems interface showing the transition of module properties from single-tenant to multi-tenant settings.](images/build-multi-tenant-app_2.png "OutSystems Module Properties")
 
@@ -212,7 +212,7 @@ The SalesSampleData and SelfRegister modules do not have Entities, so you only n
 
 In the Sales module, the AccountManager, Opportunity, OpportunityHistory, QuarterQuota, and Task Entities are independent from tenant to tenant so they should remain Multi-tenant.
 
-In the Customers module, the Company, CompanyHistory, Contact, ContactHistory, and ContactPicture Entities are also independent from tenant to tenant, so they should remain Multi-tenant. 
+In the Customers module, the Company, CompanyHistory, Contact, ContactHistory, and ContactPicture Entities are also independent from tenant to tenant, so they should remain Multi-tenant.
 
 #### Configuring Site Properties
 
@@ -224,7 +224,7 @@ In this example, all Site Properties should be isolated between tenants. Nothing
 
 #### Configuring Timers
 
-In this example, only the SalesSampleData module contains a Timer that creates end-users for the Sales application. Since we want the Timer to run once for each tenant, nothing needs to be changed. The Timer inherits the ‘Is Multitenant’ property from the module. 
+In this example, only the SalesSampleData module contains a Timer that creates end-users for the Sales application. Since we want the Timer to run once for each tenant, nothing needs to be changed. The Timer inherits the ‘Is Multitenant’ property from the module.
 
 ### Implementing the Front Office
 
@@ -236,7 +236,7 @@ In the Login Screen of the Sales module, there is a ‘Sign up for free’ link 
 
 ![Screenshot of the Sales application login screen with a 'Sign up for free' link for new tenant provisioning.](images/build-multi-tenant-app_4.png "Tenant Provisioning Link")
 
-In the Save action, the fields are validated to check whether they are valid. The **TenantCreate** System Action is used to create the new tenant with the specified name, and a **TenantSwitch** System Action is then used to change the context to the newly created tenant. The tenant administrator user is then created, but since the Users entity is Multi-tenant, the new user is constrained in the OfficeInc tenant. 
+In the Save action, the fields are validated to check whether they are valid. The **TenantCreate** System Action is used to create the new tenant with the specified name, and a **TenantSwitch** System Action is then used to change the context to the newly created tenant. The tenant administrator user is then created, but since the Users entity is Multi-tenant, the new user is constrained in the OfficeInc tenant.
 
 ### Implementing the Back Office
 
@@ -254,9 +254,9 @@ In the TenantManagement module, take special attention to the: Group, Group_Role
 
 For example, since the User Entity has the ‘Show Tenant Identifier’ checked, the TenantManagement module is able to manipulate all end-users data, independently of the tenant they belong to. This property should only be used in exceptional situations, such as this one.
 
-#### Managing IT Users 
+#### Managing IT Users
 
-Finally, the BackOfficeUsers is a Single-tenant module that supports IT users management. End-users created in this back office have access to the TenantManagement module. 
+Finally, the BackOfficeUsers is a Single-tenant module that supports IT users management. End-users created in this back office have access to the TenantManagement module.
 
 ![Back Office Users interface showing a list of IT users with the ability to manage tenant access and configurations.](images/build-multi-tenant-app_7.png "IT User Management Interface")
 

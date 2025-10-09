@@ -25,7 +25,7 @@ This section shows a comparison between hierarchical roles and the default roles
 
 The following bullets show the advantages of defining hierarchical roles:
 
-* Accommodates hierarchical authorization 
+* Accommodates hierarchical authorization
 
 * Accommodates potential explosion of application roles
 
@@ -40,6 +40,5 @@ Consider the following when defining hierarchical roles:
 * Performance penalty due to database query on every screen access: load the user’s authorization model into session upon login. This may bring additional challenges to data structure mapping and size.
 * Security risk due to manual inclusion of authorization checks: consider using authorization actions inside a web block present in the base layout.
 * Lack of built-in product support: plan for extensive unit and component testing. Create the necessary support elements enumeration needs (static entities, actions, etc.).
-
 
 To learn how to implement hierarchical roles, go to [How to implement hierarchical roles](hands-on.md).

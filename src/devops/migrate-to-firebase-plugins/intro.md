@@ -19,7 +19,7 @@ coverage-type:
 
 # Migrating to the supported Firebase-based mobile plugins
 
-You can use two types of Firebase-based plugins in your apps: **supported plugins** and **unsupported plugins**. This document provides guidance on how to migrate from older unsupported Firebase-based plugins (namely **Firebase Mobile**), to the newer and supported plugins. To migrate from an unsupported plugin to a supported one, refactor your apps by replacing actions in your logic. This is a straightforward process as plugins behave the same way, adopt the same parameters, and follow similar naming conventions. 
+You can use two types of Firebase-based plugins in your apps: **supported plugins** and **unsupported plugins**. This document provides guidance on how to migrate from older unsupported Firebase-based plugins (namely **Firebase Mobile**), to the newer and supported plugins. To migrate from an unsupported plugin to a supported one, refactor your apps by replacing actions in your logic. This is a straightforward process as plugins behave the same way, adopt the same parameters, and follow similar naming conventions.
 
 Firebase-based plugins offer an integration with Firebase. Firebase is a Google mobile development platform. It speeds up many of the common development patterns for mobile apps. OutSystems recommends that you use the **supported plugins**, as that's in the best interest of both end users and developers of the apps. By using OutSystems supported plugins you can count on the following advantages:
 
@@ -28,7 +28,7 @@ Firebase-based plugins offer an integration with Firebase. Firebase is a Google 
 * Regular updates and visibility over changes
 * Compatibility at day zero with new versions of MABS
 * New features, particularly in the Performance and Crash Reporting plugins
-* [Dynamic Links](https://www.outsystems.com/forge/component-overview/10988/dynamic-links-plugin-firebase), a new Firebase-based plugin 
+* [Dynamic Links](https://www.outsystems.com/forge/component-overview/10988/dynamic-links-plugin-firebase), a new Firebase-based plugin
 
 | Supported plugin                                                                                   | Description                                                                            |
 | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
@@ -87,7 +87,7 @@ See [Reference of the plugin actions](#reference-of-the-plugin-actions) for more
 1. Optionally, set any other parameters to capture additional information and get metrics from the Google Console dashboard.
   
     ![Screenshot of Service Studio where additional parameters are being set for the new LogEvent2 action.](images/migrate-to-firebase-additional-values-ss.png "Adding Additional Parameters in Service Studio")
-    
+
 ## Example of sending and receiving a notification with the Cloud Messaging Plugin
 
 If you want to subscribe to a topic and receive notifications for it, follow these steps:
@@ -113,7 +113,6 @@ See [Reference of the plugin actions](#reference-of-the-plugin-actions) for more
 1. See notifications in the device, whether in the notification center or inside your app as in-app notifications.
   
     ![Screenshot showing a notification from Firebase Cloud Messaging on a mobile device's screen.](images/migrate-to-firebase-notifications.png "Notifications on a Device")
-
 
 ## Reference of the plugin actions
 
@@ -142,7 +141,7 @@ Check out the [sample app](#sample-app) to see how to:
 
 The list of relevant actions in the two plugins.
 
-Firebase Mobile (unsupported) && Firebase CM Compat R&D (unsupported) | Cloud Messaging Plugin (supported) |
+| Firebase Mobile (unsupported) && Firebase CM Compat R&D (unsupported) | Cloud Messaging Plugin (supported) |
 | --------------------------------------------------------------------| ---------------------------------- |
 | ClearAllNotifications                                               | ClearNotifications                 |
 | GetBadgeNumber                                                      | GetBadgeNumber                     |
@@ -160,11 +159,11 @@ Firebase Mobile (unsupported) && Firebase CM Compat R&D (unsupported) | Cloud Me
 
 While the unsupported plugin has only one block, **FirebaseCloudMessaging**, the supported plugin has two: **NotificationsHandler** and **NotificationDialog**.
 
-The NotificationsHandler block is the equivalent to the FirebaseCloudMessaging block. Learn more about the NotificationDialog block in the [plugin's documentation page](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/Mobile_Plugins/Firebase_Plugins/Firebase_Cloud_Messaging_plugin). 
+The NotificationsHandler block is the equivalent to the FirebaseCloudMessaging block. Learn more about the NotificationDialog block in the [plugin's documentation page](https://success.outsystems.com/Documentation/11/Extensibility_and_Integration/Mobile_Plugins/Firebase_Plugins/Firebase_Cloud_Messaging_plugin).
 
 The following table lists each of the block’s client actions and events, as well as how they relate to each other.
 
-Firebase Mobile (unsupported) | Firebase CM Compat R&D (unsupported) | Cloud Messaging Plugin (supported) |
+| Firebase Mobile (unsupported) | Firebase CM Compat R&D (unsupported) | Cloud Messaging Plugin (supported) |
 | --------------------------- | ------------------------------------ | ---------------------------------- |
 | NotificationHandler         | Handler_OnMessage                    | OnDefaultNotificationReceived      |
 | -                           | -                                    | OnSilentNotificationReceived       |
@@ -185,7 +184,6 @@ The following table lists the REST API methods that are equivalent to the Middle
 | SendNotificationToUser                                                | SendNotifcationToUsers                   |
 | SendSilentNotificationToTopic                                         | SendSilentNotificationToTopics           |
 | SendSilentNotificationToUser                                          | SendSilentNotificationToUsers            |
-
 
 Check out the [sample app](#sample-app) to see how to:
 

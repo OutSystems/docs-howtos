@@ -65,7 +65,7 @@ Instead, evaluate the use cases:
 
 To get data to a Screen in a Reactive Web App, right-click a Screen in the Elements Tree and select the following options:
 
-* **Fetch Data from Database** - to create the Aggregates on the Screen. 
+* **Fetch Data from Database** - to create the Aggregates on the Screen.
 
 * **Fetch Data from Other Sources** - to create data Actions on the Screen.
 
@@ -129,7 +129,6 @@ For more information about security in Reactive Web Apps, see the [Reactive Web 
 ## Refresh data
 
 When migrating the **Refresh Data** node, you must analyze the dependencies between the data sources and how the Screen uses the data. You must also check that the client side in the Reactive Web Module only receives the data it requires. Always ensure that your app isn't exposing confidential information. For more information about security in Reactive Web Apps, see the [Reactive Web security best practices](https://success.outsystems.com/Documentation/Best_Practices/Security/Reactive_web_security_best_practices).
-
 
 If the refreshed **Data Source** doesn't have dependencies, then you must isolate the logic in a Screen Aggregate or a separate **Data Action**, and then refresh the Data Source.
 

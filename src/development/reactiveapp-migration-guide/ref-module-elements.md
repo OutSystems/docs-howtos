@@ -79,7 +79,7 @@ The screen uses the **Server Action** for a variable number of times on the Scre
 
 <div class="info" markdown="1">
 
-Client Variables in Reactive Web Apps are in many ways similar to the Session Variables. Use them with the On Application Ready Event to initialize global configurations for the apps, like instantiating username, locale, filters. 
+Client Variables in Reactive Web Apps are in many ways similar to the Session Variables. Use them with the On Application Ready Event to initialize global configurations for the apps, like instantiating username, locale, filters.
 
 Keep in mind:
 

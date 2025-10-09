@@ -27,7 +27,7 @@ Applies to OutSystems self-managed infrastructures.
 
 <div class="info" markdown="1">
 
-SSL/TLS support is only available in Redis 6.x upward, and only if the Redis binaries were compiled with this feature enabled. 
+SSL/TLS support is only available in Redis 6.x upward, and only if the Redis binaries were compiled with this feature enabled.
 Check the OutSystems system [requirements](requirements.md) page for the versions supported by OutSystems.
 
 </div>

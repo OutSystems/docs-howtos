@@ -32,7 +32,7 @@ To use **Input_AutoComplete** with an input widget follow these steps:
     ![Screenshot showing how to set the Name and Variable properties of the search field input widget.](images/autocomplete01.png "Setting Name and Variable Properties")
 
     ![Image displaying the configuration of a local variable for the search field in a web application.](images/autocomplete03.png "Local Variable Configuration")
-    
+
 1. Add an **Input_AutoComplete** RichWidget next to the input widget and set the **InputWidgetId** property to the Id of the input.
 
     ![Screenshot of the Input_AutoComplete RichWidget being added next to the input widget.](images/autocomplete00.png "Adding Input_AutoComplete Widget")
@@ -62,7 +62,7 @@ To use **Input_AutoComplete** with an input widget follow these steps:
     ![Image providing an overview of the Screen Action setup for the autocomplete functionality.](images/autocomplete09.png "Screen Action Overview")
 
     The action queries the database for the **autocomplete** suggestions that appear below the Input field.
-    
+
 1. Publish the module by selecting **1-Click Publish**.
 
 After these steps the search field in your app shows a list of suggestions that changes as you type.

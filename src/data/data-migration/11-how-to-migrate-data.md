@@ -29,44 +29,44 @@ This sections shows common general questions related to data migration.
 
 ### How to Find Entities with Binary Type Attributes?
 
-Binary types of attributes take up lots of disk space and consume time and resources when you need to migrate these. 
-This is why it is important to find this type of attribute and the related Entities to prepare and have a plan to migrate this kind of data. 
+Binary types of attributes take up lots of disk space and consume time and resources when you need to migrate these.
+This is why it is important to find this type of attribute and the related Entities to prepare and have a plan to migrate this kind of data.
 
 The following query returns all the Entities belonging to an application containing binary types of attributes:
 
 ```
 SELECT 
-	  app.NAME [Application]
-	, entity.NAME [Entity Name]
-	, entity.PHYSICAL_TABLE_NAME [PhysicalTable Name]
-	, attribute.NAME [Attribute]
+      app.NAME [Application]
+    , entity.NAME [Entity Name]
+    , entity.PHYSICAL_TABLE_NAME [PhysicalTable Name]
+    , attribute.NAME [Attribute]
 FROM ossys_Entity_Attr attribute
 JOIN ossys_Entity entity
-	ON attribute.Entity_id = entity.id
-	AND entity.IS_ACTIVE = 1 /* Active Entities*/
-	AND entity.IS_SYSTEM = 0 /* Not system */
+    ON attribute.Entity_id = entity.id
+    AND entity.IS_ACTIVE = 1 /* Active Entities*/
+    AND entity.IS_SYSTEM = 0 /* Not system */
 JOIN ossys_Espace espace
-	ON entity.ESPACE_ID = espace.ID
+    ON entity.ESPACE_ID = espace.ID
 JOIN ossys_Module module
-	ON espace.ID = module.ESPACE_ID
+    ON espace.ID = module.ESPACE_ID
 JOIN OSSYS_APP_DEFINITION_MODULE appmodule
-	ON module.ID = appmodule.MODULE_ID
+    ON module.ID = appmodule.MODULE_ID
 JOIN OSSYS_Application app
-	ON appmodule.APPLICATION_ID = app.ID 
+    ON appmodule.APPLICATION_ID = app.ID
 WHERE 
-	/* Active Entity Attributes */
-	attribute.IS_ACTIVE = 1 
-	/* Filter Binary Data type */
-	AND attribute.TYPE = (
-		select ID from OSSYS_BASIC_TYPE where NAME = 'BinaryData'
-	)
+    /* Active Entity Attributes */
+    attribute.IS_ACTIVE = 1
+    /* Filter Binary Data type */
+    AND attribute.TYPE = (
+        select ID from OSSYS_BASIC_TYPE where NAME = 'BinaryData'
+    )
 ORDER BY app.NAME
-	, entity.NAME
-	, entity.PHYSICAL_TABLE_NAME
-	, attribute.NAME
+    , entity.NAME
+    , entity.PHYSICAL_TABLE_NAME
+    , attribute.NAME
 ```
 
-An example of a partial result of the the previous query:
+An example of a partial result of the previous query:
 
 |Application | Entity Name |PhysicalTable Name |Attribute |
 |------------|-------------|-------------------|----------|
@@ -99,44 +99,44 @@ Searching for User Entity foreign key usage requires two steps:
         * Filtered by the User Identifier attribute Type with the format ``‘bt’[Espace SS-Key]’*’[Entity SS-Key]``, where ``bt`` stands for business type then the ``SS_Key`` of the Espace Service Center (``OSSYS_ESPACE``) followed by ``*`` and ending on the User Entity ``SS_Key`` (``OSSYS_ENTITY``).
 
 ```
-		SELECT 
-	        OSSYS_APPLICATION.NAME [Application]
-	        , OSSYS_ESPACE.NAME [Espace]
-	        , OSSYS_ENTITY.NAME [Entity Name]
-	        , OSSYS_ENTITY.PHYSICAL_TABLE_NAME [Physical Table Name]
-	        , OSSYS_ENTITY_ATTR.NAME [Attribute]
+        SELECT
+            OSSYS_APPLICATION.NAME [Application]
+            , OSSYS_ESPACE.NAME [Espace]
+            , OSSYS_ENTITY.NAME [Entity Name]
+            , OSSYS_ENTITY.PHYSICAL_TABLE_NAME [Physical Table Name]
+            , OSSYS_ENTITY_ATTR.NAME [Attribute]
         FROM OSSYS_APPLICATION
         JOIN OSSYS_APP_DEFINITION_MODULE
-	        ON OSSYS_APPLICATION.ID = OSSYS_APP_DEFINITION_MODULE.APPLICATION_ID
+            ON OSSYS_APPLICATION.ID = OSSYS_APP_DEFINITION_MODULE.APPLICATION_ID
         JOIN OSSYS_MODULE
-	        ON OSSYS_APP_DEFINITION_MODULE.MODULE_ID = OSSYS_MODULE.ID
+            ON OSSYS_APP_DEFINITION_MODULE.MODULE_ID = OSSYS_MODULE.ID
         JOIN OSSYS_ESPACE
-	        ON OSSYS_MODULE.ESPACE_ID = OSSYS_ESPACE.ID
+            ON OSSYS_MODULE.ESPACE_ID = OSSYS_ESPACE.ID
         JOIN  OSSYS_ENTITY
-	        ON OSSYS_ESPACE.ID  = OSSYS_ENTITY.ESPACE_ID
+            ON OSSYS_ESPACE.ID  = OSSYS_ENTITY.ESPACE_ID
         JOIN OSSYS_ENTITY_ATTR
-	        ON OSSYS_ENTITY.ID = OSSYS_ENTITY_ATTR.Entity_Id 
+            ON OSSYS_ENTITY.ID = OSSYS_ENTITY_ATTR.Entity_Id
         WHERE OSSYS_APPLICATION.IS_ACTIVE = 1 /* Active Application */
-	        AND OSSYS_APPLICATION.NAME = 'App Feedback'
-	        AND OSSYS_ESPACE.IS_ACTIVE = 1 /* Active Espaces */
-	        AND OSSYS_ESPACE.IS_SYSTEM = 0 /* Not a System Espace */
-	        AND OSSYS_ENTITY.IS_ACTIVE = 1 /* Active Entity */
-	        AND OSSYS_ENTITY.Data_Kind = 'entity' /* staticEntity, entity, clientEntity */
-	        AND OSSYS_ENTITY_ATTR.IS_ACTIVE = 1 /* Active Attributes */
-	        AND OSSYS_ENTITY_ATTR.TYPE = 
-		        CONCAT(
-		        'bt', /* Business concept Type */
-		        /* SS_Key of the Espace Owner of the Platform Entities */
-		        (	SELECT SS_KEY 
-			        FROM OSSYS_ESPACE 
-			        WHERE NAME = 'ServiceCenter'), 
-		        '*', /* Separator */
-		        /* SS_Key of the User Entity of the corresponding Espace above */
-		            (	SELECT SS_KEY 
-			        FROM OSSYS_ENTITY 
-			        WHERE NAME = 'User' 
-				        AND ESPACE_ID = (SELECT ID FROM OSSYS_ESPACE WHERE NAME = 'ServiceCenter'))
-		            )
+            AND OSSYS_APPLICATION.NAME = 'App Feedback'
+            AND OSSYS_ESPACE.IS_ACTIVE = 1 /* Active Espaces */
+            AND OSSYS_ESPACE.IS_SYSTEM = 0 /* Not a System Espace */
+            AND OSSYS_ENTITY.IS_ACTIVE = 1 /* Active Entity */
+            AND OSSYS_ENTITY.Data_Kind = 'entity' /* staticEntity, entity, clientEntity */
+            AND OSSYS_ENTITY_ATTR.IS_ACTIVE = 1 /* Active Attributes */
+            AND OSSYS_ENTITY_ATTR.TYPE =
+                CONCAT(
+                'bt', /* Business concept Type */
+                /* SS_Key of the Espace Owner of the Platform Entities */
+                (    SELECT SS_KEY
+                    FROM OSSYS_ESPACE
+                    WHERE NAME = 'ServiceCenter'),
+                '*', /* Separator */
+                /* SS_Key of the User Entity of the corresponding Espace above */
+                    (    SELECT SS_KEY
+                    FROM OSSYS_ENTITY
+                    WHERE NAME = 'User'
+                        AND ESPACE_ID = (SELECT ID FROM OSSYS_ESPACE WHERE NAME = 'ServiceCenter'))
+                    )
 ```
 
 |Application |Espace |Entity Name |Physical Table Name |Attribute |
@@ -161,71 +161,72 @@ Searching for User Entity foreign key usage requires two steps:
 Get all Roles related to every Espace in an application “Users” in one environment. This query has to be executed in both environments and cross-matched using the Espace ``SS_Key`` and Role ``SS_Key`` after getting the results.
 
 Run the following query:
-```
 
+```
 SELECT 
-  	  app.NAME [Application]
-	, espace.NAME [Espace]
-	, role.NAME [Role]
-	, role.ID [RoleId] 
-	, espace.SS_KEY [Espace SS_Key]
-	, role.SS_KEY [Role SS_Key]
+        app.NAME [Application]
+    , espace.NAME [Espace]
+    , role.NAME [Role]
+    , role.ID [RoleId]
+    , espace.SS_KEY [Espace SS_Key]
+    , role.SS_KEY [Role SS_Key]
 FROM OSSYS_APPLICATION app
 JOIN OSSYS_APP_DEFINITION_MODULE appmudule
-	ON app.ID = appmudule.APPLICATION_ID
+    ON app.ID = appmudule.APPLICATION_ID
 JOIN OSSYS_MODULE module
-	ON appmudule.MODULE_ID = module.ID
+    ON appmudule.MODULE_ID = module.ID
 JOIN  ossys_ESPACE espace
-	ON module.ESPACE_ID = espace.ID
-	AND espace.IS_ACTIVE = 1 /* Active Espace */
-	AND espace.IS_SYSTEM = 0 /* Not a System Espace */
+    ON module.ESPACE_ID = espace.ID
+    AND espace.IS_ACTIVE = 1 /* Active Espace */
+    AND espace.IS_SYSTEM = 0 /* Not a System Espace */
 JOIN ossys_Role role
-	ON espace.id = role.espace_id
-	AND role.IS_ACTIVE = 1 /* Active Role */
-WHERE app.IS_ACTIVE = 1	/* Active Applications only */
-	AND app.NAME = 'Users'
+    ON espace.id = role.espace_id
+    AND role.IS_ACTIVE = 1 /* Active Role */
+WHERE app.IS_ACTIVE = 1    /* Active Applications only */
+    AND app.NAME = 'Users'
 ```
+
 Example - partial result of the execution of the query:
 
-|Application |Espace |Role        |Espace SS_Key |Role SS_Key |
-|------------|-------|------------|--------------|------------|
+|Application |Espace |Role |RoleId |Espace SS_Key |Role SS_Key |
+|------------|-------|-----|-------|--------------|------------|
 |Users |Users |UserManager |7 |65106059-0439-4be5-b011-2f01fba4afa6 |37105987-45ed-428e-a0fa-6ec4403a3864 |
 |Users |Users |SuperUser |8 |65106059-0439-4be5-b011-2f01fba4afa6 |d63e8a6e-bd39-40d2-a4c2-6e48878682d4 |
-
 
 ## Application Data
 
 ### How to Find Where the Application Data Is
 
-Return all Entities and Physical Names of each returned Application Espace. Entities belonging to one Espace, which belongs to one Application. Espaces also belong to one or more Solutions. 
+Return all Entities and Physical Names of each returned Application Espace. Entities belonging to one Espace, which belongs to one Application. Espaces also belong to one or more Solutions.
 Espace SS Key and Entity ``SS_Key`` keep the same value between values and represent the same object between environments.
 
 Example - searching for Entities of the Application called “App Feedback”:
 
 ```
 SELECT 
-	  app.NAME [Application]
-	, espace.NAME [Espace]
-	, entity.NAME [Entity]
-	, entity.PHYSICAL_TABLE_NAME [Physical Entity Name]
-	, espace.SS_KEY [Espace SS_Key]
-	, entity.SS_KEY [Entity SS_Key]
+      app.NAME [Application]
+    , espace.NAME [Espace]
+    , entity.NAME [Entity]
+    , entity.PHYSICAL_TABLE_NAME [Physical Entity Name]
+    , espace.SS_KEY [Espace SS_Key]
+    , entity.SS_KEY [Entity SS_Key]
 FROM OSSYS_APPLICATION app
 JOIN OSSYS_APP_DEFINITION_MODULE appmodule
-	ON app.ID = appmodule.APPLICATION_ID
+    ON app.ID = appmodule.APPLICATION_ID
 JOIN OSSYS_MODULE
-	ON appmodule.MODULE_ID = OSSYS_MODULE.ID
+    ON appmodule.MODULE_ID = OSSYS_MODULE.ID
 JOIN  ossys_ESPACE espace
-	ON OSSYS_MODULE.ESPACE_ID = espace.ID
-		AND espace.IS_ACTIVE = 1 /* Active Espace */
-		AND espace.IS_SYSTEM = 0 /* Not a System Espace */
+    ON OSSYS_MODULE.ESPACE_ID = espace.ID
+        AND espace.IS_ACTIVE = 1 /* Active Espace */
+        AND espace.IS_SYSTEM = 0 /* Not a System Espace */
 JOIN  ossys_ENTITY entity
-	ON espace.ID  = entity.ESPACE_ID
-	AND entity.IS_ACTIVE = 1 /* Active Entities */
-	AND entity.Data_Kind = 'entity'
-WHERE app.IS_ACTIVE = 1 /* Active Application */ 	
-	AND app.NAME = 'App Feedback'
+    ON espace.ID  = entity.ESPACE_ID
+    AND entity.IS_ACTIVE = 1 /* Active Entities */
+    AND entity.Data_Kind = 'entity'
+WHERE app.IS_ACTIVE = 1 /* Active Application */
+    AND app.NAME = 'App Feedback'
 ```
+
 Returns the following data:
 
 |Application |Espace |Entity |Physical Entity Name |SS_KEY |SS_Key |
@@ -235,9 +236,9 @@ Returns the following data:
 
 ## BPT
 
-### How to stop the BPT Trigger on the Destination Environment? 
+### How to stop the BPT Trigger on the Destination Environment?
 
-Event Tables are used to register subscriptions that the BPT triggers. The Trigger uses data on Event tables to create entries on the BPT Event Queues. 
+Event Tables are used to register subscriptions that the BPT triggers. The Trigger uses data on Event tables to create entries on the BPT Event Queues.
 
 In Cloud infrastructures, there are no permissions to disable the BPT trigger.
 One of the possible workaround solutions to stop the trigger on the destination environment is to delete all the records on the Event Entity (``OSEVT``) related to the Entity (``OSUSR``) triggered by BPT. This way the trigger is not disabled but the result is the same because nothing is created on the BPT Event Queues to be processed by the scheduler.
@@ -257,24 +258,23 @@ DELETE FROM OSEVT_ORDER
 Example - searching for the Event entities. Running the followig query:
 
 ```
-
 select    app.NAME [Application]
-	, entity.NAME [Entity]
-	, entity.PHYSICAL_TABLE_NAME [Entity Physical Name]
-	, entity.Event_Table_Name [Event Table Name]
+    , entity.NAME [Entity]
+    , entity.PHYSICAL_TABLE_NAME [Entity Physical Name]
+    , entity.Event_Table_Name [Event Table Name]
 from ossys_Espace espace
 join ossys_entity entity
-	on espace.ID = entity.ESPACE_ID
+    on espace.ID = entity.ESPACE_ID
 join OSSYS_MODULE module
-	on espace.ID = module.ESPACE_ID
+    on espace.ID = module.ESPACE_ID
 join OSSYS_APP_DEFINITION_MODULE appmodule
-	on module.ID = appmodule.MODULE_ID
+    on module.ID = appmodule.MODULE_ID
 join OSSYS_APPLICATION app
-	on appmodule.APPLICATION_ID = app.ID
+    on appmodule.APPLICATION_ID = app.ID
 where espace.IS_ACTIVE = 1
-	and entity.Event_Table_Name is not null
-	and entity.Expose_Process_Events = 1
-	and app.IS_ACTIVE = 1
+    and entity.Event_Table_Name is not null
+    and entity.Expose_Process_Events = 1
+    and app.IS_ACTIVE = 1
 ```
 
 Returns the following data:
@@ -289,7 +289,7 @@ Returns the following data:
 |Service Center |Group_User |OSSYS_GROUP_USER |OSEVT_GROUP_USER |
 |BPT Testing |WorldCity |OSUSR_w83_WorldCity |OSEVT_w83_WorldCity |
 
-Example - fetching data contained on one of the Event Entities: 
+Example - fetching data contained on one of the Event Entities:
 
 ```
 select * 
@@ -318,35 +318,36 @@ The following query searches for Process Definitions and their Application and E
 
 ```
 SELECT 
-	  app.NAME [Application]
-	, espace.NAME [Espace]
-	, process.ID [Process Id]
+      app.NAME [Application]
+    , espace.NAME [Espace]
+    , process.ID [Process Id]
 FROM OSSYS_APPLICATION app
 JOIN OSSYS_APP_DEFINITION_MODULE appmodule
-	ON app.ID = appmodule.APPLICATION_ID
+    ON app.ID = appmodule.APPLICATION_ID
 JOIN OSSYS_MODULE module
-	ON appmodule.MODULE_ID = module.ID
+    ON appmodule.MODULE_ID = module.ID
 JOIN  ossys_Espace espace
-	ON module.ESPACE_ID = espace.ID
-	AND espace.IS_ACTIVE = 1 /* Active Espace*/
-	AND espace.IS_SYSTEM = 0 /* Not System Espace*/
+    ON module.ESPACE_ID = espace.ID
+    AND espace.IS_ACTIVE = 1 /* Active Espace*/
+    AND espace.IS_SYSTEM = 0 /* Not System Espace*/
 JOIN ossys_BPM_Process_Definition process_def
-	ON espace.id = process_def.Espace_Id 
-	AND process_def.Is_Active = 1 /* Active Process Def*/
+    ON espace.id = process_def.Espace_Id
+    AND process_def.Is_Active = 1 /* Active Process Def*/
 JOIN ossys_BPM_Process process
-	ON process.PROCESS_DEF_ID = process_def.id
+    ON process.PROCESS_DEF_ID = process_def.id
 JOIN ossys_BPM_Process_Status process_status
-	ON process.STATUS_ID = process_status.ID
-WHERE app.IS_ACTIVE = 1	/* Active Application */
+    ON process.STATUS_ID = process_status.ID
+WHERE app.IS_ACTIVE = 1    /* Active Application */
 ORDER BY espace.id, process.id
 ```
+
 Returns the following data:
 
 |Application |Espace |Process Id |
 |------------|-------|-----------|
 |Users       |Users  |31217      |
 
-You can add additional filters to get only the currently active process running (Process with Process Status with the flag ``Is Terminated``set to False). 
+You can add additional filters to get only the currently active process running (Process with Process Status with the flag ``Is Terminated``set to False).
 
 ### How to Get Activities Running Instances?
 
@@ -354,33 +355,33 @@ List processes and activities not terminated, that are currently active and runn
 The following query searches for not terminated Process Definitions, their related process instances, not terminated Activities related to the process instances, and their Application and Espaces owners:
 
 ```
-SELECT 	  app.NAME [Application]
-	, espace.NAME [Espace]
-	, process.ID [Process Id]
-	, activity.Id [Activity Id]
+SELECT       app.NAME [Application]
+    , espace.NAME [Espace]
+    , process.ID [Process Id]
+    , activity.Id [Activity Id]
 FROM OSSYS_APPLICATION app
 JOIN OSSYS_APP_DEFINITION_MODULE appmodule
-	ON app.ID = appmodule.APPLICATION_ID
+    ON app.ID = appmodule.APPLICATION_ID
 JOIN OSSYS_MODULE module
-	ON appmodule.MODULE_ID = module.ID
+    ON appmodule.MODULE_ID = module.ID
 JOIN  ossys_Espace espace
-	ON module.ESPACE_ID = espace.ID
-	AND espace.IS_ACTIVE = 1 /* Active Espace*/
-	AND espace.IS_SYSTEM = 0 /* Not System Espace*/
+    ON module.ESPACE_ID = espace.ID
+    AND espace.IS_ACTIVE = 1 /* Active Espace*/
+    AND espace.IS_SYSTEM = 0 /* Not System Espace*/
 JOIN ossys_BPM_Process_Definition process_def
-	ON espace.id = process_def.Espace_Id 
-	AND process_def.Is_Active = 1 /* Active Process Def*/
+    ON espace.id = process_def.Espace_Id
+    AND process_def.Is_Active = 1 /* Active Process Def*/
 JOIN ossys_BPM_Process process
-	ON process.PROCESS_DEF_ID = process_def.id
+    ON process.PROCESS_DEF_ID = process_def.id
 JOIN ossys_BPM_Process_Status process_status
-	ON process.STATUS_ID = process_status.ID
+    ON process.STATUS_ID = process_status.ID
 JOIN ossys_BPM_Activity activity
-	ON process.Id = activity.Process_Id
+    ON process.Id = activity.Process_Id
 JOIN ossys_BPM_Activity_Status activity_status
-	ON activity.Status_Id = activity_status.ID
-WHERE app.IS_ACTIVE = 1	/* Active Application */
-	and process_status.IS_TERMINAL = 0
-	and activity_status.IS_TERMINAL = 0
+    ON activity.Status_Id = activity_status.ID
+WHERE app.IS_ACTIVE = 1    /* Active Application */
+    and process_status.IS_TERMINAL = 0
+    and activity_status.IS_TERMINAL = 0
 ORDER BY espace.id, process.id
 ```
 
@@ -393,4 +394,3 @@ Returns the following data:
 |BPT Testing |Migration |30988 |123959 |
 |BPT Testing |Migration |30988 |123963 |
 |BPT Testing |Migration |30989 |123961 |
-

@@ -42,11 +42,11 @@ The following diagram depicts this network deployment:
 
 ![Diagram showing a Redis Server on Ubuntu 20.04.1 in a Redis Subnet with inbound connections on port 6379/TCP from Development, QA, and Test subnets separated by firewalls.](images/redis-arch-1-node-network-diag.png "Network Deployment Diagram for Redis Server")
 
-### Install and configure Redis Server
+## Install and configure Redis Server
 
 <div class="info" markdown="1">
 
-The following instructions assume that you have a server running with Ubuntu 20.04.1 LTS where you wish to install Redis Server. 
+The following instructions assume that you have a server running with Ubuntu 20.04.1 LTS where you wish to install Redis Server.
 You may need to adapt these instructions on a different operating system.
 
 </div>

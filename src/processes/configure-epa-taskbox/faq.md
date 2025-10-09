@@ -30,4 +30,3 @@ After activating the EPA Administration, you'll have a configuration page where 
 ![Screenshot showing the EPA Administration configuration screen with options to hide or show EPA on selected eSpaces.](images/How-to-configure-EPA-taskbox-preferences_1.png "EPA Administration Configuration Screen")
 
 ![Screenshot displaying a success notification indicating EPA was activated for the selected eSpaces/tenants.](images/How-to-configure-EPA-taskbox-preferences_2.png "EPA Administration Success Notification")
-

@@ -55,4 +55,3 @@ More information:
 [**Available data types**](https://success.outsystems.com/documentation/11/reference/outsystems_language/data/data_types/available_data_types/)
 
 Defines the default values for each type.
-

@@ -88,4 +88,3 @@ The diagram below focus on the architecture of the partner application of the pr
 ![Architecture diagram for a partner application, depicting the use of custom resources, B2C Style Guides, and partner and B2C base patterns and resources.](images/partner-application-architecture-diag.png "Partner Application Front-End Architecture Diagram")
 
 The partner’s B2C applications consume custom resources, the **B2C Style Guides**, partner patterns and resources defined at the **Partner Base**, and B2C patterns and resources defined at the **B2C Base** style.
-

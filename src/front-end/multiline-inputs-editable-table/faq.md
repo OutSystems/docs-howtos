@@ -29,11 +29,11 @@ Editable Table does not support inputs with new lines. However, you can use Java
 
 1. Make sure the Text Area input has the **Name** property set (for example, `myTextArea`).
 
-2. Right after this input, add an Expression with the **Escape Content** property set to `No`.
+1. Right after this input, add an Expression with the **Escape Content** property set to `No`.
 
-3. Change the Expression's **Example** property to something more meaningful, such as "`<Script: Allow Enter>`".
+1. Change the Expression's **Example** property to something more meaningful, such as "`<Script: Allow Enter>`".
 
-4. In the Expression value, enter the following JavaScript code, replacing `myTextArea` with the name of your input:
+1. In the Expression value, enter the following JavaScript code, replacing `myTextArea` with the name of your input:
 
 ```
 "<script language='javascript'>  

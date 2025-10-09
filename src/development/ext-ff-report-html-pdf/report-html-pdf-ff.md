@@ -31,16 +31,16 @@ The HTML2PDF is a wrapper to an [external toolkit](https://wkhtmltopdf.org/) tha
 
 ## Before you begin
 
-Before proceeding with this how-to read the following notes attentively. 
+Before proceeding with this how-to read the following notes attentively.
 
-* **Anonymous Screens** — Screens must have an anonymous role. It's a security concern, but it's mandatory. 
+* **Anonymous Screens** — Screens must have an anonymous role. It's a security concern, but it's mandatory.
 
-    The screen should be rendered directly by the toolkit on the server-side and shouldn't share any session variables, for example, the user roles. 
+    The screen should be rendered directly by the toolkit on the server-side and shouldn't share any session variables, for example, the user roles.
 
     To better secure the data it's suggested to implement a One-Time-Token to call your screen and keep your data safe.
 
-* **UI Patterns** — The responsive frameworks have some issues with this toolkit. This happen mainly because the toolkit doesn't wait for all JavaScript to load in the page. Also, it doesn’t support CSS variables. 
-    
+* **UI Patterns** — The responsive frameworks have some issues with this toolkit. This happen mainly because the toolkit doesn't wait for all JavaScript to load in the page. Also, it doesn’t support CSS variables.
+
     This means that you should do all customization on the report output by customizing the theme and all the CSS classes for a report.
 
 * **Last row on pages** — There is lack of control on the last row of the behavior on the tables for each page. This means that a row can be cut by the middle in the resulting pdf.
@@ -51,58 +51,57 @@ Before proceeding with this how-to read the following notes attentively.
 
         .keeptogether {page-break-inside:avoid;}`
 
-    ![Example of a table row correctly kept together on a single page in a PDF report.](images/last-row-correct.png "Correct Table Row in PDF")    
+    ![Example of a table row correctly kept together on a single page in a PDF report.](images/last-row-correct.png "Correct Table Row in PDF")
 
 * **Pagination/Header and Footer** — These features aren't out of the box in this component.
-    * To include header and footers you need to include the OtherArgs in the GeneratePDF properties: 
-    
+    * To include header and footers you need to include the OtherArgs in the GeneratePDF properties:
+
             “ — header-spacing 5 — header-html <Replace with URL Header>
             — footer-spacing 5 — footer-html <Replace with URL Footer>”
-    
+
         Also, you need to define two extra anonymous screens for the header and the footer.
 
     * To include Pagination (Page Numbering) you should add the JavaScript code below into your header (or footer) and define an expression for the Current Page with the style class ‘page’, and other for the Total Pages with the style Class ‘topage’
-        
+
             function pagination(){
                 var vars = {};
                 var x = document.location.search.substring(1).split('&');
                 for (var i in x){
-	                var z = x[i].split('=', 2);
-	                vars[z[0]] = unescape(z[1]);
-	            }
-	            var x =['frompage','topage','page','webpage','section','subsection','subsubsection'];
-	            for (var i in x){
-		            var y = document.getElementsByClassName(x[i]);		
+                    var z = x[i].split('=', 2);
+                    vars[z[0]] = unescape(z[1]);
+                }
+                var x =['frompage','topage','page','webpage','section','subsection','subsubsection'];
+                for (var i in x){
+                var y = document.getElementsByClassName(x[i]);
                     for (var j = 0; j < y.length; ++j){
-		            y[j].textContent = vars[x[i]];
-		            }
-	            }   
+                y[j].textContent = vars[x[i]];
+                }
+                }
             }
-
 
 * **Queries** — All the queries and aggregates to manipulate the data must be created from scrach for your report.
 
 ## Setting up HTML2PDF
 
-To use this component correctly you need to install the component and add some references in Service Studio. 
+To use this component correctly you need to install the component and add some references in Service Studio.
 
 ### Installing the component:
 
 1. [Download the binary  and other libraries](https://wkhtmltopdf.org/downloads.html) for the right version of the toolkit and there are some differences if you are using a cloud, an on-premise installation or even if you are in your personal environment.
-    
-    <div class="info" markdown="1">       
+
+    <div class="info" markdown="1">
     The toolkit repository has several versions, but you need to follow exactly the versions detailed in the component documentation. If you use anything different might be a nightmare to put it to work.
     </div>
 
 1. Get the 7z Archive and extract it to a local folder. Inside the folder wkhtmltox\bin, you find the files: wkhtmltopdf.exe, wkhtmltoimage.exe and wkhtmltox.dll.
 
-1. [Install the HTML2PDF component](https://success.outsystems.com/Documentation/11/Getting_started/Use_a_Forge_Component_Made_by_the_Community) in your OutSystems environment and open the application to do the setup. 
+1. [Install the HTML2PDF component](https://success.outsystems.com/Documentation/11/Getting_started/Use_a_Forge_Component_Made_by_the_Community) in your OutSystems environment and open the application to do the setup.
 
     <div class="info" markdown="1">
     You should do the setup procedure in all environments you have in your infrastructure. (Dev, QA, Prod, …)
     </div>
 
-1. Inside the application admin panel, select the tab administration. 
+1. Inside the application admin panel, select the tab administration.
 
 1. For the PDF Generator browse and upload the wkhtmltopdf.exe file. On the image Generator browse and upload the wkhtmltoimage.exe file, and lastly on the Additional Binaries, browse and upload the wkhtmltox.dll file.
 
@@ -114,7 +113,7 @@ With these selections completed your setup and you are ready to create reports.
 
 To configure the usage on Service Studio:
 
-1. Inside Service Studio access the Manage Dependencies screen. 
+1. Inside Service Studio access the Manage Dependencies screen.
 
 1. Add reference to the GeneratePDF action from HtmlToPdfConverter.
 
@@ -124,8 +123,8 @@ To configure the usage on Service Studio:
 
 1. Apply the selection to finish the setup.
 
-
 ## Creating a report
+
 To create a report, follow these steps:
 
 1. Create a ‘Sample’ screen and select the role Anonymous.
@@ -138,18 +137,18 @@ To create a report, follow these steps:
 
 1. Back to your screen, in the widget tree, remove the layout web block from this screen.
 
-1. Add a Table Records widget to the screen and add the following fields as the columns of the table: Surname, GivenName, City, State and Email. 
+1. Add a Table Records widget to the screen and add the following fields as the columns of the table: Surname, GivenName, City, State and Email.
 Use as your source records the data from the aggregate you added above.
 
     ![Screenshot of a data table being built in OutSystems Service Studio with various columns for report data.](images/building-data-table.png "Building a Data Table in Service Studio")
 
 You now have data to export in the report. To generate the report:
 
-1. Create a new screen to call the reports. 
+1. Create a new screen to call the reports.
 
-1. In the screen preparation call the GeneratePDF server action. In its parameters use MakeAbsoluteURL and pass as parameter the GetEntryURL of the screen where you have your report. 
- 
-   ** Info:** The toolkit requires the Absolute URLs to your screens to run properly.
+1. In the screen preparation call the GeneratePDF server action. In its parameters use MakeAbsoluteURL and pass as parameter the GetEntryURL of the screen where you have your report.
+
+   **Info:** The toolkit requires the Absolute URLs to your screens to run properly.
 
     ![Flowchart showing the report generation process using the GeneratePDF action in OutSystems Service Studio.](images/report-generation-flow-ss.png "Report Generation Flow in Service Studio")
 
@@ -157,13 +156,14 @@ You now have data to export in the report. To generate the report:
 
     ![Screenshot showing the configuration of the Download action in OutSystems Service Studio.](images/dowload-action-ss.png "Download Action Configuration in Service Studio")
 
-1. Run the application, go to the screen you have created and download the PDF. 
+1. Run the application, go to the screen you have created and download the PDF.
 
 The output should be:
 
 ![Sample output of a report generated by the HTML2PDF component, displaying a formatted PDF document.](images/report-output.png "Sample Report Output")
 
 ## Sample
+
 [You can find a sample](https://www.outsystems.com/forge/component-overview/1242/pdf-header-and-footer) including a Custom Theme, Header and Pagination using the PDF Header and Footer in the forge.
 
 ![Example of a PDF report with a custom header and pagination created using the HTML2PDF component.](images/sample-header-pdf.png "Sample PDF with Custom Header and Pagination")

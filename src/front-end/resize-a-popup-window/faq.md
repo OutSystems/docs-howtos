@@ -31,7 +31,7 @@ The `AutoResize` property only affects the automatic growth of the pop-up window
 -To make the pop-up **automatically shrink** according to its contents, follow these steps:
 
 1. Add the following **JavaScript snippet** to the `JavaScript` property of the **pop-up Web Screen**:
-    
+
         function PopupEditor_ForceResize() {
             var popupDiv = window.top.$(".os-internal-ui-dialog-content");
             var popupDivOldHeight = popupDiv.height();
@@ -54,5 +54,4 @@ The `AutoResize` property only affects the automatic growth of the pop-up window
 
      ![Screenshot of the RunJavaScript action with the Script property set to 'PopupEditor_ForceResize()'.](images/popup-runjavascript.png "RunJavaScript Action Configuration")
 
-     This will call the **PopupEditor_ForceResize()** JavaScript action. 
-     
+     This will call the **PopupEditor_ForceResize()** JavaScript action.

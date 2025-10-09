@@ -60,7 +60,7 @@ Before starting to implement the Hierarchical Roles example, consider the follow
 Perhaps your use case is slightly different; for instance, you could want to allow one function to report to more than one function at a time. If so, you need to adjust the code suggested in the next chapters. Those requirements are also possible to achieve with Hierarchical Roles, although they weren't included in these articles to keep the example as simple as possible.
 
 <div class="info" markdown="1">
- 
+
 [Download from the OutSystems Forge](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=8742) the Hierarchical Roles example described in this article, and publish it in your factory environment. Use it as a reference or adapt the code to implement your business case.
 
 </div>
@@ -88,7 +88,6 @@ A few notes about the data model:
 * The functions group contains the **Department** entity. Functions can relate to a specific department or business unit of your company. For instance, the Project Manager function exists in the IT department but it doesn’t exist in the sales department. In the future, the department concept is also going to help you to create a hierarchy inside a group, or department in this example. Don’t forget to adapt according to your business case.
 
 * It’s important to reinforce that the solution described here is only an example; different use cases require different implementations.
-
 
 ## Architecture
 
@@ -124,12 +123,11 @@ This module contains all BackOffice screens. Only users with the **HierarchicalR
 
 ![List of BackOffice screens in the Hierarchical Roles application.](images/backoffice-screens-list.png "BackOffice Screens List")
 
-
 ## BackOffice
 
 Now that you implemented the data model, the next step is to build the BackOffice screens to manage the Hierarchical Roles’ data and configure the hierarchy.
 
-BackOffice screens don't require complex logic, and you can take advantage of [scaffolding ](https://www.outsystems.com/learn/lesson/867/scaffolding-and-richwidgets)patterns to accelerate their development.
+BackOffice screens don't require complex logic, and you can take advantage of [scaffolding](https://www.outsystems.com/learn/lesson/867/scaffolding-and-richwidgets)patterns to accelerate their development.
 
 You need to create the following screens. Each one requires a list and a details screen:
 
@@ -157,12 +155,11 @@ The following screen shows the users list screen, used to assign functions to us
 
 ![Screenshot of the users list screen in the Hierarchical Roles BackOffice.](images/users-list-screen.png "Users List Screen")
 
-
-Your Hierarchical Roles app also needs server-side logic to implement the authorization mechanism. 
+Your Hierarchical Roles app also needs server-side logic to implement the authorization mechanism.
 
 After creating the BackOffice screens and populating the database with meaningful data, create the logic to validate permissions. Future applications are going to consume those actions.
 
-You can complement this API with other actions that you may need. The following two actions are mandatory: 
+You can complement this API with other actions that you may need. The following two actions are mandatory:
 
 ### GetPermissionsByUserId action
 
@@ -184,15 +181,15 @@ The following image depicts the **CheckPermissions** aggregate query.
 
 Retrieves a boolean value: **HasAccess**. The output variable **HasAccess** indicates if a given user has access to a given function (for example, Director, RegionalManager, etc.).
 
-The input parameter **RequiredFunctionId** represents the function that's required to access a screen. At the screen level, developers should pass the required function to access the screen. 
+The input parameter **RequiredFunctionId** represents the function that's required to access a screen. At the screen level, developers should pass the required function to access the screen.
 
 The **HasAccess** value is true when the user has the function (or a function higher up in the hierarchy) with the **RequiredFunctionId**.
 
-For example: 
+For example:
 
-* Agnes Marvs is an Account Manager. 
+* Agnes Marvs is an Account Manager.
 
-* If she accesses a screen that requires Agent Function, she is going to be able to access the screen. 
+* If she accesses a screen that requires Agent Function, she is going to be able to access the screen.
 
 * However, if Agnes Marvs tries to access a screen that requires the Director Function, she won't be able to see it.
 

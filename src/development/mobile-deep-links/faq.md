@@ -24,7 +24,7 @@ Where `<app-identifier>` is the [App identifier you defined when generating your
 
 <div class="info" markdown="1">
 
-As a best practice the App identifier of your Mobile App should be lowercase. 
+As a best practice the App identifier of your Mobile App should be lowercase.
 <br/>In deep links the `<app-identifier>` scheme must be lowercase, even if your App identifier has uppercase characters.
 </div>
 
@@ -34,7 +34,7 @@ To include values for Input Parameters in your deep link use the following synta
 
 <div class="info" markdown="1">
 
-If you use a **RedirectToURL** destination to open a external website, you can't call a deep link back to the mobile app from the external website in iOS devices. 
+If you use a **RedirectToURL** destination to open a external website, you can't call a deep link back to the mobile app from the external website in iOS devices.
 Instead if you need to open an external website, use the **OpenInExternalBrowser** client action from the [InAppBrowser Plugin](https://www.outsystems.com/forge/component-overview/1558/inappbrowser-plugin) with the **URL** set as the external website url.
 
 </div>
@@ -42,7 +42,7 @@ Instead if you need to open an external website, use the **OpenInExternalBrowser
 ## Android Intents
 
 For Android end users with Chrome you can use [Android Intents](https://developer.chrome.com/docs/android/intents).
-Android Intents allow the redirection of end users that do not have your App available on their device to your App page in the Google Play Store or to another URL specified by you. 
+Android Intents allow the redirection of end users that do not have your App available on their device to your App page in the Google Play Store or to another URL specified by you.
 
 <div class= "info" markdown= "1">
 
@@ -61,7 +61,6 @@ To specify a custom fallback URL (`<URL>`) add a string extra `S.browser_fallbac
 
 * Don't pass critical information on the URL of deep links, as deep links aren't secure by design.
 
-* The main use case of deep links in OutSystems apps is allowing navigation to specific parts of the target app. 
+* The main use case of deep links in OutSystems apps is allowing navigation to specific parts of the target app.
 
 * Ensure that actions available through deep links don’t risk users' data. For example, don’t allow other apps to directly delete content nor access sensitive information about users.
-

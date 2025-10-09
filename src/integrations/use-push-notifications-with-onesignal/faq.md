@@ -60,14 +60,14 @@ Start by adding the OneSignal plugin to the mobile app in the **Manage Dependenc
 
 In case you want to add logic to run on events over notifications, do the following:
 
-1. Add the OneSignal block to the Layout block of your application.   
+1. Add the OneSignal block to the Layout block of your application.
 
     ![Service Studio interface highlighting the OneSignal block added to the Layout block of an application](images/Layout.png "OneSignal Block in Layout")
 
-1. Add your logic to the event handlers of the OneSignal block: 
+1. Add your logic to the event handlers of the OneSignal block:
 
-    * **OnNotificationReceived**: a Client Action that runs when the app receives a notification. 
-    * **OnNotificationOpened**: a Client Action that runs when the user opens a notification. 
+    * **OnNotificationReceived**: a Client Action that runs when the app receives a notification.
+    * **OnNotificationOpened**: a Client Action that runs when the user opens a notification.
 
 ### Receiving Notifications with Deep Links for Android
 
@@ -156,16 +156,15 @@ To send a notification with a simple message in English, do the following in the
 
 ![Flowchart in Service Studio showing the steps to send a notification with Assign, ListAppend, and SendPushNotificationToUserId actions](images/One-Signal-SendNotification-flow-steps.png "Send Notification Flow Steps")
 
-1. **Assign** the message text and the English language code `"en"` to the Message local variable of data type "Content"; 
+1. **Assign** the message text and the English language code `"en"` to the Message local variable of data type "Content";
 
     ![Service Studio interface showing the Assign action with Message.Lang set to 'en' and Message.Value set to a notification text](images/One-Signal-Flow-assign-element.png "Assign Action in Send Notification Flow")
 
-2. **Append** this local variable to the list of notifications to send which is kept in the MessageList local variable of data type "Content List"; 
+1. **Append** this local variable to the list of notifications to send which is kept in the MessageList local variable of data type "Content List";
 
     ![Service Studio interface showing the ListAppend action appending a Message to the MessageList](images/One-Signal-Flow-listappend-element.png "ListAppend Action in Send Notification Flow")
 
-3. **Send** the notification supplying the MessageList variable as the Message input parameter. 
-
+1. **Send** the notification supplying the MessageList variable as the Message input parameter.
 
 ## Remarks
 

@@ -24,7 +24,7 @@ Applies only to Traditional Web Apps
 
 </div>
 
-How can I create a scrollable table that has a fixed header? 
+How can I create a scrollable table that has a fixed header?
 
 For example: I am using the Table Records Widgets to show the name and location of several stores. I want my table to be vertically scrollable and I want the header row to always be visible.
 
@@ -40,11 +40,11 @@ To create a scrollable table that always shows the header, follow these steps:
 
 1. In the **FixedTableHeader** Table, recreate the header text from the **TableBodyScroll** Record Table. In this case write `Name` in the first column and `City` in the second column.
 
-1. For each one of the Cells in **FixedTableHeader**  set the `Style Classes` to `TableRecords_Header`. 
+1. For each one of the Cells in **FixedTableHeader**  set the `Style Classes` to `TableRecords_Header`.
 
 1. For the first Cell of the **FixedTableHeader** select the Styles Editor and add `padding: 10px 10px 10px 20px;` to the `Style Properties Applied`. Set the padding of the other Cell to `padding: 10px;`.
 
-1. Select the **TableBodyScroll** Table Records and set the Properties `Show Header` to `No` and `Margin Top` to `0px`. 
+1. Select the **TableBodyScroll** Table Records and set the Properties `Show Header` to `No` and `Margin Top` to `0px`.
 
     This will hide the original header and remove the top margin.
 

@@ -27,14 +27,13 @@ Take into account the following considerations:
 * When a new Static Entity is published, the OutSystems Platform creates:
     * Entity info for the new Static Entity (``OSSYS_ENTITY``)
     * Entity Attributes info (``OSSYS_ENTITY_ATTR``)
-    * Entity Records (``OSSYS_ENTITY_RECORD``), with special attribute Data ID with the corresponding value of the Physical Application Table ID 
+    * Entity Records (``OSSYS_ENTITY_RECORD``), with special attribute Data ID with the corresponding value of the Physical Application Table ID
     * The Physical applicational Table with the attribute values set for each record
     * Static Entities are managed by the OutSystems Platform and can be consumed by other applications when exposed. This info should not be changed directly in the database.
     * Since the Static Entity Records can have different Data IDs for each Environment (meaning different IDs on the Physical Table), this information should match between environments and taken into consideration when migrating applicational info using static entities foreign keys.
     * The Entity Record ``SS_Key`` is not unique. To be unique, it has to be combined with the related Espace ``SS_Key`` and that is the way to match and map the same Entity Record between two different environments
     * Check the flag ``Is_Active`` to include or exclude inactive - soft-deleted info
     * Deleting records from the Static Entity sets the ``Is_Active`` flag, and will not delete the info from the Entity Record~
-
 
 ## How the OutSystems Platform Manages Static Entities - Example
 
@@ -55,14 +54,14 @@ After publishing the Espace you can search for the created Entity info:
 
 ```
 SELECT 
-	OSSYS_ENTITY.NAME,
-	OSSYS_ENTITY.DATA_KIND,
-	OSSYS_ENTITY.PHYSICAL_TABLE_NAME
+    OSSYS_ENTITY.NAME,
+    OSSYS_ENTITY.DATA_KIND,
+    OSSYS_ENTITY.PHYSICAL_TABLE_NAME
 FROM OSSYS_ENTITY
 WHERE OSSYS_ENTITY.NAME = 'CitySize' 
-	AND OSSYS_ENTITY.ESPACE_ID = (
-		SELECT ID FROM OSSYS_ESPACE WHERE NAME = 'CityManager'
-	)
+    AND OSSYS_ENTITY.ESPACE_ID = (
+    SELECT ID FROM OSSYS_ESPACE WHERE NAME = 'CityManager'
+    )
 ```
 
 |Id|Data_Id|Name|SS_Key|Entity_SS_Key|Espace_Id|Is_Active|
@@ -76,12 +75,12 @@ And in the physical table we get the physical attributes info:
 
 ```
 SELECT
-	Id,
-	Name,
-	Order,
-	Is_Active,
-	MinSize,
-	MaxSize
+    Id,
+    Name,
+    Order,
+    Is_Active,
+    MinSize,
+    MaxSize
 FROM OSUSR_5Z9_CITYSIZE 
 ORDER BY [ORDER]
 ```
@@ -115,7 +114,7 @@ And then, in the physical table, the corresponding row is deleted.
 
 ### Create Static Entity Record with the Same Name as Previous Deleted Record
 
-Create a record named ``Small``, which is the same name as the record that was deleted before. Its size parameters are from 101 to 5000. 
+Create a record named ``Small``, which is the same name as the record that was deleted before. Its size parameters are from 101 to 5000.
 After publishing the Espace, the information on the Entity Record is:
 
 |Id|Data_Id|Name|SS_Key|Entity_SS_Key|Espace_Id|Is_Active|
@@ -127,7 +126,7 @@ After publishing the Espace, the information on the Entity Record is:
 |8588|5|Tiny|260e479c-5c4c-4fe7-986a-bdf116b8e4f4|b2257cc9-9454-40cd-845f-dc065e5e5551|679|1|
 |8589|6|Small|611d1096-61be-4fbb-9303-66a0c56eacf7|b2257cc9-9454-40cd-845f-dc065e5e5551|679|1|
 
-A new record has been created, and the previously deleted record has not been activated. 
+A new record has been created, and the previously deleted record has not been activated.
 The static entity physical table has a new record related with the new entity record:
 
 |Id|Name|Order|Is_Active|MinSize|MaxSize|
@@ -151,7 +150,7 @@ This section shows an example of how the OutSystems Platform Manages Static Enti
 |**Producers**    |
 |-----------------|
 |OSSYS_ESPACE     |
-   
+
 |**Consumers**    |
 |-----------------|
 |-                |

@@ -46,7 +46,7 @@ To create a LifeTime plugin:
     ![Web page section with a link to start developing a LifeTime plugin.](images/How-to-create-a-LifeTime-Plugin-4.png "Start Plugin Development")
 
     * By creating a new application in Service Studio while connected to the environment where the SDK was installed. A new template for  LifeTime plugins should now be present:
-    
+
     ![Service Studio interface showing the LifeTime Plugin template selection.](images/How-to-create-a-LifeTime-Plugin-5.png "LifeTime Plugin Template")
 
     This template already has:

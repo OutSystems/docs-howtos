@@ -45,7 +45,7 @@ The categorized System Entities can be subgrouped by different topics:
     * Solutions, Versions and Publication Traces
     * Entities, Attributes, and Records
 
-*   Support the Applications
+* Support the Applications
     * BPT definitions
     * Tenants
     * Timers
@@ -59,6 +59,7 @@ The categorized System Entities can be subgrouped by different topics:
     * Other
 
 #### Examples
+
 The following table shows an examples of system entities:
 
 | **System Entities** |
@@ -94,7 +95,7 @@ The following tables shows an examples of system application settings:
 
 ### Application Entities
 
-These tables are usually recognized by the prefix `OSUSR_`in their name and relate directly to the application development. Applicational entities relate to the business and do not exist until the application is created. 
+These tables are usually recognized by the prefix `OSUSR_`in their name and relate directly to the application development. Applicational entities relate to the business and do not exist until the application is created.
 
 The data migration process must be allowed to read and write on these entities, except for the physical static entities’ info that should not be changed because it is normally being consumed in other entities as foreign keys in one or more applications.
 The nature of these tables is very flexible and it depends on how the code was developed.
@@ -108,8 +109,8 @@ These are the tables that are managed by the OutSystems Platform (similar to pur
 You must have a good understanding of these types of tables because in a data migration process it is required to read them, and to write on them as well - however under certain conditions.
 These entities can be subgrouped by categories:
 
-* Users 
-* BPT Processes Instances 
+* Users
+* BPT Processes Instances
 * BPT Activities Instances
 * BPT Events
 * Emails

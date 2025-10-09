@@ -33,7 +33,7 @@ Before you start, make sure you meet the [system requirements](requirements.md) 
 
 <div class="info" markdown="1">
 
-The following instructions show how to set up a dedicated Redis Cluster with three servers, each of them running Ubuntu 20.04.1 LTS. 
+The following instructions show how to set up a dedicated Redis Cluster with three servers, each of them running Ubuntu 20.04.1 LTS.
 You may need to adapt these instruction for different operating systems.
 
 </div>

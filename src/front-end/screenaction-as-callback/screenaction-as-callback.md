@@ -16,9 +16,9 @@ coverage-type:
   - apply
 ---
 
-# How to use screen actions as callbacks on UI element events 
+# How to use screen actions as callbacks on UI element events
 
-Using screen actions as callbacks can be helpful when you want to run a screen action to change the UI or call server side actions after a custom event in a UI component.    
+Using screen actions as callbacks can be helpful when you want to run a screen action to change the UI or call server side actions after a custom event in a UI component.
 
 The following example showcases how you can use screen actions as callbacks. The scenario demonstrates how you can display a message to the user when a Date Picker is open.
 
@@ -44,7 +44,7 @@ The following example showcases how you can use screen actions as callbacks. The
 
 ## Use the Date Picker event to show or hide the message
 
-1. To create a handler for the Initialized event, go back to the screen, select the Date Picker, and from the **Handler** dropdown, select **New Client Action**. 
+1. To create a handler for the Initialized event, go back to the screen, select the Date Picker, and from the **Handler** dropdown, select **New Client Action**.
 1. Add a JavaScript node to the client action and call it **HandleOpenAndCloseEvent**.
 1. Add an input parameter in the JavaScript node called **WidgetId** of type **Text**.
 1. To set the **TooglePickerDateStatus** client action as the callback for the Date Picker's open and close events, use the ollowing JavaScript code inside the JavaScript node:
@@ -58,5 +58,3 @@ The following example showcases how you can use screen actions as callbacks. The
 The Date Picker component is built on top of the **flatpickr library**. For more information about the events that handle the opening and closing of the Date Picker, see [Events](https://flatpickr.js.org/events/#events)
 
 </div>
-
-

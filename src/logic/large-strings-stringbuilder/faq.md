@@ -47,4 +47,3 @@ The specific use case that took 8 minutes now takes less than 30 seconds.
 <div class="warning" markdown="1">
 Beware of using string concatenation to build parts of larger strings. String concatenation can have a large impact on performance.
 </div>
-

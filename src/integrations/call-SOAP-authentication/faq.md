@@ -35,4 +35,3 @@ if your web service requires authentication then what you need to do is first fe
 Also if your WS requires authentication when invoking you might have to set the proper credentials. For that you can use the **SetWebReferenceCredentials** from the **EnhancedWebReferences** extension to set the username and password.
 
 ![Screenshot of the EnhancedWebReferences extension in OutSystems showing the 'SetWebReferenceCredentials' action selected.](images/How-to-call-a-SOAP-web-service-with-authentication_1.png "SetWebReferenceCredentials Action in OutSystems")
-

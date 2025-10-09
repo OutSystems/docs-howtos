@@ -33,10 +33,9 @@ And there is also the Activities that belong to the Process:
 
 ![Diagram depicting various BPT process activities, their statuses, and interrelationships.](images/bpt-activities-belonging-to-process.png "BPT Activities Belonging to Process Diagram")
 
-
 The records for the entities in the previous can be generated from the following sources:
 
-* Service Studio 
+* Service Studio
     * Publishing Espaces with new or changed Processes and Activities
 
 * Service Center
@@ -50,7 +49,6 @@ The records for the entities in the previous can be generated from the following
 
 The instance entities (in red) are hybrid since their source is the application usage in runtime. In this case, the entities are not changed by the application development and are managed by the OutSystems Platform. But the data is populated into these by the application usage in runtime.
 
-
 ## Considerations
 
 ### Global
@@ -58,10 +56,10 @@ The instance entities (in red) are hybrid since their source is the application 
 * System Definitions Entities (Read-Only)
     Definition entities are populated and changed after publishing the Espace where the BPT flows are designed and implemented. This info should not be migrated and changed in a data migration process
 
-* Foreign Keys Dependencies 
+* Foreign Keys Dependencies
     Don’t forget to map the foreign keys that differ between environments, like the User identifiers (``Created_By``, ``Last_Modified_By``, ``Syspended_By``, ``User_Id``, ``Group_Id``)
 
-* Mapping Ids Between Environments with ``SS_Keys`` 
+* Mapping Ids Between Environments with ``SS_Keys``
     The Definitions Entities Identifiers can be mapped between different environments using the ``SS_Key`` composed with the Espace ``SS_KEY``. These SS_Keys are unique and equal between environments if always used together.
 
     It’s possible to have different solutions and approaches on how to map IDs between different environments, and then apply the changes to the foreign keys that are migrated, depending on if the ID is already mapped or if it will only be mapped after an insert. Then, there is the option to use a 2-steps approach to insert records with null foreign keys, and then a second iteration to update the foreign keys if needed, or another possible approach of using temporary tables.
@@ -111,7 +109,7 @@ Also, when an Activity is developed to start on (Activity type of Conditional St
 * Creates or updates a Trigger assigned to the entity being triggered by the process (``OSUSR_``)
 * When a new Activity is instantiated, Insert a new record on the Event Entity related with the entity being triggered by the activity (``OSEVT_``) - with the Activity Identifier relation
 
-Then, when a new record is created or updated in the triggered entity the trigger checks the event entity related and inserts a job to be treated by the schedule into the queues, based on the process configuration or the activity and what is in the Event Entity. 
+Then, when a new record is created or updated in the triggered entity the trigger checks the event entity related and inserts a job to be treated by the schedule into the queues, based on the process configuration or the activity and what is in the Event Entity.
 
 ## How the OutSystems Platform Manages BPT Entities - Example
 
@@ -121,7 +119,7 @@ This section shows an example of how the OutSystems Platform Manages BPT Entitie
 
 #### Process
 
-Consider you have a Process called "Candidate Selection" and it is triggered by a "Candidate Insertion". 
+Consider you have a Process called "Candidate Selection" and it is triggered by a "Candidate Insertion".
 Create a candidate called "John Doe" filling out an entity record form Candidate. This creates a new process instance in runtime with a Process Id.
 The process can be found in Service Center:
 
@@ -131,11 +129,11 @@ The Process is stored in the Process Entity. You can use the following command t
 
 ```
 SELECT Top 1 
-	OSSYS_BPM_Process.*
-	, OSSYS_BPM_Process_Status.NAME StatusName
+    OSSYS_BPM_Process.*
+    , OSSYS_BPM_Process_Status.NAME StatusName
 FROM OSSYS_BPM_Process
 INNER JOIN OSSYS_BPM_Process_Status 
-	ON OSSYS_BPM_Process.STATUS_ID = OSSYS_BPM_Process_Status.id
+    ON OSSYS_BPM_Process.STATUS_ID = OSSYS_BPM_Process_Status.id
 ORDER BY ID Desc
 ```
 
@@ -241,7 +239,7 @@ It is possible to find some information about the launched process. The ``Status
 
 ```
 SELECT
-	OSSYS_BPM_Process_Input.*
+    OSSYS_BPM_Process_Input.*
 FROM OSSYS_BPM_Process_Input
 WHERE OSSYS_BPM_Process_Input.Process_Id = 11266
 ```
@@ -307,32 +305,31 @@ bt44832b6b-eaf6-481b-b355-2eaaa488dbc4*8bfa817a-1092-472c-a14e-bc9e2ad9403b
 
 This record is all the input that you can find about this Process, one parameter called ``CandidateId``. you can see that the Basic Type is Integer but in fact it is an identifier.
 If the ``SS_Type`` has this kind of content, then it indicates that it is an Entity Identifier.
-To find out which Entity is, you should look at it: 
+To find out which Entity is, you should look at it:
 
 bt**44832b6b-eaf6-481b-b355-2eaaa488dbc4*8bfa817a-1092-472c-a14e-bc9e2ad9403b**
 
-The bold **44832b6b-eaf6-481b-b355-2eaaa488dbc4** is the Espace ``SS_Key``, and 
+The bold **44832b6b-eaf6-481b-b355-2eaaa488dbc4** is the Espace ``SS_Key``, and
 
 **8bfa817a-1092-472c-a14e-bc9e2ad9403b** is the Entity ``SS_key``.
 The following command shows the Entity Name and Entity Physical Table that is related to this Process.
 
 ```
 SELECT 
-	Name,
-	Physical_Table_Name 
+    Name,
+    Physical_Table_Name
 FROM OSSYS_ENTITY
 INNER JOIN OSSYS_ESPACE 
-	ON OSSYS_ENTITY.ESPACE_ID = OSSYS_ESPACE.Id 
-		AND OSSYS_ESPACE.SS_KEY = '44832b6b-eaf6-481b-b355-2eaaa488dbc4'
+    ON OSSYS_ENTITY.ESPACE_ID = OSSYS_ESPACE.Id
+        AND OSSYS_ESPACE.SS_KEY = '44832b6b-eaf6-481b-b355-2eaaa488dbc4'
 WHERE OSSYS_ENTITY.SS_KEY = '8bfa817a-1092-472c-a14e-bc9e2ad9403b'
 ```
 
 The result is ``Candidate`` and ``OSUSR_3ar_Candidate`` (Entity Name, and Physical Table Name) to find which Candidate is related to this Process.
 
-
 ```
 SELECT
-	*
+    *
 FROM OSUSR_3ar_Candidate
 WHERE Id = 21
 ```
@@ -343,9 +340,9 @@ Tip: Usually the Identifier is named ``Id``. You can fetch the Identifier name i
 SELECT OSSYS_ENTITY_Attr.Name
 FROM OSSYS_ENTITY
 INNER JOIN OSSYS_ENTITY_Attr 
-	ON OSSYS_ENTITY.PRIMARYKEY_SS_KEY = OSSYS_ENTITY_Attr.ss_Key 
-	AND OSSYS_ENTITY_Attr.IS_ACTIVE=1
-	AND OSSYS_ENTITY.ID = OSSYS_ENTITY_Attr.ENTITY_ID
+    ON OSSYS_ENTITY.PRIMARYKEY_SS_KEY = OSSYS_ENTITY_Attr.ss_Key
+    AND OSSYS_ENTITY_Attr.IS_ACTIVE=1
+    AND OSSYS_ENTITY.ID = OSSYS_ENTITY_Attr.ENTITY_ID
 WHERE OSSYS_ENTITY.Physical_Table_name = 'OSUSR_3ar_Candidate'
 ```
 
@@ -359,13 +356,13 @@ To see what is inside the Activity, use the following command:
 
 ```
 SELECT 
-	OSSYS_BPM_Activity.ID
-	,OSSYS_BPM_Activity.ACTIVITY_DEF_ID
-	,OSSYS_BPM_Activity.PROCESS_ID
-	,OSSYS_BPM_Activity.NAME
-	,OSSYS_BPM_Activity.USER_ID
-	,OSSYS_BPM_Activity.CLOSED
-	,OSSYS_BPM_Activity.STATUS_ID
+    OSSYS_BPM_Activity.ID
+    ,OSSYS_BPM_Activity.ACTIVITY_DEF_ID
+    ,OSSYS_BPM_Activity.PROCESS_ID
+    ,OSSYS_BPM_Activity.NAME
+    ,OSSYS_BPM_Activity.USER_ID
+    ,OSSYS_BPM_Activity.CLOSED
+    ,OSSYS_BPM_Activity.STATUS_ID
 FROM OSSYS_BPM_Activity
 WHERE OSSYS_BPM_Activity.Process_Id = 11266
 ```
@@ -392,7 +389,7 @@ Run the following command:
 SELECT OSSYS_BPM_Process.*,OSSYS_BPM_Process_STATUS.Name
 FROM OSSYS_BPM_Process
 INNER JOIN OSSYS_BPM_Process_STATUS 
-	ON OSSYS_BPM_Process.Status_Id = OSSYS_BPM_Process_STATUS.Id
+    ON OSSYS_BPM_Process.Status_Id = OSSYS_BPM_Process_STATUS.Id
 WHERE OSSYS_BPM_Process.Id = 11266
 ```
 
@@ -575,13 +572,13 @@ Use the command below to show all the Activities involved in the Process.
 
 ```
 SELECT 
-	OSSYS_BPM_Activity.ID
-	,OSSYS_BPM_Activity.ACTIVITY_DEF_ID
-	,OSSYS_BPM_Activity.PROCESS_ID
-	,OSSYS_BPM_Activity.NAME
-	,OSSYS_BPM_Activity.USER_ID
-	,OSSYS_BPM_Activity.CLOSED
-	,OSSYS_BPM_Activity.STATUS_ID
+    OSSYS_BPM_Activity.ID
+    ,OSSYS_BPM_Activity.ACTIVITY_DEF_ID
+    ,OSSYS_BPM_Activity.PROCESS_ID
+    ,OSSYS_BPM_Activity.NAME
+    ,OSSYS_BPM_Activity.USER_ID
+    ,OSSYS_BPM_Activity.CLOSED
+    ,OSSYS_BPM_Activity.STATUS_ID
 FROM OSSYS_BPM_Activity
 WHERE OSSYS_BPM_Activity.Process_Id = 11266
 ORDER BY OSSYS_BPM_Activity.Created
@@ -602,13 +599,13 @@ To see where the Input and Output parameters that passed through the Activities 
 
 ```
 SELECT 
-	OSSYS_BPM_Activity.Name Activity,
-	OSSYS_BPM_Activity_Output.*
+    OSSYS_BPM_Activity.Name Activity,
+    OSSYS_BPM_Activity_Output.*
 FROM OSSYS_BPM_Process
 INNER JOIN OSSYS_BPM_Activity 
-	ON OSSYS_BPM_Process.Id = OSSYS_BPM_Activity.Process_Id 
+    ON OSSYS_BPM_Process.Id = OSSYS_BPM_Activity.Process_Id
 INNER JOIN OSSYS_BPM_Activity_Output 
-	ON OSSYS_BPM_Activity.Id = OSSYS_BPM_Activity_Output.Activity_Id 
+    ON OSSYS_BPM_Activity.Id = OSSYS_BPM_Activity_Output.Activity_Id
 WHERE OSSYS_BPM_Process.Id = 11266
 ```
 
@@ -622,7 +619,6 @@ WHERE OSSYS_BPM_Process.Id = 11266
 By using this query, it is possible to see the ``ActivityName``, the Parameter Name found on the fifth column, and it is possible to compare the values of the sheet with the screenshot below:
 
 ![Screenshot of the activity output at the finish of a BPT process, showing the final status and results.](images/bpt-finish-activity-output.png "BPT Finish Activity Output")
-
 
 ### BPT Scheduler
 
@@ -638,7 +634,7 @@ Use the following command repeatedly to show trigger names and its content.
 SELECT t.name Name, m.definition Definition
 FROM sys.triggers t
 INNER JOIN sys.sql_modules m 
-	ON t.object_id = m.object_id
+    ON t.object_id = m.object_id
 ```
 
 The following table shows the 20 results found. First, create the ``ChangePerson`` Process and fill the ``LaunchOn`` parameter with the entity action ``CreatePerson``. Then, publish the Espace. Finally, run the command again and check if a new trigger is created.
@@ -655,5 +651,5 @@ You created a process that is triggered to be ``LaunchOn`` of the action ``Creat
 
 Now you can create one activity that is triggered to be ``ClosedOn`` during the ``UpdatePerson`` action.
 
-The trigger created for the process defined to be ``StartOn`` is also the same used for the activities defined to be ``StartOn`` or ``ClosedOn``. 
+The trigger created for the process defined to be ``StartOn`` is also the same used for the activities defined to be ``StartOn`` or ``ClosedOn``.
 In this example the name of the trigger is ``SOSTRG_EI__OSUSR_GTU_PERSON``.

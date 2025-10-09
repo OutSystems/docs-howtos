@@ -33,4 +33,3 @@ Blank cells cannot be interpreted as numeric, either integer or decimal. You hav
 * Change the spreadsheet. Change blank cells defined as numeric fields to 0.
 
 * Change the import process. Define the numeric fields as Text. Then, use a [Data Type Conversion](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Logic/Built-in_Functions/Data_Conversion) function such as **TextToDecimal** to convert the text to Decimal or Integer.
-

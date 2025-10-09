@@ -21,7 +21,7 @@ topic:
 
 # Using Taskbox in Reactive Web Apps
 
-Taskbox is part of the user interface that lets your users handle tasks issued by Business Process Technology (BPT). To show a taskbox in Reactive Web Apps, use the Taskbox Block from the [Sample Reactive Taskbox component](https://www.outsystems.com/forge/component-overview/8355/sample-reactive-taskbox). 
+Taskbox is part of the user interface that lets your users handle tasks issued by Business Process Technology (BPT). To show a taskbox in Reactive Web Apps, use the Taskbox Block from the [Sample Reactive Taskbox component](https://www.outsystems.com/forge/component-overview/8355/sample-reactive-taskbox).
 
 ![Screenshot showing an expanded Taskbox in a web browser with tasks listed for user interaction.](images/taskbox-browser-preview-expanded.png "Expanded Taskbox Preview in Browser")
 
@@ -40,7 +40,7 @@ To follow this example, create an Invoice Entity, with fields Price, Client, and
 Follow the steps to create an example Process to handle invoices. Once a new invoice is created, the user needs to process the payment and manually set the status as paid.
 
 1. Go to the **Process** tab > right-click the **Processes** folder > select **Add Process**. In the Process properties:
-    
+
     * Enter "InvoiceProcessing" in the **Name** field.
     * Double-click the **Launch On** field and select Server Action that creates invoices. Now a new task is created every time there's a new invoice.
     * Enter `"Invoices and payments"` in the **Detail** field.
@@ -63,7 +63,7 @@ Follow the steps to create an example Process to handle invoices. Once a new inv
         ![Screenshot showing the placement of the Taskbox Block within the layout of a Reactive Web App in OutSystems Service Studio.](images/taskbox-layout-placement-ss.png "Taskbox Layout Placement in Service Studio")
 
 1. Publish the app and add some sample invoices. The number of tasks shows in the widget. Click the widget to expand the list.
-     
+
      ![Screenshot displaying the Taskbox widget in a web browser with a count of pending tasks.](images/taskbox-browser-preview-count.png "Taskbox Preview with Task Count in Browser")
 
 ## Customizing the Taskbox

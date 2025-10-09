@@ -18,7 +18,6 @@ coverage-type:
 
 # How to Export Entity Data to Excel
 
-
 To export the data you must use the **Record List To Excel** action. This generates an Excel worksheet with the data existing on a selected entity. You then need to enable the user to download the generated Excel file.
 
 This article shows how it's done in both [Reactive Web](#reactive) and [Traditional Web](#traditional-web).
@@ -38,7 +37,7 @@ In this example lets start by creating a users list screen, by dragging the User
 
 1. On the **Data** tab, expand the **(System)** entry of the **Database**, and drag the **User** entity to the development main editor:
 
-    ![Screenshot showing the process of creating a user list screen by dragging the User entity to the main flow in Service Studio.](images/create_screen_ss.png "Creating a User List Screen") 
+    ![Screenshot showing the process of creating a user list screen by dragging the User entity to the main flow in Service Studio.](images/create_screen_ss.png "Creating a User List Screen")
 
 1. Double-click the **Users** screen to open the screen.
 

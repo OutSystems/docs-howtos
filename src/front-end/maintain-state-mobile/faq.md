@@ -19,11 +19,11 @@ coverage-type:
 
 How can I maintain the state of a screen in a mobile app while navigating across screens?
 
-For instance, in this app, the home screen has a list of To-Do items and notes concerning each item. 
+For instance, in this app, the home screen has a list of To-Do items and notes concerning each item.
 
 ![Screenshot of the home screen in a mobile app displaying a list of To-Do items with titles and notes.](images/maintain-state-1.png "Home Screen with To-Do List")
 
-If I click on the search icon, I am redirected to a Search screen where I can search the list of To-Dos by title and by the contents in the notes. 
+If I click on the search icon, I am redirected to a Search screen where I can search the list of To-Dos by title and by the contents in the notes.
 
 ![Screenshot of the search screen in a mobile app with input fields for searching To-Do items by title and notes.](images/maintain-state-2.png "Search Screen Interface")
 

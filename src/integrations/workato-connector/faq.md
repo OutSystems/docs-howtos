@@ -31,7 +31,6 @@ After installing the connector and setting up access rules, you will be able to:
 
 ![Diagram showing the integration process between third-party services, Workato, and OutSystems.](images/workato-diagram.png "Workato Integration Diagram")
 
-
 ## Installation overview
 
 Before being able to use the connector, you will need to perform several configurations:
@@ -39,7 +38,7 @@ Before being able to use the connector, you will need to perform several configu
 **In your OutSystems environment:**
 
 1. Install the OutSystems Workato Connector component from the Forge.
-1. Create an API key, used to secure the available APIs, and define the rules for accessing OutSystems entities using the setup screens of the component. 
+1. Create an API key, used to secure the available APIs, and define the rules for accessing OutSystems entities using the setup screens of the component.
 
 **In Workato:**
 
@@ -74,7 +73,7 @@ After installing the component in your OutSystems environment do the following:
 1. In the API key creation screen, enter a name for the key by clicking the first heading of the page.
 
 1. Define the scope of this API key by selecting the OutSystems entities that the key will have access to.  
-    Select the **Read**, **Write** or **Read / Write** checkboxes on the right side of the screen according to the kind of access you want to provide for each entity: **Read** for read-only access and **Write** for write access. The **Read / Write** checkbox is an accelerator that will automatically select both **Read** and **Write** checkboxes for an entity. 
+    Select the **Read**, **Write** or **Read / Write** checkboxes on the right side of the screen according to the kind of access you want to provide for each entity: **Read** for read-only access and **Write** for write access. The **Read / Write** checkbox is an accelerator that will automatically select both **Read** and **Write** checkboxes for an entity.
 
     ![Screenshot showing the configuration options for selecting entity access levels when creating an API key.](images/bo-configure-entities.png "Configure Entities for API Key")
 
@@ -90,7 +89,7 @@ If the key is created successfully, you can copy its value to the clipboard dire
 
 ## Installation in the Workato environment { #installation-workato }
 
-You must create an app connection and provide the connection parameters to connect Workato to OutSystems. 
+You must create an app connection and provide the connection parameters to connect Workato to OutSystems.
 
 1. In Workato open the **App Connections** tab and click **Create a new connection**.
 
@@ -127,7 +126,6 @@ In this document you will find example configurations for two different integrat
 You can implement either just one of these integration types or both, depending on your use case requirements.
 
 ### Set up a Workato recipe triggered by changes in an OutSystems entity
-
 
 <div class="info" markdown="1">
 

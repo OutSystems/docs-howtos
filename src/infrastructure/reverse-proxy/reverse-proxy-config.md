@@ -96,9 +96,9 @@ In **SSL Offload** scenarios, two configurations need to be applied:
 1. Add a custom HTTP header at the reverse proxy level. The header instructs OutSystems which was the protocol used in the request received by the reverse proxy.
 
     To do so, configure a rule in the reverse proxy that adds the parameter `X-Forwarded-Proto` with value of:
-    
+
     * `https` if the received request by the reverse proxy was using the HTTPS scheme.
-    
+
     * `http` otherwise.
 
 1. In the OutSystems database, create the `OutSystems.HubEdition.HTTPtoHTTPSproxyHeader` parameter:
@@ -125,7 +125,7 @@ After applying the above configurations, the following must be executed:
 
 ### Server.API and Server.Identity configurations
 
-Server.API and Server.Identity only support the standard header names for protocol identification - `X-Forwarded-Proto` and originating IP address of a request - `X-Forwarded-For`. This means that the reverse proxy needs to set the necessary information in the HTTP headers using those header names, otherwise you might encounter errors. 
+Server.API and Server.Identity only support the standard header names for protocol identification - `X-Forwarded-Proto` and originating IP address of a request - `X-Forwarded-For`. This means that the reverse proxy needs to set the necessary information in the HTTP headers using those header names, otherwise you might encounter errors.
 
 ## D - Rewrite URLs in resources { #rewrite-urls }
 
@@ -187,7 +187,7 @@ Alternatively, from the Factory Configuration app (available from the Forge), un
 
 ### Application Server Level
 
-#### Microsoft IIS 
+#### Microsoft IIS
 
 1. Create the `IIS.SetHttpCompression` parameter in the OutSystems database, if it doesn't exist:
 
@@ -200,7 +200,7 @@ Alternatively, from the Factory Configuration app (available from the Forge), un
     **Values:** `True` / `False`
 
     **Default:** `True`
-    
+
     Alternatively, from the Factory Configuration app (available from the Forge), uncheck the **Force IIS Compression** checkbox.
 
 1. In IIS Management Console, [disable the static and dynamic content compression](https://www.iis.net/configreference/system.webserver/httpcompression).
@@ -210,7 +210,7 @@ Alternatively, from the Factory Configuration app (available from the Forge), un
 1. In the OutSystems servers, edit the file `/opt/jboss-as-7.1.1.Final/bin/standalone-outsystems.properties`.
 
 1. Set `org.apache.coyote.http11.Http11Protocol.COMPRESSION` to `off`.
- 
+
 1. Restart JBoss.
 
 #### Wildfly 8.2

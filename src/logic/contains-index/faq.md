@@ -19,7 +19,7 @@ coverage-type:
 # How to find out if a string is contained in another string
 
 How do I check if a certain text string contains another text string?  
-Is there an equivalent to the C# String.Contains function?    
+Is there an equivalent to the C# String.Contains function?
 
 ## Answer
 

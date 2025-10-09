@@ -35,13 +35,13 @@ Developing Reactive Web Apps is a highly performant and scalable way to build ap
 
 ## Why migrating your apps to Reactive Web
 
-Migrating your apps to Reactive Web lets you to boost their performance, and make them more secure by letting you have all sensitive data processed on the server side only. It's also an opportunity to refactor your apps, offering your users a modern UI and a smooth experience while using your apps. 
+Migrating your apps to Reactive Web lets you to boost their performance, and make them more secure by letting you have all sensitive data processed on the server side only. It's also an opportunity to refactor your apps, offering your users a modern UI and a smooth experience while using your apps.
 
 The migration process is manual. The effort might be significant, depending on the size and complexity of the applications, particularly in the front end. If you have a solid architecture supporting your apps, you can reuse a lot of server-side logic and speed up the migration.
 
 Migration, for the most part, implies creating a new UI with the new framework and then creating logic using a new development paradigm. In the process, you may rethink and improve your user experience, especially if your app has an outdated look and feel.
 
-The developers already familiar with the development of Mobile Apps find in the Reactive App many concepts they already know, due to the similarities in the development tools. The developers who develop primarily in the older Traditional Web App technology may need to learn more about [Becoming a mobile developer](https://www.outsystems.com/learn/paths/1/becoming-a-mobile-developer/), [Becoming a Reactive Web developer](https://www.outsystems.com/learn/paths/18/becoming-a-reactive-web-developer), and the client-side development paradigm. 
+The developers already familiar with the development of Mobile Apps find in the Reactive App many concepts they already know, due to the similarities in the development tools. The developers who develop primarily in the older Traditional Web App technology may need to learn more about [Becoming a mobile developer](https://www.outsystems.com/learn/paths/1/becoming-a-mobile-developer/), [Becoming a Reactive Web developer](https://www.outsystems.com/learn/paths/18/becoming-a-reactive-web-developer), and the client-side development paradigm.
 
 ## Migration journey overview
 
@@ -55,7 +55,7 @@ The final step is to migrate the pages the users see, one by one.
 
 To estimate how long your project can take, start with a proof of concept and migrate simple Screens, and then move to more complex Screens. The effort you invest should be a good indication of how fast your team can migrate the app to the new runtime. The higher the complexity of a Screen, the longer it takes to migrate all its components used.
 
-Consider also using a gradual release strategy where you migrate only some Screens or sets of Screens and deploy them side by side with the old Screens. In the process, you should test how the Screens work on devices with different display sizes. 
+Consider also using a gradual release strategy where you migrate only some Screens or sets of Screens and deploy them side by side with the old Screens. In the process, you should test how the Screens work on devices with different display sizes.
 
 Before initiating a migration project, make sure that:
 
@@ -66,7 +66,7 @@ Before initiating a migration project, make sure that:
 * You acknowledge the developers' effort needed to perform a migration.
 
 ## Documents about migrating Traditional Web Apps to Reactive Web
- 
+
 To help you on the migration of your Traditional Web Apps, these are the available documents:
 
 * [Introduction to migrating Traditional Web to Reactive Web Apps](intro.md) - this document.
@@ -80,5 +80,5 @@ To help you on the migration of your Traditional Web Apps, these are the availab
         * [Screen and Block logic](ref-frontend-screen-and-block.md) - reference document about Screens and Block logic migration.
         * [System Actions](ref-system-actions.md) - reference document about System Actions
     * [Core Widgets](ref-core-widgets.md) - reference document about the Core Widgets.
- 
+
 Proceed to the [Differences to consider between Traditional and Reactive](differences.md) document to continue reading about the migration.

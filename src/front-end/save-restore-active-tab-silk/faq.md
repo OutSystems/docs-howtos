@@ -31,29 +31,27 @@ To restore the active tab on the SilkUIFramework, use a Javascript onclick handl
 
 * Submit it to the server with a hidden button, and set a session variable.
 
- 
-
 For example:
 
-1. Add a session variable for keeping the current tab (e.g. *SelectedTab*), with data type: *Tabs Identifier*.
+1. Add a session variable for keeping the current tab (e.g. _SelectedTab_), with data type: _Tabs Identifier_.
 
-2. Add an Input field to the screen or web block, with properties:
+1. Add an Input field to the screen or web block, with properties:
 
-    1. Style Classes = *RememberTabInput*
+    1. Style Classes = _RememberTabInput_
 
-    2. Extended properties: name = *style*, value = "display:none;"
+    1. Extended properties: name = _style_, value = "display:none;"
 
-    3. Also set the Variable (create a new one, e.g. *TabNumber*)
+    1. Also set the Variable (create a new one, e.g. _TabNumber_)
 
-3. Add a Button to the screen or web block, with properties:
+1. Add a Button to the screen or web block, with properties:
 
-    4. Style Classes = *RememberTabButton*
+    1. Style Classes = _RememberTabButton_
 
-    5. Method = *Ajax Submit*
+    1. Method = _Ajax Submit_
 
-    6. Extended properties: name = *style*, value = "display:none;"
+    1. Extended properties: name = _style_, value = "display:none;"
 
-4. Add this script to an Expression with property Escape Content = *No*:
+1. Add this script to an Expression with property Escape Content = _No_:
 
 ```
 "<script language='javascript'>
@@ -65,13 +63,11 @@ For example:
     }
 )             
 </script>"
-```                                         
+```
 
-5. Add a screen action as destination for the button created in step 3. The variable associated to the input will hold the tab number (1, 2, 3...). Add some logic to set the session variable created in step 1.
+1. Add a screen action as destination for the button created in step 3. The variable associated to the input will hold the tab number (1, 2, 3...). Add some logic to set the session variable created in step 1.
 
-6. In your Tab widget, fill in parameter *ActiveTab *with the session variable created in step 1 (e.g. *Session.ActiveTab*).
-
- 
+1. In your Tab widget, fill in parameter *ActiveTab*with the session variable created in step 1 (e.g. _Session.ActiveTab_).
 
 ## Improved answer
 
@@ -83,7 +79,7 @@ This solution will work well when navigating back to the page. However, the brow
 
 Add a response header to avoid caching the page. For example, add the header `*Cache-Control="NO-STORE"*`.
 
-On the Preparation of the screen with the tabs, add the action *HttpRequestHandler* > ***_AddHeader_** action, as shown below.
+On the Preparation of the screen with the tabs, add the action _HttpRequestHandler_ > ***_AddHeader_** action, as shown below.
 
 ![Screenshot of HttpRequestHandler with AddHeader action to set Cache-Control to NO-STORE.](images/How-to-save-and-restore-the-active-tab-on-SilkUIFramework_0.png "HttpRequestHandler AddHeader Action")
 
@@ -94,4 +90,3 @@ Read the following for more information on browser caching:
 * [http://blog.maskalik.com/asp-net/resolving-browser-back-button-with-caching-pages/](http://blog.maskalik.com/asp-net/resolving-browser-back-button-with-caching-pages/)
 
 * [http://www.mobify.com/blog/beginners-guide-to-http-cache-headers/](http://www.mobify.com/blog/beginners-guide-to-http-cache-headers/)
-

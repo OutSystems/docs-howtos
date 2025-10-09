@@ -27,8 +27,8 @@ A reference to the **Sample_Product** and **Sample_ProductCategory** entities in
 ### Setting up the screen
 
 1. Open the **Interface** tab and double-click your **MainFlow**.
-1. Open the **Data** tab and expand the **OutSystemsSampleDataDB** module. 
-1. Drag the **Sample_Product** to the **MainFlow**. 
+1. Open the **Data** tab and expand the **OutSystemsSampleDataDB** module.
+1. Drag the **Sample_Product** to the **MainFlow**.
     This creates a **Products** screen and a **ProductDetail** screen. This example focuses on the **Products** screen.
 
     ![Screenshot showing the process of dragging the Sample_Product to the MainFlow to create Products and ProductDetail screens.](images/dropdown-sampleproduct-ss.png "Products Screen Creation")
@@ -39,7 +39,7 @@ A reference to the **Sample_Product** and **Sample_ProductCategory** entities in
 
     ![Screenshot of the OutSystems interface with a new aggregate added for Sample_ProductCategory.](images/dropdown-aggregate-ss.png "Sample_ProductCategory Aggregate")
 
-1. Add a screen variable called **SelectedCategoryIdList** with the type **Text**. 
+1. Add a screen variable called **SelectedCategoryIdList** with the type **Text**.
 
     This is where the multiple selected category IDs are noted in between commas, for example, ``6,14,2``.
 
@@ -48,10 +48,10 @@ A reference to the **Sample_Product** and **Sample_ProductCategory** entities in
 1. On the **GetProducts** aggregate, click on the filters, and add the following filter:  
 
     ``SelectedCategoryIdList = "" or SelectedCategoryIdList like "%," + Sample_Product.Category + ",%"``.
-    
+
     This filter checks each row of the aggregate if the product category ID is contained in the ID List of the variable, filtering the products per multiple categories.
 
-    ![Screenshot of the GetProducts aggregate filter setup using SelectedCategoryIdList.](images/dropdown-filter-ss.png "Dropdown Search Filter Configuration")    
+    ![Screenshot of the GetProducts aggregate filter setup using SelectedCategoryIdList.](images/dropdown-filter-ss.png "Dropdown Search Filter Configuration")
 
 ### Adding the Dropdown Search
 
@@ -67,9 +67,9 @@ A reference to the **Sample_Product** and **Sample_ProductCategory** entities in
 
 1. Drag an **Assign** node to the action and assign the **SelectedCategoryIdList** to **" "**.
 
-1. Drag an **If** widget to the action. 
+1. Drag an **If** widget to the action.
 
-1. Set the **False** branch to **“SelectedOptionList.Empty** and on the **True** branch, drag the **GetProducts** aggregate to the action to create a **Refresh GetProducts**. 
+1. Set the **False** branch to **“SelectedOptionList.Empty** and on the **True** branch, drag the **GetProducts** aggregate to the action to create a **Refresh GetProducts**.
 
 1. Add an **End** node.
 
@@ -79,4 +79,4 @@ A reference to the **Sample_Product** and **Sample_ProductCategory** entities in
 
 1. Close the **For Each** node by dragging a branch from the **Assign** to it.
 
-    ![Flowchart diagram illustrating the logic for handling changes in the Dropdown Search selection.](images/dropdown-logic-ss.png "Dropdown Search Logic")    
+    ![Flowchart diagram illustrating the logic for handling changes in the Dropdown Search selection.](images/dropdown-logic-ss.png "Dropdown Search Logic")

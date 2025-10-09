@@ -35,7 +35,7 @@ To migrate from the ardoPostgreSQL connector to the OutSystems supported Postgre
     This option is useful if you have a big number of consumers, but you must test each of the consumers to ensure they work properly with the new connector.
 
 1. Create new extensions using the new database connector, and then update existing consumer modules to reference the new extensions.
-    
+
     This options has an increased development effort, as you need to open each consumer module in Service Studio to ensure they use the new extensions. You must also test each of the consumers to ensure they work properly with the new connector.
 
 1. Create new extensions using the new database connector, and then create new consumer modules with the same functionality as the existing consumers.

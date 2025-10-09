@@ -56,19 +56,17 @@ Our example is a travel app with a home screen that we want to change. This is a
 
 All you have to do is follow these steps.
 
-### Step 1:  Create Your New 
+### Step 1:  Create Your New
 
 Create your new screen, add all the desired elements to it, and in the screen parameters, make it available only for the role you have created:
 
 ![OutSystems development environment with a new home screen design for a travel app.](images/fun-with-feature-flags-live-mobile-apps_04.png "New Home Screen Creation in OutSystems")
-
 
 ### Step 2: Add the Role Verification in the Login
 
 In the login flow, add an if pattern to verify the role. Depending on the answer, redirect the user to the corresponding screen. Press the 1-Click Publish button.
 
 ![OutSystems development environment showing the login flow with role verification logic.](images/fun-with-feature-flags-live-mobile-apps_05_new.png "Role Verification in Login Flow in OutSystems")
-
 
 ### Step 3: Assign the Role to Users
 
@@ -78,9 +76,7 @@ Now that you have your new screen ready to showcase, go to the Users app, and as
 
 And that’s it! Now the users you assigned to your newly created role just need to log out and log in again to have access to a completely new screen.
 
-
 ## Change a Screen
-
 
 Changing an existing screen instead of adding a new one is as easy as adding an "if."
 
@@ -110,7 +106,6 @@ And that’s it! Now the users with different roles will see different screens.
 
 If you want to make a new feature available to some of your users and it requires a new UI, the logic is very similar to changing a screen. Let’s take a look.
 
-
 ### Step 1: Add an If Condition Where You want to Add the New UI
 
 Drag and drop an **If** condition into your screen. To false, add your existing elements; to true, add the new elements.
@@ -126,7 +121,6 @@ In the details for **If**, put your check roles function as the condition to be 
 Now that you have your UI ready to showcase, go to the Users app and assign your key users to the newly created role.
 
 ![OutSystems Users application interface showing the assignment of a role to a user.](images/fun-with-feature-flags-live-mobile-apps_06.png "Assigning a Role to Users in OutSystems")
-
 
 And that’s it! Now the users with different roles will see a different UI.
 

@@ -25,7 +25,6 @@ We recommend [using **Integration Builder** to integrate with SAP OData](https:/
 
 </div>
 
-
 To consume an SAP OData service in OutSystems you need to:
 
 1. Obtain the service specification file from SAP API Business Hub
@@ -60,7 +59,6 @@ Do the following:
 1. Click **Download Specification** and select the **JSON** option, since Service Studio supports creating services from JSON Swagger file specifications.  
     _Note:_ To download the specification, you must sign in to your SAP account.
 
-
 ## Consuming the service in Service Studio
 
 ### Create a new module
@@ -93,7 +91,6 @@ Do the following:
     ![Warning message in Service Studio after importing from Swagger, indicating issues with data types not supported in OutSystems.](images/ss-consume-rest-warning.png "Import from Swagger Warning Message")
 
     If this warning message appears, close it to proceed.
-
 
 ## Making some final adjustments
 
@@ -136,8 +133,8 @@ To create the "OnBeforeRequest" handler do the following:
 
 In the "OnBeforeRequest" handler do the following:
 
-1. Create a copy of the URL query parameters list. 
-1. Iterate through all the URL query parameters in the new list using a For Each. 
+1. Create a copy of the URL query parameters list.
+1. Iterate through all the URL query parameters in the new list using a For Each.
     1. For each element, check if the query parameter matches one of the reserved names (minus the dollar sign).
     1. If it matches, add a "$" (dollar sign) at the beginning of its name.
 
@@ -155,7 +152,7 @@ Do the following:
 
 1. Add a local variable with "HTTPHeader" data type to the "OnBeforeRequest" handler.
 
-    _Note:_ The "HTTPHeader" data type is a structure that was created by OutSystems when you consumed the SAP service in Service Studio. 
+    _Note:_ The "HTTPHeader" data type is a structure that was created by OutSystems when you consumed the SAP service in Service Studio.
 
     ![Service Studio interface showing the HTTPHeader local variable within the OnBeforeRequest handler.](images/ss-rest-local-variable-httpheader.png "HTTPHeader Local Variable in Service Studio")
 
@@ -176,7 +173,6 @@ Do the following:
 Example implementation of adding the two headers:
 
 ![Flowchart in Service Studio showing the process of adding Accept and Content-Type headers to a request.](images/ss-rest-flow-add-headers-example.png "Adding HTTP Headers in OnBeforeRequest Handler")
-
 
 ### Handling error responses
 
@@ -216,8 +212,8 @@ You should implement logic to handle different kinds of error responses, which u
 We suggest the following approach to parse error responses in your logic:
 
 1. **Handle data errors**: Try to deserialize the response text into the error structure defined in the service specification. If the resulting structure has a text value for the error message, throw an exception with that value.
-1. **Handle fault errors**: Define a structure for these errors based on a sample fault and throw an exception with the text in the "fault" element. 
-1. **Handle API errors**: Define a structure for these errors based on a sample API error and throw an exception with the text in the "code" and "error" elements, if present. 
+1. **Handle fault errors**: Define a structure for these errors based on a sample fault and throw an exception with the text in the "fault" element.
+1. **Handle API errors**: Define a structure for these errors based on a sample API error and throw an exception with the text in the "code" and "error" elements, if present.
 
 Learn more about handling these kinds of error responses in the sections below.
 
@@ -237,7 +233,7 @@ Start your error handling logic by trying to parse the error response into this 
 Do the following:
 
 1. In Service Studio, identify the structure used for data errors. This structure is available in the **Data** tab, in the **Structures** folder, under the element tree with the name of the service.  
-    In our example, the error structure is called "error". 
+    In our example, the error structure is called "error".
 
     ![Service Studio Data tab displaying the structures created for SAP errors.](images/ss-sap-structures.png "SAP Error Structures in Service Studio")
 
@@ -278,7 +274,7 @@ Implementation example:
 
 ##### 3. Handle API errors
 
-This is the third kind of error that you should handle in your error logic. API errors occur, for example, when the service is unavailable. In this case, you get a response containing an HTTP status code and an error message. 
+This is the third kind of error that you should handle in your error logic. API errors occur, for example, when the service is unavailable. In this case, you get a response containing an HTTP status code and an error message.
 
 Do the following:
 

@@ -84,7 +84,7 @@ To clean up your app's logic, delete all usages of the following Client Actions 
 
 <div class="info" markdown="1">
 
-Before deleting the **GetLocale** and **SetLocale** Client Actions, ensure you placed the new **GetCurrentLocale** and **SetCurrentLocale** Client Actions, respectively, in your logic. 
+Before deleting the **GetLocale** and **SetLocale** Client Actions, ensure you placed the new **GetCurrentLocale** and **SetCurrentLocale** Client Actions, respectively, in your logic.
 
 </div>
 
@@ -92,7 +92,7 @@ You can also delete the **data-trans** attribute from the text widgets, as you d
 
 ### Finding where the used actions are
 
-To find where the used actions are, do the following steps:	
+To find where the used actions are, do the following steps:
 
 1. Go to the **Logic** tab and expand the **Client Actions** folder.
 
@@ -117,4 +117,3 @@ The final procedure is to remove the Multilingual plugin reference from your app
     ![Screenshot of the Manage Dependencies window in OutSystems Service Studio with the Multilingual dependency unchecked.](images/multilingual-remove-dependency.png "Removing Multilingual dependency in OutSystems")
 
 1. Click **APPLY** to remove the Multilingual dependency.
-

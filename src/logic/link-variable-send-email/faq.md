@@ -27,7 +27,6 @@ We have a survey application on which you go a landing page with a list of open 
 
 We want to be able to generate a link that goes directly to a particular survey.
 
-
 ## Answer
 
 Let's see the above example where we exemplify what you are trying to achieve.
@@ -53,4 +52,3 @@ Now that we already have the URL that we need we are going to set the link on th
 Now, when anyone clicks on that link that's inside of the email that will take the user to our SurveyEdit page, and because the web screen already have SurveyId as an input parameter and our link also, you can now use the SurveyId input parameter to provide info for that specific Survey.
 
 ![Screenshot of the SurveyEdit page preparation action where the SurveyId parameter is used to fetch survey details.](images/How-to-make-a-link-with-a-variable-to-send-in-an-Email_2.png "Using the SurveyId parameter in the SurveyEdit page")
-

@@ -39,7 +39,6 @@ In the [first article](faq.md), you learned about the roles and what they're use
 
 Let’s see how you can cover these three scenarios with the new hierarchical roles approach.
 
-
 ## Authorization mechanisms at screen level
 
 To control which role in your factory can access the sales screens, you should take advantage of the built-in Screen Roles feature.
@@ -96,10 +95,9 @@ As an Account Manager, Agnes Marvs can perform the actions "Pay Bills" and “Tr
 
 ![Screenshot of the SalesDashboard screen with write permissions enabled for an Account Manager.](images/write-permission-example-screen.png "Write Permission Example Screen")
 
-As an Agent, Angela Arthur doesn’t see any actions. 
+As an Agent, Angela Arthur doesn’t see any actions.
 
 ![Screenshot of the SalesDashboard screen with read-only permissions for an Agent.](images/read-only-permission-example-screen.png "Read-Only Permission Example Screen")
-
 
 ## Other screens
 
@@ -125,6 +123,6 @@ The Account Manager function accesses the Dashboard Account Manager.
 
 ![Screenshot showing an Account Manager's access to their own dashboard in the Sales application.](images/account-manager-dashboard-access-by-account-manager.png "Account Manager Dashboard Access by Account Manager")
 
-The Agent role can't access the Dashboard Account Manager. 
+The Agent role can't access the Dashboard Account Manager.
 
 ![Screenshot displaying an 'Invalid Permissions' error message when access is denied.](images/invalid-permissions-access-screen.png "Invalid Permissions Access Screen")

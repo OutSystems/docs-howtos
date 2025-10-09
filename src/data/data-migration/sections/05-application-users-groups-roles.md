@@ -30,7 +30,7 @@ The following diagram shows the relationships between Entities Users, Roles and 
 
 The records for the entities in the diagram above can be generated from the following sources:
 
-* Service Studio 
+* Service Studio
     * Publishing modules with new or changed Roles
     * Updating apps or modules
 
@@ -42,7 +42,7 @@ The records for the entities in the diagram above can be generated from the foll
 
 * User apps
     * References to the exposed Entities and methods
-    * Bootstraps for Users, Groups, and Roles 
+    * Bootstraps for Users, Groups, and Roles
 
 ## Considerations
 
@@ -90,7 +90,6 @@ Users - the attribute Username (and Tenant ID) (Note: Being different environmen
 |-----------------|
 |-                |
 
-
 |**Consumers**    |
 |-----------------|
 |OSSYS_APP_VERSION |
@@ -117,7 +116,7 @@ Users - the attribute Username (and Tenant ID) (Note: Being different environmen
 |-----------------|
 
 ### Roles
-   
+
 |**Name**          |**Physical Table Name** |**Description**               |
 |------------------|------------------------|------------------------------|
 |Role              |OSSYS_ROLE              |Espace specific roles as defined in Service Studio. Old roles are kept as inactive |
@@ -125,7 +124,7 @@ Users - the attribute Username (and Tenant ID) (Note: Being different environmen
 |**Producers**    |
 |-----------------|
 |OSSYS_ESPACE     |
-    
+
 |**Consumers**    |
 |-----------------|
 |OSSYS_BPM_ACTIVITY_DEF_ROLE |
@@ -133,24 +132,22 @@ Users - the attribute Username (and Tenant ID) (Note: Being different environmen
 |OSSYS_USER_ROLE |
 
 ### User Role
-   
 
 |**Name**          |**Physical Table Name** |**Description**               |
 |------------------|------------------------|------------------------------|
 |User_Role         |OSSYS_USER_ROLE         |Roles for each end user       |
 
-
 |**Producers**    |
 |-----------------|
 |OSSYS_ROLE       |
 |OSSYS_USER       |
-    
+
 |**Consumers**    |
 |-----------------|
 |-                |
 
 #### Groups
-   
+
 |**Name**          |**Physical Table Name** |**Description**               |
 |------------------|------------------------|------------------------------|
 |Group             |OSSYS_GROUP             |Set of users managed in runtime |
@@ -166,11 +163,11 @@ Users - the attribute Username (and Tenant ID) (Note: Being different environmen
 |OSSYS_GROUP_USER |
 
 ### Group Role
-   
+
 |**Name**          |**Physical Table Name** |**Description**               |
 |------------------|------------------------|------------------------------|
 |Group_Role        |OSSYS_GROUP_ROLE        |Roles shared for a specific user group |
-    
+
 |**Producers**    |
 |-----------------|
 |OSSYS_GROUP      |
@@ -181,7 +178,7 @@ Users - the attribute Username (and Tenant ID) (Note: Being different environmen
 |-                |
 
 ### Group User
-   
+
 |**Name**          |**Physical Table Name** |**Description**               |
 |------------------|------------------------|------------------------------|
 |Group_User        |OSSYS_GROUP_USER        |Users of a specific group     |
@@ -190,7 +187,7 @@ Users - the attribute Username (and Tenant ID) (Note: Being different environmen
 |-----------------|
 |OSSYS_GROUP      |
 |OSSYS_USERS      |
-   
+
 |**Consumers**    |
 |-----------------|
 |-                |

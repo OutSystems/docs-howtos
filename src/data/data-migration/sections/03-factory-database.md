@@ -35,7 +35,7 @@ Espace is the old name used by OutSystems for Module. This diagram uses the term
 
 ![Diagram illustrating the relationships between Entities, Entity Records, Entity Attributes, DB Catalogs, and Modules in OutSystems.](images/relationship-entities-entity-records-entity-attributes-db-catalogs-espaces.png "Entity Relationship Diagram for OutSystems")
 
-* Service Studio 
+* Service Studio
     * Publishing Modules or Cloned Modules with new or changed Entities  
 
 * Integration Studio
@@ -65,7 +65,7 @@ Take the following considerations into account:
 
 * Check the Application Module Entities Catalog differences between Environments
 
-* SS_Keys 
+* SS_Keys
     * The Module always have a unique ``SS_Key`` generated and stored in the metamodel and equal in all environments
 
     * SS_Keys are not unique for Entity and ``Entity_Attr``, for example, cloned Module
@@ -74,7 +74,7 @@ Take the following considerations into account:
 
 * Check the flag `Is Active` to include or exclude inactive - soft-deleted - Modules, Entities, Entity Attributes and Entity Records
 
-* Entity Attribute has an attribute named Type which contains: 
+* Entity Attribute has an attribute named Type which contains:
     * Run Time types: `rtTime`; `rtText`; `rtPhoneNumber`; `rtLongInteger`; `rtInteger`; `rtEntityReference`; `rtEmail`; `rtDecimal`; `rtDateTime`; `rtDate`; `rtCurrency`; `rtBoolean`; `rtBinaryData`
 
     * Reference Id types with the format:  ```‘bt’+<Espace_SS_Key>+’*’+<Entity_SS_Key>```
@@ -94,10 +94,10 @@ This section shows an example of how to publish a Module with new Entities and n
 To publish a Module with new entities, create a new Module called “People” and then create three new Entities:
 
 1. City, with the Name attribute.
-2. Icon, and the attributes are:
+1. Icon, and the attributes are:
     2.1. Name, Tex type.
     2.1. BinaryInfo, BinaryData type.
-3. Person
+1. Person
     * Name, Text type.
     * DateofBirth, Data type.
     * IsAlive, Boolean type.
@@ -123,17 +123,17 @@ After publishing the Module, you can search for it and the newly created Entity 
 |Pending_Version_Id | |
 |EspaceKind | WebResponsive |
 
-``` 
+```
 SELECT 
-	ID,
-	NAME,
-	PHYSICAL_TABLE_NAME,
-	ESPACE_ID,
-	SS_KEY,
-	PRIMARYKEY_SS_KEY,
-	IS_ACTIVE_ATTRIBUTE,
-	LABEL_ATTRIBUTE,
-	ORDER_BY_ATTRIBUTE 
+    ID,
+    NAME,
+    PHYSICAL_TABLE_NAME,
+    ESPACE_ID,
+    SS_KEY,
+    PRIMARYKEY_SS_KEY,
+    IS_ACTIVE_ATTRIBUTE,
+    LABEL_ATTRIBUTE,
+    ORDER_BY_ATTRIBUTE
 FROM OSSYS_ENTITY 
 WHERE Espace_Id = (SELECT ID FROM OSSYS_ESPACE WHERE Name = ’People’)
 ```
@@ -148,11 +148,11 @@ The entities attribute details are stored in OS Platform entities and can be sea
 
 ```
 SELECT
-	OSSYS_ENTITY.NAME ENTITY_NAME,
-	OSSYS_ENTITY_ATTR.*
+    OSSYS_ENTITY.NAME ENTITY_NAME,
+    OSSYS_ENTITY_ATTR.*
 FROM OSSYS_ENTITY 
 INNER JOIN OSSYS_ENTITY_ATTR 
-	ON OSSYS_ENTITY.ID =  OSSYS_ENTITY_ATTR.ENTITY_ID
+    ON OSSYS_ENTITY.ID =  OSSYS_ENTITY_ATTR.ENTITY_ID
 WHERE Espace_Id = (SELECT ID FROM OSSYS_ESPACE WHERE Name = ’People’)
 ```
 
@@ -179,20 +179,20 @@ The SQL command below shows how to fetch Entities using the ``SS_Key``:
 
 ```
 SELECT OSSYS_ESPACE.NAME [ESPACE]
-	,OSSYS_ENTITY.NAME [ENTITY]
+    ,OSSYS_ENTITY.NAME [ENTITY]
 FROM OSSYS_ENTITY 
 INNER JOIN OSSYS_ESPACE 
-	ON OSSYS_ENTITY.ESPACE_Id = OSSYS_ESPACE.ID 
-			AND OSSYS_ESPACE.SS_KEY = '2848df88-835f-427a-b0db-e29a1d8e9766'
+    ON OSSYS_ENTITY.ESPACE_Id = OSSYS_ESPACE.ID
+    AND OSSYS_ESPACE.SS_KEY = '2848df88-835f-427a-b0db-e29a1d8e9766'
 WHERE OSSYS_ENTITY.SS_KEY = '0f3b6288-e5b3-4804-97e2-9b1ea18fc12e'
 UNION ALL
 SELECT 
-	OSSYS_ENTITY.NAME
-	,OSSYS_ESPACE.NAME
+    OSSYS_ENTITY.NAME
+    ,OSSYS_ESPACE.NAME
 FROM OSSYS_ENTITY 
 INNER JOIN OSSYS_ESPACE 
-	ON OSSYS_ENTITY.ESPACE_Id = OSSYS_ESPACE.ID 
-			AND OSSYS_ESPACE.SS_KEY='2848df88-835f-427a-b0db-e29a1d8e9766'
+    ON OSSYS_ENTITY.ESPACE_Id = OSSYS_ESPACE.ID
+    AND OSSYS_ESPACE.SS_KEY='2848df88-835f-427a-b0db-e29a1d8e9766'
 WHERE OSSYS_ENTITY.SS_KEY = 'a280d501-0a34-4fe0-9626-0f825f10c999'
 ```
 
@@ -201,9 +201,8 @@ WHERE OSSYS_ENTITY.SS_KEY = 'a280d501-0a34-4fe0-9626-0f825f10c999'
 |People            |City                    |
 |People            |Icon                    |
 
-
-Use the Module `SS_Key` when searching for other OS objects like Entities since the Entity `SS_Key` is only unique when combined with the Module SS_Key. 
-For example, if the Module is cloned, every Entity generated in the clone Module gets the same `SS_Key` as the other Entities in the original Module. 
+Use the Module `SS_Key` when searching for other OS objects like Entities since the Entity `SS_Key` is only unique when combined with the Module SS_Key.
+For example, if the Module is cloned, every Entity generated in the clone Module gets the same `SS_Key` as the other Entities in the original Module.
 
 The following table shows the Entities that belong to the People Module that was previously created. If you focus your attention on ``Physical_Table_Name``, you see that it is possible to display what is inside the City Entity by doing ``SELECT * FROM OSUSR_7i3_City``.
 
@@ -223,8 +222,7 @@ SELECT * FROM OSUSR_7i3_City
 |2                 |Reykjavik               |
 |3                 |Beja                    |
 
-In this case, ``OSUSR_7i3_City`` is the physical database name of the table that holds the information belonging to the City Entity. 
-
+In this case, ``OSUSR_7i3_City`` is the physical database name of the table that holds the information belonging to the City Entity.
 
 ### Publish a Module with new Entities
 

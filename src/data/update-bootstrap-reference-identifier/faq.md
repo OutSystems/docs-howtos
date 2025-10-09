@@ -39,7 +39,7 @@ In our Excel spreadsheet, we have added a column that registers the expense stat
 
 ![Screenshot of an Excel spreadsheet with columns for Description, Value, and ExpenseStatus showing entries for Gas, Lunch, and Lunch with corresponding values and statuses.](images/expenses-excel.png "Excel Spreadsheet with Expense Status")
 
-When update the action to bootstrap data from the excel by selecting the entity advanced option, we can see that the new column won't be included in the bootstrap action. 
+When update the action to bootstrap data from the excel by selecting the entity advanced option, we can see that the new column won't be included in the bootstrap action.
 
 ![Dialog window showing the update action to bootstrap data from Excel with the new ExpenseStatus column highlighted as not included in the bootstrap action.](images/entity-update-bootstrap.png "Bootstrap Action Update Dialog")
 
@@ -65,7 +65,7 @@ After getting the correct identifier, we just need to add the ExpenseStatusId to
 
 <div class="info" markdown="1">
 
-Please note that these steps are valid based on the assumption that there is no data in the Expenses entity. 
+Please note that these steps are valid based on the assumption that there is no data in the Expenses entity.
 In case you already have data in your entity, you can either clear it or adapt the bootstrap logic to allow record updates, depending on the stage of your application development.
 
 </div>

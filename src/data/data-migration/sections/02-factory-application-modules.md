@@ -32,13 +32,13 @@ The following diagram shows the relationships between Applications, Espaces, Mod
 
 The records for the entities in the diagram above can be generated from the following sources:
 
-* Service Studio 
+* Service Studio
     * Creating new Applications
     * Creating or Cloning Espace Modules
     * Updating Applications or Espace Modules
 
 * Integration Studio
-    * Creating or Updating Extensions 
+    * Creating or Updating Extensions
 
 * Service Center
     * Uploading and Publishing Applications, Solutions, Espaces and Extensions
@@ -57,7 +57,7 @@ The records for the entities in the diagram above can be generated from the foll
 
 Take the following considerations into account:
 
-* SS_Keys 
+* SS_Keys
     * The Espace / Extension always have a unique ``SS_Key`` generated and stored in the metamodel and is e equal in all environments.
 
     * Other SS_Keys - Entity, Entity_Attr, and so on - **are not unique** and always need to be compared using the Espace ``SS_Key`` as a unique pair of SS_Keys (for example, Cloned Espace generates a new ``SS_Key`` for the Espace but all other objects keep the ``SS_Key``)
@@ -66,7 +66,7 @@ Take the following considerations into account:
 
 * Be aware of Exposed Systems Entities that can be referenced and used on User Applications (Entity extended attributes, etc.)
 
-* The Module type can be Espace or Extension. This means that the Module Espace Identifier or the Extension Identifier have exclusive values or Null value. Identifiers with null values or both Identifiers with an existing identifier cannot exist at the same time. 
+* The Module type can be Espace or Extension. This means that the Module Espace Identifier or the Extension Identifier have exclusive values or Null value. Identifiers with null values or both Identifiers with an existing identifier cannot exist at the same time.
 
 * A Cloned Espace gets a new SS_Keys, and is not related with the source Espace application or any other application, and can be found on the “Independent Modules”. The same happens with cloned Extensions.
 
@@ -79,7 +79,7 @@ Take the following considerations into account:
 ### Applications
 
 * Application Mobile
-     
+
 |**Name**          |**Physical Table Name** |**Description**               |
 |------------------|------------------------|------------------------------|
 |ApplicationMobile |OSSYS_APPLICATIONMOBILE |Mobile apps specific settings |
@@ -91,7 +91,7 @@ Take the following considerations into account:
 |**Consumers**    |
 |-----------------|
 |-                |
- 
+
 * Application
   
 |**Name**          |**Physical Table Name** |**Description**                                                         |
@@ -101,7 +101,6 @@ Take the following considerations into account:
 |**Producers**    |
 |-----------------|
 |OSSYS_USER       |
-
 
 |**Consumers**    |
 |-----------------|
@@ -136,12 +135,11 @@ Take the following considerations into account:
 |-----------------|
 |OSSYS_APP_DEFINITION_MODULE |
 
-*  Module
-    
+* Module
+
 |**Name**          |**Physical Table Name** |**Description**               |
 |------------------|------------------------|------------------------------|
 |Module            |OSSYS_MODULE            |An Espace or an Extension     |
-
 
 |**Producers**     |
 |------------------|
@@ -149,14 +147,12 @@ Take the following considerations into account:
 |OSSYS_ESPACE      |
 |OSSYS_EXTENSION   |
 
-
 |**Consumers**    |
 |-----------------|
 |OSSYS_APP_DEFINITION_MODULE |
 
-
 * Module Kind
-     
+
 |**Name**          |**Physical Table Name** |**Description**               |
 |------------------|------------------------|------------------------------|
 |Module_Kind       |OSSYS_MODULE_KIND       |Espace and Extension          |
@@ -173,7 +169,7 @@ Take the following considerations into account:
 ### Espace Modules
 
 * Espace
-     
+
 |**Name**          |**Physical Table Name** |**Description**               |
 |------------------|------------------------|------------------------------|
 |Espace            |OSSYS_ESPACE            |Espaces defined in Service Studio. Older and deleted Espaces are kept as inactive |
@@ -182,7 +178,7 @@ Take the following considerations into account:
 |---------------------|
 |OSSYS_ESPACE_VERSION |
 |OSSYS_DBCATALOG      |
-   
+
 |**Consumers**    |
 |-----------------|
 |OSSYS_AREA       |
@@ -235,15 +231,15 @@ Take the following considerations into account:
 ## Extension Modules
 
 * Extension
-     
+
 |**Name**          |**Physical Table Name** |**Description**               |
 |------------------|------------------------|------------------------------|
 |Extension         |OSSYS_EXTENSION         |Extensions published in the environment |
-    
+
 |**Producers**        |
 |---------------------|
 |OSSYS_EXTENSION_VERSION |
-    
+
 |**Consumers**    |
 |-----------------|
 |OSSYS_ASSEMBLY   |
@@ -260,7 +256,7 @@ Take the following considerations into account:
 |OSSYS_SOLUTION_REFERENCE |
 
 * Espace Extension
-     
+
 |**Name**          |**Physical Table Name** |**Description**               |
 |------------------|------------------------|------------------------------|
 |Espace_Extension  |OSSYS_ESPACE_EXTENSION  |Extensions referred by each Espace as defined in Service Studio add/remove references |
@@ -269,7 +265,7 @@ Take the following considerations into account:
 |---------------------|
 |OSSYS_ESPACE         |
 |OSSYS_EXTENSION      |
-    
+
 |**Consumers**    |
 |-----------------|
 |-                |

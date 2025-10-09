@@ -19,7 +19,7 @@ coverage-type:
 
 # Integrated Authentication on Web Services - User credentials delegation to Web References in OutSystems
 
-## How to pass the user (browser) credentials onto Web Reference calls 
+## How to pass the user (browser) credentials onto Web Reference calls
 
 Assuming your domain controller is properly configured to allow credentials delegation for your Web Server (see next chapter) passing of the user credentials (i.e. the domain login of the user currently using the browser) is very simple:
 
@@ -40,11 +40,11 @@ There are a few points worthy of note for the proper operation of this functiona
     * Should the use of Mozilla Firefox be required, Kerberos negotiation can be enabled by typing **about:config** on the address bar of this browser, and setting the configuration keys **network.negotiate-auth.delegation-uris** and **network.negotiate-auth.trusted-uris** to the domain where the machines are (for example outsystems.net). More details can be obtained at [http://www.redhat.com/docs/en-US/Red...g-firefox.html.](http://www.redhat.com/docs/en-US/Red_Hat_Enterprise_Linux/5.2/html/Deployment_Guide/sso-config-firefox.html) These settings have the added effect of disabling the credentials prompt shown by this browser when first accessing an Integrated Authentication screen on a page in the domain, making it behave much like Internet Explorer does.  
     **Please note, however, that this is an unsupported configuration.**
 
-## How to configure Delegation (Active Directory Configurations) 
+## How to configure Delegation (Active Directory Configurations)
 
 The scenario is the following:
 
-![Diagram showing the relationship between Web Browser, OutSystems, Web Service, and Domain Controller in an integrated authentication setup.](images/integrated-auth-webservices.png "Integrated Authentication Web Services Diagram") 
+![Diagram showing the relationship between Web Browser, OutSystems, Web Service, and Domain Controller in an integrated authentication setup.](images/integrated-auth-webservices.png "Integrated Authentication Web Services Diagram")
 
 Configuration is made in the domain controller, by configuring the OutSystems server to be trusted for delegation to services in the Web Service server. Here are the steps to be followed [1] on the **Domain Controller Server**:
 

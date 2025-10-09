@@ -17,7 +17,7 @@ coverage-type:
 
 # How to Configure Pushwoosh for iOS
 
-To configure Pushwoosh for iOS, follow these steps. 
+To configure Pushwoosh for iOS, follow these steps.
 
 <div class="info" markdown="1">
 
@@ -42,10 +42,10 @@ Complete the form and select **Push Notifications** from “App Services”.
 
 APNS Certificates are bound to one application ID. There are two application service configurations for each application ID:
 
-* Development 
-* Distribution 
+* Development
+* Distribution
 
-Development APNS Certificates enable a developer to set up push notifications for an application in development. 
+Development APNS Certificates enable a developer to set up push notifications for an application in development.
 
 <div class="info" markdown="1">
 
@@ -83,7 +83,7 @@ Open Keychain, locate the desired certificate and export the public certificate.
 
 ![Screenshot of the save dialog in Keychain Access for exporting a public certificate as a '.cer' file.](images/image03.png "Saving Exported Certificate")
 
-Export the associated private key. 
+Export the associated private key.
 
 <div class="info" markdown="1">
 

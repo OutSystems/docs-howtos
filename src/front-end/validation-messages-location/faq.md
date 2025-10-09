@@ -29,15 +29,15 @@ To display input validation messages in a custom location, we must hide the defa
 
 Follow the steps below to display input validation messages in a custom location:
 
-1. Depending on the type of application add one of the following CSS snippets to the Style Sheet of the Screen/Block: 
+1. Depending on the type of application add one of the following CSS snippets to the Style Sheet of the Screen/Block:
 
     For **Web Applications**:
-    
+
         span.ValidationMessage {
             display: none;
         }
 
-    For **Mobile Apps**: 
+    For **Mobile Apps**:
 
         span.validation-message {
             display: none; 
@@ -45,7 +45,7 @@ Follow the steps below to display input validation messages in a custom location
 
     This will hide the default validation messages.
 
-1. Assign `<input_name>.ValidationMessage` to the Value of an **Expression** Widget to display the validation message of the `<input_name>` Input in a custom location. 
+1. Assign `<input_name>.ValidationMessage` to the Value of an **Expression** Widget to display the validation message of the `<input_name>` Input in a custom location.
 
     ![Interface showing how to set a custom location for input validation messages using Expression Widget.](images/validation-messages-01.png "Setting Custom Location for Validation Messages")
 

@@ -38,7 +38,6 @@ In the **RestURL** defined in the data grid:
 
 ![Flowchart demonstrating the logic to read data from a spreadsheet in OutSystems.](images/reading-spreadsheet-as-data-source-outsystems-logic-example.png "OutSystems Logic for Reading Data from a Spreadsheet")
 
-
 To save data back into the spreadsheet, use the **SetValue** or **SetValues** actions to write data into a single cell, or into a range of cells, respectively.
 
 For instance, using the previous scenario, you can add a button to write all the changes performed in the Data Grid.
@@ -52,6 +51,5 @@ Iterate the generated Record List
 Set the Spreadsheet ID, Spreadsheet Name and Range, and use the SetValues function to store the information
 
 ![Flowchart showing the process of writing data back to a spreadsheet in OutSystems.](images/writing-spreadsheet-as-data-source-outsystems-logic-example.png "OutSystems Logic for Writing Data to a Spreadsheet")
-
 
 For Excel files, OutSystems provides a similar component that leverages the Microsoft Graph API to use an Excel File as a data source, the [Microsoft Graph Connector](https://www.outsystems.com/forge/component-overview/5552/microsoft-graph-connector).

@@ -75,7 +75,7 @@ It's extremely important to keep in mind this match if using any query to push d
 
 Find more details about the Platform Factory Management on the [Factory Application Modules](sections/02-factory-application-modules.md) and [Factory Database](sections/03-factory-database.md) sections.
 
-### Match System Static Entities Records Identifiers 
+### Match System Static Entities Records Identifiers
 
 Now, the process has to match the Static Entities Records Data Identifiers being used has foreign keys on the Entities Data that are to be migrated.
 
@@ -102,7 +102,7 @@ In a forward step, the Event entities data is migrated and the normal behavior r
 
 ### Create or Update Users & Groups
 
-In this step the migration process checks if all Users related to the applications and data being migrated are created in the destination environment. 
+In this step the migration process checks if all Users related to the applications and data being migrated are created in the destination environment.
 
 Users usually are the most used foreign key all over applicational data and the Applications behavior can change based on Users' Roles and permissions, and the User can belong to Groups with assigned Roles.
 

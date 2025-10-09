@@ -59,13 +59,13 @@ The following example shows you how to use this regular expression and the **Reg
 
     * Set **Pattern** as `"^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"`.
 
-1. After the **Regex\_Search** action, add an **Assign**, and add the assignment `IsGuid` = `Regex_Search.Found`. 
+1. After the **Regex\_Search** action, add an **Assign**, and add the assignment `IsGuid` = `Regex_Search.Found`.
 
 After these steps you created a server action that receives a text input, and outputs a boolean that's True if the input text is a GUID.
 
 ## Example: Extract a GUID from text
 
-Let's expand on the previous example, by enabling the detection and output of a GUID in the middle of a text string. The regular expressions `"[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}"`, lets you check if a text string contains a GUID. 
+Let's expand on the previous example, by enabling the detection and output of a GUID in the middle of a text string. The regular expressions `"[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}"`, lets you check if a text string contains a GUID.
 
 Follow these steps to create a reusable server action that detects and outputs a GUID from a text input:
 

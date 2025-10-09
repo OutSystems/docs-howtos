@@ -24,7 +24,7 @@ This reference document is a collection of notes about the differences between T
 
 These are the considerations relevant in the preparatory steps of the Traditional Web App migration.
 
-* URLs should be working for new Screens, Resources, Images. If you use hardcoded URLs, you need to update them on your new Screens. 
+* URLs should be working for new Screens, Resources, Images. If you use hardcoded URLs, you need to update them on your new Screens.
 * Migrate Entities while preserving the data
 * Handling Site Properties
 * Migrating Roles
@@ -33,10 +33,10 @@ These are the considerations relevant in the preparatory steps of the Traditiona
 Once you start migrating your app to the Reactive Web App, consider following this order for each Module:
 
 1. Theme
-2. UI Flows
-3. External sites
-4. Web Screens
-5. Web Blocks, starting by the Web Blocks with no dependencies.
+1. UI Flows
+1. External sites
+1. Web Screens
+1. Web Blocks, starting by the Web Blocks with no dependencies.
 
 ## Customize or redirect the application URL
 
@@ -62,7 +62,6 @@ You can copy the following elements from your Traditional App to Reactive App di
 
 Additionally, you can paste a Server Action to a Screen Client Action, but never paste server Actions containing sensitive information that you could expose. For more information about security in Reactive Web Apps, see the [Reactive Web security best practices](https://success.outsystems.com/Documentation/Best_Practices/Security/Reactive_web_security_best_practices).
 
-  
 ### Scaffolding and Screen Templates
 
 If your Screens base on scaffolding or Screen Templates, it's faster to recreate them the same way. Make sure you're using the latest version of the [OutSystems UI Templates Reactive](https://www.outsystems.com/forge/component-overview/6335/outsystems-ui-templates-reactive).
@@ -77,10 +76,10 @@ Documents in this section:
 * [Differences to consider between Traditional and Reactive Web Apps](differences.md)
 * [Suggested stages of Traditional to Reactive Web App migration](stages.md)
 * [Traditional to Reactive Web App migration reference](reference.md)
-	* [Module elements](ref-module-elements.md)
-	* [Front-end](ref-frontend-intro.md)
-	    * [User Interface](ref-frontend-ui.md)
-	    * [UI Flow elements](ref-frontend-ui-flows.md)
-	    * [Screen and Block logic](ref-frontend-screen-and-block.md)
-	    * [System Actions](ref-system-actions.md)
-	* [Core Widgets](ref-core-widgets.md)
+       *[Module elements](ref-module-elements.md)
+       *[Front-end](ref-frontend-intro.md)
+           *[User Interface](ref-frontend-ui.md)
+           *[UI Flow elements](ref-frontend-ui-flows.md)
+           *[Screen and Block logic](ref-frontend-screen-and-block.md)
+           *[System Actions](ref-system-actions.md)
+       *[Core Widgets](ref-core-widgets.md)

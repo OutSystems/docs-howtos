@@ -24,7 +24,7 @@ After you upgrade every module of every application to OutSystems 11 the Log Ser
 
 ## Before removing the Log Service
 
-Upgrade every single Module in every application to Outsystems 11. 
+Upgrade every single Module in every application to Outsystems 11.
 In **Computer Management** > **Services and Applications** > **Message Queuing** > **Private Queues**, make sure that the number of messages is zero (`0`) on all queues, as shown in the following image:
 
 ![Screenshot of the Message Queuing Private Queues window showing zero messages in all OutSystems queues.](images/log-service-clean-1.png "Message Queuing Private Queues")
@@ -59,7 +59,7 @@ In farm environments with more than one server, follow these steps for the deplo
         Get-MsmqQueue -Name "outsystems*" -QueueType Private | Remove-MsmqQueue
         "OutSystems Message Queues were removed"
 
-1. Open a Command Prompt as administrator and run the following command, replacing `<path>` for the location where you saved the PowerShell script: 
+1. Open a Command Prompt as administrator and run the following command, replacing `<path>` for the location where you saved the PowerShell script:
 
         powershell.exe -ExecutionPolicy Bypass -File <path>\logserver-cleanup.ps1
 

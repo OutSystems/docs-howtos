@@ -45,4 +45,4 @@ To change the behavior of the header in Web Applications using the London Theme 
         padding-top: 0;
     }
 
-This CSS snippet resets the property `position` and removes the top padding for the content area (which was used to compensate for the fixed header). 
+This CSS snippet resets the property `position` and removes the top padding for the content area (which was used to compensate for the fixed header).

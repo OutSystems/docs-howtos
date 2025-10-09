@@ -52,4 +52,3 @@ Conversely, date times in the server are converted in the device to the device t
 
 Once you know this, it's a matter of displaying the time in the timezone of your choice.
 You can use a forge component to facilitate the conversion upon saving or displaying the timestamps.  [TimezoneReactiveUtils](https://www.outsystems.com/forge/component-overview/2199/timezonereactiveutils) is an example of this, and while it is not supported by OutSystems, it should provide output parameters to convert times based on time zones set by the developer.
-

@@ -126,7 +126,7 @@ You can dynamically sort a Table Records fed by a **SQL** query using the List S
 
     The `List_SortColumn_GetOrderBy()` function returns the column to sort by.
 
-1. Implement List Sort Column Rich Widgets in your Table Records Widget as you would do if you were using an Aggregate: 
+1. Implement List Sort Column Rich Widgets in your Table Records Widget as you would do if you were using an Aggregate:
 
     ![Screenshot depicting the implementation of List Sort Column Rich Widgets in a Table Records Widget.](images/list-sort-sql-05.png "Implementing List Sort Column Widgets")
 

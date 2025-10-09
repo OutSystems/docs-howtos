@@ -24,7 +24,7 @@ coverage-type:
 This article was written by [Justin James](https://www.outsystems.com/profile/5685/justin-james/), OutSystems MVP.
 </div>
 
-[Auth0](https://auth0.com/) is an authentication and authorization service that lets you easily provide single sign-on services. This way, your application can use other services, such as Azure and Dropbox, as the source of the user accounts. 
+[Auth0](https://auth0.com/) is an authentication and authorization service that lets you easily provide single sign-on services. This way, your application can use other services, such as Azure and Dropbox, as the source of the user accounts.
 Integrating them into your OutSystems application makes it much faster for your users to log in to your application because they will have fewer accounts to manage and do not need to go through a lengthy signup process with your application.
 
 ## Integrating Auth0 with OutSystems
