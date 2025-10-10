@@ -16,7 +16,7 @@ coverage-type:
   - apply
 ---
 
-# How to build an OutSystems continuous delivery pipeline
+# How to build a continuous delivery pipeline in O11
 
 Continuous delivery is the principle of building applications that can be released safely to production at any time, on demand. To accomplish this, you need an automatic deployment pipeline for that can rapidly assess the impact of changes made to your applications (from a production readiness perspective) and deploy them to production in a swift manner, with the least amount of intervention required from a human operator.
 
