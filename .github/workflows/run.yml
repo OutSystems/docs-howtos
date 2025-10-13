@@ -21,7 +21,7 @@ jobs:
     - name: Find Pull Request
       if: github.ref_name != github.event.repository.default_branch
       id: PR
-      uses: 8BitJonny/gh-get-current-pr@3.0.0
+      uses: 8BitJonny/gh-get-current-pr@4.0.0
       with:
         filterOutClosed: true
         sha: ${{ github.event.pull_request.head.sha }}
