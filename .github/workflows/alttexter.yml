@@ -27,7 +27,7 @@ jobs:
           echo "REF=${{ github.event.pull_request.head.ref }}" >> $GITHUB_ENV
 
       - name: Checkout
-        uses: actions/checkout@v4.1.1
+        uses: actions/checkout@v5
         with:
           fetch-depth: 1
           ref: ${{ env.REF }}

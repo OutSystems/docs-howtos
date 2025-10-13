@@ -9,7 +9,7 @@ jobs:
     name: Validate
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4.1.1
+      - uses: actions/checkout@v5
       - name: Validate Frontmatter
         uses: mheap/frontmatter-json-schema-action@main
         with:

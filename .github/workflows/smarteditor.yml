@@ -35,7 +35,7 @@ jobs:
           REF=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" $PR_API_URL | jq -r .head.ref)
           echo "REF=$REF" >> $GITHUB_ENV
       - name: Checkout
-        uses: actions/checkout@v4.1.1
+        uses: actions/checkout@v5
         with:
           fetch-depth: 1
           ref: ${{ env.REF }}

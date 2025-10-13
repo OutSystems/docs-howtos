@@ -58,7 +58,7 @@ jobs:
     steps:
     - name: Checkout
       if: (github.event_name == 'issue_comment' && needs.ignore-list.outputs.triggered == 'true') || github.event_name != 'issue_comment'
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         fetch-depth: 1
   
