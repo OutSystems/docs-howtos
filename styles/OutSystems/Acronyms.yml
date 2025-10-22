@@ -15,12 +15,14 @@ exceptions:
   - APK
   - ASP
   - AWS
+  - BAPI
   - CDN
   - CPU
   - CSS
   - CSV
   - CRUD
   - DEV
+  - DNS
   - DOM
   - FAQ
   - GDB
@@ -30,6 +32,7 @@ exceptions:
   - HTML
   - HTTP
   - HTTPS
+  - IAM
   - IDE
   - IPA
   - JSON
@@ -38,6 +41,7 @@ exceptions:
   - MABS
   - NET
   - NTLM
+  - NULL
   - ODC
   - OKTA
   - OML
@@ -67,6 +71,7 @@ exceptions:
   - URL
   - USB
   - UTF
+  - UUID
   - WSDL
   - XML
   - XSS
@@ -74,3 +79,4 @@ exceptions:
   - ZIP
   - VPN
   - IIS
+scope: ~text.frontmatter.figma
