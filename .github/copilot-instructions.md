@@ -1,13 +1,13 @@
-##  General guidelines for grammar and content
+## General guidelines for grammar and content
 
 ### Tone and voice
 
 Use the appropriate tone and voice in your content. Your content must be:
 
-- Friendly and straightforward
-- Clear and concise
-- Inclusive and respectful
-- Free of jargon and sales talk
+* Friendly and straightforward
+* Clear and concise
+* Inclusive and respectful
+* Free of jargon and sales talk
 
 ### Be brief and concise
 
@@ -93,10 +93,10 @@ When referring to OutSystems, don't use we.
 
 Your content should be accessible to all people, to those without and with disabilities. Be mindful of:
 
-- How you refer to people with disabilities. Use inclusive language.
-- How you describe interactions with the user interface. Consider providing alternative methods or steps.
-- How you use words to indicate a location (left, right, top, below, up, down) on screen. Provide more context for people using screen-readers.
-- How you use the words "easy" and "simple". What may be simple to do for some people may not be simple to do for all.
+* How you refer to people with disabilities. Use inclusive language.
+* How you describe interactions with the user interface. Consider providing alternative methods or steps.
+* How you use words to indicate a location (left, right, top, below, up, down) on screen. Provide more context for people using screen-readers.
+* How you use the words "easy" and "simple". What may be simple to do for some people may not be simple to do for all.
 
 **Yes:** For more information about accessibility, refer to [Writing for all abilities](https://docs.microsoft.com/en-us/style-guide/accessibility/writing-all-abilities).
 
@@ -130,13 +130,13 @@ For more details, see [Bias-free communication](https://docs.microsoft.com/en-us
 
 **Yes:**
 
-- When developers download a Forge component, they can install it in Service Studio. (Use plural to avoid referring to gender.)
-- When a developer downloads a Forge component, they can install it in Service Studio. (Use "they" to refer to a single person without mentioning their gender.)
-- When you download a Forge component, install it in Service Studio. (Are your target readers developers? If yes, then "you" is a better choice.)
+* When developers download a Forge component, they can install it in Service Studio. (Use plural to avoid referring to gender.)
+* When a developer downloads a Forge component, they can install it in Service Studio. (Use "they" to refer to a single person without mentioning their gender.)
+* When you download a Forge component, install it in Service Studio. (Are your target readers developers? If yes, then "you" is a better choice.)
 
 **No:**
 
-- When a developer downloads a Forge component, he can install it in Service Studio. (Service Studio is not used exclusively by male developers or developers who identify as men.)
+* When a developer downloads a Forge component, he can install it in Service Studio. (Service Studio is not used exclusively by male developers or developers who identify as men.)
 
 ### Avoid Latin abbreviations
 
@@ -154,9 +154,9 @@ Use "that is" instead of "i.e." and "for example" or "such as" instead of "e.g."
 
 ### Timeless documentation
 
-- Avoiding time-based words and phrases: Do not use words like new, now, currently, latest, or future when describing a product's features. These words quickly become outdated and require maintenance.
-- Focusing on the current state: The documentation should describe how a product works as if it is the current, stable state, not a recent change.
-- Providing a specific reference point (if necessary): If you absolutely must refer to a new feature, provide a specific reference point like a version number or a date.
+* Avoiding time-based words and phrases: Do not use words like new, now, currently, latest, or future when describing a product's features. These words quickly become outdated and require maintenance.
+* Focusing on the current state: The documentation should describe how a product works as if it is the current, stable state, not a recent change.
+* Providing a specific reference point (if necessary): If you absolutely must refer to a new feature, provide a specific reference point like a version number or a date.
 
 **Yes:** You can configure LinkedIn as your Identity Provider using the provided accelerator.
 
@@ -169,17 +169,22 @@ Avoid documenting future features or products, even in innocuous ways. Don't pre
 ### Rules for pronouns
 
 #### Ensure pronoun references are unambiguous
+
 A pronoun should clearly refer to a specific noun (antecedent). If there is any potential for confusion, restate the noun.
 **Yes:** "If you are using the Data Grid, you can change the view in ODC Portal. This new feature simplifies the process."
 **No:** "If you are using the Data Grid, you can change the view in ODC Portal. It is a new feature."
 
 #### Use `that` and `which` correctly
+
 Use `that` for restrictive clauses (information essential to the meaning of the sentence). Use `which` for nonrestrictive clauses (information that can be removed without changing the core meaning).
+
 * **Yes:** "The platform service that handles all requests to the services is the Platform Load Balancer."
 * **Yes:** "OutSystems, which is a low-code development platform, helps you create apps."
 
 #### Use "who" for people
+
 The pronoun `who` should be used when referring to a person or people.
+
 * **Yes:** "The person who configures the security settings should be an administrator."
 * **No:** "The person that configures the security settings should be an administrator."
 
@@ -193,7 +198,7 @@ Similarly to putting the most important information first in a sentence, put the
 
 #### Types of lists
 
-Choose one of the following list styles. 
+Choose one of the following list styles.
 
 #### Numbered list
 
@@ -210,17 +215,17 @@ To install OutSystems in your infrastructure, follow these steps:
 
 #### Bulleted list
 
-A set of items that's not a sequence, such as a set of nonsequential options or examples. Make sure it's clear whether or not every item is required. The following is an example of a bulleted list: 
+A set of items that's not a sequence, such as a set of nonsequential options or examples. Make sure it's clear whether or not every item is required. The following is an example of a bulleted list:
 
-Here's some of the benefits of using workflows: 
+Here's some of the benefits of using workflows:
 
-* Streamline tasks that require manual intervention. 
+* Streamline tasks that require manual intervention.
   
-* Automate repetitive tasks and notifications, leading to faster response times and better operational efficiency. Include multiple conditional paths that route your business process based on specific criteria. 
+* Automate repetitive tasks and notifications, leading to faster response times and better operational efficiency. Include multiple conditional paths that route your business process based on specific criteria.
 
 #### Description list that uses bulleted run-in headings
 
-A set of introductory terms or phrases, each followed by a description, definition, or explanation. Use this type of list if you want to highlight and explain several concepts or save space. 
+A set of introductory terms or phrases, each followed by a description, definition, or explanation. Use this type of list if you want to highlight and explain several concepts or save space.
 
 The following is an example of a description list that uses bulleted run-in headings:
 
@@ -254,7 +259,7 @@ Here are some examples of events that can occur in an app:
 
 **No:**
 
-To stream logs to Datadog, 
+To stream logs to Datadog,
 
 1. Get the Datadog API key.  
 2. Set up the [OpenTelemetry Collector](https://success.outsystems.com/documentation/11/monitoring_and_troubleshooting_apps/introduction_to_log_streaming/configuring_the_log_streaming_service_in_lifetime/set_up_the_opentelemetry_collector/) with Datadog as the exporter.  
@@ -288,15 +293,15 @@ Effective link text helps to improve accessibility and scannability. Different r
 
 Sometimes you have to rework a sentence to include a phrase that makes good link text.
 
-### Write link introductions 
+### Write link introductions
 
 When you dedicate a separate sentence to a cross-reference, introduce the cross-reference using consistent language—specifically, use the phrase "For more information, refer to..." or "For more information about..., refer to... ."
 
-Include the "about..." clause when the link text or surrounding context doesn't clearly indicate why you're referring the reader to this information. 
+Include the "about..." clause when the link text or surrounding context doesn't clearly indicate why you're referring the reader to this information.
 
-Don't use *on* instead of *about*.
+Don't use _on_ instead of _about_.
 
-Use *refer to* to refer to links and cross-references. For more information, refer to …
+Use _refer to_ to refer to links and cross-references. For more information, refer to …
 
 **Yes**: For more information, refer to [Worflows in ODC](https://success.outsystems.com/documentation/outsystems_developer_cloud/building_apps/about_business_processes/workflows_in_odc/).
 
@@ -308,7 +313,7 @@ Use *refer to* to refer to links and cross-references. For more information, ref
 
 Make sure that the surrounding context or the link text itself clearly indicates why you're referring the reader to this information. Make the explanation specific, but don't repeat the link text.
 
-If you're introducing a cross-reference with "For more information..." phrasing, then you can do this by adding an "about..." phrase. 
+If you're introducing a cross-reference with "For more information..." phrasing, then you can do this by adding an "about..." phrase.
 
 **Yes**: For more information about OAuth authentication and authorization, refer to
 
@@ -316,17 +321,17 @@ If you're introducing a cross-reference with "For more information..." phrasing,
 
 ### Use task-based headings for procedural content
 
-* Start with a verb in the imperative mood (e.g., "Create a screen" or "Install a Forge app").
-* Avoid gerunds (e.g., "Creating a screen").
+* Start with a verb in the imperative mood (for example, "Create a screen" or "Install a Forge app").
+* Avoid gerunds (for example "Creating a screen").
 
 ### Include an introduction
 
 * Provide a brief overview of the procedure, explaining what the user will achieve and why it is important.
-* Identify the audience or skill level (e.g., beginner or experienced developer).
+* Identify the audience or skill level (for example, beginner or experienced developer).
 
 ### Place prerequisites at the top
 
-* List any requirements (e.g., tools, permissions, or prior steps) before the procedure begins.
+* List any requirements (for example, tools, permissions, or prior steps) before the procedure begins.
 * Ensure prerequisites are clear and concise.
 
 ### Use numbered steps
@@ -346,16 +351,16 @@ If you're introducing a cross-reference with "For more information..." phrasing,
 
 ### Add content after headings
 
-* Include at least one sentence after a heading to introduce the content that follows (e.g., images, tables, or steps).
+* Include at least one sentence after a heading to introduce the content that follows (for example, images, tables, or steps).
 
 ### Use infoboxes sparingly
 
-* Highlight critical information (e.g., warnings or tips) only when necessary to avoid overuse.
+* Highlight critical information (for example, warnings or tips) only when necessary to avoid overuse.
 
 ### Use links judiciously
 
 * Limit the number of links in the procedure to avoid distractions.
-* Place additional resources in a "Related Resources" section at the end.
+* Place additional resources in a **Related Resources** section at the end.
 
 ### Add a summary
 
