@@ -1,5 +1,5 @@
 {
-    "markdownlint.customRules": [
-        "./scripts/md025_with_pagebreaks.cjs"
-    ]
+  "markdownlint.customRules": [
+    "./scripts/md025_with_pagebreaks.cjs"
+  ]
 }
