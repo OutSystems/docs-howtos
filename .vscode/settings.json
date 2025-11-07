@@ -1,5 +1,6 @@
 {
   "markdownlint.customRules": [
-    "./scripts/md025_with_pagebreaks.cjs"
+    "./scripts/md025_with_pagebreaks.cjs",
+    "./scripts/md033_nested_inline_html.cjs"
   ]
 }
