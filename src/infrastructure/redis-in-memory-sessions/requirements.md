@@ -37,6 +37,15 @@ Before you can use Redis with OutSystems, check if you fulfill both OutSystems a
 Each server machine used for Redis must fulfill the following requirements:
 
 * Redis Server stable version 7.0.X
+* Redis Server stable version 7.2.X <sup>1</sup>
+* Redis Open Source version 8.2.X <sup>2</sup>
+
+<div class="info" markdown="1">
+
+<sup>1</sup> Starting Platform Server version 11.35.0.
+<sup>2</sup> Starting Platform Server version 11.39.0.
+
+</div>
 
 ## Hardware
 
@@ -52,7 +61,7 @@ The minimum requirements of a Redis infrastructure for **non-productive OutSyste
 
 ### Production environment
 
-For Production environments, you should use a high-availability configuration of Redis Server. OutSystems recommends that you use **Redis Cluster** instead of the Sentinel alternative, since it supports multiple [Active-Active nodes](https://redislabs.com/redis-enterprise/technology/active-active-geo-distribution/) and can scale horizontally. It allows you to future-proof your Redis installation, allowing you to adjust to increased demand.
+For Production environments, you should use a high-availability configuration of Redis Server. OutSystems recommends that you use **Redis Cluster** instead of the Sentinel alternative, since it supports multiple [Active-Active nodes](https://redis.io/docs/latest/operate/rs/databases/active-active/) and can scale horizontally. It allows you to future-proof your Redis installation, allowing you to adjust to increased demand.
 
 The minimum requirements of a **highly-available Redis infrastructure (Production)** are the following:
 

@@ -44,7 +44,7 @@ Follow these steps **for each server node** in the Redis Cluster:
 
 1. Connect to the server using SSH with an account with super-user privileges.
 
-1. Run the following commands:
+1. Run the following commands <sup>1</sup>:
 
         sudo apt-get update
         sudo apt-get install redis-server
@@ -53,6 +53,12 @@ Follow these steps **for each server node** in the Redis Cluster:
         sudo ufw allow 7001
         sudo ufw allow 17000
         sudo ufw allow 17001
+
+<div class="info" markdown="1">
+
+<sup>1</sup> Starting on Redis 8, Redis Open Source release process was changed. To retrieve the latest versions for redis-server, refer to the [Redis Debian installation steps](https://github.com/redis/redis-debian). Remember to install redis-server instead of redis. To do this, run the following command: `sudo apt-get install redis-server`.
+
+</div>
 
 1. Create and edit the `/etc/rc.local` file by running the following command:
 
@@ -218,10 +224,11 @@ Perform these steps **on each server**:
 
 1. Check the content of the log file (last 100 lines) for the `redis-server` service running on port 7000 by running the following command:
 
-        sudo tail -n 100 /var/log/redis/redis_7000.log
+        ```sudo tail -n 100 /var/log/redis/redis_7000.log```
 
     The information messages in the logs should be similar to the following, with no warnings or errors:
 
+        ```
         2917:C 25 Sep 2019 08:14:15.752 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
         2917:C 25 Sep 2019 08:14:15.752 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=2917, just started
         2917:C 25 Sep 2019 08:14:15.752 # Configuration loaded
@@ -231,13 +238,15 @@ Perform these steps **on each server**:
         2917:M 25 Sep 2019 08:14:15.756 * Running mode=cluster, port=7000.
         2917:M 25 Sep 2019 08:14:15.756 # Server initialized
         2917:M 25 Sep 2019 08:14:15.756 * Ready to accept connections
+        ```
 
 1. Check the content of the log file (last 100 lines) for the `redis-server` service running on port 7001 by running the following command:
 
-        sudo tail -n 100 /var/log/redis/redis_7001.log
+        ```sudo tail -n 100 /var/log/redis/redis_7001.log```
 
     The information messages in the logs should be similar to the following, with no warnings or errors:
 
+        ```
         2917:C 25 Sep 2019 08:14:15.752 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
         2917:C 25 Sep 2019 08:14:15.752 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=2917, just started
         2917:C 25 Sep 2019 08:14:15.752 # Configuration loaded
@@ -247,14 +256,16 @@ Perform these steps **on each server**:
         2917:M 25 Sep 2019 08:14:15.756 * Running mode=cluster, port=7001.
         2917:M 25 Sep 2019 08:14:15.756 # Server initialized
         2917:M 25 Sep 2019 08:14:15.756 * Ready to accept connections
+        ```
 
 1. Check the status of the `redis-server` service running on port 7000 by running the following command:
 
-        sudo systemctl status redis_7000.service
+        ```sudo systemctl status redis_7000.service```
 
     If everything is configured correctly, the output should be similar to the following:
 
-        redis_7000.service - Redis persistent key-value database
+       ```
+       redis_7000.service - Redis persistent key-value database
             Loaded: loaded (/etc/systemd/system/redis_7000.service; enabled; vendor preset: enabled)
             Active: active (running) since Wed 2020-09-16 17:13:15 UTC; 22min ago
         Main PID: 472 (redis-server)
@@ -262,13 +273,15 @@ Perform these steps **on each server**:
             Memory: 544.3M
             CGroup: /system.slice/redis_7000.service
                     └─472 /usr/bin/redis-server *:7000 [cluster]
+       ```
 
 1. Repeat the previous command for the `redis-server` service running on port 7001:
 
-        sudo systemctl status redis_7001.service
+        ```sudo systemctl status redis_7001.service```
 
     If everything is configured correctly, the output should be similar to the following:
 
+        ```
         redis_7001.service - Redis persistent key-value database
             Loaded: loaded (/etc/systemd/system/redis_7001.service; enabled; vendor preset: enabled)
             Active: active (running) since Wed 2020-09-16 17:13:15 UTC; 21min ago
@@ -277,6 +290,7 @@ Perform these steps **on each server**:
             Memory: 5.3M
             CGroup: /system.slice/redis_7001.service
                     └─474 /usr/bin/redis-server *:7001 [cluster]
+       ```
 
 After checking that all servers are well configured, you can proceed with the cluster configuration.
 
@@ -296,12 +310,13 @@ Do the following:
 
 1. Create a cluster from several Redis Server processes by running the following command:
 
-        redis-cli --cluster create 172.31.6.35:7000 172.31.11.176:7000 172.31.3.184:7000 172.31.6.35:7001 172.31.11.176:7001 172.31.3.184:7001 --cluster-replicas 1 -a [ACCESSKEY]
+        ```redis-cli --cluster create 172.31.6.35:7000 172.31.11.176:7000 172.31.3.184:7000 172.31.6.35:7001 172.31.11.176:7001 172.31.3.184:7001 --cluster-replicas 1 -a [ACCESSKEY]```
 
     The first 3 addresses are the Master nodes and the next 3 addresses are the Replica nodes. The `--cluster-replicas 1` argument indicates that each Master will have 1 Replica. It will be a cross-node replication as depicted before.
 
     The output should be similar to the following:
 
+        ```
         >>> Performing hash slots allocation on 6 nodes...
         Master[0] -> Slots 0 - 5460
         Master[1] -> Slots 5461 - 10922
@@ -322,11 +337,13 @@ Do the following:
         S: 20ab4b30f3d6d25045909c6c33ab70feb635061c 172.31.3.184:7001
         replicates 314038a48bda3224bad21c3357dbff8305735d72
         Can I set the above configuration? (type 'yes' to accept):
+       ```
 
 1. Type `yes` and press **Enter** to accept the proposed configuration.
 
     You get the configuration details in the output:
 
+        ```
         Can I set the above configuration? (type 'yes' to accept): yes
         >>> Nodes configuration updated
         >>> Assign a different config epoch to each node
@@ -356,6 +373,7 @@ Do the following:
         >>> Check for open slots...
         >>> Check slots coverage...
         [OK] All 16384 slots covered.
+       ```
 
 After creating the cluster there are 16384 hash slots, divided by the 3 servers:
 
@@ -375,12 +393,13 @@ Do the following:
 
 1. run the following command in the terminal:
 
-        redis-cli -c -h 172.31.6.35 -p 7000 -a [ACCESSKEY]
+       ``` redis-cli -c -h 172.31.6.35 -p 7000 -a [ACCESSKEY]```
 
     `[ACCESSKEY]` is the password you previously configured in the Redis configuration file. The `-c` option activates basic cluster support in `redis-cli`.
 
 1. On the `redis-cli` prompt, run the `CLUSTER NODES` command:
 
+        ```
         172.19.33.7:7000> CLUSTER NODES
         20ab4b30f3d6d25045909c6c33ab70feb635061c 172.31.3.184:7001@17001 slave 314038a48bda3224bad21c3357dbff8305735d72 0 1569402961000 6 connected
         314038a48bda3224bad21c3357dbff8305735d72 172.31.11.176:7000@17000 master - 0 1569402961543 2 connected 5461-10922
@@ -388,6 +407,7 @@ Do the following:
         ff3e4300bec02ed4bd1be9af5d83a5b44249c2b2 172.31.6.35:7000@17000 myself,master - 0 1569402959000 1 connected 0-5460
         89206df4f41465bce81f44e25e5fdfa8566424b8 172.31.11.176:7001@17001 slave ff3e4300bec02ed4bd1be9af5d83a5b44249c2b2 0 1569402960000 5 connected
         896b2a7195455787b5d8a50966f1034c269c0259 172.31.6.35:7001@17001 slave 19a2c81b7f489bec35eed474ae8e1ad787327db6 0 1569402959936 4 connected
+       ```
 
 From the command output you can observe the following (analyzing the output line by line):
 
@@ -405,12 +425,13 @@ Do the following:
 
 1. Connect to the Redis Master process (7000) on Server 1 (172.31.6.35) by running the following command:
 
-        redis-cli -c -h 172.31.6.35 -p 7000 -a [ACCESSKEY]
+        ```redis-cli -c -h 172.31.6.35 -p 7000 -a [ACCESSKEY]```
 
     Replace `[ACCESSKEY]` with the password you configured previously.
 
 1. Run a few `SET` and `GET` commands to check the behavior of Redis:
 
+        ```
         172.31.6.35:7000> set a 1
         -> Redirected to slot [15495] located at 172.31.3.184:7000
         OK
@@ -436,6 +457,7 @@ Do the following:
         -> Redirected to slot [11298] located at 172.31.3.184:7000
         "4"
         172.31.3.184:7000>
+        ```
 
 From the output, you can see that Redis sends the keys to the correct hash slots in each server, even though you're connected to a specific Master process (on Server 1).
 
