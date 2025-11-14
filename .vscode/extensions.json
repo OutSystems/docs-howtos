@@ -1,0 +1,15 @@
+{
+    "recommendations": [
+        "github.vscode-github-actions",
+        "mhutchie.git-graph",
+        "DavidAnson.vscode-markdownlint",
+        "mdickin.markdown-shortcuts",
+        "jakob101.RelativePath",
+        "bierner.markdown-yaml-preamble",
+        "heaths.vscode-guid",
+        "streetsidesoftware.code-spell-checker",
+        "TechnicalKnowledgeTeam.tk-ai-toolkit",
+        "ChrisChinchilla.vale-vscode",
+        "GitHub.vscode-pull-request-github"
+    ]
+}
