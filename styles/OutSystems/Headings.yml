@@ -27,6 +27,7 @@ exceptions:
   - AIMS
   - MABS
   - Mobile Apps Builder Service
+  - UsersIdP
 # Concepts
   - Action
   - Activity
