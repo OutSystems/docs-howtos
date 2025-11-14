@@ -1,15 +1,15 @@
 {
-    "recommendations": [
-        "github.vscode-github-actions",
-        "mhutchie.git-graph",
-        "DavidAnson.vscode-markdownlint",
-        "mdickin.markdown-shortcuts",
-        "jakob101.RelativePath",
-        "bierner.markdown-yaml-preamble",
-        "heaths.vscode-guid",
-        "streetsidesoftware.code-spell-checker",
-        "TechnicalKnowledgeTeam.tk-ai-toolkit",
-        "ChrisChinchilla.vale-vscode",
-        "GitHub.vscode-pull-request-github"
-    ]
+  "recommendations": [
+    "ChrisChinchilla.vale-vscode",
+    "DavidAnson.vscode-markdownlint",
+    "GitHub.vscode-pull-request-github",
+    "TechnicalKnowledgeTeam.tk-ai-toolkit",
+    "bierner.markdown-yaml-preamble",
+    "github.vscode-github-actions",
+    "heaths.vscode-guid",
+    "jakob101.RelativePath",
+    "mdickin.markdown-shortcuts",
+    "mhutchie.git-graph",
+    "streetsidesoftware.code-spell-checker"
+  ]
 }
