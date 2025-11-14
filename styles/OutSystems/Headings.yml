@@ -144,3 +144,4 @@ exceptions:
   - AI
   - DNS
   - TLS
+  - SAST
