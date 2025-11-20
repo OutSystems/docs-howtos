@@ -52,7 +52,6 @@ At OutSystems, a proper noun is typically:
 
 * Something the user named (for example, My Business app)
 * A product name (for example, Service Studio)
-* A specific instance of a common noun
 
 #### Don't capitalize common nouns
 
@@ -67,12 +66,14 @@ Don't capitalize generic technical terms unless they're part of a proper noun:
 * **Yes**: 
   1. Configure application settings after deployment
   1. Click the Save button
-    For more information, refer to the troubleshooting guide
+    
+      For more information, refer to the troubleshooting guide
 
 * **No**: 
   1. Configure Application Settings After Deployment
   1. Click the save button
-    For More Information, Refer To The Troubleshooting Guide
+    
+      For More Information, Refer To The Troubleshooting Guide
 
 #### Capitalize proper nouns and brand names
 
