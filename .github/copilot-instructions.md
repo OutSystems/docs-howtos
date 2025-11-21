@@ -59,7 +59,7 @@ At OutSystems, a proper noun is typically:
 
 Don't capitalize generic technical terms unless they're part of a proper noun:
 
-* environment, application, module, screen, action
+* environment, app, module, screen, action
 
 * database, server, cloud, platform
 
