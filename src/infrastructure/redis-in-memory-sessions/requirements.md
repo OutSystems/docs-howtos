@@ -42,7 +42,7 @@ Each server machine used for Redis must fulfill the following requirements:
 
 <div class="info" markdown="1">
 
-<sup>1</sup> Starting Platform Server version 11.35.0.
+<sup>1</sup> Starting Platform Server version 11.35.0. <br/>
 <sup>2</sup> Starting Platform Server version 11.39.0.
 
 </div>
