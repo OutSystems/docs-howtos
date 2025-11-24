@@ -42,7 +42,7 @@ jobs:
 
     - name: Upload artifact ignore-list
       if: (github.event_name == 'issue_comment' && steps.check.outputs.triggered == 'true') || github.event_name != 'issue_comment'
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
         name: ignore-list
         path: ignore-list.txt
@@ -83,7 +83,7 @@ jobs:
 
     - name: Upload artifact report
       if: (github.event_name == 'issue_comment' && needs.ignore-list.outputs.triggered == 'true') || github.event_name != 'issue_comment'
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
         name: report
         path: report.md
@@ -98,7 +98,7 @@ jobs:
 
     - name: Upload artifact pr-body
       if: (github.event_name == 'issue_comment' && needs.ignore-list.outputs.triggered == 'true') || github.event_name != 'issue_comment'
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v5
       with:
         name: pr-body
         path: pr-body.txt
