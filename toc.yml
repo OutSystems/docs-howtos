@@ -71,7 +71,6 @@
     - href: front-end/prevent-download/prevent-download.md 
     - href: front-end/pagination-pattern/pagination-pattern.md
 
-
 # Logic How-tos
 - href: logic/intro.md
 - topics:  
@@ -128,9 +127,6 @@
     - href: devops/log-service/log-service-clean.md
     # Migrate to the new Firebase-based mobile plugins        
     - href: devops/migrate-to-firebase-plugins/intro.md
-    
-
-
 
 # Integrations How-tos
 - href: integrations/intro.md
@@ -148,7 +144,6 @@
     - href: integrations/use-push-notifications-with-pushwoosh/faq.md
     - href: integrations/workato-connector/faq.md
     - href: integrations/migrate-postgresql/faq.md
-
 
 # Infrastructure How-tos
 - href: infrastructure/intro.md
@@ -171,7 +166,3 @@
         - href: infrastructure/reverse-proxy/reverse-proxy-use-cases.md
         - href: infrastructure/reverse-proxy/reverse-proxy-apache-config.md
     - href: infrastructure/azure-trial/azure-trial.md
-
-
-
-

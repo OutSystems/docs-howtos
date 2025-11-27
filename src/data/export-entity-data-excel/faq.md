@@ -29,7 +29,7 @@ In Traditional Web, although the action is available in screen actions, it's str
 
 </div>
 
-## Exporting data to Excel in Reactive Web { #reactive }
+## Exporting data to Excel in Reactive Web {#reactive}
 
 In this example lets start by creating a users list screen, by dragging the Users entity to the main flow. To do it, open your app in Service Studio and do the following:
 
@@ -47,7 +47,7 @@ In this example lets start by creating a users list screen, by dragging the User
 
     ![Screenshot of the Service Studio interface with a highlighted button for adding a new client action to the user list screen.](images/create_screen_action_ss.png "Adding a Button to the User List Screen")
 
-### Creating the download logic { #reactive-logic }
+### Creating the download logic {#reactive-logic}
 
 Now that you have done all required actions on the screen is time to create the logic.
 
@@ -101,7 +101,7 @@ If it's expected that the user downloads the file several times, you may want to
 
 </div>
 
-## Exporting data to Excel in Traditional Web { #traditional-web }
+## Exporting data to Excel in Traditional Web {#traditional-web}
 
 1. In this example lets start by creating a users list screen, by dragging the **Users** entity to the main flow. To do it, open your app in Service Studio and do the following:
 
