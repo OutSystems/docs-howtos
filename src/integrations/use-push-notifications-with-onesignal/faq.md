@@ -1,10 +1,10 @@
 ---
-summary: Explore how to integrate OneSignal for push notifications in OutSystems 11 (O11) applications using the OneSignal plugin.
+summary: Explore how to integrate OneSignal for push notifications in OutSystems 11 (O11) and OutSystems Developer Cloud (ODC) applications using the OneSignal plugin.
 tags: push notifications, onesignal integration, notification configuration, mobile app development, platform-specific setup
 guid: d7d5445d-d28d-4acb-b158-b6d85b7f2ace
 locale: en-us
-app_type: traditional web apps, mobile apps, reactive web apps
-platform-version: o11
+app_type: mobile apps
+platform-version: o11, odc
 figma: https://www.figma.com/file/gKoXqtZTY2IJjyMWschrRB/Integrations?node-id=1242:340
 audience:
   - mobile developers
@@ -17,9 +17,9 @@ coverage-type:
   - apply
 ---
 
-# How to Use Push Notifications with OneSignal
+# How to use push notifications with OneSignal
 
-OneSignal is a service that enables push notifications, abstracting details such as the platform the device is running on. With the [OneSignal plugin](http://www.outsystems.com/forge/component/2119/onesignal-plugin/ "http://www.outsystems.com/forge/component/2119/onesignal-plugin/"), OutSystems applications can send and receive push notifications.
+OneSignal is a service that enables push notifications, abstracting details such as the platform the device is running on. With the OneSignal plugin, OutSystems applications can send and receive push notifications.
 
 The image below shows a push notification in an Android smartphone.
 
@@ -27,30 +27,31 @@ The image below shows a push notification in an Android smartphone.
 
 ## Configuring OneSignal
 
-You need to configure OneSignal for each of the mobile platforms it will be working on. Once your configuration is done, you’ll have an Application ID and a REST API KEY from OneSignal.
+You need to configure OneSignal for each of the mobile platforms it works on. Once your configuration is done, you have an Application ID and a REST API KEY from OneSignal.
 
 You can configure OneSignal for iOS and Android.
 
-* [Configure for iOS](https://documentation.onesignal.com/docs/generate-an-ios-push-certificate)
-* [Configure for Android](https://documentation.onesignal.com/docs/generate-a-google-server-api-key "https://documentation.onesignal.com/docs/generate-a-google-server-api-key")
+* [Initial setup of your OneSignal App](https://documentation.onesignal.com/docs/mobile-sdk-setup#step-by-step-instructions-for-configuring-your-onesignal-app)
+* [Configure for iOS](https://documentation.onesignal.com/docs/ios-p12-generate-certificates)
+* [Configure for Android](https://documentation.onesignal.com/docs/android-firebase-credentials "https://documentation.onesignal.com/docs/en/android-firebase-credentials")
 
 <div class="info" markdown="1">
 
-From Android 15 onwards, users can install an app in the [Private space](https://developer.android.com/about/versions/15/features#private-space). Users can lock their private space at any time, which means that push notifications are not shown until the user unlocks it.
+From Android 15 onwards, users can install an app in the [Private space](https://developer.android.com/about/versions/15/features#private-space). Users can lock their private space at any time. This means that push notifications are not shown until the user unlocks it.
 
-It is not possible to detect if an app is installed in the private space. If you plan to use the OneSignal plugin for delivering critical notifications, inform your users to avoid installing your app in the private space.
+You cannot detect if an app is installed in the private space. If you use the OneSignal plugin for delivering critical notifications, inform your users to avoid installing your app in the private space.
 
 For more information about the behavior changes of your app related to the private space, refer to [Android documentation](https://developer.android.com/about/versions/15/behavior-changes-all#private-space-changes).
 
 </div>
 
-## Installing the OneSignal Plugin
+## Installing the OneSignal plugin
 
-Start by installing the [OneSignal plugin](http://www.outsystems.com/forge/component/2119/onesignal-plugin/ "http://www.outsystems.com/forge/component/2119/onesignal-plugin/") from the OutSystems Forge. Alternatively, go to the **OutSystems tab** in Service Studio and install from there.
+Start by installing the OneSignal plugin (available for both [O11 OutSystems Forge](http://www.outsystems.com/forge/component/2119/onesignal-plugin/ "http://www.outsystems.com/forge/component/2119/onesignal-plugin/") and ODC Forge).
 
-![Screenshot of the OneSignal Plugin page on the OutSystems Forge website](images/image.png "OneSignal Plugin on OutSystems Forge")
+![Screenshot of the OneSignal Plugin page on the OutSystems Forge website (O11)](images/image.png "OneSignal Plugin on OutSystems Forge")
 
-## Receiving Notifications
+## Receiving notifications
 
 For your app to receive notifications, you need to implement client-side logic to register the device in OneSignal.
 
@@ -69,10 +70,19 @@ In case you want to add logic to run on events over notifications, do the follow
     * **OnNotificationReceived**: a Client Action that runs when the app receives a notification.
     * **OnNotificationOpened**: a Client Action that runs when the user opens a notification.
 
-### Receiving Notifications with Deep Links for Android
+### Receiving notifications with deep links for Android
 
-If your app will be deployed to Android devices and you intend to use deep links in your notifications, add the following snippet to the `Extensibility Configurations` field of the Module:
+If your app is deployed to Android devices and you intend to use deep links in your notifications, you need to set a `AndroidLaunchMode` preference in your Extensibility Configurations.
 
+This preference changes how a new [activity](https://developer.android.com/guide/components/activities/intro-activities) from your Mobile App is launched. For more information about the activity launch mode, refer to [Activity element documentation](https://developer.android.com/guide/topics/manifest/activity-element#lmode).
+
+This extra step ensures that Android end users will be redirected to specific Screens when they click the OneSignal notification. No additional configuration is needed for iOS devices.
+
+#### O11
+
+Add the following to your module's Extensibility Configurations.
+
+```json
     {
         "preferences": {
             "android": [
@@ -83,12 +93,46 @@ If your app will be deployed to Android devices and you intend to use deep links
             ]
         }   
     }
-    
-This configuration changes how a new [activity](<https://developer.android.com/guide/components/activities/intro-activities>) from your Mobile App is launched. Read more about the activity launch mode [here](<https://developer.android.com/guide/topics/manifest/activity-element#lmode>).
+```
 
-This extra step ensures that Android end users will be redirected to specific Screens when they click the OneSignal notification. No additional configuration is needed for iOS devices.
+#### ODC
 
-### Registering a Device with a User
+Add the `AndroidLaunchMode` preference to your application's Extensibility Configuratons.
+
+(Recommended) Using the universal extensibility configurations schema:
+
+```json
+{
+  "appConfigurations": {
+    "cordova": {
+      "preferences": {
+        "android": {
+          "AndroidLaunchMode": "singleTask"
+        }
+      }
+    }
+  }
+}
+```
+
+Using the Cordova-based extensibiility configurations schema (for MABS versions lower than 12):
+
+```json
+    {
+        "preferences": {
+            "android": [
+                {
+                    "name": "AndroidLaunchMode",
+                    "value": "singleTask"
+                }
+            ]
+        }   
+    }
+```
+
+Note that you can only use the Cordova-based extensibility for MABS versions lower than 12. It won't work on MABS 12.
+
+### Registering a device with a user
 
 If your users need to login to use the application, the device can be registered with that user.
 
@@ -104,15 +148,15 @@ Put it after the “DoLogin” action and it should look like this:
 
 To set the AppId value, use the **OneSignal App ID** value from the OneSignal console.
 
-By default, the registration action is performed asynchronously, sending the action to register the device in OneSignal service and continuing the logic execution without waiting for the registration action response. To change this behavior, set AsyncRegister parameter to `false`, blocking the code execution and waiting until the device is registered in OneSignal service before proceeding.
+By default, the registration action is performed asynchronously. It sends the action to register the device in OneSignal service and continues the logic execution without waiting for the registration action response. To change this behavior, set AsyncRegister parameter to `false`. This blocks the code execution and waits until the device is registered in OneSignal service before proceeding.
 
-Save the **OneSignal App ID** and **REST API Key** values because you will need them later.
+Save the **OneSignal App ID** and **REST API Key** values because you need them later.
 
 ![OneSignal console showing the App Settings with fields for OneSignal App ID and REST API Key](images/One-Signal-4.png "OneSignal App Settings")
 
 By default, notifications won’t be displayed when the application is already running in the foreground. To always display notifications, set property InFocusDisplayOptions to `Entities.InFocusDisplayOption.NOTIFICATION`.
 
-### Registering a Device without a User
+### Registering a device without a user
 
 If your application does not have a login, the device can be registered without a user.
 
@@ -124,11 +168,11 @@ Use the Register action to register the device. It should look like in the image
 
 ![Flowchart in Service Studio depicting the Register action in the OnApplicationReady client action](images/one-signal-06.png "Register Device Logic Flow")
 
-By default, the registration action is performed asynchronously, sending the action to register the device in OneSignal service and continuing the logic execution, without waiting for the registration action response. To change this behavior, set AsyncRegister parameter to `false`, blocking the code execution and waiting until the device is registered in OneSignal service before proceeding.
+By default, the registration action is performed asynchronously. It sends the action to register the device in OneSignal service and continues the logic execution, without waiting for the registration action response. To change this behavior, set AsyncRegister parameter to `false`. This blocks the code execution and waits until the device is registered in OneSignal service before proceeding.
 
-Furthermore by default, notifications won’t be displayed when the application is already running in the foreground. To always display notifications, set property InFocusDisplayOptions to `Entities.InFocusDisplayOption.NOTIFICATION`.
+Furthermore by default, notifications aren't displayed when the application is already running in the foreground. To always display notifications, set property InFocusDisplayOptions to `Entities.InFocusDisplayOption.NOTIFICATION`.
 
-## Sending Notifications
+## Sending notifications (O11 only)
 
 To send notifications, you need to implement server-side logic. Add the OneSignalAPI in the Manage Dependencies… menu option. This API contains the server-side actions to send notifications.
 
@@ -168,7 +212,7 @@ To send a notification with a simple message in English, do the following in the
 
 ## Remarks
 
-This article provides a simple example of implementing push notifications. However, OneSignalPlugin and OneSignalAPI provide further client and server-side functionality to implement other ways of pushing notifications. For example, on the client-side, add logic to take an action when the user opens the notification or, on the server-side, push a notification only to some specific users.
+This article provides a simple example of implementing push notifications. However, OneSignalPlugin and OneSignalAPI (on O11) provide further client and server-side functionality to implement other ways of pushing notifications. For example, on the client-side, add logic to take an action when the user opens the notification or, on the server-side, push a notification only to some specific users.
 
 For more information about **OneSignalPlugin** and **OneSignalAPI**, use the tooltips by hovering over the elements in the Service Studio.
 
