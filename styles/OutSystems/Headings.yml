@@ -158,6 +158,7 @@ exceptions:
   - shred.bundle.js
   - CSV
   - Firebase Cloud Messaging
+  - Firebase Peformance
 # Industry
   - API
   - APIs
