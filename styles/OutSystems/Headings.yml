@@ -11,6 +11,8 @@ indicators:
   - '.'
 exceptions:
 # Product
+  - Application Objects
+  - AO
   - Center
   - Conversion Assessment Tool
   - Integration Builder
