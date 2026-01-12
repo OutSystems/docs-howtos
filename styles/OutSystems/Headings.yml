@@ -189,6 +189,7 @@ exceptions:
   - Apple Developer
   - AWS Firehose
   - JSON
+  - IdP
   - Azure
   - Cascading Style Sheets
   - CSS
