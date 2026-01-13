@@ -159,6 +159,8 @@ exceptions:
   - Cordova-based
   - Cordova-only
   - WorkflowNewCustomerLoan
+  - NSCameraUsageDescription
+  - ScanOrientation
   
 # Events
   - On Initialize
