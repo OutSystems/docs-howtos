@@ -67,6 +67,7 @@ exceptions:
   - EPA_Taskbox
   - EPA_TaskboxExtension
   - Exception
+  - GetUserId
   - HMAC
   - Identifier
   - IT
@@ -161,6 +162,7 @@ exceptions:
   - parameters
   - Cordova-based
   - Cordova-only
+  - ViewState
   - WorkflowNewCustomerLoan
   - NSCameraUsageDescription
   - ScanOrientation
