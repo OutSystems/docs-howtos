@@ -253,6 +253,9 @@ exceptions:
   - OpenTelemetry Collector
   - Amazon Bedrock
   - IBM
+  - GPT-4o
+  - Claude 3.7 Sonnet
+  - Amazon Nova Pro
 # Industry
   - API
   - APIs
