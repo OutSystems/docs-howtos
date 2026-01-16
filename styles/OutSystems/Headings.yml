@@ -172,6 +172,7 @@ exceptions:
   - Underwriter
   - Communication
   - Paula
+  - USB
   
 # Events
   - On Initialize
