@@ -53,6 +53,8 @@ The goal of this guide is to migrate pure application data and hybrid data of on
 
 * Be aware that Soft-Keys (SKs) aren't mapped and replaced automatically like the Foreign-Keys (FKs) and this may affect the application behavior in runtime.
 
+* The volume of data being migrated can affect the duration of the migration and may result in service downtime. Please plan accordingly.
+
 ## Migrating data
 
 ### Applicational and Hybrid Data Entities Domain
