@@ -45,6 +45,8 @@ The goal of this guide is to migrate pure application data and hybrid data of on
 
 ### Other notes and awarenesses
 
+* The volume of data being migrated directly impacts migration duration and can result in service downtime. Ensure this is considered during planning.
+  
 * Don’t migrate site properties, settings, configuration, and integration endpoints from Production to Non-Production.
 
 * If the data isn't deleted from the destination, the migration process has to take care of unique indexes that can't be repeated.
@@ -52,8 +54,6 @@ The goal of this guide is to migrate pure application data and hybrid data of on
 * In Cloud the permissions are limited to Data-reader and Data-writer.
 
 * Be aware that Soft-Keys (SKs) aren't mapped and replaced automatically like the Foreign-Keys (FKs) and this may affect the application behavior in runtime.
-
-* The volume of data being migrated can affect the duration of the migration and may result in service downtime. Please plan accordingly.
 
 ## Migrating data
 
