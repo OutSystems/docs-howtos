@@ -178,7 +178,7 @@ exceptions:
   - StartUserRegistrationResult
   - UserUpdateInfo
   - UpdateUserResult
-  - CameraDirection
+  - CameraDirection 
 
 # Events
   - On Initialize
