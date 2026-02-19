@@ -59,6 +59,9 @@ exceptions:
   - True Change
   - IdP
   - IdPs
+  - Customer Portal
+  - Workflows Editor
+  - Workflows
   
 # Concepts
   - Action
