@@ -3,6 +3,7 @@ styles/
 rules/
 **/.vscode/
 /.vs/*
+.idea/
 config.yml
 .aider*
 # Ignore all .vale.ini files anywhere in the repo
