@@ -380,5 +380,6 @@ exceptions:
   - Tech Lead exam
   - Platform Ops exam
   - Delivery Specialist exam
+  - Web Developer Specialist exam
 # Errors
   - \bOS-(?:[A-Z]+-){1,2}\d+\b
