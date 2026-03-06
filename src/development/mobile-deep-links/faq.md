@@ -20,7 +20,7 @@ To define a deep link to a Screen (`<screen>`) of a Module (`<module>`) of a Mob
 
     <app-identifier>://<module>/<screen>
 
-Where `<app-identifier>` is the [App identifier you defined when generating your Mobile App Package](https://success.outsystems.com/Documentation/10/Delivering_Mobile_Apps/Generate_and_Distribute_Your_Mobile_App) in **lowercase**.
+Where `<app-identifier>` is the [App identifier you defined when generating your Mobile App Package](https://www.outsystems.com/tk/redirect?g=1aacc771-f914-4f95-889a-31f1dde06a38) in **lowercase**.
 
 <div class="info" markdown="1">
 
@@ -39,7 +39,7 @@ Instead if you need to open an external website, use the **OpenInExternalBrowser
 
 </div>
 
-## Android Intents
+## Android intents
 
 For Android end users with Chrome you can use [Android Intents](https://developer.chrome.com/docs/android/intents).
 Android Intents allow the redirection of end users that do not have your App available on their device to your App page in the Google Play Store or to another URL specified by you.
