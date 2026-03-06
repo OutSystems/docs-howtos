@@ -320,6 +320,8 @@ exceptions:
   - APIs
   - CI/CD
   - CICD
+  - DEV
+  - DNS
   - DREAD
   - DevOps
   - EAP
@@ -327,25 +329,23 @@ exceptions:
   - FCM
   - IP
   - ID
+  - JavaScript
+  - MCP
   - TLS
-  - DNS
   - TLS
   - UI
   - SAST
   - REST
   - HTML
   - HTTP
-  - JavaScript
-  - MCP
   - PR
   - UI
   - SOAP
-  - PaaS
   - SDK
   - QA
-  - DEV
   - PRD
   - SEO
+  - VPN
 # Country
   - US East
   - North Virginia
