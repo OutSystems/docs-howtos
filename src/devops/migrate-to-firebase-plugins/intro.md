@@ -30,12 +30,12 @@ Firebase-based plugins offer an integration with Firebase. Firebase is a Google 
 * New features, particularly in the Performance and Crash Reporting plugins
 * [Dynamic Links](https://www.outsystems.com/forge/component-overview/10988/dynamic-links-plugin-firebase), a new Firebase-based plugin
 
-| Supported plugin                                                                                   | Description                                                                            |
+| Supported plugin | Description |
 | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| [Analytics](https://www.outsystems.com/forge/component-overview/10704/firebase-analytics-plugin)   | Understand user behavior by viewing live usage data with real-time reporting.          |
-| [Performance Monitoring](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=10706) | Gain insight into the performance of your mobile apps.                                 |
-| [Crash Reporting](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=10705)        | Get real-time crash reporting to help you track, prioritize, and fix stability issues. |
-| [Cloud Messaging](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=12174)        | Send, receive and manage notifications. |
+| [Analytics](https://www.outsystems.com/forge/component-overview/10704/firebase-analytics-plugin) | Understand user behavior by viewing live usage data with real-time reporting. |
+| [Performance Monitoring](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=10706) | Gain insight into the performance of your mobile apps. |
+| [Crash Reporting](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=10705) | Get real-time crash reporting to help you track, prioritize, and fix stability issues. |
+| [Cloud Messaging](https://www.outsystems.com/forge/Component_Overview.aspx?ProjectId=12174) | Send, receive and manage notifications. |
 
 This document refers to the OutSystems plugins as **supported plugins**. Forge also contains **unsupported plugins**, which are mostly the plugins contributed by partners and community.
 
@@ -142,20 +142,20 @@ Check out the [sample app](#sample-app) to see how to:
 The list of relevant actions in the two plugins.
 
 | Firebase Mobile (unsupported) && Firebase CM Compat R&D (unsupported) | Cloud Messaging Plugin (supported) |
-| --------------------------------------------------------------------| ---------------------------------- |
-| ClearAllNotifications                                               | ClearNotifications                 |
-| GetBadgeNumber                                                      | GetBadgeNumber                     |
-| GetToken                                                            | GetToken                           |
-| GrantsPermission                                                    | -                                  |
-| HasPermission                                                       | -                                  |
-| InitCloudMessaging                                                  | -                                  |
-| RegisterDevice                                                      | RegisterDevice                     |
-| SetBadgeNumber                                                      | SetBadgeNumber                     |
-| SubscribeToTopic                                                    | Subscribe                          |
-| UnsubscribeToTopic                                                  | Unsusbscribe                       |
-| UnregisterDevice                                                    | UnregisterDevice                   |
-| -                                                                   | GetPendingNotitications            |
-| -                                                                   | SendLocalNotification              |
+| -------------------------------------------------------------------- | ---------------------------------- |
+| ClearAllNotifications | ClearNotifications |
+| GetBadgeNumber | GetBadgeNumber |
+| GetToken | GetToken |
+| GrantsPermission | - |
+| HasPermission | - |
+| InitCloudMessaging | - |
+| RegisterDevice | RegisterDevice |
+| SetBadgeNumber | SetBadgeNumber |
+| SubscribeToTopic | Subscribe |
+| UnsubscribeToTopic | Unsusbscribe |
+| UnregisterDevice | UnregisterDevice |
+| - | GetPendingNotitications |
+| - | SendLocalNotification |
 
 While the unsupported plugin has only one block, **FirebaseCloudMessaging**, the supported plugin has two: **NotificationsHandler** and **NotificationDialog**.
 
@@ -165,14 +165,14 @@ The following table lists each of the block’s client actions and events, as we
 
 | Firebase Mobile (unsupported) | Firebase CM Compat R&D (unsupported) | Cloud Messaging Plugin (supported) |
 | --------------------------- | ------------------------------------ | ---------------------------------- |
-| NotificationHandler         | Handler_OnMessage                    | OnDefaultNotificationReceived      |
-| -                           | -                                    | OnSilentNotificationReceived       |
-| -                           | Handler_OnBackgroundMessage          | -                                  |
-| ErrorHandler                | ErrorHandler                         | -                                  |
-| NewNotification             | OnMessage                            | DefaultNotificationReceived        |
-| -                           | -                                    | SilentNotificationReceived         |
-| -                           | OnBackgroundMessage                  | -                                  |
-| ErrorEvent                  | ErrorEvent                           | -                                  |
+| NotificationHandler | Handler_OnMessage | OnDefaultNotificationReceived |
+| - | - | OnSilentNotificationReceived |
+| - | Handler_OnBackgroundMessage | - |
+| ErrorHandler | ErrorHandler | - |
+| NewNotification | OnMessage | DefaultNotificationReceived |
+| - | - | SilentNotificationReceived |
+| - | OnBackgroundMessage | - |
+| ErrorEvent | ErrorEvent | - |
 
 While the unsupported plugin had a module, **Middleware**, the supported plugin has a different component, **Cloud Messaging Configurator**, which is Reactive Web app, that offers a REST API.
 
@@ -180,10 +180,10 @@ The following table lists the REST API methods that are equivalent to the Middle
 
 | Firebase Mobile (unsupported) <br/> Firebase CM Compat R&D (unsupported) | Cloud Messaging Configurator (supported) |
 | --------------------------------------------------------------------- | ---------------------------------------- |
-| SendNotificationToTopic                                               | SendNotifcationToTopics                  |
-| SendNotificationToUser                                                | SendNotifcationToUsers                   |
-| SendSilentNotificationToTopic                                         | SendSilentNotificationToTopics           |
-| SendSilentNotificationToUser                                          | SendSilentNotificationToUsers            |
+| SendNotificationToTopic | SendNotifcationToTopics |
+| SendNotificationToUser | SendNotifcationToUsers |
+| SendSilentNotificationToTopic | SendSilentNotificationToTopics |
+| SendSilentNotificationToUser | SendSilentNotificationToUsers |
 
 Check out the [sample app](#sample-app) to see how to:
 

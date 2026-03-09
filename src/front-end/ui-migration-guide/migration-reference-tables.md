@@ -45,8 +45,8 @@ For a more straightforward migration process, we are keeping a fallback section 
 
 ### Background colors
 
-| Silk Web UI  | OutSystems Web UI |
-| -------|------- |
+| Silk Web UI | OutSystems Web UI |
+| ------- | ------- |
 | Transparent | background-transparent |
 | White | background-neutral-0 |
 | Silver | background-neutral-4 |
@@ -66,8 +66,8 @@ For a more straightforward migration process, we are keeping a fallback section 
 
 ### Text colors
 
-| Silk Web UI  | OutSystems Web UI |
-| -------|------- |
+| Silk Web UI | OutSystems Web UI |
+| ------- | ------- |
 | Text_white | text-neutral-0 |
 | Text_orange | text-orange |
 | Text_darkred | text-red-dark |
@@ -85,8 +85,8 @@ For a more straightforward migration process, we are keeping a fallback section 
 
 ### Buttons
 
-| Silk Web UI  | OutSystems Web UI |
-| -------|------- |
+| Silk Web UI | OutSystems Web UI |
+| ------- | ------- |
 | Button Is_Default | btn background-primary |
 | Button Success | btn background-success |
 | Button Danger | btn background-error |
@@ -94,8 +94,8 @@ For a more straightforward migration process, we are keeping a fallback section 
 
 ### Text
 
-| Silk Web UI  | OutSystems Web UI |
-| -------|------- |
+| Silk Web UI | OutSystems Web UI |
+| ------- | ------- |
 | Heading1 | heading1 |
 | Heading2 | heading2 |
 | Heading3 | heading3 |
@@ -110,14 +110,14 @@ For a more straightforward migration process, we are keeping a fallback section 
 
 ### Right to left
 
-| Silk Web UI  | OutSystems Web UI |
-| -------|------- |
+| Silk Web UI | OutSystems Web UI |
+| ------- | ------- |
 | AR | is-rtl |
 
 ### Image style
 
-| Silk Web UI  | OutSystems Web UI |
-| -------|------- |
+| Silk Web UI | OutSystems Web UI |
+| ------- | ------- |
 | .Image_circle | border-radius-circle |
 | .Image_rounded | border-radius-rounded |
 
@@ -127,8 +127,8 @@ The following tables list the patterns in the OutSystems Web UI Framework and th
 
 ### Content
 
-| Silk Web UI  | OutSystems Web UI |
-| -------|------- |
+| Silk Web UI | OutSystems Web UI |
+| ------- | ------- |
 | Accordion | Accordion |
 | Accordion3Items | |
 | Accordion4Items | |
@@ -168,7 +168,7 @@ The following tables list the patterns in the OutSystems Web UI Framework and th
 ### Controls
 
 | Silk Web UI | OutSystems Web UI |
-| -------|------- |
+| ------- | ------- |
 | | AnimatedLabel |
 | ButtonDropdown | |
 | | ButtonGroup |
@@ -199,7 +199,7 @@ The following tables list the patterns in the OutSystems Web UI Framework and th
 ### Data
 
 | Silk Web UI | OutSystems Web UI |
-| -------|------- |
+| ------- | ------- |
 | Badge | Badge |
 | Counter | Counter |
 | IconBadge | IconBadge |
@@ -213,7 +213,7 @@ The following tables list the patterns in the OutSystems Web UI Framework and th
 ### Development
 
 | Silk Web UI | OutSystems Web UI |
-| -------|------- |
+| ------- | ------- |
 | CSS | |
 | HTML | |
 | jQuery | |
@@ -222,7 +222,7 @@ The following tables list the patterns in the OutSystems Web UI Framework and th
 ### Email
 
 | Silk Web UI | OutSystems Web UI |
-| -------|------- |
+| ------- | ------- |
 | Email3Rows | |
 | EmailSection | |
 | LayoutEmail | |
@@ -230,7 +230,7 @@ The following tables list the patterns in the OutSystems Web UI Framework and th
 ### Layout
 
 | Silk Web UI | OutSystems Web UI |
-| -------|------- |
+| ------- | ------- |
 | LayoutLogin | LayoutLogin |
 | | LayoutLoginSplit |
 | | LayoutMenuSide |
@@ -243,7 +243,7 @@ The following tables list the patterns in the OutSystems Web UI Framework and th
 ### Navigation
 
 | Silk Web UI | OutSystems Web UI |
-| -------|------- |
+| ------- | ------- |
 | Breadcrumbs | Breadcrumbs |
 | | BreadcrumbsItem |
 | NavigationBar | |
@@ -261,7 +261,7 @@ The following tables list the patterns in the OutSystems Web UI Framework and th
 ### Responsive
 
 | Silk Web UI | OutSystems Web UI |
-| -------|------- |
+| ------- | ------- |
 | DisplayOnDevice | (in preparation) |
 | LoadOnVisible | (in preparation) |
 | MoveOnDevice | (in preparation) |
@@ -272,7 +272,7 @@ The following tables list the patterns in the OutSystems Web UI Framework and th
 ### Structure
 
 | Silk Web UI | OutSystems Web UI |
-| -------|------- |
+| ------- | ------- |
 | (VerticalAlign in Utilities) | AlignCenter |
 | Columns2 | Columns2 |
 | Columns3 | Columns3 |
@@ -288,7 +288,7 @@ The following tables list the patterns in the OutSystems Web UI Framework and th
 ### Utilities
 
 | Silk Web UI | OutSystems Web UI |
-| -------|------- |
+| ------- | ------- |
 | CharacterCount | (in preparation) |
 | FeedbackAjaxWait | |
 | Fieldset | (in preparation) |

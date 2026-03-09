@@ -63,7 +63,7 @@ The categorized System Entities can be subgrouped by different topics:
 The following table shows an examples of system entities:
 
 | **System Entities** |
-|----------|
+| ---------- |
 | OSSYS_APP_DEFINITION_MODULE |
 | OSSYS_APPLICATION |
 | OSSYS_BPM_ACTIVITY_DEFINITION |
@@ -84,7 +84,7 @@ The following table shows an examples of system entities:
 The following tables shows an examples of system application settings:
 
 | **System Application Settings** |
-|-----------|
+| ----------- |
 | OSSYS_CYCLIC_JOB |
 | OSSYS_CYCLIC_JOB_SHARED |
 | OSSYS_META_CYCLIC_JOB |

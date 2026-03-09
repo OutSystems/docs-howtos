@@ -112,16 +112,16 @@ After publishing the Module, you can search for it and the newly created Entity 
 
 ```SELECT * FROM OSSYS_ESPACE WHERE Name = ’People’```
 
-|                  |                        |
-|------------------|------------------------|
-|id                |240                     |
-|Name |People  |
-|SS_Key | 02632668-1434-43c2-82b1-e59ea75a0388 |
-|Is_Active | True |
-|Version_Id | 4085 |
-|DbCatalog_Id | 1 |
-|Pending_Version_Id | |
-|EspaceKind | WebResponsive |
+| | |
+| ------------------ | ------------------------ |
+| id | 240 |
+| Name | People |
+| SS_Key | 02632668-1434-43c2-82b1-e59ea75a0388 |
+| Is_Active | True |
+| Version_Id | 4085 |
+| DbCatalog_Id | 1 |
+| Pending_Version_Id | |
+| EspaceKind | WebResponsive |
 
 ```
 SELECT 
@@ -138,11 +138,11 @@ FROM OSSYS_ENTITY
 WHERE Espace_Id = (SELECT ID FROM OSSYS_ESPACE WHERE Name = ’People’)
 ```
 
-|Id|Name|Physical_Table_Name|Espace_Id|SS_Key|Primary_SS_Key|Is_Active_Attribute|Label_Attribute|Order_By_Atttribute|
-|--- |--- |--- |--- |--- |--- |--- |--- |--- |
-|1493|City|OSUSR_7i3_City|240|0f3b6288-e5b3-4804-97e2-9b1ea18fc12e|ab9b9108-55a5-42a6-bdf0-85238d963c58||||
-|1494|Icon|OSUSR_7i3_Icon|240|a280d501-0a34-4fe0-9626-0f825f10c999|7ebc6cae-dc3c-44b0-a8e9-f3f54a111edd||||
-|1495|Person|OSUSR_7i3_Person|240|ceaae4ec-0c65-4e1c-964a-52edd72bb7c1|953a931a-57e6-48b8-90f1-db7b0b2db387|e7e604c0-2b2d-454a-b84d-9309fa8316df|b2db87d9-093f-41b5-b881-972f5229809c|953a931a-57e6-48b8-90f1-db7b0b2db387|
+| Id | Name | Physical_Table_Name | Espace_Id | SS_Key | Primary_SS_Key | Is_Active_Attribute | Label_Attribute | Order_By_Atttribute |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1493 | City | OSUSR_7i3_City | 240 | 0f3b6288-e5b3-4804-97e2-9b1ea18fc12e | ab9b9108-55a5-42a6-bdf0-85238d963c58 | | | |
+| 1494 | Icon | OSUSR_7i3_Icon | 240 | a280d501-0a34-4fe0-9626-0f825f10c999 | 7ebc6cae-dc3c-44b0-a8e9-f3f54a111edd | | | |
+| 1495 | Person | OSUSR_7i3_Person | 240 | ceaae4ec-0c65-4e1c-964a-52edd72bb7c1 | 953a931a-57e6-48b8-90f1-db7b0b2db387 | e7e604c0-2b2d-454a-b84d-9309fa8316df | b2db87d9-093f-41b5-b881-972f5229809c | 953a931a-57e6-48b8-90f1-db7b0b2db387 |
 
 The entities attribute details are stored in OS Platform entities and can be searched:
 
@@ -156,19 +156,19 @@ INNER JOIN OSSYS_ENTITY_ATTR
 WHERE Espace_Id = (SELECT ID FROM OSSYS_ESPACE WHERE Name = ’People’)
 ```
 
-|Entity_Name|Id|Entity_Id|Name|Type|Length|Decimals|Is_Mandatory|Is_AutoNumber|Delete_Rule|
-|--- |--- |--- |--- |--- |--- |--- |--- |--- |--- |
-|City|11012|1493|Id|rtLongInteger|0|0|TRUE|TRUE|Protect|
-|City|11013|1493|Name|rtText|50|0|FALSE|FALSE|Protect|
-|Icon|11014|1494|Id|rtLongInteger|0|0|TRUE|TRUE|Protect|
-|Icon|11015|1494|Name|rtText|50|0|FALSE|FALSE|Protect|
-|Icon|11016|1494|BinaryInfo|rtBinaryData|0|0|FALSE|FALSE|Protect|
-|Person|11017|1495|Id|rtLongInteger|0|0|TRUE|TRUE|Protect|
-|Person|11018|1495|Name|rtText|70|0|TRUE|FALSE|Protect|
-|Person|11019|1495|DateofBirth|rtDate|0|0|FALSE|FALSE|Protect|
-|Person|11020|1495|IsAlive|rtBoolean|0|0|TRUE|FALSE|Protect|
-|Person|11021|1495|CityId|bt2848df88-835f-427a-b0db-e29a1d8e9766*0f3b6288-e5b3-4804-97e2-9b1ea18fc12e|0|0|FALSE|FALSE|Protect|
-|Person|11022|1495|IconId|bt2848df88-835f-427a-b0db-e29a1d8e9766*a280d501-0a34-4fe0-9626-0f825f10c999|0|0|FALSE|FALSE|Ignore|
+| Entity_Name | Id | Entity_Id | Name | Type | Length | Decimals | Is_Mandatory | Is_AutoNumber | Delete_Rule |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| City | 11012 | 1493 | Id | rtLongInteger | 0 | 0 | TRUE | TRUE | Protect |
+| City | 11013 | 1493 | Name | rtText | 50 | 0 | FALSE | FALSE | Protect |
+| Icon | 11014 | 1494 | Id | rtLongInteger | 0 | 0 | TRUE | TRUE | Protect |
+| Icon | 11015 | 1494 | Name | rtText | 50 | 0 | FALSE | FALSE | Protect |
+| Icon | 11016 | 1494 | BinaryInfo | rtBinaryData | 0 | 0 | FALSE | FALSE | Protect |
+| Person | 11017 | 1495 | Id | rtLongInteger | 0 | 0 | TRUE | TRUE | Protect |
+| Person | 11018 | 1495 | Name | rtText | 70 | 0 | TRUE | FALSE | Protect |
+| Person | 11019 | 1495 | DateofBirth | rtDate | 0 | 0 | FALSE | FALSE | Protect |
+| Person | 11020 | 1495 | IsAlive | rtBoolean | 0 | 0 | TRUE | FALSE | Protect |
+| Person | 11021 | 1495 | CityId | bt2848df88-835f-427a-b0db-e29a1d8e9766*0f3b6288-e5b3-4804-97e2-9b1ea18fc12e | 0 | 0 | FALSE | FALSE | Protect |
+| Person | 11022 | 1495 | IconId | bt2848df88-835f-427a-b0db-e29a1d8e9766*a280d501-0a34-4fe0-9626-0f825f10c999 | 0 | 0 | FALSE | FALSE | Ignore |
 
 Notice that the Attribute ``SS_Key`` is present in the database but is not shown above.
 Besides the normal basic types with a prefix `rt` (Run Time), you can see the relation types like the example ```bt2848df88-835f-427a-b0db-e29a1d8e9766*0f3b6288-e5b3-4804-97e2-9b1ea18fc12e```.
@@ -206,11 +206,11 @@ For example, if the Module is cloned, every Entity generated in the clone Module
 
 The following table shows the Entities that belong to the People Module that was previously created. If you focus your attention on ``Physical_Table_Name``, you see that it is possible to display what is inside the City Entity by doing ``SELECT * FROM OSUSR_7i3_City``.
 
-|Id|Name|Physical_Table_Name|Espace_Id|SS_Key|Primary_SS_Key|Is_Active_Attribute|Label_Attribute|Order_By_Atttribute|
-|--- |--- |--- |--- |--- |--- |--- |--- |--- |
-|1493|City|OSUSR_7i3_City|240|0f3b6288-e5b3-4804-97e2-9b1ea18fc12e|ab9b9108-55a5-42a6-bdf0-85238d963c58||||
-|1494|Icon|OSUSR_7i3_Icon|240|a280d501-0a34-4fe0-9626-0f825f10c999|7ebc6cae-dc3c-44b0-a8e9-f3f54a111edd||||
-|1495|Person|OSUSR_7i3_Person|240|ceaae4ec-0c65-4e1c-964a-52edd72bb7c1|953a931a-57e6-48b8-90f1-db7b0b2db387|e7e604c0-2b2d-454a-b84d-9309fa8316df|b2db87d9-093f-41b5-b881-972f5229809c|953a931a-57e6-48b8-90f1-db7b0b2db387|
+| Id | Name | Physical_Table_Name | Espace_Id | SS_Key | Primary_SS_Key | Is_Active_Attribute | Label_Attribute | Order_By_Atttribute |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1493 | City | OSUSR_7i3_City | 240 | 0f3b6288-e5b3-4804-97e2-9b1ea18fc12e | ab9b9108-55a5-42a6-bdf0-85238d963c58 | | | |
+| 1494 | Icon | OSUSR_7i3_Icon | 240 | a280d501-0a34-4fe0-9626-0f825f10c999 | 7ebc6cae-dc3c-44b0-a8e9-f3f54a111edd | | | |
+| 1495 | Person | OSUSR_7i3_Person | 240 | ceaae4ec-0c65-4e1c-964a-52edd72bb7c1 | 953a931a-57e6-48b8-90f1-db7b0b2db387 | e7e604c0-2b2d-454a-b84d-9309fa8316df | b2db87d9-093f-41b5-b881-972f5229809c | 953a931a-57e6-48b8-90f1-db7b0b2db387 |
 
 ```
 SELECT * FROM OSUSR_7i3_City

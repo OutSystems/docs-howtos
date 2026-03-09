@@ -68,12 +68,12 @@ ORDER BY app.NAME
 
 An example of a partial result of the previous query:
 
-|Application | Entity Name |PhysicalTable Name |Attribute |
-|------------|-------------|-------------------|----------|
-|App Feedback |FeedbackScreenshot |OSUSR_s41_FeedbackScreenshot | ImageBinary|
-|App Feedback |FeedbackSoundMessage |OSUSR_s41_FeedbackSoundMessage |SoundBinary |
-|App Feedback |Resource |OSUSR_s41_Resource |Content |
-|App Feedback |WebpageContent |OSUSR_s41_WebpageContent |Content |
+| Application | Entity Name | PhysicalTable Name | Attribute |
+| ------------ | ------------- | ------------------- | ---------- |
+| App Feedback | FeedbackScreenshot | OSUSR_s41_FeedbackScreenshot | ImageBinary |
+| App Feedback | FeedbackSoundMessage | OSUSR_s41_FeedbackSoundMessage | SoundBinary |
+| App Feedback | Resource | OSUSR_s41_Resource | Content |
+| App Feedback | WebpageContent | OSUSR_s41_WebpageContent | Content |
 
 ### How to Disable an Application?
 
@@ -139,13 +139,13 @@ Searching for User Entity foreign key usage requires two steps:
                     )
 ```
 
-|Application |Espace |Entity Name |Physical Table Name |Attribute |
-|------------|-------|------------|--------------------|----------|
-|App Feedback|ECT_Provider|Rule_User|OSUSR_s41_Rule_User|User_Id|
-|App Feedback|ECT_Provider|FeedbackExt|OSUSR_s41_FeedbackExt|StatusChangeBy|
-|App Feedback|ECT_Provider|LastFeedback|OSUSR_s41_LastFeedback|UserId|
-|App Feedback|ECT_Provider|AppConfig|OSUSR_s41_AppConfig|CreatedBy|
-|App Feedback|ECT_Provider|AppConfig|OSUSR_s41_AppConfig|UpdatedBy|
+| Application | Espace | Entity Name | Physical Table Name | Attribute |
+| ------------ | ------- | ------------ | -------------------- | ---------- |
+| App Feedback | ECT_Provider | Rule_User | OSUSR_s41_Rule_User | User_Id |
+| App Feedback | ECT_Provider | FeedbackExt | OSUSR_s41_FeedbackExt | StatusChangeBy |
+| App Feedback | ECT_Provider | LastFeedback | OSUSR_s41_LastFeedback | UserId |
+| App Feedback | ECT_Provider | AppConfig | OSUSR_s41_AppConfig | CreatedBy |
+| App Feedback | ECT_Provider | AppConfig | OSUSR_s41_AppConfig | UpdatedBy |
 
 1. For each User Consumer Entity, it is possible to get the User Identifier values used on the application.
     * Example - Get the User Identifiers value stored on the entity ``OSUSR_s41_LastFeedback`` on the ``UserId`` attribute. Filtering the null values:
@@ -188,10 +188,10 @@ WHERE app.IS_ACTIVE = 1    /* Active Applications only */
 
 Example - partial result of the execution of the query:
 
-|Application |Espace |Role |RoleId |Espace SS_Key |Role SS_Key |
-|------------|-------|-----|-------|--------------|------------|
-|Users |Users |UserManager |7 |65106059-0439-4be5-b011-2f01fba4afa6 |37105987-45ed-428e-a0fa-6ec4403a3864 |
-|Users |Users |SuperUser |8 |65106059-0439-4be5-b011-2f01fba4afa6 |d63e8a6e-bd39-40d2-a4c2-6e48878682d4 |
+| Application | Espace | Role | RoleId | Espace SS_Key | Role SS_Key |
+| ------------ | ------- | ----- | ------- | -------------- | ------------ |
+| Users | Users | UserManager | 7 | 65106059-0439-4be5-b011-2f01fba4afa6 | 37105987-45ed-428e-a0fa-6ec4403a3864 |
+| Users | Users | SuperUser | 8 | 65106059-0439-4be5-b011-2f01fba4afa6 | d63e8a6e-bd39-40d2-a4c2-6e48878682d4 |
 
 ## Application Data
 
@@ -229,10 +229,10 @@ WHERE app.IS_ACTIVE = 1 /* Active Application */
 
 Returns the following data:
 
-|Application |Espace |Entity |Physical Entity Name |SS_KEY |SS_Key |
-|------------|-------|-------|---------------------|-------|-------|
-|App Feedback |ECT_Provider |AppConfig |OSUSR_s41_AppConfig |50957770-1dd0-42bf-9fcb-c57953b87ce1 |d43af2e2-daa1-4aec-8203-df5371aff811 |
-|App Feedback |ECT_Provider |CallbackRule |OSUSR_s41_CallbackRule |50957770-1dd0-42bf-9fcb-c57953b87ce1 |37a0ee89-268b-8bed-9ba1-8a75bf145294 |
+| Application | Espace | Entity | Physical Entity Name | SS_KEY | SS_Key |
+| ------------ | ------- | ------- | --------------------- | ------- | ------- |
+| App Feedback | ECT_Provider | AppConfig | OSUSR_s41_AppConfig | 50957770-1dd0-42bf-9fcb-c57953b87ce1 | d43af2e2-daa1-4aec-8203-df5371aff811 |
+| App Feedback | ECT_Provider | CallbackRule | OSUSR_s41_CallbackRule | 50957770-1dd0-42bf-9fcb-c57953b87ce1 | 37a0ee89-268b-8bed-9ba1-8a75bf145294 |
 
 ## BPT
 
@@ -279,15 +279,15 @@ where espace.IS_ACTIVE = 1
 
 Returns the following data:
 
-|Application |Entity |Entity Physical Name |Event Table Name |
-|------------|-------|---------------------|-----------------|
-|Service Center |TestCase |OSSYS_TEST_CASE |OSEVT_TEST_CASE |
-|Service Center |Group_Role |OSSYS_GROUP_ROLE |OSEVT_GROUP_ROLE |
-|Service Center |User |OSSYS_USER |OSEVT_USER |
-|Service Center |Group |OSSYS_GROUP |OSEVT_GROUP |
-|Service Center |Role |OSSYS_ROLE |OSEVT_ROLE |
-|Service Center |Group_User |OSSYS_GROUP_USER |OSEVT_GROUP_USER |
-|BPT Testing |WorldCity |OSUSR_w83_WorldCity |OSEVT_w83_WorldCity |
+| Application | Entity | Entity Physical Name | Event Table Name |
+| ------------ | ------- | --------------------- | ----------------- |
+| Service Center | TestCase | OSSYS_TEST_CASE | OSEVT_TEST_CASE |
+| Service Center | Group_Role | OSSYS_GROUP_ROLE | OSEVT_GROUP_ROLE |
+| Service Center | User | OSSYS_USER | OSEVT_USER |
+| Service Center | Group | OSSYS_GROUP | OSEVT_GROUP |
+| Service Center | Role | OSSYS_ROLE | OSEVT_ROLE |
+| Service Center | Group_User | OSSYS_GROUP_USER | OSEVT_GROUP_USER |
+| BPT Testing | WorldCity | OSUSR_w83_WorldCity | OSEVT_w83_WorldCity |
 
 Example - fetching data contained on one of the Event Entities:
 
@@ -298,13 +298,13 @@ from OSEVT_w83_WorldCity
 
 Returns the followingf data:
 
-|_ESPACE_ID |_TENANT_ID |_ACTIVITY_ID |_PROCESS_DEF_ID |_IS_UPDATE |_IS_LIGHT |ID |
-|-----------|-----------|-------------|----------------|-----------|----------|---|
-|26 |20 |123956 |NULL |1 |0 |2 |
-|26 |20 |123958 |NULL |1 |0 |1 |
-|26 |20 |123957 |NULL |1 |0 |5 |
-|26 |20 |123959 |NULL |1 |0 |3 |
-|26 |20 |123955 |NULL |1 |0 |4 |
+| _ESPACE_ID | _TENANT_ID | _ACTIVITY_ID | _PROCESS_DEF_ID | _IS_UPDATE | _IS_LIGHT | ID |
+| ----------- | ----------- | ------------- | ---------------- | ----------- | ---------- | --- |
+| 26 | 20 | 123956 | NULL | 1 | 0 | 2 |
+| 26 | 20 | 123958 | NULL | 1 | 0 | 1 |
+| 26 | 20 | 123957 | NULL | 1 | 0 | 5 |
+| 26 | 20 | 123959 | NULL | 1 | 0 | 3 |
+| 26 | 20 | 123955 | NULL | 1 | 0 | 4 |
 
 * Espace Id - Espace identifier of the Espace containing the definition and development of the entity being triggered
 * Tenant Id - Tenant identifier of the same User Provider of the Espace Id above
@@ -387,10 +387,10 @@ ORDER BY espace.id, process.id
 
 Returns the following data:
 
-|Application  |Espace  |Process Id  |Activity Id  |
-|-------------|--------|------------|-------------|
-|BPT Testing |Migration |30987 |123960 |
-|BPT Testing |Migration |30987 |123958 |
-|BPT Testing |Migration |30988 |123959 |
-|BPT Testing |Migration |30988 |123963 |
-|BPT Testing |Migration |30989 |123961 |
+| Application | Espace | Process Id | Activity Id |
+| ------------- | -------- | ------------ | ------------- |
+| BPT Testing | Migration | 30987 | 123960 |
+| BPT Testing | Migration | 30987 | 123958 |
+| BPT Testing | Migration | 30988 | 123959 |
+| BPT Testing | Migration | 30988 | 123963 |
+| BPT Testing | Migration | 30989 | 123961 |

@@ -64,12 +64,12 @@ WHERE OSSYS_ENTITY.NAME = 'CitySize'
     )
 ```
 
-|Id|Data_Id|Name|SS_Key|Entity_SS_Key|Espace_Id|Is_Active|
-|--- |--- |--- |--- |--- |--- |--- |
-|8567|1|Huge|6fac2fbc-ea92-46e3-9402-6332b7bf3f13|b2257cc9-9454-40cd-845f-dc065e5e5551|679|1|
-|8568|2|Medium|a7123828-b174-4959-a1d3-04ea47d5d081|b2257cc9-9454-40cd-845f-dc065e5e5551|679|1|
-|8569|3|Small|b4e90a62-b31c-46ea-bd22-74103b86e600|b2257cc9-9454-40cd-845f-dc065e5e5551|679|1|
-|8570|4|Big|d4364e1a-51a3-43cd-9f5e-1706831b5796|b2257cc9-9454-40cd-845f-dc065e5e5551|679|1|
+| Id | Data_Id | Name | SS_Key | Entity_SS_Key | Espace_Id | Is_Active |
+| --- | --- | --- | --- | --- | --- | --- |
+| 8567 | 1 | Huge | 6fac2fbc-ea92-46e3-9402-6332b7bf3f13 | b2257cc9-9454-40cd-845f-dc065e5e5551 | 679 | 1 |
+| 8568 | 2 | Medium | a7123828-b174-4959-a1d3-04ea47d5d081 | b2257cc9-9454-40cd-845f-dc065e5e5551 | 679 | 1 |
+| 8569 | 3 | Small | b4e90a62-b31c-46ea-bd22-74103b86e600 | b2257cc9-9454-40cd-845f-dc065e5e5551 | 679 | 1 |
+| 8570 | 4 | Big | d4364e1a-51a3-43cd-9f5e-1706831b5796 | b2257cc9-9454-40cd-845f-dc065e5e5551 | 679 | 1 |
 
 And in the physical table we get the physical attributes info:
 
@@ -85,12 +85,12 @@ FROM OSUSR_5Z9_CITYSIZE
 ORDER BY [ORDER]
 ```
 
-|Id|Name|Order|Is_Active|MinSize|MaxSize|
-|--- |--- |--- |--- |--- |--- |
-|3|Small|1|1|0|5000|
-|2|Medium|2|1|5001|100000|
-|4|Big|3|1|100001|1000000|
-|1|Huge|4|1|1000000|99999999|
+| Id | Name | Order | Is_Active | MinSize | MaxSize |
+| --- | --- | --- | --- | --- | --- |
+| 3 | Small | 1 | 1 | 0 | 5000 |
+| 2 | Medium | 2 | 1 | 5001 | 100000 |
+| 4 | Big | 3 | 1 | 100001 | 1000000 |
+| 1 | Huge | 4 | 1 | 1000000 | 99999999 |
 
 ### Remove Static Entity Records
 
@@ -100,42 +100,42 @@ This is only possible to do if the Record to delete is not yet being used as a f
 
 If it is possible to delete the record, the Entity_Record changes the attribute ``Is_Active`` to ``False`` (``0``) since it is no longer active.
 
-|Id|Data_Id|Name|SS_Key|Entity_SS_Key|Espace_Id|Is_Active|
-|--- |--- |--- |--- |--- |--- |--- |
-|8569|3|Small|b4e90a62-b31c-46ea-bd22-74103b86e600|b2257cc9-9454-40cd-845f-dc065e5e5551|679|0|
+| Id | Data_Id | Name | SS_Key | Entity_SS_Key | Espace_Id | Is_Active |
+| --- | --- | --- | --- | --- | --- | --- |
+| 8569 | 3 | Small | b4e90a62-b31c-46ea-bd22-74103b86e600 | b2257cc9-9454-40cd-845f-dc065e5e5551 | 679 | 0 |
 
 And then, in the physical table, the corresponding row is deleted.
 
-|Id|Name|Order|Is_Active|MinSize|MaxSize|
-|--- |--- |--- |--- |--- |--- |
-|2|Medium|2|1|5001|100000|
-|4|Big|3|1|100001|1000000|
-|1|Huge|4|1|1000000|99999999|
+| Id | Name | Order | Is_Active | MinSize | MaxSize |
+| --- | --- | --- | --- | --- | --- |
+| 2 | Medium | 2 | 1 | 5001 | 100000 |
+| 4 | Big | 3 | 1 | 100001 | 1000000 |
+| 1 | Huge | 4 | 1 | 1000000 | 99999999 |
 
 ### Create Static Entity Record with the Same Name as Previous Deleted Record
 
 Create a record named ``Small``, which is the same name as the record that was deleted before. Its size parameters are from 101 to 5000.
 After publishing the Espace, the information on the Entity Record is:
 
-|Id|Data_Id|Name|SS_Key|Entity_SS_Key|Espace_Id|Is_Active|
-|--- |--- |--- |--- |--- |--- |--- |
-|8569|3|Small|b4e90a62-b31c-46ea-bd22-74103b86e600|b2257cc9-9454-40cd-845f-dc065e5e5551|679|0|
-|8567|1|Huge|6fac2fbc-ea92-46e3-9402-6332b7bf3f13|b2257cc9-9454-40cd-845f-dc065e5e5551|679|1|
-|8568|2|Medium|a7123828-b174-4959-a1d3-04ea47d5d081|b2257cc9-9454-40cd-845f-dc065e5e5551|679|1|
-|8570|4|Big|d4364e1a-51a3-43cd-9f5e-1706831b5796|b2257cc9-9454-40cd-845f-dc065e5e5551|679|1|
-|8588|5|Tiny|260e479c-5c4c-4fe7-986a-bdf116b8e4f4|b2257cc9-9454-40cd-845f-dc065e5e5551|679|1|
-|8589|6|Small|611d1096-61be-4fbb-9303-66a0c56eacf7|b2257cc9-9454-40cd-845f-dc065e5e5551|679|1|
+| Id | Data_Id | Name | SS_Key | Entity_SS_Key | Espace_Id | Is_Active |
+| --- | --- | --- | --- | --- | --- | --- |
+| 8569 | 3 | Small | b4e90a62-b31c-46ea-bd22-74103b86e600 | b2257cc9-9454-40cd-845f-dc065e5e5551 | 679 | 0 |
+| 8567 | 1 | Huge | 6fac2fbc-ea92-46e3-9402-6332b7bf3f13 | b2257cc9-9454-40cd-845f-dc065e5e5551 | 679 | 1 |
+| 8568 | 2 | Medium | a7123828-b174-4959-a1d3-04ea47d5d081 | b2257cc9-9454-40cd-845f-dc065e5e5551 | 679 | 1 |
+| 8570 | 4 | Big | d4364e1a-51a3-43cd-9f5e-1706831b5796 | b2257cc9-9454-40cd-845f-dc065e5e5551 | 679 | 1 |
+| 8588 | 5 | Tiny | 260e479c-5c4c-4fe7-986a-bdf116b8e4f4 | b2257cc9-9454-40cd-845f-dc065e5e5551 | 679 | 1 |
+| 8589 | 6 | Small | 611d1096-61be-4fbb-9303-66a0c56eacf7 | b2257cc9-9454-40cd-845f-dc065e5e5551 | 679 | 1 |
 
 A new record has been created, and the previously deleted record has not been activated.
 The static entity physical table has a new record related with the new entity record:
 
-|Id|Name|Order|Is_Active|MinSize|MaxSize|
-|--- |--- |--- |--- |--- |--- |
-|2|Medium|2|1|5001|100000|
-|4|Big|3|1|100001|1000000|
-|1|Huge|4|1|1000000|99999999|
-|5|Tiny|5|1|0|100|
-|6|Small|6|1|101|5000|
+| Id | Name | Order | Is_Active | MinSize | MaxSize |
+| --- | --- | --- | --- | --- | --- |
+| 2 | Medium | 2 | 1 | 5001 | 100000 |
+| 4 | Big | 3 | 1 | 100001 | 1000000 |
+| 1 | Huge | 4 | 1 | 1000000 | 99999999 |
+| 5 | Tiny | 5 | 1 | 0 | 100 |
+| 6 | Small | 6 | 1 | 101 | 5000 |
 
 ## Static Entity Records
 
@@ -143,9 +143,9 @@ This section shows an example of how the OutSystems Platform Manages Static Enti
 
 ### Entity Record
 
-|**Name**          |**Physical Table Name** |**Description**               |
-|------------------|------------------------|------------------------------|
-|Entity_Record     |OSSYS_ENTITY_RECORD     |Records for each static entity defined in Service Studio. Older records are kept as inactive |
+| **Name** | **Physical Table Name** | **Description** |
+| ------------------ | ------------------------ | ------------------------------ |
+| Entity_Record | OSSYS_ENTITY_RECORD | Records for each static entity defined in Service Studio. Older records are kept as inactive |
 
 |**Producers**    |
 |-----------------|

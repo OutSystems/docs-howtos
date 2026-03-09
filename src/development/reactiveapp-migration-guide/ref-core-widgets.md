@@ -142,22 +142,22 @@ You can use the **IsDataFetched** property of the Aggregate to show the loading 
 
 Reactive Web Apps and OutSystems UI use modern implementations that replace the legacy Rich Widgets. Use the following table for guidance on how to replace Rich Widgets in your new app.
 
-| Rich Widget                    | Notes                                                                                        |
+| Rich Widget | Notes |
 | ------------------------------ | -------------------------------------------------------------------------------------------- |
-| Application Switcher           | Change **Data Source** to **Data Action**.                                                   |
-| Dropdown Menu                  | Use the [**Dropdown**](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Interfaces/Designing_Screens/Dropdown) widget from OutSystems UI.                                              |
-| Feedback Ajax Wait             | There's no Ajax in Reactive, review the UX and update it.                                            |
-| Feedback Message               | Use the [**Message**](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Logic/Implementing_Logic/Logic_Tools/Message) tool on the client side, fetching message from server, if needed.                 |
-| Icon                           | Use the new [**Icon**](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Interfaces/Designing_Screens/Icon) widget, with **Size** instead of **Font Size**.                                    |
-| Input Autocomplete             | Migrate to an [**Input**](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Interfaces/Designing_Screens/Input) widget with OnChange login or **DropdownSearch** from OutSystems UI. |
-| Input Calendar                 | Use the [**Date Picker**](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Mobile_and_Reactive_Patterns/Date_Picker) widget from OutSystems UI.                                           |
-| List Counter                   | Create your own or check the [**Pagination**](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Mobile_and_Reactive_Patterns/Pagination) UI Pattern from OutSystems UI.                       |
-| List Navigation                | Check the [**Pagination**](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Mobile_and_Reactive_Patterns/Pagination) UI Pattern from OutSystems UI.                                          |
-| List Sort Column               | Scaffold a [**Table**](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Interfaces/Designing_Screens/Table) with sorting and inspect the logic, reusing and adapting as needed.     |
-| Layout Chicago / Email / Popup | Use [**Blocks**](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Interfaces/Navigating_in_the_Application/Block).                                                                                  |
-| Layout London                  | Use [**Blocks**](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Interfaces/Navigating_in_the_Application/Block) and light UI.                                                                      |
-| Popup Editor                   | Use [**PopOver Menu**](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Interfaces/Designing_Screens/Popover_Menu) and [**Popup**](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Interfaces/Designing_Screens/Popup).                                                          |
-| Popup Info Balloon             | Use [**PopOver Menu**](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Interfaces/Designing_Screens/Popover_Menu) and [**Popup**](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Interfaces/Designing_Screens/Popup).                                                          |
+| Application Switcher | Change **Data Source** to **Data Action**. |
+| Dropdown Menu | Use the [**Dropdown**](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Interfaces/Designing_Screens/Dropdown) widget from OutSystems UI. |
+| Feedback Ajax Wait | There's no Ajax in Reactive, review the UX and update it. |
+| Feedback Message | Use the [**Message**](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Logic/Implementing_Logic/Logic_Tools/Message) tool on the client side, fetching message from server, if needed. |
+| Icon | Use the new [**Icon**](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Interfaces/Designing_Screens/Icon) widget, with **Size** instead of **Font Size**. |
+| Input Autocomplete | Migrate to an [**Input**](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Interfaces/Designing_Screens/Input) widget with OnChange login or **DropdownSearch** from OutSystems UI. |
+| Input Calendar | Use the [**Date Picker**](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Mobile_and_Reactive_Patterns/Date_Picker) widget from OutSystems UI. |
+| List Counter | Create your own or check the [**Pagination**](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Mobile_and_Reactive_Patterns/Pagination) UI Pattern from OutSystems UI. |
+| List Navigation | Check the [**Pagination**](https://success.outsystems.com/Documentation/11/Developing_an_Application/Design_UI/Patterns/Using_Mobile_and_Reactive_Patterns/Pagination) UI Pattern from OutSystems UI. |
+| List Sort Column | Scaffold a [**Table**](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Interfaces/Designing_Screens/Table) with sorting and inspect the logic, reusing and adapting as needed. |
+| Layout Chicago / Email / Popup | Use [**Blocks**](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Interfaces/Navigating_in_the_Application/Block). |
+| Layout London | Use [**Blocks**](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Interfaces/Navigating_in_the_Application/Block) and light UI. |
+| Popup Editor | Use [**PopOver Menu**](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Interfaces/Designing_Screens/Popover_Menu) and [**Popup**](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Interfaces/Designing_Screens/Popup). |
+| Popup Info Balloon | Use [**PopOver Menu**](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Interfaces/Designing_Screens/Popover_Menu) and [**Popup**](https://success.outsystems.com/Documentation/11/Reference/OutSystems_Language/Interfaces/Designing_Screens/Popup). |
 
 ### Popups
 

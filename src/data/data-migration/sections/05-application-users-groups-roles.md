@@ -82,54 +82,54 @@ Users - the attribute Username (and Tenant ID) (Note: Being different environmen
 
 ### Users
 
-|**Name**          |**Physical Table Name** |**Description**               |
-|------------------|------------------------|------------------------------|
-|User              |OSSYS_USER              |End-user of the applications. Shared between eSpaces with the same user provider (defined in Service Studio) |
+| **Name** | **Physical Table Name** | **Description** |
+| ------------------ | ------------------------ | ------------------------------ |
+| User | OSSYS_USER | End-user of the applications. Shared between eSpaces with the same user provider (defined in Service Studio) |
 
 |**Producers**    |
 |-----------------|
 |-                |
 
-|**Consumers**    |
-|-----------------|
-|OSSYS_APP_VERSION |
-|OSSYS_APPLICATION |
-|OSSYS_AREA |
-|OSSYS_BPM_ACTIVITY |
-|OSSYS_DEBUG_SESSION_DATA |
-|OSSYS_DEVELOPER |
-|OSSYS_ESPACE_VERSION |
-|OSSYS_ESPACE_VERSION_PTA |
-|OSSYS_GROUP_USER |
-|OSSYS_RECOMPILATION_LOG |
-|OSSYS_SERVICECENTER_USER |
-|OSSYS_SESSIONTOKEN |
-|OSSYS_SOLUTION |
-|OSSYS_SOLUTION_PACK_REFERENCE |
-|OSSYS_SOLUTION_VERSION |
-|OSSYS_SOLUTIONAPPLYSETTINGS |
-|OSSYS_USER_DEVELOPER |
-|OSSYS_USER_OPTION |
-|OSSYS_USER_ROLE |
-|OSSYS_USER_USERPOOL |
-|OSSYS_USERSERVICEACCOUNT |
-|-----------------|
+| **Consumers** |
+| ----------------- |
+| OSSYS_APP_VERSION |
+| OSSYS_APPLICATION |
+| OSSYS_AREA |
+| OSSYS_BPM_ACTIVITY |
+| OSSYS_DEBUG_SESSION_DATA |
+| OSSYS_DEVELOPER |
+| OSSYS_ESPACE_VERSION |
+| OSSYS_ESPACE_VERSION_PTA |
+| OSSYS_GROUP_USER |
+| OSSYS_RECOMPILATION_LOG |
+| OSSYS_SERVICECENTER_USER |
+| OSSYS_SESSIONTOKEN |
+| OSSYS_SOLUTION |
+| OSSYS_SOLUTION_PACK_REFERENCE |
+| OSSYS_SOLUTION_VERSION |
+| OSSYS_SOLUTIONAPPLYSETTINGS |
+| OSSYS_USER_DEVELOPER |
+| OSSYS_USER_OPTION |
+| OSSYS_USER_ROLE |
+| OSSYS_USER_USERPOOL |
+| OSSYS_USERSERVICEACCOUNT |
+| ----------------- |
 
 ### Roles
 
-|**Name**          |**Physical Table Name** |**Description**               |
-|------------------|------------------------|------------------------------|
-|Role              |OSSYS_ROLE              |Espace specific roles as defined in Service Studio. Old roles are kept as inactive |
+| **Name** | **Physical Table Name** | **Description** |
+| ------------------ | ------------------------ | ------------------------------ |
+| Role | OSSYS_ROLE | Espace specific roles as defined in Service Studio. Old roles are kept as inactive |
 
 |**Producers**    |
 |-----------------|
 |OSSYS_ESPACE     |
 
-|**Consumers**    |
-|-----------------|
-|OSSYS_BPM_ACTIVITY_DEF_ROLE |
-|OSSYS_GROUP_ROLE |
-|OSSYS_USER_ROLE |
+| **Consumers** |
+| ----------------- |
+| OSSYS_BPM_ACTIVITY_DEF_ROLE |
+| OSSYS_GROUP_ROLE |
+| OSSYS_USER_ROLE |
 
 ### User Role
 
@@ -148,25 +148,25 @@ Users - the attribute Username (and Tenant ID) (Note: Being different environmen
 
 #### Groups
 
-|**Name**          |**Physical Table Name** |**Description**               |
-|------------------|------------------------|------------------------------|
-|Group             |OSSYS_GROUP             |Set of users managed in runtime |
+| **Name** | **Physical Table Name** | **Description** |
+| ------------------ | ------------------------ | ------------------------------ |
+| Group | OSSYS_GROUP | Set of users managed in runtime |
 
 |**Producers**    |
 |-----------------|
 |-                |
 
-|**Consumers**    |
-|-----------------|
-|OSSYS_BPM_ACTIVITY |
-|OSSYS_GROUP_ROLE |
-|OSSYS_GROUP_USER |
+| **Consumers** |
+| ----------------- |
+| OSSYS_BPM_ACTIVITY |
+| OSSYS_GROUP_ROLE |
+| OSSYS_GROUP_USER |
 
 ### Group Role
 
-|**Name**          |**Physical Table Name** |**Description**               |
-|------------------|------------------------|------------------------------|
-|Group_Role        |OSSYS_GROUP_ROLE        |Roles shared for a specific user group |
+| **Name** | **Physical Table Name** | **Description** |
+| ------------------ | ------------------------ | ------------------------------ |
+| Group_Role | OSSYS_GROUP_ROLE | Roles shared for a specific user group |
 
 |**Producers**    |
 |-----------------|

@@ -367,12 +367,12 @@ FROM OSSYS_BPM_Activity
 WHERE OSSYS_BPM_Activity.Process_Id = 11266
 ```
 
-|Id|Activity_Def_Id|Process_Id|Name|User_Id|Closed|Status_Id|
-|--- |--- |--- |--- |--- |--- |--- |
-|213828|245|11266|Start||11/26/2019 12:03:25 PM|5|
-|213829|242|11266|ScreenCandidate||1/1/1900 12:00:00 AM|9|
-|213830|249|11266|NewInterview||1/1/1900 12:00:00 AM|8|
-|213831|247|11266|Dismiss||1/1/1900 12:00:00 AM|8|
+| Id | Activity_Def_Id | Process_Id | Name | User_Id | Closed | Status_Id |
+| --- | --- | --- | --- | --- | --- | --- |
+| 213828 | 245 | 11266 | Start | | 11/26/2019 12:03:25 PM | 5 |
+| 213829 | 242 | 11266 | ScreenCandidate | | 1/1/1900 12:00:00 AM | 9 |
+| 213830 | 249 | 11266 | NewInterview | | 1/1/1900 12:00:00 AM | 8 |
+| 213831 | 247 | 11266 | Dismiss | | 1/1/1900 12:00:00 AM | 8 |
 
 You have completed the Start a Process step.
 
@@ -586,12 +586,12 @@ ORDER BY OSSYS_BPM_Activity.Created
 
 The result shows the first two records and the last rows. Each Activity row which is related to the process ID has an Activity Definition. You can see the Label, the closed date, because this Process is fully Closed. The ``Status_Id`` is ``5`` in all rows. If you check the value ``5`` in the ``Activity_Status`` static entity, you see that ``5`` means Closed:
 
-|Id|Activity_Def_Id|Process_Id|Name|Closed|Status_Id|
-|--- |--- |--- |--- |--- |--- |
-|213828|245|11266|Start|11/26/2019 12:03:25 PM|5|
-|213829|242|11266|ScreenCandidate|11/26/2019 5:09:15 PM|5|
-|213876|273|11266|SetResult|11/26/2019 5:27:25 PM|5|
-|213877|244|11266|End|11/26/2019 5:27:25 PM|5|
+| Id | Activity_Def_Id | Process_Id | Name | Closed | Status_Id |
+| --- | --- | --- | --- | --- | --- |
+| 213828 | 245 | 11266 | Start | 11/26/2019 12:03:25 PM | 5 |
+| 213829 | 242 | 11266 | ScreenCandidate | 11/26/2019 5:09:15 PM | 5 |
+| 213876 | 273 | 11266 | SetResult | 11/26/2019 5:27:25 PM | 5 |
+| 213877 | 244 | 11266 | End | 11/26/2019 5:27:25 PM | 5 |
 
 #### Activity Output
 
@@ -609,12 +609,12 @@ INNER JOIN OSSYS_BPM_Activity_Output
 WHERE OSSYS_BPM_Process.Id = 11266
 ```
 
-|ActivityName|Id|Output_Def_Id|Activity_Id|Name|Data_Type|Output_Value|SS_Type|
-|--- |--- |--- |--- |--- |--- |--- |--- |
-|ScreenCandidate|69729|33|213829|Done|rtBoolean|TRUE|rtBoolean|
-|WaitForAllFeedback|69733|30|213841|ActivityInterviewId|rtInteger|17|bt4...190|
-|NewInterview|69737|29|213868|ActivityInterviewId|rtInteger|19|bt4...190|
-|WaitForAllFeedback|69738|30|213870|ActivityInterviewId|rtInteger|19|bt4...190|
+| ActivityName | Id | Output_Def_Id | Activity_Id | Name | Data_Type | Output_Value | SS_Type |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ScreenCandidate | 69729 | 33 | 213829 | Done | rtBoolean | TRUE | rtBoolean |
+| WaitForAllFeedback | 69733 | 30 | 213841 | ActivityInterviewId | rtInteger | 17 | bt4...190 |
+| NewInterview | 69737 | 29 | 213868 | ActivityInterviewId | rtInteger | 19 | bt4...190 |
+| WaitForAllFeedback | 69738 | 30 | 213870 | ActivityInterviewId | rtInteger | 19 | bt4...190 |
 
 By using this query, it is possible to see the ``ActivityName``, the Parameter Name found on the fifth column, and it is possible to compare the values of the sheet with the screenshot below:
 
@@ -639,11 +639,11 @@ INNER JOIN sys.sql_modules m
 
 The following table shows the 20 results found. First, create the ``ChangePerson`` Process and fill the ``LaunchOn`` parameter with the entity action ``CreatePerson``. Then, publish the Espace. Finally, run the command again and check if a new trigger is created.
 
-|Name|Definition|
-|--- |--- |
-|OSTRG_EI__OSUSR_EP8_THEENTITY|CREATE TRIGGER [OSTRG_EI__OSUSR_EP8_THEENTITY]|
-|OSTRG_EI__OSUSR_GTU_PERSON|CREATE TRIGGER [OSTRG_EI__OSUSR_GTU_PERSON]|
-|OSTRG_EI__OSUSR_EUG_THEENTITY|CREATE TRIGGER [OSTRG_EI__OSUSR_EUG_THEENTITY]|
+| Name | Definition |
+| --- | --- |
+| OSTRG_EI__OSUSR_EP8_THEENTITY | CREATE TRIGGER [OSTRG_EI__OSUSR_EP8_THEENTITY] |
+| OSTRG_EI__OSUSR_GTU_PERSON | CREATE TRIGGER [OSTRG_EI__OSUSR_GTU_PERSON] |
+| OSTRG_EI__OSUSR_EUG_THEENTITY | CREATE TRIGGER [OSTRG_EI__OSUSR_EUG_THEENTITY] |
 
 The trigger content is activated by each Insert or Update operation done into the ``OSUSR_GTU_PERSON`` table. The trigger execution checks for information inside the ``OSEVT_GTU_PERSON`` table and, in case of any relevant configuration, inserts a row into ``OSSYS_BPM_EVENT`` (if it is a light Process) or into ``OSSYS_BPM_EVENT_QUEUE`` (if it is not a light Process). Then the Scheduler processes the ``OSSYS_BPM_EVENT`` and the ``OSSYS_BPM_EVENT_QUEUE`` table.
 
