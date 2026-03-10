@@ -123,7 +123,7 @@ Consider you have a Process called "Candidate Selection" and it is triggered by 
 Create a candidate called "John Doe" filling out an entity record form Candidate. This creates a new process instance in runtime with a Process Id.
 The process can be found in Service Center:
 
-![](images/bpt-entities-start-process.png?)
+![Service Center view showing the Process in BPT entities](images/bpt-entities-start-process.png?)
 
 The Process is stored in the Process Entity. You can use the following command to display the last inserted Process:
 
