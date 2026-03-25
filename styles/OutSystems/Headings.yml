@@ -327,6 +327,7 @@ exceptions:
   - APIs
   - CI/CD
   - CICD
+  - CI
   - DB2
   - DEV
   - DNS
