@@ -12,6 +12,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+isautopublish: true
 ---
 
 # How to define Mobile App deep links
@@ -52,6 +53,11 @@ When you generate an Android App in OutSystems 10 it already includes a `BROWSAB
 To define an Android Intent use the following syntax:
 
     intent://<module>/<screen>#Intent;scheme=<app-identifier>;package=<app-identifier>;end;
+
+<div class="info" markdown="1">
+
+The `scheme` parameter must be lowercase, even if your App identifier has uppercase characters. The `package` parameter should match your actual App identifier.
+</div>
 
 To specify a custom fallback URL (`<URL>`) add a string extra `S.browser_fallback_url=<URL>;` to the Intent:
 
