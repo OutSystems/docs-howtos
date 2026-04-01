@@ -143,6 +143,10 @@ exceptions:
   - JSON
   - Cordova-based
   - Cordova-only
+  - Cordova
+  - Capacitor
+  - Ad-Hoc
+  - In-House
   - ViewState
   - WorkflowNewCustomerLoan
   - NSCameraUsageDescription
