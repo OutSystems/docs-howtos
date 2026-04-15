@@ -14,11 +14,12 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+isautopublish: true
 ---
 
 # How to customize number of records per page
 
-We will show how to add a dropdown that will enable users to change at runtime the number of records per page.
+This article shows how to add a dropdown that enables users to change the number of records per page at runtime.
 The pattern created here should be combined with the [Pagination pattern](https://success.outsystems.com/documentation/11/developing_an_application/design_ui/patterns/using_mobile_and_reactive_patterns/navigation/pagination/) from OutSystems UI.
 
 To create this pattern, follow these steps:
@@ -49,7 +50,7 @@ Now you need to add some logic in the block.
 1. On the True branch, drag some list appends to initialize the `PageResults_Fallback` variable with the default options you want to provide if no list is provided, and make sure you have at least the "10 per page" / 10 record as we are using 10 as the default value. Example:
     * Label: "5 per page" and value: 5
     * Label: "10 per page" and value: 10
-    * Label: "15 per page" and value: 15, and so on
+    * Label: "15 per page" and value: 15
 1. After the list appends, set `SelectedPerPage` variable with the DefaultPerPage input parameter
 
 Your screen should now look like this:
@@ -68,7 +69,7 @@ Finally, we need to place the elements on the block's widget tree, so follow the
     * Set Options Value as Value
 1. Use the `PerPageChange_Event` as the On Change event, with `SelectedPerPage` variable as the Per Page's input parameter.
 1. Leave the False branch empty and outside the If widget add a Placeholder widget.
-1. Give it the name Pagination with the style classes `"full-pagination-block ph"`
+1. Give it the name Pagination with the style classes `"full-pagination-block placeholder-empty"`
 
 Your screen should look like this:
 
