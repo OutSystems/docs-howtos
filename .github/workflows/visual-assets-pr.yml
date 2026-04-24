@@ -29,7 +29,7 @@ jobs:
 
     steps:
     - name: 'Hide previous comments'
-      uses: marocchino/sticky-pull-request-comment@v2
+      uses: marocchino/sticky-pull-request-comment@v3
       with:
         number: ${{ inputs.pull-request }}
         header: VISUAL ASSETS VALIDATION
@@ -59,7 +59,7 @@ jobs:
 
     steps:
     - name: 'Add report to Pull Request'
-      uses: marocchino/sticky-pull-request-comment@v2
+      uses: marocchino/sticky-pull-request-comment@v3
       with:
         number: ${{ inputs.pull-request }}
         header: VISUAL ASSETS VALIDATION
