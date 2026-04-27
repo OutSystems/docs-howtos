@@ -12,18 +12,24 @@ jobs:
     steps:
       - name: Extract PR details
         id: parse-payload
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          PR_AUTHOR_LOGIN: ${{ github.event.pull_request.user.login }}
         run: |
-          echo "Pull request number: ${{ github.event.pull_request.number }}"
-          echo "Pull request title: ${{ github.event.pull_request.title }}"
-          echo "Pull request author: ${{ github.event.pull_request.user.login }}"
+          echo "Pull request number: $PR_NUMBER"
+          echo "Pull request title: $PR_TITLE"
+          echo "Pull request author: $PR_AUTHOR_LOGIN"
 
       - name: Retrieve TK team members
         id: get-team-members
+        env:
+          TEAM_NAME: ${{ vars.TEAM_NAME }}
         run: |
           # Construct the URL
-          TEAM_MEMBERS_URL="https://api.github.com/orgs/OutSystems/teams/${{ vars.TEAM_NAME }}/members"
+          TEAM_MEMBERS_URL="https://api.github.com/orgs/OutSystems/teams/$TEAM_NAME/members"
           echo "Fetching team members from: $TEAM_MEMBERS_URL"
-    
+
           # Retrieve team members from a GitHub team
           TEAM_MEMBERS=$(curl -L -H "Accept: application/vnd.github+json" -H "Authorization: Bearer $GITHUB_TOKEN" "$TEAM_MEMBERS_URL")
           echo "::set-output name=members::$TEAM_MEMBERS"
@@ -31,10 +37,11 @@ jobs:
 
       - name: Check PR Author
         id: check-pr-author
+        env:
+          TEAM_MEMBERS_JSON: ${{ steps.get-team-members.outputs.members }}
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
         run: |
-          TEAM_MEMBERS="${{ steps.get-team-members.outputs.members }}"
-          PR_AUTHOR="${{ github.event.pull_request.user.login }}"
-          if [[ ",$TEAM_MEMBERS," == *",$PR_AUTHOR,"* ]]; then
+          if [[ ",$TEAM_MEMBERS_JSON," == *",$PR_AUTHOR,"* ]]; then
             echo "Pull request made by team member. Skipping Jira ticket creation."
             echo "::set-output name=notify_requestor::false"
           else
@@ -43,18 +50,20 @@ jobs:
 
       - name: Create Jira Ticket
         id: create-jira-ticket
+        env:
+          JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
+          JIRA_API_URL: ${{ vars.JIRA_API_URL }}
+          PR_HTML_URL: ${{ github.event.pull_request.html_url }}
         run: |
-          JIRA_API_TOKEN=${{ secrets.JIRA_API_TOKEN }}
-          JIRA_API_URL=${{ vars.JIRA_API_URL }}
           JIRA_PROJECT_KEY=TK
-          
+
           # Get repository name
-          REPO_NAME=$(echo "${{ github.repository }}" | cut -d '/' -f 2)
+          REPO_NAME=$(echo "$GITHUB_REPOSITORY" | cut -d '/' -f 2)
 
           # Construct request body
           ISSUE_TYPE="Story"
-          SUMMARY="New PR at $REPO_NAME from ${{ github.actor }}"
-          DESCRIPTION="There's a new PR at ${{ github.event.pull_request.html_url }}. Please review it, merge it, and publish it, or close it if it's not to be merged."
+          SUMMARY="New PR at $REPO_NAME from $GITHUB_ACTOR"
+          DESCRIPTION="There's a new PR at $PR_HTML_URL. Please review it, merge it, and publish it, or close it if it's not to be merged."
           LABELS='["Documentation", "support-maintenance", "pr-auto"]'
 
           # Send HTTP request to create issue
