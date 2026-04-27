@@ -7,10 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/file/gKoXqtZTY2IJjyMWschrRB/Integrations?node-id=1242:309
 tags: active directory integration, user management, permissions synchronization, forge components, authentication
 audience:
-  - platform administrators
-  - full stack developers
-  - backend developers
-  - architects
+  - Platform administrator
+  - Developer
+  - Architect
 outsystems-tools:
   - service studio
   - forge

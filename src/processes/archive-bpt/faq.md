@@ -7,9 +7,8 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/qdZmVuCDqCHvhakBTOLZcI/Processes?type=design&node-id=147%3A325&mode=design&t=RJVgJk7HezcStPje-1
 audience:
-  - full stack developers
-  - backend developers
-  - platform administrators
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:

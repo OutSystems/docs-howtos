@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: front-end development, web apps, mobile development, how-to guides, user interface design
 audience:
-  - frontend developers
-  - full stack developers
-  - mobile developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: outsystems platform, traditional web apps, mobile development, web development, how-to guides
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

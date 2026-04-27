@@ -7,8 +7,8 @@ platform-version: o11
 figma:
 tags: ui migration, silk ui, outsystems 11, framework upgrade, manual migration process
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

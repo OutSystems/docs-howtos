@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: logic, traditional web apps, mobile apps, ide usage, tutorials for beginners
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

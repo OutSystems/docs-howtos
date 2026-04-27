@@ -7,9 +7,8 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/5uD7gg1CIy1jlOE2BNFdsU/Data?node-id=1142:247
 audience:
-  - full stack developers
-  - platform administrators
-  - backend developers
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - service studio
   - service center
@@ -27,11 +26,11 @@ One of the most critical topics in data migration relates to Business Process Te
 
 The following diagram shows the relationships between the BPT process related entities, Process Definition and Input/Output Definitions, and Process applicational instances with the corresponding Input/Output instances and their relation with the definitions.
 
-![Entity-relationship diagram for BPT process-related entities, showing system and hybrid entities and their interconnections.](images/bpt-entity-relationship-model.png "BPT Entity-Relationship Model Diagram")
+![Entity-relationship diagram showing Process_Definition, Process_Input_Definition, Process_Output_Definition, Process, Process_Input, Process_Output, and Process_Status tables with their foreign key relationships.](images/bpt-entity-relationship-model.png "BPT process entities and relationships")
 
 And there is also the Activities that belong to the Process:
 
-![Diagram depicting various BPT process activities, their statuses, and interrelationships.](images/bpt-activities-belonging-to-process.png "BPT Activities Belonging to Process Diagram")
+![Entity-relationship diagram showing Activity_Definition, Activity_Output_Definition, Activity_Def_Link, Activity, Activity_Output, Activity_Kind, and Activity_Status tables with their relationships.](images/bpt-activities-belonging-to-process.png "BPT activity entities and relationships")
 
 The records for the entities in the previous can be generated from the following sources:
 
@@ -350,7 +349,7 @@ WHERE OSSYS_ENTITY.Physical_Table_name = 'OSUSR_3ar_Candidate'
 
 The following image displays all the Activities connected to the Process. There are two activities which are on the "Listening" State. But the current Activity is "Screen Candidate" with the "Ready" State.
 
-![Image displaying the sequence of activities connected to a BPT process, including their current status.](images/bpt-activities-connected-to-process.png "BPT Activities Connected to Process")
+![OutSystems Service Center screen for a Candidate Selection process instance showing its activities, including Dismiss and New Interview in Listening status, Screen Candidate in Ready status, and Start in Closed status.](images/bpt-activities-connected-to-process.png "Service Center activity list for a process instance")
 
 To see what is inside the Activity, use the following command:
 
@@ -564,7 +563,7 @@ rtText
 
 The ``Process_Id`` is the same found on this Process, ``Output_Def_Id`` is the value found on the ``Process_Output_Def``.  Check the third line in the following image. In this case, the value is not an Identifier, just a piece of text.
 
-![Table displaying BPT process ID values and related information, including status and output definitions.](images/bpt-process-id-values.png "BPT Process ID Values")
+![Table view of process output definition records showing ID, SS_Key, Process_Def_Id, Name, Description, Is_Active, Data_Type, Default_Value, and SS_Type columns for a BPT process.](images/bpt-process-id-values.png "Process output definition records for a BPT process")
 
 #### Activity
 
@@ -618,7 +617,7 @@ WHERE OSSYS_BPM_Process.Id = 11266
 
 By using this query, it is possible to see the ``ActivityName``, the Parameter Name found on the fifth column, and it is possible to compare the values of the sheet with the screenshot below:
 
-![Screenshot of the activity output at the finish of a BPT process, showing the final status and results.](images/bpt-finish-activity-output.png "BPT Finish Activity Output")
+![OutSystems Service Studio diagram showing ScreenCandidate, NewInterview, and WaitForAllFeedback activities with their Done and ActivityInterviewId output parameters highlighted.](images/bpt-finish-activity-output.png "Service Studio flow showing activity output parameters")
 
 ### BPT Scheduler
 

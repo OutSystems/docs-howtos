@@ -7,10 +7,8 @@ platform-version: o11
 figma:
 tags: redis, cluster setup, ubuntu server configuration, server hardening, production environment
 audience:
-  - platform administrators
-  - infrastructure managers
-  - backend developers
-  - full stack developers
+  - Platform administrator
+  - Developer
 outsystems-tools:
   - none
 coverage-type:

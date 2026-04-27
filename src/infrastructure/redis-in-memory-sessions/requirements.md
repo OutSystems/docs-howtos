@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: system requirements, redis configuration, scalability, high availability, infrastructure planning
 audience:
-  - platform administrators
-  - infrastructure managers
-  - full stack developers
+  - Platform administrator
+  - Developer
 outsystems-tools:
   - platform server
 coverage-type:

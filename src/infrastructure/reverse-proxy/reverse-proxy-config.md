@@ -7,11 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/file/o7Rkyuxm89D6KrjD7AOYCU/Infrastructure?node-id=1242:252
 tags: reverse proxy, ssl offloading, url rewriting, header manipulation, apache http server
 audience:
-  - platform administrators
-  - infrastructure managers
-  - backend developers
-  - full stack developers
-  - architects
+  - Platform administrator
+  - Developer
+  - Architect
 outsystems-tools:
   - none
 coverage-type:

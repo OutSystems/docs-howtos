@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: devops, continuous integration, continuous deployment, automation, infrastructure as code
 audience:
-  - full stack developers
-  - frontend developers
-  - mobile developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

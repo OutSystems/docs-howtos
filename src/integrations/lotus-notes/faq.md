@@ -7,10 +7,8 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/gKoXqtZTY2IJjyMWschrRB/Integrations?node-id=1242:293
 audience:
-  - backend developers
-  - full stack developers
-  - platform administrators
-  - data engineers
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:

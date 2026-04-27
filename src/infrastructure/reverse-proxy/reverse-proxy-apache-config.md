@@ -7,11 +7,9 @@ platform-version: o11
 figma:
 tags: apache configuration, ssl configuration, proxy server setup, url rewriting, server management
 audience:
-  - platform administrators
-  - tech leads
-  - infrastructure managers
-  - full stack developers
-  - backend developers
+  - Platform administrator
+  - Tech lead
+  - Developer
 outsystems-tools:
   - service center
   - lifetime

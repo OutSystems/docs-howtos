@@ -7,9 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/file/o7Rkyuxm89D6KrjD7AOYCU/Infrastructure?node-id=1242:249
 tags: session management, redis, configuration, infrastructure setup, platform server
 audience:
-  - platform administrators
-  - infrastructure managers
-  - full stack developers
+  - Platform administrator
+  - Developer
 outsystems-tools:
   - platform server
 coverage-type:

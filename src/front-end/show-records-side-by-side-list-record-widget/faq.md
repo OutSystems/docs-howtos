@@ -7,8 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:95
 tags: ide usage, reactive web apps, list records widget, ui patterns, outsystems ui framework
 audience:
-  - frontend developers
-  - full stack developers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

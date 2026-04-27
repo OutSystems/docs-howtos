@@ -7,10 +7,8 @@ platform-version: o11
 figma:
 tags: ssl configuration, redis, security, infrastructure management, outsystems platform
 audience:
-  - platform administrators
-  - infrastructure managers
-  - full stack developers
-  - backend developers
+  - Platform administrator
+  - Developer
 outsystems-tools:
   - platform server
 coverage-type:

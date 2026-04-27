@@ -7,9 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/file/XbkdagtFJ9kxan8pAx0Qsz/DevOps?node-id=147:325
 tags: continuous delivery, devops, ci/cd, open source, deployment automation
 audience:
-  - full stack developers
-  - platform administrators
-  - tech leads
+  - Developer
+  - Platform administrator
+  - Tech lead
 outsystems-tools:
   - lifetime
 coverage-type:

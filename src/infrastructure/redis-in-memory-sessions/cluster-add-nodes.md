@@ -7,10 +7,9 @@ platform-version: o11
 figma:
 tags: scaling, redis cluster, high availability, performance optimization, infrastructure management
 audience:
-  - platform administrators
-  - full stack developers
-  - infrastructure managers
-  - tech leads
+  - Platform administrator
+  - Developer
+  - Tech lead
 outsystems-tools:
   - none
 coverage-type:

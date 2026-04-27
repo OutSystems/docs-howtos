@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: data handling, data integration, data management, app development, outsystems platform
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

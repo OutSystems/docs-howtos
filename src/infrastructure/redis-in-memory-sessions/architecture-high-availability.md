@@ -7,11 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/file/o7Rkyuxm89D6KrjD7AOYCU/Infrastructure?node-id=1242:242
 tags: high availability, redis, cluster configuration, infrastructure, master-replica architecture
 audience:
-  - platform administrators
-  - backend developers
-  - infrastructure managers
-  - architects
-  - full stack developers
+  - Platform administrator
+  - Developer
+  - Architect
 outsystems-tools:
   - none
 coverage-type:

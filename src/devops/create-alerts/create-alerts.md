@@ -7,10 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/file/XbkdagtFJ9kxan8pAx0Qsz/DevOps?type=design&node-id=1542%3A348&mode=design&t=dN0yGLL6D8INLkOx-1
 tags: custom alerts, api, monitoring, itsm tools, application performance
 audience:
-  - platform administrators
-  - full stack developers
-  - backend developers
-  - frontend developers
+  - Platform administrator
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

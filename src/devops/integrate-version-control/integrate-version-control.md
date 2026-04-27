@@ -7,9 +7,9 @@ platform-version: o11
 figma: https://www.figma.com/file/XbkdagtFJ9kxan8pAx0Qsz/DevOps?node-id=1542:340
 tags: version control integration, ci/cd, devops, github, jenkins
 audience:
-  - full stack developers
-  - platform administrators
-  - tech leads
+  - Developer
+  - Platform administrator
+  - Tech lead
 outsystems-tools:
   - lifetime
 coverage-type:

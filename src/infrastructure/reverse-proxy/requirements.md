@@ -7,11 +7,10 @@ platform-version: o11
 figma:
 tags: reverse proxy, security, high availability, load balancing, ssl offloading
 audience:
-  - platform administrators
-  - full stack developers
-  - infrastructure managers
-  - architects
-  - tech leads
+  - Platform administrator
+  - Developer
+  - Architect
+  - Tech lead
 outsystems-tools:
   - none
 coverage-type:

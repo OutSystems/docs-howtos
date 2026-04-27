@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: outsystems infrastructure, deployment, scalability, performance, environment management
 audience:
-  - full stack developers
-  - platform administrators
-  - infrastructure managers
+  - Developer
+  - Platform administrator
 outsystems-tools:
   - none
 coverage-type:

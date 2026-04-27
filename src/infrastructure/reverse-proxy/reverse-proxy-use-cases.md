@@ -7,10 +7,8 @@ platform-version: o11
 figma: https://www.figma.com/file/o7Rkyuxm89D6KrjD7AOYCU/Infrastructure?node-id=1242:557
 tags: security, web traffic management, reverse proxy, https, ssl
 audience:
-  - platform administrators
-  - infrastructure managers
-  - backend developers
-  - full stack developers
+  - Platform administrator
+  - Developer
 outsystems-tools:
   - none
 coverage-type:

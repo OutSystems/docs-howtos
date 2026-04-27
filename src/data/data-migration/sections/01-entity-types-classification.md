@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: data migration, platform metamodel, entity classification, system integrity, outsystems platform
 audience:
-  - platform administrators
-  - full stack developers
-  - backend developers
+  - Platform administrator
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:

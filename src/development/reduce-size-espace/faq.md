@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: application optimization, application architecture, image optimization, resource management, icon management
 audience:
-  - mobile developers
-  - frontend developers
-  - full stack developers
+  - Developer
+  - Front-end developer
 outsystems-tools:
   - service studio
   - architecture dashboard

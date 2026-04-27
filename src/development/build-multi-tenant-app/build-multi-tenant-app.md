@@ -7,11 +7,10 @@ platform-version: o11
 figma: https://www.figma.com/file/ZqxffTIAhYyQg8Q2KbSFbb/Development?node-id=1747:79
 tags: multi-tenancy, saas, data isolation, application development, enterprise apps
 audience:
-  - full stack developers
-  - frontend developers
-  - backend developers
-  - platform administrators
-  - architects
+  - Developer
+  - Front-end developer
+  - Platform administrator
+  - Architect
 outsystems-tools:
   - service studio
 coverage-type:

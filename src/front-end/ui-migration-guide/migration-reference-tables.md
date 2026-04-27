@@ -7,9 +7,8 @@ platform-version: o11
 figma:
 tags: ui migration, css patterns, application development, web ui framework, outsystems 11
 audience:
-  - frontend developers
-  - full stack developers
-  - ui designers
+  - Front-end developer
+  - Developer
 outsystems-tools:
   - service studio
 coverage-type:
