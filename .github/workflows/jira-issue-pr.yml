@@ -273,7 +273,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: 'Add comment to Pull Request'
-      uses: marocchino/sticky-pull-request-comment@v2
+      uses: marocchino/sticky-pull-request-comment@v3
       with:
         number: ${{ inputs.pull-request }}
         header: AUTOMATIC JIRA ISSUE CREATION
