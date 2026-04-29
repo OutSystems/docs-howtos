@@ -5,29 +5,34 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/5uD7gg1CIy1jlOE2BNFdsU/Data?node-id=147:325
-tags: data import, excel integration, data conversion, error handling, data bootstrapping
+tags:
+  - Data
+  - Troubleshooting
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:
   - apply
 topic:
   - bootstrap-test-data-excel
+isautopublish: true
 ---
 
 # How to bootstrap numeric data from Excel with blank cells
 
 ## Question
 
-I am trying to bootstrap data from an Excel spreadsheet with blank cells. However, I get an error from blank cells defined as numeric fields. How can I import data from an Excel file with blank cells?
+I am trying to bootstrap data from an Excel spreadsheet with blank cells.
+However, I get an error from blank cells defined as numeric fields.
+How can I import data from an Excel file with blank cells?
 
 ![Screenshot of an Excel spreadsheet showing employee names, countries, and sales with a highlighted blank cell in the sales column.](images/How-to-bootstrap-numeric-data-from-Excel-with-blank-cells_0.png "Excel Spreadsheet with Blank Cell")
 
 ## Answer
 
-Blank cells cannot be interpreted as numeric, either integer or decimal. You have two options:
+Blank cells cannot be interpreted as numeric, either integer or decimal.
+You have two options:
 
 * Change the spreadsheet. Change blank cells defined as numeric fields to 0.
 
