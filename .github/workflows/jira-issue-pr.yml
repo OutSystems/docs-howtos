@@ -83,7 +83,7 @@ jobs:
         echo "::notice title=Technical Knowledge::${{ steps.pr-info.outputs.author }} is a member of ${{ vars.TK_TEAM_SLUG }} team. Please add the JIRA issue to the pull request title." 
 
     - name: 'Missing JIRA issue'
-      uses: actions/github-script@v7
+      uses: actions/github-script@v9
       if: steps.check-pr-label.outputs.ignore == 'false' && steps.jira.outputs.first_match == '' && (steps.check-membership.outputs.is-member == 'true' || vars.ENABLE_PR_JIRA_ISSUE_CREATION != 'true')
       with:
         script: |
