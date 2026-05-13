@@ -6,29 +6,7 @@ on:
     - cron: '0 0 * * 1'
 
 jobs:
-  reset-docs-branch:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v6
-        with:
-          fetch-depth: 0
-
-      - name: Determine default branch
-        id: default_branch
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          DEFAULT_BRANCH=$(gh repo view --json defaultBranchRef -q '.defaultBranchRef.name')
-          echo "Default branch is $DEFAULT_BRANCH"
-          echo "default_branch=$DEFAULT_BRANCH" >> "$GITHUB_OUTPUT"
-
-      - name: Reset dev branch
-        env:
-          DEFAULT_BRANCH: ${{ steps.default_branch.outputs.default_branch }}
-          DEV_BRANCH: ${{ vars.DEV_BRANCH }}
-        run: |
-          git fetch origin "$DEFAULT_BRANCH"
-          git checkout "$DEV_BRANCH"
-          git reset --hard "origin/$DEFAULT_BRANCH"
-          git push origin "$DEV_BRANCH" --force
+  reset-dev-branch:
+    name: Reset Dev Branch
+    uses: OutSystems/tk-cicd/.github/workflows/reset-dev-branch.yml@main
+    secrets: inherit
