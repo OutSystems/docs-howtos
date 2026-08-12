@@ -16,7 +16,6 @@ outsystems-tools:
   - service center
   - lifetime
 coverage-type:
-  - apply
   - understand
 ---
 
