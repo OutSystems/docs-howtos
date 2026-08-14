@@ -1,5 +1,10 @@
 ---
-tags: data mapping, server actions, excel export, data customization, structured data
+tags:
+  - Data
+  - Data Model
+  - Logic
+  - Screens
+  - Traditional Web
 summary: Learn how to customize Excel exports in OutSystems 11 (O11) by renaming and reordering columns using structured data mapping and server actions.
 guid: d1470acf-fb13-42b7-9a3d-0d4a67ddc689
 locale: en-us

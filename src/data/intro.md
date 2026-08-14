@@ -5,7 +5,14 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: data handling, data integration, data management, app development, outsystems platform
+tags:
+  - Aggregates
+  - Data
+  - Data Integrity
+  - Data Model
+  - Data Synchronization
+  - Entities
+  - External Databases
 audience:
   - Developer
   - Front-end developer

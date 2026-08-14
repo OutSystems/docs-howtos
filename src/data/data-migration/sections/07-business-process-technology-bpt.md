@@ -1,6 +1,13 @@
 ---
 summary: Explore BPT entity migration complexities in OutSystems 11 (O11), focusing on system and hybrid entities.
-tags: bpt, entity migration, data migration, system entities, hybrid entities
+tags:
+  - Business Processes
+  - Data
+  - Data Integrity
+  - Data Model
+  - Entities
+  - Triggers
+  - Workflows
 locale: en-us
 guid: 2cf30a7f-da91-4bbb-b960-0f3724632dde
 app_type: traditional web apps, mobile apps, reactive web apps
