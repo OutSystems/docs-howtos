@@ -14,6 +14,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+  - evaluate
 ---
 
 # Hierarchical and static roles comparison
