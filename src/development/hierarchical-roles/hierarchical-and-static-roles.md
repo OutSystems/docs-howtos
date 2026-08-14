@@ -9,7 +9,6 @@ figma:
 audience:
   - Developer
   - Front-end developer
-  - Platform administrator
 outsystems-tools:
   - service studio
 coverage-type:
