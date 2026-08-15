@@ -8,7 +8,6 @@ figma:
 tags: devops, continuous integration, continuous deployment, automation, infrastructure as code
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

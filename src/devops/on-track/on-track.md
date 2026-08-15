@@ -8,7 +8,6 @@ figma: https://www.figma.com/file/XbkdagtFJ9kxan8pAx0Qsz/DevOps?type=design&node
 tags: agile project management, kanban, continuous delivery, project tracking, user acceptance testing
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:
