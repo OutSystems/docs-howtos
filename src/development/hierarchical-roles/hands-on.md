@@ -1,5 +1,5 @@
 ---
-summary: Explore hierarchical role implementation in web applications using OutSystems 11 (O11) for effective data and user management.
+summary: "Hierarchical roles in OutSystems 11 (O11): build the data model, BackOffice screens, and GetPermissionsByUserId and HasAccessByFunctionId actions."
 tags: role management, security, authorization, hierarchical data structures, access control
 guid: b8ef5b66-e443-445d-a0e8-7623b8ca100c
 locale: en-us
