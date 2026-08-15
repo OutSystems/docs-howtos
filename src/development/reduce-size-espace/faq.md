@@ -14,6 +14,7 @@ outsystems-tools:
   - architecture dashboard
 coverage-type:
   - apply
+  - unblock
 ---
 
 # How to reduce the size of my modules
