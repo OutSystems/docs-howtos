@@ -12,6 +12,7 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
+  - understand
   - apply
 topic:
   - front-end-architecture
