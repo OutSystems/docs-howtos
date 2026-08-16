@@ -1,6 +1,6 @@
 ---
 tags: ide usage, reactive web apps, tutorials for beginners, ui components, static entities
-summary: This article explains implementing a dropdown search for country dial-in codes and flags in OutSystems, with optional Forge components.
+summary: Dropdown Search OutSystems UI pattern with country flags and dial-in codes, built using a static entity and optional Forge components.
 guid: ebed2507-61c6-49a4-bbe0-cdfecd253dbc
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
