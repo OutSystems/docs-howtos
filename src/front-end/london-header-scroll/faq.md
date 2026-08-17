@@ -13,6 +13,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+  - unblock
 ---
 
 # How to make the header scroll with the page in the London theme
