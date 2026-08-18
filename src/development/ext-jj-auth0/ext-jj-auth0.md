@@ -1,6 +1,13 @@
 ---
 summary: Explore how to integrate Auth0 with OutSystems 11 (O11) for streamlined user authentication and single sign-on capabilities.
-tags: single sign-on, saml protocol, user authentication, auth0 integration, security
+tags:
+  - Authentication
+  - End-user Authentication
+  - External Authentication
+  - Forge
+  - IdP
+  - SAML
+  - SSO
 guid: f42b952f-3f83-4a46-b15f-bc96a6080bfb
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

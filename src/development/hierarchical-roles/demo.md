@@ -1,6 +1,11 @@
 ---
-summary: "Hierarchical Roles sales demo in OutSystems 11 (O11): see how HasAccessByFunctionId and GetPermissionsByUserId control screen access and permissions by role."
-tags: access control, security, role-based access control, authorization, application development
+summary: Explore hierarchical role-based access control in OutSystems 11 (O11) through a sales application demo.
+tags:
+  - Authorization
+  - Logic
+  - Roles
+  - Screens
+  - Security
 guid: c3a3c216-5fcb-4943-b787-aa744827ad28
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

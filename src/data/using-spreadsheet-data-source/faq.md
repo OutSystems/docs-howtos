@@ -1,6 +1,9 @@
 ---
 summary: Explore how OutSystems 11 (O11) integrates Google Sheets as a data source for read and write operations using specific connectors and components.
-tags: google sheets, data integration, connectors, components, outsystems integrate google sheets
+tags:
+  - Data
+  - External Databases
+  - Forge
 guid: efffdbcf-fb3d-44ea-81f1-6f167b236883
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -1,6 +1,9 @@
 ---
 summary: Explore how to implement hierarchical role structures in OutSystems 11 (O11) to enhance authorization mechanisms.
-tags: authorization mechanisms, access control, security, hierarchical role management, application development
+tags:
+  - Authorization
+  - Roles
+  - Security
 guid: f39c1e48-d9a9-443a-ba1e-6f345a350ab8
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

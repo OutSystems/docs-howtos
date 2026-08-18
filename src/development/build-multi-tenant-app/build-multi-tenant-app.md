@@ -5,7 +5,14 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/ZqxffTIAhYyQg8Q2KbSFbb/Development?node-id=1747:79
-tags: multi-tenancy, saas, data isolation, application development, enterprise apps
+tags:
+  - Architecture
+  - End-users
+  - Entities
+  - Multi-Tenant
+  - Security
+  - Site Properties
+  - Timers
 audience:
   - Developer
   - Front-end developer
