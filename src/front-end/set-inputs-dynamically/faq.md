@@ -1,6 +1,6 @@
 ---
 tags: dynamic content, form handling, date picker interaction, widget management, input validation
-summary: OutSystems 11 (O11) allows dynamic updating of input values in Traditional Web apps based on other inputs.
+summary: "OutSystems 11 (O11) dynamic input values in Traditional Web apps: use On Change, Assign, and Ajax Refresh to auto-update a date field."
 guid: fcea5150-affd-4f27-8263-97e32b24a7a6
 locale: en-us
 app_type: traditional web apps
