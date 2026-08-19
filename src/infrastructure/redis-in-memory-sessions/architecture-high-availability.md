@@ -13,7 +13,7 @@ audience:
 outsystems-tools:
   - none
 coverage-type:
-  - apply
+  - understand
 ---
 
 # Redis Cluster high availability architecture
