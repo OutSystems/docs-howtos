@@ -1,5 +1,5 @@
 ---
-summary: This article provides a guide on configuring SSL for Redis in OutSystems 11 (O11) self-managed infrastructures.
+summary: "Redis SSL configuration for OutSystems 11 (O11) self-managed environments: set environment variables, enable SSL in Configuration Tool, and apply settings."
 guid: f69f6130-df05-468b-aabf-5414ba06e384
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

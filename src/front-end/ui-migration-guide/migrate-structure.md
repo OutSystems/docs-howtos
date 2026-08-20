@@ -1,5 +1,5 @@
 ---
-summary: Explore the process of migrating Silk web applications to the OutSystems 11 (O11) UI framework, covering structural changes and pattern updates.
+summary: Silk web application structure migration to OutSystems 11 (O11) covers replacing the Common folder, updating themes, CSS rules, and layouts step by step.
 tags: web application migration, ui framework migration, silk to outsystems ui
 locale: en-us
 guid: 072bad87-b493-4f6e-922d-17b22c4404d1
