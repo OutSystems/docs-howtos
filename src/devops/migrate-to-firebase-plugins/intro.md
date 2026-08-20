@@ -1,6 +1,12 @@
 ---
 summary: Explore the migration process from unsupported to supported Firebase-based mobile plugins in OutSystems 11 (O11) for enhanced app performance and support.
-tags: firebase integration, mobile app development, plugin migration, performance optimization, application support
+tags:
+  - Forge
+  - Mobile app
+  - Monitoring
+  - Performance
+  - Plugins
+  - Refactoring
 locale: en-us
 guid: 0999bb9f-af58-4fc6-ba6d-9c411958eedc
 app_type: traditional web apps, mobile apps, reactive web apps

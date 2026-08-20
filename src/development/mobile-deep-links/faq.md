@@ -1,5 +1,10 @@
 ---
-tags: outsystems, mobile app development, deep linking, android, external interactions
+tags:
+  - Android
+  - Best Practices
+  - Mobile app
+  - Screens
+  - Security
 summary: Explore how to define mobile app deep links and Android Intents in OutSystems 11 (O11) for enhanced navigation and external interactions.
 guid: cc1ae152-0388-4f6e-865c-323c88ea8c76
 locale: en-us

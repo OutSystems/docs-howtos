@@ -1,5 +1,12 @@
 ---
-tags: ui patterns, web development, autocomplete functionality, performance optimization, outsystems ui
+tags:
+  - Aggregates
+  - Front-End
+  - Performance
+  - Traditional Web
+  - UI
+  - Web
+  - Widgets
 summary: Learn how to implement a server-side filtered autocomplete search field in a Traditional Web App using OutSystems 11 (O11).
 guid: 5aad9f1a-b906-4e68-a058-3b34646444b7
 locale: en-us

@@ -1,5 +1,11 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, ui components, data filtering
+tags:
+  - Aggregates
+  - Front-End
+  - OutSystems UI
+  - Screens
+  - UI Patterns
+  - Widgets
 summary: OutSystems 11 (O11) tutorial on using Dropdown Search to filter aggregates by a single attribute.
 guid: 908BBD05-3D83-4F19-BD95-75BE9EFA76D9
 locale: en-us

@@ -5,7 +5,11 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/XbkdagtFJ9kxan8pAx0Qsz/DevOps?node-id=1542:340
-tags: version control integration, ci/cd, devops, github, jenkins
+tags:
+  - CI/CD
+  - Deploy
+  - Jenkins
+  - Testing
 audience:
   - Developer
   - Platform administrator

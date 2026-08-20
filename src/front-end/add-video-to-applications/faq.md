@@ -1,5 +1,12 @@
 ---
-tags: outsystems ui patterns, video integration, outsystems forge components, web application development
+tags:
+  - Forge
+  - Front-End
+  - OutSystems UI
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
 summary: Explore various methods to integrate videos into web applications using OutSystems 11 (O11) UI patterns and components.
 guid: 3d01d650-6b50-4f86-a64a-09fc15bce11c
 locale: en-us

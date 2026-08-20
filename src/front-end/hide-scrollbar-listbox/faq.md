@@ -1,5 +1,10 @@
 ---
-tags: css customization, ui design, web development, outsystems ui, style customization
+tags:
+  - CSS
+  - Front-End
+  - Traditional Web
+  - UI
+  - Widgets
 summary: Learn how to hide the scroll bar in a List Box widget in OutSystems 11 (O11) by adjusting style properties.
 guid: f7777240-9826-476e-9eab-8415771fbc79
 locale: en-us

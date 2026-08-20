@@ -1,5 +1,12 @@
 ---
-tags: data filtering, entity management, ui components, screen design, aggregate query
+tags:
+  - Aggregates
+  - Front-End
+  - Logic
+  - OutSystems UI
+  - Screens
+  - UI
+  - Widgets
 summary: Learn how to use the Dropdown Search in OutSystems 11 (O11) to filter an aggregate with a list by multiple categories.
 guid: 04A17173-24A4-428C-8F0C-51281F874CAF
 locale: en-us
