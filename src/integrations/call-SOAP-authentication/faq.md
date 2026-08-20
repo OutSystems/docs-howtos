@@ -13,6 +13,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+  - unblock
 ---
 
 # How to call a SOAP web service with authentication
