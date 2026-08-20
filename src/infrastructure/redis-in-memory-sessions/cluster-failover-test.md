@@ -8,7 +8,6 @@ figma: https://www.figma.com/file/o7Rkyuxm89D6KrjD7AOYCU/Infrastructure?node-id=
 tags: redis, cluster management, high availability, disaster recovery, failover mechanism
 audience:
   - Platform administrator
-  - Developer
 outsystems-tools:
   - none
 coverage-type:

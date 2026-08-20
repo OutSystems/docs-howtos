@@ -9,7 +9,6 @@ tags: apache configuration, ssl configuration, proxy server setup, url rewriting
 audience:
   - Platform administrator
   - Tech lead
-  - Developer
 outsystems-tools:
   - service center
   - lifetime

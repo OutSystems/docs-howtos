@@ -8,7 +8,6 @@ figma: https://www.figma.com/file/o7Rkyuxm89D6KrjD7AOYCU/Infrastructure?node-id=
 tags: redis, network deployment, database configuration, environment setup, infrastructure management
 audience:
   - Platform administrator
-  - Developer
 outsystems-tools:
   - none
 coverage-type:

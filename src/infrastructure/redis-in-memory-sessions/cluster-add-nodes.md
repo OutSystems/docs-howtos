@@ -8,7 +8,6 @@ figma:
 tags: scaling, redis cluster, high availability, performance optimization, infrastructure management
 audience:
   - Platform administrator
-  - Developer
   - Tech lead
 outsystems-tools:
   - none

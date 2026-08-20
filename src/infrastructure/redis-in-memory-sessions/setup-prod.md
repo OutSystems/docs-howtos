@@ -8,7 +8,6 @@ figma:
 tags: redis, cluster setup, ubuntu server configuration, server hardening, production environment
 audience:
   - Platform administrator
-  - Developer
 outsystems-tools:
   - none
 coverage-type:
