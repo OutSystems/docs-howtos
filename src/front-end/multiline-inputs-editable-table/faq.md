@@ -5,7 +5,12 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:51
-tags: javascript, editable tables, web development, outsystems platform, ui customization
+tags:
+  - Front-End
+  - JavaScript
+  - Table
+  - Traditional Web
+  - UI
 audience:
   - Front-end developer
   - Developer

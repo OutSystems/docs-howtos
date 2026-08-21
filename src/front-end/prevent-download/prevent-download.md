@@ -5,7 +5,11 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: content protection, css, javascript, user experience, security
+tags:
+  - CSS
+  - Front-End
+  - JavaScript
+  - Security
 audience:
   - Front-end developer
   - Developer

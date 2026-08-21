@@ -5,7 +5,14 @@ locale: en-us
 app_type: mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=1042:318
-tags: pagination, ui patterns, customization, dropdown menus, outsystems ui
+tags:
+  - Blocks
+  - CSS
+  - Front-End
+  - OutSystems UI
+  - Pagination
+  - UI
+  - UI Patterns
 audience:
   - Developer
   - Front-end developer

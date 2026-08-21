@@ -1,5 +1,12 @@
 ---
-tags: outsystems, editable table, ui design, css customization, entity actions
+tags:
+  - CSS
+  - Events
+  - Front-End
+  - JavaScript
+  - Table
+  - Traditional Web
+  - UI
 summary: Learn to disable Add and Delete features in Editable Tables in OutSystems 11 (O11) for restricted user editing.
 guid: 50d41d21-32bd-4e10-b26c-e4c3f243b639
 locale: en-us

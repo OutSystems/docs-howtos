@@ -1,5 +1,10 @@
 ---
-tags: html, accessibility, semantic web, web development, outsystems platform
+tags:
+  - Accessibility
+  - Front-End
+  - Mobile app
+  - Traditional Web
+  - Widgets
 summary: Learn how to generate semantic HTML tags in OutSystems 11 (O11) applications for enhanced accessibility using HTML Element and Container Widgets.
 guid: 67cc20af-ffe8-4897-b817-28460ed3bd48
 locale: en-us

@@ -1,6 +1,13 @@
 ---
 summary: Learn how to migrate translations from the deprecated Multilingual Forge component to the new multilingual feature in OutSystems 11 (O11).
-tags: localization, migration, platform server, translation management, deprecation
+tags:
+  - Forge
+  - Front-End
+  - Logic
+  - Mobile app
+  - Multi-language
+  - Platform Server
+  - Translation
 guid: 625a71ee-acb7-4923-b953-74f684ca6377
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
