@@ -13,6 +13,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+  - unblock
 ---
 
 # How to translate an email
