@@ -1,6 +1,6 @@
 ---
 tags: favicon update, ui customization, resource management, web development, branding
-summary: OutSystems 11 (O11) guide on changing the default favicon in Service Studio for Reactive Web Apps.
+summary: Favicon change in OutSystems 11 (O11) Reactive Web Apps using Service Studio, covering PNG and ICO image replacement steps.
 guid: 784794a5-90a4-4cae-83df-1fcaf6d68507
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

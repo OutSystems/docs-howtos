@@ -1,5 +1,5 @@
 ---
-summary: This document provides guidelines for migrating Silk web application patterns to the OutSystems 11 (O11) UI framework.
+summary: "Silk UI patterns migration to OutSystems 11 (O11): step-by-step instructions for replacing Accordion, Alert, Badge, and other patterns in traditional web apps."
 tags: ui migration, silk ui framework, outsystems ui, application frameworks, ui patterns
 locale: en-us
 guid: 2c08810e-2693-4b57-a1cb-47f1f2aec04f
