@@ -1,5 +1,5 @@
 ---
-summary: Guide on migrating from ardoPostgreSQL to the supported PostgreSQL connector in OutSystems 11 (O11).
+summary: "ardoPostgreSQL to PostgreSQL migration in OutSystems 11 (O11): adapt extensions, refresh entities, and republish consumers."
 guid: 584e18f3-c967-4312-96b6-bdd922d9cc5c
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

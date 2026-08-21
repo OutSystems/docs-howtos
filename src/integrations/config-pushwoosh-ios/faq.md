@@ -1,6 +1,6 @@
 ---
 tags: push notifications, ios development, apns configuration, mobile app deployment, outsystems
-summary: Learn how to configure Pushwoosh for iOS, including creating an App ID and APNS certificate, and setting up in OutSystems 11 (O11).
+summary: "Pushwoosh iOS configuration: create an App ID, generate an APNS certificate, export it from Keychain, and set up your Pushwoosh application for push notifications."
 guid: c299ba80-55f5-4102-89ea-ab2ea0b23315
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
