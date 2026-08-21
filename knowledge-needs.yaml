@@ -1305,3 +1305,116 @@ knowledge-needs:
       description: Wants to create and scope process diagrams for a business vision
         document, when conducting business analysis, so that all stakeholders can
         visually understand the full business process beyond just the application scope.
+- name: O11 to ODC Migration
+  guid: ''
+  topics:
+  - name: Code Conversion
+    id: code-conversion
+    subtopics:
+    - name: Convert O11 code
+      id: convert-o11-code
+      description: Wants to understand how to convert O11 app code to ODC using the
+        app conversion console, including what the tool does automatically, so that
+        they can initiate the code conversion step in their migration plan.
+    - name: Publish converted apps
+      id: publish-converted-apps
+      description: Wants to publish converted ODC apps and libraries after code conversion
+        — including downloading each app file, opening it in ODC Studio, fixing dependency
+        and TrueChange errors, and publishing producers before consumers — so that
+        the converted apps are live in the target ODC stage.
+    - name: Tag app before conversion
+      id: tag-app-before-conversion
+      description: Wants to know how to tag an O11 app in the source environment
+        before starting the code conversion process, so that the correct app version
+        is picked up by the app conversion console.
+    - name: Troubleshoot code conversion
+      id: troubleshoot-code-conversion
+      description: Wants to identify and collect troubleshooting information when
+        an O11 to ODC code conversion ends with errors — including reading conversion
+        logs and exporting the troubleshooting zip file — so that they can diagnose
+        the failure or provide the necessary data to OutSystems Support.
+    - name: Adapt converted SQL
+      id: adapt-converted-sql
+      description: Wants to validate and adapt SQL nodes in a converted ODC app to
+        ensure compatibility with Aurora PostgreSQL — including reviewing auto-converted
+        queries, handling limitations (Expand Inline, external entities, BEGIN-END
+        blocks), and testing all SQL nodes — so that the converted app's data queries
+        work correctly in ODC.
+    - name: SQL conversion mapping
+      id: sql-conversion-mapping
+      description: Wants to understand the exact syntax mappings applied automatically
+        when converting O11 SQL nodes to ODC PostgreSQL — including general clauses,
+        Oracle-specific functions, data type translations, string concatenation rules,
+        temporary tables, and pattern matching — so that they can verify converted
+        queries and anticipate what the conversion tool produces.
+    - name: Adapt login flows
+      id: adapt-login-flows
+      description: Wants to manually adapt the login and logout flows of a converted
+        ODC app so that end users can authenticate using their existing O11 credentials,
+        so that the converted app is usable after migration.
+    - name: Review converted app
+      id: review-converted-app
+      description: Wants to review the On Application Ready and On Application Resume
+        event actions and the app and library properties of a converted ODC app, after
+        the code conversion tool has merged multiple O11 modules, so that the resulting
+        app behaves as expected and has the correct settings.
+    - name: Configure converted apps
+      id: configure-converted-apps
+      description: Wants to configure a converted ODC app after code conversion —
+        including Site Properties/Settings (secret and non-secret), custom domains,
+        external databases, REST service endpoints, private gateways, and SMTP email
+        — so that the app works correctly in ODC before testing and deploying it.
+    - name: Connect ODC to O11
+      id: connect-odc-to-o11
+      description: Wants to verify that their ODC organization is connected to the
+        correct O11 infrastructure and, in a multi-portfolio organization, set the
+        target ODC portfolio for app conversion, in the ODC Portal, so that conversion
+        plans from the Conversion Assessment Tool are available in the app conversion
+        console.
+    - name: Conversion prerequisites
+      id: conversion-prerequisites
+      description: Wants to understand the prerequisites and limitations for executing
+        an O11 to ODC app conversion — including required infrastructure type, LifeTime
+        version, prior preparation steps, and unsupported scenarios (self-managed,
+        hybrid, demo environments, ODC self-hosted) — so that they can confirm whether
+        their environment is ready before starting the conversion process.
+  - name: Data Migration
+    id: data-migration
+    subtopics:
+    - name: Data migration scope
+      id: data-migration-scope
+      description: Wants to understand what is included in an O11 to ODC data migration
+        (entity data, repeat migrations, data model consistency requirements) and the
+        available migration types (non-production vs production final), so that they
+        can choose the right approach for their migration phase.
+    - name: Migrate end users
+      id: migrate-end-users
+      description: Wants to understand how end-user migration works during O11 to ODC
+        data migration, including IdP configuration requirements, one IdP per O11
+        environment, user extension tables, role migration, and the option to skip
+        end-user migration, so that they can prepare their environment and identity
+        setup before migrating.
+    - name: Cancel data migration
+      id: cancel-data-migration
+      description: Wants to know when and how to cancel an in-progress O11 to ODC data
+        migration, and understand the impact on app data and end users depending on
+        which phase is canceled, so that they can recover safely if a running migration
+        needs to be aborted.
+    - name: Execute data migration
+      id: execute-data-migration
+      description: Wants to execute the O11 to ODC data migration using the app conversion
+        console in the ODC Portal — including selecting migration type, source environment,
+        target stage, end-user migration options, and confirming the setup — so that
+        app entity data and end users are transferred to ODC.
+    - name: Configure end-user IdP
+      id: configure-end-user-idp
+      description: Wants to configure an identity provider in ODC for each O11 source
+        environment and map it to a target ODC stage in the infrastructure settings,
+        including selecting the user profile mapping and username prefix, so that end
+        users can be migrated from that O11 environment.
+    - name: Fix data migration errors
+      id: fix-data-migration-errors
+      description: Wants to identify and fix data model inconsistency errors that
+        stop an O11 to ODC data migration — including missing entities or attributes,
+        attribute property mismatches, and reference attribute mismatches — so that
+        they can resolve the root cause and successfully retry the migration.
