@@ -8,7 +8,6 @@ figma: https://www.figma.com/file/gKoXqtZTY2IJjyMWschrRB/Integrations?node-id=12
 tags: workflow automation, application integration, api management, service orchestration, enterprise integration
 audience:
   - Developer
-  - Front-end developer
   - Platform administrator
 outsystems-tools:
   - service studio

@@ -8,7 +8,6 @@ platform-version: o11
 figma: https://www.figma.com/file/gKoXqtZTY2IJjyMWschrRB/Integrations?node-id=1242:275
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - integration studio
   - service studio
