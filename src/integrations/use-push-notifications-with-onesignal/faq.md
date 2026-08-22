@@ -1,5 +1,5 @@
 ---
-summary: Explore how to integrate OneSignal for push notifications in OutSystems 11 (O11) and OutSystems Developer Cloud (ODC) applications using the OneSignal plugin.
+summary: "OneSignal push notifications for OutSystems platform: install the plugin, configure iOS and Android, register devices, and send notifications."
 tags: push notifications, onesignal integration, notification configuration, mobile app development, platform-specific setup
 guid: d7d5445d-d28d-4acb-b158-b6d85b7f2ace
 locale: en-us
