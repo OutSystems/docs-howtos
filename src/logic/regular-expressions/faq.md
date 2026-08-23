@@ -1,6 +1,6 @@
 ---
 tags: text processing, pattern matching, server actions, guid validation, outsystems api
-summary: Explore how to utilize regular expressions in OutSystems 11 (O11) for text processing and pattern matching.
+summary: "Regular expressions in OutSystems 11 (O11) with Regex_Search and Regex_Replace let you validate and extract GUIDs from text using server actions."
 guid: c7045a0e-c6ec-4db9-ae8d-d21d80731cd7
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
