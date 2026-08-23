@@ -14,6 +14,7 @@ outsystems-tools:
   - service center
 coverage-type:
   - apply
+  - unblock
 ---
 
 # How to find when the last email was sent
