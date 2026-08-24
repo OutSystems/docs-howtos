@@ -1,5 +1,11 @@
 ---
-tags: bpt, task management, user interface design, integration, customization
+tags:
+  - Blocks
+  - Business Processes
+  - Forge
+  - Layouts
+  - Taskbox
+  - UI
 summary: Explore how to integrate and customize the Taskbox in Reactive Web Apps using OutSystems 11 (O11) for efficient task management.
 guid: b8184f4d-59dc-4881-81a0-40df50b4b185
 locale: en-us
