@@ -14,6 +14,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+  - unblock
 topic:
   - bootstrap-test-data-excel
 isautopublish: true
