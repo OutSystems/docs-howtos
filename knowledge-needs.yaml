@@ -1163,12 +1163,12 @@ knowledge-needs:
         all modules, and avoid recurrence.
     - name: Fix site property upgrade
       id: fix-site-property-upgrade
-      description: Wants to fix the "Value cannot be null. Parameter name: key" error
+      description: 'Wants to fix the "Value cannot be null. Parameter name: key" error
         that occurs when upgrading O11 Platform Server to 11.10.2 or higher on an
         environment originally installed on version 5 or lower, caused by legacy Site
         Property IDs in non-standard format that were not migrated in version 5, by
         running SQL queries to identify and delete the outdated entries, so that they
-        can complete the Service Center installation and the platform upgrade successfully.
+        can complete the Service Center installation and the platform upgrade successfully.'
     - name: Fix ODP.NET conflict
       id: fix-odp-net-conflict
       description: Wants to resolve Oracle Data Provider for .NET (ODP.NET) driver errors
