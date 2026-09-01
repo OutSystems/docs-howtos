@@ -330,6 +330,17 @@ separate from, and happens after, everything above.
      at the same local path, preserving the rest of the frontmatter and
      content unchanged.
 
+The `topic` field must always be written as a YAML list, one item per line,
+even when it holds a single value:
+
+```yaml
+topic:
+  - reset-password
+```
+
+Never write `topic` as a single line with comma-separated values (for
+example `topic: reset-password, configure-llm-judge`).
+
 ## Tone guidance
 
 - Don't over-tag. A short, focused article legitimately may only need one
