@@ -157,6 +157,11 @@ knowledge-needs:
       description: Wants to add pagination and records-per-page control to a Table
         widget in an OutSystems 11 Screen, so that users can navigate through large
         datasets in configurable page sizes.
+    - name: ODC table pagination
+      id: odc-table-pagination-setup
+      description: Wants to add pagination and records-per-page control to a Table
+        widget in ODC Studio, so that users can navigate through large datasets in
+        configurable page sizes.
     - name: Table sorting setup
       id: table-sorting-setup
       description: Wants to implement user-triggered column sorting on a Table widget
@@ -440,6 +445,29 @@ knowledge-needs:
       id: acls
     - name: Webservice authentication
       id: webservice-authentication
+  - name: Injection attacks
+    id: injection-attacks
+    subtopics:
+    - name: Injection attack types
+      id: injection-attack-types
+      description: Wants to understand what injection attacks are, why they are dangerous,
+        and what categories exist, including SQL injection, XSS, interpreter injection,
+        file system attacks, and buffer overflow, in the context of OWASP web security,
+        so that they can recognize and reason about this vulnerability class when securing
+        ODC applications.
+    - name: XSS attack types
+      id: xss-attack-types
+      description: Wants to understand the three categories of Cross-Site Scripting
+        attacks, specifically reflected, stored, and DOM-based XSS, including how each
+        propagates and their relative severity, so that they can identify the type of
+        XSS risk present in their application and apply the right mitigation.
+    - name: Prevent injection ODC
+      id: prevent-injection-odc
+      description: Wants to understand and apply OutSystems ODC's built-in injection
+        protections, including IDE injection warnings, Content Security Policy, platform
+        default escaping, and Encode functions (EncodeSQL, EncodeHTML, EncodeJavaScript,
+        EncodeURL) and parameterized queries, so that they can protect their ODC
+        applications against SQL injection and XSS attacks.
 - name: Advanced workflows
   guid: 7a84e09e-c48c-404f-8d9f-728b9f78c88c
   topics:
@@ -930,6 +958,25 @@ knowledge-needs:
         Studio — including Position, StartsOpen, Trigger, and ExtendedClass — so
         that they can correctly configure tooltip appearance and behavior in a
         Reactive Web App or Mobile App.
+    - name: Use Columns pattern
+      id: use-columns-pattern
+      description: Wants to add the Columns UI Pattern to a screen and configure
+        its responsive layout properties — including GutterSize, TabletBehavior,
+        and PhoneBehavior — in ODC Studio, so that content is organized into an
+        adaptive multi-column layout across different device types.
+    - name: Use Display on Device
+      id: use-display-on-device
+      description: Wants to add the Display on Device UI pattern to a screen and
+        configure its device-specific content placeholders — OnDesktop, OnTablet,
+        and OnPhone — in ODC Studio, so that different content is displayed on
+        desktop computers, tablets, and phones.
+    - name: Display binary image
+      id: display-binary-image
+      description: Wants to configure an Image widget to display a binary data image
+        fetched from an aggregate, including setting a default image fallback and style
+        properties, in an OutSystems 11 Traditional Web App screen, so that profile
+        pictures show correctly when available and a placeholder appears when none is
+        uploaded.
   - name: Creating UI interactions
     id: creating-ui-interactions
     subtopics:
@@ -1720,6 +1767,13 @@ knowledge-needs:
       id: permission-model-qa
     - name: Role assignment
       id: role-assignment
+    - name: Permission governance
+      id: permission-governance
+      description: Wants to know the recommended practices for managing permissions
+        in ODC, including starting with least privilege, using clear naming, avoiding
+        the Administrator role unless necessary, testing roles before rollout, and
+        auditing permissions regularly, so that they can govern access securely and
+        maintainably across their organization.
   - name: Expanded governance
     id: expanded-governance
     subtopics:
