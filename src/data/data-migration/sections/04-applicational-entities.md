@@ -16,6 +16,10 @@ outsystems-tools:
 coverage-type:
   - apply
   - understand
+topic:
+  - map-entity-dependencies
+  - map-platform-dependencies
+  - migration-gdpr-data-masking
 ---
 
 # Applicational Entities

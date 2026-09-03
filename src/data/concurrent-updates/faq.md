@@ -13,6 +13,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - detect-update-conflicts
+  - force-update-conflict
 isautopublish: true
 ---
 

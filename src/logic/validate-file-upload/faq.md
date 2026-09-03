@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - validate-upload-widget-file
 ---
 
 # How to validate file input on a File Upload Widget in a Web App
