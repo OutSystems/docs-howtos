@@ -14,6 +14,9 @@ outsystems-tools:
   - forge
 coverage-type:
   - apply
+topic:
+  - send-pushwoosh-notifications
+  - set-up-pushwoosh-notifications
 ---
 
 # How to Use Push Notifications with Pushwoosh

@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - extend-login-validation
 ---
 
 # How to add extra logic to Users' login

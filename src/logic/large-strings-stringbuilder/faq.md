@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - stringbuilder-large-strings
 ---
 
 # How to create large strings with StringBuilder

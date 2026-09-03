@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - email-link-variable
 ---
 
 # How to make a link with a variable to send in an Email

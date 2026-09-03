@@ -15,6 +15,9 @@ outsystems-tools:
   - forge
 coverage-type:
   - apply
+topic:
+  - map-ad-groups-to-roles
+  - sync-ad-roles-schedule
 ---
 
 # How to map Active Directory Groups to OutSystems Roles

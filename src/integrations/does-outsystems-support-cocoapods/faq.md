@@ -13,6 +13,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - check-plugin-uses-cocoapods
+  - cocoapods-support-outsystems
 ---
 
 # Does OutSystems support CocoaPods
