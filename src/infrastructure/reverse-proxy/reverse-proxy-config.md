@@ -14,6 +14,10 @@ outsystems-tools:
   - none
 coverage-type:
   - apply
+topic:
+  - configure-ssl-offloading
+  - expose-app-addresses
+  - rewrite-resource-urls
 ---
 
 # OutSystems configurations in reverse proxy scenarios

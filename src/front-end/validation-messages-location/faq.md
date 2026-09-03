@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - custom-validation-message-location
 ---
 
 # How to display input validation messages in a custom location

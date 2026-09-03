@@ -13,6 +13,8 @@ outsystems-tools:
   - none
 coverage-type:
   - apply
+topic:
+  - install-azure-trial
 ---
 
 # Install OutSystems Trial on Azure

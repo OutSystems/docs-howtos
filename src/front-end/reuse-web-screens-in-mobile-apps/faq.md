@@ -14,6 +14,10 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - apply
+topic:
+  - auto-login-mobile-user
+  - embed-web-screens-iframe
+  - iframe-link-target
 ---
 
 # How to Reuse Web Screens in Mobile Apps

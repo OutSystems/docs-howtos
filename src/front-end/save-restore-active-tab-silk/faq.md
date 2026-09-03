@@ -13,6 +13,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - prevent-tab-cache-reload
+  - save-active-tab-state
 ---
 
 # How to save and restore the active tab on SilkUIFramework

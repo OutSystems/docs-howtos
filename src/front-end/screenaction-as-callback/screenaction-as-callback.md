@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - screen-action-as-callback
 ---
 
 # How to use screen actions as callbacks on UI element events

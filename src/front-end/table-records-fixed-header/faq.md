@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - fixed-header-table
 ---
 
 # How to scroll records in a table with a fixed header

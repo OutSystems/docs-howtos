@@ -13,6 +13,9 @@ outsystems-tools:
   - platform server
 coverage-type:
   - apply
+topic:
+  - redis-hardware-sizing
+  - redis-software-prereqs
 ---
 
 # System requirements for using Redis

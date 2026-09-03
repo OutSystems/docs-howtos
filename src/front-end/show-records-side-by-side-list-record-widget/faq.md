@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - list-records-layout
 ---
 
 # How to show records side by side in a List Record widget

@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - resize-popup-window
 ---
 
 # How to dynamically resize a pop-up window
