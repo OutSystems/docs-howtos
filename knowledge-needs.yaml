@@ -768,12 +768,35 @@ knowledge-needs:
   topics:
   - name: Refactoring
     id: refactoring
+    subtopics:
+    - name: Convert to library
+      id: convert-to-library
+      description: Wants to convert an existing Mobile or Reactive module to a
+        Library module in OutSystems 11, including resolving disallowed elements
+        and TrueChange errors before conversion, so that the module publishes
+        successfully as a Library.
   - name: Validating your application architecture
     id: validate-app-architecture
   - name: Architecture Canvas
     id: architecture-canvas
   - name: Application composition
     id: application-composition
+    subtopics:
+    - name: Library module overview
+      id: library-module-overview
+      description: Wants to understand what a Library module is in OutSystems 11, including
+        its stateless, database-agnostic design principles, typical use cases
+        such as UI/style guides and reusable connectors or logic utilities,
+        which Service Studio elements are available or restricted in a Library,
+        and what reference restrictions apply to it, so that they can decide
+        when and how to use Libraries in their application architecture.
+    - name: Create a Library module
+      id: create-library-module
+      description: Wants to create a new Library module in Service Studio, by
+        creating a Mobile or Reactive Web app (or adding a module to an existing
+        one) and choosing Library as the module type, and knows to set the entry
+        module to a consuming module when debugging it, so that they have a
+        working Library ready to hold reusable stateless components.
   - name: Core module patterns
     id: core-module-patterns
     subtopics:
@@ -938,6 +961,18 @@ knowledge-needs:
       id: async-processes-basics
     - name: Triggering processes, process flows
       id: trigger-processes
+    - name: Design process flow
+      id: design-process-flow
+      description: Wants to design the behavior of a process using the Process
+        Flow editor after creating a process, selecting tools from the Process
+        Flow Toolbox to be executed in the flow, so that the process's logic is
+        defined.
+    - name: Process upgrade impact
+      id: process-upgrade-activity-impact
+      description: Wants to understand how moving activities in a process flow
+        affects executing process instances after publishing, in OutSystems 11,
+        so that they can predict which instances get suspended and know to
+        review them in Service Center.
     - name: BPMN notation
       id: bpmn-notation
     - name: Patterns for processes (automatic, human, decision)
@@ -1138,6 +1173,12 @@ knowledge-needs:
         its responsive layout properties — including GutterSize, TabletBehavior,
         and PhoneBehavior — in ODC Studio, so that content is organized into an
         adaptive multi-column layout across different device types.
+    - name: Use Columns pattern (O11)
+      id: use-columns-pattern-o11
+      description: Wants to add the Columns UI Pattern to a screen and configure its
+        responsive layout properties, in Service Studio for OutSystems 11, so
+        that content is organized into an adaptive multi-column layout across
+        different device types, in mobile apps and reactive web apps.
     - name: Use Display on Device
       id: use-display-on-device
       description: Wants to add the Display on Device UI pattern to a screen and
@@ -1151,6 +1192,14 @@ knowledge-needs:
         RowItemsPhone, ItemsGap, and ExtendedClass — in ODC Studio, so that groups
         of images or content are displayed in a browsable, sequential grid across
         different device types.
+    - name: Use Gallery pattern (O11)
+      id: use-gallery-pattern-o11
+      description: Wants to add the Gallery UI Pattern to a screen and configure
+        its responsive layout properties — including RowItemsDesktop, RowItemsTablet,
+        RowItemsPhone, ItemsGap, and ExtendedClass — in Service Studio for
+        OutSystems 11, so that groups of images or content are displayed in a
+        browsable, sequential grid across different device types, in mobile
+        apps and reactive web apps.
     - name: Use Floating Content
       id: use-floating-content
       description: Wants to add the Floating Content UI Pattern to a screen and
@@ -1183,6 +1232,32 @@ knowledge-needs:
         its SVGCode and ExtendedClass properties, in ODC Studio, so that they can
         customize SVG fill and stroke properties and animate SVG paths, in mobile
         apps and reactive web apps.
+    - name: Use Date Picker Range
+      id: use-date-picker-range
+      description: Wants to add the Date Picker Range UI Pattern to a screen and configure
+        its properties, in Service Studio for OutSystems 11, so that users can
+        select a date range from a calendar, in mobile apps and reactive web
+        apps.
+    - name: Use Dropdown Search
+      id: use-dropdown-search
+      description: Wants to add the Dropdown Search UI Pattern to a screen and configure
+        its properties, in Service Studio for OutSystems 11, so that users can
+        select an option from a searchable dropdown list, in mobile apps and
+        reactive web apps.
+    - name: Use Bottom Bar Item
+      id: use-bottom-bar-item
+      description: Wants to add the Bottom Bar Item UI Pattern to a screen and
+        configure its Icon and Text placeholders across up to four items,
+        including a floating action button, in Service Studio for OutSystems
+        11, so that users can access a bottom navigation drawer and quickly
+        switch between core app features, in mobile apps and reactive web
+        apps.
+    - name: Use Overflow Menu pattern
+      id: use-overflow-menu-pattern
+      description: Wants to add the Overflow Menu UI Pattern to a screen and configure its
+        properties, in Service Studio for OutSystems 11, so that additional
+        options are shown for a row or element when there's a space constraint
+        on the UI, in mobile apps and reactive web apps.
   - name: Creating UI interactions
     id: creating-ui-interactions
     subtopics:
