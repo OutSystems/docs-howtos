@@ -4,6 +4,11 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 1 * * *'
+  push:
+    branches:
+      - master
+    paths:
+      - knowledge-needs.yaml
 
 concurrency:
   group: evergreen-${{ github.ref }}
