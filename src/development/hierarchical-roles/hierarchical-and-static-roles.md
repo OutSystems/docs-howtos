@@ -14,6 +14,8 @@ outsystems-tools:
 coverage-type:
   - apply
   - evaluate
+topic:
+  - hierarchical-roles-choice
 ---
 
 # Hierarchical and static roles comparison

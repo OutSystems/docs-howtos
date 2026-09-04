@@ -15,6 +15,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - insert-null-via-sql
 ---
 
 # How to insert a null value into a database record

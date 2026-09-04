@@ -14,6 +14,10 @@ outsystems-tools:
   - forge
 coverage-type:
   - apply
+topic:
+  - create-pdf-report-html2pdf
+  - customize-html2pdf-output
+  - setup-html2pdf-component
 ---
 
 # How to create reports using HTML2PDF

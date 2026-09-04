@@ -17,6 +17,8 @@ outsystems-tools:
 coverage-type:
   - apply
   - understand
+topic:
+  - plan-data-migration
 ---
 
 # Data migration from production to non-production environment

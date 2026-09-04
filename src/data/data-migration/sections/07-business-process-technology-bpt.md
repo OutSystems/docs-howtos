@@ -23,6 +23,10 @@ outsystems-tools:
 coverage-type:
   - apply
   - understand
+topic:
+  - bpt-entity-model
+  - migrate-hybrid-bpt-users
+  - trace-bpt-process-data
 ---
 
 # Migrating Processes - BPT
