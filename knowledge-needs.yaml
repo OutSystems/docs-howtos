@@ -267,6 +267,14 @@ knowledge-needs:
       implements it through user providers and tenants, so they can design applications
       that isolate data, end-users, and sessions for multiple customers on a single
       deployed application.
+    subtopics:
+    - name: Set Is Multi-tenant
+      id: set-is-multi-tenant
+      description: Wants to configure the Is Multi-tenant property on a module's
+        Entities, Site Properties, and Timers in OutSystems 11, deciding whether
+        each should isolate data per tenant or share it across tenants, so they
+        can correctly implement data segmentation when building a multi-tenant
+        application.
 - name: (Modeling, Consuming and Using) Data
   guid: 184681b2-96da-4711-9efd-53172730bbed
   topics:
