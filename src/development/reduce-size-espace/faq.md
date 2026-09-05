@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - apply
   - unblock
+topic:
+  - reduce-module-size
 ---
 
 # How to reduce the size of my modules

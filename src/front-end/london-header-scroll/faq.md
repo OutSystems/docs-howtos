@@ -14,6 +14,8 @@ outsystems-tools:
 coverage-type:
   - apply
   - unblock
+topic:
+  - make-header-scroll
 ---
 
 # How to make the header scroll with the page in the London theme
