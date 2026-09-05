@@ -3137,6 +3137,16 @@ knowledge-needs:
         dependency, including hooks dependencies declared in the plugin''s
         package.json for MABS 7 and later, so that the mobile app package
         generates successfully.'
+    - name: Incompatible plugin error
+      id: incompatible-plugin-error
+      description: 'Wants to resolve the OS-MABS-PRJ-40003 "One or more
+        Capacitor plugins aren''t compatible with <PackageManager>" error,
+        caused by the code project''s selected package manager (SPM or
+        CocoaPods) not supporting one or more required Capacitor plugins, by
+        checking the build logs to identify the incompatible plugins and
+        updating libraries, toggling the spmPreview configuration, or
+        removing the affected plugins/libraries, so that the iOS mobile app
+        package generates successfully.'
     - name: SSL Pinning domain error
       id: ssl-pinning-domain-error
       description: 'Wants to resolve the OS-MABS-RES-40001 "The configuration
@@ -3201,6 +3211,28 @@ knowledge-needs:
         case." error, by retrying the mobile compilation and escalating to
         OutSystems Support if the problem persists, so that the native
         mobile build completes successfully.'
+    - name: Branding image size error
+      id: branding-image-size-error
+      description: Wants to resolve the OS-MABS-PRJ-40001 "Branding image for <Screen> must
+        be a specific pixel size, but is <Actual>" error, by resizing the splash
+        screen branding image to match the required dimensions and updating the
+        app's splash screen configuration, so that the mobile app package
+        generates successfully.
+    - name: Branding image format error
+      id: branding-image-format-error
+      description: Wants to resolve the OS-MABS-PRJ-40002 "Branding image for <Screen>
+        couldn't be read. The file may be corrupted or in an unsupported
+        format." error, by opening the branding image in an image editor to
+        confirm it's valid, re-exporting it as a PNG in the required dimensions,
+        and updating the app's splash screen configuration, so that the mobile
+        app package generates successfully.
+    - name: Invalid project config error
+      id: invalid-project-config-error
+      description: 'Wants to resolve the OS-MABS-PRJ-50001 "The project
+        configuration is invalid. If the problem persists, open a support
+        case." error, by regenerating the app package or contacting
+        OutSystems Support if the problem persists, so that the mobile app
+        package generates successfully.'
   - name: AppShield
     id: appshield
     subtopics:
@@ -3526,6 +3558,35 @@ knowledge-needs:
       id: lockout
     - name: Passwords
       id: passwords
+    - name: Automatic user creation
+      id: automatic-user-creation
+      description: Wants to resolve the OS-IDCO-CONF-40102 login error, caused
+        by the automatic user creation setting being disabled for an external
+        IdP configuration in ODC, by either enabling automatic user creation
+        or manually provisioning the user account, so that end users can log
+        in successfully.
+    - name: Username claim mapping
+      id: username-claim-mapping
+      description: Wants to resolve the OS-IDCO-CONF-40001 login error, caused
+        by a missing or misconfigured username claim mapping in the external
+        IdP, by verifying the IdP's claim mapping configuration and confirming
+        it matches the mapping configured in ODC, so that end users can
+        authenticate successfully.
+    - name: Duplicate IdP email conflict
+      id: duplicate-idp-email-conflict
+      description: Wants to resolve the OS-IDCO-CONF-40002 login error, caused
+        by an external IdP trying to update a user profile with an email
+        address already associated with a different existing user profile
+        from another IdP, by removing the conflicting duplicate profile and
+        reviewing IdP account-linking configuration, so that end users can
+        log in successfully.
+    - name: Email verified claim
+      id: email-verified-claim
+      description: Wants to resolve the OS-UAUC-60040 login error, caused by
+        a missing or invalid email_verified claim in the external IdP
+        configuration when using the Trust identity provider setting, by
+        verifying the IdP's claim mapping to ensure it sends the correct
+        data, so that end users can log in successfully.
     - name: External IDPs - User Mapping
       id: user-mapping
     - name: External IDPs - LinkedIn
