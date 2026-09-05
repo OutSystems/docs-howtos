@@ -13,6 +13,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - migrate-app-structure
+  - migrate-css-classes
+  - migrate-silk-patterns
 ---
 
 # Migrating the structure of the Silk web applications to OutSystems UI

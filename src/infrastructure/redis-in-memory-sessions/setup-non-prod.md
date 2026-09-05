@@ -12,6 +12,8 @@ outsystems-tools:
   - none
 coverage-type:
   - apply
+topic:
+  - redis-nonprod-setup
 ---
 
 # Set up a Redis server for non-productive environments

@@ -13,6 +13,8 @@ outsystems-tools:
   - none
 coverage-type:
   - apply
+topic:
+  - redis-cluster-scale-nodes
 ---
 
 # Scale a Redis Cluster by adding more nodes

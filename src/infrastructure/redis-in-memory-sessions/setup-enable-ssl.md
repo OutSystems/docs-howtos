@@ -13,6 +13,8 @@ outsystems-tools:
   - platform server
 coverage-type:
   - apply
+topic:
+  - enable-redis-ssl
 ---
 
 # Enable SSL for Redis

@@ -14,6 +14,8 @@ outsystems-tools:
 coverage-type:
   - apply
   - unblock
+topic:
+  - authenticate-soap-service
 ---
 
 # How to call a SOAP web service with authentication
