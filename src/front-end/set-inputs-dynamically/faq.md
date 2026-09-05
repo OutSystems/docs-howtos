@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - set-dynamic-input-value
 ---
 
 # How to dynamically set the values of inputs

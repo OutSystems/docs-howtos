@@ -19,6 +19,8 @@ outsystems-tools:
   - forge
 coverage-type:
   - apply
+topic:
+  - hierarchical-roles-demo
 ---
 
 # Sales application demo

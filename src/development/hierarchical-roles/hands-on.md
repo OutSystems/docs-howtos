@@ -19,6 +19,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - hierarchical-roles-implementation
 ---
 
 # How to implement hierarchical roles

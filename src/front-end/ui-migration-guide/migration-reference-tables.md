@@ -14,6 +14,9 @@ outsystems-tools:
 coverage-type:
   - remember
   - apply
+topic:
+  - migrate-css-classes
+  - migrate-silk-patterns
 ---
 
 # Migration reference tables for Silk and OutSystems Web UI

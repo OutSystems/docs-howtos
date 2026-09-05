@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - clone-a-module
 ---
 
 # How to Clone a Module into Another Application
