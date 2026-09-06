@@ -1668,6 +1668,13 @@ knowledge-needs:
         (optionally reading the prior locale via GetCurrentLocale), in Service
         Studio for O11, so that the email is sent in the same language as the
         user's session.
+    - name: Find last sent email
+      id: find-last-sent-email
+      description: Wants to find the timestamp of the last sent email in
+        OutSystems 11, either by referencing the Sent_Email and Email_Status
+        entities' Sent attribute in Service Studio, or by checking the Email
+        Log screen in Service Center's Monitoring tab, so that they can
+        verify when an email was actually sent.
   - name: BPT
     id: bpt
     subtopics:
