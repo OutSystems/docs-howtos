@@ -20,6 +20,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - add-autocomplete-search
 ---
 
 # How to create a search field with autocomplete in a Traditional Web App

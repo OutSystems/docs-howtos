@@ -21,6 +21,9 @@ outsystems-tools:
   - forge
 coverage-type:
   - apply
+topic:
+  - embed-streaming-video
+  - use-video-pattern
 ---
 
 # How to Add Video to Your Applications

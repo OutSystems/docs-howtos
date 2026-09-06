@@ -18,6 +18,9 @@ outsystems-tools:
 coverage-type:
   - apply
 isautopublish: true
+topic:
+  - configure-android-deep-link-intents
+  - configure-mobile-deep-links
 ---
 
 # How to define Mobile App deep links

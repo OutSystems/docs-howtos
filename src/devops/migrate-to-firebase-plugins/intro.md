@@ -20,6 +20,10 @@ outsystems-tools:
   - forge
 coverage-type:
   - apply
+topic:
+  - migrate-analytics-logevent
+  - migrate-cloud-messaging-notifications
+  - migrate-firebase-plugins
 ---
 
 # Migrating to the supported Firebase-based mobile plugins

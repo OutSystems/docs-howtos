@@ -20,6 +20,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - multi-select-filter-list
 ---
 
 # How to use the Dropdown Search to filter an aggregate with a list

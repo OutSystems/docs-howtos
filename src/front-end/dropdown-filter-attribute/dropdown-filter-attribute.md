@@ -19,6 +19,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - optional-aggregate-filter
+  - use-dropdown-search
 ---
 
 # How to use the Dropdown Search to filter an aggregate with a single attribute
