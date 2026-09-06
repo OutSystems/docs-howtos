@@ -14,6 +14,9 @@ outsystems-tools:
   - platform server
 coverage-type:
   - apply
+topic:
+  - choose-connector-option
+  - migrate-db-connector
 ---
 
 # Migrate from ardoPostgreSQL to supported PostgreSQL connector

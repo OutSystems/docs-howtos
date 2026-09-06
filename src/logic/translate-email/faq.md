@@ -14,6 +14,8 @@ outsystems-tools:
 coverage-type:
   - apply
   - unblock
+topic:
+  - translate-email-locale
 ---
 
 # How to translate an email

@@ -12,6 +12,8 @@ outsystems-tools:
   - none
 coverage-type:
   - apply
+topic:
+  - reverse-proxy-scenarios
 ---
 
 # Common use cases in reverse proxy scenarios

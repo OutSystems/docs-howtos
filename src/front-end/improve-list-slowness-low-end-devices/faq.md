@@ -19,6 +19,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - list-scroll-blanks
 ---
 
 # How to improve list slowness on low-end devices
