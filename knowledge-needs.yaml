@@ -450,6 +450,14 @@ knowledge-needs:
         matching the index value''s data type to Integer or using the []
         operator only on List elements, so that the module compiles and
         publishes successfully.'
+    - name: Fix invalid numeric value
+      id: fix-invalid-numeric-value
+      description: 'Wants to fix the "Invalid Numeric Value" error family in
+        Service Studio for OutSystems 11, caused by setting a numeric property
+        or entity attribute (Decimals or Length) to a value outside its
+        allowed range or of the wrong type, by editing the property or
+        attribute to a valid numeric value, so that the module compiles and
+        publishes successfully.'
   - name: Querying data
     id: querying-data
     subtopics:
@@ -737,6 +745,13 @@ knowledge-needs:
   - name: Data performance, caching
     id: data-performance-caching
     subtopics:
+    - name: Invalidate app cache
+      id: invalidate-app-cache
+      description: Wants to invalidate server-side caches (from Aggregates,
+        Advanced SQL queries, and server actions using Cache in Minutes) for
+        the calling application across all replicas in ODC, using the
+        ApplicationInvalidateCache system action, so that stale cached data
+        doesn't linger after underlying data changes.
     - name: Connection pool usage
       id: connection-pool-usage
       description: Wants to understand when and how to use connection pooling when
@@ -1619,6 +1634,12 @@ knowledge-needs:
         portfolio's stages and access controls while apps keep referencing
         the original until updated, so they can safely customize Forge
         assets without affecting other portfolios.
+    - name: Asset & config scope
+      id: asset-and-config-scope
+      description: Wants to know which types of assets and platform configurations are
+        shared across portfolios versus scoped to a single portfolio or
+        portfolio stage in ODC, so that they can plan where to create assets and
+        apply configurations correctly.
 - name: Asynchronous processes
   guid: d4964d80-c8da-468a-ab3c-8f59aab61aa5
   topics:
@@ -2707,6 +2728,20 @@ knowledge-needs:
         that the name shown throughout the portal and ODC Studio matches
         updated naming conventions without affecting apps, users, domains, or
         configurations.
+    - name: Reorder pipeline stages
+      id: reorder-pipeline-stages
+      description: Wants to change the sequence of non-production stages in
+        their ODC organization or portfolio pipeline by dragging them into a
+        new order in the ODC Portal, understanding that the Development and
+        Production stage positions are locked, so that assets move through
+        deployment in the desired sequence.
+    - name: Stable stage identifiers
+      id: stable-stage-identifiers
+      description: Wants to identify ODC pipeline stages reliably in scripts
+        or integrations that call the ODC APIs for deployment automation,
+        using each stage's stable key rather than its order value, since the
+        order value changes whenever stages are reordered and would
+        otherwise point at a different stage.
   - name: Manual deployment with an infrastructure management console
     id: manual-deploy-mgmt-console
     subtopics:
@@ -2862,6 +2897,14 @@ knowledge-needs:
         the navigation, using an external link, or moving the module into
         the application), in OutSystems 11, so that the module compiles
         and publishes successfully.'
+    - name: Invalid module error
+      id: invalid-module-error
+      description: 'Wants to resolve the "Invalid module" error in Service
+        Studio, caused by a multi-tenant module being used as a User
+        Provider for other modules, by setting the module to single-tenant
+        or providing an alternative module as the User Provider, in
+        OutSystems 11, so that the module compiles and publishes
+        successfully.'
     - name: Fix invalid screen error
       id: fix-invalid-screen-error
       description: 'Wants to fix the "Invalid Screen" error family in Service
@@ -2872,6 +2915,51 @@ knowledge-needs:
         Minutes, binding each variable to only one widget, or deleting and
         re-creating the corrupted widget, so that the screen or block
         compiles and publishes successfully.'
+    - name: Fix invalid property
+      id: fix-invalid-property
+      description: 'Wants to fix the "Invalid Property" error in Service
+        Studio for OutSystems 11, caused by defining the same property (for
+        example, an extended property like Title) more than once on the same
+        element, by editing the element to remove the duplicate entry, so
+        that the module compiles and publishes successfully.'
+    - name: Fix invalid property value
+      id: fix-invalid-property-value
+      description: 'Wants to fix the "Invalid Property Value" error family in
+        Service Studio for OutSystems 11, caused by leaving a mandatory widget
+        property unset, setting the Default Value property to an expression
+        instead of a literal, or setting a Record widget''s Source Record to
+        the content of another widget, by setting the required property,
+        using a literal or built-in default function, or referencing a local
+        variable, query, or preparation-evaluated list instead, so that the
+        module compiles and publishes successfully.'
+    - name: Fix invalid public action
+      id: fix-invalid-public-action
+      description: 'Wants to fix the "Invalid Public Action" error in Service
+        Studio for OutSystems 11, caused by a public action having a Record
+        (Entity/Structure) parameter that isn''t declared as public or is
+        defined by a module reference, by making the underlying
+        Entity/Structure public or redefining the parameter using an
+        Entity/Structure from the current module, so that the module
+        compiles and publishes successfully.'
+    - name: Fix invalid public block
+      id: fix-invalid-public-block
+      description: 'Wants to resolve the "Invalid Public Block" error in
+        Service Studio, caused by a public Block that uses a Destination
+        node to navigate to a Screen or includes another Block that does
+        so, by removing the navigation or setting the Block''s Public
+        property to No, in OutSystems 11, so that the module compiles and
+        publishes successfully.'
+    - name: Public screen block error
+      id: public-screen-block-error
+      description: 'Wants to resolve the "Invalid Public Screen Block" error
+        family in Service Studio, caused by a public Screen Block whose
+        Record-type input parameter references a non-public Entity/Structure,
+        references an Entity/Structure from another module, or is used in a
+        link Destination property with a Binary Data, Record, or List input
+        parameter, by making the referenced Entity/Structure public, using
+        only in-module Entities/Structures, or adjusting/removing the
+        Destination argument or the block''s Public property, in OutSystems
+        11, so that the module compiles and publishes successfully.'
   - name: Troubleshoot SEO-friendly URLs
     id: troubleshoot-seo-friendly-urls
     subtopics:
@@ -2898,6 +2986,21 @@ knowledge-needs:
         checking existing Page Names, app/module names, and Site Rules
         before choosing a Page Name, in OutSystems 11 Reactive Web Apps, so
         that SEO-friendly URLs route to the intended destination.'
+    - name: Invalid page name error
+      id: invalid-page-name-error
+      description: 'Wants to resolve the "Invalid Page Name Error" in Service
+        Studio, caused by a Screen''s Page Name containing characters other
+        than letters, digits, dash, tilde, or slash, by removing the invalid
+        characters, in OutSystems 11, so that SEO-friendly URLs work
+        correctly.'
+    - name: Fix parameter order
+      id: fix-parameter-order
+      description: 'Wants to fix the "Invalid Parameter Order" error in
+        Service Studio, caused by having optional Input Parameters placed
+        before mandatory ones on a Screen with custom (Path) URLs, by
+        reordering the Input Parameters or changing their Is Mandatory
+        property, in OutSystems 11, so that SEO-friendly URLs work
+        correctly.'
   - name: Portfolio API management
     id: portfolio-api-management
     subtopics:
@@ -2951,6 +3054,12 @@ knowledge-needs:
         return when a client exceeds an API rate limit, so they can detect
         and handle the 429 Too Many Requests response in their integration
         code.
+    - name: API terminology mapping
+      id: api-terminology-mapping
+      description: Wants to map ODC Portal terminology (stage, end-user role) to
+        their corresponding ODC REST API resource names (environment,
+        application role), so they can correctly interpret API reference
+        documentation without confusion between the two naming conventions.
 - name: Develop for testability
   guid: 71fc8278-36e0-4a93-a84d-79eb8da3135d
   topics:
@@ -4754,6 +4863,12 @@ knowledge-needs:
       id: lockout
     - name: Passwords
       id: passwords
+    - name: Update user email
+      id: update-user-email
+      description: Wants to change a logged-in end-user's email address in
+        ODC's built-in identity provider by calling StartUpdateEmail to send
+        a verification code and FinishUpdateEmail to confirm it, so that the
+        user's login email is updated without requiring ODC Portal access.
     - name: Automatic user creation
       id: automatic-user-creation
       description: Wants to resolve the OS-IDCO-CONF-40102 login error, caused
