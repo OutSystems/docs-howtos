@@ -545,6 +545,15 @@ knowledge-needs:
     id: design-for-accessibility
   - name: Implement accessibility features (screen readers, contrast...)
     id: accessibility-screen-reader
+    subtopics:
+    - name: Generate HTML tags
+      id: generate-html-tags
+      description: Wants to generate semantic HTML tags (h1, nav, fieldset,
+        etc.) around UI elements for accessibility, using the HTML Element
+        widget's Tag property in Mobile/Reactive Web Apps or the OSTagName
+        Extended Property on Container/Placeholder widgets in Traditional Web
+        Apps, in Service Studio for O11, so the generated markup uses proper
+        semantic tags instead of generic span/div elements.
   - name: Translating apps
     id: translating-apps
 - name: Advanced app architecture
@@ -764,8 +773,32 @@ knowledge-needs:
   - name: Extensions
     id: extensions
     subtopics:
+    - name: Choose connector option
+      id: choose-connector-option
+      description: Wants to choose an approach for migrating from the third-party
+        ardoPostgreSQL connector to the OutSystems supported PostgreSQL connector
+        in OutSystems 11 (adapting existing extensions and republishing consumers,
+        creating new extensions and updating consumer modules, or creating new
+        extensions and consumers from scratch), so that they can weigh development
+        effort against consumer-testing risk before starting the migration.
+    - name: Migrate DB connector
+      id: migrate-db-connector
+      description: Wants to migrate from the ardoPostgreSQL connector to the
+        supported PostgreSQL connector in OutSystems 11 by creating a new database
+        connection, updating each affected extension's connection reference,
+        refreshing entities, and republishing and testing consumer modules, so
+        that existing extensions and consumers keep working under the new
+        supported connector.
     - name: Integrate using custom code
       id: custom-code-integration
+    - name: Consume via extension
+      id: consume-webservice-via-extension
+      description: Wants to consume a Web Service that can't be natively imported
+        into OutSystems, by creating an Extension in Integration Studio with an
+        Action per method, building a matching data model, importing the WSDL
+        via Visual Studio's Add Web Reference dialog, and implementing the action
+        to call the generated proxy class, so that Service Studio can call the
+        Web Service like a built-in action, in OutSystems 11.
     - name: Fix invalid assembly
       id: fix-invalid-assembly
       description: 'Wants to fix the OS-ELG-MODL-05001 error ("File does not
@@ -846,6 +879,36 @@ knowledge-needs:
         that the generated PDF report renders correctly and completely.
   - name: Handling webservice errors
     id: handle-webservice-errors
+  - name: Workato Connector
+    id: workato-connector
+    subtopics:
+    - name: Install Workato connector
+      id: install-workato-connector
+      description: Wants to install and configure the OutSystems Workato Connector
+        by installing the Forge component, creating an API key with entity access
+        rules in the OutSystems environment, and creating a corresponding app
+        connection in Workato, so that Workato can securely connect to their
+        OutSystems environment.
+    - name: Build OutSystems trigger recipe
+      id: build-workato-outsystems-trigger-recipe
+      description: Wants to build a Workato recipe that triggers on a new or
+        updated OutSystems entity record to run an action in another
+        application, so that OutSystems changes propagate to other connected
+        apps.
+    - name: Build Upsert trigger recipe
+      id: build-workato-upsert-trigger-recipe
+      description: Wants to build a Workato recipe that triggers on an external
+        app event to create or update an OutSystems entity record via the
+        Upsert record action, so that external app changes are reflected in
+        OutSystems.
+    - name: Map Workato foreign key
+      id: map-workato-foreign-key
+      description: Wants to obtain the Id value of a related OutSystems entity
+        (a foreign key) before calling the Upsert record action in a Workato
+        recipe, by adding a Search records action for the related entity and
+        reordering it ahead of the upsert step, so that foreign key attributes
+        are populated correctly when creating or updating records from another
+        application.
 - name: Advanced security
   guid: dedf532a-fe2a-4e93-8316-731133ad6ba1
   topics:
@@ -1508,6 +1571,14 @@ knowledge-needs:
         as an input parameter, in Service Studio for O11 Traditional Web Apps, so
         that clicking the link in the email takes the user straight to that record's
         page instead of a generic landing page.
+    - name: Translate email locale
+      id: translate-email-locale
+      description: Wants to translate the content of an OutSystems email that's
+        sent in the default language despite the triggering screen being localized,
+        by setting the locale in the email's Preparation action with SetCurrentLocale
+        (optionally reading the prior locale via GetCurrentLocale), in Service
+        Studio for O11, so that the email is sent in the same language as the
+        user's session.
   - name: BPT
     id: bpt
     subtopics:
@@ -1988,6 +2059,20 @@ knowledge-needs:
         in Service Studio for OutSystems 11, so that flag or other custom
         icons display without the default circular mask, in mobile apps and
         reactive web apps.
+    - name: Hide List Box scrollbar
+      id: hide-list-box-scrollbar
+      description: 'Wants to hide the vertical scroll bar of a List Box widget
+        by adding overflow-y: hidden and background-image: none CSS style
+        properties, in Service Studio for OutSystems 11, so that all list
+        values remain visible without a visible scroll bar.'
+    - name: List scroll blanks
+      id: list-scroll-blanks
+      description: 'Wants to prevent blank spaces from appearing while scrolling
+        a list on low-end devices, by creating a placeholder image for list
+        items without data and applying it via a custom CSS class added to
+        the List widget''s Style Classes property, in Service Studio, so that
+        scrolling performance and experience improve, in traditional web apps,
+        mobile apps, and reactive web apps for OutSystems 11.'
     - name: Use Bottom Bar Item
       id: use-bottom-bar-item
       description: Wants to add the Bottom Bar Item UI Pattern to a screen and
@@ -3197,6 +3282,13 @@ knowledge-needs:
         calling the SendPushNotificationToAll action with the ApplicationCode, ApiAccessToken,
         Message, Badge, and Deeplink parameters — so that the app can broadcast
         notifications to all registered devices.
+    - name: Configure Pushwoosh iOS
+      id: configure-pushwoosh-ios
+      description: Wants to configure Pushwoosh for iOS push notifications by creating
+        an Apple Developer App ID with Push Notifications enabled, generating and
+        exporting an APNS certificate and private key from Keychain, and creating
+        and configuring an iOS application in the Pushwoosh dashboard, so that the
+        app is ready to send and receive push notifications via Pushwoosh on iOS.
     - name: Camera plugin v7 reference
       id: camera-plugin-reference-v7
       description: Wants to look up the Camera plugin version 7's client actions
@@ -4651,6 +4743,14 @@ knowledge-needs:
         servers, increasing security and traceability, and ensuring high availability
         through load balancing and failover, so they can justify adopting a reverse
         proxy in their OutSystems architecture.
+    - name: Reverse proxy scenarios
+      id: reverse-proxy-scenarios
+      description: Wants to determine which reverse proxy configurations to combine
+        (SSL offloading, end-to-end SSL, header manipulation with referenced content
+        exposure, URL rewriting, keep-alive timeout adjustment) for common OutSystems
+        deployment scenarios such as plain HTTP redirection, end-to-end HTTPS, SSL
+        offload, and multi-app path-based routing, so they can implement the correct
+        configuration set for their specific setup.
   - name: Redis in-memory sessions
     id: redis-in-memory-sessions
     subtopics:
