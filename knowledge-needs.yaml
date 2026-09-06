@@ -1500,6 +1500,21 @@ knowledge-needs:
         building blocks portfolio owned by a platform group or Center of
         Excellence (CoE), so that other portfolios can adopt library updates
         on their own schedule without affecting release cadence.
+    - name: Dual-exposure pattern
+      id: dual-exposure-pattern
+      description: Wants to expose the same business logic both within a
+        portfolio (via a service action) and to other portfolios (via a REST
+        API) by wrapping both around a shared internal server action, so that
+        logic isn't duplicated when assembling a complete multi-portfolio
+        architecture.
+    - name: Reuse across portfolios
+      id: reuse-across-portfolios
+      description: Wants to choose between a library (for shared logic) and a
+        REST API (for shared data) to share an asset across portfolios in ODC,
+        understanding which elements are available cross-portfolio and how to
+        manage REST API breaking changes for other portfolios' consumers, so
+        that they pick the correct mechanism and avoid disrupting
+        cross-portfolio consumers.
     - name: Portfolio boundary design
       id: portfolio-boundary-design
       description: Wants to decide portfolio boundaries by grouping apps that
@@ -3440,6 +3455,19 @@ knowledge-needs:
       description: Wants to write prompts for Mentor Studio to break down
         complex requirements into smaller implementation steps, so that
         large features become actionable to build incrementally.
+    - name: Reuse public element prompts
+      id: mentor-studio-reuse-public-element-prompts
+      description: Wants to write prompts for Mentor Studio to reuse a
+        public element exposed by another app in the tenant, using Add
+        public elements or letting Mentor find and add it automatically,
+        so that existing logic can be called from a new app without
+        rebuilding it.
+    - name: Explain and document prompts
+      id: mentor-studio-explain-document-prompts
+      description: Wants to write prompts for Mentor Studio to generate
+        documentation for an element or explain unfamiliar logic and app
+        structure, so that an element's intent and impact are understood
+        before making changes.
   - name: AI models and search services
     id: ai-models-and-search-services
     subtopics:
