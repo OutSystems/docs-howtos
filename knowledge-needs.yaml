@@ -1722,6 +1722,14 @@ knowledge-needs:
         or missing Response Format property, by correcting the property or
         removing the output parameters, so that the REST API method compiles
         and publishes successfully.'
+    - name: Fix invalid receive in error
+      id: fix-invalid-receive-in-error
+      description: 'Wants to fix the "Invalid Receive In" error for a REST API
+        output parameter in Service Studio for OutSystems 11, caused by an
+        output parameter''s data type only being allowed to be received in
+        the request body, by correcting the parameter''s ''Receive In''
+        property, so that the REST API method compiles and publishes
+        successfully.'
   - name: Consume webservices
     id: consume-webservices
     subtopics:
@@ -1891,6 +1899,13 @@ knowledge-needs:
         Builder, by logging out and back in (or contacting support if the problem
         persists), in OutSystems 11, so that they can successfully delete the
         application version.
+    - name: WFB icon save error
+      id: wfb-icon-save-error
+      description: Wants to resolve the "Cannot save icon in the storage" error
+        that occurs when Workflow Builder can't save an application icon in
+        storage, by retrying later, publishing without an icon, or contacting
+        OutSystems Support if the problem persists, in OutSystems 11, so that
+        they can proceed without the icon-save failure blocking their work.
 - name: Component testing
   guid: 7e2fb431-16fd-487e-8c9b-77fe350b092b
   topics:
@@ -4333,6 +4348,12 @@ knowledge-needs:
         dependency, including hooks dependencies declared in the plugin''s
         package.json for MABS 7 and later, so that the mobile app package
         generates successfully.'
+    - name: Forge plugin version error
+      id: forge-plugin-version-error
+      description: 'Wants to resolve the OS-MABS-PLG-40019 "<plugin_name>"
+        error, caused by using a Forge plugin version that isn''t compatible
+        with MABS 8.0 or higher, by updating the plugin to its latest
+        version, so that the mobile app package generates successfully.'
     - name: Incompatible plugin error
       id: incompatible-plugin-error
       description: 'Wants to resolve the OS-MABS-PRJ-40003 "One or more
@@ -4364,6 +4385,16 @@ knowledge-needs:
         and retrying application generation, escalating to OutSystems
         support if the problem persists, so that the mobile app package
         generates successfully.'
+    - name: Resource load timeout
+      id: resource-load-timeout-error
+      description: 'Wants to resolve the OS-MABS-UNX-50000 "There was an issue
+        loading your resources. Please try again." error, caused by MABS
+        timing out while building the mobile app package (fetching
+        application resources, installing custom plugins, or downloading
+        native libraries from Maven or CocoaPods repositories), by retrying
+        the operation and checking the build logs in Service Center,
+        escalating to OutSystems Support if the problem persists, so that
+        the mobile app package generates successfully.'
     - name: Signing certificate error
       id: signing-certificate-error
       description: 'Wants to resolve the OS-MABS-SIG-40010 "There are no
@@ -5941,3 +5972,13 @@ knowledge-needs:
         afterward by entering their email addresses on an existing case,
         so that those colleagues receive email notifications and can
         contribute information to the case.
+  - name: Community Badges
+    id: community-badges
+    subtopics:
+    - name: Community badge criteria
+      id: community-badge-criteria
+      description: Wants to know what action or achievement unlocks each
+        OutSystems Community badge, when participating in the community
+        (posting, contributing Forge assets, attending events, publishing
+        content, and similar activities), so that they can understand
+        which recognition badges they've earned or how to earn new ones.
