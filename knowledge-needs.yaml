@@ -1863,6 +1863,13 @@ knowledge-needs:
         Technology, including logic, UI, and data model) and how IT can extend
         it using Service Studio, in OutSystems 11, so that they can plan how to
         hand off and evolve the app after publishing.
+    - name: WFB delete version error
+      id: wfb-delete-version-error
+      description: Wants to resolve the "Cannot remove case application version
+        since it's not in Draft" error when deleting an application in Workflow
+        Builder, by logging out and back in (or contacting support if the problem
+        persists), in OutSystems 11, so that they can successfully delete the
+        application version.
 - name: Component testing
   guid: 7e2fb431-16fd-487e-8c9b-77fe350b092b
   topics:
@@ -5749,6 +5756,12 @@ knowledge-needs:
       "Internal Error" caused by an unexpected situation in the application
       or environment, so they can submit feedback through the tool or
       contact OutSystems Support if the issue persists.
+  - name: Resolve app not found
+    id: resolve-app-not-found
+    description: Wants to know what to do when OutSystems 11 shows an "Application
+      not found" error while opening or editing an application that no
+      longer exists, so they can confirm the app was removed and contact
+      OutSystems Support if the issue persists.
 - name: Project Tracking and Collaboration
   guid: ''
   topics:
@@ -5803,3 +5816,13 @@ knowledge-needs:
         or junk folders, by using the confirmation number and last name on
         the Prometric Score Report portal, so that they can see which exam
         topics they passed or failed.
+  - name: Support Portal
+    id: support-portal
+    subtopics:
+    - name: Add case followers
+      id: add-case-followers
+      description: Wants to add colleagues as followers to an OutSystems
+        support case, either while opening the case in Support Portal or
+        afterward by entering their email addresses on an existing case,
+        so that those colleagues receive email notifications and can
+        contribute information to the case.
