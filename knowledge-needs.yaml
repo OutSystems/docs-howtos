@@ -1948,6 +1948,44 @@ knowledge-needs:
         storage, by retrying later, publishing without an icon, or contacting
         OutSystems Support if the problem persists, in OutSystems 11, so that
         they can proceed without the icon-save failure blocking their work.
+    - name: WFB status update error
+      id: wfb-status-update-error
+      description: 'Wants to resolve the "Specified application version do not
+        exists or the status update is invalid" error when performing an
+        operation requiring an application status update in Workflow Builder,
+        by logging out and back in (or contacting support if the problem
+        persists), in OutSystems 11, so that they can successfully complete
+        the status update.'
+    - name: WFB icon size error
+      id: wfb-icon-size-error
+      description: 'Wants to resolve the "Application version icon is larger
+        than <MaxSize>" error when uploading an icon that exceeds the max
+        file size in Workflow Builder, by retrying with a smaller icon or
+        contacting OutSystems Support if the problem persists, in OutSystems
+        11, so that the application icon upload succeeds.'
+    - name: WFB discard version error
+      id: wfb-discard-version-error
+      description: 'Wants to resolve the "Unable to discard version. It has
+        published versions: <ApplicationVersionId>." error that occurs when
+        trying to delete an application that''s already published but still
+        displays as unpublished in Workflow Builder, by logging out and back
+        in (or contacting support if the problem persists), in OutSystems 11,
+        so that they can successfully delete the application.'
+    - name: WFB attribute data error
+      id: wfb-attribute-data-error
+      description: 'Wants to resolve the "Attribute data is not valid:
+        <OriginalErrorMessage>" error when creating or modifying a field
+        with inconsistent data in Workflow Builder, by logging out and back
+        in (or contacting support if the problem persists), in OutSystems 11,
+        so that they can successfully save the field.'
+    - name: WFB attribute type error
+      id: wfb-attribute-type-error
+      description: 'Wants to resolve the "Cannot change the type of an
+        existing attribute: <Name> (<Id>)" error that occurs when trying to
+        change the data type of a field that''s already published in
+        Workflow Builder, by creating a new field with the desired data
+        type instead, in OutSystems 11, so that the application field saves
+        successfully.'
 - name: Component testing
   guid: 7e2fb431-16fd-487e-8c9b-77fe350b092b
   topics:
@@ -4737,6 +4775,42 @@ knowledge-needs:
 - name: OutSystems data centers
   guid: 5d6b141d-82f8-4949-af54-6593592e0327
   topics:
+  - name: VPN connection troubleshooting
+    id: vpn-connection-troubleshooting
+    subtopics:
+    - name: Fix VPN IP errors
+      id: fix-vpn-ip-errors
+      description: Wants to resolve VPN creation errors caused by an invalid or
+        already-used Internet gateway public IP address when creating a VPN in
+        the LifeTime console, so that they can provide a valid and unique
+        public IP address.
+    - name: Fix VPN connection limit errors
+      id: fix-vpn-connection-limit-errors
+      description: Wants to resolve VPN creation errors caused by exceeding the
+        maximum number of VPN connections when creating a VPN in the LifeTime
+        console, so that they can choose another supported setup to connect the
+        infrastructure.
+    - name: Fix VPN Transit Gateway conflict errors
+      id: fix-vpn-transit-gateway-conflict-errors
+      description: Wants to resolve VPN creation errors caused by an
+        infrastructure already being connected to an AWS Transit Gateway when
+        creating a VPN in the LifeTime console, so that they can use the
+        existing Transit Gateway setup instead of creating a conflicting VPN.
+    - name: Fix VPN ASN errors
+      id: fix-vpn-asn-errors
+      description: Wants to resolve VPN creation errors related to an invalid
+        BGP ASN value, whether already in use, outside the 0-65535 range, or
+        reserved by Amazon, when configuring a VPN connection in the LifeTime
+        console, so that they can provide a valid, unreserved, and unique ASN
+        value.
+    - name: Fix VPN route errors
+      id: fix-vpn-route-errors
+      description: Wants to resolve errors when adding static routes to a VPN connection in
+        the LifeTime console, including an invalid or overlapping internal
+        network IP range, the disallowed 0.0.0.0/0 range, exceeding the maximum
+        allowed number of routes, or a temporary "operation in progress"
+        conflict, so that they can correct the route configuration and complete
+        the request.
   - name: Organization region information
     id: organization-region-information
     subtopics:
