@@ -15,6 +15,8 @@ outsystems-tools:
 coverage-type:
   - apply
   - unblock
+topic:
+  - find-last-sent-email
 ---
 
 # How to find when the last email was sent
