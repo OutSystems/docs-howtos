@@ -127,6 +127,13 @@ knowledge-needs:
     subtopics:
     - name: How to handle Exceptions
       id: how-to-handle-exceptions
+    - name: Fix empty OnException
+      id: fix-empty-onexception
+      description: Wants to fix the "Empty 'OnException'" error in Service Studio
+        for OutSystems 11, caused by an OnException action flow that doesn't begin
+        with an Exception Handler node, by adding an Exception Handler node as the
+        first node in the OnException action, so the flow compiles and publishes
+        successfully.
     - name: Custom JS error handler
       id: custom-js-error-handler
       description: Wants to define and register a custom JavaScript error handler function,
@@ -426,6 +433,15 @@ knowledge-needs:
         variable, by matching the operator, property, or Null Value to the
         correct data type, so that the expression or widget configuration
         compiles and publishes successfully.'
+    - name: Fix expression overflow
+      id: fix-expression-overflow
+      description: Wants to resolve the "Expression Overflow" error family in Service
+        Studio for OutSystems 11, caused by an invalid Date or Time value, a
+        Decimal, Integer, or Long Integer value exceeding its allowed range, an
+        expression exceeding its maximum allowed length, or a Text literal
+        exceeding its maximum length, so they can correct the underlying value
+        or expression and continue publishing or running the app without the
+        error.
   - name: Querying data
     id: querying-data
     subtopics:
@@ -1510,6 +1526,14 @@ knowledge-needs:
         support it, by changing the parameter''s data type or the method''s
         request format, so that the REST API method compiles and publishes
         successfully.'
+    - name: Fix REST date format
+      id: fix-rest-date-format
+      description: 'Wants to fix the "Incompatible Date Formats" error in a REST
+        API method in Service Studio for OutSystems 11, caused by
+        request/response example date values not matching the REST API''s
+        configured Date Format property, by changing the API''s Date Format
+        property or the example''s date values, so that the REST API method
+        compiles and publishes successfully.'
   - name: Consume webservices
     id: consume-webservices
     subtopics:
@@ -1800,6 +1824,14 @@ knowledge-needs:
         Screen Template, reverting Theme changes, or migrating a Traditional
         Web App from Silk UI/the London Theme to the OutSystems UI framework,
         in Service Studio for O11, so the final screen renders as previewed.'
+    - name: Fix grid overflow
+      id: fix-grid-overflow
+      description: 'Wants to resolve the "Grid Dimensions Overflow" error caused
+        by a widget''s Width property (set in grid columns) exceeding the number
+        of columns defined in the theme''s grid, by reducing the widget''s
+        Width value or increasing the theme''s Grid property, in Service Studio
+        for OutSystems 11, so they can continue publishing or running the app
+        without the error.'
   - name: UI framework migration
     id: ui-framework-migration
     subtopics:
@@ -2537,6 +2569,14 @@ knowledge-needs:
         correct combination of properties matching the specific error
         message, in OutSystems 11, so that the module compiles and publishes
         successfully.'
+    - name: Fix Empty Widget error
+      id: fix-empty-widget-error
+      description: 'Wants to resolve the "Empty Widget" error in Service
+        Studio, caused by a Dropdown widget that has no content to display
+        its values, by placing a widget such as an Expression inside the
+        Dropdown, or dragging an Entity or Static Entity Identifier variable
+        into it to auto-configure the Dropdown, in OutSystems 11, so that
+        the module compiles and publishes successfully.'
     - name: Invalid Data Action error
       id: invalid-data-action-error
       description: 'Wants to resolve the "Invalid Data Action" error in
@@ -2544,6 +2584,22 @@ knowledge-needs:
         an Output Parameter or that has no Output Parameters at all, by
         assigning a correctly typed value to the existing Output Parameter
         or creating at least one, so that the module compiles and publishes
+        successfully.'
+    - name: Duplicate page name error
+      id: duplicate-page-name-error
+      description: 'Wants to resolve the "Duplicated Page Name" error in
+        Service Studio, caused by a Screen''s Page Name clashing with the
+        name of another Screen, Block, UI Flow, or the module itself, by
+        changing the Page Name to a unique value among those elements, in
+        OutSystems 11, so that the module compiles and publishes
+        successfully.'
+    - name: Incompatible version error
+      id: incompatible-version-error
+      description: 'Wants to resolve the "This version of Service Studio is
+        not compatible with the selected Platform Server" error when
+        publishing a module in OutSystems 11, by checking with the Service
+        Center administrator which Platform Server version is in use and
+        what needs to be upgraded, so that the module publishes
         successfully.'
   - name: Troubleshoot SEO-friendly URLs
     id: troubleshoot-seo-friendly-urls
@@ -2563,6 +2619,14 @@ knowledge-needs:
         with an active site rule for a domain, by replacing it with a
         JavaScript redirect (window.location.href) instead, in OutSystems 11
         Reactive Web Apps.'
+    - name: Avoid duplicate redirects
+      id: avoid-duplicate-redirects
+      description: 'Wants to avoid duplicate redirects and unpredictable URL
+        routing caused by setting a Screen Page Name that matches an app or
+        module name already targeted by an environment Site Rule, by
+        checking existing Page Names, app/module names, and Site Rules
+        before choosing a Page Name, in OutSystems 11 Reactive Web Apps, so
+        that SEO-friendly URLs route to the intended destination.'
 - name: Develop for testability
   guid: 71fc8278-36e0-4a93-a84d-79eb8da3135d
   topics:
@@ -2664,6 +2728,23 @@ knowledge-needs:
     - name: Forge overview
       id: forge-overview
       description: Wants to understand what Forge is, what types of reusable assets (apps, libraries, agentic apps) are available, and how the community-driven sharing model works in OutSystems.
+    - name: Forge project classifications
+      id: forge-project-classifications
+      description: Wants to understand the different Forge project classifications and what
+        each means for reliability, maintenance, and support, when evaluating a
+        Forge component or app, so that they can decide how much to rely on it.
+    - name: Forge project support
+      id: forge-project-support
+      description: Wants to get support for a Forge project, by contacting
+        the appropriate support channel based on the project's
+        classification, so that they can resolve issues with a project they
+        use.
+    - name: Forge project removal
+      id: forge-project-removal
+      description: Wants to request removal of a Forge project through the
+        project owner, following the appropriate process based on the
+        project's classification, so that they can address issues with a
+        project they use.
   - name: Submitting assets to Forge
     id: submitting-assets-to-forge
     subtopics:
@@ -3855,6 +3936,33 @@ knowledge-needs:
         iOS or Android project template archive, by regenerating the app
         package or contacting OutSystems Support if the problem persists,
         so that the mobile app package generates successfully.'
+    - name: Plugin auth error
+      id: plugin-auth-error
+      description: 'Wants to resolve the OS-MABS-PLG-20002 "Couldn''t fetch
+        the Cordova plugin <plugin_name> due to an authentication error"
+        error, by reviewing the server and plugin access permissions used
+        to fetch the plugin, so that the mobile app package generates
+        successfully.'
+    - name: Plugin fetch HTTP error
+      id: plugin-fetch-http-error
+      description: 'Wants to resolve the OS-MABS-PLG-40014 "There was an
+        issue fetching the Cordova plugin: <plugin_name>. We couldn''t
+        access the resource (http error <http_error_code>). Please review
+        your plugin and server configurations." error, by checking the
+        Service Center build logs and validating the plugin and server
+        extensibility configurations, so that the mobile app package
+        generates successfully.'
+    - name: Undocumented MABS error
+      id: undocumented-mabs-error
+      description: Wants to resolve a MABS build error that isn't yet documented,
+        by opening a support case with OutSystems Support, so that they can get
+        help resolving their mobile app build issue.
+    - name: Deprecated MABS version error
+      id: deprecated-mabs-version-error
+      description: Wants to resolve the error that occurs when creating a
+        mobile app package using a deprecated MABS version, by switching to a
+        MABS version that meets the minimum required version, so that the
+        mobile app package generates successfully.
   - name: AppShield
     id: appshield
     subtopics:
