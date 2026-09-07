@@ -23,6 +23,10 @@ outsystems-tools:
 coverage-type:
   - apply
   - understand
+topic:
+  - configure-tenant-sessions
+  - multi-tenant-architecture
+  - set-is-multi-tenant
 ---
 
 # How to build a multi-tenant application

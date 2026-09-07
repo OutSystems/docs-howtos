@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - sql-table-sorting-setup
 ---
 
 # How to enable dynamic sorting in a table fed by a SQL query

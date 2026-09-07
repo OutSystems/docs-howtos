@@ -12,6 +12,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - link-feedback-to-ontrack
+  - ontrack-overview
+  - ontrack-work-item-color-scheme
 ---
 
 # OnTrack - OutSystems backlog management

@@ -12,6 +12,8 @@ outsystems-tools:
   - none
 coverage-type:
   - apply
+topic:
+  - redis-prod-setup
 ---
 
 # Set up a Redis Cluster for Production environments

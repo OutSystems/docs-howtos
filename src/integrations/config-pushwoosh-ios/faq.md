@@ -13,6 +13,8 @@ outsystems-tools:
   - none
 coverage-type:
   - apply
+topic:
+  - configure-pushwoosh-ios
 ---
 
 # How to Configure Pushwoosh for iOS

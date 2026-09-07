@@ -20,6 +20,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - export-data-to-excel
 ---
 
 # How to Export Entity Data to Excel

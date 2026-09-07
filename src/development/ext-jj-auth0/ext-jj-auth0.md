@@ -21,6 +21,8 @@ outsystems-tools:
   - forge
 coverage-type:
   - apply
+topic:
+  - idp-auth0
 ---
 
 # How to integrate Auth0 with OutSystems

@@ -14,6 +14,10 @@ outsystems-tools:
   - forge
 coverage-type:
   - apply
+topic:
+  - build-workato-outsystems-trigger-recipe
+  - build-workato-upsert-trigger-recipe
+  - install-workato-connector
 ---
 
 # How to integrate OutSystems with Workato

@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - archive-bpt-processes
 ---
 
 # How to archive old Processes - BPT

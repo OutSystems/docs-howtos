@@ -18,6 +18,10 @@ coverage-type:
   - apply
   - understand
   - evaluate
+topic:
+  - match-migration-identifiers
+  - migrate-hybrid-bpt-users
+  - plan-data-migration
 ---
 
 # Introduction to Data Migration

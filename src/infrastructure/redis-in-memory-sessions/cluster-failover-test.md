@@ -12,6 +12,8 @@ outsystems-tools:
   - none
 coverage-type:
   - apply
+topic:
+  - redis-cluster-failover-test
 ---
 
 # Test the failover behavior of a Redis Cluster

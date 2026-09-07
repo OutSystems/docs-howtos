@@ -14,6 +14,10 @@ outsystems-tools:
   - integration builder
 coverage-type:
   - apply
+topic:
+  - consume-sap-odata
+  - fix-odata-dollar-params
+  - handle-sap-odata-errors
 ---
 
 # How to consume an SAP OData service in OutSystems

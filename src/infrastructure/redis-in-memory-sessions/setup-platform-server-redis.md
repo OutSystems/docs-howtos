@@ -12,6 +12,9 @@ outsystems-tools:
   - platform server
 coverage-type:
   - apply
+topic:
+  - configure-redis-sessions
+  - verify-redis-sessions
 ---
 
 # Configure Platform Server to use Redis for sessions

@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - check-string-contains
 ---
 
 # How to find out if a string is contained in another string

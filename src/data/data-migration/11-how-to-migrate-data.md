@@ -19,6 +19,10 @@ audience:
 outsystems-tools:
   - service studio
   - service center
+topic:
+  - map-platform-dependencies
+  - migrate-hybrid-bpt-users
+  - migration-binary-blob-data
 coverage-type:
   - apply
 ---

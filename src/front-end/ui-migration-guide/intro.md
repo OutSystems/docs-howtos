@@ -13,6 +13,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - choose-migration-path
+  - estimate-migration-effort
+  - migration-rationale
 ---
 
 # Migrating UI of the Silk Web applications to OutSystems UI Framework

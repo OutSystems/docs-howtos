@@ -16,6 +16,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - apply
+topic:
+  - remove-log-service
 ---
 
 # Log Service Cleanup

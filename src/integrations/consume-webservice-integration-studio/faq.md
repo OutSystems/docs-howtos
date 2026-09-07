@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - consume-webservice-via-extension
 ---
 
 # How to consume a Web Service in Integration Studio

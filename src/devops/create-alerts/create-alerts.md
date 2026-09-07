@@ -13,6 +13,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - define-alert-thresholds
+  - gather-monitoring-api-data
+  - integrate-alerts-itsm
 ---
 
 # How to create alerts based on monitoring thresholds

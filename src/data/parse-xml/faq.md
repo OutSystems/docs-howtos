@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - parse-xml-xpath
 ---
 
 # How to parse XML files with XPath expressions

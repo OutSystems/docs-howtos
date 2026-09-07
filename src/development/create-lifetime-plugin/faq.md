@@ -14,6 +14,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - create-lifetime-plugin
 ---
 
 # How to create a LifeTime Plugin

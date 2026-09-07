@@ -22,6 +22,9 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - apply
+topic:
+  - migrate-hybrid-bpt-users
+  - users-roles-groups-entity-model
 ---
 
 # Application Users Groups and Roles

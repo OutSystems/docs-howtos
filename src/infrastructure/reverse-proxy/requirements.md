@@ -16,6 +16,10 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - reverse-proxy-basics
+  - reverse-proxy-benefits
+  - reverse-proxy-requirements
 ---
 
 # Requirements to use a reverse proxy with OutSystems

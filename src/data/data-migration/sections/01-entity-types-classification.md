@@ -15,6 +15,8 @@ audience:
   - Developer
 outsystems-tools:
   - service studio
+topic:
+  - classify-entity-types
 coverage-type:
   - apply
   - understand

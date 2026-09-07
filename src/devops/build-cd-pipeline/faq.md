@@ -20,6 +20,8 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - understand
+topic:
+  - cd-pipeline-stages
 isautopublish: true
 ---
 

@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - integrate-jquery-plugin
 ---
 
 # How to include a jQuery plugin

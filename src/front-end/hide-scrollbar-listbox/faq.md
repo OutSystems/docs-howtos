@@ -18,6 +18,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - hide-list-box-scrollbar
 ---
 
 # How to hide the scroll bar of a List Box

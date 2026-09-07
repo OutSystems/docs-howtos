@@ -17,6 +17,8 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - understand
+topic:
+  - factory-metamodel
 ---
 
 # Factory Application Modules

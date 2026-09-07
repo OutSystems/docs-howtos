@@ -14,6 +14,9 @@ outsystems-tools:
   - lifetime
 coverage-type:
   - apply
+topic:
+  - expose-app-addresses
+  - rewrite-resource-urls
 ---
 
 # Configuring an Apache Web Server as a Reverse Proxy

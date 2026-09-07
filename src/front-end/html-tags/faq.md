@@ -18,6 +18,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - generate-html-tags
 ---
 
 # How to generate HTML tags

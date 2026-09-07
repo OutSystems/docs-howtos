@@ -20,6 +20,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - credential-delegation
 ---
 
 # Integrated Authentication on Web Services - User credentials delegation to Web References in OutSystems

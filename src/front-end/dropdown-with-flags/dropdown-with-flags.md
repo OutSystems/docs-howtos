@@ -14,6 +14,10 @@ outsystems-tools:
   - forge
 coverage-type:
   - apply
+topic:
+  - static-entities
+  - style-dropdown-icons
+  - use-dropdown-search
 ---
 
 # How to implement a dropdown search with country dial-in codes and flags

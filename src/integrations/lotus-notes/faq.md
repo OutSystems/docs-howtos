@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - access-lotus-notes-data
 ---
 
 # How to access legacy data from Lotus Notes / Domino applications

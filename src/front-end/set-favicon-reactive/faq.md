@@ -13,6 +13,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - change-app-favicon
 ---
 
 # How to change a favicon

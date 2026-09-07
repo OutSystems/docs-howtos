@@ -13,6 +13,8 @@ outsystems-tools:
   - none
 coverage-type:
   - apply
+topic:
+  - reverse-proxy-benefits
 ---
 
 # Using OutSystems in Reverse Proxy Scenarios

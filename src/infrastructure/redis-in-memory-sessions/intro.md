@@ -14,6 +14,8 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - redis-session-overview
 ---
 
 # Configuring OutSystems with Redis in-memory session storage

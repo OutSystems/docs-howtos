@@ -17,6 +17,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - hierarchical-roles-choice
 ---
 
 # How to leverage OutSystems roles with hierarchy levels

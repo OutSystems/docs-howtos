@@ -14,6 +14,8 @@ outsystems-tools:
   - none
 coverage-type:
   - understand
+topic:
+  - redis-ha-architecture
 ---
 
 # Redis Cluster high availability architecture
