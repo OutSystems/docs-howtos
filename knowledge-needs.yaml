@@ -5717,6 +5717,22 @@ knowledge-needs:
 - name: OutSystems data centers
   guid: 5d6b141d-82f8-4949-af54-6593592e0327
   topics:
+  - name: Firewall allowlisting
+    id: firewall-allowlisting
+    subtopics:
+    - name: Allowlist front-end IPs
+      id: allowlist-frontend-public-ips
+      description: Wants to obtain the static public IPs of their
+        OutSystems Cloud environment's front-end servers via Service
+        Center and correctly allowlist them on their firewall instead of
+        the load balancer's IP, so that outgoing connections to external
+        services through the firewall aren't blocked.
+    - name: Allowlist VPN IP range
+      id: allowlist-vpn-private-ip-range
+      description: Wants to allowlist the full private IP range of their
+        OutSystems Cloud on their firewall when connecting via VPN instead
+        of a single IP, so that traffic isn't blocked due to the
+        non-static nature of individual private IP addresses.
   - name: VPN connection troubleshooting
     id: vpn-connection-troubleshooting
     subtopics:
@@ -5799,9 +5815,40 @@ knowledge-needs:
 - name: Product security
   guid: f5935fdf-7f64-46b8-bc71-dd69627c33d8
   topics:
+  - name: Cloud shared responsibility model
+    id: cloud-shared-responsibility-model
+    subtopics:
+    - name: Shared responsibility overview
+      id: shared-responsibility-overview
+      description: Wants to understand how security and infrastructure
+        responsibilities are divided between OutSystems and the customer in
+        OutSystems Cloud (ODC and OutSystems 11 Cloud) deployments, so that
+        they know which protections OutSystems provides and where their own
+        responsibility begins.
+    - name: Cloud customer duties
+      id: cloud-customer-duties
+      description: Wants to understand which security and application
+        lifecycle tasks customers must handle themselves in OutSystems Cloud,
+        such as data management, secure development, vulnerability testing,
+        and mitigation, so that they can meet their share of the shared
+        responsibility model.
+    - name: OutSystems cloud duties
+      id: outsystems-cloud-duties
+      description: Wants to understand which infrastructure and platform
+        security tasks OutSystems handles on their behalf in OutSystems
+        Cloud, such as platform security, network/firewall configuration,
+        encryption, and compute/storage/database management, so that they
+        know what protections are already covered without needing action on
+        their part.
   - name: Cloud infrastructure maintenance
     id: cloud-infrastructure-maintenance
     subtopics:
+    - name: Set maintenance window
+      id: set-maintenance-window
+      description: Wants to configure the maintenance window (day of week and
+        time interval) for a production or non-production OutSystems Cloud
+        environment via the LifeTime console, so that database maintenance
+        and any related downtime occur at a time that minimizes disruption.
     - name: Cloud maintenance schedule
       id: cloud-maintenance-schedule
       description: Wants to understand the schedule, frequency, advance notice periods,
@@ -6857,6 +6904,34 @@ knowledge-needs:
         including how crossed replica placement enables automatic failover to a
         surviving server, so that they can reason about Redis Cluster resilience
         before deploying it.
+  - name: Database Collation
+    id: database-collation
+    subtopics:
+    - name: Collation requirements
+      id: collation-requirements
+      description: Wants to understand OutSystems' case-insensitive collation
+        requirements at the SQL Server instance, database, and column level,
+        and why collations must stay consistent across all environments in
+        an on-premises infrastructure, so that they configure a compliant
+        and consistent database backend when installing OutSystems Platform
+        Server on SQL Server.
+    - name: Avoid collation conflicts
+      id: avoid-collation-conflicts
+      description: Wants to understand why mismatched SQL Server column
+        collations cause errors in join conditions and foreign keys between
+        different data models, in an on-premises OutSystems 11
+        installation, so that they account for future integration needs
+        before finalizing their database's collation choice.
+    - name: Change DB collation
+      id: change-db-collation
+      description: 'Wants to change the collation of an existing OutSystems
+        SQL Server database, understanding that changing only the
+        database-level collation doesn''t update existing column
+        collations, that OutSystems Support doesn''t assist with the change
+        itself, and how to interpret the resulting "Cannot resolve the
+        collation conflict" error, so that they plan and safely execute (or
+        troubleshoot) a collation change with the appropriate database
+        professionals.'
 - name: Log streaming (O11)
   guid: 7f3c2a1e-84d0-4b5f-a9c3-e1d06f82b347
   topics:
@@ -7174,6 +7249,14 @@ knowledge-needs:
       including the Service Studio debugger, Service Center application
       logs, and modern browser developer tools, so that they know where to
       start when investigating unexpected application behavior.
+  - name: Fix cross-site cookies (O11)
+    id: fix-cross-site-cookies-o11
+    description: Wants to identify and fix cross-site cookie problems in
+      OutSystems 11 apps by using the LifeTime SameSite/Secure settings when
+      stricter SameSite cookie policies cause issues such as broken iframes
+      displaying third-party or OutSystems content, failing OAuth/OpenID/SAML
+      authentication flows, and custom JavaScript-set cookies, so their
+      applications keep working correctly.
   - name: EPA taskbox administration
     id: epa-taskbox-admin
     description: Wants to hide or show the EPA Taskbox per eSpace by activating EPA
@@ -7255,6 +7338,43 @@ knowledge-needs:
       Controller from getting a new environment serial number after a
       restart, by configuring the VM to retain its MAC address across
       restarts instead of assigning a new one.
+  - name: Migrate Activation Code
+    id: migrate-activation-code
+    description: Wants to move a full self-managed OutSystems 11
+      infrastructure (including LifeTime) from one Activation Code to
+      another, by backing up existing license files, checking for
+      IP-protected modules, registering and uploading new license files for
+      the destination Activation Code, and republishing a test module to
+      confirm the change, so that development activities and app publishing
+      continue without unexpected Intellectual Property errors.
+  - name: Rollback Activation Code
+    id: rollback-activation-code
+    description: Wants to revert a self-managed OutSystems 11 infrastructure
+      back to its previous Activation Code after an Intellectual Property
+      error occurs during a migration, by pausing Production deployments
+      and restoring each environment's backed-up license file, so that they
+      can confirm the old Activation Code is active again and contact
+      OutSystems Support for further help.
+  - name: AC migration issues
+    id: ac-migration-issues
+    description: Wants to know how to respond to common issues during an
+      Activation Code migration (a missing serial number under the old
+      Activation Code, or a license under either the old or new Activation
+      Code not prepared for migration), by gathering the affected
+      environments and contacting OutSystems Support, so they can get
+      assistance completing the license change for all environments at
+      once.
+- name: Monitor and Troubleshoot (O10)
+  guid: 69e74025-d666-40fd-b224-c96f5cbba50c
+  topics:
+  - name: Fix cross-site cookies (O10)
+    id: fix-cross-site-cookies-o10
+    description: Wants to identify and fix cross-site cookie problems in
+      OutSystems 10 apps by using Factory Configuration when stricter
+      SameSite cookie policies cause issues such as broken iframes displaying
+      third-party or OutSystems content, failing OAuth/OpenID/SAML
+      authentication flows, and custom JavaScript-set cookies, so their
+      applications keep working correctly.
 - name: Project Tracking and Collaboration
   guid: ''
   topics:
