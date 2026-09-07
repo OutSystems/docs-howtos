@@ -5951,6 +5951,14 @@ knowledge-needs:
         processing card data directly, and using Sentry for ODC, so that
         cardholder data is never stored or processed within OutSystems
         applications and compliance obligations are met.
+    - name: Safe Harbor compliance
+      id: safe-harbor-compliance
+      description: Wants to understand why the Safe Harbor ECJ ruling doesn't apply
+        to their OutSystems 11 public cloud infrastructure, given that
+        OutSystems and AWS keep content within the customer's chosen AWS
+        Region, so that they can confirm they aren't exposed to unauthorized
+        EU-US data transfers and know when they still bear responsibility for
+        their own data-handling compliance.
 - name: Production Recovery
   guid: e392931b-251f-4d43-8c0b-c85bbc97e02e
   topics:
