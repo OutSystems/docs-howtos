@@ -3820,6 +3820,16 @@ knowledge-needs:
         space, including access to the development stage, assets, logs, configurations,
         end-user management, and Forge, so they can plan what they can build and manage
         during the trial.
+    - name: PE 503 recovery
+      id: pe-503-resource-limit
+      description: 'Wants to diagnose an HTTP 503 "Service Unavailable" error
+        appearing when accessing apps, using 1-Click Publish in Service
+        Studio, or viewing Environment Health in Service Center/LifeTime,
+        caused by OutSystems 11 automatically disabling their Personal
+        Environment after exceeding memory, CPU, or resource limits, by
+        freeing up resources via the Free Up Resources page or contacting
+        Support if the problem persists, so that they can restore access to
+        their Personal Environment.'
     - name: PE hibernation basics
       id: pe-hibernation-basics
       description: Wants to understand what PE hibernation is, when it triggers after a
@@ -4756,6 +4766,15 @@ knowledge-needs:
         mechanism so the next OTA attempt doesn''t redownload everything,
         so they can anticipate runtime issues (like server action
         mismatches) after a failed OTA upgrade.'
+    - name: Healing resource error
+      id: healing-resource-error
+      description: 'Wants to understand and resolve the "Healing resource
+        <Resource> from prebundle: FAILED" error (and its "healing from the
+        web" variant, sometimes accompanied by a "File is corrupt or
+        invalid" checksum error), which leaves a mobile app in an invalid
+        state recoverable only via an app store update, by reloading the
+        app or reinstalling it from the app store, so that the app returns
+        to a working state.'
   - name: Customize Mobile apps
     id: customize-mobile-apps
     subtopics:
@@ -5291,6 +5310,40 @@ knowledge-needs:
         allowed number of routes, or a temporary "operation in progress"
         conflict, so that they can correct the route configuration and complete
         the request.
+    - name: Fix VPN Dead Peer Detection (DPD) failures
+      id: fix-vpn-dpd-failures
+      description: Wants to diagnose and fix VPN tunnel instability caused by
+        Dead Peer Detection (DPD) failures after setup, so that they can
+        restore a stable OutSystems Cloud VPN connection.
+    - name: Fix periodic IKEv2 tunnel drops
+      id: fix-periodic-ikev2-tunnel-drops
+      description: Wants to diagnose and fix periodic IKEv2 tunnel drops
+        due to IKE/IPsec SA lifetime expiration and rekeying after setup, so
+        that they can restore a stable OutSystems Cloud VPN connection.
+    - name: Fix asymmetric routing with dual active VPN tunnels
+      id: fix-vpn-asymmetric-routing-dual-active-tunnels
+      description: Wants to diagnose and fix VPN tunnel instability caused by
+        asymmetric routing with dual active tunnels after setup, so that they
+        can restore a stable OutSystems Cloud VPN connection.
+    - name: Fix VPN Phase 1 (IKE) and Phase 2 (IPsec) negotiation failures
+      id: fix-vpn-phase-1-phase-2-negotiation-failures
+      description: Wants to diagnose and fix VPN tunnel instability caused by
+        Phase 1 (IKE) and Phase 2 (IPsec) negotiation failures after setup, so
+        that they can restore a stable OutSystems Cloud VPN connection.
+    - name: Test VPN connectivity
+      id: test-vpn-connectivity
+      description: Wants to test and troubleshoot VPN connectivity to
+        OutSystems Cloud environments using ping, traceroute, telnet, and
+        nslookup against the OutSystems DNS servers and front-end domain
+        names, so that they can confirm whether DNS resolution and the
+        network path to their environments works over the established VPN.
+    - name: Configure VPN DNS resolution
+      id: configure-vpn-dns-resolution
+      description: Wants to configure conditional forwarders on their
+        internal DNS servers to resolve OutSystems Cloud environment public
+        domain names, internal network domain names, and external database
+        hostnames over the VPN, so that traffic routes correctly through the
+        internal load balancers instead of failing to resolve.
   - name: Organization region information
     id: organization-region-information
     subtopics:
@@ -5323,6 +5376,14 @@ knowledge-needs:
         O11 Cloud databases (version and compatibility-level change) and whether
         it introduces breaking changes or requires application modifications, so
         that they can confirm whether their applications need any adaptation.
+    - name: Windows Server upgrade breaking changes
+      id: windows-server-upgrade-breaking-changes
+      description: Wants to understand and prepare for the breaking changes
+        introduced by the Windows Server 2022 upgrade of O11 Cloud environments
+        (TLS protocol deprecation, OS-level dependency changes, private IP
+        address changes, front-end storage loss, and required Platform Server
+        upgrade), so that they can adapt their applications and infrastructure
+        before their scheduled upgrade date.
     - name: Update lifecycle states
       id: update-lifecycle-states
       description: Wants to understand the states an ODC platform infrastructure update
@@ -6640,6 +6701,13 @@ knowledge-needs:
 - name: Monitor and Troubleshoot (O11)
   guid: efd7e36b-05ea-4fe3-bf72-80617a1557e8
   topics:
+  - name: Check OutSystems version
+    id: check-outsystems-version
+    description: Wants to check the installed version and revision of Service
+      Studio, Integration Studio, LifeTime, Service Center, and Platform
+      Server (including System Components) in OutSystems 11, so they can
+      provide accurate version information when opening a support case or
+      verifying environment consistency.
   - name: Debugging toolkit overview
     id: debugging-toolkit-overview
     description: Wants to understand what tools are available for debugging
