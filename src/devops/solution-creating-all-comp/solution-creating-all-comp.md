@@ -1,6 +1,7 @@
 ---
 summary: "OutSystems 11 (O11) All Components solution: create it in Service Center, associate all modules, and republish your factory or deploy to another environment."
-tags: devops, application deployment, application troubleshooting, version management, environment configuration
+tags:
+  - Deploy
 guid: 065b4d9d-5b4a-4892-9e82-bdfc77ea98d3
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -5,7 +5,11 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: front-end development, web apps, mobile development, how-to guides, user interface design
+tags:
+  - Front-End
+  - Mobile app
+  - UI
+  - Web
 audience:
   - Front-end developer
   - Developer

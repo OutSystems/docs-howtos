@@ -1,6 +1,10 @@
 ---
 summary: Explore the management of development factories and databases in OutSystems 11 (O11), including applications, modules, and entity relationships.
-tags: entity-relationship models, lifecycle management, environments configuration
+tags:
+  - Architecture
+  - Data Model
+  - Entities
+  - Extensions
 locale: en-us
 guid: c7318d3e-0ee5-4bec-90d3-06e8aa1b2ea2
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -5,7 +5,14 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: integrations, web apps, mobile apps
+tags:
+  - .NET
+  - Active Directory
+  - Authentication
+  - LDAP
+  - Roles
+  - SOAP
+  - Web services
 audience:
   - Developer
   - Front-end developer

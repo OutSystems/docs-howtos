@@ -1,6 +1,11 @@
 ---
 summary: OutSystems 11 (O11) data migration between environments covers FK mapping, static entity identifier matching, BPT instance migration, and user alignment.
-tags: data migration, environment configuration, database management, best practices, platform version compatibility
+tags:
+  - Business Processes
+  - Data
+  - Entities
+  - Groups
+  - Triggers
 locale: en-us
 guid: b2640eac-2601-47a6-b7d1-c7ff08febe0e
 app_type: traditional web apps, mobile apps, reactive web apps

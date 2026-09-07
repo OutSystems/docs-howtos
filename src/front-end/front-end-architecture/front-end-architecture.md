@@ -1,6 +1,12 @@
 ---
 summary: Learn how to build and evolve front-end architecture using OutSystems 11 (O11) with practical examples and use cases.
-tags: front-end development, ui/ux design, outsystems best practices, app development process
+tags:
+  - Architecture
+  - Front-End
+  - OutSystems UI
+  - Style Guides
+  - Themes
+  - UI Patterns
 guid: e9051244-8de6-4d2f-8aa2-3b51afe8a83c
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
