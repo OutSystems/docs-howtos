@@ -24,9 +24,15 @@ The image below shows a push notification in an Android smartphone.
 
 ![Example of a push notification on an Android smartphone screen with the message 'Hello from OutSystems!'](images/One-Signal-0.png "Android Push Notification Example")
 
+<div class="warning" markdown="1">
+
+**Legacy V1 REST API Keys are being deprecated by OneSignal.** Starting **November 2, 2026**, only V2 App Tokens (`os_v2_app_...`) will work with the OneSignal REST API. The `Authorization: Basic <token>` header structure remains the same — only the token value changes. If you're an existing customer using a Legacy API Key, follow the [Migrating from V1 to V2 App Tokens](#migrating-from-v1-to-v2-app-tokens-o11-only) section below. For reference, see OneSignal's official [Keys & IDs documentation](https://documentation.onesignal.com/docs/keys-and-ids).
+
+</div>
+
 ## Configuring OneSignal
 
-You need to configure OneSignal for each of the mobile platforms it works on. Once your configuration is done, you have an Application ID and a REST API KEY from OneSignal.
+You need to configure OneSignal for each of the mobile platforms it works on. Once your configuration is done, you have an Application ID and a V2 App Token from OneSignal.
 
 You can configure OneSignal for iOS and Android.
 
@@ -149,9 +155,9 @@ To set the AppId value, use the **OneSignal App ID** value from the OneSignal co
 
 By default, the registration action is performed asynchronously. It sends the action to register the device in OneSignal service and continues the logic execution without waiting for the registration action response. To change this behavior, set AsyncRegister parameter to `false`. This blocks the code execution and waits until the device is registered in OneSignal service before proceeding.
 
-Save the **OneSignal App ID** and **REST API Key** values because you need them later.
+Save the **OneSignal App ID** and **V2 App Token** values because you need them later. To generate a V2 App Token, click **Add Key** in the OneSignal dashboard's **Settings → Keys & IDs** section — the value is shown only once, so copy it immediately.
 
-![OneSignal console showing the App Settings with fields for OneSignal App ID and REST API Key](images/One-Signal-4.png "OneSignal App Settings")
+![OneSignal Keys & IDs page showing the OneSignal App ID and the Add Key button used to generate a V2 App Token](images/One-Signal-4.png "OneSignal Keys & IDs")
 
 By default, notifications won’t be displayed when the application is already running in the foreground. To always display notifications, set property InFocusDisplayOptions to `Entities.InFocusDisplayOption.NOTIFICATION`.
 
@@ -181,7 +187,7 @@ Add the server-side logic to send the notification like in the image below:
 
 ![Flowchart in Service Studio depicting the logic to send a push notification using OneSignalAPI](images/One-Signal-8.png "Send Notification Logic Flow")
 
-To set the OneSignalRestAPIKey and OneSignalAppId values, use the values you saved earlier in this document.
+To set the OneSignalRestAPIKey and OneSignalAppId values, use the **V2 App Token** and **App ID** you saved earlier.
 
 By default, Android notifications are displayed using the bell icon. To replace this icon with the application icon, set the SmallIcon property to `"icon"` if you are generating your app using MABS 4 or below. Else, set the SmallIcon property to `"ic_launcher"`.
 
@@ -208,6 +214,31 @@ To send a notification with a simple message in English, do the following in the
     ![Service Studio interface showing the ListAppend action appending a Message to the MessageList](images/One-Signal-Flow-listappend-element.png "ListAppend Action in Send Notification Flow")
 
 1. **Send** the notification supplying the MessageList variable as the Message input parameter.
+
+## Migrating from V1 to V2 App Tokens (O11 only)
+
+OneSignal is deprecating V1 REST API Keys on **November 2, 2026**. Existing OutSystems apps that authenticate with a V1 Legacy API Key must migrate to a V2 App Token before that date.
+
+You have two migration paths:
+
+### Path A — Service Center override (no component upgrade)
+
+Use this path if you can't or don't want to upgrade the OneSignal component version.
+
+1. Generate a new V2 App Token in the OneSignal dashboard: **Settings → Keys & IDs → Add Key**. Copy the value immediately — it's shown only once.
+1. In OutSystems **Service Center**, open **Factory → Modules → OneSignalAPI → Integrations tab → Consumed REST APIs → Onesignal**.
+1. In the **Base URL** field, enter `https://api.onesignal.com` to override the default. Click **Apply**.
+1. In your application, replace the value passed to `OneSignalRestAPIKey` with the new V2 App Token.
+
+### Path B — Upgrade the component
+
+Use this path for the cleanest upgrade.
+
+1. Upgrade the **OneSignal Plugin** component from Forge to the latest version. The new default base URL is already `https://api.onesignal.com`.
+1. Generate a new V2 App Token in the OneSignal dashboard (same as Path A, step 1).
+1. In your application, replace the value passed to `OneSignalRestAPIKey` with the new V2 App Token.
+
+Both paths keep the `Authorization: Basic <token>` header format working — no code changes needed in your app.
 
 ## Remarks
 
