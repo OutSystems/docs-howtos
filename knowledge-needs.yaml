@@ -3108,7 +3108,7 @@ knowledge-needs:
       description: Wants to implement custom business-rule validation on a
         screen's Save action, using an If condition to check a field's value
         and an Assign to set the input's Valid property to False and its
-        ValidationMessage, in Service Studio for OutSystems 11, so that
+        ValidationMessage, so that
         invalid data (such as a past due date or a malformed phone number) is
         rejected before it's saved to the database.
     - name: Navigating between screens
