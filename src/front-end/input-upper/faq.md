@@ -16,6 +16,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - uppercase-input-text
 ---
 
 # How to change the case of input text

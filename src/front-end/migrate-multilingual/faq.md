@@ -21,6 +21,8 @@ outsystems-tools:
   - platform server
 coverage-type:
   - apply
+topic:
+  - migrate-multilingual
 ---
 
 # How to reuse translations from Multilingual Forge component in Service Studio

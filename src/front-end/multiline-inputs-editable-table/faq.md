@@ -18,6 +18,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - multiline-table-input
 ---
 
 # How to have multiline inputs in Editable Table

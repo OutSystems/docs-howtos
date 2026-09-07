@@ -14,6 +14,9 @@ outsystems-tools:
   - forge
 coverage-type:
   - apply
+topic:
+  - send-push-notifications
+  - set-up-push-notifications
 ---
 
 # How to use push notifications with OneSignal

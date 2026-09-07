@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - remove-add-record-editable-table
+  - remove-delete-record-editable-table
 ---
 
 # How to remove the Add or Delete features from an Editable Table

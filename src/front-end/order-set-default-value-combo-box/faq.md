@@ -20,6 +20,9 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - order-combo-box-list
+  - set-combo-box-default
 ---
 
 # How to order and set the default value in a combo box

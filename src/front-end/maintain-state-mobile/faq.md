@@ -17,6 +17,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - persist-screen-state
 ---
 
 # How to maintain the state of a mobile screen

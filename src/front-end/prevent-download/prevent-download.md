@@ -17,6 +17,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - prevent-content-copying
 ---
 
 # How do you prevent users from copying text or images?
