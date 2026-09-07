@@ -205,7 +205,7 @@ knowledge-needs:
         output data type instead when an issue occurs, so that they can predict
         function behavior when writing expressions in ODC Studio.
     - name: Built-in math functions
-      id: built-in-math-functions
+      id: built-in-math-functions-odc
       description: Wants to know which built-in math functions are available in ODC Studio,
         including their parameters, return types, and availability in server-
         side logic, client-side logic, and database aggregates, so that they can
@@ -222,13 +222,27 @@ knowledge-needs:
         Studio, including their outputs and availability in server-side logic,
         client-side logic, and database aggregates, so that they can retrieve
         session locale, user agent, and app name information in expressions.
+    - name: O11 math functions
+      id: built-in-math-functions-o11
+      description: Wants to know which built-in math functions are available
+        in OutSystems 11 (Traditional Web, Mobile, and Reactive apps),
+        including their parameters, return types, and availability in server-
+        side logic, client-side logic, database aggregates, and Local Storage,
+        so that they can perform mathematical calculations in expressions.
     - name: Built-in date functions
-      id: built-in-date-functions
+      id: built-in-date-functions-odc
       description: Wants to know which built-in DateTime functions are available
-        in ODC Studio (e.g. DiffMonths, DiffQuarters, DiffWeeks, DiffYears,
-        GetTicks, Quarter, IsLeapYear), including their parameters and return
-        types, so that they can perform date and time calculations in
-        expressions.
+        in ODC Studio (e.g. GetTicks), including their parameters and return
+        types, so that they can perform date and time calculations in expressions.
+    - name: O11 date functions
+      id: built-in-date-functions-o11
+      description: Wants to know which built-in date and time functions are
+        available in OutSystems 11 (Traditional Web, Mobile, and Reactive apps),
+        including date/time arithmetic (AddDays, AddMonths), extraction (Day,
+        Month, Year), and difference (DiffDays, DiffHours) functions,
+        including their parameters, return types, and availability in server-
+        side logic, client-side logic, database aggregates, and Local Storage,
+        so that they can perform date and time calculations in expressions.
     - name: DST date calculations
       id: dst-date-calculations
       description: Wants to understand how Daylight Saving Time (DST) transitions
@@ -277,6 +291,15 @@ knowledge-needs:
         parameters, return types, and availability in server-side and client-
         side logic, so that they can manage Personal Area URL paths and retrieve
         the current screen's or last exception's URL in expressions.
+    - name: O11 misc functions
+      id: o11-misc-functions
+      description: Wants to know which miscellaneous built-in functions are
+        available in OutSystems 11 (GeneratePassword, If, IsLoadingScreen,
+        CurrentThemeIsMobile), including their parameters, return types, and
+        availability in server-side logic, client-side logic, and database
+        aggregates, so that they can generate passwords, evaluate conditional
+        expressions, detect screen loading state, and check for a mobile
+        theme in expressions.
   - name: Debugging and troubleshooting logic
     id: debug-troubleshoot-logic
     subtopics:
@@ -301,6 +324,15 @@ knowledge-needs:
         values in Service Studio''s Assign Tool, by first assigning the record''s
         identifying attribute in the same Assign node, so they don''t have to
         manually enter each attribute value one by one.'
+    - name: Client Variables
+      id: client-variables
+      description: 'Wants to store and share client-side key-value data across
+        Mobile and Reactive Web apps using Client Variables, including how to
+        create one in Service Studio, use it to filter an Aggregate or bind it
+        to a widget, and understand when its value resets (on sign-out) or is
+        shared (same User Provider, same browser, via Public Blocks/Client
+        Actions), so that app context or configuration data persists
+        client-side without exposing sensitive information.'
   - name: Using Structures
     id: using-structures
     subtopics:
@@ -2350,6 +2382,13 @@ knowledge-needs:
         File action's required and optional properties in Service Studio for
         O11, so that recipients receive the supporting file directly within the
         email rather than through a separate channel.
+    - name: Concatenate emails
+      id: concatenate-email-addresses
+      description: Wants to combine multiple email addresses (or lists of email
+        addresses) into a single comma-separated list using the
+        EmailAddressesConcatenate built-in function, in Service Studio for O11,
+        so that they can pass a combined recipient list to the Send Email
+        element or activity.
   - name: BPT
     id: bpt
     subtopics:
@@ -2771,6 +2810,12 @@ knowledge-needs:
         including its identification, visibility, and lifecycle event handlers,
         in Service Studio, so that they can correctly configure a Block's
         behavior and lifecycle in a Traditional Web App (O11).
+    - name: Comment widget reference
+      id: comment-widget-reference
+      description: Wants to look up the properties of the Comment Widget in
+        Service Studio, including Text and Is Reminder, so that they can
+        correctly add a development-time screen annotation that appears as a
+        TrueChange reminder in a Traditional Web App (O11).
     - name: Adding a Widget or OS UI pattern
       id: add-widget-ui-pattern
     - name: UI elements (Blocks, widgets, OS UI patterns, accelerators)
@@ -2801,6 +2846,12 @@ knowledge-needs:
         Studio — including Position, StartsOpen, Trigger, and ExtendedClass — so
         that they can correctly configure tooltip appearance and behavior in a
         Reactive Web App or Mobile App.
+    - name: Check Box widget reference
+      id: check-box-widget-reference
+      description: Wants to look up the properties and runtime properties of the
+        Check Box widget in Service Studio, so that they can correctly configure a
+        boolean-backed check box field with validation in a Traditional Web App
+        (O11).
     - name: Icon Badge reference
       id: icon-badge-reference
       description: Wants to look up the properties of the Icon Badge UI Pattern
@@ -3116,6 +3167,13 @@ knowledge-needs:
         Studio for OutSystems 11, so that a line chart with a smooth spline
         line and custom markers displays correctly in traditional web apps,
         mobile apps, and reactive web apps.
+    - name: Combo Box widget reference
+      id: combo-box-widget-reference
+      description: Wants to look up the properties and runtime properties of the Combo Box
+        widget in Service Studio, including its data binding, display, and
+        behavior configuration options, so that they can correctly configure a
+        value-selection dropdown field bound to an Entity, Structure, or special
+        values list in a Traditional Web App (O11).
     - name: Order combo box list
       id: order-combo-box-list
       description: Wants to control the order of items displayed in a Combo Box
@@ -5297,6 +5355,15 @@ knowledge-needs:
         variable references, or malformed merge/inject content in the build
         action configuration file, so that the mobile app build completes
         successfully.
+    - name: Fix empty file error
+      id: fix-empty-extensibility-file-error
+      description: 'Wants to resolve the "Binary file for <resource-type>
+        ''<resource-name>'' cannot be null or empty" error that blocks
+        updating a mandatory extensibility setting or defining a mandatory
+        mobile configuration during new package creation, caused by
+        uploading a file with no contents or only zero bytes, by replacing
+        it with a file that contains data, so that the extensibility
+        setting update or package creation can proceed.'
     - name: Missing resource error
       id: missing-resource-error
       description: 'Wants to resolve the OS-MABS-CNF-40012 "resource {0} declared
@@ -7028,6 +7095,42 @@ knowledge-needs:
         stack, including how minimum and maximum connections behave under
         concurrent load, in OutSystems 11, so that they can plan capacity and
         avoid connection-pool exhaustion or timeouts.
+  - name: Database and farm server migration
+    id: database-farm-server-migration
+    subtopics:
+    - name: Reinstall on new path
+      id: reinstall-different-path
+      description: Wants to move an on-premises OutSystems 11 Platform Server
+        installation from one folder path to another, by uninstalling
+        RabbitMQ, Erlang, and Platform Server, cleaning up database and .NET
+        configuration entries and environment variables tied to the old
+        path, reinstalling on the new path, and restoring the private key
+        and server configuration files, so that the environment continues
+        to run correctly from the new location without losing its identity
+        or license.
+    - name: Restore database server
+      id: restore-database-server
+      description: Wants to restore the OutSystems 11 database to a new
+        database server in a self-managed .NET stack farm, by running the
+        Configuration Tool on each application server (starting with the
+        deployment controller, then each front-end) to update database
+        connection settings, then creating and applying an All Components
+        solution across all modules, so that all servers point to the new
+        database server without altering application data.
+  - name: LifeTime environment setup
+    id: lifetime-environment-setup
+    subtopics:
+    - name: Relocate LifeTime console
+      id: relocate-lifetime-console
+      description: Wants to relocate the infrastructure management console
+        (LifeTime) from a shared on-premises environment to a new dedicated
+        environment, by installing LifeTime in the new environment, manually
+        recreating Roles, Teams, Authentication Mode, and Service Account
+        configurations, registering the OutSystems environments, and then
+        disabling and deleting LifeTime's applications from the original
+        environment, so that LifeTime runs independently, accepting the
+        loss of LifeTime-specific data such as Performance Monitor history,
+        application tagging history, and the change log.
 - name: Log streaming (O11)
   guid: 7f3c2a1e-84d0-4b5f-a9c3-e1d06f82b347
   topics:
@@ -7552,6 +7655,13 @@ knowledge-needs:
         losing the fee, by understanding the free, paid, and not-allowed
         rescheduling windows based on how many days remain before the exam,
         so that they can reschedule at the right time.
+    - name: Exam payment receipt
+      id: exam-payment-receipt
+      description: Wants to get a receipt or invoice for their certification or
+        specialization exam payment, when Prometric (the exam vendor) doesn't
+        issue invoices, by requesting the payment receipt through the
+        Prometric confirmation portal, so that they have a document to
+        support the expense with their company or tax authority.
   - name: Support Portal
     id: support-portal
     subtopics:
@@ -7578,6 +7688,44 @@ knowledge-needs:
         (posting, contributing Forge assets, attending events, publishing
         content, and similar activities), so that they can understand
         which recognition badges they've earned or how to earn new ones.
+  - name: Customer Portal
+    id: customer-portal
+    subtopics:
+    - name: Customer Portal access levels
+      id: customer-portal-access-levels
+      description: Wants to understand the access and permission structure of OutSystems
+        Customer Portal, including the different member types and role tiers, so
+        that they can determine who has access to what within their team.
+    - name: Add Customer Portal member
+      id: add-customer-portal-member
+      description: Wants to add a new team member to OutSystems Customer
+        Portal for an O11 infrastructure, by inviting them via email,
+        assigning company and infrastructure permissions, and optionally
+        configuring their initial LifeTime developer account, so that the
+        new member gets appropriate access.
+    - name: Set Customer Portal security contact
+      id: set-customer-portal-security-contact
+      description: Wants to designate a security contact in OutSystems
+        Customer Portal, by assigning the Security role to a member with
+        Company admin or Infrastructure admin permissions, so that person
+        receives all security-related communications and notifications.
+  - name: Account Settings
+    id: account-settings
+    subtopics:
+    - name: Change community email
+      id: change-community-email
+      description: Wants to change their OutSystems community account email
+        through the Settings > Change email option on the community website
+        and confirm it via the verification email sent, so that the new
+        email also syncs as their Personal Environment login on next
+        sign-in.
+    - name: Merge community accounts
+      id: merge-community-accounts
+      description: Wants to merge two OutSystems community accounts into one, understanding
+        what information transfers automatically and what doesn't between the
+        two accounts, by designating which account to keep and which to delete,
+        so that they consolidate their community history without losing needed
+        data unexpectedly.
 - name: SEO
   guid: 54a1d9e5-0f3e-4a8b-b897-7c5c8838b0ff
   topics:
