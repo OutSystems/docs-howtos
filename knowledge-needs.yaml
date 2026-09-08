@@ -8723,6 +8723,35 @@ knowledge-needs:
         error when testing the streaming connection in O11 or ODC — so that they
         can restore log and observability data streaming by verifying the destination
         server is reachable and correcting the server URL.
+    - name: Fix streaming data loss
+      id: fix-streaming-data-loss
+      description: Wants to understand and resolve the OS-DP-STREAM-00015 "data
+        loss" error — where the destination server responds with a gRPC 15 (Data
+        loss) error when testing the streaming connection in O11 or ODC — so that
+        they can restore log and observability data streaming by verifying the
+        APM tool is working and re-establishing the connection.
+    - name: Fix streaming redirect
+      id: fix-streaming-redirect
+      description: Wants to understand and resolve the OS-DP-STREAM-30101 "moved
+        permanently" error — where the destination server responds with HTTP 301
+        when testing the streaming connection in O11 or ODC — so that they can
+        restore log and observability data streaming by updating the endpoint
+        URL to the new destination location.
+    - name: Fix streaming auth error
+      id: fix-streaming-auth
+      description: Wants to understand and resolve the OS-DP-STREAM-40101 "authentication
+        error" — where the destination APM tool server rejects an authentication
+        attempt when streaming audit/observability data (ODC) or logs (O11) — so
+        that they can restore data streaming by correcting the authentication
+        credentials or endpoint URL in the ODC Portal or LifeTime Log Streaming
+        destination configuration.
+    - name: Fix streaming authz error
+      id: fix-streaming-authz
+      description: Wants to understand and resolve the OS-DP-STREAM-40301 authorization
+        error, where the APM tool server rejects an authorization attempt when
+        streaming audit/observability data in ODC or logs in O11, so that they
+        can restore data streaming by reviewing the APM server configuration and
+        verifying that the credentials have the correct permissions.
   - name: Fluent Bit configuration
     id: fluentbit-configuration
     subtopics:
