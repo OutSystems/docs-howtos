@@ -15,6 +15,8 @@ outsystems-tools:
   - service center
 coverage-type:
   - apply
+topic:
+  - epa-taskbox-admin
 ---
 
 # How to configure EPA taskbox preferences

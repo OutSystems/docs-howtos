@@ -13,6 +13,10 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - extract-guid-regex
+  - regex-search-replace
+  - validate-guid-regex
 ---
 
 # How to use regular expressions in OutSystems
