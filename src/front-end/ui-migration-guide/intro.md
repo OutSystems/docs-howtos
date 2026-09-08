@@ -5,7 +5,14 @@ guid: 9842b593-ee78-466b-9fdd-a8f6e21f44b1
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: ui migration, silk ui, outsystems 11, framework upgrade, manual migration process
+tags:
+  - Front-End
+  - OutSystems UI
+  - Themes
+  - Traditional Web
+  - UI
+  - UI Patterns
+  - Web
 audience:
   - Front-end developer
   - Developer

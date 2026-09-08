@@ -1,5 +1,10 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, ui components, static entities
+tags:
+  - CSS
+  - Entities
+  - OutSystems UI
+  - UI Patterns
+  - Widgets
 summary: Dropdown Search OutSystems UI pattern with country flags and dial-in codes, built using a static entity and optional Forge components.
 guid: ebed2507-61c6-49a4-bbe0-cdfecd253dbc
 locale: en-us

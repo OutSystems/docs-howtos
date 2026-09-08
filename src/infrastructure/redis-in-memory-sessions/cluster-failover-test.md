@@ -5,7 +5,9 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/o7Rkyuxm89D6KrjD7AOYCU/Infrastructure?node-id=1242:245
-tags: redis, cluster management, high availability, disaster recovery, failover mechanism
+tags:
+  - Infrastructure
+  - Testing
 audience:
   - Platform administrator
 outsystems-tools:

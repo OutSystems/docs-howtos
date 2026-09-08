@@ -1,6 +1,12 @@
 ---
 summary: OutSystems 11 (O11) supports Redis for in-memory session storage, enhancing performance and scalability for Traditional Web Apps.
-tags: session management, performance optimization, scalability, redis, in-memory databases
+tags:
+  - Caching
+  - Infrastructure
+  - Optimization
+  - Performance
+  - Platform Server
+  - Traditional Web
 guid: ea49f3ea-e4f3-4c50-859c-7503286785c6
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

@@ -5,7 +5,10 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: scaling, redis cluster, high availability, performance optimization, infrastructure management
+tags:
+  - Architecture
+  - Infrastructure
+  - Platform Server
 audience:
   - Platform administrator
   - Tech lead
