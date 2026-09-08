@@ -465,6 +465,15 @@ knowledge-needs:
         and the Independent Modules app''s Move action, so that a module built
         in one app can be reused in another without recreating it from
         scratch.'
+    - name: Module properties reference
+      id: module-properties-reference
+      description: Wants to look up the configuration properties available for
+        a Traditional Web App module in OutSystems 11 Service Studio, covering
+        general settings (DBMS, user provider, icon), Web settings (theme,
+        jQuery version, exception handler), validation and upgrade messages,
+        and advanced settings (cookies, multi-tenancy, rendering mode),
+        including default values, so they can correctly configure and
+        understand module behavior.
   - name: Multi-tenant architecture
     id: multi-tenant-architecture
     description: Wants to understand what multi-tenancy is and how OutSystems 11
@@ -489,6 +498,13 @@ knowledge-needs:
       id: replace-ui-sample-data
     - name: Bind data to a UI element
       id: bind-data-to-a-ui-element
+    - name: Header row widget behavior
+      id: header-row-widget-behavior
+      description: Wants to understand how the Header Row Widget automatically
+        integrates with a Table Records Widget, including how it auto-adds/removes
+        Cells to match each attribute and how to hide it via the Show Header
+        property, in Service Studio for OutSystems 11 Traditional Web Apps,
+        so they can correctly structure and configure table headers.
     - name: Table pagination setup
       id: table-pagination-setup
       description: Wants to add pagination and records-per-page control to a Table
@@ -1745,6 +1761,13 @@ knowledge-needs:
         token-signing keys separate from claim-encryption keys, so that keys
         can be rotated without breaking validation and the blast radius of a
         compromised key is minimized.
+    - name: Store signing keys
+      id: store-jwt-signing-keys
+      description: Wants to choose where to store JWT signing keys in O11
+        (secret site properties, configuration modules, an external identity
+        provider's JWK endpoint, or a Forge component) based on their
+        architecture and platform version, so that keys are stored and
+        retrieved securely.
     - name: Credential delegation
       id: credential-delegation
       description: Wants to enable Integrated Authentication credential delegation
@@ -3686,6 +3709,21 @@ knowledge-needs:
         rejected before it's saved to the database.
     - name: Navigating between screens
       id: navigate-screens
+    - name: Go To Destination
+      id: go-to-destination
+      description: Wants to look up the purpose and properties (Destination)
+        of the Go To Destination node in Service Studio, so that they can
+        navigate to a specific screen, in OutSystems 11 traditional web apps,
+        mobile apps, and reactive web apps.
+    - name: External Site reference
+      id: external-site-reference
+      description: Wants to look up the purpose and configurable properties
+        (Name, Description, URL, Is Frequent Destination) of the External
+        Site logic element in Service Studio, including how to supply the
+        URL dynamically via its required URL input parameter and why only
+        that input, not the base URL, should be encoded with EncodeURL(),
+        in OutSystems 11, so that they can navigate users to an external
+        site correctly and securely.
     - name: Resolve unused connector
       id: resolve-unused-connector
       description: 'Wants to resolve the "Connector from <screen> to <screen>
