@@ -5,7 +5,10 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: ide usage, reactive web apps, database migration, postgresql, outsystems 11
+tags:
+  - Deploy
+  - Extensions
+  - External Databases
 audience:
   - Developer
   - Platform administrator

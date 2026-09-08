@@ -5,7 +5,12 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/gKoXqtZTY2IJjyMWschrRB/Integrations?node-id=1243:0
-tags: workflow automation, application integration, api management, service orchestration, enterprise integration
+tags:
+  - Authentication
+  - Entities
+  - Forge
+  - Triggers
+  - Workflows
 audience:
   - Developer
   - Platform administrator
