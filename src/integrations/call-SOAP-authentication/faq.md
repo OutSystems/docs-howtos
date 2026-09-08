@@ -5,7 +5,10 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/gKoXqtZTY2IJjyMWschrRB/Integrations?node-id=147:325
-tags: soap, web services, authentication, wsdl, enhancedwebreferences
+tags:
+  - Authentication
+  - SOAP
+  - Web services
 audience:
   - Developer
   - Front-end developer

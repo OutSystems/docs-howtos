@@ -5,7 +5,10 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: ssl configuration, redis, security, infrastructure management, outsystems platform
+tags:
+  - Infrastructure
+  - Platform Server
+  - Security
 audience:
   - Platform administrator
   - Developer

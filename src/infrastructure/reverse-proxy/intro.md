@@ -1,6 +1,11 @@
 ---
 summary: Explore how to use OutSystems 11 (O11) in reverse proxy scenarios for enhanced security in corporate applications.
-tags: devops, infrastructure architecture, installation configuration, maintenance, security
+tags:
+  - .NET
+  - Architecture
+  - Infrastructure
+  - Java
+  - Security
 locale: en-us
 guid: 810e320f-8265-49f4-947c-e16bb853e77a
 app_type: traditional web apps, mobile apps, reactive web apps

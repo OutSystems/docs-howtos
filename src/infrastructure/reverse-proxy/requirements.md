@@ -5,7 +5,12 @@ guid: 53e2f2f3-9123-4721-964d-c36b41eb5dd1
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: reverse proxy, security, high availability, load balancing, ssl offloading
+tags:
+  - Caching
+  - Infrastructure
+  - Mobile app
+  - Platform Server
+  - Security
 audience:
   - Platform administrator
   - Developer

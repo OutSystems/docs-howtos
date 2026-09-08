@@ -5,7 +5,8 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: redis, cluster setup, ubuntu server configuration, server hardening, production environment
+tags:
+  - Infrastructure
 audience:
   - Platform administrator
 outsystems-tools:

@@ -5,7 +5,9 @@ guid: c96d06e4-6dc7-4269-bb4e-726267bc75e6
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: apache configuration, ssl configuration, proxy server setup, url rewriting, server management
+tags:
+  - Infrastructure
+  - Traditional Web
 audience:
   - Platform administrator
   - Tech lead
