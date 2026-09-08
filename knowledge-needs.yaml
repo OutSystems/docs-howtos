@@ -3879,6 +3879,12 @@ knowledge-needs:
       id: environments-stages
     - name: Deployment options
       id: deployment-options
+    - name: Deployment error concept
+      id: deployment-error-concept
+      description: Wants to understand what a deployment error is in OutSystems
+        11, an issue that must be fixed in Service Studio before a module can be
+        published to the server, so that they know why every reported error
+        needs resolving prior to deployment.
     - name: Portfolio deploy scope
       id: portfolio-deploy-scope
       description: Wants to understand how deployment, promotion, and undeployment
