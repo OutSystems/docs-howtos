@@ -1057,6 +1057,13 @@ knowledge-needs:
         test queries, the debugger's variable inspector, and the data type
         picker, so they can correctly interpret File data during
         development, testing, and debugging.
+    - name: Download content type behavior
+      id: download-content-type-behavior
+      description: Wants to understand that the browser decides whether to
+        open a downloaded file in-browser (e.g. PDF viewer) or save it to
+        disk based on the file's MIMEType, set at upload time and not
+        controlled by ODC, so they can predict download behavior for files
+        handled by the Download node.
     - name: File reference lifecycle
       id: file-reference-lifecycle
       description: Wants to understand how a File attribute's reference
@@ -1066,6 +1073,13 @@ knowledge-needs:
         while other committed records (including via cascade delete)
         still reference it, so they can predict when File content
         actually gets removed.
+    - name: Unsaved upload lifecycle
+      id: unsaved-upload-lifecycle
+      description: Wants to understand how ODC handles a file uploaded through the Upload
+        widget before it's saved to an entity attribute, including that aborted
+        or interrupted uploads are deleted immediately and unsaved uploads are
+        automatically deleted after a fixed retention window, so they can save
+        the file reference in time to prevent it being removed.
     - name: File storage operations
       id: file-storage-operations
       description: Wants to understand how File storage behaves
@@ -1728,6 +1742,14 @@ knowledge-needs:
         Integration/Workflow Builder has network access to the correct source
         and destination per OutSystems network requirements, so that they can
         sign in to Integration Builder or Workflow Builder.'
+    - name: Fix builder credentials
+      id: fix-builder-credentials
+      description: 'Wants to resolve the "It was not possible to sign into
+        <Integration/Workflow> Builder" error in OutSystems 11, caused by
+        invalid credentials or a blocked user, by verifying the username and
+        password, confirming with a LifeTime administrator that the username
+        exists, and asking a LifeTime administrator to unblock the username,
+        so that they can sign into Integration Builder or Workflow Builder.'
     - name: Fix IM unreachable
       id: fix-im-unreachable
       description: 'Wants to resolve the "Integration Manager couldn''t be
@@ -7008,6 +7030,21 @@ knowledge-needs:
         reviewing logs for details about the compilation state or
         associated errors and contacting OutSystems Support if none are
         found, so that the application build process can proceed.'
+    - name: Connection timeout error
+      id: connection-timeout-error
+      description: 'Wants to resolve the OS-MABS-CKT-10000 "It looks like the
+        connection timed out" error that blocks mobile app package
+        generation, by retrying the build and reviewing the Service Center
+        build logs, escalating to OutSystems Support if the problem
+        persists, so that the mobile app package generates successfully.'
+    - name: Fix missing icon error
+      id: fix-missing-icon-error
+      description: 'Wants to resolve the OS-MABS-CNF-40000 "There''s an icon
+        missing in your extensibility configurations" error that blocks
+        mobile app package generation, caused by a missing icon density or
+        size in an extensibility configuration, by checking and fixing the
+        icon''s density/size in Service Studio (O11) or ODC Studio, so that
+        the mobile app package generates successfully.'
   - name: AppShield
     id: appshield
     subtopics:
