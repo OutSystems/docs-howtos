@@ -6873,6 +6873,14 @@ knowledge-needs:
         project, by checking the Service Center build logs to identify the
         plugin and configuring the required Swift Language Version setting,
         so that the iOS mobile app package generates successfully.'
+    - name: Fix plugin Swift version
+      id: fix-plugin-swift-version
+      description: 'Wants to resolve the OS-MABS-GEN-40014 error ("...Cordova
+        plugin {0} is not compatible with the ''Swift Language Version''
+        build setting...") that blocks iOS app generation, by checking the
+        build logs in Service Center to identify the incompatible custom
+        plugin and updating its configuration to match the defined Swift
+        Language Version, so that iOS app generation completes successfully.'
     - name: Metadata conflict error
       id: metadata-conflict-error
       description: 'Wants to resolve the OS-MABS-GEN-40008 "meta-data {0} is
@@ -6887,6 +6895,13 @@ knowledge-needs:
         correctly configured" error, by reviewing and correcting the Google
         Services plugin configuration file setup, so that the Android mobile
         app package generates successfully.'
+    - name: Non-Cordova module load error
+      id: non-cordova-module-load-error
+      description: 'Wants to resolve the OS-MABS-GEN-40013 "Using
+        requireCordovaModule to load a non-cordova module is not supported"
+        error, by checking the Service Center build logs to identify the
+        custom plugin using requireCordovaModule and replacing it with
+        require, so that the mobile app package generates successfully.'
     - name: Cordova build failure
       id: cordova-build-failure-error
       description: 'Wants to resolve the OS-MABS-GEN-50000 "Couldn''t generate
