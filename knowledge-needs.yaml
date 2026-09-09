@@ -5795,6 +5795,12 @@ knowledge-needs:
         a prebuilt connector in ODC Portal, providing authentication and
         importing selected tools as server actions, so that the tools
         become available for use in apps and agents.
+    - name: Set up MCP connection
+      id: set-up-mcp-connection
+      description: Wants to configure a connection to a custom MCP server in ODC Portal by
+        selecting the matching transport type, choosing an authentication
+        method, and providing the required credentials, then testing the
+        connection, so that the server's tools become available for import.
     - name: Use connector tools in agent
       id: use-connector-tools-in-agent
       description: Wants to add imported prebuilt-connector tools as
@@ -5803,6 +5809,28 @@ knowledge-needs:
         common errors (invalid key, empty results, rate limit), so that
         external service functionality can be used within apps and agentic
         flows.
+    - name: MCP unavailable patterns
+      id: mcp-unavailable-patterns
+      description: Wants to identify which JSON schema input patterns
+        (multi-type anyOf/oneOf/allOf, mixed-type arrays, arrays without an
+        items schema, arrays of arrays, external $refs, or objects without
+        typed properties) make an entire MCP server action unavailable
+        when ODC imports it, so they can diagnose why a tool didn't
+        import.
+    - name: MCP omitted fields
+      id: mcp-omitted-fields
+      description: Wants to understand which input schema patterns
+        (recursive $ref, or $dynamicRef/$recursiveRef) cause ODC to omit a
+        specific parameter or field, rather than block the entire action,
+        when importing an MCP server action, so they can predict what will
+        be missing from the action's signature.
+    - name: Fix unsupported MCP tool
+      id: fix-unsupported-mcp-tool
+      description: Wants to make an unavailable MCP action importable into
+        ODC by either simplifying the original tool's data structures on
+        the external MCP server or creating a wrapper tool with a
+        simplified input set, so the action becomes usable in an ODC app
+        or agent.
   - name: Semantic Search
     id: semantic-search
     subtopics:
