@@ -8494,6 +8494,23 @@ knowledge-needs:
         configured external identity provider's login page.
     - name: External IDPs
       id: external-idps
+    - name: Replace external IdP
+      id: replace-external-idp
+      description: Wants to replace an external IdP in ODC without disrupting
+        authentication, by configuring and assigning the new provider,
+        updating apps with custom login logic (settings or the
+        IdentityProvider property) to reference it, verifying successful
+        authentication, and then unassigning the old provider, so that user
+        profile associations are preserved and login continuity isn't
+        interrupted, including when only the issuer changes.
+    - name: Remove built-in IdP
+      id: remove-built-in-idp
+      description: Wants to remove the built-in identity provider assignment
+        for an organization or app stage in ODC Portal (Management > Govern
+        > Identity providers > Built-in provider > Unassign), by clearing
+        the scope checkboxes to unassign, so that end users authenticate
+        only via the assigned external IdP(s), understanding this action
+        can cause lockout if the external IdP isn't working correctly.
     - name: Assign external IdP
       id: assign-external-idp
       description: Wants to assign an existing external identity provider to their
