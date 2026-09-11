@@ -3679,6 +3679,31 @@ knowledge-needs:
         (or contacting OutSystems Support if the problem persists), in
         OutSystems 11, so that they can continue working in Workflow
         Builder.'
+    - name: WFB invalid access error
+      id: wfb-invalid-access-error
+      description: 'Wants to resolve the "Invalid access.
+        <OriginalErrorMessage>." error that occurs when a user lacks
+        permission to perform an operation in Workflow Builder, by
+        verifying their permission for the operation or logging out and
+        back in (or contacting OutSystems Support if the problem
+        persists), in OutSystems 11, so that they can continue working
+        in Workflow Builder.'
+    - name: WFB general error
+      id: wfb-general-error
+      description: 'Wants to resolve the "General error.
+        <OriginalErrorMessage>." error that occurs when an operation
+        causes an error in Workflow Builder, by examining the original
+        error message and creating a case with OutSystems Support if
+        the problem persists, in OutSystems 11, so that they can
+        continue working in Workflow Builder.'
+    - name: WFB invalid application data error
+      id: wfb-invalid-application-data-error
+      description: 'Wants to resolve the "Invalid application data.
+        <OriginalErrorMessage>." error that occurs when trying to update
+        an application with inconsistent data in Workflow Builder, by
+        logging out and back in (or creating a case with OutSystems
+        Support if the problem persists), in OutSystems 11, so that
+        they can successfully save the application.'
 - name: Component testing
   guid: 7e2fb431-16fd-487e-8c9b-77fe350b092b
   topics:
@@ -5733,6 +5758,19 @@ knowledge-needs:
         project owner, following the appropriate process based on the
         project's classification, so that they can address issues with a
         project they use.
+    - name: Deactivate own Forge component
+      id: deactivate-forge-component
+      description: Wants to request removal of their own Forge component as
+        the project owner, by using Edit project details and Deactivate
+        Component in the Forge UI, or contacting the Community team by
+        email for urgent cases, so that the component is deactivated
+        pending Community team review.
+    - name: Report Forge content
+      id: report-forge-content
+      description: Wants to understand how to report a Forge component or
+        flag a component review/comment as inappropriate, notifying the
+        moderation team and component owner, in OutSystems 11, so that
+        content quality, security, and development issues get addressed.
   - name: Submitting assets to Forge
     id: submitting-assets-to-forge
     subtopics:
