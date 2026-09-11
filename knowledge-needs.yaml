@@ -7182,13 +7182,14 @@ knowledge-needs:
     subtopics:
     - name: Basic read-only sync
       id: basic-read-only-sync
-      description: Wants to implement the basic Read-Only Data synchronization
-        pattern for OutSystems 11 mobile apps, where the client-side action
-        calls the server to fetch all data, deletes the current local
-        storage, and recreates it with the fetched data on every
-        synchronization, so that they understand this simple but
-        data-heavy one-way (server-to-device) sync approach and when it's
-        suitable.
+      description: Wants to understand how the basic Read-Only Data
+        synchronization pattern works for mobile apps, including the OnSync
+        client action logic (call ServerDataSync, delete all local records,
+        and recreate them from the fetched data), the ServerDataSync server
+        action logic (fetch all records from the database), and the
+        underlying database entity and local storage entity data model, so
+        that they can implement one-way (server-to-device) sync for read-only
+        offline data.
     - name: Generate sync action
       id: generate-sync-action
       description: Wants to automatically generate the client and server
@@ -8072,6 +8073,14 @@ knowledge-needs:
         by retrying the mobile compilation and opening a support case with
         OutSystems Support if the problem persists, so that the native
         mobile build completes successfully.'
+    - name: Package listing error
+      id: package-listing-error
+      description: 'Wants to resolve the OS-MCO-50008 "An error occurred
+        while listing the versions of a package. If the problem persists,
+        open a support case." error, an unspecified internal error with no
+        more specific cause, by retrying the mobile compilation and opening
+        a support case with OutSystems Support if the problem persists, so
+        that the native mobile build completes successfully.'
     - name: Package fetch error
       id: package-fetch-error
       description: 'Wants to resolve the OS-MCO-50009 "An error occurred
@@ -8124,6 +8133,14 @@ knowledge-needs:
         persists, open a support case." error, by retrying the mobile
         compilation and escalating to OutSystems Support if the problem
         persists, so that the native mobile build completes successfully.'
+    - name: Object deserialize error
+      id: object-deserialize-error
+      description: 'Wants to resolve the OS-MCO-50005 "An error occurred
+        while attempting to deserialize an object from the object storage.
+        If the problem persists, open a support case." error, by retrying
+        the mobile compilation and escalating to OutSystems Support if the
+        problem persists, so that the native mobile build completes
+        successfully.'
     - name: Template package error
       id: template-package-error
       description: 'Wants to resolve the OS-MCO-50016 "The template NPM
