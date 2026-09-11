@@ -402,12 +402,13 @@ knowledge-needs:
         data access, so that public endpoints don't expose sensitive data or
         enable cross-site request forgery attacks.
     - name: Check user role in code
-      id: check-user-role-in-code-o11
-      description: Wants to verify whether the currently logged-in end-user has
-        a specific public role (local or consumed from another app) inside a
-        server action or service action, using the CheckEndUserRole built-in
-        function with a RoleId input, so that business logic can conditionally
-        allow or restrict behavior based on the user's role.
+      id: check-user-role-in-code
+      description: Wants to verify whether the currently logged-in end-user
+        has a specific public role (local or consumed from another app),
+        inside a server action or service action, using the
+        CheckEndUserRole built-in function with a RoleId input, so that
+        business logic can conditionally allow or restrict behavior based
+        on the user's role.
     - name: Check role of user
       id: check-role-of-user
       description: Wants to verify whether a given user (not necessarily the
@@ -6256,6 +6257,13 @@ knowledge-needs:
         production through Portal, or continue building it in ODC Studio, based
         on which capabilities require ODC Studio, so that they choose the right
         next step after the refine phase.
+    - name: Review MW blueprint
+      id: review-mentor-web-blueprint
+      description: Wants to review and edit the Mentor Web blueprint (entities,
+        roles, screens, and stateflows) through conversational prompts before
+        generation, including switching entities between local and referenced
+        and setting the app theme, so that AI misinterpretations are caught
+        and corrected before the app is generated.
   - name: Mentor Web prompts
     id: mentor-web-prompts
     subtopics:
