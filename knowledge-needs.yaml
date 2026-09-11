@@ -7136,6 +7136,15 @@ knowledge-needs:
         synchronization, so that they understand this simple but
         data-heavy one-way (server-to-device) sync approach and when it's
         suitable.
+    - name: Generate sync action
+      id: generate-sync-action
+      description: Wants to automatically generate the client and server
+        actions needed to implement the Read-Only Data synchronization
+        pattern for an entity, by right-clicking a local entity linked to a
+        database entity via foreign key in ODC Studio's Data tab and
+        choosing Create Action to Sync Data (Read-Only), so the
+        SyncLocal<Entity> and Sync<Entity> actions are scaffolded without
+        manual creation.
     - name: Complex mobile sync
       id: complex-mobile-sync
       description: Wants to optimize complex offline data synchronization in a mobile
@@ -8276,6 +8285,48 @@ knowledge-needs:
         screens, escalating to OutSystems Support if the problem persists,
         so that the mobile app compiles and the native mobile build
         succeeds.'
+    - name: Missing iOS usage description
+      id: missing-ios-usage-description-error
+      description: 'Wants to resolve the OS-MCO-40003 "Extensibility
+        Configurations are missing a usage description for iOS permission
+        <Permission>" error, caused by a library declaring an iOS permission
+        in its extensibility configurations without a usage description, by
+        adding the missing usage description in the mobile app''s
+        extensibility configurations, removing the unneeded permission
+        declaration from the library, or removing the library, so that the
+        mobile app compiles and the native mobile build succeeds.'
+    - name: Invalid schema error
+      id: invalid-schema-error
+      description: 'Wants to resolve the OS-MCO-40004 "Extensibility
+        Configurations of <AssetName> do not follow a supported schema:
+        <Detail>" error, caused by a mobile app''s or library''s
+        extensibility configurations not conforming to either the Universal
+        Extensibility or Cordova-based Extensibility JSON schema, by
+        reviewing the error''s detail and updating the configurations to
+        match the appropriate schema (Universal-only for Capacitor apps),
+        escalating to OutSystems Support if the problem persists, so that
+        the mobile app compiles and the native mobile build succeeds.'
+    - name: Plugin source mismatch
+      id: plugin-source-mismatch
+      description: 'Wants to resolve the "Extensibility Configurations of
+        <AssetName> include plugin sources, but none of them are compatible
+        with <MobileFramework>" error that causes a mobile app''s native
+        build to fail when a plugin only provides Capacitor sources for a
+        Cordova-based build, by switching the mobile framework to Capacitor,
+        removing the incompatible plugin, or providing a matching Cordova
+        source for it, so that the native mobile build succeeds.'
+    - name: Newer schema error
+      id: newer-schema-error
+      description: 'Wants to resolve the OS-MCO-40006 "Extensibility
+        Configurations of <AssetName> must use a newer schema when
+        targeting <MobileFramework>" error, caused by a Capacitor-targeted
+        mobile app or a library it depends on still using Cordova-based
+        Extensibility instead of Universal Extensibility, by updating the
+        affected asset and its dependent libraries to Universal
+        Extensibility, removing the incompatible library, or continuing to
+        use Cordova as the mobile framework until the migration to
+        Capacitor completes, so that the mobile app compiles and the
+        native mobile build succeeds.'
   - name: AppShield
     id: appshield
     subtopics:
