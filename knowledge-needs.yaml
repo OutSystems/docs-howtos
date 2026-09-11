@@ -3606,6 +3606,15 @@ knowledge-needs:
         operation or contacting OutSystems Support if the problem persists,
         in OutSystems 11, so that they can successfully publish the
         application.'
+    - name: WFB module error
+      id: wfb-module-error
+      description: 'Wants to resolve the "Module error. <OriginalErrorMessage>."
+        error that occurs when publishing an application in Workflow Builder
+        fails because the system can''t obtain external entity dependencies
+        from the user''s infrastructure, by verifying that the linked Entity
+        and Module are correct and that the logged-in Workflow Builder user
+        has download permission on those modules, in OutSystems 11, so that
+        they can successfully publish the application.'
     - name: WFB app templates
       id: wfb-app-templates
       description: Wants to choose a prebuilt app template that matches their business
@@ -3662,6 +3671,14 @@ knowledge-needs:
         logging out and back in (or contacting support if the problem
         persists), in OutSystems 11, so that they can successfully modify
         the workflow.'
+    - name: WFB application error
+      id: wfb-application-error
+      description: 'Wants to resolve the "Application error.
+        <OriginalErrorMessage>." error that occurs when an action over
+        an app fails in Workflow Builder, by logging out and back in
+        (or contacting OutSystems Support if the problem persists), in
+        OutSystems 11, so that they can continue working in Workflow
+        Builder.'
 - name: Component testing
   guid: 7e2fb431-16fd-487e-8c9b-77fe350b092b
   topics:
