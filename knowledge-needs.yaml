@@ -2383,6 +2383,13 @@ knowledge-needs:
         an External Site element that doesn't take a URL input, in
         OutSystems 11, so that malicious redirect URLs can't be injected via
         that parameter.
+    - name: Prevent open redirects
+      id: prevent-open-redirects
+      description: Wants to protect OutSystems apps from unvalidated redirect
+        and forwarder vulnerabilities that let attackers redirect users to a
+        malicious site via dynamic URL parameters, by avoiding dynamic URL
+        redirects to external sites or validating the input URL against an
+        allowlist, in OutSystems 11.
     - name: Fix SQL injection warning
       id: fix-sql-injection-warning
       description: Wants to resolve the Service Studio warning that a SQL
@@ -5438,6 +5445,12 @@ knowledge-needs:
         infrastructures, and how to request their infrastructure's IPP be
         changed, so that they know why cross-infrastructure deployment may be
         blocked and what to do about it.
+    - name: Use IPP portal
+      id: use-ipp-portal
+      description: Wants to deploy an OutSystems 11 application to an
+        infrastructure it doesn't belong to by using the IPP portal to
+        change the application's activation code, so that they can publish
+        it in infrastructures outside its original IPP protection.
     - name: Transfer PE apps
       id: transfer-pe-apps-enterprise
       description: Wants to transfer applications from an OutSystems 11
@@ -9718,6 +9731,46 @@ knowledge-needs:
         and what certifications or regulatory scope each one covers, so that
         they can identify the right offering for their organization's regulatory
         and certification requirements.
+    - name: FedRAMP control support
+      id: fedramp-control-support
+      description: Wants to understand how OutSystems FedRAMP and Knox Systems
+        hosting support specific FedRAMP Certification Class C control areas
+        (identification and authentication, access control, system and
+        communications protection, audit and accountability, contingency
+        planning, personnel security), so they can evaluate the platform for
+        their own FedRAMP compliance process.
+    - name: FedRAMP compliance artifacts
+      id: fedramp-compliance-artifacts
+      description: Wants to know which compliance artifacts (System Security
+        Plan, Security Assessment Report, Plan of Action and Milestones)
+        OutSystems and Knox Systems maintain for FedRAMP and how their agency
+        uses them, so they can reference the right documents when pursuing
+        an Agency-level ATO.
+    - name: FedRAMP hosting details
+      id: fedramp-hosting-details
+      description: Wants to understand where and how OutSystems FedRAMP is
+        hosted (Knox Systems on AWS in designated US regions, Certification
+        Class C/Moderate impact level) and its platform specifics (region,
+        domain, database engine, high availability, support), so that they
+        can evaluate whether the hosting model and platform configuration
+        meet their requirements before choosing OutSystems FedRAMP.
+    - name: FedRAMP VPC architecture
+      id: fedramp-vpc-architecture
+      description: Wants to understand the network architecture of
+        OutSystems FedRAMP, including the Knox Systems-managed VPC, Internet
+        Gateway, WAF, load balancer, public/private subnets across two
+        Availability Zones, and how the LifeTime, Development,
+        Non-Production, and Production environments connect to their
+        databases, so that they can assess the platform's infrastructure
+        design for their security review.
+    - name: FedRAMP ATO types
+      id: fedramp-ato-types
+      description: Wants to understand the difference between FedRAMP
+        certification (awarded to Knox Systems by the FedRAMP PMO after a
+        third-party audit) and Agency-level ATO (issued by each federal
+        agency after reviewing compliance documentation), so that they know
+        which ATO applies to OutSystems FedRAMP itself versus the
+        applications they build on it.
   - name: Mobile certificate protection
     id: mobile-certificate-protection
     subtopics:
@@ -10967,13 +11020,21 @@ knowledge-needs:
         settings) and restart the server, so that OutSystems 11 applications on
         Linux become accessible over HTTPS.
     - name: Install client-side cert
-      id: install-client-side-cert
+      id: install-client-side-cert-o11
       description: Wants to install a client-side certificate (in .PFX format
         with password, plus any required root certificates in .CER format) on
-        all front-ends of an OutSystems Cloud environment, by opening a
-        support case and specifying the target environments, so that
-        OutSystems support installs it and the platform can present it when
-        authenticating outbound webservice calls that require
+        self-managed O11 front-end servers, by installing it directly on the
+        front-ends, so that the platform can present it when authenticating
+        outbound webservice calls that require
+        client-certificate authentication.
+    - name: Install cloud client-side cert
+      id: install-client-side-cert-cloud
+      description: Wants to install a client-side certificate (in .PFX format
+        with password, plus any required root certificates in .CER format) on
+        O11 Cloud environment front-end servers, by opening a support case
+        with the certificate files and specifying the target environments, so
+        that OutSystems support installs it and the platform can present it
+        when authenticating outbound webservice calls that require
         client-certificate authentication.
     - name: Configure Cloud SSL domain
       id: configure-cloud-ssl-domain
