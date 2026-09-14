@@ -1,4 +1,4 @@
-# Development How-tos
+# Development
 - href: development/intro.md
 - topics:
     - href: development/create-lifetime-plugin/faq.md
@@ -17,7 +17,7 @@
     - href: development/build-multi-tenant-app/build-multi-tenant-app.md     
     - href: development/integrated-auth-webservices/integrated-auth-webservices.md         
 
-# Front-End How-tos
+# Front-End
 - href: front-end/intro.md
 - topics:
 # Migrating UI of the Silk Web applications to OutSystems UI Framework
