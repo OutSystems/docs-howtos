@@ -174,7 +174,7 @@ By default, notifications won’t be displayed when the application is already r
 
 If your application does not have a login, the device can be registered without a user.
 
-One place to do it can be the “On Application Ready” action.
+One place to do it can be the **On Application Ready** action.
 
 ![Service Studio interface showing the On Application Ready action in the MainFlow of a HomeScreen](images/on-application-ready-action-ss.png "On Application Ready Action")
 
