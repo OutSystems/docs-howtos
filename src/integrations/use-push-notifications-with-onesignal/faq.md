@@ -202,7 +202,7 @@ By default, Android notifications are displayed using the bell icon. To replace 
 
 ![Service Studio interface showing the configuration for the notification icon in the SendPushNotification server action](images/push-notification-icon-usr.png "Notification Icon Configuration")
 
-### Defining the notification message(s)
+### Defining the notification messages
 
 To define the text of the notifications to send, set the Message input parameter to a list of "Content" structures (the "Content" structure is defined in OneSignalAPI), containing each notification message and its respective language/locale.
 
