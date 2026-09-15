@@ -2325,10 +2325,8 @@ knowledge-needs:
         compromised key is minimized.
     - name: Store signing keys
       id: store-jwt-signing-keys
-      description: Wants to choose where to store JWT signing keys in O11
-        (secret site properties, configuration modules, an external identity
-        provider's JWK endpoint, or a Forge component) based on their
-        architecture and platform version, so that keys are stored and
+      description: Wants to choose where to store JWT signing keys based on
+        their architecture and platform version, so that keys are stored and
         retrieved securely.
     - name: Choose token flow
       id: choose-token-flow
@@ -2610,6 +2608,12 @@ knowledge-needs:
         activity, property, or message, and using one-click navigation to
         jump to the affected node and property, so that they can debug
         workflow errors efficiently.
+    - name: Manage workflow history
+      id: manage-workflow-history
+      description: Wants to view the full history of published workflow revisions, and
+        discard unpublished changes or restore the workflow to any previous
+        published revision, in ODC's Workflow editor, so that they can track and
+        recover prior states of a workflow.
   - name: Test a workflow
     id: test-workflow
     description: Wants to verify a workflow works as expected before deploying
