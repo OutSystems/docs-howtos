@@ -1066,6 +1066,14 @@ knowledge-needs:
         user, verified with Service Studio''s Debugger, in OutSystems 11, so
         that the Case Management Framework can successfully execute the
         action.'
+    - name: Fix missing access grant
+      id: fix-missing-access-grant
+      description: 'Wants to fix the "There''s no access control for that
+        <user/group>/<case/case definition> pairing." error by verifying the
+        user/group and case/case definition identifier values passed to the
+        Case Management Framework''s access-revoking or access-updating
+        action using Service Studio''s Debugger, in OutSystems 11, so that
+        the action targets an access control record that actually exists.'
 - name: Accessibility
   guid: d4c7eefa-c2fc-445e-81d4-270bbf3ad604
   topics:
@@ -3171,6 +3179,14 @@ knowledge-needs:
         parameter''s value using Service Studio''s Debugger before
         executing the action, in OutSystems 11''s Case Management
         Framework, so that the action executes successfully.'
+    - name: Fix tag case mismatch
+      id: fix-tag-case-mismatch
+      description: 'Wants to fix the "The selected Tag and Case belong to
+        different Case Definitions." error by verifying the Tag and Case
+        input values passed to CaseTag_Create belong to the same case
+        definition using Service Studio''s Debugger, in OutSystems 11''s
+        Case Management Framework, so that the action executes
+        successfully.'
     - name: Fix record not found
       id: fix-record-not-found
       description: 'Wants to fix the "<record> wasn''t found" error by
@@ -3178,6 +3194,45 @@ knowledge-needs:
         Debugger and confirming the referenced entity record exists,
         creating it if it doesn''t, in OutSystems 11, so that the Case
         Management Framework action executes successfully.'
+    - name: Fix duplicate ID error
+      id: fix-duplicate-id
+      description: 'Wants to fix the "<record> with the Id
+        "<input-parameter-value>" already exists." error by verifying the
+        input parameter''s value is correct using Service Studio''s
+        Debugger, and changing a create action to its update or
+        create-or-update counterpart if appropriate, in OutSystems 11''s
+        Case Management Framework, so that the action executes
+        successfully.'
+    - name: Fix duplicate tag
+      id: fix-duplicate-tag
+      description: 'Wants to fix the "This combination of Case and Tag already
+        exists." error by verifying the Tag input parameter passed to
+        CaseTag_Create doesn''t already correspond to a tag linked to the
+        case, using Service Studio''s Debugger, in OutSystems 11''s Case
+        Management Framework, so that the action executes successfully.'
+    - name: Fix working hours error
+      id: fix-working-hours-error
+      description: 'Wants to fix the "WorkingHourStart must be set to a time
+        before WorkingHourEnd." error by setting the WorkingHourStart input
+        parameter to a time earlier than the WorkingHourEnd input parameter
+        before calling Calendar_Create or Calendar_Update, verifying the
+        values with Service Studio''s Debugger, in OutSystems 11, so that
+        the Case Management Framework can successfully execute the action.'
+    - name: Fix negative minutes
+      id: fix-negative-minutes
+      description: 'Wants to fix the "The number of minutes must be greater
+        than or equal to zero." error by setting the Minutes input parameter
+        to a value equal to or greater than zero before calling
+        Calendar_GetEndDate, verifying the value with Service Studio''s
+        Debugger, in OutSystems 11, so that the Case Management Framework
+        can successfully execute the action.'
+    - name: Fix unsupported database
+      id: fix-unsupported-database
+      description: Wants to fix the "We're sorry, but this database isn't supported." error
+        by using a database platform that supports advanced queries for the
+        environment before executing an action that requires an advance query,
+        in OutSystems 11's Case Management Framework, so that the action
+        executes successfully.
 - name: App Configuration Management
   guid: 22a71e1c-da01-468c-9633-29c791104e7e
   topics:
@@ -11055,6 +11110,13 @@ knowledge-needs:
     subtopics:
     - name: Manage technical debt with AIMS
       id: manage-tech-debt
+    - name: Reclassify module
+      id: reclassify-module
+      description: Wants to change a module's classification (architecture
+        layer) in the OutSystems 11 Code Quality canvas, by selecting a new
+        layer in the module details area and confirming the override, so
+        that the app's classification and technical debt score are
+        recalculated to reflect the change.
     - name: Customize pattern impact
       id: customize-pattern-impact
       description: Wants to customize the impact level (weight) that a specific
@@ -11103,6 +11165,14 @@ knowledge-needs:
         data Code Quality collects, stores, and retains, and how to give or
         withdraw GDPR consent or request erasure, so that they can assess
         compliance before registering their infrastructure.
+    - name: Request unscheduled sync
+      id: request-unscheduled-sync
+      description: Wants to request an unscheduled data synchronization between the Code
+        Quality LifeTime probe and Code Quality SaaS in OutSystems 11, by
+        selecting Request Synchronization in the Code Quality LifeTime plugin's
+        Monitor page, understanding the daily limit on unscheduled requests per
+        scheduled sync, so that they get updated technical debt data sooner than
+        the default sync schedule.
 - name: Testing practice
   guid: 0e440c0c-7db6-41cd-a51c-0c00ccb15e72
   topics:
@@ -13831,6 +13901,15 @@ knowledge-needs:
       avoid reusing aggregate output directly as a server action/loop
       input (assigning it to a local variable instead), so that sessions
       stop exceeding the open cursor limit.'
+  - name: Fix registration mismatch
+    id: fix-registration-mismatch
+    description: 'Wants to fix the "Unable to register the Front-end Server"
+      error caused by a mismatched database connection string between a
+      front-end server and the Deployment Controller in a self-managed
+      OutSystems 11 farm environment, by comparing the case-sensitive
+      Configuration Tool database settings on both servers and correcting
+      them to match, so that the Deployment and Scheduler services start
+      successfully.'
   - name: AD auth login workaround
     id: ad-auth-login-workaround
     description: Wants to temporarily disable Active Directory (AD)
