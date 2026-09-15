@@ -6752,6 +6752,14 @@ knowledge-needs:
       description: Wants to list libraries programmatically by using the
         Portfolio API v2 REST endpoints, so they can discover available
         libraries before automating library administration.
+    - name: Migrate Portfolio API
+      id: migrate-portfolio-api-v1-v2
+      description: Wants to migrate an existing Portfolio API v1 integration to v2 in ODC
+        before v1 is sunset, by updating endpoint URL paths, replacing removed
+        or renamed Environment fields with their v2 equivalents, handling the
+        removed EnvironmentPurpose enum value, and accounting for deployment
+        URLs built from the default domain, so that their integration keeps
+        working after v1 is removed.
   - name: ODC public REST APIs
     id: odc-public-rest-apis
     subtopics:
@@ -11292,6 +11300,15 @@ knowledge-needs:
         O11 as an external identity provider in ODC, assigning it to an ODC
         stage, and configuring redirect URIs, so that end users authenticating
         with O11 built-in authentication get single sign-on access to ODC apps.
+    - name: O11-ODC interop limits
+      id: o11-odc-interop-limitations
+      description: Wants to know the limitations of O11-ODC user
+        interoperability before setting up SSO, including that the UsersIdP
+        component only supports O11 built-in authentication,
+        external-authentication interoperability is limited to protocols ODC
+        supports, and O11 and ODC apps can't be served from the same
+        subdomain, so they can plan realistic domain and authentication
+        architecture.
     - name: Configure auth settings
       id: configure-app-authentication-settings
       description: Wants to configure OutSystems 11 app authentication settings
