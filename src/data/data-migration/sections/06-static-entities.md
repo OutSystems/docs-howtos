@@ -1,6 +1,10 @@
 ---
 summary: Explore data migration considerations for Static Entities in OutSystems 11 (O11), focusing on platform management and environment-specific IDs.
-tags: static entities, data id management, database operations, application data migration
+tags:
+  - Data
+  - Data Model
+  - Entities
+  - SQL
 locale: en-us
 guid: 23483ef2-7c45-48af-9a05-977eaadbc72f
 app_type: traditional web apps, mobile apps, reactive web apps
@@ -12,35 +16,56 @@ audience:
 outsystems-tools:
   - service studio
 coverage-type:
+  - understand
   - apply
+isautopublish: true
 ---
 
-# Static Entities
+# Static entities
 
-Migrating data from Static Entities requires some considerations. Firstly, it's important to understand how the OutSystems Platform manages Static Entity Records and how they relate with the corresponding Physical Table.
+Migrating data from Static Entities requires some considerations. It's important to understand how the OutSystems platform manages Static Entity Records and how they relate to the corresponding Physical Table.
 
-## Considerations
+## Static entity data migration considerations
 
-Take into account the following considerations:
+When migrating static entity data, account for these factors:
 
-* When a new Static Entity is published, the OutSystems Platform creates:
+* When a new Static Entity is published, the OutSystems platform creates:
     * Entity info for the new Static Entity (``OSSYS_ENTITY``)
     * Entity Attributes info (``OSSYS_ENTITY_ATTR``)
     * Entity Records (``OSSYS_ENTITY_RECORD``), with special attribute Data ID with the corresponding value of the Physical Application Table ID
     * The Physical applicational Table with the attribute values set for each record
-    * Static Entities are managed by the OutSystems Platform and can be consumed by other applications when exposed. This info should not be changed directly in the database.
+    * Static Entities are managed by the OutSystems platform and can be consumed by other applications when exposed. This info should not be changed directly in the database.
     * Since the Static Entity Records can have different Data IDs for each Environment (meaning different IDs on the Physical Table), this information should match between environments and taken into consideration when migrating applicational info using static entities foreign keys.
     * The Entity Record ``SS_Key`` is not unique. To be unique, it has to be combined with the related Espace ``SS_Key`` and that is the way to match and map the same Entity Record between two different environments
     * Check the flag ``Is_Active`` to include or exclude inactive - soft-deleted info
-    * Deleting records from the Static Entity sets the ``Is_Active`` flag, and will not delete the info from the Entity Record~
+    * Deleting records from the Static Entity sets the ``Is_Active`` flag, and will not delete the info from the Entity Record.
 
-## How the OutSystems Platform Manages Static Entities - Example
+## Static entity records
 
-This section shows an example of how the OutSystems Platform Manages Static Entities.
+This section describes the Entity Record table and its role in managing static entities.
 
-### Create Static Entity
+### Entity record table
 
-Create an Espace named ``CityManager`` and a Static Entity Named ``CitySize`` with two Integer Attribute: ``MinSize`` and ``MaxSize``. Add four Records ``Small``, ``Medium``, ``Big``, and ``Huge`` like in the following table:
+The following table stores static entity record information:
+
+| **Name** | **Physical Table Name** | **Description** |
+| --- | --- | --- |
+| Entity_Record | OSSYS_ENTITY_RECORD | Records for each static entity defined in Service Studio. Older records are kept as inactive |
+
+### Entity record table dependencies
+
+The Entity Record table has the following dependencies:
+
+* **Data source (Producer):** OSSYS_ESPACE
+* **Data consumers:** None
+
+## How the OutSystems platform manages static entities
+
+This section shows an example of how the OutSystems platform manages static entities.
+
+### Create static entity
+
+Create an Espace named ``CityManager`` and a Static Entity named ``CitySize`` with two integer attributes: ``MinSize`` and ``MaxSize``. Add four records: ``Small``, ``Medium``, ``Big``, and ``Huge``, as shown in the following table:
 
 |**Record Name**   |**Min Size**            |**Max Size**                  |
 |------------------|------------------------|------------------------------|
@@ -49,7 +74,7 @@ Create an Espace named ``CityManager`` and a Static Entity Named ``CitySize`` wi
 |Big               |100001                  |1000000                       |
 |Huge              |1000001                 |99999999                      |
 
-After publishing the Espace you can search for the created Entity info:
+After publishing the Espace you can search for the created Entity info by running the following query:
 
 ```
 SELECT 
@@ -63,6 +88,31 @@ WHERE OSSYS_ENTITY.NAME = 'CitySize'
     )
 ```
 
+This query returns the following Entity metadata:
+
+| Name | Data_Kind | Physical_Table_Name |
+| --- | --- | --- |
+| CitySize | staticEntity | OSUSR_5z9_CitySize |
+
+To view the entity records, run the following query:
+
+```
+SELECT
+    Id,
+    Data_Id,
+    Name,
+    SS_Key,
+    Entity_SS_Key,
+    Espace_Id,
+    Is_Active
+FROM OSSYS_ENTITY_RECORD
+WHERE ENTITY_SS_KEY = (
+    SELECT SS_KEY FROM OSSYS_ENTITY WHERE NAME = 'CitySize'
+)
+```
+
+This query returns the following entity record data:
+
 | Id | Data_Id | Name | SS_Key | Entity_SS_Key | Espace_Id | Is_Active |
 | --- | --- | --- | --- | --- | --- | --- |
 | 8567 | 1 | Huge | 6fac2fbc-ea92-46e3-9402-6332b7bf3f13 | b2257cc9-9454-40cd-845f-dc065e5e5551 | 679 | 1 |
@@ -70,7 +120,7 @@ WHERE OSSYS_ENTITY.NAME = 'CitySize'
 | 8569 | 3 | Small | b4e90a62-b31c-46ea-bd22-74103b86e600 | b2257cc9-9454-40cd-845f-dc065e5e5551 | 679 | 1 |
 | 8570 | 4 | Big | d4364e1a-51a3-43cd-9f5e-1706831b5796 | b2257cc9-9454-40cd-845f-dc065e5e5551 | 679 | 1 |
 
-And in the physical table we get the physical attributes info:
+To view the corresponding physical table data, run the following query:
 
 ```
 SELECT
@@ -84,6 +134,8 @@ FROM OSUSR_5Z9_CITYSIZE
 ORDER BY [ORDER]
 ```
 
+This query returns the following physical table data:
+
 | Id | Name | Order | Is_Active | MinSize | MaxSize |
 | --- | --- | --- | --- | --- | --- |
 | 3 | Small | 1 | 1 | 0 | 5000 |
@@ -91,7 +143,7 @@ ORDER BY [ORDER]
 | 4 | Big | 3 | 1 | 100001 | 1000000 |
 | 1 | Huge | 4 | 1 | 1000000 | 99999999 |
 
-### Remove Static Entity Records
+### Remove static entity records
 
 Remove the Small record from the CitySize Entity.
 
@@ -111,9 +163,33 @@ And then, in the physical table, the corresponding row is deleted.
 | 4 | Big | 3 | 1 | 100001 | 1000000 |
 | 1 | Huge | 4 | 1 | 1000000 | 99999999 |
 
-### Create Static Entity Record with the Same Name as Previous Deleted Record
+### Add a new static entity record
+
+Add a new record named ``Tiny`` with size parameters from 0 to 100.
+
+After publishing the Espace, the information on the Entity Record is:
+
+| Id | Data_Id | Name | SS_Key | Entity_SS_Key | Espace_Id | Is_Active |
+| --- | --- | --- | --- | --- | --- | --- |
+| 8569 | 3 | Small | b4e90a62-b31c-46ea-bd22-74103b86e600 | b2257cc9-9454-40cd-845f-dc065e5e5551 | 679 | 0 |
+| 8567 | 1 | Huge | 6fac2fbc-ea92-46e3-9402-6332b7bf3f13 | b2257cc9-9454-40cd-845f-dc065e5e5551 | 679 | 1 |
+| 8568 | 2 | Medium | a7123828-b174-4959-a1d3-04ea47d5d081 | b2257cc9-9454-40cd-845f-dc065e5e5551 | 679 | 1 |
+| 8570 | 4 | Big | d4364e1a-51a3-43cd-9f5e-1706831b5796 | b2257cc9-9454-40cd-845f-dc065e5e5551 | 679 | 1 |
+| 8588 | 5 | Tiny | 260e479c-5c4c-4fe7-986a-bdf116b8e4f4 | b2257cc9-9454-40cd-845f-dc065e5e5551 | 679 | 1 |
+
+A new record has been created with ``Data_Id`` 5. The physical table now has the new record:
+
+| Id | Name | Order | Is_Active | MinSize | MaxSize |
+| --- | --- | --- | --- | --- | --- |
+| 2 | Medium | 2 | 1 | 5001 | 100000 |
+| 4 | Big | 3 | 1 | 100001 | 1000000 |
+| 1 | Huge | 4 | 1 | 1000000 | 99999999 |
+| 5 | Tiny | 5 | 1 | 0 | 100 |
+
+### Create static entity record with the same name as a deleted record
 
 Create a record named ``Small``, which is the same name as the record that was deleted before. Its size parameters are from 101 to 5000.
+
 After publishing the Espace, the information on the Entity Record is:
 
 | Id | Data_Id | Name | SS_Key | Entity_SS_Key | Espace_Id | Is_Active |
@@ -125,8 +201,7 @@ After publishing the Espace, the information on the Entity Record is:
 | 8588 | 5 | Tiny | 260e479c-5c4c-4fe7-986a-bdf116b8e4f4 | b2257cc9-9454-40cd-845f-dc065e5e5551 | 679 | 1 |
 | 8589 | 6 | Small | 611d1096-61be-4fbb-9303-66a0c56eacf7 | b2257cc9-9454-40cd-845f-dc065e5e5551 | 679 | 1 |
 
-A new record has been created, and the previously deleted record has not been activated.
-The static entity physical table has a new record related with the new entity record:
+A new record has been created with a different ``SS_Key``, and the previously deleted record remains inactive. The physical table now has the new record:
 
 | Id | Name | Order | Is_Active | MinSize | MaxSize |
 | --- | --- | --- | --- | --- | --- |
@@ -135,23 +210,5 @@ The static entity physical table has a new record related with the new entity re
 | 1 | Huge | 4 | 1 | 1000000 | 99999999 |
 | 5 | Tiny | 5 | 1 | 0 | 100 |
 | 6 | Small | 6 | 1 | 101 | 5000 |
-
-## Static Entity Records
-
-This section shows an example of how the OutSystems Platform Manages Static Entity Records
-
-### Entity Record
-
-| **Name** | **Physical Table Name** | **Description** |
-| ------------------ | ------------------------ | ------------------------------ |
-| Entity_Record | OSSYS_ENTITY_RECORD | Records for each static entity defined in Service Studio. Older records are kept as inactive |
-
-|**Producers**    |
-|-----------------|
-|OSSYS_ESPACE     |
-
-|**Consumers**    |
-|-----------------|
-|-                |
 
 [Proceed to the next section](07-business-process-technology-bpt.md)
