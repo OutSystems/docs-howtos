@@ -4877,6 +4877,14 @@ knowledge-needs:
         if the dependency isn't added, in Service Studio, so that a master
         list and its corresponding item details display together in mobile
         apps and reactive web apps (O11).
+    - name: Use Stacked Cards pattern
+      id: use-stacked-cards-pattern
+      description: Wants to add the Stacked Cards UI Pattern to a screen, add the widget
+        via Toolbox or Search in other modules if the dependency isn't added,
+        populate the List and overlay placeholders, configure swipe actions for
+        the overlay directions, and configure the pattern's optional properties,
+        in Service Studio for OutSystems 11, so that users can swipe cards in
+        multiple directions in mobile apps and reactive web apps.
     - name: Use Action Sheet pattern
       id: use-action-sheet-pattern
       description: Wants to add the Action Sheet UI Pattern to a screen, add
@@ -5621,12 +5629,46 @@ knowledge-needs:
         its SVGCode and ExtendedClass properties, so that they can
         customize SVG fill and stroke properties and animate SVG paths,
         in mobile apps and reactive web apps.
+    - name: Use Range Slider
+      id: use-range-slider-pattern
+      description: Wants to add the Range Slider UI Pattern to a screen,
+        including adding the dependency when the widget does not appear in
+        the Toolbox, setting the MinValue, MaxValue, and StartingValue
+        properties, wiring the OnValueChange event to a local variable
+        through an Assign action, and configuring optional properties, so
+        that users can select a single value within a defined range in
+        mobile apps and reactive web apps.
+    - name: Range Slider properties
+      id: range-slider-properties
+      description: Wants to look up the Range Slider UI Pattern's properties and events in
+        Service Studio for OutSystems 11, so that they can correctly configure
+        the Range Slider in mobile apps and reactive web apps.
+    - name: Use Month Picker
+      id: use-month-picker
+      description: Wants to add the Month Picker UI Pattern to a screen, including adding
+        the dependency when the widget does not appear in the Toolbox,
+        creating local variables for the input and selected month, wiring the
+        OnSelected event, and configuring its properties in Service Studio for
+        OutSystems 11, so that users can select a month and year in mobile
+        apps and reactive web apps.
+    - name: Month Picker reference
+      id: month-picker-reference
+      description: Wants to look up the Month Picker UI Pattern's configurable properties
+        and events in Service Studio for OutSystems 11, so that they can
+        correctly configure month selection behavior and styling in mobile apps
+        and reactive web apps.
     - name: Use Date Picker Range
       id: use-date-picker-range
       description: Wants to add the Date Picker Range UI Pattern to a screen and configure
         its properties, in Service Studio for OutSystems 11, so that users can
         select a date range from a calendar, in mobile apps and reactive web
         apps.
+    - name: Use Search pattern
+      id: use-search-pattern
+      description: Wants to add the Search UI Pattern to a screen and configure
+        its input variable in Service Studio for OutSystems 11, so that users
+        can search for content by entering queries without knowing its
+        location, in mobile apps and reactive web apps.
     - name: Use Dropdown Search
       id: use-dropdown-search
       description: Wants to add the Dropdown Search UI Pattern to a screen and configure
