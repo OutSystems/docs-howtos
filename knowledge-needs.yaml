@@ -8860,6 +8860,16 @@ knowledge-needs:
         mobile app issues, using Apple Configurator 2, Xcode, iTools, or
         iOSLogInfo, so that they can send the log file to OutSystems
         Support for diagnosis.
+  - name: Mobile app testing practices
+    id: mobile-app-testing-practices
+    subtopics:
+    - name: Test on real devices
+      id: test-mobile-real-devices
+      description: Wants to validate a mobile app's native behavior across a
+        range of physical Android and iOS devices, by installing Debug
+        (Android) or Development (iOS) builds via QR code from ODC Portal,
+        so that they can catch manufacturer-specific rendering, permission,
+        and hardware issues that simulators and emulators cannot reproduce.
   - name: Local Storage
     id: local-storage
     subtopics:
@@ -14219,7 +14229,7 @@ knowledge-needs:
       Configuration page, so that performance issues can be detected before the app
       reaches Production.
   - name: Analytics data retention
-    id: analytics-data-retention
+    id: analytics-data-retention-o11
     description: Wants to understand and adjust how long LifeTime Analytics retains
       collected data by setting a retention period in the Factory Configuration
       application's Platform Configurations tab, and to archive data before
@@ -14343,6 +14353,17 @@ knowledge-needs:
       OS-IDE-CORE-50001 internal server error (a catch-all code for failures
       without a more specific cause), so they can retry the action or contact
       OutSystems Support with the trace ID if the problem persists.'
+  - name: Traces and spans
+    id: understand-traces-spans
+    description: Wants to understand what a trace and its spans represent in
+      ODC Portal, and how to review the Traces screen to identify which span
+      caused an error or performance issue in a server-side request, so they
+      can locate the root cause before resolving it.
+  - name: ODC observability retention window
+    id: odc-observability-data-retention
+    description: Wants to know how long logs, traces, and metrics remain
+      available in ODC Portal, so they can understand the default retention
+      window before it expires.
   - name: Agent cost and performance analytics
     id: agent-cost-performance-analytics
     subtopics:
