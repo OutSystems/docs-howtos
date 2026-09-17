@@ -18,6 +18,10 @@ outsystems-tools:
 coverage-type:
   - understand
   - apply
+topic:
+  - entity-record-table-reference
+  - static-entity-data-migration
+  - static-entity-record-example
 isautopublish: true
 ---
 
