@@ -4663,6 +4663,11 @@ knowledge-needs:
         and responsive design, in OutSystems 11, so they can determine which
         OutSystems UI Framework tool to use to enhance their app's user
         interface and user experience.
+    - name: Utility scope
+      id: utility-scope
+      description: Wants to understand that the Utilities section applies only to
+        Mobile Apps and Reactive Web Apps in OutSystems 11, so they know which
+        app types the utilities content covers.
   - name: Customize style
     id: customize-style
     subtopics:
@@ -6303,6 +6308,12 @@ knowledge-needs:
         apps and reactive web apps, so that pressing the device back button (for
         example, Android) triggers custom logic instead of navigating to the
         previous screen.
+    - name: System back navigation
+      id: system-back-navigation
+      description: Wants to route system back navigation through the native
+        shell so that Android back gestures and iOS back-swipes use WebView
+        history, exit the app at the navigation root, and keep screen-to-screen
+        navigation in app logic.
     - name: Intercept navigation events
       id: intercept-navigation-events
       description: Wants to intercept and conditionally cancel in-app navigation
@@ -7565,6 +7576,9 @@ knowledge-needs:
   - name: Submitting assets to Forge
     id: submitting-assets-to-forge
     subtopics:
+    - name: Document Forge asset
+      id: document-forge-asset
+      description: Wants to document a Forge asset before sharing it by outlining the introduction, best practices, and installation and setup guidance, so that readers know what the asset does and how to install and use it.
     - name: Submit asset to Forge
       id: submit-asset-to-forge
       description: Wants to submit a new software asset (app or library) built in their
@@ -9289,6 +9303,12 @@ knowledge-needs:
           registering devices, retrieving tokens, managing topic subscriptions,
           handling notification clicks and custom actions, and configuring notification
           behavior, so that the app responds correctly to incoming notifications.
+      - name: Cloud Messaging limitations
+        id: cloud-messaging-limitations
+        description: Wants to identify the known Firebase Cloud Messaging plugin limitations,
+          including silent notification constraints on iOS, topic name restrictions,
+          transitive dependency build failures, and Firebase Performance compatibility,
+          so they can avoid unsupported configurations.
     - name: Cloud Messaging APIs
       id: cloud-messaging-apis
       description: Wants to look up the deprecated Cloud Messaging Configurator REST
@@ -9578,6 +9598,31 @@ knowledge-needs:
         copying resources, and running build actions, using the library
         extensibility configurations JSON schema, so that Cordova and
         Capacitor plugins can be wrapped and configured for mobile apps.
+    - name: Capacitor system bars
+      id: capacitor-system-bars
+      description: Wants to configure system bar style and status bar background settings in
+        a Capacitor-based ODC mobile app, using systemBars.style and
+        StatusBarBackgroundColor, so that Android and iOS system bars display
+        with the intended icon contrast and background color.
+    - name: Cordova system bars
+      id: cordova-system-bars
+      description: Wants to configure edge-to-edge behavior and system bar appearance in a
+        Cordova-based ODC mobile app, using AndroidEdgeToEdge,
+        EdgeToEdgeGlyphTheme, NavigationBarBackgroundColor, and
+        StatusBarBackgroundColor, so that the app uses the right system bar
+        backgrounds and glyph colors on Android.
+    - name: Safe area insets
+      id: safe-area-insets
+      description: Wants to apply the safe-area-inset CSS variables, with env() fallbacks,
+        in a mobile app layout, so that content stays clear of the status bar,
+        navigation bar, and display cutouts when edge-to-edge is enabled.
+  - name: Migrate Cordova app to Capacitor
+    id: migrate-cordova-app-to-capacitor
+    description: Wants to migrate an existing Cordova mobile app to Capacitor
+      in ODC by updating its extensibility schema to the universal schema,
+      checking plugin compatibility, rebuilding with MABS 12, and moving ODC
+      Settings or Cordova hooks to supported Capacitor mechanisms, so that the
+      app keeps working on the Capacitor runtime.
   - name: OTA upgrade troubleshooting
     id: ota-upgrade-troubleshooting
     subtopics:
@@ -11091,6 +11136,12 @@ knowledge-needs:
         so that Android Chrome users without the app installed are
         redirected to the Google Play Store or another URL instead of the
         app.
+    - name: Deep link handling
+      id: deep-link-handling
+      description: Wants to handle incoming deep links and custom URL schemes
+        in ODC mobile apps by relying on the MABS-generated scheme and routing
+        the link in Capacitor or Cordova, so that browsers, apps, and
+        notifications open the right screen.
 - name: OutSystems data centers
   guid: 5d6b141d-82f8-4949-af54-6593592e0327
   topics:
@@ -11758,12 +11809,21 @@ knowledge-needs:
         Quality and install the code analysis and LifeTime probes, so that
         their apps' technical debt data starts being collected and appears in
         Code Quality.
+    - name: Connect performance analytics
+      id: connect-performance-analytics-code-quality
+      description: Wants to enable Code Quality to use runtime performance data from LifeTime Analytics by selecting the Runtime Performance probe environment, resuming monitoring for the app, republishing it, and waiting for synchronization, so that findings can show performance metrics.
     - name: Associate IT user
       id: associate-code-quality-user
       description: Wants to associate their IT user account with Code Quality
         after their infrastructure is already registered, using either an
         OutSystems account or an IT user account login flow through LifeTime,
         so that they can access Code Quality with their credentials.
+    - name: Understand metric differences
+      id: understand-code-quality-performance-differences
+      description: Wants to understand why runtime performance metrics differ between
+        LifeTime Analytics and Code Quality because of environment selection,
+        synchronization cadence, and the data window, so that they can interpret
+        the values correctly.
     - name: Fix Code Quality 401
       id: fix-code-quality-401
       description: Wants to resolve a 401 Unauthorized error encountered while
@@ -11771,6 +11831,9 @@ knowledge-needs:
         user with OutSystems 11 Code Quality, by identifying whether the cause
         is a wrong authentication mode, an incomplete IT user association, or
         invalid credentials, so that they can complete setup successfully.
+    - name: Troubleshoot missing performance data
+      id: troubleshoot-code-quality-performance-data
+      description: Wants to troubleshoot missing runtime performance data in Code Quality after enabling the feature by checking the version prerequisites, monitoring status, republish state, traffic, recent analytics data, and findings, so that performance metrics appear after synchronization.
     - name: IT user login errors
       id: fix-code-quality-login-error
       description: Wants to resolve an "It was not possible to sign into Code
@@ -14389,6 +14452,12 @@ knowledge-needs:
       calculated, based on the percentage of page loads rated poor, fair, or
       good against page load time thresholds, so they can interpret an
       application's performance rating shown as a percentage from 0% to 100%.
+  - name: LifeTime Analytics sampling
+    id: adjust-request-sampling
+    description: Wants to adjust the LifeTime Analytics request sampling rate for
+      Reactive and Mobile apps by changing the PerformanceMonitoringReactiveSampleRate
+      parameter in Factory Configuration and republishing the app, so that the
+      collection rate matches the app's traffic volume.
   - name: Custom alerts
     id: custom-alerts
     subtopics:
