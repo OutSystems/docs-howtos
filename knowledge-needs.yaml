@@ -3010,6 +3010,20 @@ knowledge-needs:
         notifications, including when continuing from a Decision outcome or
         after a conditional start event, in ODC's Workflow editor, so that the
         process completes without manual intervention when conditions are met.
+    - name: Add human activity
+      id: add-human-activity
+      description: Wants to add a Human activity to an ODC workflow in the
+        Workflow editor, configuring assignment, destination screen, display
+        message, close conditions, and timeout so the workflow can pause for
+        manual input and continue when the activity completes.
+    - name: Manual task notifications
+      id: manual-task-notifications
+      description: Wants to build custom notifications for pending human
+        activities so users know when a manual workflow task needs attention.
+    - name: Human activity SLA
+      id: human-activity-sla
+      description: Wants to configure an SLA for a human activity in an ODC
+        workflow so the task must complete within a defined timeframe.
     - name: Pause for manual review
       id: pause-for-manual-review
       description: Wants to pause a workflow with a Wait activity until a
@@ -9258,6 +9272,13 @@ knowledge-needs:
         and referencing that file in the app's extensibility configuration,
         so that Capacitor apps enforce certificate pinning without relying
         on Cordova extensibility settings.
+    - name: Choose plugin source
+      id: choose-plugin-source
+      description: Wants to choose the safest plugin source for an ODC
+        mobile app by checking OutSystems-supported plugins first, then
+        following the plugin decision flow and reviewing source,
+        maintenance activity, and security posture when no supported
+        plugin fits.
     - name: Integrate plugin in app
       id: integrate-plugin-in-app
       description: Wants to integrate a Capacitor plugin (official, community,
@@ -10060,6 +10081,13 @@ knowledge-needs:
       KeyStore Plugin, for small sensitive items like authentication tokens, and
       mandatorily re-validating all data server-side, so that mobile app data
       stays protected against device compromise and client-side tampering.
+  - name: Mobile app security
+    id: mobile-app-security
+    description: Wants to reduce a mobile app's attack surface by limiting
+      declared device permissions, configuring a restrictive CSP for the
+      WebView, and pinning server certificates when the app loads external
+      content or handles high-sensitivity data, so that the app resists common
+      platform and network attacks.
   - name: Extensibility configurations
     id: extensibility-configurations
     subtopics:
