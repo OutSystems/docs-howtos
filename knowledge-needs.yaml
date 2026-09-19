@@ -5228,6 +5228,20 @@ knowledge-needs:
           optional DeviceConfiguration and AccessibilityConfiguration properties,
           so that screens can display reusable off-canvas content in the built-in
           popup layout.
+      - name: Use layout side menu
+        id: use-layout-side-menu
+        description: Wants to locate and reuse the Layout Side Menu web block in a
+          Traditional Web App by customizing its placeholders and widgets and
+          adjusting its DeviceConfiguration, AccessibilityConfiguration, and
+          ExtendedClass properties, so that screens use the built-in side menu
+          layout.
+      - name: Use layout top menu
+        id: use-layout-top-menu
+        description: Wants to locate and reuse the Layout Top Menu web block in a
+          Traditional Web App by customizing its placeholders and widgets and
+          adjusting its DeviceConfiguration, AccessibilityConfiguration, and
+          ExtendedClass properties, so that screens use the built-in top menu
+          layout.
     - name: Add menu link
       id: add-menu-link
       description: Wants to add a screen to the application menu by dragging it into the
@@ -5980,6 +5994,23 @@ knowledge-needs:
           and links, and create a breadcrumb trail in Service Studio for
           O11, so that users can navigate through a mobile or reactive app
           with location context.
+      - name: Use web breadcrumbs
+        id: use-web-breadcrumbs
+        description: Wants to add the Breadcrumbs UI Pattern to a
+          Traditional Web App screen, add the OutSystemsUI dependency if
+          the widget does not display in the Toolbox, configure Breadcrumb
+          Item widgets with titles, icons, and links, and create a
+          breadcrumb trail in Service Studio, so that users can navigate
+          through the app with location context.
+      - name: Use web navigation bar
+        id: use-web-navigation-bar
+        description: Wants to add the Navigation Bar UI Pattern to a
+          Traditional Web App screen or web block, add the widget via the
+          Toolbox or Search in other modules if the dependency is missing,
+          add content to the Navigation Bar Item and Navigation Bar
+          SubItem placeholders, configure optional properties, and
+          publish the module so that users can navigate through main
+          sections and subsections.
     - name: Use Columns pattern
       id: use-columns-pattern
       description: Wants to add the Columns UI Pattern to a screen and configure
