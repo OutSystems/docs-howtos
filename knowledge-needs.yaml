@@ -3040,6 +3040,13 @@ knowledge-needs:
         Workflow editor, configuring assignment, destination screen, display
         message, close conditions, and timeout so the workflow can pause for
         manual input and continue when the activity completes.
+    - name: Human activity states
+      id: human-activity-states
+      description: Wants to understand the human activity statuses in an ODC
+        workflow and how HumanActivityOpen, HumanActivityAssign,
+        HumanActivityRelease, ProcessTerminate, and close events change the
+        node between Running, Waiting, Open, Completed, Terminated, and Error
+        states, so they can predict runtime transitions.
     - name: Manual task notifications
       id: manual-task-notifications
       description: Wants to build custom notifications for pending human
@@ -3071,6 +3078,11 @@ knowledge-needs:
         execution reaches the End node, including how conditional start
         flows must also reach the End node before the instance status changes
         to Done.
+    - name: Terminate workflow
+      id: terminate-workflow
+      description: Wants to understand how a Terminate node stops an ODC
+        workflow execution, including how ongoing automatic activities finish
+        before the instance status changes to Done.
     - name: Search workflow editor
       id: search-workflow-editor
       description: Wants to open the workflow editor's search menu using
@@ -9305,6 +9317,30 @@ knowledge-needs:
         structures (MediaResult, MediaMetadata) and static entities (MediaType), and
         error codes, so that they can implement camera and gallery functionality in
         an O11 mobile app using this legacy plugin version.
+    - name: Camera plugin migration
+      id: migrate-camera-plugin
+      description: Wants to migrate the Camera plugin from version 1 to version 2
+        by replacing deprecated client actions and blocks with TakePhoto and
+        ChooseFromGallery, updating renamed parameters and MediaResult output
+        handling, and adapting to the new OnError and error code behavior, so the
+        app keeps working after the upgrade.
+      subtopics:
+      - name: Migrate camera actions and blocks
+        id: migrate-camera-actions-blocks
+        description: Wants to replace deprecated Camera plugin actions and blocks
+          with TakePhoto and ChooseFromGallery, update renamed inputs and outputs,
+          and handle the gallery PWA limitations during migration, so the app uses
+          the version 2 API correctly.
+      - name: Handle TakePhoto migration errors
+        id: handle-takephoto-migration-errors
+        description: Wants to add the required OnError handler for the TakePhoto
+          block and update related error handling logic, so the migrated block
+          continues to fail safely.
+      - name: Update camera error codes
+        id: update-camera-error-codes
+        description: Wants to remap the Camera plugin error codes after version 2
+          renumbering, so existing error handling continues to route each failure
+          to the correct branch.
     - name: Control device keyboard
       id: control-device-keyboard
       description: Wants to show or hide the device's keyboard programmatically
