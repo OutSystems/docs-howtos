@@ -6108,6 +6108,9 @@ knowledge-needs:
         its input variable in Service Studio for OutSystems 11, so that users
         can search for content by entering queries without knowing its
         location, in mobile apps and reactive web apps.
+    - name: Use Search Balloon pattern
+      id: use-search-balloon-pattern
+      description: Wants to add the Search Balloon UI Pattern to a Traditional Web App, wire its search input and results list, configure the preparation action, filter condition, and refresh logic, so that matching records update as the user types.
     - name: Use Dropdown Search
       id: use-dropdown-search
       description: Wants to add the Dropdown Search UI Pattern to a screen and configure
