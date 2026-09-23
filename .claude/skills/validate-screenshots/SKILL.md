@@ -127,11 +127,19 @@ For each entry in the list:
 1. Use vision only for the rules the scripts don't cover: rule 2's
    suffix-vs-content mismatch (filename says `-ss` but the image shows
    ODC Studio), rule 3's _placement_ (whether a highlight is present and
-    on the right element — the color is scripted), rule 4 (numbered
-   callouts), rule 5 (arrows), rule 7 (cursor — skip if the screenshot
-   already has numbered callouts; they substitute for the cursor in
-   step-based flows), rule 8 (PII), rule 9
-   (internal environment URLs).
+    on the right element — the color is scripted; check
+   `visual-rules-screenshots.md` rule 3's "Native selection state" case
+   first — if the product's own selection highlight already marks the focal
+   element but no red rectangle was added, that's a ⚠️ with the quoted
+   verdict wording, not a ❌; only fail ❌ when there's neither a red
+   rectangle nor a native selection state), rule 4 (numbered callouts),
+   rule 5 (arrows), rule 7 (cursor — only flag a missing cursor for a drag
+   operation or hover-revealed content whose specific trigger element has no
+   highlight/selection/callout of its own; skip whenever a red highlight, a
+   native selection state, or a numbered callout already marks that exact
+   element — a highlight elsewhere in the same image on a different element
+   doesn't count, see `visual-rules-screenshots.md` rule 7), rule 8 (PII),
+   rule 9 (internal environment URLs).
 
    For `-ss`/`-odcs` files showing an entity or data-model layout (boxes
    connected by lines), check against `visual-rules-screenshots.md` rule 2's
