@@ -4397,6 +4397,18 @@ knowledge-needs:
         its role as a shared, cross-portfolio building block with an independent
         lifecycle, so that they can decide when to use a library in their app
         architecture.
+    - name: Theme inheritance
+      id: theme-inheritance
+      description: Wants to create a base theme in a library and let consumer themes
+        inherit common CSS, override base styles when needed, and reuse the same
+        visual foundation across apps, so that related apps share a consistent
+        look and feel.
+    - name: Share blocks across apps
+      id: share-blocks-across-apps
+      description: Wants to place business-agnostic blocks in a library, pass
+        business data through input parameters or service actions, and reuse the
+        block across multiple consumer apps, so that shared UI stays centralized
+        and the same block works in scenarios such as an app switcher menu.
     - name: Module types overview
       id: module-types-overview
       description: Wants to understand the different module types available in OutSystems
@@ -4414,6 +4426,12 @@ knowledge-needs:
       description: Wants to identify producer apps and consumer apps in ODC when
         apps share reusable elements across applications, so they can reuse
         features from one app in another and keep the app roles clear.
+    - name: Public entity sharing
+      id: public-entity-sharing
+      description: Wants to share reference data, stable business data, or plain
+        business data between apps via public entities when the data does not
+        need complex business-rule encapsulation, so that consumer apps can use
+        the entities directly and development effort stays low.
   - name: App naming and URLs
     id: app-naming-and-urls
     description: Wants to understand how ODC turns an app's display name into its internal
@@ -7917,6 +7935,12 @@ knowledge-needs:
         their element renders, in OutSystems 11 Mobile Apps and Reactive Web
         Apps, so that they can predict when JavaScript functions and objects
         become available at runtime.
+    - name: Override JS behavior
+      id: override-js-behavior
+      description: Wants to override default JavaScript behavior in an
+        OutSystems 11 app by adding a custom script in Service Studio and
+        loading it after the original script, so the replacement code runs
+        instead.
     - name: Add external JS file O11
       id: add-external-js-file-o11
       description: Wants to reference a JavaScript file hosted outside their
@@ -17537,6 +17561,11 @@ knowledge-needs:
         issue, and exporting the captured traffic, across Google Chrome,
         Firefox, Edge, and IE11, so they have the network trace needed to
         diagnose the problem in OutSystems 11.
+    - name: Browser console debugging
+      id: browser-console-debugging
+      description: Wants to inspect, test, and troubleshoot JavaScript code in
+        the browser console while debugging an OutSystems 11 app, so they can
+        validate behavior and diagnose issues directly in the browser.
     - name: Browser-first debugging
       id: browser-first-debugging
       description: Wants to troubleshoot a Mobile App faster by first trying
