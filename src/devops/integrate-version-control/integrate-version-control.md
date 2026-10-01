@@ -19,7 +19,8 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - external-version-control-ci
+  - external-version-control
+  - github-pipeline-upload
 ---
 
 # Integrate OutSystems with external version controls

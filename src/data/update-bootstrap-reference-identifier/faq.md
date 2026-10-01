@@ -21,7 +21,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - bootstrap-test-data-excel
+  - bootstrap-excel-id
 ---
 
 # How to update a Bootstrap Action to fetch an entity identifier from Excel

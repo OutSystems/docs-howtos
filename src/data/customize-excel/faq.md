@@ -19,7 +19,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - bootstrap-test-data-excel
+  - customize-excel-export
 ---
 
 # How to customize the export to Excel

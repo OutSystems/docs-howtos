@@ -18,7 +18,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - create-edit-entities
+  - delete-test-data
 ---
 
 # How to delete data from Entities

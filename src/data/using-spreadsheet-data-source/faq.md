@@ -18,7 +18,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - bootstrap-test-data-excel
+  - spreadsheet-data-source
 ---
 
 # How to Use a Spreadsheet as Your Data Source
