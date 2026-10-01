@@ -17,8 +17,6 @@ knowledge-needs:
       id: server-vs-client-logic
     - name: How to create an action
       id: how-to-create-an-action
-    - name: Logic Flows
-      id: logic-flows
     - name: What are client actions/when to use client actions
       id: client-actions-when-use
     - name: Calculate order total
@@ -161,6 +159,15 @@ knowledge-needs:
       description: Wants to consume a Cordova plugin's event-driven
         registration flow as a Promise so the client action can await
         completion instead of using callbacks.
+  - name: Logic Flows
+    id: logic-flows
+    subtopics:
+    - name: Simplify long flows
+      id: simplify-long-flows
+      description: Wants to simplify a client action with a long, undocumented
+        flow by breaking it into smaller reusable actions and adding comments
+        when the flow exceeds the platform node-count limits, so that the
+        logic stays maintainable.
   - name: Calculation and algorithm examples
     id: calculation-and-algorithm-examples
     subtopics:
@@ -420,6 +427,9 @@ knowledge-needs:
     subtopics:
     - name: How to debug and troubleshoot application logic
       id: debug-troubleshoot-app-logic
+    - name: Hard-coded statements
+      id: hard-coded-statements
+      description: Wants to identify and remove hard-coded True/False conditions when they make branches unreachable or dead code in ODC actions.
   - name: Creating Variables
     id: creating-variables
     subtopics:
@@ -491,6 +501,12 @@ knowledge-needs:
         fetch data via data fetch calls, using the On After Fetch event for dependent
         fetches, so that data fetching runs in parallel with screen rendering instead
         of being fully serialized.
+    - name: Screen lifecycle events
+      id: screen-lifecycle-events
+      description: Wants to understand the OutSystems screen lifecycle events and
+        their order, including On Initialize, On Ready, On Render, On Destroy,
+        and On After Fetch, so they know when each event runs while a screen
+        loads and re-renders.
     - name: Optimize mobile loading
       id: optimize-mobile-loading
       description: Wants to reduce a mobile screen's loading time when it depends
@@ -498,6 +514,12 @@ knowledge-needs:
         caching infrequently changing data locally, and fetching additional list
         items with infinite scroll, so that the screen renders faster and stays
         responsive.
+    - name: Multiple server calls in a client action
+      id: multiple-server-calls-client-action
+      description: Wants to reduce multiple server requests in a client action by
+        combining sequential Aggregates or Server Actions into a single Server
+        Action, so that the app avoids extra round trips, connection overhead,
+        and separate transactions.
     - name: StringBuilder for large strings
       id: stringbuilder-large-strings
       description: Wants to concatenate many strings, or a few large strings, into
@@ -1347,6 +1369,11 @@ knowledge-needs:
         including that they run automatically and asynchronously, stay within
         the screen scope where they are defined, and fetch data from the
         database, so they can identify false statements about them.
+    - name: Aggregate total display
+      id: aggregate-total-display
+      description: Wants to calculate a total from an aggregate after it fetches and
+        only show the chart and total when the aggregate has data, so the
+        screen avoids showing incomplete alarm information.
   - name: Sharing Data defined in OutSystems
     id: share-data-outsystems
     subtopics:
@@ -2130,6 +2157,18 @@ knowledge-needs:
         entities, INSERT, UPDATE, DELETE, and CALL statements commit
         immediately when running Test Query in ODC Studio, so they can
         avoid unintended data changes while validating a SQL node's logic.
+  - name: PostgreSQL upgrades
+    id: postgresql-upgrades
+    description: Wants to understand PostgreSQL major-version upgrades in ODC environments, including how to stage the rollout and review compatibility changes, so they can upgrade safely.
+    subtopics:
+    - name: Plan PostgreSQL upgrade
+      id: plan-postgresql-upgrade
+      description: Wants to plan a PostgreSQL major-version upgrade in an ODC environment, including staging the rollout early and testing in lower environments before moving to later stages, so they can reduce downtime and operational risk.
+    - name: Review PostgreSQL breaking changes
+      id: review-postgresql-breaking-changes
+      description: Wants to review PostgreSQL breaking changes after a version
+        upgrade, including changes that affect SQL query results and behavior,
+        so they can adjust SQL queries that depend on the previous results.
   - name: Compound data
     id: compound-data
   - name: Binary data actions
@@ -2238,6 +2277,43 @@ knowledge-needs:
         recommendations, so that they can identify the root cause of database
         performance problems such as CPU statistics, wait time statistics, and
         workload profile issues.
+    - name: Built-in DB optimizations
+      id: built-in-db-optimizations
+      description: Wants to understand the built-in database optimizations that
+        OutSystems applies automatically, so they can rely on the platform's
+        automatic performance behavior when it accesses the database.
+    - name: Maintain indexes for database queries
+      id: maintain-database-query-indexes
+      description: Wants to add indexes for frequently queried fields and
+        remove indexes that are no longer useful, so database queries remain
+        efficient without unnecessary index maintenance.
+    - name: Isolate large database fields
+      id: isolate-large-database-fields
+      description: Wants to isolate large text and binary fields from
+        frequently accessed data, so routine database queries transfer less
+        data.
+    - name: Avoid cross-server database joins
+      id: avoid-cross-server-database-joins
+      description: Wants to avoid joins across database servers when designing
+        data access, so database queries remain efficient.
+    - name: Cache repeatedly accessed database data
+      id: cache-repeatedly-accessed-database-data
+      description: Wants to use platform caching for data that is accessed
+        repeatedly, so the application makes fewer database calls.
+    - name: Follow database installation checklist
+      id: follow-database-installation-checklist
+      description: Wants to follow database-related recommendations in the
+        OutSystems installation checklist, so that database configuration
+        supports efficient query performance.
+    - name: Database sharding support
+      id: database-sharding-support
+      description: Wants to know whether OutSystems supports database sharding
+        when evaluating database scaling options for OutSystems applications.
+    - name: Read-only replica routing support
+      id: read-only-replica-routing-support
+      description: Wants to know whether OutSystems supports read-only replica
+        routing when evaluating database scaling options for OutSystems
+        applications.
   - name: Indexes
     id: indexes
     subtopics:
@@ -2295,6 +2371,9 @@ knowledge-needs:
       id: api-rate-limit
     - name: Customize headers
       id: customize-headers
+    - name: Add WS-Addressing
+      id: add-ws-addressing
+      description: Wants to add WS-Addressing elements to consumed SOAP requests in OutSystems 11 by creating an Integration Studio extension that changes the SOAP binding and calling it from the OnBeforeRequestAdvanced callback, so that the generated requests include the required WS-Addressing headers.
     - name: Choose log level
       id: choose-log-level
       description: Wants to choose the appropriate logging level for REST APIs and consumed
@@ -2318,6 +2397,15 @@ knowledge-needs:
         environment in Service Center and map the extension's logical database
         to it, so that applications using extension modules can read and write
         data from the correct external database after deployment.
+    - name: Grant publish access
+      id: grant-publish-access
+      description: Wants to let a developer publish an extension that uses a
+        database connection without changing its settings by assigning the
+        developer a default role with Change and Deploy Applications and
+        granting Publish on the connection in Service Center, with Full
+        Control required for the user who configures the extension to use the
+        connection, so they can publish the extension without needing to alter
+        connection settings.
     - name: Import external tables
       id: import-external-tables
       description: Wants to import entities from external tables or views in Integration Studio by selecting the database connection, selecting the tables and views, defining the logical database, reviewing the data types, and publishing the extension so that they create entities from external database data.
@@ -2504,6 +2592,18 @@ knowledge-needs:
         supported connector.
     - name: Integrate using custom code
       id: custom-code-integration
+    - name: Fix DataType mismatch
+      id: fix-datatype-mismatch
+      description: Wants to fix the OS-ELG-MODL-05017 error ("<ParameterName/StructureFieldName> has an incompatible DataType assigned and cannot be converted.") by changing the .NET type or DataType modifier so the field maps to a compatible OutSystems type before uploading the external library, so they can publish it successfully.
+    - name: Fix missing assembly
+      id: fix-missing-assembly
+      description: 'Wants to fix the OS-ELG-MODL-05023 error ("The assembly <AssemblyName> is required and could not be found in your file.") by including the required referenced assembly in the external library ZIP, removing `PrivateAssets` from NuGet references when needed, and publishing with `dotnet publish`, so they can publish the external library successfully.'
+    - name: Fix parameter defaults
+      id: fix-parameter-defaults
+      description: 'Wants to fix the OS-ELG-MODL-05026 error ("The default value specified for <ParameterName> is unsupported.") by removing or changing unsupported default values in C# external library method signatures before uploading the library, so they can publish it successfully.'
+    - name: Fix reference parameter
+      id: fix-reference-parameter
+      description: 'Wants to fix the OS-ELG-MODL-05016 error ("The parameter ''<ParamaterName>'' in action ''<ActionName>'' is passed by reference. Passing parameters by reference is not supported.") by changing ref or in parameters to pass by value and returning modified values if needed in their C# external library project, so they can successfully publish the external library.'
     - name: Extension life cycle
       id: extension-life-cycle
       description: Wants to create an extension in Integration Studio, define its actions, structures, entities, and resources, keep its source code synchronized, publish it, and then use it in a Service Studio module, so that they can follow the full extension life cycle from setup to consumption.
@@ -2579,6 +2679,9 @@ knowledge-needs:
     - name: Fix ZIP uncompress error
       id: fix-zip-uncompress-error
       description: 'Wants to fix the OS-ELG-MODL-05028 error ("The file <FileName> can not be uncompressed.") by removing unnecessary files from the external library ZIP package or contacting Support when the file is required, so they can upload and publish the external library successfully.'
+    - name: Fix ZIP root assembly
+      id: fix-zip-root-assembly
+      description: 'Wants to fix the OS-ELG-MODL-05027 error ("The assembly <AssemblyName>, which contains the interface decorated with the OSInterface attribute, is not located in the root directory of the zip file.") by placing the compiled assembly in the root of the external library ZIP instead of inside a parent folder, so they can upload and publish the external library successfully.'
     - name: Fix OSIgnore field error
       id: fix-osignore-field-error
       description: 'Wants to fix the OS-ELG-MODL-05012 error ("The property/field
@@ -2586,6 +2689,24 @@ knowledge-needs:
         of an OSIgnore-decorated struct property/field to public in their C#
         external library project, so that they can successfully publish the
         external library.'
+    - name: Fix OSStructure field
+      id: fix-osstructure-field
+      description: 'Wants to fix the OS-ELG-MODL-05011 error ("The property/field decorated by OSStructureField ''<ParameterName/StructureFieldName>'' in struct <StructureName> is not public.") by making the OSStructureField-decorated struct property or field public in their C# external library project, so they can successfully publish the external library.'
+    - name: Fix unsupported type
+      id: fix-unsupported-type
+      description: 'Wants to fix the OS-ELG-MODL-05015 error ("The struct decorated with OSStructure ''<StructureName>'' contains a public property/field that uses an unsupported parameter type ''<ParameterType>''.") by replacing the unsupported public property or field type with a supported .NET type, an OSStructure-decorated struct, or a list of those types before uploading the external library, so they can publish it successfully.'
+    - name: Fix empty OSStructure
+      id: fix-empty-osstructure
+      description: 'Wants to fix the OS-ELG-MODL-05013 error ("No public properties/fields found in the struct decorated with OSStructure ''<StructureName>''.") by adding at least one public property or field to the OSStructure-decorated struct in their C# external library project, so they can successfully publish the external library.'
+    - name: Fix duplicate OSStructure name
+      id: fix-duplicate-osstructure-name
+      description: 'Wants to fix the OS-ELG-MODL-05014 error ("More than one structure, ''<StructureName>'', was found with the name ''<Name>''.") by renaming each OSStructure-decorated struct so every structure name is unique before uploading the external library, so they can successfully publish it.'
+    - name: Non-public OSStructure
+      id: fix-nonpublic-osstructure
+      description: 'Wants to fix the OS-ELG-MODL-05010 error ("The struct decorated with OSStructure ''<StructName>'' is not public.") by making the OSStructure-decorated struct public in their C# external library project, so they can successfully publish the external library.'
+    - name: Fix missing OSStructure decoration
+      id: fix-missing-osstructure-decoration
+      description: 'Wants to fix the OS-ELG-MODL-05024 error ("The struct <StructName> used as <UsageName> is missing OSStructure decoration.") by adding the OSStructure decorator to every struct used as a parameter, return type, or public field/property in their C# external library project, so they can successfully publish the external library.'
     - name: Fix OSInterface duplicate
       id: fix-osinterface-duplicate
       description: 'Wants to fix the OS-ELG-MODL-05008 error ("The interface
@@ -2593,6 +2714,46 @@ knowledge-needs:
         ensuring only one class implements the OSInterface-decorated interface
         in their C# external library project, so that they can successfully
         publish the external library.'
+    - name: Fix duplicate object name
+      id: fix-duplicate-object-name
+      description: 'Wants to fix the OS-ELG-MODL-05025 error ("More than one
+        object with name <ObjectName> was found.") by renaming the conflicting
+        objects in their C# external library project so each object has a
+        unique name before uploading it, so they can successfully publish the
+        external library.'
+    - name: Fix missing OSInterface
+      id: fix-missing-osinterface
+      description: 'Wants to fix the OS-ELG-MODL-05002 error (''No OSInterface
+        found in your file. Make sure only one interface decorated with
+        OSInterface is defined.'') by adding a public interface decorated with
+        OSInterface to the C# project and repackaging a new ZIP for upload, so
+        they can publish the external library successfully.'
+    - name: Fix OSInterface attribute
+      id: fix-osinterface-attribute
+      description: 'Wants to fix the OS-ELG-MODL-05003 error ("More than one
+        OSInterface attribute found in your file: <InterfaceNames>. Make sure
+        only one interface decorated with OSInterface is defined.") by
+        removing the extra OSInterface attributes so only one interface in the
+        C# external library project has the OSInterface attribute, so they can
+        successfully publish the external library.'
+    - name: Fix non-public OSInterface
+      id: fix-nonpublic-osinterface
+      description: 'Wants to fix the OS-ELG-MODL-05004 error ("The interface decorated with OSInterface ''<InterfaceName>'' is not public.") by making the OSInterface-decorated interface public in their C# external library project, so they can successfully publish the external library.'
+    - name: Fix non-public OSInterface implementation
+      id: fix-nonpublic-osinterface-implementation
+      description: 'Wants to fix the OS-ELG-MODL-05018 error ("The class that implements the interface decorated with OSInterface ''<InterfaceName>'' must be public.") by making the class that implements the OSInterface-decorated interface public in their C# external library project, so they can successfully publish the external library.'
+    - name: Fix OSInterface ctor
+      id: fix-osinterface-ctor
+      description: 'Wants to fix the OS-ELG-MODL-05005 error ("The interface decorated with OSInterface ''<ClassName>'' is implemented by class ''<ClassName>'' which doesn''t have a public parameterless constructor.") by adding a public parameterless constructor to the class that implements the OSInterface-decorated interface in their C# external library project, so they can successfully publish the external library.'
+    - name: Fix missing OSInterface implementation
+      id: fix-missing-osinterface-implementation
+      description: 'Wants to fix the OS-ELG-MODL-05006 error ("No class implementing the interface decorated with OSInterface ''<InterfaceName>'' found in your file.") by adding a class that implements the OSInterface-decorated interface in their C# external library project, so they can successfully publish the external library.'
+    - name: Fix empty OSInterface
+      id: fix-empty-osinterface
+      description: 'Wants to fix the OS-ELG-MODL-05007 error ("No methods found in the interface decorated with OSInterface ''<InterfaceName>''.") by adding one or more methods to the OSInterface-decorated interface in their C# external library project, so they can successfully publish the external library.'
+    - name: Fix icon resource
+      id: fix-icon-resource
+      description: 'Wants to fix the OS-ELG-MODL-05009 error (''The resource name ''<FileName>'' provided for the element ''<ElementName>'' IconResourceName was not found.'') by setting the OSInterface IconResourceName to an embedded resource name that exists in their C# external library project, so they can publish the external library successfully.'
     - name: Fix name length error
       id: fix-name-length-error
       description: 'Wants to fix the OS-ELG-MODL-05019 error ("The name <Name> is
@@ -3660,6 +3821,11 @@ knowledge-needs:
         vulnerabilities, specifically identity theft or data exposure, so
         they can recognize the impact of broken authentication in OWASP
         web security.
+    - name: ODC cookie behavior
+      id: odc-cookie-behavior
+      description: Wants to explain how ODC apps use cookies to identify end-users,
+        enable automatic sign-in, and document the default cookies they create,
+        so they can communicate cookie purpose and consent requirements.
     - name: Software integrity risks
       id: software-integrity-risks
       description: Wants to identify scenarios that represent software and
@@ -4971,6 +5137,9 @@ knowledge-needs:
       id: document-apis
     - name: Develop the logic of web services
       id: webservice-logic-dev
+    - name: Expose SOAP web service
+      id: expose-soap-web-service
+      description: Wants to expose a SOAP web service in OutSystems 11 by creating the service, adding methods, setting the module namespace, and checking the generated WSDL endpoint and bindings, so that clients can call the published service.
     - name: Test SOAP with SoapUI
       id: test-soap-soapui
       description: 'Wants to test a SOAP web service method built in OutSystems by installing
@@ -5095,6 +5264,16 @@ knowledge-needs:
         output parameter in the error details, locating the related
         complexType and maxOccurs definition in the WSDL, and adding a dummy
         element so the module publishes successfully, in OutSystems 11.'
+    - name: Unsupported SOAP imports
+      id: unsupported-soap-imports
+      description: Wants to identify SOAP WSDL constructs and action names that
+        Service Studio cannot import, so they know when a service needs WSDL
+        changes before consumption.
+    - name: Edit exported WSDL
+      id: edit-exported-wsdl
+      description: Wants to export SOAP definition files from Service Studio,
+        edit them locally to remove or replace unsupported WSDL constructs, and
+        re-import them, so the service can be consumed successfully.
     - name: Changing endpoints
       id: changing-endpoints
     - name: Consume and refresh methods
@@ -5863,6 +6042,10 @@ knowledge-needs:
         avoiding inline styles and ID selectors, centralizing CSS in the
         theme, and using CSS variables, in Service Studio, so their app's
         styling stays maintainable and scalable.
+    - name: CSS hierarchy
+      id: css-hierarchy
+      description: Wants to understand the order OutSystems loads CSS from different
+        scopes, so they know which style wins when selectors conflict.
     - name: Promote style changes
       id: promote-style-changes
       description: Wants to promote visual Styles Editor changes to a reusable CSS
@@ -7423,6 +7606,20 @@ knowledge-needs:
         its DataPointList, SeriesName, and StackingType properties in Service
         Studio for ODC, so that a stacked area chart displays correctly in
         mobile apps and reactive web apps.
+    - name: Configure Bar Chart
+      id: configure-bar-chart
+      description: Wants to add the Bar Chart widget to a screen and configure
+        its DataPointList with fixed or variable data, set SeriesName, and
+        customize the ChartLegend add-on in Service Studio for OutSystems 11,
+        so that a bar chart with a customized legend displays correctly in
+        traditional web apps, mobile apps, and reactive web apps.
+    - name: Configure column chart
+      id: configure-column-chart
+      description: Wants to add the Column Chart widget to a screen and
+        configure its DataPointList, SeriesName, and ShowDataPointValues
+        properties in Service Studio for OutSystems 11, so that a column
+        chart with data labels displays correctly in traditional web apps,
+        mobile apps, and reactive web apps.
     - name: Configure radar chart
       id: configure-radar-chart
       description: Wants to add the Radar Chart widget to a screen and
@@ -7833,6 +8030,11 @@ knowledge-needs:
       description: Wants to split large screens in OutSystems 11, to reduce
         Viewstate size and network payload, so that Traditional Web, mobile,
         and Reactive Web apps respond quickly.
+    - name: Optimize image size
+      id: optimize-image-size
+      description: Wants to reduce image file size and resolution when large
+        images increase bandwidth usage and slow screen loads, app uploads,
+        or publishes, so that mobile and web apps stay responsive.
     - name: Minimize screen parameters
       id: minimize-screen-parameters
       description: Wants to minimize screen parameters in OutSystems 11, to
@@ -7883,6 +8085,12 @@ knowledge-needs:
         that can interfere with the framework's rendering lifecycle, in
         OutSystems 11, so that their JavaScript stays maintainable and
         doesn't conflict with Reactive Web and Mobile app rendering.
+    - name: Fix strict mode violation
+      id: fix-strict-mode-violation
+      description: Wants to resolve the OS-BLD-FE-40001 bundle error caused
+        by JavaScript nodes that violate Strict Mode, by identifying the
+        node named in the error message and correcting the unsupported
+        JavaScript syntax or behavior, so that the app publishes successfully.
     - name: Implement form validation
       id: implement-form-validation
       description: Wants to implement custom business-rule validation on a
@@ -8046,6 +8254,12 @@ knowledge-needs:
         them through the $public object, in ODC Studio, so that custom app
         behavior can be built in JavaScript for mobile apps and reactive web
         apps.
+    - name: Log messages with Logger
+      id: log-messages-with-logger
+      description: Wants to log informational messages or errors through the
+        Logger JavaScript API in ODC Portal, grouping entries by category and
+        buffering them locally when offline, so that they can trace app
+        behavior and send logs when connectivity returns.
     - name: Manipulate screen DOM
       id: manipulate-screen-dom
       description: Wants to apply custom CSS classes to the current screen's root DOM
@@ -8176,6 +8390,16 @@ knowledge-needs:
         the file's URL, in Service Studio for O11 Traditional Web Apps, so
         that the external script runs on that screen without hosting the
         file locally.
+    - name: Manage web screen scripts
+      id: manage-web-screen-scripts
+      description: Wants to create, update, list, activate, deactivate, and
+        delete scripts included in Traditional Web App web screens, so that
+        scripts can be managed throughout their lifecycle.
+    - name: Configure web screen script exclusions
+      id: configure-web-screen-script-exclusions
+      description: Wants to configure application and module exclusion rules
+        for web screen scripts through the IncludeJavascript_API extension,
+        so that scripts are included only where they are needed.
   - name: Securing UI
     id: securing-ui
     subtopics:
@@ -8191,6 +8415,11 @@ knowledge-needs:
         and the print screen key, in OutSystems 11 traditional web apps,
         mobile apps, and reactive web apps, so that page content is harder
         to copy, print, or screenshot.
+    - name: Context menu lifecycle
+      id: context-menu-lifecycle
+      description: Wants to disable a screen's right-click context menu on
+        OnReady and restore it on OnDestroy, so the restriction applies only
+        while the screen is open.
   - name: Basic front-end architecture
     id: basic-frontend-arch
     subtopics:
@@ -8203,6 +8432,12 @@ knowledge-needs:
         entities, aggregates, events, debugging tools, and security settings,
         so that they can orient themselves before building or reviewing a web
         app.
+    - name: ODC web apps
+      id: odc-web-apps
+      description: Wants to understand the key characteristics of ODC web apps,
+        including that they are cross-device single-page applications built
+        with React JS in ODC Studio and request data asynchronously, so that
+        they can identify correct statements about the ODC web app model.
   - name: Creating Screens
     id: creating-screens
     subtopics:
@@ -8563,6 +8798,38 @@ knowledge-needs:
       id: deploy-dependency-management
     - name: Deployment plan
       id: deployment-plan
+    - name: Understand environment filters
+      id: understand-environment-filters
+      description: Wants to understand what LifeTime environment filters are,
+        how they narrow the Applications list to a user-specific subset of
+        environments, and why smaller filters improve visibility and loading
+        performance, so that they can manage the right environments for a
+        given workflow.
+    - name: Create environment filters
+      id: create-environment-filters
+      description: Wants to create a LifeTime environment filter from the
+        Applications list screen by naming it and selecting environments, so
+        they can focus on the environments relevant to their work.
+    - name: Edit environment filters
+      id: edit-environment-filters
+      description: Wants to edit a LifeTime environment filter from the
+        Applications list screen by changing its name or selected environments,
+        so the filter remains useful as their needs change.
+    - name: Delete environment filters
+      id: delete-environment-filters
+      description: Wants to delete an obsolete LifeTime environment filter from
+        the Applications list screen, so it is no longer available as a view.
+    - name: Switch active environment filter
+      id: switch-active-environment-filter
+      description: Wants to switch the active LifeTime environment filter from
+        the Applications list screen or set a filter as the default view, so the
+        list shows the intended subset of environments.
+    - name: Configure filter screens
+      id: configure-filter-screens
+      description: Wants to enable or disable LifeTime environment filters
+        for the Application Details screen and the Create deployment plan
+        popup in LifeTime Settings, so that the same filter applies
+        consistently across related screens.
     - name: Deploy apps in LT/Portal
       id: deploy-apps-in-lt-portal
     - name: Deploy single module
@@ -9196,6 +9463,12 @@ knowledge-needs:
         uploading the ZIP file to the provided storage location, creating the
         generation operation with the download URL, and checking the operation
         status, so that the library can be published for ODC assets to consume.
+    - name: External library errors
+      id: external-library-errors
+      description: Wants to locate and resolve external library SDK errors by using
+        the error code to find the matching message, understand the cause and
+        impact, and follow the recommended action, so they can fix external
+        library issues.
     - name: Create asset via API
       id: create-asset-via-api
       description: Wants to create a new ODC asset through the Asset Repository API,
@@ -9284,6 +9557,30 @@ knowledge-needs:
       publishing it to the LifeTime environment via Service Center, so that they
       can extend LifeTime with functionality tailored to their organization's
       governance or automation needs.
+    subtopics:
+    - name: Plugin development setup
+      id: plugin-development-setup
+      description: Wants to set up a LifeTime plugin development environment by
+        using the application development environment, importing and refreshing
+        sample data from LifeTime, and keeping LifeTime-only APIs, dependency
+        boundaries, and feature toggles in mind, so that plugin work uses the
+        right environment and data.
+    - name: Plugin production deploy
+      id: plugin-production-deploy
+      description: Wants to deploy a LifeTime plugin to the LifeTime environment
+        by packaging it as an .oap or .osp from Service Center and configuring
+        deployment permissions there, so that the final production deploy
+        succeeds.
+    - name: Plugin QA environment decision
+      id: plugin-qa-planning
+      description: Wants to decide whether a LifeTime plugin should use a QA
+        environment, so they can plan an appropriate environment for testing
+        the plugin.
+    - name: Plugin QA environment setup
+      id: plugin-qa-environment-setup
+      description: Wants to install the LifeTime SDK and sample data in a QA
+        environment for a LifeTime plugin and keep the sample data refreshed
+        periodically, so that QA reflects the plugin lifecycle.
   - name: Customize authentication plugin
     id: customize-authentication-plugin
     description: Wants to customize or implement an authentication plugin
@@ -9419,6 +9716,26 @@ knowledge-needs:
       description: Wants to navigate the ODC Studio IDE as a newcomer by understanding what
         each major area of the interface is for, so they can move through the
         tool without getting blocked by layout or navigation friction.
+    - name: ODC Portal app lifecycle
+      id: odc-portal-app-lifecycle
+      description: Wants to publish an app in ODC Portal, so they can move it
+        through the right lifecycle stage for their release.
+    - name: External integrations
+      id: odc-external-integrations
+      description: Wants to configure external integrations for an ODC app, so
+        it can connect to external systems.
+    - name: Initial setup
+      id: odc-initial-setup
+      description: Wants to complete the initial setup for ODC, so they can
+        begin developing an app.
+    - name: Portal vs Studio
+      id: portal-vs-studio
+      description: Wants to distinguish ODC Studio from ODC Portal, so they know
+        Studio is the IDE and Portal is the web console for managing apps and users.
+    - name: Open apps in ODC Studio
+      id: open-apps-in-odc-studio
+      description: Wants to open an app in ODC Studio from ODC Portal, so they
+        can start editing it in ODC Studio.
     - name: Open OML files in ODC Studio
       id: open-oml-files-in-odc-studio
       description: Wants to open a local `.oml` file in ODC Studio, so they can
@@ -10239,6 +10556,11 @@ knowledge-needs:
         access it provides to sample apps, the playground, model and data source
         configurations, and components, so they can navigate the tool and find
         the right entry point for their task.
+    - name: Install and access Agent Builder
+      id: agent-builder-process
+      description: Wants to install the AI Agent Builder app and assign users the
+        required role, so they can access the builder and start configuring an
+        agent.
     - name: Create AI agent
       id: create-ai-agent
       description: Wants to create and configure an AI agent in AI Agent Builder
@@ -11808,6 +12130,11 @@ knowledge-needs:
         changes infrequently or the screen should not depend on a live network
         round trip, by storing frequently accessed data in local storage and
         denormalizing the local model to match the screen.
+    - name: Optimize local storage
+      id: optimize-local-storage
+      description: Wants to simplify a mobile app local storage model to reduce
+        unnecessary joins in client aggregates and improve performance when the
+        model is overnormalized or too complex.
   - name: Firebase plugin migration
     id: migrate-firebase-plugins
     description: Wants to migrate mobile app logic from unsupported Firebase-based
@@ -13628,6 +13955,12 @@ knowledge-needs:
         development-time disablement, and setting the optional protection
         preferences that match its security needs, so that the app binary
         resists reverse engineering, repackaging, and tampering.
+    - name: Protection features
+      id: appshield-protection-features
+      description: Wants to understand the AppShield protection features available for
+        Android, iOS, and both platforms, including what each feature blocks
+        and whether it is configurable, so that they can choose the right
+        protections for a mobile app.
     - name: Duplicate AppShield ref
       id: duplicate-appshield-reference
       description: 'Wants to resolve the OS-MABS-SHLD-40001 "The AppShield plugin
@@ -13653,6 +13986,11 @@ knowledge-needs:
         mobile app so the app opens a landing page in the default browser,
         keeps the URL free of query parameters, and uses the generated query
         parameters to explain why the app shut down.'
+    - name: Get application hash
+      id: get-application-hash
+      description: Wants to obtain the hash of an Android app package so they can allow
+        a specific screen reader or keyboard signer in AppShield, so that
+        trusted accessibility software can be added to the allowlist.
     - name: Outdated MABS version error
       id: outdated-mabs-version-error
       description: Wants to resolve the OS-MABS-SHLD-40004 "It looks like your MABS version
@@ -14484,6 +14822,14 @@ knowledge-needs:
         module, category, or status, and reviewing a code pattern's Impact
         and How to resolve information, so that they can understand why it
         counts as debt and how to fix it.
+    - name: Add missing descriptions
+      id: add-missing-descriptions
+      description: Wants to fix the missing-descriptions maintainability
+        finding by adding meaningful descriptions to a module, its public
+        elements, related entities, and input and output parameters, while
+        leaving optional entity and structure attribute descriptions unchanged,
+        so that the module passes the maintainability check and the finding is
+        resolved.
     - name: Ignore modules
       id: ignore-modules
       description: Wants to exclude specific modules from the OutSystems 11
@@ -14801,6 +15147,12 @@ knowledge-needs:
     - name: Page object model
       id: page-object-model
       description: Wants to structure automated web UI tests around reusable page objects, page widgets, interactions, assertions, and templates so the test framework stays maintainable as the UI changes.
+    - name: Selenium locators
+      id: selenium-locators
+      description: Wants to choose stable Selenium locators for OutSystems web elements by using CSS selectors, custom styles, and custom IDs instead of generated IDs.
+    - name: Selenium test practices
+      id: selenium-test-practices
+      description: Wants to make Selenium UI tests more reliable and readable by replacing pauses with waits, adding asserts, using variables, and documenting scripts, so the scripts stay maintainable.
 - name: User Management
   guid: 30a6f6ca-c898-4e05-b5d6-88a6789ca36c
   topics:
@@ -14836,6 +15188,14 @@ knowledge-needs:
         API, and instead continue to use username and password or LT login
         authentication plugins, in OutSystems 11, so that they can identify
         exceptions when planning an External IdP rollout.
+    - name: Troubleshoot IdP errors
+      id: troubleshoot-idp-errors
+      description: Wants to troubleshoot common external IdP OIDC
+        configuration and sign-in errors in OutSystems 11 when activating
+        the provider or logging in through the IdP, by checking LifeTime
+        settings, proxy configuration, client secret and client ID values,
+        redirect URIs, and IdP response codes, so that they can restore
+        external IdP sign-in.
     - name: Change authentication provider
       id: change-authentication-provider
       description: Wants to change an OutSystems 11 environment's
@@ -14953,6 +15313,24 @@ knowledge-needs:
         Users component, and redirecting back to the original URL, so that the
         app can use an external identity system while keeping the local
         session.'
+    - name: Auth plugin methods
+      id: auth-plugin-methods
+      description: Wants to implement the OSPlatformAuthentication SOAP methods
+        for configurations, capabilities, activation, deactivation, testing,
+        and user authentication, so that the platform can manage the
+        authentication plugin and authenticate users through it.
+    - name: Auth plugin structures
+      id: auth-plugin-structures
+      description: Wants to define the PluginAPIStatus, Capability, and
+        PluginAPIConfigurationParameter structures and supported capability
+        values for an authentication plugin, so that the plugin returns the
+        expected inputs and outputs.
+    - name: SOAP auth plugin
+      id: soap-auth-plugin
+      description: Wants to implement an external authentication plugin as the
+        OSPlatformAuthentication SOAP web service and assign it as the
+        platform authentication provider, so that OutSystems can call the
+        plugin when activating it and when authenticating IT users.
     - name: External IDPs
       id: external-idps
     - name: Replace external IdP
@@ -15754,6 +16132,12 @@ knowledge-needs:
       id: assign-team-role
       description: Wants to assign roles within a LifeTime team, so that they can
         control team members' access across the applications included in the team.
+    - name: Delegate team permissions
+      id: delegate-team-permissions
+      description: Wants to let a LifeTime team manager add users and assign roles
+        within an IT team by creating a role with Manage Teams and Application Roles
+        and giving that role to the manager, so that the infrastructure manager can
+        delegate team permission management without giving broader access.
     - name: Create a team
       id: create-a-team
       description: Wants to create a LifeTime team, so that they can organize
@@ -16099,6 +16483,12 @@ knowledge-needs:
         an O11 to ODC code conversion ends with errors — including reading conversion
         logs and exporting the troubleshooting zip file — so that they can diagnose
         the failure or provide the necessary data to OutSystems Support.
+    - name: Fix module open error
+      id: fix-module-open-error
+      description: Wants to recover an O11 module that the Conversion Assessment
+        Tool cannot open by fixing errors or outdated references in Service Studio,
+        republishing the module, or publishing an earlier version from Service
+        Center, so that the module can be assessed for ODC conversion.
     - name: Adapt converted SQL
       id: adapt-converted-sql
       description: Wants to validate and adapt SQL nodes in a converted ODC app to
@@ -16106,6 +16496,12 @@ knowledge-needs:
         queries, handling limitations (Expand Inline, external entities, BEGIN-END
         blocks), and testing all SQL nodes — so that the converted app's data queries
         work correctly in ODC.
+    - name: Fix scope errors
+      id: fix-scope-errors
+      description: Wants to fix errors caused by aggregates or SQL nodes being
+        referenced outside the scope where they were declared after converting
+        an O11 Service module to ODC, so that each node is used only in the same
+        scope where it runs.
     - name: SQL conversion mapping
       id: sql-conversion-mapping
       description: Wants to understand the exact syntax mappings applied automatically
@@ -16164,6 +16560,18 @@ knowledge-needs:
         architecture, either restricted from use inside aggregates or removed
         entirely, after O11 to ODC code conversion, so that they can rework the
         affected logic instead of applying a direct fix.
+    - name: Asset consuming an Application Theme
+      id: arch-app-theme
+      description: Wants to refactor an O11 asset that consumes an Application Theme
+        so the dependency becomes valid for ODC, either by moving the theme into
+        the consumer asset or by sharing it from an ODC Library before code
+        conversion.
+    - name: Private structure asset
+      id: arch-private-structure
+      description: Wants to refactor an O11 asset that consumes a Structure that is
+        private by default in ODC, so the asset keeps working after code conversion
+        by copying the Structure into the consumer or exposing it through a Service
+        Action.
     - name: Traditional Web modules
       id: trad-web-modules-pattern
       description: Wants to convert Traditional Web modules to Service or Reactive
@@ -16203,6 +16611,12 @@ knowledge-needs:
         environment, user extension tables, role migration, and the option to skip
         end-user migration, so that they can prepare their environment and identity
         setup before migrating.
+    - name: Validate end-user emails
+      id: validate-end-user-emails
+      description: Wants to ensure all active and inactive end users have valid,
+        unique email addresses in the source environment before an O11 to ODC data
+        migration, so the conversion assessment pattern is cleared and the migration
+        can continue.
     - name: Cancel data migration
       id: cancel-data-migration
       description: Wants to know when and how to cancel an in-progress O11 to ODC data
@@ -16932,6 +17346,22 @@ knowledge-needs:
       description: Wants to start the demo infrastructure VMs and open the LifeTime console
         so they can prepare the infrastructure demo environment before running
         the demo steps.
+  - name: LifeTime management
+    id: lifetime-management
+    subtopics:
+    - name: LifeTime overview
+      id: lifetime-overview
+      description: Wants to understand LifeTime as the unified console for visibility over
+        all environments and for managing deployment, IT users, and security,
+        so that they can control the application lifecycle across their
+        infrastructure.
+    - name: Daily sync schedule
+      id: daily-sync-schedule
+      description: Wants to change LifeTime's daily synchronization schedule so it
+        runs during low activity, by editing the Daily Synchronization schedule
+        in LifeTime Settings for self-managed infrastructures or OutSystems
+        Cloud, so that LifeTime and the environments stay in sync at the
+        preferred time.
   - name: Add new cloud environment
     id: add-new-cloud-environment
     description: Wants to add a new Cloud environment to their OutSystems
@@ -16960,6 +17390,12 @@ knowledge-needs:
       standard Cloud or self-managed steps, understanding this option only
       applies to licenses purchased before a specific cutoff date, so that they
       add environments correctly under a hybrid setup.
+  - name: Clone environment database
+    id: clone-environment-database
+    description: Wants to migrate an OutSystems environment by restoring a
+      cloned database, cleaning the environment-specific configuration, and
+      rebuilding the platform in either a fresh installation or an existing
+      installation, so that the cloned environment runs correctly.
   - name: IIS application pool management
     id: iis-application-pool-management
     subtopics:
@@ -17034,6 +17470,12 @@ knowledge-needs:
         option, receiving time-limited read-and-write credentials for ad-hoc
         troubleshooting, provided their LifeTime version supports the feature
         and they have an existing VPN or AWS Transit Gateway connection.
+    - name: Temporary backup access
+      id: temporary-backup-access
+      description: Wants to request temporary access to an OutSystems Cloud database
+        backup through a support case when they need to recover data from a
+        point in time within the backup retention window, so that they can
+        extract data or run tests against the snapshot.
     - name: Permanent database access
       id: permanent-database-access
       description: Wants to request a permanent database user for an OutSystems Cloud
@@ -17109,6 +17551,33 @@ knowledge-needs:
         application source code and compiled applications are stored, so
         that they can prepare the application server layer before
         deployment.
+    - name: Platform Server storage folders
+      id: platform-server-storage-folders
+      description: Wants to identify the main Platform Server folders that
+        consume disk space, what each folder stores, and which server
+        roles or environment types contain them, so they can understand
+        where disk usage comes from.
+    - name: Safe Platform Server folder deletion
+      id: platform-server-safe-folder-deletion
+      description: Wants to identify which Platform Server cache and
+        application folders can be deleted safely, so they can free disk
+        space without breaking the platform.
+    - name: Recover deleted Platform Server folder content
+      id: recover-platform-server-folder-content
+      description: Wants to know how to recover deleted content from
+        Platform Server folders, so they can restore files needed by the
+        platform.
+    - name: Platform Server automatic cleanup
+      id: platform-server-automatic-cleanup
+      description: Wants to know when the automatic cleanup service removes
+        old running and repository files, so they can understand when the
+        platform reclaims storage automatically.
+    - name: Platform Server disk sizing
+      id: platform-server-disk-sizing
+      description: Wants to estimate the disk space required for a
+        Platform Server factory based on application size and
+        environment characteristics, so they can provision enough
+        storage and avoid fragmentation.
     - name: Deploy All feature
       id: deploy-all-feature-upgrade
       description: Wants to use the optional modules deployment step (Deploy All)
@@ -17490,25 +17959,39 @@ knowledge-needs:
         Collector receiver and Splunk Exporter, updating the collector image
         version, and registering the collector endpoint and credentials in
         LifeTime, so that logs stream to Splunk in near real time.
-    - name: Configure Datadog streaming
-      id: configure-datadog-streaming
-      description: Wants to set up log streaming from ODC apps to Datadog by
-        configuring the OpenTelemetry Collector with the Datadog exporter,
-        getting the Datadog API key and collector endpoint credentials, and
-        registering the stream in the ODC Portal, so that observability data
-        streams to Datadog.
-    - name: Configure New Relic streaming
-      id: configure-new-relic-streaming
-      description: Wants to set up log streaming from ODC apps to New Relic by
-        retrieving the New Relic API key and account region, configuring the
-        stream in the ODC Portal, and sending observability data to New Relic,
-        so that app telemetry reaches the New Relic APM tool.
+    - name: Datadog log streaming
+      id: datadog-log-streaming
+      description: Wants to set up log streaming to Datadog by configuring the
+        OpenTelemetry Collector with the Datadog exporter, providing the
+        Datadog API key and collector endpoint credentials, and registering
+        the stream, so that logs reach Datadog.
+    - name: Dynatrace log streaming
+      id: dynatrace-log-streaming
+      description: Wants to set up log streaming from OutSystems 11 applications
+        to Dynatrace by getting the Dynatrace SaaS endpoint and API token,
+        configuring LifeTime for version 11.22.0 or later or for earlier
+        versions with OTLP/HTTP, and sending logs to Dynatrace, so that
+        application logs reach the Dynatrace APM tool.
+    - name: New Relic log streaming
+      id: new-relic-log-streaming
+      description: Wants to set up log streaming to New Relic by retrieving
+        the New Relic API key and account ingestion endpoint, configuring the
+        stream, and sending application logs to New Relic, so that application
+        logs reach the New Relic APM tool.
     - name: Set up OpenTelemetry Collector
       id: set-up-open-telemetry-collector
       description: Wants to set up the OpenTelemetry Collector with the appropriate
         exporter and security settings for destinations that do not support
         native OTLP ingestion, so they can receive streamed logs, traces, and
         metrics.
+    - name: Configure LifeTime log streaming
+      id: configure-lifetime-log-streaming
+      description: Wants to configure log streaming in LifeTime for OutSystems 11
+        by selecting one or more environments, choosing an APM destination,
+        entering the destination URL and secret token or credentials, testing
+        the connection, and completing setup after validating the test data
+        arrives at the destination, so that they can confirm logs are being
+        delivered to the chosen APM tool.
 - name: Log streaming (ODC)
   guid: 5e4d826e-41ed-47ae-9f2e-9c87b56d41f2
   topics:
@@ -17718,6 +18201,9 @@ knowledge-needs:
       end-user experience and performance by drilling from the environment to the
       application, module, screen, and screen action levels, reading client, network,
       server, and APDEX metrics, and troubleshooting performance issues.
+  - name: PerformanceMonitoring API
+    id: performance-monitoring-api
+    description: Wants to use the PerformanceMonitoring API in Traditional Web apps to read metrics stored in the platform database and add custom metrics to applications, so they can build dashboards and extend application performance measurement.
   - name: Custom alerts
     id: custom-alerts
     subtopics:
@@ -17760,6 +18246,36 @@ knowledge-needs:
         pressing SEND, so that developers can better understand reported
         issues, provided the feedback feature is activated in the
         environment.
+    - name: Handle app feedback
+      id: handle-app-feedback
+      description: Wants to review submitted feedback in the App Feedback
+        application by opening feedback items from LifeTime, reviewing the
+        details and screenshot, launching the affected screen in Service
+        Studio, and closing resolved requests, so that administrators can
+        act on reported issues.
+    - name: Enable app feedback
+      id: enable-app-feedback
+      description: Wants to activate or deactivate the App Feedback feature
+        for an environment, regenerate mobile apps when needed, and restrict
+        feedback submission to a specific user group, so that selected users
+        can send feedback from the app.
+  - name: Built-in monitoring tools
+    id: built-in-monitoring-tools
+    description: Wants to use OutSystems built-in monitoring tools, including
+      Service Center, LifeTime Analytics, and App Feedback, to review logs,
+      performance, environment status, and user feedback, so they can detect
+      and troubleshoot app issues from the platform.
+  - name: Extend monitoring tools
+    id: extend-monitoring-tools
+    description: Wants to understand how to extend OutSystems monitoring with
+      supported APIs and plugins so they can add custom logs and integrate
+      third-party monitoring tools.
+  - name: Cloud monitoring split
+    id: cloud-monitoring-split
+    description: Wants to understand how monitoring responsibilities differ
+      between OutSystems Cloud and on-premises environments, so they know
+      which infrastructure, platform, and application monitoring tasks
+      OutSystems handles and which ones they own.
   - name: SLOWSQL log messages
     id: slowsql-log-messages
     description: Wants to interpret SLOWSQL log messages in Service Center's
@@ -17859,6 +18375,13 @@ knowledge-needs:
         connected device, but always confirm the fix on a real device before
         considering it resolved, in OutSystems 11, so that they debug
         efficiently without missing device-only behavior differences.
+    - name: Log information in action flows
+      id: log-information-in-action-flows
+      description: Wants to log debug information in an action flow with the
+        LogMessage system action, view it later in Service Center Monitoring >
+        General, and switch off auditing when the logging is no longer needed,
+        in OutSystems 11, so that they can inspect runtime behavior without
+        republishing the application.
   - name: Log source catalog
     id: log-source-catalog
     description: Wants to know which log or report file to collect for a
