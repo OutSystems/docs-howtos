@@ -6244,9 +6244,9 @@ knowledge-needs:
         scroll through longer pages.
     - name: Change app favicon
       id: change-app-favicon
-      description: Wants to replace the default OutSystems favicon with a custom PNG
-        or ICO image by changing the favicon resource in Service Studio, in a Reactive
-        Web App for O11, so that the app displays a branded browser tab icon.
+      description: Wants to replace the default OutSystems favicon with a custom image
+        by changing the favicon resource in Service Studio, in a Reactive Web App for
+        O11, so that the app displays a branded browser tab icon.
     - name: Choose icon library
       id: choose-icon-library
       description: Wants to select and switch between the available icon libraries for an
