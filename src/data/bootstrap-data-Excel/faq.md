@@ -16,7 +16,7 @@ coverage-type:
   - apply
   - unblock
 topic:
-  - bootstrap-test-data-excel
+  - bootstrap-excel-blanks
 isautopublish: true
 ---
 

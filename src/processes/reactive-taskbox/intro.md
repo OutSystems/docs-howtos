@@ -21,7 +21,9 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - connect-process-ui
+  - design-process-flow
+  - reactive-taskbox-setup
+  - taskbox-overview
 ---
 
 # Using Taskbox in Reactive Web Apps

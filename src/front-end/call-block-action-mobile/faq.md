@@ -21,7 +21,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - adding-a-block
+  - call-block-action
 ---
 
 # How to Call a Block Action in a Mobile Screen
