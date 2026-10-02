@@ -198,12 +198,6 @@ knowledge-needs:
     - name: Create database event
       id: create-database-event
       description: Wants to create a database event for an entity action in ODC Studio by choosing OnCreate, OnUpdate, or OnDelete, selecting the event and input parameters, and publishing the app, so that the event runs automatically when the entity action commits.
-    - name: Handle block events
-      id: handle-block-events
-      description: Wants to handle events triggered by a block by mapping a screen
-        action to the block's event and accessing the event input parameters, in ODC
-        Studio, so that the screen can respond to user interactions happening inside
-        the block.
     - name: Trigger block event
       id: trigger-block-event
       description: Wants to create an event on a block and trigger it using a
@@ -839,13 +833,8 @@ knowledge-needs:
     - name: Table pagination setup
       id: table-pagination-setup
       description: Wants to add pagination and records-per-page control to a Table
-        widget in an OutSystems 11 Screen, so that users can navigate through large
-        datasets in configurable page sizes.
-    - name: ODC table pagination
-      id: odc-table-pagination-setup
-      description: Wants to add pagination and records-per-page control to a Table
-        widget in ODC Studio, so that users can navigate through large datasets in
-        configurable page sizes.
+        widget, so that users can navigate through large datasets in configurable
+        page sizes.
     - name: Limit record fetches
       id: limit-record-fetches
       description: Wants to limit how many records a screen fetches and displays by
@@ -4797,10 +4786,8 @@ knowledge-needs:
     - name: ECS pattern variations
       id: ecs-pattern-variations
       description: Wants to understand the external core service (ECS) pattern and its
-        variations — base ECS, local replica, isolated synchronization, direct integration,
-        pub/sub, summary cache, and lazy load — in OutSystems 11, so that the right caching
-        and synchronization strategy can be selected when an external system is the system
-        of records.
+        variations in OutSystems 11, so that the right caching and synchronization strategy
+        can be selected when an external system is the system of records.
     - name: Transparency service
       id: transparency-service-pattern
       description: Wants to understand the transparency service pattern in OutSystems 11,
@@ -9786,7 +9773,7 @@ knowledge-needs:
       description: Wants to manage an installed ODC solution after installation, including independent deployment, customization, and locating its components in the Solutions console and asset lists, so that they can work with it like standard assets.
     - name: Forge overview
       id: forge-overview
-      description: Wants to understand what Forge is, what types of reusable assets (apps, libraries, agentic apps) are available, and how the community-driven sharing model works in OutSystems.
+      description: Wants to understand what Forge is, what kinds of reusable assets are available, and how the community-driven sharing model works in OutSystems, so they can decide whether Forge is a good place to find or share assets.
     - name: Forge project types
       id: forge-project-types
       description: Wants to understand the different types of Forge projects, so that they
