@@ -20,7 +20,7 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - static-entities
+  - static-entity-setup
   - style-dropdown-icons
   - use-dropdown-search
 ---
