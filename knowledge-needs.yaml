@@ -2748,6 +2748,12 @@ knowledge-needs:
       description: Wants to write data to an external system by configuring a
         consumed REST API method to use POST and handle the JSON request and
         response bodies, so that the app can create a new record.
+    - name: Create REST data
+      id: create-rest-data
+      description: Wants to expose a POST REST API method that creates a new
+        employee record only when the email does not already exist in the
+        database, so external systems can add application data and receive a
+        success or error response.
     - name: PUT REST data
       id: put-rest-data
       description: Wants to write data to an external system by configuring a
@@ -5781,6 +5787,9 @@ knowledge-needs:
   - name: Expose webservices
     id: expose-webservices
     subtopics:
+    - name: Expose web services
+      id: expose-web-services
+      description: Wants to expose REST APIs and SOAP web services from an app so external systems can call the published endpoints.
     - name: Expose SOAP web service
       id: expose-soap-web-service
       description: Wants to expose a SOAP web service in OutSystems 11 by creating the service, adding methods, setting the module namespace, and checking the generated WSDL endpoint and bindings, so that clients can call the published service.
@@ -9555,6 +9564,12 @@ knowledge-needs:
         cluster, so that they can anticipate the build and deployment work
         triggered each time they publish a new revision in the Development
         stage.
+    - name: OutSystems publish flow
+      id: outsystems-publish-flow
+      description: Wants to compare PHP deployment approaches with the OutSystems
+        build-and-publish flow and understand the 1-Click Publish pipeline,
+        including code generation, database sync scripts, and built-in
+        automation, so they can explain how a change gets published.
     - name: ODC publish message
       id: odc-publish-message
       description: Wants to add an optional message describing their changes when 1-Click
@@ -10631,6 +10646,12 @@ knowledge-needs:
   - name: Java course overview
     id: java-course-overview
     description: Wants to understand the roadmap for the OutSystems for Java
+      developers course, including the platform mapping, development and code
+      reuse, and build, run, and debug sections, so they know what the course
+      covers before starting it.
+  - name: PHP course overview
+    id: php-course-overview
+    description: Wants to understand the roadmap for the OutSystems for PHP
       developers course, including the platform mapping, development and code
       reuse, and build, run, and debug sections, so they know what the course
       covers before starting it.
