@@ -816,6 +816,11 @@ knowledge-needs:
         actions inside If conditions on server-side logic, or in a screen
         widget''s If condition, Enabled, and Visible properties, so they can
         enforce role-based authorization on both logic and UI elements.'
+    - name: Client-side role checks
+      id: client-side-role-checks-o11
+      description: Wants to check the current user's role in client-side
+        JavaScript so the app shows or hides UI elements, while keeping the
+        result out of security checks, in Mobile Apps and Reactive Web Apps.
     - name: Share public roles
       id: share-public-roles
       description: Wants to make an application role public and reference it from
@@ -2725,6 +2730,9 @@ knowledge-needs:
       id: cache-repeatedly-accessed-database-data
       description: Wants to use platform caching for data that is accessed
         repeatedly, so the application makes fewer database calls.
+    - name: Prefetch static resources
+      id: prefetch-static-resources
+      description: Wants to prefetch static resources with the outsystems.api.preloader JavaScript API in a Traditional Web App, so the app loads CSS, JavaScript, images, and fonts from browser cache before navigation.
     - name: Follow database installation checklist
       id: follow-database-installation-checklist
       description: Wants to follow database-related recommendations in the
@@ -2804,6 +2812,11 @@ knowledge-needs:
     description: Wants to understand how OutSystems web services cover consuming and
       exposing REST APIs and SOAP web services, so they can choose the right
       integration approach.
+  - name: OutSystems API catalog
+    id: outsystems-api-catalog
+    description: Wants to find the available OutSystems 11 APIs by category, so they can
+      open the right API documentation for integration, automation, or
+      extension work.
   - name: Webservice customization
     id: webservice-customization
     subtopics:
@@ -6302,6 +6315,12 @@ knowledge-needs:
         them asynchronously through the Scheduler Service, retries failures,
         and logs delivery status, so that they know when an email actually
         sends and where to check it.
+    - name: Email API entities
+      id: email-api-entities
+      description: Wants to use the Emails API to identify the Email_Definition,
+        Sent_Email, Email_Content, and Email_Status system entities and add the
+        required dependencies before querying them in OutSystems 11, so they
+        can customize email-related data access and build reports.
     - name: Add email MIME headers
       id: add-email-mime-headers
       description: Wants to add custom header properties (MIME headers) to an
