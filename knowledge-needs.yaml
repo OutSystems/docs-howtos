@@ -6887,6 +6887,11 @@ knowledge-needs:
         process and activity instances when it creates or updates a record, in
         OutSystems 11, so that a process can automatically launch or advance
         in reaction to an entity change.
+    - name: Entity filter warning
+      id: entity-filter-warning
+      description: Wants to fix the missing entity filter warning for a process
+        activity that handles an Entity Action event without filtering entity
+        attributes, so the activity only runs for the intended entity records.
     - name: Taskbox overview
       id: taskbox-overview
       description: Wants to understand what the Taskbox is and how it lists
@@ -11105,6 +11110,9 @@ knowledge-needs:
         to a production server), by publishing the extension or Producer
         module that exposes the entity to that Platform Server, so that
         the module publishes without the warning.'
+    - name: Fix association warning
+      id: fix-missing-entity-association-warning
+      description: Wants to fix the "Referenced Entity <entity> is not associated with this module" and "Foreign Entity <entity> is not associated with this module" warnings by restoring the module's entity references or confirming access to the producer module or extension, so the module compiles without the warning.
     - name: Missing module warning
       id: missing-module-warning
       description: 'Wants to resolve the "Module <module name> uses module
