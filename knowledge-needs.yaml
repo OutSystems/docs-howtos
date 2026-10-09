@@ -3535,6 +3535,26 @@ knowledge-needs:
         extension node in the Multi-tree Navigator or selecting its tab in the
         Multi-tab Editor, so that they can modify extension properties and
         manage its elements (actions, structures, entities, and resources).
+    - name: Studio toolbar buttons
+      id: studio-toolbar-buttons
+      description: Wants to understand what each button in the Integration Studio
+        toolbar does, so they can use the toolbar effectively while working with
+        extensions.
+    - name: Multi-tree navigator
+      id: multi-tree-navigator
+      description: Wants to understand the Multi-tree Navigator in Integration
+        Studio, including the Extension and Resources tabs and what each tree
+        contains, so they can find extension elements and resources in the
+        workspace.
+    - name: Manage multi-tab editors
+      id: manage-multi-tab-editors
+      description: Wants to close one tab or clear all tabs in Integration
+        Studio's Multi-tab Editors area by double-clicking or right-clicking
+        a tab and choosing Close or Close All, so they can remove open
+        elements from the editor workspace.
+    - name: Studio workspace layout
+      id: studio-workspace-layout
+      description: 'Wants to understand the Integration Studio workspace layout, including the toolbar, Multi-tree Navigator, status bar, Multi-tab Editors, Specific Editor, and Server Info areas, so they can find each area and know what it does.'
     - name: Fix invalid extension
       id: fix-invalid-extension
       description: 'Wants to resolve the "Application Server" <type> not supported invalid extension error in Integration Studio by using Microsoft .NET integration, so they can create or publish the extension successfully.'
@@ -3759,6 +3779,12 @@ knowledge-needs:
         Options Window, so that they can review and merge changes made
         outside the Resource Editor when Update Source Code can't
         auto-merge them.
+    - name: Manage resources
+      id: manage-resources
+      description: Wants to use Integration Studio's Resources tree to review
+        resource status, find the physical location of extension resources,
+        and include, exclude, or open resources in an extension, so they can
+        manage extension resources.
     - name: Update source code
       id: update-source-code
       description: Wants to update an extension's source code in Integration
@@ -3813,6 +3839,11 @@ knowledge-needs:
       description: Wants to know what operations the Help menu provides in Integration
         Studio, so that they can access help resources, product updates, and
         feedback tools while working on an extension.
+    - name: View menu operations
+      id: view-menu-operations
+      description: Wants to know what operations the View menu provides in Integration
+        Studio, so that they can show or hide toolbars and the status bar
+        while working on an extension.
     - name: Configure .NET SDK options
       id: configure-net-sdk-options
       description: Wants to configure the .NET IDE, .NET Compiler Tool, and
