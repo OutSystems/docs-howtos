@@ -514,6 +514,12 @@ knowledge-needs:
         widget, a property field, or a TrueChange error or warning, then use
         autocomplete, the toolbar, the scope pane, and the status indicator to
         confirm that the expression is valid.
+    - name: Escape content warning
+      id: escape-content-warning
+      description: Wants to set the Escape Content property on an Expression widget
+        to No when the expression contains HTML and should render as markup, or leave
+        it Yes when the text should display literally, so the expression appears
+        correctly on screen.
   - name: Core module patterns
     id: core-module-patterns-logic
     subtopics:
@@ -21135,6 +21141,12 @@ knowledge-needs:
     - name: Fix invalid variable
       id: fix-invalid-variable
       description: Wants to resolve the Invalid Variable Error in Service Studio by setting a valid value for the Variable property on affected widgets or Assign nodes after the referenced variable is deleted or unset, so TrueChange stops flagging the module.
+    - name: Fix jQuery version warning
+      id: fix-jquery-version-warning
+      description: Wants to resolve the warning that a module uses a deprecated or
+        unsupported jQuery version, by checking the supported jQuery versions,
+        updating affected module elements, and selecting a supported jQuery version
+        in Service Studio for OutSystems 11, so the module keeps working correctly.
   - name: Troubleshoot infra issues
     id: troubleshoot-infra-issues
     description: Wants to find the right troubleshooting article for O11 infrastructure
