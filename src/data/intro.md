@@ -1,5 +1,5 @@
 ---
-summary: OutSystems 11 (O11) data handling how-tos covering data integration, data management, and app development topics.
+summary: OutSystems 11 (O11) data covers entities, aggregates, integrity, and external database integration for app development.
 guid: 9265bfa9-b2d4-474b-aca1-a31c1d37dcfe
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
