@@ -83,6 +83,12 @@ knowledge-needs:
         action in OutSystems 11 Service Studio, including which are mandatory and
         their default values, so they can correctly configure and understand the
         action's behavior.
+    - name: Public actions reference
+      id: public-actions-reference
+      description: Wants to look up the public actions, input parameters, and
+        output parameters of mobile UI pattern widgets in Service Studio, so
+        they can call the correct action from a client flow in Mobile Apps and
+        Reactive Web Apps (O11).
     - name: Data action reference
       id: data-action-reference
       description: Wants to look up the properties, events, and runtime
@@ -7749,6 +7755,9 @@ knowledge-needs:
     - name: Assess testability
       id: assess-testability
       description: Wants to assess whether an existing application is ready for automated testing and decide between standard test automation, tactical E2E testing, and refactoring, so they can choose the right approach for the application.
+    - name: Test lifecycle overview
+      id: test-lifecycle-overview
+      description: Wants to understand the main testing activities across the delivery lifecycle in OutSystems, including component, integration/API, system/E2E, regression, performance, acceptance, security, and smoke tests, so they can choose the right test type for each stage.
     - name: Manage test data
       id: manage-test-data
       description: Wants to manage test data for automated tests by separating master data, test-specific data, and external data, so tests stay idempotent, reliable, and fast.
@@ -17950,6 +17959,12 @@ knowledge-needs:
         automatically preserved in the recovery region, and what
         post-failover steps are required, so that they can plan for and
         execute a failover with the OutSystems team.
+    - name: Failover test report
+      id: failover-test-report
+      description: Wants to download and edit the disaster recovery failover
+        test report after a test completes, so that they can review the
+        test history and record the test reason, result, and additional
+        observations.
 - name: Progressive Release
   guid: eb4c73d7-260f-4048-9a2f-f61333238db1
   topics:
@@ -18959,6 +18974,18 @@ knowledge-needs:
         response verification to match their IdP's assertion signing setting,
         and exchanging SP/IdP metadata XML files, in OutSystems 11, so that
         end users can authenticate via their enterprise Identity Provider.
+    - name: Update SAML logout flow
+      id: update-saml-logout-flow
+      description: Wants to update the Logout Screen Action of a Traditional
+        Web App so it redirects users to the IdP logout URL and falls back to
+        User_Logout when the app uses SAML 2.0 single logout and an older
+        OutSystems UI Web version.
+    - name: Update SAML login link
+      id: update-saml-login-link
+      description: Wants to update the LoginInfo Web Block Login action and
+        link so it redirects users to the IdP login URL, or Common\Login when
+        no login URL is returned, in a Traditional Web App that uses SAML 2.0
+        single logout and has a Login link pointing to Logout.
     - name: Mobile SSO login flow
       id: mobile-sso-login-flow
       description: Wants to implement the mobile SSO login flow for a mobile
@@ -23311,6 +23338,13 @@ knowledge-needs:
         checking prerequisites, deciding conversion order for multiple
         modules, and handling entities and roles, so that the module is
         transformed with minimal manual rework.
+    - name: Conversion mapping
+      id: conversion-mapping
+      description: Wants to understand how Traditional Web elements map to
+        Reactive equivalents during Convert to Reactive, including what
+        transfers automatically, what needs manual follow-up, and which
+        widgets or logic elements are unsupported, so they can review the
+        conversion results and finish the remaining work.
   - name: Post-conversion security
     id: post-conversion-security
     subtopics:
