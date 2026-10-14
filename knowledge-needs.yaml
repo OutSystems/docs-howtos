@@ -2533,6 +2533,11 @@ knowledge-needs:
         by adding the public event, choosing a handler server action, and
         understanding where the handler runs, so that the event logic executes
         in the correct app.
+    - name: ODC event trigger location
+      id: odc-event-trigger-location
+      description: Wants to understand that ODC event triggers are defined
+        only in the application where the Event is created, so that they know
+        trigger control stays with the owning app.
     - name: Handle ODC event errors
       id: handle-odc-event-errors
       description: Wants to handle errors raised when triggering or consuming
@@ -7723,9 +7728,33 @@ knowledge-needs:
     - name: BDD test best practices
       id: bdd-test-best-practices
       description: Wants to implement BDD Framework component tests by separating test code from business code, mirroring only relevant dependencies, organizing suites and blocks, using consistent names, and selecting the right assert type, so that the tests stay readable and maintainable.
+    - name: BDD test blocks
+      id: bdd-test-blocks
+      description: Wants to structure component tests with BDDScenario, BDDStep, FinalResult, and SetupOrTeardownStep web blocks so they can build and run tests in a screen.
     - name: BDD test setup
       id: bdd-test-setup
       description: Wants to set up a BDD Framework test app in ODC Studio by adding the component as a public element, creating a screen and BDD scenario, and implementing the test actions, so they can start component testing.
+    - name: Shared test patterns
+      id: shared-test-patterns
+      description: Wants to extract common component test logic into a SharedTestPatterns module and reuse it across test modules and test applications when the dependency rules allow it.
+    - name: Install BDDFramework
+      id: install-bddframework
+      description: Wants to install the BDDFramework tools from Service Studio or the Forge portal so they can start component testing.
+- name: Automated testing
+  guid: 7a997d7e-09a6-472d-b347-40d78bd58339
+  topics:
+  - name: Test strategy
+    id: test-strategy
+    subtopics:
+    - name: Assess testability
+      id: assess-testability
+      description: Wants to assess whether an existing application is ready for automated testing and decide between standard test automation, tactical E2E testing, and refactoring, so they can choose the right approach for the application.
+    - name: Manage test data
+      id: manage-test-data
+      description: Wants to manage test data for automated tests by separating master data, test-specific data, and external data, so tests stay idempotent, reliable, and fast.
+    - name: Mock external services
+      id: mock-external-services
+      description: Wants to mock external services in automated tests by using a shared MockingServices module and domain-specific wrappers for REST and SOAP integrations, so tests can isolate external dependencies.
 - name: Collaborative Development
   guid: ''
   topics:
@@ -10169,6 +10198,11 @@ knowledge-needs:
         health-status Tag, past-appointment and next-appointment cards, and
         blank-state messaging, so that a logged-in patient can review key
         appointment information at a glance.
+    - name: Build activity form
+      id: build-activity-form
+      description: Wants to build an activity form screen in Service Studio with
+        location, time, and notes fields, so users can create activities in
+        the app.
   - name: Layouts
     id: layouts
     subtopics:
@@ -14344,6 +14378,12 @@ knowledge-needs:
         providing the required NSFaceIDUsageDescription iOS permission, so
         that access to sensitive key-value pairs is protected by the
         device's lock screen security.
+    - name: Migrate KeyStore secrets
+      id: migrate-keystore-secrets
+      description: Wants to migrate KeyStore secrets from version 2.2.0 to
+        2.3.0 or later by setting MigratedKeysAuthentication so existing
+        key-value pairs keep the intended authentication behavior after the
+        plugin upgrade.
     - name: KeyStore authentication failure
       id: keystore-authentication-failure
       description: Wants to resolve KeyStore authentication failures,
@@ -20127,6 +20167,13 @@ knowledge-needs:
         Tool's Export Configuration option and importing it on each
         front-end server with Import Configuration, so that all front-end
         servers share the same configuration.
+    - name: Platform Server failover
+      id: platform-server-failover
+      description: Wants to perform OutSystems 11 Platform Server failover
+        by activating passive front-ends and moving controller and RabbitMQ
+        roles to another server when a failover scenario requires a role
+        change, so that applications keep running and deployment services
+        recover.
     - name: Generate setup scripts
       id: generate-setup-scripts
       description: Wants to create and export the required SQL and PowerShell setup scripts
@@ -20179,6 +20226,11 @@ knowledge-needs:
       description: Wants to understand what the Configuration Tool does in
         basic and complex self-managed OutSystems 11 installations, so they
         know when to use it and how to launch it from the Windows desktop.
+    - name: Configuration Tool CLI
+      id: configuration-tool-cli
+      description: Wants to understand the Configuration Tool command-line syntax,
+        parameters, and logging defaults, so they can run unattended
+        installation, upgrade, and setup commands correctly from the command line.
     - name: Configuration Tool menus
       id: configuration-tool-menus
       description: Wants to use the File and Help menus in the OutSystems 11
