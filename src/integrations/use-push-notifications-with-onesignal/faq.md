@@ -243,7 +243,7 @@ Use this path if you can't or don't want to upgrade the OneSignal component vers
 
 Use this path for the cleanest upgrade.
 
-1. Upgrade the **OneSignal Plugin** component from Forge to the latest version. The new default base URL is already `https://api.onesignal.com`.
+1. Upgrade the **OneSignal Plugin** component from Forge to version **3.8.1+**. The new default base URL is already `https://api.onesignal.com`.
 1. Generate a new v2 app token in the OneSignal dashboard (same as Path A, step 1).
 1. In your application, replace the value passed to `OneSignalRestAPIKey` with the new v2 app token.
 
