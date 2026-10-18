@@ -7556,6 +7556,9 @@ knowledge-needs:
     - name: Decision outcome
       id: decision-outcome
       description: Wants to understand what a Decision Outcome element does in an OutSystems 11 BPT decision flow, including how the Connector property routes execution and ends the flow, so they can configure the correct branch.
+    - name: Decision activity outcomes
+      id: decision-activity-outcomes
+      description: Wants to understand how many outcomes a Decision activity can have in an OutSystems 11 BPT process, so they can branch execution into the required number of paths when modeling the process.
     - name: Execute sub-process
       id: execute-sub-process
       description: Wants to execute a sub-process from a parent process by using the Execute
@@ -12927,6 +12930,12 @@ knowledge-needs:
       components make up the platform, and which core capabilities it
       provides, so they can get an overall introduction before diving into
       individual features.
+    subtopics:
+    - name: Mobile app capabilities
+      id: mobile-app-capabilities
+      description: Wants to identify which statements about OutSystems mobile
+        apps are true or false, so they can answer basic capability questions
+        in O11.
   - name: Java course overview
     id: java-course-overview
     description: Wants to understand the roadmap for the OutSystems for Java
