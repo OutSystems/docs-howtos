@@ -7689,6 +7689,11 @@ knowledge-needs:
         parameters, local variables, invoked actions' and queries' output
         parameters), so that they can select the right variable in the
         Expression Editor or Select Variable window.
+    - name: Automatic activity limits
+      id: automatic-activity-limits
+      description: Wants to know whether a BPT process can include multiple
+        Automatic activities and what timeout each one has in OutSystems 11,
+        so they can plan the process design correctly.
     - name: Archive BPT processes
       id: archive-bpt-processes
       description: Wants to archive old closed BPT Process instances by creating
