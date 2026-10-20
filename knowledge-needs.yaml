@@ -6636,6 +6636,16 @@ knowledge-needs:
       description: Wants to recognize that Discovery validates both app and module
         architecture rules, so they can answer questions about Discovery validation
         scope.
+    - name: AI Mentor validation
+      id: ai-mentor-validation
+      description: Wants to use AI Mentor Studio to analyze applications and modules
+        for technical debt and code patterns, including their impact and possible
+        fixes, so that they can validate and improve their architecture.
+    - name: Use Discovery analysis
+      id: use-discovery-analysis
+      description: Wants to use Discovery to analyze module and application
+        architecture by reviewing canvas layers, dependencies, referenced elements,
+        and validation-rule findings, so that they can identify architectural issues.
     - name: Architecture design review
       id: architecture-design-review
       description: Wants to run architecture design review sessions before each sprint by
