@@ -1,5 +1,12 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, ui events, client actions
+tags:
+  - Events
+  - Front-End
+  - JavaScript
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Widgets
 summary: Explore how to use screen actions as callbacks for UI events in OutSystems 11 (O11).
 guid: 0872EBF9-3413-4F52-8E32-4239C888CEE3
 locale: en-us

@@ -1,5 +1,12 @@
 ---
-tags: css customization, ui design, form customization, user experience, error handling
+tags:
+  - CSS
+  - Forms
+  - Front-End
+  - Mobile app
+  - UI
+  - UX
+  - Widgets
 summary: Explore how to customize the display of input validation messages in OutSystems 11 (O11) by relocating them from their default positions.
 guid: 10da9d4f-5807-4aa0-9d63-6d31e8e78aaa
 locale: en-us

@@ -1,5 +1,11 @@
 ---
-tags: web development, ui design, css, traditional web, fixed header
+tags:
+  - CSS
+  - Front-End
+  - Table
+  - Traditional Web
+  - UI
+  - Widgets
 summary: Explore how to create a scrollable table with a fixed header in OutSystems 11 (O11) using Table Records Widgets for Traditional Web Apps.
 guid: bc28b35e-c684-4094-a937-e189a137886d
 locale: en-us

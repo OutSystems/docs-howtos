@@ -5,7 +5,13 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/kY6LwaHBP6HdTslYHlSadB/Front-End?node-id=844:95
-tags: ide usage, reactive web apps, list records widget, ui patterns, outsystems ui framework
+tags:
+  - Front-End
+  - Layouts
+  - OutSystems UI
+  - UI
+  - UI Patterns
+  - Widgets
 audience:
   - Front-end developer
   - Developer

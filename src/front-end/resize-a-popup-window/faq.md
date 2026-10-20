@@ -1,5 +1,12 @@
 ---
-tags: dynamic ui, javascript, user interface, web development, pop-up management
+tags:
+  - Front-End
+  - JavaScript
+  - Screens
+  - Traditional Web
+  - UI
+  - Web
+  - Widgets
 summary: Learn how to dynamically resize pop-up windows in OutSystems 11 (O11) by setting the AutoResize property and using JavaScript for runtime adjustments.
 guid: 8aef5808-c75c-4831-ad81-f72a3fdc27d8
 locale: en-us

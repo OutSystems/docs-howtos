@@ -1,5 +1,12 @@
 ---
-tags: mobile development, web integration, security issues, embedded web content, workarounds
+tags:
+  - Cordova
+  - End-user Authentication
+  - Front-End
+  - Mobile app
+  - Screens
+  - Security
+  - Traditional Web
 summary: Explore iframe integration for reusing Traditional Web Screens in Mobile Apps with OutSystems 11 (O11).
 guid: 4b5a6972-73f0-41d3-a418-4feea244e6c8
 locale: en-us

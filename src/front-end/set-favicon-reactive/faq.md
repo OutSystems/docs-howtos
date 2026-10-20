@@ -1,5 +1,8 @@
 ---
-tags: favicon update, ui customization, resource management, web development, branding
+tags:
+  - Front-End
+  - UI
+  - Web
 summary: Favicon change in OutSystems 11 (O11) Reactive Web Apps using Service Studio, covering PNG and ICO image replacement steps.
 guid: 784794a5-90a4-4cae-83df-1fcaf6d68507
 locale: en-us
