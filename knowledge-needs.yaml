@@ -393,6 +393,12 @@ knowledge-needs:
         screen action, and pass event parameters, so that the parent screen can
         respond to occurrences inside the block and pass data or trigger logic
         across UI components.
+    - name: O11 block events
+      id: o11-block-events
+      description: Wants to understand how to define a block event, trigger it
+        from a client action, and map it to a parent screen event handler in
+        OutSystems 11, so that the parent can respond to occurrences inside the
+        block and receive event input parameters.
     - name: Block event handler
       id: block-event-handler
       description: Wants to know when a Block Event needs a handler in O11, so
@@ -8544,6 +8550,11 @@ knowledge-needs:
       description: Wants to create Blocks and Web Blocks in Service Studio and
         reuse them on screens or other blocks in OutSystems 11, so common UI
         stays centralized and updates propagate from one place.
+    - name: Use block placeholders
+      id: use-block-placeholders
+      description: Wants to define and populate Block placeholders in Service
+        Studio, so each Block instance can display different dynamic content
+        while the shared UI structure remains reusable.
     - name: Create pattern blocks
       id: create-pattern-blocks
       description: Wants to create a new UI pattern as a Block in OutSystems 11,
@@ -10899,6 +10910,12 @@ knowledge-needs:
         including that they are reusable across screens, encapsulate their own
         logic, and improve maintainability, so that they can distinguish true
         and false statements about Blocks.
+    - name: Use blocks
+      id: use-blocks
+      description: Wants to use a Block inside a Screen or another Block, create
+        multiple instances without recursion, and understand how the Block's
+        scope isolates it from its parent, so that they can compose reusable
+        user interfaces correctly.
     - name: Create web block
       id: create-web-block
       description: Wants to create a Web Block in Service Studio for OutSystems 11,
