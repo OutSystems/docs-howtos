@@ -5,7 +5,14 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/XbkdagtFJ9kxan8pAx0Qsz/DevOps?type=design&node-id=1542%3A348&mode=design&t=dN0yGLL6D8INLkOx-1
-tags: custom alerts, api, monitoring, itsm tools, application performance
+tags:
+  - Events
+  - Logging
+  - Monitoring
+  - Performance
+  - REST
+  - Triggers
+  - Web services
 audience:
   - Developer
   - Platform administrator
