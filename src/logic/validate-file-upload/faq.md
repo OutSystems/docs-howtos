@@ -1,5 +1,11 @@
 ---
-tags: file upload validation, custom validation logic, user experience enhancement, error handling
+tags:
+  - Front-End
+  - Logic
+  - Traditional Web
+  - UI
+  - Web
+  - Widgets
 summary: Explore custom file validation techniques for the Upload Widget in OutSystems 11 (O11) to enhance web app functionality.
 guid: 33e8fc48-2034-4ae4-844e-d6d0fdaaeb55
 locale: en-us

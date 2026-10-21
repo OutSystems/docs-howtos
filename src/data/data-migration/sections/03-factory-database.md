@@ -1,6 +1,12 @@
 ---
 summary: Explore how OutSystems 11 (O11) manages application entities, including entity relationships, publishing modules, and database considerations.
-tags: entity management, module publishing, database integration, entity relationships
+tags:
+  - Data Model
+  - Entities
+  - Extensions
+  - Modular Programming
+  - Platform Server
+  - SQL
 locale: en-us
 guid: 93ea4249-dd2d-4d68-9c96-efbba147823d
 app_type: traditional web apps, mobile apps, reactive web apps

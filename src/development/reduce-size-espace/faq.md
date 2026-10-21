@@ -5,7 +5,12 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: application optimization, application architecture, image optimization, resource management, icon management
+tags:
+  - Architecture
+  - Best Practices
+  - Modular Programming
+  - Optimization
+  - Performance
 audience:
   - Developer
   - Front-end developer

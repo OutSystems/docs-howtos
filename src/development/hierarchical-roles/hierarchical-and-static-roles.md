@@ -1,6 +1,13 @@
 ---
 summary: Explore the comparison between hierarchical and default roles in OutSystems 11 (O11), highlighting advantages and implementation considerations.
-tags: outsystems security, role-based access control, application security, web application development, outsystems best practices
+tags:
+  - Architecture
+  - Authorization
+  - Best Practices
+  - Performance
+  - Roles
+  - Security
+  - Testing
 guid: 7c2103e0-79cb-43a7-a430-92ca71e0f8f4
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

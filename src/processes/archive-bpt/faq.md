@@ -1,5 +1,11 @@
 ---
-tags: bpt performance, entity management, data archiving, performance optimization, process management
+tags:
+  - Business Processes
+  - Data
+  - Data Model
+  - Entities
+  - Optimization
+  - Performance
 summary: OutSystems 11 (O11) provides a method to archive old BPT processes to improve query performance by creating a mirrored set of meta-model entities.
 guid: 4cfbcd3c-113b-4d91-a92d-b1aef4584115
 locale: en-us

@@ -1,5 +1,10 @@
 ---
-tags: ide usage, reactive web apps, tutorials for beginners, sql query, dynamic sorting, data manipulation, table sorting
+tags:
+  - SQL
+  - Sorting
+  - Table
+  - Traditional Web
+  - Widgets
 summary: SQL query dynamic sorting in OutSystems 11 (O11) tables, covering OnSort actions, inline parameters, and encoding for Reactive and Traditional Web.
 guid: 9d1081a8-8d5e-4eca-80f5-ed401e66e733
 locale: en-us

@@ -1,6 +1,13 @@
 ---
 summary: "HTML2PDF report generation in OutSystems 11 (O11): install the component, configure references, and export data as a PDF file."
-tags: html to pdf conversion, report generation, security best practices, ui customization, external toolkit integration
+tags:
+  - CSS
+  - Forge
+  - JavaScript
+  - Pagination
+  - Screens
+  - Security
+  - Traditional Web
 guid: 51f5ab7a-1280-479f-96cd-2c1c9b111134
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

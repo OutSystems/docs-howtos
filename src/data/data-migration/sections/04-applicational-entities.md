@@ -1,6 +1,13 @@
 ---
 summary: "OutSystems 11 (O11) applicational entities data migration: identify platform dependencies, foreign key constraints, cyclic entity references, and GDPR compliance requirements before migrating."
-tags: data migration, application data management, entity relationship mapping, environment alignment
+tags:
+  - Data
+  - Data Integrity
+  - Data Model
+  - Entities
+  - Extensions
+  - Multi-Tenant
+  - Platform Server
 locale: en-us
 guid: 8e6f7f29-c985-4000-b17a-68fe09e0ef7f
 app_type: traditional web apps, mobile apps, reactive web apps

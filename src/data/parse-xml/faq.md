@@ -1,5 +1,9 @@
 ---
-tags: xml processing, xpath, data integration, data extraction, outsystems extensions
+tags:
+  - Data
+  - Extensions
+  - Logic
+  - Programming Model
 summary: XPath expressions in OutSystems 11 (O11) XML Extension let you parse XML files and extract filtered node data using a Server Action.
 guid: 874b6a87-f497-4e1a-ae07-b2ac2f6f47ef
 locale: en-us

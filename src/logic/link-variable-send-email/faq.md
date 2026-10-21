@@ -5,7 +5,13 @@ locale: en-us
 app_type: traditional web apps
 platform-version: o11
 figma: https://www.figma.com/file/3YpPKdo5QwN0z6up61eKe5/Logic?node-id=842:236
-tags: email integration, survey applications, url generation, httprequesthandler, direct links
+tags:
+  - Extensions
+  - Front-End
+  - Logic
+  - Screens
+  - Traditional Web
+  - Web
 audience:
   - Front-end developer
   - Developer

@@ -5,7 +5,12 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: process documentation, how-to guides, web development
+tags:
+  - Asynchronous Processes
+  - Business Processes
+  - Timers
+  - Triggers
+  - Workflows
 audience:
   - Developer
   - Front-end developer

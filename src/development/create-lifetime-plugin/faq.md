@@ -1,6 +1,11 @@
 ---
 summary: "LifeTime plugin development in OutSystems 11 (O11): install LifeTime SDK, set up a dev environment, use the Service Studio template, and publish via Service Center."
-tags: outsystems lifetime, sdk integration, environment setup, application lifecycle management, platform customization
+tags:
+  - Development lifecycle
+  - Forge
+  - Plugins
+  - Templates
+  - Web services
 guid: 1ae946b5-5b77-4976-a905-4d6a260f7e3a
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps

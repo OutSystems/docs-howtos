@@ -5,7 +5,12 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: logic, traditional web apps, mobile apps, ide usage, tutorials for beginners
+tags:
+  - Logic
+  - Mobile app
+  - Traditional Web
+  - Web
+  - Workflows
 audience:
   - Developer
   - Front-end developer
