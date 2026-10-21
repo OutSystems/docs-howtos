@@ -1,5 +1,7 @@
 ---
-tags: string manipulation, string search, comparison functions, text functions, case sensitivity
+tags:
+  - Indexes
+  - Logic
 summary: OutSystems 11 (O11) provides a built-in function, Index, to check if one text string contains another, similar to .NET String.Contains.
 guid: 42ccc03c-d5c3-47b9-a4cc-36c576058d42
 locale: en-us

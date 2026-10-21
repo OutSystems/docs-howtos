@@ -5,7 +5,14 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/gKoXqtZTY2IJjyMWschrRB/Integrations?node-id=1242:309
-tags: active directory integration, user management, permissions synchronization, forge components, authentication
+tags:
+  - Active Directory
+  - Authentication
+  - Authorization
+  - Data Synchronization
+  - Forge
+  - Groups
+  - Roles
 audience:
   - Platform administrator
   - Developer

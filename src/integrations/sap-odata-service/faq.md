@@ -5,7 +5,11 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/gKoXqtZTY2IJjyMWschrRB/Integrations?node-id=1242:317
-tags: sap integration, odata service, api integration, service specification, application integration
+tags:
+  - Logic
+  - REST
+  - Troubleshooting
+  - Web services
 audience:
   - Developer
   - Front-end developer

@@ -5,7 +5,13 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
-tags: system requirements, redis configuration, scalability, high availability, infrastructure planning
+tags:
+  - Architecture
+  - Caching
+  - Infrastructure
+  - Optimization
+  - Performance
+  - Platform Server
 audience:
   - Platform administrator
   - Developer

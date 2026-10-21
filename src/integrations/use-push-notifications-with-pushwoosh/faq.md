@@ -1,5 +1,12 @@
 ---
-tags: push notifications, mobile app notifications, plugin integration, outsystems forge, pushwoosh
+tags:
+  - Android
+  - Events
+  - Forge
+  - iOS
+  - Mobile app
+  - Native App
+  - Plugins
 summary: Explore how OutSystems 11 (O11) integrates with Pushwoosh for sending push notifications across various devices using a dedicated plugin.
 guid: 015dc204-9e52-4cd6-8a23-5e96096f9548
 locale: en-us

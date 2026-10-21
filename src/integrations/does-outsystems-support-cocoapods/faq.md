@@ -1,5 +1,11 @@
 ---
-tags: ios development, cocoapods integration, cordova plugins, dependency management
+tags:
+  - Cordova
+  - iOS
+  - Libraries
+  - Mobile app
+  - Native App
+  - Plugins
 summary: OutSystems 11 (O11) supports CocoaPods for integrating Objective-C Cordova plugins, simplifying dependency management in iOS app development.
 guid: def5c0a7-de9e-4c33-b0ef-514b7339a025
 locale: en-us

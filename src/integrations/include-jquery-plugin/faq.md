@@ -5,7 +5,15 @@ locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/gKoXqtZTY2IJjyMWschrRB/Integrations?node-id=1242:288
-tags: jquery integration, web blocks, frontend customization, plugin activation, resource management
+tags:
+  - Blocks
+  - CSS
+  - Front-End
+  - JavaScript
+  - Plugins
+  - Traditional Web
+  - Web
+  - Widgets
 audience:
   - Front-end developer
   - Developer
