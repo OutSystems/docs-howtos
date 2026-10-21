@@ -20,8 +20,9 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - send-push-notifications
   - set-up-push-notifications
+  - send-push-notifications-o11
+  - migrate-onesignal-api-tokens
 isautopublish: true
 ---
 
