@@ -23383,6 +23383,12 @@ knowledge-needs:
       description: Wants to build a foreign-key map between source and
         destination O11 environments, so that migrated data correctly
         references the right records after an O11 data migration.
+    - name: Match migration identifiers
+      id: match-migration-identifiers
+      description: Wants to match static entity record, user, and other
+        foreign-key identifiers between source and destination O11
+        environments, so that migrated data references the corresponding
+        records after an O11 data migration.
     - name: BPT entity model
       id: bpt-entity-model
       description: Wants to understand the entity-relationship model of BPT
