@@ -3748,6 +3748,9 @@ knowledge-needs:
       description: Wants to add descriptions to exposed REST API methods and
         parameters, publish the app, and open the generated documentation in
         ODC Studio so external developers can inspect the API contract.
+    - name: Expose REST API
+      id: expose-rest-api
+      description: Wants to create an exposed REST API service and methods in ODC Studio, assign HTTP verbs, and implement actions, so external systems can retrieve or manipulate app data through deployed endpoints.
     - name: REST method settings
       id: rest-method-settings
       description: Wants to identify which settings can be specified when
