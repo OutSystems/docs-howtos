@@ -21,8 +21,9 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - canary-release-toggle
-  - ab-release-feature-toggle
+  - assign-roles-o11
+  - create-app-role
+  - feature-flag-rollout
 ---
 
 # Feature toggle in OutSystems

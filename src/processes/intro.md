@@ -18,8 +18,7 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
-topic:
-  - trigger-processes
+topic: []
 ---
 
 # Processes
