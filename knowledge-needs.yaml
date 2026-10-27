@@ -10533,12 +10533,11 @@ knowledge-needs:
         classes, and modifiers so they can understand the pattern's structure
         in Mobile Apps and Reactive Web Apps.
     - name: Use Progress Circle pattern
-      id: use-progress-circle-mobile-reactive-web
+      id: use-progress-circle-pattern
       description: Wants to add the Progress Circle UI Pattern to a screen and
         configure its Progress property using a local variable and increment
-        button, in Service Studio for OutSystems 11, so that they can display
-        the current progress of an operation flow as a fraction, in mobile
-        apps and reactive web apps.
+        button, so that they can display the current progress of an operation
+        flow as a fraction in mobile apps and reactive web apps.
     - name: Use Rating pattern
       id: use-rating-pattern
       description: Wants to add the Rating UI Pattern to a screen and configure its
@@ -11008,10 +11007,11 @@ knowledge-needs:
       id: boolean-input-widgets
       description: Wants to choose a Check Box or Switch widget for boolean input in a reactive web form, and bind it to a Boolean screen variable, so the form stores true or false values correctly.
     - name: Use Button Group widget
-      id: use-button-group-widget-reactive
-      description: Wants to add and configure the Button Group widget in a
-        reactive web form, so that users can choose one option from a grouped
-        set of buttons.
+      id: use-button-group-pattern-mobile-reactive-o11
+      description: Wants to add and configure the Button Group widget in
+        Service Studio for OutSystems 11, bind it to a variable, and set each
+        item's value and label, so that users can choose one option from a
+        grouped set of buttons in mobile apps and reactive web apps.
     - name: Button Group variable
       id: button-group-variable
       description: Wants to identify that the Button Group Variable property belongs to the widget, not each Button Group Item, so they can distinguish widget-level and item-level properties when configuring a reactive web form in OutSystems 11.
