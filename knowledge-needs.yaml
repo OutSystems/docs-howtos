@@ -23631,10 +23631,9 @@ knowledge-needs:
     - name: Users/Roles/Groups model
       id: users-roles-groups-entity-model
       description: Wants to understand the physical tables, producers, and
-        consumers for the User, Role, Group, User_Role, Group_Role, and
-        Group_User system entities, so that they can correctly interpret
-        this entity-relationship model when planning an O11 environment
-        data migration.
+        consumers for the Users/Roles/Groups system entities, so that they can
+        correctly interpret this entity-relationship model when planning an O11
+        environment data migration.
     - name: Trace BPT process data
       id: trace-bpt-process-data
       description: Wants to trace a BPT process instance across the Process,
