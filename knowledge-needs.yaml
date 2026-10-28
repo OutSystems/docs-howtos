@@ -2442,6 +2442,13 @@ knowledge-needs:
          hidden text with ARIA labels and hidden attributes, so screen
          readers announce the right text for buttons, links, and other UI
          elements.
+     - name: Accessible Image widget
+       id: accessible-image-widget
+       description: Wants to make the Image widget accessible to assistive
+         technologies by setting informative alt text for meaningful images
+         or an empty alt attribute for decorative images, in Service Studio,
+         so screen readers announce useful image descriptions or skip
+         decorative images in OutSystems 11 apps.
      - name: Accessible master detail
        id: accessible-master-detail
        description: Wants to make the Master Detail UI Pattern accessible to
@@ -2710,6 +2717,13 @@ knowledge-needs:
          Initialized client action, in Service Studio, so that the pattern
          meets WCAG 2.2 AA accessibility requirements, in mobile apps and
          reactive web apps (O11).
+     - name: Accessible Icon widget
+       id: accessible-icon-widget
+       description: Wants to make the Icon widget accessible to assistive
+         technologies by hiding decorative icons and adding an accessible name,
+         button role, keyboard focus, and keyboard event handling to clickable
+         icons in Service Studio, so that icons meet WCAG 2.2 AA accessibility
+         requirements in mobile apps and reactive web apps (O11).
    - name: Accessibility resources
      id: accessibility-resources
      description: Wants to find accessibility resources, tools, screen
@@ -9733,10 +9747,9 @@ knowledge-needs:
         Traditional Web App or Mobile App (O11).
     - name: Icon widget reference
       id: icon-widget-ref
-      description: Wants to look up the properties, events, and runtime properties
-        of the Icon widget in ODC Studio, so that they can correctly configure icon
-        display — including icon selection, size, visibility, CSS classes, HTML
-        attributes, and event handlers — in a Reactive Web App.
+      description: Wants to look up the Icon widget's properties, events, and
+        runtime behavior, so that they can correctly configure the widget in an
+        app.
     - name: Check Box widget reference
       id: check-box-widget-reference
       description: Wants to look up the properties and runtime properties of the
@@ -21760,6 +21773,12 @@ knowledge-needs:
         replaced with ODC-supported external data sources or an ODC Library
         before code conversion, so that the asset keeps working after migration
         to ODC.
+    - name: Asset consuming process
+      id: asset-consuming-process
+      description: Wants to refactor an O11 asset that consumes a Process so the
+        dependency becomes valid for ODC, by replacing the Process consumption
+        with a placeholder Action or wrapping it in a REST Expose consumed by
+        the asset before code conversion, so the asset can be converted to ODC.
     - name: Asset consuming script
       id: asset-consuming-script
       description: Wants to refactor an O11 asset that consumes a Script from
@@ -21833,6 +21852,11 @@ knowledge-needs:
       description: Wants to configure the database connection, private gateway, encryption,
         port, and permission settings for a self-managed O11 environment before migrating
         its data to ODC, so the data migration can connect to each source environment.
+    - name: User-provider migration
+      id: user-provider-migration
+      description: Wants to determine whether O11 modules using a user provider other
+        than Users are eligible for O11 to ODC data migration, so that they can address
+        unsupported segregated user-provider configurations before migrating data.
     - name: Migrate end users
       id: migrate-end-users
       description: Wants to understand how end-user migration works during O11 to ODC
@@ -21870,6 +21894,11 @@ knowledge-needs:
         stop an O11 to ODC data migration — including missing entities or attributes,
         attribute property mismatches, and reference attribute mismatches — so that
         they can resolve the root cause and successfully retry the migration.
+    - name: Handle large text data
+      id: handle-large-text-data
+      description: Wants to move O11 text data that exceeds ODC’s supported text
+        length to an external repository before O11 to ODC data migration, so that
+        the migration can proceed within ODC text-length limits.
   - name: Conversion Assessment
     id: conversion-assessment
     subtopics:
