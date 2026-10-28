@@ -20765,6 +20765,21 @@ knowledge-needs:
         programmatically via the Users module's actions, so that new
         employees, customers, or partners can be provisioned with app
         access without going through public self-registration.
+    - name: Model custom group data
+      id: model-custom-group-data
+      description: Wants to model the group and membership data needed to
+        manage custom groups outside the built-in Users application, so that
+        group data can be managed according to the application's requirements.
+    - name: Build custom group management
+      id: build-custom-group-management
+      description: Wants to build a custom interface or external integration
+        for managing groups and memberships, so that custom groups can be
+        managed outside the built-in Users application.
+    - name: Enable custom group management
+      id: enable-custom-group-management
+      description: Wants to mark OutSystems 11 groups for custom management
+        by setting HasCustomManagement in OSSYS_Group, so that their
+        management is delegated outside the built-in Users application.
     - name: Build sign-up flow
       id: build-sign-up-flow
       description: Wants to create an end-user sign-up flow in OutSystems 11
@@ -20918,10 +20933,9 @@ knowledge-needs:
         code and see success or error messages when they register.
     - name: Configure user domains
       id: configure-user-domains
-      description: Wants to configure internal user domains in the ODC Portal
-        by adding organization email domains under Management > Admin >
-        Subscription, so that end users are correctly classified as internal
-        or external for separate licensing purposes.
+      description: Wants to add organization-owned email domains to the
+        internal user-domain configuration, so that end users are classified
+        as internal or external and licensing is calculated appropriately.
     - name: IT vs App Users
       id: it-vs-app-users
       description: Wants to understand the difference between IT Users and Application
@@ -20975,6 +20989,11 @@ knowledge-needs:
         including built-in roles, permission levels, and how default, team,
         and application assignments combine, so that they can configure and
         troubleshoot access policies.
+    - name: Map environment roles
+      id: map-environment-roles
+      description: Wants to map LifeTime roles to environment permission levels
+        during environment registration, from No Access to Full Control, so that
+        each role has the intended access to the registered environment.
     - name: Permission governance
       id: permission-governance
       description: Wants to know the recommended practices for managing permissions
@@ -22742,6 +22761,12 @@ knowledge-needs:
         environment, with separate application servers and distinct database
         catalogs or schemas, rather than reusing an existing environment, so
         that they plan the installation correctly.
+    - name: Register environment
+      id: register-environment
+      description: Wants to register an OutSystems environment in LifeTime by
+        providing connection details, positioning it in the infrastructure,
+        mapping role permissions, importing users, and confirming the
+        registration, so that the environment is centrally managed.
     - name: LifeTime unattended setup
       id: unattended-lifetime-setup
       description: 'Wants to install or upgrade the LifeTime Management
