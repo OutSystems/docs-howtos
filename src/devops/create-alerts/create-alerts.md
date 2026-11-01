@@ -21,9 +21,9 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
+  - create-itsm-tickets-from-alerts
   - define-alert-thresholds
   - gather-monitoring-api-data
-  - integrate-alerts-itsm
 ---
 
 # How to create alerts based on monitoring thresholds
