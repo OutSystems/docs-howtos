@@ -465,6 +465,11 @@ knowledge-needs:
         exceptions, including matching catch logic, bubbling to a more generic
         handler, and adding exception handler flows to an action, so that they
         can route errors to the right handler and create custom exceptions.
+    - name: Service action rollback
+      id: service-action-rollback
+      description: Wants to understand how an exception raised by a Service
+        Action affects changes made earlier in the calling Action, so that they
+        can predict which database changes are rolled back and not committed.
     - name: Fix empty OnException
       id: fix-empty-onexception
       description: Wants to fix the "Empty 'OnException'" error in Service Studio
@@ -25218,6 +25223,12 @@ knowledge-needs:
         didn''t receive the appointment confirmation email, by checking
         spam and junk folders and opening a support case if it''s still
         missing, so that they can continue with their exam registration.'
+    - name: Register for certification exam
+      id: register-certification-exam
+      description: Wants to register for an OutSystems certification exam, by
+        selecting the delivery method and exam language on the Certifications
+        page, pre-registering, and completing the registration form, so that
+        they can schedule the exam.
     - name: Exam refund eligibility
       id: exam-refund-eligibility
       description: Wants to cancel a scheduled certification exam and receive a refund, by
