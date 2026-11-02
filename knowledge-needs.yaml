@@ -11899,12 +11899,11 @@ knowledge-needs:
     id: using-external-javascript
     subtopics:
     - name: Add external JS library
-      id: add-external-js-library-o11
+      id: add-external-js-library
       description: Wants to add JavaScript code from an external library or a
         .js file to an app by importing or creating a script under the Scripts
         folder and setting it as the Required Scripts property on a screen or
-        block, in Service Studio for OutSystems 11 Mobile Apps and Reactive Web
-        Apps, so that the script's functions and objects become available in
+        block, so that the script's functions and objects become available in
         JavaScript elements on that screen or block.
     - name: Script loading order
       id: script-loading-order
@@ -11912,9 +11911,8 @@ knowledge-needs:
         load and execute (module-level scripts first, then block-level, then
         screen-level), including that module scripts load before the On
         Application Ready system event and block/screen scripts load before
-        their element renders, in OutSystems 11 Mobile Apps and Reactive Web
-        Apps, so that they can predict when JavaScript functions and objects
-        become available at runtime.
+        their element renders, so that they can predict when JavaScript
+        functions and objects become available at runtime.
     - name: Script element reference
       id: script-element-reference
       description: Wants to look up the properties and runtime properties of the
