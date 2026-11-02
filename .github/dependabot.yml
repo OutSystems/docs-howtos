@@ -1,8 +1,19 @@
 version: 2
 updates:
-      
+
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       # Check for updates to GitHub Actions every week
       interval: "weekly"
+    # These workflows only call reusable workflows from the private OutSystems/tk-cicd
+    # repository at @main (a branch, so there is nothing for Dependabot to update). Dependabot
+    # cannot reach that repository, so every reference ended the weekly run with
+    # git_dependencies_not_reachable. A new workflow that only calls tk-cicd belongs here too.
+    exclude-paths:
+      - ".github/workflows/ai-fix-pr-notify.yml"
+      - ".github/workflows/evergreen.yml"
+      - ".github/workflows/reset-dev-branch.yml"
+      - ".github/workflows/run.yml"
+      - ".github/workflows/style-guide-metrics.yml"
+      - ".github/workflows/visual-assets-update-all.yml"
