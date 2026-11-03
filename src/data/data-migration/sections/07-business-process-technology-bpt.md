@@ -1,5 +1,5 @@
 ---
-summary: Explore BPT entity migration complexities in OutSystems 11 (O11), focusing on system and hybrid entities.
+summary: OutSystems 11 (O11) BPT migration maps process and activity entities, foreign keys, triggers, and scheduler queues across environments.
 tags:
   - Business Processes
   - Data

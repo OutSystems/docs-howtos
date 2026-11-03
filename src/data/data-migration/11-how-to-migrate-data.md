@@ -1,5 +1,5 @@
 ---
-summary: Explore data migration strategies and solutions for OutSystems 11 (O11) across different environments with detailed SQL queries and procedural guidance.
+summary: OutSystems 11 (O11) data migration covers SQL queries, user mapping, and BPT trigger handling between production and non-production environments.
 tags:
   - Business Processes
   - Data
