@@ -21,6 +21,7 @@ outsystems-tools:
   - service center
   - lifetime
 coverage-type:
+  - understand
   - apply
 topic:
   - migrate-hybrid-bpt-users
