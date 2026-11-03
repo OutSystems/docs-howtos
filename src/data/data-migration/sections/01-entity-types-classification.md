@@ -10,6 +10,8 @@ tags:
   - Data Integrity
   - Data Model
   - Entities
+  - Platform Server
+  - Table
 audience:
   - Platform administrator
   - Developer

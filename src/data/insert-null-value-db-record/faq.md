@@ -8,6 +8,7 @@ figma: https://www.figma.com/file/5uD7gg1CIy1jlOE2BNFdsU/Data?node-id=942:258
 tags:
   - Data
   - SQL
+  - Troubleshooting
 audience:
   - Developer
   - Front-end developer
