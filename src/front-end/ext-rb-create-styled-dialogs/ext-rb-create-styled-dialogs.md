@@ -1,6 +1,13 @@
 ---
 summary: Learn how to create animated and styled dialog messages in OutSystems 11 (O11) using JavaScript libraries and custom blocks.
-tags: ide usage, reactive web apps, tutorials for beginners, javascript libraries, user interface design
+tags:
+  - Blocks
+  - CSS
+  - Front-End
+  - JavaScript
+  - Libraries
+  - UI
+  - UX
 guid: 34f82c63-eff4-49e6-82fb-0958e13dddf7
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
