@@ -4,6 +4,8 @@ tags:
   - Architecture
   - Authorization
   - Data Model
+  - Entities
+  - Logic
   - Roles
   - Security
 guid: b8ef5b66-e443-445d-a0e8-7623b8ca100c

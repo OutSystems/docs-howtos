@@ -7,6 +7,7 @@ platform-version: o11
 figma: https://www.figma.com/file/ZqxffTIAhYyQg8Q2KbSFbb/Development?node-id=1747:45
 tags:
   - 1-Click Publish
+  - Modular Programming
 audience:
   - Front-end developer
   - Developer
