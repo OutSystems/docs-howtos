@@ -20,6 +20,8 @@ outsystems-tools:
   - service studio
 coverage-type:
   - apply
+topic:
+  - create-styled-dialogs
 ---
 
 # How to create animated and styled dialog messages
