@@ -1,5 +1,5 @@
 ---
-summary: Explore the management of development factories and databases in OutSystems 11 (O11), including applications, modules, and entity relationships.
+summary: OutSystems 11 (O11) application modules map Applications, Espaces, and Extensions across environments using SS_Key relationships and factory data.
 tags:
   - Architecture
   - Data Model

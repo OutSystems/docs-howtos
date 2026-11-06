@@ -1,5 +1,5 @@
 ---
-summary: Learn how to build and evolve front-end architecture using OutSystems 11 (O11) with practical examples and use cases.
+summary: OutSystems 11 (O11) front-end architecture uses OutSystems UI, themes, and style guides to structure reusable patterns across applications.
 tags:
   - Architecture
   - Front-End
