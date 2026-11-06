@@ -9,7 +9,6 @@ tags:
   - Deploy
   - Infrastructure
   - Performance
-  - Security
 audience:
   - Developer
   - Platform administrator

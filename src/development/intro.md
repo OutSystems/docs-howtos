@@ -6,6 +6,7 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma:
 tags:
+  - Front-End
   - Mobile app
   - Traditional Web
   - Web

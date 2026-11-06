@@ -10,7 +10,6 @@ tags:
   - Front-End
   - Screens
   - Sorting
-  - Traditional Web
   - UI
   - Widgets
 audience:

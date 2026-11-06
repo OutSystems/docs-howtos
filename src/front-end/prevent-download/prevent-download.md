@@ -10,6 +10,9 @@ tags:
   - Front-End
   - JavaScript
   - Security
+  - Traditional Web
+  - UI
+  - Web
 audience:
   - Front-end developer
   - Developer

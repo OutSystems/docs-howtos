@@ -3,8 +3,10 @@ summary: OutSystems 11 (O11) data migration between environments covers FK mappi
 tags:
   - Business Processes
   - Data
+  - Data Integrity
   - Entities
   - Groups
+  - Roles
   - Triggers
 locale: en-us
 guid: b2640eac-2601-47a6-b7d1-c7ff08febe0e
