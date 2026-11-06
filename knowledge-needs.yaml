@@ -1700,6 +1700,11 @@ knowledge-needs:
         server action and back office screen, so child entities are cleared
         before parent entities and foreign key relationships do not block the
         deletion.
+    - name: Create sample data
+      id: create-sample-data
+      description: Wants to create sample records for application entities
+        during development, so they can test database structures and
+        application behavior with representative data.
   - name: Modeling Data
     id: modeling-data
     subtopics:
@@ -3764,6 +3769,16 @@ knowledge-needs:
       description: Wants to understand how to consume REST APIs in OutSystems 11 using
         reference information about consumed REST API elements, so they can integrate
         an app with external systems.
+    - name: Add image recognition
+      id: add-aws-image-recognition
+      description: Wants to add AWS image recognition to an OutSystems app when a
+        Forge component isn't available, so they can identify image content in
+        app workflows.
+    - name: Add a chatbot
+      id: add-aws-chatbot
+      description: Wants to add an AWS-powered chatbot to an OutSystems app when a
+        Forge component isn't available, so users can interact with the app
+        through a conversational interface.
   - name: REST API request formats
     id: rest-api-request-formats
     description: Wants to understand how exposed REST API requests handle supported media
@@ -4228,6 +4243,18 @@ knowledge-needs:
         environment or a Platform Server version requirement error in
         LifeTime, so they can fix the connection or version issue and
         continue exposing O11 entities to ODC.
+    - name: Add SMS communication
+      id: add-sms-communication
+      description: Wants to integrate an external SMS service into a remote
+        business workflow, so they can send text notifications to participants.
+    - name: Add voice communication
+      id: add-voice-communication
+      description: Wants to integrate an external voice-calling service into a
+        remote business workflow, so they can place calls to participants.
+    - name: Add video communication
+      id: add-video-communication
+      description: Wants to integrate an external video-conferencing service
+        into a remote business workflow, so participants can meet face to face.
   - name: Extensions
     id: extensions
     subtopics:
@@ -4252,6 +4279,12 @@ knowledge-needs:
       description: Wants to build an external library package from an SDK template,
         generate the ZIP file with the provided script, and prepare it for upload
         to ODC Portal, so they can publish the custom C# logic.
+    - name: Consume SOAP in library
+      id: consume-soap-in-library
+      description: Wants to consume a SOAP web service from a C# external library
+        in ODC by generating a WCF client from a WSDL, implementing SDK interfaces
+        and actions, and publishing the library, so they can expose SOAP operations
+        to ODC apps.
     - name: Consume external library
       id: consume-external-library
       description: Wants to consume a published external library in ODC Studio,
@@ -24707,6 +24740,12 @@ knowledge-needs:
       logs, and modern browser developer tools, so that they know where to
       start when investigating unexpected application behavior.
     subtopics:
+    - name: Choose debugging tools
+      id: choose-debugging-tools
+      description: Wants to choose the right debugging tool for a problem in an OutSystems
+        application, based on whether the issue involves application logic, browser
+        behavior, mobile builds or plugins, or a custom extension, so they can
+        investigate issues without relying on printf statements.
     - name: Fix debugger Chrome issue
       id: fix-debugger-chrome-issue
       description: Wants to fix the Service Studio debugger failing to start (with an
