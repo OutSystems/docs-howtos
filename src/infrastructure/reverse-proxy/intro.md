@@ -17,6 +17,7 @@ audience:
 outsystems-tools:
   - none
 coverage-type:
+  - understand
   - apply
 topic:
   - reverse-proxy-benefits
