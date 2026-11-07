@@ -6,7 +6,9 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/o7Rkyuxm89D6KrjD7AOYCU/Infrastructure?node-id=1242:240
 tags:
+  - Caching
   - Infrastructure
+  - Platform Server
 audience:
   - Platform administrator
 outsystems-tools:

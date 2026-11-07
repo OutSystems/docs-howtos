@@ -1,7 +1,7 @@
 ---
 tags:
-  - Forms
   - Front-End
+  - Forms
   - Traditional Web
   - Widgets
 summary: "OutSystems 11 (O11) dynamic input values in Traditional Web apps: use On Change, Assign, and Ajax Refresh to auto-update a date field."

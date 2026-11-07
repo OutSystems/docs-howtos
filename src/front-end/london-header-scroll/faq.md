@@ -2,7 +2,9 @@
 tags:
   - CSS
   - Front-End
+  - Layouts
   - Themes
+  - Traditional Web
 summary: Learn how to make the header scroll with the page in the London theme on OutSystems 11 (O11) by modifying CSS properties.
 guid: b80fd8bd-01dd-475a-9fd1-50709e60ab86
 locale: en-us

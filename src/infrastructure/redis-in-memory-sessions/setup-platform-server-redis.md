@@ -8,6 +8,8 @@ figma: https://www.figma.com/file/o7Rkyuxm89D6KrjD7AOYCU/Infrastructure?node-id=
 tags:
   - Infrastructure
   - Platform Server
+  - Settings
+  - Testing
 audience:
   - Platform administrator
 outsystems-tools:

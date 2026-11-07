@@ -9,6 +9,7 @@ tags:
   - Infrastructure
   - Platform Server
   - Security
+  - Settings
 audience:
   - Platform administrator
   - Developer

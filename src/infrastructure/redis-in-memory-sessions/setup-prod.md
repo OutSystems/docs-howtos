@@ -7,6 +7,9 @@ platform-version: o11
 figma:
 tags:
   - Infrastructure
+  - Logging
+  - Monitoring
+  - Testing
 audience:
   - Platform administrator
 outsystems-tools:

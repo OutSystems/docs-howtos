@@ -5,6 +5,7 @@ tags:
   - Front-End
   - Layouts
   - OutSystems UI
+  - Refactoring
   - Themes
   - UI Patterns
 locale: en-us
