@@ -7,7 +7,9 @@ platform-version: o11
 figma:
 tags:
   - Infrastructure
+  - Platform Server
   - Traditional Web
+  - Web
 audience:
   - Platform administrator
   - Tech lead

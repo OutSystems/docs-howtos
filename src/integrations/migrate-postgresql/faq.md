@@ -9,6 +9,8 @@ tags:
   - Deploy
   - Extensions
   - External Databases
+  - Platform Server
+  - Testing
 audience:
   - Developer
   - Platform administrator

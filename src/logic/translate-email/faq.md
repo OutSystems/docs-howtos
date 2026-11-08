@@ -6,8 +6,12 @@ app_type: traditional web apps, mobile apps, reactive web apps
 platform-version: o11
 figma: https://www.figma.com/file/3YpPKdo5QwN0z6up61eKe5/Logic?node-id=842:248
 tags:
+  - Logic
   - Multi-language
+  - Screens
   - Translation
+  - Troubleshooting
+  - Web
 audience:
   - Developer
   - Front-end developer
