@@ -11,7 +11,6 @@ tags:
   - Web services
 audience:
   - Developer
-  - Front-end developer
 outsystems-tools:
   - service studio
 coverage-type:

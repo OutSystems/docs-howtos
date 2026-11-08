@@ -9,6 +9,7 @@ tags:
   - Infrastructure
   - Security
 audience:
+  - Architect
   - Platform administrator
 outsystems-tools:
   - none
