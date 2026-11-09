@@ -4306,6 +4306,12 @@ knowledge-needs:
         exposed in the public interface of an External Library built with the
         OutSystems External Libraries SDK, so they can define supported
         signatures and avoid invalid types like Tuple.
+    - name: Configure SDK attributes
+      id: configure-sdk-attributes
+      description: Wants to configure the OutSystems External Libraries SDK
+        attributes and their metadata properties on .NET interfaces, methods,
+        parameters, structures, and structure fields, so they can expose
+        custom library logic as correctly described ODC actions and data.
     - name: Fix DataType mismatch
       id: fix-datatype-mismatch
       description: Wants to fix the OS-ELG-MODL-05017 error ("<ParameterName/StructureFieldName> has an incompatible DataType assigned and cannot be converted.") by changing the .NET type or DataType modifier so the field maps to a compatible OutSystems type before uploading the external library, so they can publish it successfully.
@@ -9541,31 +9547,28 @@ knowledge-needs:
         its option list and selected value, in Service Studio, so that end
         users can choose one option in a form for mobile apps and reactive
         web apps (O11).
-    - name: Use Bottom Sheet pattern
-      id: use-bottom-sheet-pattern
+    - name: Use Bottom Sheet
+      id: use-bottom-sheet
       description: Wants to add the Bottom Sheet UI Pattern to a screen, add
         the widget via Toolbox or Search in other modules if the dependency
         isn't added, add content to the TopBar and Content placeholders,
         and wire Open and Close buttons using the BottomSheetOpen and
         BottomSheetClose client actions with the WidgetId property set to
-        BottomSheet.Id, in Service Studio, so that additional information
-        displays and dismisses from the bottom of the screen in mobile
-        apps (O11).
+        BottomSheet.Id, so that additional information displays and
+        dismisses from the bottom of the screen in mobile apps.
     - name: Use Floating Actions
       id: use-floating-actions
       description: Wants to add the Floating Actions UI Pattern to a screen,
         add the widget via Toolbox or Search in other modules if the
         dependency isn't added, add content to the Button and Items
-        placeholders, and configure IsExpanded and IsHover in Service
-        Studio, so that a floating action button opens additional actions
-        on mobile and reactive web screens (O11).
+        placeholders, and configure the IsExpanded and IsHover properties,
+        so that a floating action button opens additional actions on mobile
+        and reactive web screens.
     - name: Bottom Sheet reference
       id: bottom-sheet-reference
-      description: Wants to look up the properties and events of the Bottom
-        Sheet UI Pattern in Service Studio, including Shape, ShowHandler,
-        ExtendedClass, and the OnToggle event, so that they can correctly
-        configure the pattern's appearance and behavior, in mobile apps
-        (O11).
+      description: Wants to look up the available properties and events of the
+        Bottom Sheet UI Pattern, so that they can correctly configure the
+        pattern's appearance and behavior in mobile apps.
     - name: Add icon block
       id: add-icon-block
       description: Wants to add an Icon block from Rich Widgets to a screen
@@ -9755,13 +9758,12 @@ knowledge-needs:
         (O11).
     - name: Use Range Slider Interval
       id: use-range-slider-interval-pattern
-      description: Wants to add the Range Slider Interval UI Pattern to a
-        screen by dragging the widget into the Main Content area, setting
-        the MinValue, MaxValue, StartingValueFrom, and StartingValueTo
-        properties, and creating an OnValueChange client action to read the
-        IntervalStart and IntervalEnd values, in Service Studio, so that
-        users can select a value within a chosen range, in mobile apps and
-        reactive web apps (O11).
+      description: Wants to add and configure the Range Slider Interval UI
+        Pattern on a screen, set its range and initial values and other
+        required or optional properties, and handle its value-change event
+        through a client action to read the selected interval values, so that
+        users can select a value within a chosen range in mobile apps and
+        reactive web apps.
     - name: Slider Interval reference
       id: range-slider-interval-reference
       description: Wants to look up the configuration properties and events of the Range
@@ -10458,13 +10460,13 @@ knowledge-needs:
         in mobile apps and reactive web apps.
     - name: Use Range Slider
       id: use-range-slider-pattern
-      description: Wants to add the Range Slider UI Pattern to a screen,
-        including adding the dependency when the widget does not appear in
-        the Toolbox, setting the MinValue, MaxValue, and StartingValue
-        properties, wiring the OnValueChange event to a local variable
-        through an Assign action, and configuring optional properties, so
-        that users can select a single value within a defined range in
-        mobile apps and reactive web apps.
+      description: Wants to add and configure the Range Slider UI Pattern on a
+        screen, including adding the dependency when the widget does not appear
+        in the Toolbox, setting its minimum, maximum, and initial-value
+        properties, configuring optional properties, and wiring its
+        value-change event to a local variable through an Assign action or
+        client action, so that users can select a single value within a
+        defined range in mobile apps and reactive web apps.
     - name: Range Slider properties
       id: range-slider-properties
       description: Wants to look up the Range Slider UI Pattern's properties and events in
@@ -10631,11 +10633,12 @@ knowledge-needs:
     - name: Use Mouse Events pattern
       id: use-mouse-events-pattern
       description: Wants to add the Mouse Events UI Pattern to a screen and
-        configure its properties and event handler, including adding the
-        widget via Toolbox or Search in other modules if the dependency isn't
-        added, in Service Studio for OutSystems 11, so that they can capture
-        high-precision mouse drag events, such as drag distance, in mobile
-        apps and reactive web apps.
+        configure its WidgetId and PreventDefaults properties, including
+        adding the widget via Toolbox or Search in other modules if the
+        dependency isn't added, and handle mouse movement through a client
+        action with OffsetX and OffsetY inputs, so that they can capture
+        high-precision mouse drag distance in mobile apps and reactive web
+        apps.
     - name: Use Swipe Events pattern
       id: use-swipe-events-pattern
       description: Wants to add the Swipe Events UI Pattern to a screen and
@@ -10647,9 +10650,9 @@ knowledge-needs:
     - name: Mouse Events reference
       id: mouse-events-reference
       description: Wants to look up the properties of the Mouse Events UI
-        Pattern in Service Studio, including WidgetId and PreventDefaults,
-        so that they can correctly configure high-precision mouse event
-        handling in OutSystems 11 mobile apps and reactive web apps.
+        Pattern, including WidgetId and PreventDefaults, so that they can
+        correctly configure high-precision mouse event handling in mobile apps
+        and reactive web apps.
     - name: Use Touch Events pattern
       id: use-touch-events-pattern
       description: Wants to add the Touch Events UI Pattern to a screen and
@@ -25706,6 +25709,14 @@ knowledge-needs:
         for one, when planning to attend instructor-led training, so that they
         can enroll through a Training Partner and receive schedule, location,
         and payment details.
+  - name: Training and certification
+    id: training-and-certification
+    subtopics:
+    - name: Training options overview
+      id: training-options-overview
+      description: Wants to understand the available OutSystems training and
+        certification pathways, so that they can choose a learning or
+        certification path.
   - name: Training videos
     id: training-videos
     subtopics:
