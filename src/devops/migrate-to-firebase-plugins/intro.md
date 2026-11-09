@@ -23,7 +23,7 @@ coverage-type:
 topic:
   - migrate-analytics-logevent
   - migrate-cloud-messaging-notifications
-  - migrate-firebase-plugins
+  - migrate-firebase-plugin
 ---
 
 # Migrating to the supported Firebase-based mobile plugins
