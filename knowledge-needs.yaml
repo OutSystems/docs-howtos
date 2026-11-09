@@ -2414,6 +2414,11 @@ knowledge-needs:
         REST APIs, and consumed SOAP APIs in ODC based on each API type's access
         constraints, so they can test each integration with the appropriate
         BDD Framework or external tool.
+    - name: API testing overview
+      id: api-testing-overview
+      description: Wants to understand what API testing is, which practices make
+        it effective, and why it provides valuable feedback, so they can plan API
+        testing with a focus on useful results.
 - name: Access Control and Privileges
   guid: ccc4b848-0f34-4854-bdc3-76e15fd4f42c
   topics:
@@ -4262,6 +4267,11 @@ knowledge-needs:
       id: add-video-communication
       description: Wants to integrate an external video-conferencing service
         into a remote business workflow, so participants can meet face to face.
+    - name: Connect MQTT devices
+      id: connect-mqtt-devices
+      description: Wants to connect an ODC app to MQTT-enabled IoT devices by
+        configuring MQTT connectivity, so that the app can communicate with and
+        control IoT devices in an IoT solution.
   - name: Extensions
     id: extensions
     subtopics:
@@ -9152,6 +9162,12 @@ knowledge-needs:
       description: Wants to choose when to clone a built-in Style Guide instead
         of making minor theme customizations, so they can start from the
         closest base when extensive changes are needed.
+    - name: Create custom style guide
+      id: create-custom-style-guide
+      description: Wants to choose when to implement a custom Style Guide by
+        starting from the most basic template when an application cannot
+        benefit from an existing theme, so they can establish the minimum
+        structure needed to start.
     - name: Specialize style guide
       id: specialize-style-guide
       description: Wants to choose when to specialize a built-in Style Guide
@@ -15814,6 +15830,11 @@ knowledge-needs:
       description: Wants to understand what ODC AI models are, what tasks they
         handle, and how they differ from AI agents, so they can choose when to
         use an AI model in an app.
+    - name: LLM temperature
+      id: llm-temperature
+      description: Wants to identify the temperature setting as the parameter
+        that controls an LLM's output randomness, so that they can distinguish
+        it from settings that control response length or context.
     - name: Function calling overview
       id: function-calling-overview
       description: Wants to understand what function calling is in AI Agent
