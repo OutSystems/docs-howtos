@@ -218,18 +218,6 @@ knowledge-needs:
         For Each logic node in OutSystems 11, including setting the Record
         List, Start Index, and Maximum Iterations properties, so that they
         can perform logic recursively on each list item.
-    - name: Create conditional paths
-      id: create-conditional-paths
-      description: Wants to branch logic execution in a screen action based
-        on a condition, by using If and Switch nodes in Service Studio, in
-        OutSystems 11 (O11) apps, so that different logic paths run depending
-        on runtime values.
-    - name: Conditional paths (ODC)
-      id: create-conditional-paths-odc
-      description: Wants to branch logic execution in an action based on a
-        condition, by using If nodes in ODC Studio, in OutSystems Developer
-        Cloud (ODC) apps, so that different logic paths run depending on
-        runtime values.
     - name: Create action via widget
       id: create-action-from-widget-event
       description: Wants to create a new client action directly from a
@@ -4356,6 +4344,13 @@ knowledge-needs:
     - name: Configure Visual Studio
       id: configure-visual-studio
       description: Wants to install Microsoft Visual Studio with the .NET desktop development workload and have Integration Studio detect and use it, so they can develop C# extensions.
+    - name: Use .NET Standard library
+      id: use-netstandard-library
+      description: Wants to use .NET Standard libraries in an OutSystems 11
+        extension by targeting a supported .NET Framework version, configuring
+        Visual Studio and Integration Studio, and excluding unnecessary system
+        assemblies, so the extension builds and runs without runtime issues
+        when it depends on those libraries.
     - name: Extension source files
       id: extension-source-files
       description: Wants to understand which source files Integration Studio generates for an extension after it creates the extension, where those files are stored, and which generated files they should not edit in the .NET IDE, so they can work with the extension bootstrap files correctly.
@@ -8447,12 +8442,11 @@ knowledge-needs:
         including business experts, analysts, process owners, IT managers, and
         developers, in OutSystems 11, so that they can decide whether it's the
         right tool for their business process app.
-    - name: WFB app building steps
-      id: wfb-app-building-steps
-      description: Wants to build and publish a business process app in Workflow
-        Builder by setting up a form, defining workflow steps, publishing to test,
-        and sharing it with end-users via IT, in OutSystems 11, so that they can
-        turn a business process into a working app.
+    - name: WFB form and workflow creation
+      id: wfb-form-workflow-creation
+      description: Wants to build a business process app in Workflow Builder by
+        setting up a form and defining workflow steps in OutSystems 11, so that
+        they can turn a business process into a working app.
     - name: WFB post-publish testing
       id: wfb-post-publish-testing
       description: Wants to test a published Workflow Builder app by opening it
@@ -13421,10 +13415,10 @@ knowledge-needs:
     - name: Fix SEO redirects
       id: fix-seo-redirects
       description: 'Wants to fix SEO-friendly URL redirect rules that don''t
-        work in a small number of OutSystems Cloud environments, by checking
-        the React version their app is running via the browser console and
-        contacting OutSystems Support if it''s lower than 16, in Reactive Web
-        Apps, so that redirects work correctly.'
+        work in affected OutSystems Cloud environments, by checking the React
+        version their app is running via the browser console and contacting
+        OutSystems Support if it is below the version required for the
+        environment, in Reactive Web Apps, so that redirects work correctly.'
     - name: Fix blocked external URL
       id: fix-blocked-external-url
       description: 'Wants to fix a blank page and "Content Security Policy
@@ -17332,6 +17326,12 @@ knowledge-needs:
       actions with their equivalents, so the app benefits from dedicated release
       cycles, OutSystems support, and new features.
     subtopics:
+    - name: Migrate Firebase plugin
+      id: migrate-firebase-plugin
+      description: Wants to migrate an OutSystems mobile app from unsupported
+        Firebase-based plugins to supported Firebase plugins by setting up the
+        supported replacements and replacing legacy actions with their
+        equivalents, so the app receives ongoing support and compatible updates.
     - name: Migrate LogEvent action
       id: migrate-analytics-logevent
       description: Wants to replace the LogEvent action of the unsupported Firebase
