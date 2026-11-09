@@ -1275,6 +1275,11 @@ knowledge-needs:
       description: Wants to identify which OutSystems 11 architecture infractions
         to fix first, based on module dependency direction and upward references
         to End-user modules, so they can prioritize architecture remediation.
+    - name: Recognize bad patterns
+      id: recognize-bad-patterns
+      description: Wants to recognize indicators of bad patterns in an OutSystems
+        application before opening Architecture Dashboard, so they can identify
+        and address code problems immediately.
     - name: Custom app architecture
       id: custom-app-architecture
       description: Wants to design a base application architecture that supports
@@ -3763,6 +3768,11 @@ knowledge-needs:
       description: Wants to understand how to consume REST APIs in OutSystems 11 using
         reference information about consumed REST API elements, so they can integrate
         an app with external systems.
+    - name: Choose AWS services
+      id: choose-aws-services
+      description: Wants to choose AWS services for an OutSystems app when no suitable
+        Forge component exists, so they can plan a cloud integration that fits the
+        app's needs.
     - name: Add image recognition
       id: add-aws-image-recognition
       description: Wants to add AWS image recognition to an OutSystems app when a
@@ -3974,8 +3984,11 @@ knowledge-needs:
       id: refresh-entity-definition
       description: Wants to refresh an imported entity definition in Integration Studio after the source database table changes, so that the entity is updated from the database, any local changes are replaced except for the entity name, invalid attributes are ignored with a warning, and the extension remains connected to the server where it will be deployed.
     - name: External database options
-      id: external-database-options
+      id: external-database-options-o11
       description: Wants to understand the ways OutSystems integrates with external databases, using Integration Builder or Integration Studio, so they can choose the integration path to follow.
+    - name: ODC integrations overview
+      id: external-database-options-odc
+      description: Wants to understand how ODC integrations connect applications to external databases, so that they can choose an integration approach when extending application capabilities.
     - name: Use Integration Builder
       id: use-integration-builder
       description: Wants to integrate a supported external relational or MongoDB database with an OutSystems 11 app by configuring a connection, selecting tables or collections, publishing the integration, and consuming the generated entities or actions, so they can use external data in the app.
@@ -4252,6 +4265,9 @@ knowledge-needs:
   - name: Extensions
     id: extensions
     subtopics:
+    - name: ODC extension options
+      id: odc-extension-options
+      description: Wants to understand how traditional code extensions expand ODC application capabilities, so that they can decide when to use extensions alongside integrations.
     - name: Choose connector option
       id: choose-connector-option
       description: Wants to choose an approach for migrating from the third-party
@@ -4826,6 +4842,11 @@ knowledge-needs:
       description: Wants to access data from a legacy Lotus Notes/Domino application
         using ODBC and a SQL Server Linked Server, on a 64-bit SQL Server environment,
         so that OutSystems applications can query that legacy data at runtime.
+    - name: Integrate mainframes
+      id: integrate-mainframes
+      description: Wants to integrate mainframe back-end systems with modern
+        OutSystems applications using a component that bridges the two, so they can
+        digitize user experiences across current technologies and devices.
   - name: Private Gateway
     id: private-gateway
     subtopics:
@@ -13748,6 +13769,11 @@ knowledge-needs:
       provides, so they can get an overall introduction before diving into
       individual features.
     subtopics:
+    - name: Platform capabilities
+      id: platform-capabilities-overview
+      description: Wants to understand how OutSystems supports building apps
+        across data and business processes, so they can decide which platform
+        capabilities to explore for their application needs.
     - name: Mobile app capabilities
       id: mobile-app-capabilities
       description: Wants to identify which statements about OutSystems mobile
@@ -16593,6 +16619,12 @@ knowledge-needs:
         OutSystems 11 Cloud upgrades handled by the support team, and
         Service Studio auto-update, so that they know what to expect when
         updating the platform.
+    - name: Review O11 changes
+      id: review-o11-changes
+      description: Wants to review the breaking changes and side effects
+        introduced by OutSystems 11 Platform Server releases, so they can
+        assess application and infrastructure impact and apply the required
+        fixes before upgrading.
     - name: Update docs cadence
       id: update-docs-cadence
       description: Wants to know which documentation, training, installation
@@ -20532,6 +20564,11 @@ knowledge-needs:
         settings, proxy configuration, client secret and client ID values,
         redirect URIs, and IdP response codes, so that they can restore
         external IdP sign-in.
+    - name: Troubleshoot ODC mobile sign-in errors
+      id: troubleshoot-odc-mobile-sign-in-errors
+      description: Wants to diagnose why an end user cannot sign in to an ODC
+        mobile app by checking the authentication flow and sign-in response, so
+        that they can restore mobile app access.
     - name: Users app lockout
       id: users-app-lockout
       description: Wants to regain access to the OutSystems 11 Users app
@@ -21396,7 +21433,8 @@ knowledge-needs:
     - name: Fix ODC permissions
       id: fix-odc-permissions
       description: Wants to resolve the invalid permissions screen an end
-        user sees in an ODC app after O11-ODC SSO login, caused by a missing
+        user sees in an ODC app after O11-ODC SSO login, including when opening
+        a role-protected feature in an ODC reactive web app, caused by a missing
         or unassigned ODC app role for that end user.
   - name: Users in OutSystems
     id: users-in-os
@@ -22318,6 +22356,12 @@ knowledge-needs:
       portal, deployment, configuration, and monitoring differences between
       OutSystems 11 and ODC, so they can map concepts quickly when reading the
       cheatsheet or moving between platforms.
+    subtopics:
+    - name: Plan ODC coexistence
+      id: plan-odc-coexistence
+      description: Wants to understand how ODC and OutSystems 11 can coexist
+        through partial migration, scalable front ends, and existing core systems,
+        so they can plan ODC adoption without replacing those systems.
   - name: Code Conversion
     id: code-conversion
     subtopics:
