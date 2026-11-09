@@ -2384,6 +2384,12 @@ knowledge-needs:
         using syntax testing and multi-step test scenarios and structuring them
         as reusable, data-driven test blocks, so that the test suite stays
         maintainable and scalable as APIs evolve.
+    - name: O11 API tests
+      id: o11-api-tests
+      description: Wants to create automated REST and SOAP API tests in OutSystems
+        11 with Test Framework, importing methods from Swagger or WSDL and
+        configuring inputs, expected outputs, and multi-step scenarios, so that
+        API behavior is validated consistently.
     - name: API test transactions
       id: api-test-transactions
       description: Wants to test service actions in ODC by explicitly committing
@@ -8768,6 +8774,12 @@ knowledge-needs:
     - name: BDD test setup
       id: bdd-test-setup
       description: Wants to set up a BDD Framework test app in ODC Studio by adding the component as a public element, creating a screen and BDD scenario, and implementing the test actions, so they can start component testing.
+    - name: O11 unit tests
+      id: o11-unit-tests
+      description: Wants to create automated unit tests for OutSystems 11 server
+        actions with BDD Framework and Test Framework, using Given, When, and
+        Then actions, isolated test data, and assertions, so that application
+        behavior is validated through maintainable regression tests.
     - name: Shared test patterns
       id: shared-test-patterns
       description: Wants to extract common component test logic into a SharedTestPatterns module and reuse it across test modules and test applications when the dependency rules allow it.
@@ -20465,6 +20477,9 @@ knowledge-needs:
     - name: Selenium test practices
       id: selenium-test-practices
       description: Wants to make Selenium UI tests more reliable and readable by replacing pauses with waits, adding asserts, using variables, and documenting scripts, so the scripts stay maintainable.
+    - name: UI testing strategies
+      id: ui-testing-strategies
+      description: Wants to choose between scripted, exploratory, and user experience testing techniques for web UI quality based on the testing goal and required coverage.
 - name: User Management
   guid: 30a6f6ca-c898-4e05-b5d6-88a6789ca36c
   topics:
