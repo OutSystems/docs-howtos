@@ -1,5 +1,5 @@
 ---
-summary: OutSystems 11 (O11) integrates seamlessly with Workato using the OutSystems Workato Connector for efficient workflow automation.
+summary: OutSystems Workato Connector configures API keys and Workato recipes for entity triggers, upserts, and foreign-key lookups.
 guid: 38e0c498-941a-4f7f-a421-e88edc331075
 locale: en-us
 app_type: traditional web apps, mobile apps, reactive web apps
