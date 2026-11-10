@@ -8475,10 +8475,10 @@ knowledge-needs:
     subtopics:
     - name: WFB overview
       id: wfb-overview
-      description: Wants to understand what Workflow Builder is and who it's for,
-        including business experts, analysts, process owners, IT managers, and
-        developers, in OutSystems 11, so that they can decide whether it's the
-        right tool for their business process app.
+      description: Wants to understand what Workflow Builder is, which kinds of
+        users and business process scenarios it supports, and whether it is the
+        right tool for their business process app in OutSystems 11, so that they
+        can decide whether to use it.
     - name: WFB form and workflow creation
       id: wfb-form-workflow-creation
       description: Wants to build a business process app in Workflow Builder by
@@ -22575,14 +22575,14 @@ knowledge-needs:
         from code conversion.
     - name: Additional pipelines pattern
       id: additional-pipelines-pattern
-      description: Wants to understand why O11 to ODC conversion isn't supported
-        yet for infrastructures with additional pipelines, so that they can focus
-        on preparing code and data for ODC instead of attempting conversion.
+      description: Wants to understand how infrastructures with additional pipelines affect
+        eligibility for O11 to ODC conversion, so that they can prepare code and data
+        appropriately before planning the conversion.
     - name: Self-managed infra pattern
       id: self-managed-infra-pattern
-      description: Wants to understand why O11 to ODC conversion isn't supported
-        yet for self-managed infrastructures, so that they can focus on preparing
-        code and data for ODC instead of attempting conversion.
+      description: Wants to understand how self-managed infrastructures affect eligibility
+        for O11 to ODC conversion, so that they can decide how to prepare their code
+        and data before choosing a supported migration approach.
     - name: Align persistent login
       id: align-persistent-login-timeout
       description: Wants to align an O11 Reactive Web or Mobile app's customizable
@@ -22667,10 +22667,10 @@ knowledge-needs:
     - name: Review assessment report
       id: review-assessment-report
       description: Wants to view and validate the ODC Conversion Assessment Tool's
-        report, including navigating to it via ODC Blueprint or a conversion plan,
-        and validating Code, Data, and Infrastructure pattern findings by reviewing
-        solutions and rerunning the assessment, so that they can plan the refactoring
-        effort needed before converting O11 apps to ODC.
+        report by opening it through the applicable conversion workflow, reviewing
+        pattern findings and their solutions, and rerunning the assessment, so that
+        they can plan the refactoring effort needed before converting O11 apps to
+        ODC.
     - name: Resolve findings
       id: resolve-findings
       description: Wants to resolve Conversion Assessment Tool findings by opening
