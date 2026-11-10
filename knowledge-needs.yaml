@@ -5699,6 +5699,13 @@ knowledge-needs:
         user-supplied URLs, persisting requests for batch processing when needed, and
         restricting outbound requests with allowlists or proxies, so that internal
         services and cloud metadata stay unreachable.
+    - name: SSRF platform protection
+      id: platform-ssrf-protection-responsibility
+      description: Wants to know whether OutSystems 11 and ODC restrict outbound
+        requests or validate destination URLs on the platform side, and which SSRF
+        checks remain the app developer's responsibility, so that they can state
+        accurately where platform protection ends when assessing the platform against
+        the OWASP Top 10.
     - name: Encode custom HTML and JavaScript
       id: encode-custom-html-javascript
       description: Wants to safely include end-user input in custom HTML or
