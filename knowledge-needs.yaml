@@ -20659,6 +20659,9 @@ knowledge-needs:
     - name: Authentication management overview
       id: authentication-management-overview
       description: Wants to understand how ODC handles authentication and authorization at a high level, including built-in authentication, external identity providers, custom authentication flows, and role-based access control, so that they can explain the platform's sign-in model and choose the right approach for an app.
+    - name: Troubleshoot auth errors
+      id: troubleshoot-auth-errors
+      description: Wants to troubleshoot authentication and authorization errors affecting user access in ODC mobile and reactive web apps by identifying causes and following diagnostic and remediation steps, so they can restore access.
     - name: Token lifecycle
       id: token-lifecycle
       description: Wants to understand how ODC issues short-lived access tokens and refresh tokens, validates requests before they reach services, and invalidates sessions and tokens on logout, so that they can explain the platform's token lifecycle and request security.
