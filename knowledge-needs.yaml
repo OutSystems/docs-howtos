@@ -321,6 +321,24 @@ knowledge-needs:
         items, including building a loop with an If condition when no dedicated
         loop node exists, so that they can implement common control flow
         patterns in OutSystems.
+    - name: Switch statement behavior
+      id: switch-statement-behavior
+      description: Wants to understand how a Switch statement evaluates its
+        branches in an OutSystems 11 action flow, including first-match
+        execution and the mandatory Otherwise fallback, so they can identify
+        correct and incorrect statements about Switch behavior.
+    - name: Create conditional paths
+      id: create-conditional-paths
+      description: Wants to create conditional paths in an ODC action flow by
+        adding an If node and configuring its condition, so app logic branches
+        based on runtime values.
+    - name: If statement behavior
+      id: if-statement-behavior
+      description: Wants to understand how an If statement in an ODC action
+        flow behaves, including its mandatory True and False branches,
+        single-branch execution, and inability to add extra branches or use it
+        as a loop, so they can identify correct and incorrect statements about
+        conditional logic.
     - name: Fix invalid action flow
       id: fix-invalid-action-flow
       description: Wants to fix Invalid Action Flow errors in OutSystems 11
@@ -3965,7 +3983,7 @@ knowledge-needs:
     id: database-connections
     subtopics:
     - name: Configure database connections
-      id: configure-database-connections
+      id: configure-database-connections-o11
       description: Wants to configure an external database connection per
         environment in Service Center and map the extension's logical database
         to it, so that applications using extension modules can read and write
@@ -4015,6 +4033,12 @@ knowledge-needs:
         Portal, select a supported provider, and reference the external
         entities in an app, so they can use external database data in ODC
         Studio.
+    - name: Per-stage DB connections
+      id: per-stage-db-connections-odc
+      description: Wants to configure a separate external database connection
+        string for each ODC stage, so applications in each stage use the
+        corresponding external database instance throughout the development
+        lifecycle.
     - name: Azure SQL connections
       id: azure-sql-connections
       description: Wants to configure an Azure SQL connection in ODC Portal,
@@ -21125,6 +21149,12 @@ knowledge-needs:
         an organization or app stage, and adding the generated redirect URLs
         to Azure Portal, so that end users can sign in through Microsoft
         Entra.
+    - name: Configure Azure AD B2C
+      id: configure-azure-ad-b2c
+      description: Wants to integrate Azure AD B2C with ODC as an external
+        identity provider when an ODC app uses Azure AD B2C for external
+        authentication, so that end users can authenticate through Azure AD
+        B2C.
     - name: Add OIDC provider
       id: add-oidc-provider
       description: Wants to add an OpenID Connect identity provider in ODC
