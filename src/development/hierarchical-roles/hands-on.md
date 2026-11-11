@@ -22,7 +22,9 @@ outsystems-tools:
 coverage-type:
   - apply
 topic:
-  - hierarchical-roles-implementation
+  - hierarchical-roles-authorization-checks
+  - hierarchical-roles-data-model-architecture
+  - hierarchical-roles-permission-management
 ---
 
 # How to implement hierarchical roles
