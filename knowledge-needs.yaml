@@ -1461,11 +1461,6 @@ knowledge-needs:
       description: Wants to bind Screen Aggregate or Data Action outputs to List
         and Expression widgets, so fetched records and individual attributes
         display on the screen.
-    - name: Charts API reference
-      id: charts-api-reference
-      description: Wants to look up the Charts API widgets, actions, structures,
-        and static entities when building charts in Service Studio for OutSystems
-        11, so they can configure chart data and formatting.
     - name: Set up table records
       id: set-up-table-records
       description: Wants to add a Table Records widget to a Traditional Web
@@ -11068,6 +11063,12 @@ knowledge-needs:
         Studio, including the available chart widgets, add-ons, and API actions,
         so that they can choose the right chart component and customization
         entry point.
+    - name: Charts API reference
+      id: charts-api-reference
+      description: Wants to look up available Charts API widgets, their inputs,
+        actions, structures, and static entities when building charts in Service
+        Studio for OutSystems 11, so they can choose the right chart type and
+        configure chart data and formatting.
     - name: Configure Line Chart
       id: configure-line-chart
       description: Wants to add the Line Chart widget to a screen and configure
@@ -11106,8 +11107,8 @@ knowledge-needs:
       id: configure-chart-data-points
       description: Wants to populate a chart's DataPointList with fixed or
         variable data, map Label and Value fields, and set SeriesName for
-        multiple series in ODC Studio, so that chart widgets display data
-        correctly in mobile apps and reactive web apps.
+        multiple series, including handling missing data, so that chart widgets
+        display the required values correctly.
     - name: Set donut inner size
       id: configure-donut-inner-size
       description: Wants to set the Donut Chart InnerSize property in ODC Studio,
@@ -11120,6 +11121,18 @@ knowledge-needs:
         so that they can choose the right chart component and customize it
         correctly in traditional web apps, mobile apps, and reactive web
         apps.
+    - name: Format chart data
+      id: format-chart-data
+      description: Wants to format chart data in Service Studio for OutSystems
+        11, so that chart values display as intended.
+    - name: Configure chart axes
+      id: configure-chart-axes
+      description: Wants to configure chart axes in Service Studio for OutSystems
+        11, so that chart values are presented with the intended scale and labels.
+    - name: Customize chart legends
+      id: customize-chart-legends
+      description: Wants to customize chart legends in Service Studio for
+        OutSystems 11, so that users can identify the chart's data series.
     - name: Combo Box widget reference
       id: combo-box-widget-reference
       description: Wants to look up the properties and runtime properties of the Combo Box
