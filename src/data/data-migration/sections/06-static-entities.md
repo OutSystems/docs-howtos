@@ -2,8 +2,11 @@
 summary: Explore data migration considerations for Static Entities in OutSystems 11 (O11), focusing on platform management and environment-specific IDs.
 tags:
   - Data
+  - Data Integrity
   - Data Model
+  - Data Synchronization
   - Entities
+  - Platform Server
   - SQL
 locale: en-us
 guid: 23483ef2-7c45-48af-9a05-977eaadbc72f
