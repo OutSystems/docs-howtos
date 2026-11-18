@@ -18410,9 +18410,9 @@ knowledge-needs:
       id: fix-missing-device-data
       description: Wants to troubleshoot missing data on a mobile device, caused by
         offline synchronization errors, misconfigured sync filtering rules, or
-        aggregates with restrictive JOIN "Only With"/"With or Without" settings on
-        local storage entities, by checking server data, device local storage, and
-        sync/aggregate configuration, so that expected data appears on the device.
+        aggregates with restrictive join settings on local storage entities, by
+        checking server data, device local storage, and sync/aggregate configuration,
+        so that expected data appears on the device.
     - name: Conflict sync pattern
       id: conflict-detection-sync-pattern
       description: Wants to implement the Read/Write Data with Conflict Detection offline
