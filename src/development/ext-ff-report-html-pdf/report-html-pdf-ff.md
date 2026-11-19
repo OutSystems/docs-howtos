@@ -23,7 +23,7 @@ coverage-type:
   - apply
 topic:
   - create-pdf-report-html2pdf
-  - customize-html2pdf-output
+  - prevent-pdf-table-row-breaks
   - setup-html2pdf-component
 ---
 
