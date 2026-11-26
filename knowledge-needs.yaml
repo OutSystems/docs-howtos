@@ -2315,13 +2315,22 @@ knowledge-needs:
         only after the aggregate it depends on has data, using the On After Fetch
         event on each aggregate, so that dependent dropdowns and fields don't try
         to filter using data that isn't loaded yet when a screen first opens.
-    - name: Fix invalid aggregate
-      id: fix-invalid-aggregate
-      description: 'Wants to fix the "Invalid Aggregate" error in Service Studio
-        for OutSystems 11, caused by joining entities from multiple databases,
-        having duplicate join conditions on the same entities, or applying an
-        aggregation function to a calculated column with an incompatible data
-        type, so that the module compiles and publishes successfully.'
+    - name: Fix multi-database aggregate join
+      id: fix-multi-database-aggregate-join
+      description: Wants to fix the "Invalid Aggregate" error in Service Studio
+        for OutSystems 11 when joining entities from multiple databases, so that
+        the module compiles and publishes successfully.
+    - name: Fix duplicate aggregate join condition
+      id: fix-duplicate-aggregate-join-condition
+      description: Wants to fix the "Invalid Aggregate" error in Service Studio
+        for OutSystems 11 when the same entities have duplicate join conditions,
+        so that the module compiles and publishes successfully.
+    - name: Fix calculated-column aggregation
+      id: fix-calculated-column-aggregation
+      description: Wants to fix the "Invalid Aggregate" error in Service Studio
+        for OutSystems 11 when an aggregation function is applied to a calculated
+        column with an incompatible data type, so that the module compiles and
+        publishes successfully.
     - name: Fix invalid join
       id: fix-invalid-join
       description: Wants to fix the Invalid Join error in Service Studio for
@@ -2335,15 +2344,24 @@ knowledge-needs:
         column in a circular way, a sorted column uses only constants or
         functions that always return the same result, or two columns share the
         same formula, so that the module compiles and publishes successfully.'
-    - name: Fix invalid dependency
-      id: fix-invalid-dependency
+    - name: Fix conflicting Fetch properties
+      id: fix-conflicting-fetch-properties
       description: 'Wants to fix the "Invalid Data Dependency" error in Service
-        Studio for OutSystems 11, caused by conflicting Fetch property values
-        between dependent data sources, a data source depending on more than
-        one other data source, or a circular reference between data sources,
-        by adjusting Fetch properties, merging or referencing data via a
-        client variable, or removing the circular dependency, so that the
-        module compiles and publishes successfully.'
+        Studio for OutSystems 11 caused by conflicting Fetch property values
+        between dependent data sources, by adjusting the Fetch properties so
+        that the module compiles and publishes successfully.'
+    - name: Fix multiple data source dependencies
+      id: fix-multiple-data-source-dependencies
+      description: 'Wants to fix the "Invalid Data Dependency" error in Service
+        Studio for OutSystems 11 caused by a data source depending on more than
+        one other data source, by merging or referencing data via a client
+        variable so that the module compiles and publishes successfully.'
+    - name: Fix circular data source references
+      id: fix-circular-data-source-references
+      description: 'Wants to fix the "Invalid Data Dependency" error in Service
+        Studio for OutSystems 11 caused by a circular reference between data
+        sources, by removing the circular dependency so that the module
+        compiles and publishes successfully.'
     - name: Fix maintenance warning
       id: fix-maintenance-suggestion-warning
       description: Wants to fix the "Complete enumeration of <entity> attributes
@@ -20894,6 +20912,12 @@ knowledge-needs:
         differs from ODC Cloud, its EU-operated model, and its benefits, so
         regulated organizations can assess whether the offering fits their
         requirements.
+    - name: EU data residency
+      id: eu-data-residency
+      description: Wants to understand where ODC EU Sovereign Cloud stores
+        platform, runtime, application, and operational data, so that they can
+        verify which data stays within the EU sovereignty boundary for
+        compliance reviews.
     - name: Use test data in Development
       id: use-test-data-in-development
       description: Wants to use only test data and test identities in the
