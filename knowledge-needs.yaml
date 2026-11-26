@@ -2350,6 +2350,12 @@ knowledge-needs:
         Studio for OutSystems 11 caused by conflicting Fetch property values
         between dependent data sources, by adjusting the Fetch properties so
         that the module compiles and publishes successfully.'
+    - name: Fix data dependency warning
+      id: fix-data-dependency-warning
+      description: 'Wants to fix a data dependency warning in OutSystems 11
+        caused by setting a data source''s Fetch property to Only on demand
+        without triggering a fetch, by adding a Refresh Data element or
+        setting Fetch to At start, so the data loads and populates the UI.'
     - name: Fix multiple data source dependencies
       id: fix-multiple-data-source-dependencies
       description: 'Wants to fix the "Invalid Data Dependency" error in Service
