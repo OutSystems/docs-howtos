@@ -4498,6 +4498,12 @@ knowledge-needs:
       description: Wants to understand the three areas of O11-ODC
         interoperability, data, logic, and user, and what each enables,
         before deciding how to extend an O11 app with ODC capabilities.
+    - name: Loan automation scenario
+      id: loan-automation-scenario
+      description: Wants to understand how a loan origination process uses an
+        O11 app and an ODC agentic app to automate manual intake checks before
+        enrichment and underwriting, so they can identify where agentic
+        capabilities fit in an existing business process.
     - name: Decide ODC extension
       id: decide-odc-extension
       description: Wants to decide whether to extend an existing O11 app
@@ -11961,11 +11967,18 @@ knowledge-needs:
       id: button-group-item-reference
       description: Wants to look up the properties, events, and runtime properties of the Button Group Item widget in Service Studio, so they can configure each item correctly in mobile apps and reactive web apps.
     - name: Automatic form validation
-      id: automatic-form-validation
+      id: automatic-form-validation-odc
       description: Wants to identify which input validations the Form widget
         performs automatically in ODC, such as mandatory fields and data
         type checks, and which validation still requires custom logic, so
         they can recognize built-in validation behavior.
+    - name: O11 automatic validation
+      id: automatic-form-validation-o11
+      description: Wants to identify which validations a Form widget performs
+        automatically when a Save button's Built-in Validations property is
+        set to Yes in OutSystems 11, including mandatory fields and submitted
+        data types, so they can recognize which input checks occur before
+        saving.
     - name: Invalid widget feedback
       id: invalid-widget-feedback
       description: Wants to understand how an input widget behaves when its
@@ -15903,6 +15916,13 @@ knowledge-needs:
       based on app type (new web app vs existing apps, libraries, or agentic
       apps), complexity, and access point (ODC Portal vs ODC Studio), so that
       they pick the right tool for their development task.
+    subtopics:
+    - name: Mentor mobile support
+      id: mentor-mobile-support
+      description: Wants to determine whether Mentor Web or Mentor Studio
+        supports mobile app development and identify ODC Studio as the manual
+        alternative, so they can choose the right tool when building a mobile
+        app in ODC.
   - name: Mentor asset support
     id: mentor-asset-support
     description: Wants to understand which ODC asset elements Mentor Studio
@@ -15989,6 +16009,11 @@ knowledge-needs:
         opening Configurations, selecting Custom connection, entering the source
         details, adding an authentication header, and saving the configuration, so
         that the app can connect to a custom database or search service.
+    - name: Build AI game opponents
+      id: build-ai-game-opponents
+      description: Wants to understand how to add AI-driven CPU opponents to a
+        multiplayer OutSystems game with Agent Workbench in ODC, so they can build
+        interactive apps with AI-controlled participants.
     - name: Add Amazon Kendra data source
       id: add-amazon-kendra-data-source
       description: Wants to add an Amazon Kendra data source in the AI Agent Builder
@@ -16149,6 +16174,17 @@ knowledge-needs:
         in GetGroundingData, so that the agent can compare more than one
         data source (for example, applicant data and policy rules) in a
         single grounding context.
+    - name: Configure grounding data
+      id: configure-grounding-data
+      description: Wants to configure GetGroundingData in an ODC agentic app
+        by supplying relevant data from aggregates, REST APIs, or RAG, so
+        that the agent uses current business context to produce accurate
+        responses.
+    - name: Optimize grounding data
+      id: optimize-grounding-data
+      description: Wants to optimize an AI agent's grounding data by providing
+        only factual, concise, and current information, so that responses are
+        accurate, efficient, and timely.
     - name: External data references
       id: external-data-references
       description: Wants to design an agentic flow that stores massive datasets
@@ -16897,6 +16933,13 @@ knowledge-needs:
         semantic search enable retrieval-augmented generation (RAG) at
         runtime, so they can grasp how agents and apps retrieve relevant
         content from uploaded documents.
+    - name: RAG purpose
+      id: rag-purpose
+      description: Wants to identify the limitation of pre-trained large
+        language models that Retrieval-Augmented Generation (RAG) addresses,
+        specifically their lack of up-to-date or domain-specific knowledge,
+        so they can explain why RAG retrieves external information to ground
+        responses when explaining RAG's purpose.
     - name: KB supported file types
       id: kb-supported-file-types
       description: Wants to know which file types and the maximum file size a knowledge
@@ -23915,6 +23958,11 @@ knowledge-needs:
         Cloud by exporting and importing the apps instead of using an in-place
         migration, understanding what does not move with them, so they can plan
         the migration correctly.
+    - name: Migrate app to ODC
+      id: migrate-app-to-odc
+      description: Wants to understand how an existing OutSystems 11 app evolves
+        into an ODC app through migration, using a worked example, so they can
+        assess whether the migration approach fits a similar app.
   - name: Code Conversion
     id: code-conversion
     subtopics:
